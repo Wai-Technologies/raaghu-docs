@@ -1,19 +1,4 @@
-<style>
-    body {
-        font-family: 'Lexend', sans-serif;
-        font-size: 16px;
-        line-height: 1.6;
-        color: #333;
-        background-color: #fff;
-        margin: 0;
-        padding: 0;
-    }
-
-    h1, h2, h3 {
-        font-family: 'Lexend', sans-serif;
-        font-weight: 500;
-    }
-</style>
+<link rel="stylesheet" type="text/css" href="styles.css">
 
 Account
 =======
