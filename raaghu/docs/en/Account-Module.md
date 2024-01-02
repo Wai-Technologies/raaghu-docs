@@ -1,4 +1,22 @@
-<link rel="stylesheet" type="text/css" href="styles.css">
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+    body {
+        font-family: 'Lexend', sans-serif;
+        font-size: 16px;
+        line-height: 1.6;
+        color: #333;
+        background-color: #fff;
+        margin: 0;
+        padding: 0;
+    }
+
+    h1, h2, h3 {
+        font-family: 'Lexend', sans-serif;
+        font-weight: 500;
+    }
+
+</style>
 
 Account
 =======
@@ -36,7 +54,7 @@ Login page is used to log in to the system.
 
 ### Register Page
 
-Register page allows new users to register to your system.
+Register Page allows new users to register to your system.
 
 ![Register page allows new users to register to your system](./images/register_page.png)
 
