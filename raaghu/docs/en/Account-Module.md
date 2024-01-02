@@ -1,6 +1,4 @@
 <style>
-    @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
-
     body {
         font-family: 'Lexend', sans-serif;
         font-size: 16px;
@@ -15,7 +13,6 @@
         font-family: 'Lexend', sans-serif;
         font-weight: 500;
     }
-
 </style>
 
 Account
