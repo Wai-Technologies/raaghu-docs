@@ -28,7 +28,7 @@ This module doesn't define any menu items.
 
 Login Page
 
-Login page is used to log in to the system.
+Login Page is used to log in to the system.
 
 ![Home page](./images/home-page.png)
 
