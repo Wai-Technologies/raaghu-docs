@@ -1,0 +1,1123 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- bootstrap dependencies -->
+    <link rel="stylesheet" href="Assets/css/bootstrap.min.css">
+    <link href="Assets/prism.css" rel="stylesheet" />
+    <script src="Assets/prism.js"></script>
+    <link rel="stylesheet" href="/index.css">
+    <link rel="icon" type="image/x-icon" href="Assets/images/raaghu-icon.png">
+    <title>Raaghu - SaaS</title>
+</head>
+
+
+<body>
+
+    <main>
+
+        <nav class="navbar navbar-expand-lg navbar-light ">
+            <div class="container-fluid ">
+                <div class="navbar-toggler-container">
+                    <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#sidebar,#navbarSupportedContent"
+                        aria-controls="sidebar" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <!-- <div class="dropdown show dropdown-specific">
+                        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Platform
+                        </a>
+
+                        <div class="dropdown-menu menu" aria-labelledby="dropdownMenuLink">
+                            <a class="dropdown-item" href="https://www.raaghu.io/features.html">Features</a>
+                            <a class="dropdown-item " href="https://portal.raaghu.io/">Documentation</a>
+                            <button type="button" class="btn btn-primary btn-contact mt-2">contact</button>
+                            <a href="https://github.com/Wai-Technologies/raaghu-angular" target="_blank">
+                                <li class="ps-lg-5 mt-2">
+                                    <img src="Assets/images/github-logo.svg" alt="abplogo logo" width="100%"
+                                        class="github-logo">
+                                </li>
+                            </a>
+                        </div>
+                    </div> -->
+                </div>
+                <a class="text-black navbar-brand" href="/">
+                    <img src="Assets/images/raaghu_logs.png" alt="raaghu logo" class="w-75  pe-lg-0">
+                </a>
+
+                <div class="collapse navbar-collapse align  justify-content-lg-end " id="navbarSupportedContent">
+                    <ul class="navbar-nav  mb-2 mb-lg-0">
+                        <li class="nav-item me-5">
+                            <a class="nav-link active " aria-current="page"
+                                href="https://raaghu-website-staging.netlify.app/raaghu-mfe-portal/_accordion.html">Components</a>
+                        </li>
+                        <li class="nav-item me-5">
+                            <a class="nav-link active " aria-current="page" href="#"><span
+                                    class="doc-color">Documentation</span></a>
+                        </li>
+                        <li class="nav-item me-5">
+                            <a class="nav-link active " aria-current="page"
+                                href="https://raaghu-website-staging.netlify.app/raaghu-mfe-portal/_accordion.html#">Support</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link active " aria-current="page"
+                                href="https://raaghu-website-staging.netlify.app/faq">FAQ</a>
+                        </li>
+                        <!-- <li class=" nav-item dropdown active">
+                            <a class="nav-link  text-dark me-5" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Platform
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-center " aria-labelledby="navbarDropdown">
+                                <ul class="list-unstyled dropdown-arrow">
+                                    <li class=" ps-4">
+                                        <p class="title pt-2">Raaghu Platform</p>
+                                        <div class="row">
+                                            <div class="col-lg-6 col-md-6">
+                                                <a href="https://portal.raaghu.io/" target="_blank"
+                                                    class="p-0 text-decoration-none text-reset">
+                                                    <div class="d-flex align-items-center gap-3">
+
+                                                        <img src="Assets/images/raaghu-portal-mg.svg"
+                                                            alt="raaghu-portal" class="mb-3">
+                                                        <p class="link-name">Raaghu Portal</p>
+
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="col-lg-6 col-md-6">
+                                                <a href="https://portal.raaghu.io/#Components-section" target="_blank"
+                                                    class="p-0 text-decoration-none text-reset">
+                                                    <div class="d-flex align-items-center gap-3">
+                                                        <img src="Assets/images/raaghu-components-mg.svg"
+                                                            alt="raaghu-components" class="mb-3">
+                                                        <p class="link-name">Raaghu Components</p>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-6 col-md-6">
+                                                <a href="https://portal.raaghu.io/#Elements-section" target="_blank"
+                                                    class="p-0 text-decoration-none text-reset">
+                                                    <div class="d-flex align-items-center gap-3">
+                                                        <img src="Assets/images/raaghu-elements-mg.svg"
+                                                            alt="raaghu-portal" class="mb-2">
+                                                        <p class="pt-2 link-name">Raaghu Elements</p>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="col-lg-6 col-md-6">
+                                                <div class="d-flex align-items-center gap-3">
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="bgcolor-dropdown">
+                                        <div class="ps-4">
+                                            <p class="pt-3 pb-1 title">WORKS ON</p>
+                                            <div class="row">
+                                                <div class="col-md-2 mb-2">
+                                                    <img src="Assets/images/asplogo-mg.svg" alt="asplogo logo"
+                                                        width="80%">
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <img src="Assets/images/abplogo-mg.svg" alt="abplogo logo"
+                                                        width="50%">
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item me-5">
+                            <a class="nav-link active " aria-current="page"
+                                href="https://www.raaghu.io/features.html">Features</a>
+                        </li>
+                        <li class="nav-item me-5">
+                            <a class="nav-link active " aria-current="page"
+                                href="https://portal.raaghu.io/">Documentation</a>
+                        </li>
+                        <button type="button" class="btn btn-primary btn-contact">contact</button>
+                        <a href="https://github.com/Wai-Technologies/raaghu-angular" target="_blank">
+                            <li class="ps-lg-5 pt-2">
+                                <img src="Assets/images/github-logo.svg" alt="abplogo logo" width="100%"
+                                    class="github-logo">
+                            </li>
+                        </a> -->
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="wrapper container-fluid">
+
+            <div class="row">
+
+                <div id="sidebar" class="col-12 col-lg-2 col-md-4 col-xl-2 col-xxl-2 collapse d-m-block mx-0 mx-lg-3 mx-md-3 mx-xl-3 mx-xxl-3 show">
+
+                    <nav>
+                        <div class="sidebar-header ">
+                            <a href="/" class="text-bg-dark">
+                                <h3 class="fs-5 fw-normal">Table Of Content</h3>
+                            </a>
+                        </div>
+
+                        <div class="accordion accordion-flush mx-3 doc-acc accordion-button-top" id="accordionExample">
+                            <div class="row pb-4">
+                                <div class="col-6 col-lg-6 col-md-6">
+                                    <select id="language-dropdown" class="sidebar-button">
+                                        <option value="en" selected>English</option>
+                                        <option value="pt">Português</option>
+                                        <option value="fr">French</option>
+                                        <option value="fi">Finnish</option>
+                                        <option value="hi">Hindi</option>
+                                        <option value="it">Italian</option>                                        
+                                        <option value="sk">Slovak</option>
+                                        <option value="de">German</option>
+                                        <option value="ru">Russian</option>
+                                        <option value="zh">Chinese</option>
+                                        <option value="af">Afrikaan</option>
+                                        <option value="ar">Arabic</option>
+                                        <!-- Add more language options if needed -->
+                                    </select>
+                                </div>
+                                <div class="col-6 col-lg-6 col-md-6">
+                                    <select class="sidebar-button w-100">
+                                        <option value="option1" id="version">Version</option>
+                                        <option value="option2" id="version">Version 2</option>
+                                        <option value="option3">Version 3</option>
+                                        <option value="option4">Version 4</option>
+                                    </select>
+
+                                </div>
+                            </div>
+                            <div class="accordion-item bg-dark">
+                                <h2 class="accordion-header" id="headingOne">
+                                    <a href="Getting-Started.html">
+                                        <button
+                                            class="accordion-button d-flex flex-row-reverse justify-content-end p-0 bg-dark mt-1"
+                                            type="button" data-bs-toggle="collapse" data-bs-target="#coll"
+                                            aria-expanded="false" aria-controls="collapseOne">
+                                            Getting Started
+                                        </button></a>
+                                </h2>
+
+                                <div id="coll" class="accordion-collapse collapse  border-0 rounded-0 p-0"
+                                    aria-labelledby="headOne" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Setup-Your-Development-Environment.html">Setup your development
+                                            environment</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Creating-A-New-Solution.html">Creating A New Solution</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Running-The-Solution.html">Running the Solution</a>
+                                    </div>
+                                </div>
+                                <h2 class="accordion-header" id="headingTwo">
+                                    <button
+                                        class="accordion-button d-flex flex-row-reverse justify-content-end p-0 bg-dark mt-2"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                        aria-expanded="false" aria-controls="collapseOne">
+                                        Tutorials
+                                    </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse  border-0 rounded-0 p-0"
+                                    aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <h2 class="accordion-header" id="headingTwo">
+                                            <button
+                                                class="accordion-button d-flex flex-row-reverse justify-content-end p-0 bg-dark mt-2"
+                                                type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                                                aria-expanded="false" aria-controls="collapseOne">
+                                                Web Application Development
+                                            </button>
+                                        </h2>
+                                        <div id="collapseThree"
+                                            class="accordion-collapse collapse  border-0 rounded-0 p-0 pt-2"
+                                            aria-labelledby="headingTwo" data-bs-parent="#accordionExamplee">
+                                            <div class="accordion-body bg-dark px-4 p-1">
+                                                <a href="Creating-The-Server-Side.html">Creating the Server
+                                                    Side</a>
+                                            </div>
+                                        </div>
+                                        <div id="collapseThree"
+                                            class="accordion-collapse collapse  border-0 rounded-0 p-0"
+                                            aria-labelledby="headingTwo" data-bs-parent="#accordionExamplee">
+                                            <div class="accordion-body bg-dark px-4 p-1">
+                                                <a href="The-Book-List-Page.html">The Book List Page</a>
+                                            </div>
+                                        </div>
+                                        <div id="collapseThree"
+                                            class="accordion-collapse collapse  border-0 rounded-0 p-0"
+                                            aria-labelledby="headingTwo" data-bs-parent="#accordionExamplee">
+                                            <div class="accordion-body bg-dark px-4 p-1">
+                                                <a href="Creating-Updating-And-Deleting-Book.html">Creating,Updating
+                                                    And
+                                                    Deleting Book</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <h2 class="accordion-header" id="headingFour">
+                                    <button
+                                        class="accordion-button d-flex flex-row-reverse justify-content-end p-0 bg-dark mt-2"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour"
+                                        aria-expanded="false" aria-controls="collapseOne">
+                                        Guides
+                                    </button>
+                                </h2>
+                                <div id="collapseFour" class="accordion-collapse collapse  border-0 rounded-0 p-0"
+                                    aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Customizing-The-Modules.html">Customizing the Modules</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Identity-Server-Deployment.html">Identity Server Deployment</a>
+                                    </div>
+                                </div>
+
+
+                                <h2 class="accordion-header" id="headingFive">
+                                    <button
+                                        class="accordion-button d-flex flex-row-reverse justify-content-end p-0 bg-dark mt-2"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive"
+                                        aria-expanded="false" aria-controls="collapseOne">
+                                        Samples
+                                    </button>
+                                </h2>
+                                <div id="collapseFive" class="accordion-collapse collapse  border-0 rounded-0 p-0"
+                                    aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="All-Samples.html">All Samples</a>
+                                    </div>
+                                </div>
+                                <h2 class="accordion-header" id="headingSix">
+                                    <a href="Startup-Template.html">
+                                        <button
+                                            class="accordion-button d-flex flex-row-reverse justify-content-end p-0 bg-dark mt-2"
+                                            type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix"
+                                            aria-expanded="false" aria-controls="collapseOne">
+                                            Startup Template
+                                        </button></a>
+                                </h2>
+                                <div id="collapseSix" class="accordion-collapse collapse  border-0 rounded-0 p-0"
+                                    aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <h2 class="accordion-header" id="headingSix">
+                                            <button
+                                                class="accordion-button d-flex flex-row-reverse justify-content-end p-0 bg-dark mt-2"
+                                                type="button" data-bs-toggle="collapse" data-bs-target="#headingS"
+                                                aria-expanded="false" aria-controls="collapseOne">
+                                                Application Templates
+                                            </button>
+                                        </h2>
+                                        <div id="headingS"
+                                            class="accordion-collapse collapse  border-0 rounded-0 p-0 pt-2"
+                                            aria-labelledby="headingSix" data-bs-parent="#accordionExamplee">
+                                            <div class="accordion-body bg-dark px-4 p-1">
+                                                <a href="Creating-Solution.html">Creating Solution</a>
+                                            </div>
+                                        </div>
+                                        <div id="headingS" class="accordion-collapse collapse  border-0 rounded-0 p-0"
+                                            aria-labelledby="headingSix" data-bs-parent="#accordionExamplee">
+                                            <div class="accordion-body bg-dark px-4 p-1">
+                                                <a href="Solution-Structure.html">Solution Structure</a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                                <h2 class="accordion-header" id="headingSeven">
+                                    <button
+                                        class="accordion-button d-flex flex-row-reverse justify-content-end p-0 bg-dark mt-2"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven"
+                                        aria-expanded="true" aria-controls="collapseOne">
+                                        Application Modules
+                                    </button>
+                                </h2>
+                                <div id="collapseSeven" class="accordion-collapse collapse show border-0 rounded-0 p-0"
+                                    aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Overall.html">Overall</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Account-Module.html">Account</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Audit-Logging.html">Audit Logging</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Chat.html">Chat</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="CMS-Kit-Pro.html">CMS Kit Pro</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="File-Management.html">File Management</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Forms.html">Forms</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Identity.html">Identity</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="OpenIddict.html">OpenIddict</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Language-Management.html">Language Management</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Payment.html">Payment</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="SaaS.html"><span class="accordian-active">SaaS</span></a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Text-Template-Management.html">Text Template Management</a>
+                                    </div>
+                                </div>
+                                <h2 class="accordion-header" id="headingNine">
+                                    <a href="UI-Themes.html">
+                                        <button
+                                            class="accordion-button d-flex flex-row-reverse justify-content-end p-0 bg-dark mt-2"
+                                            type="button" data-bs-toggle="collapse" data-bs-target="#headingNine"
+                                            aria-expanded="false" aria-controls="collapseOne">
+                                            UI Themes
+                                        </button>
+                                    </a>
+                                </h2>
+                                <h2 class="accordion-header" id="headingReactUITheme">
+                                    <button
+                                        class="accordion-button d-flex flex-row-reverse justify-content-end p-0 bg-dark mt-2"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#headingReactUI"
+                                        aria-expanded="false" aria-controls="collapseOne">
+                                        React UI
+                                    </button>
+                                </h2>
+                                <div id="headingReactUI" class="accordion-collapse collapse  border-0 rounded-0 p-0"
+                                    aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Customization.html">customization</a>
+                                    </div>
+
+                                </div>
+                                <div id="headingReactUI" class="accordion-collapse collapse  border-0 rounded-0 p-0"
+                                    aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Components.html">Components</a>
+                                    </div>
+
+                                </div>
+                                <!-- For Release Information -->
+                                <h2 class="accordion-header" id="headingFive">
+                                    <button
+                                        class="accordion-button d-flex flex-row-reverse justify-content-end p-0 bg-dark mt-2"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseLast"
+                                        aria-expanded="false" aria-controls="collapseOne" id="samples">
+                                       <span id="relinfo">Release Information</span> 
+                                    </button>
+                                </h2>
+                                <div id="collapseLast" class="accordion-collapse collapse  border-0 rounded-0 p-0"
+                                    aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Release-Notes.html" id="allSamples"><span id="relnote">Release Notes</span></a>
+                                    </div>
+                                </div>
+                                <!-- ====================================== -->
+                            </div>
+                        </div>
+                        <ul class="list-unstyled CTAs  w-100">
+                            <li>
+                                <a href="https://bootstrapious.com/tutorial/files/sidebar.zip" class="download">Download
+                                    source</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="col-12 col-lg-8 col-md-7 col-xl-6 col-xxl-6 offset-lg-4 offset-md-5 offset-xl-3 offset-xxl-3 ps-xl-5 ps-xxl-0 px-lg-3 px-md-4 px-xl-0">
+                    <!-- Page Content  -->
+                    <div id="content">
+                        <div class="modal fade" id="contactusModal" tabindex="-1" aria-labelledby="contactusModalLabel"
+                            aria-hidden="true">
+
+                            <div class="modal-dialog modal-lg modal-dialog-centered">
+
+                                <div class="modal-content">
+
+                                    <!-- <div class="modal-header">
+                  
+                                  <h5 class="modal-title" id="contactusModalLabel">Modal title</h5>
+                  
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  
+                                </div> -->
+
+                                    <div class="modal-body p-0">
+
+
+
+
+                                        <div class="row">
+
+                                            <div class="col-md-6 col-sm-12 bg-dark">
+
+                                                <div class="mt-5">
+
+                                                    <img src="Assets/images/raaghu-logo-white.png"
+                                                        class="img-fluid w-25 pl-2">
+
+
+
+                                                    <img src="Assets/images/raaghu-banner-modal.png" class="img-fluid">
+
+                                                </div>
+
+                                            </div>
+
+
+
+                                            <div class="col-md-6 col-sm-12">
+
+                                                <div class="row">
+
+                                                    <div class="col-md-12 text-end pull-right">
+
+                                                        <button type="button"
+                                                            class="btn-close float-right pull-right m-3 text-muted"
+                                                            data-bs-dismiss="modal" aria-label="Close"></button>
+
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="p-4">
+
+                                                    <h6>
+
+                                                        Kindly fill the details below
+
+                                                    </h6>
+
+                                                    <p>
+
+                                                        <small> We will get back to you within 48 hours </small>
+
+                                                    </p>
+
+                                                    <div class="mt-5">
+
+                                                        <form method="post" id="want-to-hear-form">
+
+                                                            <div class="mb-3 form-group">
+
+                                                                <label for="emailId" class="form-label">Email ID
+
+                                                                    <span class="text-danger">*</span>
+
+                                                                </label>
+
+                                                                <input type="email" name="emailId"
+                                                                    class="form-control p-2" id="emailId"
+                                                                    placeholder="Enter your email id">
+
+                                                            </div>
+
+                                                            <div class="mb-3 form-group">
+
+                                                                <label for="companyName" class="form-label">Company Name
+
+                                                                    <span class="text-danger">*</span>
+
+                                                                </label>
+
+                                                                <input type="text" class="form-control p-2"
+                                                                    placeholder="Enter your Company Name"
+                                                                    name="companyName" id="companyName">
+
+                                                            </div>
+
+                                                            <div class="mb-3 form-group">
+
+                                                                <label for="message" class="form-label">Message
+
+                                                                    <span class="contactUs-Optional">(Optional)</span>
+
+
+                                                                </label>
+
+                                                                <textarea class="form-control p-2" name="message"
+                                                                    id="message" rows="3"
+                                                                    placeholder="Write your message.."></textarea>
+
+                                                            </div>
+
+                                                            <div class="mb-3 form-check">
+
+                                                                <input type="checkbox" class="form-check-input"
+                                                                    id="exampleCheck1">
+
+                                                                <label class="form-check-label" for="exampleCheck1">I
+                                                                    agree to the <a href="#"> terms & privacy policy
+                                                                    </a></label>
+
+                                                            </div>
+
+                                                            <button type="submit"
+                                                                class="btn btn-primary btn-sm btn-block float-end mb-4">Submit</button>
+
+                                                        </form>
+
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div> <input class="form-control  mb-5" type="search" placeholder="Search" aria-label="Search">
+                        </div>
+                        <div>
+                            <h1 class="fw-semibold mb-3" id="saamod"></h1>
+                            <p id="thismodmanage">This module is used to manage your tenants and editions in
+                                multi-tenant applications;</p>
+                            <ul class="ps-3">
+                                <li class="mt-2" id="tenantsand">Manage <strong>tenants</strong> and
+                                    <strong>editions</strong> in the
+                                    system. A tenant is allowed to have one edition.</li>
+                                <li class="mt-2" id="setfeat">Set <strong>features</strong> of tenants.</li>
+                                <li class="mt-2" id="connstr">Set <strong>connection string</strong> of tenants.</li>
+                                <li class="mt-2" id="paced">Set <strong>features</strong> of editions and tenants.</li>
+                            </ul>
+                            <p id="overviewoffea">See <a href="https://commercial.abp.io/modules/Volo.Saas">the module
+                                    description page</a>
+                                for an overview of the module features.</p>
+                        </div>
+                        <div>
+                            <h2 class="fw-semibold pb-2" id="psge">Packages</h2>
+                            <p id="thismodfoll">This module follows the <a
+                                    href="https://docs.abp.io/en/abp/latest/Best-Practices/Index">module development
+                                    best practices guide</a> and consists of several NuGet and NPM packages. See the
+                                guide if you want to understand the packages and relations between them.</p>
+                            <p id="packagesrelated">You can visit <a
+                                    href="https://abp.io/packages?moduleName=Volo.Saas">SaaS module package
+                                    list page</a> to see list of packages related with this module.</p>
+                        </div>
+                        <div>
+                            <h3 class="fw-semibold pt-2 pb-2" id="tenantedit">Tenant-Edition Subscription</h3>
+                            <p id="toeditions">SaaS module implements subscribing to Editions for Tenants using Payment
+                                module. To enable
+                                it, project must contain <span class="txt-color">Volo.Saas</span> and <span
+                                    class="txt-color">Volo.Payment</span> modules and these modules must be configured
+                                as
+                                shown below.</p>
+                        </div>
+                        <div>
+                            <h3 class="fw-semibold pt-3 pb-3" id="confign">Configuration</h3>
+                            <p id="paymodd">Firstly, Payment module must be configured properly:</p>
+                            <ul class="ps-3">
+                                <li class="mt-2" id="instvol">Install Volo.Payment module.</li>
+
+                                <pre
+                                    class="my-4"><code class="language-javascript">abp add-module Volo.Payment</code></pre>
+
+                                <p class="opacity-50" id="bassh">Bash</p>
+                                <p id="cyp">Copy</p>
+                                <p id="oryou">Or you can install via using ABP Suite.</p>
+                                <li class="mt-2" id="confsaa">Configure Saas module to use Payment.</li>
+
+                                <pre class="my-4"><code class="language-javascript">Configure<AbpSaasPaymentOptions>(options =>
+            {
+                options.IsPaymentSupported = true;
+            });</code></pre>
+
+
+                                <p class="opacity-50">C#</p>
+                                <p id="ccyc">Copy</p>
+                                <li class="mt-2" id="follthe">Follow the
+                                    <a
+                                        href="https://docs.abp.io/en/commercial/7.0/modules/payment#subscriptions">subscriptions</a>
+                                    section of
+                                    <a href="https://docs.abp.io/en/commercial/7.0/modules/payment#subscriptions">Payment
+                                        Module Documentation</a>. Complete
+                                    <a href="https://docs.abp.io/en/commercial/7.0/modules/payment#enabling-webhooks">enabling
+                                        webhooks</a> and
+                                    <a href="https://docs.abp.io/en/commercial/7.0/modules/payment#configuring-plans">configuring
+                                        plans</a> sections.
+                                </li>
+                                <li class="mt-2" id="runtheapp">Run the application and go to <span
+                                        class="txt-color">Saas >
+                                        Editions</span> page at your Web Application menu.</li>
+                                <li class="mt-2" id="usage">Create or Edit an existing Edition. <strong>Plan</strong>
+                                    dropdown must
+                                    be visible if you've done earlier steps correctly. Pick a Plan for Edition.</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="fw-semibold pt-3 pb-3" id="uge">Usage</h3>
+                            <p id="containeapub">SaaS module doesn't contain a public facing list page for listing
+                                editions for new
+                                customers/tenants to subscribe. First, you need to create such a page in your
+                                application. Then, when a new customer/tenant selects one of those Editions, you can
+                                create a subscription and redirect user to payment module as shown below.</p>
+                            <ul class="ps-3">
+                                <li class="mt-2" id="inje">Inject <span class="txt-color">ISubscriptionAppService</span>
+                                    to create
+                                    a subscription for a edition:</li>
+
+                                <pre class="my-4"><code class="language-javascript">public class IndexModel : PageModel
+        {
+                protected ISubscriptionAppService SubscriptionAppService { get; }
+        
+                protected ICurrentTenant CurrentTenant { get; }
+        
+                public IndexModel(
+                    ISubscriptionAppService subscriptionAppService,
+                    ICurrentTenant currentTenant)
+                {
+                    SubscriptionAppService = subscriptionAppService;
+                    CurrentTenant = currentTenant;
+                            }
+
+        public async Task<IActionResult> OnPostAsync(Guid editionId)
+        {
+            var paymentRequest = await SubscriptionAppService.CreateSubscriptionAsync(editionId, CurrentTenant.GetId());
+
+            return LocalRedirectPreserveMethod("/Payment/GatewaySelection?paymentRequestId=" + paymentRequest.Id);
+        }
+    }</code></pre>
+
+                            </ul>
+                            <p id="whenthepay">When the payment is completed successfully, the tenant and edition
+                                relation will be
+                                updated according to subscription status. Make sure Payment Gateway Web Hooks are
+                                configured properly.</p>
+                            <p id="uiafter">After all, payment module will redirect user to the callbackUrl if configured in
+                                <a href="https://docs.abp.io/en/commercial/7.0/modules/payment#paymentweboptions">payment
+                                    configuration</a>
+                                with a paymentRequestId parameter. In this page, you can check the status
+                                of the payment request and show a success message to the user when the payment status is
+                                confirmed. Since the payment confirmation is asynchronous, you need to check the payment
+                                status repeatedly until it is confirmed.</p>
+                        </div>
+                        <div>
+                            <h3 class="fw-semibold pt-3 pb-3" id="usint">User interface</h3>
+                            <h4 class="fw-semibold" id="menuitsss">Menu items</h4>
+                            <p id="follite">SaaS module adds the following items to the "Main" menu, under the
+                                "Administration" menu item:</p>
+                            <ul class="ps-3">
+                                <li class="mt-2" id="tenantmgt"><strong>Tenants</strong>: Tenant management page.</li>
+                                <li class="mt-2" id="pagas"><strong>Editions</strong>: Edition management page.</li>
+                            </ul>
+                            <p id="saashost"><span class="txt-color">SaasHostMenuNames</span> and <span
+                                    class="txt-color">SaasTenantMenuNames</span> classes have the constants for the menu
+                                item names.</p>
+                        </div>
+                        <div>
+                            <h3 class="fw-semibold pt-3 pb-3" id="paags">Pages</h3>
+                            <p id="tenantmgts">Tenant management</p>
+                            <p id="isusee">Tenant page is used to manage tenants in the system.</p>
+
+                            <img src="Assets/images/newTenant.jpg" alt="New Tenant" class="img-fluid my-4">
+                            <p class="mt-3" id="cs">You can create a new tenant or edit a tenant in this page:</p>
+                            <img src="Assets/images/addNewTenant.jpg"
+                                alt="You can create a new tenant or edit a tenant in this page" class="img-fluid my-4">
+                        </div>
+                        <div>
+                            <h3 class="fw-semibold pt-3 pb-3" id="stringcon">Connection String</h3>
+                            <p id="managecon">You can manage connection string of a tenant in case you want to use a
+                                separate database for a specific tenant. If you want to use Host database for a tenant,
+                                select "Use the Shared Database" option.</p>
+                            <p id="TF">You can also use the module-specific database connection string feature. In this
+                                case, you should select the "Use module specific database connection string" option,
+                                then you can determine your modules and their connection strings. Before adding you can
+                                check your connection by clicking "Check"</p>
+                        </div>
+                        <div>
+                            <h3 class="fw-semibold pt-3 pb-3" id="tenfeta">Tenant Features</h3>
+                            <p id="youcansette">You can set features of tenants.</p>
+                            <img src="Assets/images/editTenant.jpg" alt="You can set features of tenants"
+                                class="img-fluid my-4">
+                            <p id="edimt">Edition management</p>
+                            <p id="editpageuse">Editions page is used to manage the editions in your system.</p>
+                            <img src="Assets/images/newEdition.jpg"
+                                alt="Editions page is used to manage the editions in your system"
+                                class="img-fluid my-4">
+                            <p class="mt-3" id="EF">You can create a new edition or edit an existing edition in this
+                                page:</p>
+                            <img src="Assets/images/newEditionName.jpg"
+                                alt="Create a new edition or edit an existing edition" class="img-fluid my-4">
+                        </div>
+                        <div>
+                            <h3 class="fw-semibold pt-4 pb-4" id="editfeat">Edition Features</h3>
+                            <p id="anedit">You can set features of an edition in this page:</p>
+                            <img src="Assets/images/editionFeatures.jpg" alt="Set features of an edition in this page"
+                                class="img-fluid my-4">
+                        </div>
+
+
+
+
+
+                    </div>
+                </div>
+
+
+                <div class="col-12 col-lg-8 col-md-7 col-xl-2 col-xxl-2 docs-page-index offset-lg-4 offset-xl-0 offset-md-5 offset-xxl-0 px-md-4">
+                    <div class="position-fixed  my-3 w-auto mx-lg-0 mx-xl-3 mx-xxl-3 pe-lg-3 pe-xl-0 pe-xxl-0 position-lg-relative">
+                    <div class="card border-0 box rounded-3 mb-3">
+                        <div class="card-body">
+                            <h4 class="card-title py-1" id="inthisdoc">In this document</h4>
+                            <div class="opacity-50">
+                                <ul class="card-text small  list-unstyled ul-ad">
+                                    <li id="secpgs"><a href="#pac" class="text-black">Packages</a></li>
+                                    <li id="sectenant"><a href="#pac" class="text-black">Tenant-Edition Subscription</a>
+                                    </li>
+                                    <li id="secconfig"><a href="#pac" class="text-black">Configuration</a></li>
+                                    <li id="secusage"><a href="#usage" class="text-black">Usage</a></li>
+                                    <li id="secuserinterddd"><a href="#ui" class="text-black">User interface</a></li>
+                                    <li id="secpagess"><a href="#pag" class="text-black">Pages</a></li>
+                                    <li id="secstring"><a href="#cs" class="text-black">Connection String</a></li>
+                                    <li id="sectenantss"><a href="#TF" class="text-black">Tenant Features</a></li>
+                                    <li id="secedit"><a href="#EF" class="text-black">Edition Features</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card  border-0 box  bg-advertise "  >
+                        <div class="card-body abp-community-card  rounded-3 bg-sec ">
+                            <div class="row  ">
+                                <div class="col-lg-5 col-md-5 col-5"> <img src="Assets/images/React_logo.png" alt="raaghu logo" class="w-100"></div>
+                                <div class="col-lg-7 mt-1  col-md-7 mt-1 col-7"> <img src="Assets/images/abp-sec.png" alt="raaghu logo" class="w-100"></div>
+                                <!-- <div class="col-lg-6"><img src="Assets/images/abp-com.svg" alt="raaghu logo" class="w-100"></div> -->
+
+                            </div>
+                            <div class="border-under-sec my-3"></div>
+                            <div class="colored-sec-design py-1">
+                                <ul class="ps-4">
+                                    <li>CLI for CRUD generation</li>
+                                    <li>Component driven development</li>
+                                    <li>Purpose build UI kit for ABP commercial</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <button type="button" class="btn btn-primary mt-1 w-100" data-bs-toggle="modal"
+                                    data-bs-target="#contactusModal">Contact Us</button>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <!-- <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-0 col-12 docs-page-index">
+                    <div class="card mt-4 top-25 me-lg-4 border-0 shadow py-4">
+                        <div class="card-body">
+                            <h5 class="card-title">In This Document</h5>
+                            <p class="card-text small">Some quick example text to build on the card title and make up
+                                the bulk of the card's content.</p>
+
+                        </div>
+                    </div>
+                </div> -->
+
+            </div>
+
+
+
+        </div>
+
+    </main>
+
+    <!-- bootstrap dependencies -->
+    <script src="Assets/js/bootstrap.min.js"></script>
+    <script src="scripts/translation.js"></script>
+</body>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var languageDropdown = document.getElementById('language-dropdown');
+        languageDropdown.addEventListener('change', function () {
+            var selectedLanguage = languageDropdown.value;
+            if (selectedLanguage === 'pt') {
+                // Sidebar Code in js File
+
+
+                // Body Content
+
+                document.getElementById('saamod').innerHTML = 'Módulo SaaS';
+                document.getElementById('thismodmanage').innerHTML = 'Este módulo é usado para gerenciar seus inquilinos e edições em aplicativos multilocatários;';
+                document.getElementById('tenantsand').innerHTML = 'Este módulo é usado para gerenciar seus inquilinos e edições em aplicativos multilocatários;';
+                document.getElementById('setfeat').innerHTML = 'Definir <strong>recursos</strong> de inquilinos.';
+                document.getElementById('connstr').innerHTML = 'Definir <strong>cadeia de conexão</strong> de locatários.';
+                document.getElementById('pac').innerHTML = 'Conjunto de <strong>recursos</strong> de edições e locatários.';
+                document.getElementById('overviewof').innerHTML = 'Consulte <a href="https://commercial.abp.io/modules/Volo.Saas">a página de descrição do módulo</a> para obter uma visão geral dos recursos do módulo.';
+                document.getElementById('psge').innerHTML = 'pacotes';
+                document.getElementById('thismodfoll').innerHTML = 'Este módulo segue o <a href="https://docs.abp.io/en/abp/latest/Best-Practices/Index">desenvolvimento do módulo guia de práticas recomendadas</a> e consiste em vários pacotes NuGet e NPM. Veja o guia se você quiser entender os pacotes e as relações entre eles.';
+                document.getElementById('packagesrelated').innerHTML = 'Você pode visitar <a href="https://abp.io/packages?moduleName=Volo.Saas">pacote do módulo SaaS página de lista</a> para ver a lista de pacotes relacionados com este módulo.';
+                document.getElementById('tenantedit').innerHTML = 'Assinatura da edição do locatário';
+                document.getElementById('toeditions').innerHTML = 'O módulo SaaS implementa a assinatura de edições para locatários usando o módulo de pagamento. para habilitar nele, o projeto deve conter <span class="txt-color">Volo.Saas</span> e <span class="txt-color">Volo.Payment</span> e esses módulos devem ser configurados como mostrado abaixo.';
+                document.getElementById('confign').innerHTML = 'Configuração';
+                document.getElementById('paymodd').innerHTML = 'Em primeiro lugar, o módulo de pagamento deve ser configurado corretamente:';
+                document.getElementById('instvol').innerHTML = 'Instale o módulo Volo.Payment.';
+                document.getElementById('bassh').innerHTML = 'bash';
+                document.getElementById('cyp').innerHTML = 'cópia de';
+                document.getElementById('oryou').innerHTML = 'Ou você pode instalar usando o ABP Suite.';
+                document.getElementById('ccy').innerHTML = 'cópia de';
+                document.getElementById('follthe').innerHTML = 'Segue o <a href="https://docs.abp.io/en/commercial/7.0/modules/payment#subscriptions">assinaturas</a> Seção de <a href="https://docs.abp.io/en/commercial/7.0/modules/payment#subscriptions">Pagamento Documentação do Módulo</a>. Completo <a href="https://docs.abp.io/en/commercial/7.0/modules/payment#enabling-webhooks">habilitando webhooks</a> e <a href="https://docs.abp.io/en/commercial/7.0/modules/payment#configuring-plans">configuração planos</a> seções.';
+                document.getElementById('runtheapp').innerHTML = 'Execute o aplicativo e vá para <span class="txt-color">Saas > Página de edições</span> no menu do aplicativo da Web.';
+                document.getElementById('usage').innerHTML = 'Crie ou edite uma edição existente. O menu suspenso <strong>Plano</strong> deve estar visível se você tiver feito as etapas anteriores corretamente. Escolha um plano para a edição.';
+                document.getElementById('uge').innerHTML = 'Uso';
+                document.getElementById('containeapub').innerHTML = 'O módulo SaaS não contém uma página de lista voltada para o público para listar edições para novos clientes/locatários para se inscrever. Primeiro, você precisa criar essa página em seu aplicativo. Então, quando um novo cliente/inquilino seleciona uma dessas edições, você pode crie uma assinatura e redirecione o usuário para o módulo de pagamento conforme mostrado abaixo.';
+                document.getElementById('inje').innerHTML = 'Injete <span class="txt-color">ISubscriptionAppService</span> para criar uma assinatura para uma edição:';
+                document.getElementById('whenthepay').innerHTML = 'Quando o pagamento for concluído com sucesso, a relação de locatário e edição será atualizado de acordo com o status da assinatura. Certifique-se de que os Web Hooks do gateway de pagamento estejam configurado corretamente.';
+                document.getElementById('ui').innerHTML = 'Afinal, o módulo de pagamento redirecionará o usuário para o callbackUrl se configurado em <a href="https://docs.abp.io/en/commercial/7.0/modules/payment#paymentweboptions">pagamento configuração</a> com um parâmetro paymentRequestId. Nesta página, você pode verificar o status da solicitação de pagamento e mostrar uma mensagem de sucesso ao usuário quando o status do pagamento for confirmado. Como a confirmação do pagamento é assíncrona, você precisa verificar o pagamento status repetidamente até que seja confirmado.';
+                document.getElementById('usint').innerHTML = 'Interface de usuário';
+                document.getElementById('menuits').innerHTML = 'Itens do menu';
+                document.getElementById('follite').innerHTML = 'O módulo SaaS adiciona os seguintes itens ao menu "Principal", no item de menu "Administração":';
+                document.getElementById('tenantmgt').innerHTML = '<strong>Locatários</strong>: página de gerenciamento de locatários.';
+                document.getElementById('pag').innerHTML = '<strong>Edições</strong>: página de gerenciamento de edições.';
+                document.getElementById('saashost').innerHTML = 'As classes <span class="txt-color">SaasHostMenuNames</span> e <span class="txt-color">SaasTenantMenuNames</span> têm as constantes para os nomes dos itens de menu.';
+                document.getElementById('paags').innerHTML = 'Páginas';
+                document.getElementById('tenantmgts').innerHTML = 'Gerenciamento de inquilinos';
+                document.getElementById('isusee').innerHTML = 'A página do inquilino é usada para gerenciar inquilinos no sistema.';
+                document.getElementById('cs').innerHTML = 'Você pode criar um novo inquilino ou editar um inquilino nesta página:';
+                document.getElementById('stringcon').innerHTML = 'Cadeia de conexão';
+                document.getElementById('managecon').innerHTML = 'Você pode gerenciar a string de conexão de um inquilino caso queira usar um banco de dados separado para um inquilino específico. Se você quiser usar o banco de dados Host para um locatário, selecione a opção "Usar o banco de dados compartilhado".';
+                document.getElementById('TF').innerHTML = 'Você também pode usar o recurso de string de conexão de banco de dados específico do módulo. Nesse caso, você deve selecionar a opção "Usar string de conexão de banco de dados específica do módulo" e determinar seus módulos e suas strings de conexão. Antes de adicionar, você pode verificar sua conexão clicando em "Verificar"';
+                document.getElementById('tenfeta').innerHTML = 'Recursos do inquilino';
+                document.getElementById('youcansette').innerHTML = 'Você pode definir os recursos dos inquilinos.';
+                document.getElementById('edimt').innerHTML = 'Gerenciamento de edição';
+                document.getElementById('editpageuse').innerHTML = 'A página de edições é usada para gerenciar as edições em seu sistema.';
+                document.getElementById('EF').innerHTML = 'Você pode criar uma nova edição ou editar uma edição existente nesta página:';
+                document.getElementById('editfeat').innerHTML = 'Recursos da edição';
+                document.getElementById('anedit').innerHTML = 'Você pode definir os recursos de uma edição nesta página:';
+                // For In this doc section
+                document.getElementById('inthisdoc').innerHTML = 'neste documento';
+                document.getElementById('secpgs').innerHTML = '<a href="#pac" class="text-black">Pacotes</a>';
+                document.getElementById('sectenant').innerHTML = '<a href="#pac" class="text-black">Assinatura Tenant-Edition</a>';
+                document.getElementById('secconfig').innerHTML = '<a href="#pac" class="text-black">Configuração</a>';
+                document.getElementById('secusage').innerHTML = '<a href="#usage" class="text-black">Uso</a>';
+                document.getElementById('secuserinter').innerHTML = '<a href="#ui" class="text-black">Interface do usuário</a>';
+                document.getElementById('secpagess').innerHTML = '<a href="#pag" class="text-black">Páginas</a>';
+                document.getElementById('secstring').innerHTML = '<a href="#cs" class="text-black">String de conexão</a>';
+                document.getElementById('sectenantss').innerHTML = '<a href="#TF" class="text-black">Recursos do locatário</a>';
+                document.getElementById('secedit').innerHTML = '<a href="#EF" class="text-black">Recursos da edição</a>';
+            }
+            else if (selectedLanguage === 'French') {
+                
+                // Body Content
+
+                document.getElementById('saamod').innerHTML = 'Module SaaS';
+                document.getElementById('thismodmanage').innerHTML = 'Ce module est utilisé pour gérer vos locataires et éditions dans des applications multi-locataires ;';
+                document.getElementById('tenantsand').innerHTML = 'Ce module est utilisé pour gérer vos locataires et éditions dans des applications multi-locataires ;';
+                document.getElementById('setfeat').innerHTML = 'Définissez les <strong>ressources</strong> du locataire.';
+                document.getElementById('connstr').innerHTML = 'Définissez la <strong>chaîne de connexion</strong> des locataires.';
+                document.getElementById('pac').innerHTML = 'Ensemble de <strong>fonctionnalités</strong> d\'éditions et de locataires.';
+                document.getElementById('overviewof').innerHTML = 'Consultez la <a href="https://commercial.abp.io/modules/Volo.Saas">page de description du module</a> pour un aperçu des fonctionnalités du module.';
+                document.getElementById('psge').innerHTML = 'paquets';
+                document.getElementById('thismodfoll').innerHTML = 'Ce module suit le <a href="https://docs.abp.io/en/abp/latest/Best-Practices/Index">guide des meilleures pratiques de développement de modules</a> et se compose de plusieurs packages NuGet et NPM. Consultez le guide si vous souhaitez comprendre les packages et les relations entre eux.';
+                document.getElementById('packagesrelated').innerHTML = 'Vous pouvez visiter la <a href="https://abp.io/packages?moduleName=Volo.Saas">page de la liste des packages du module SaaS</a> pour voir la liste des packages liés à ce module.';
+                document.getElementById('tenantedit').innerHTML = 'Locataire modifier la signature';
+                document.getElementById('toeditions').innerHTML = 'Le module SaaS implémente l\'abonnement aux éditions pour les locataires utilisant le module de paiement. pour l\'activer, le projet doit contenir <span class="txt-color">Volo.Saas</span> et <span class="txt-color">Volo.Payment</span> et ces modules doivent être configurés comme indiqué ci-dessous.';
+                document.getElementById('confign').innerHTML = 'Paramètres';
+                document.getElementById('paymodd').innerHTML = 'Tout d\'abord, le module de paiement doit être configuré correctement :';
+                document.getElementById('instvol').innerHTML = 'Installez le module Volo.Payment.';
+                document.getElementById('bassh').innerHTML = 'frapper';
+                document.getElementById('cyp').innerHTML = 'copie de';
+                document.getElementById('oryou').innerHTML = 'Ou você pode instalar usando o ABP Suite.';
+                document.getElementById('ccy').innerHTML = 'copie de';
+                document.getElementById('follthe').innerHTML = 'Suivez la section <a href="https://docs.abp.io/en/commercial/7.0/modules/payment#subscriptions">abonnements</a> de <a href="https://docs.abp. io/en/commercial/7.0/modules/payment#subscriptions">Documentation du module de paiement</a>. Compléter <a href="https://docs.abp.io/en/commercial/7.0/modules/payment#enabling-webhooks">activer les webhooks</a> et <a href="https://docs.abp .io/en/commercial/7.0/modules/payment#configuring-plans">sections plans de configuration</a>.';
+                document.getElementById('runtheapp').innerHTML = 'Exécutez l\'application et accédez à la page <span class="txt-color">SaaS > Modifications</span> dans le menu de l\'application Web.';
+                document.getElementById('usage').innerHTML = 'Créer ou modifier un problème existant. Le menu déroulant <strong>Plan</strong> devrait être visible si vous avez correctement suivi les étapes précédentes. Choisissez un plan pour l\'édition.';
+                document.getElementById('uge').innerHTML = 'Utiliser';
+                document.getElementById('containeapub').innerHTML = 'Le module SaaS ne contient pas de page de liste publique pour répertorier les éditions auxquelles les nouveaux clients/locataires peuvent s\'inscrire. Tout d\'abord, vous devez créer cette page dans votre application. Ensuite, lorsqu\'un nouveau client/locataire sélectionne l\'une de ces éditions, vous pouvez créer un abonnement et rediriger l\'utilisateur vers le module de paiement comme indiqué ci-dessous.';
+                document.getElementById('inje').innerHTML = 'Injectez <span class="txt-color">ISubscriptionAppService</span> pour créer un abonnement à une édition :';
+                document.getElementById('whenthepay').innerHTML = 'Une fois le paiement effectué avec succès, la liste des locataires et des éditions sera mise à jour en fonction du statut de l\'abonnement. Assurez-vous que les crochets Web de la passerelle de paiement sont correctement configurés.';
+                document.getElementById('ui').innerHTML = 'Après tout, le module de paiement redirigera l\'utilisateur vers callbackUrl s\'il est configuré dans <a href="https://docs.abp.io/en/commercial/7.0/modules/payment#paymentweboptions">configuration de paiement</a> avec un paymentRequestId paramètre. Sur cette page, vous pouvez vérifier l\'état de la demande de paiement et afficher un message de réussite à l\'utilisateur lorsque l\'état du paiement est confirmé. Étant donné que la confirmation de paiement est asynchrone, vous devez vérifier l\'état du paiement à plusieurs reprises jusqu\'à ce qu\'il soit confirmé.';
+                document.getElementById('usint').innerHTML = 'interface utilisateur';
+                document.getElementById('menuits').innerHTML = 'éléments de menu';
+                document.getElementById('follite').innerHTML = 'Le module SaaS ajoute les éléments suivants au menu "Principal" sous l\'élément de menu "Administration" :';
+                document.getElementById('tenantmgt').innerHTML = '<strong>Locataires</strong> : page de gestion des locataires.';
+                document.getElementById('pag').innerHTML = '<strong>Éditions</strong> : page de gestion des éditions.';
+                document.getElementById('saashost').innerHTML = 'Les classes <span class="txt-color">SaasHostMenuNames</span> et <span class="txt-color">SaasTenantMenuNames</span> ont des constantes pour les noms des éléments de menu.';
+                document.getElementById('paags').innerHTML = 'pages';
+                document.getElementById('tenantmgts').innerHTML = 'gestion des locataires';
+                document.getElementById('isusee').innerHTML = 'La page locataire est utilisée pour gérer les locataires sur le système.';
+                document.getElementById('cs').innerHTML = 'Vous pouvez créer un nouveau locataire ou modifier un locataire sur cette page :';
+                document.getElementById('stringcon').innerHTML = 'chaîne de connexion';
+                document.getElementById('managecon').innerHTML = 'Vous pouvez gérer la chaîne de connexion d\'un locataire si vous souhaitez utiliser une base de données distincte pour un locataire spécifique. Si vous souhaitez utiliser la base de données hôte pour un locataire, sélectionnez l\'option "Utiliser la base de données partagée".';
+                document.getElementById('TF').innerHTML = 'Vous pouvez également utiliser la fonctionnalité de chaîne de connexion à la base de données spécifique au module. Dans ce cas, vous devez sélectionner l\'option "Utiliser la chaîne de connexion à la base de données spécifique au module" et déterminer vos modules et leurs chaînes de connexion. Avant d\'ajouter, vous pouvez vérifier votre connexion en cliquant sur "Vérifier"';
+                document.getElementById('tenfeta').innerHTML = 'Ressources des locataires';
+                document.getElementById('youcansette').innerHTML = 'Vous pouvez définir les capacités des locataires.';
+                document.getElementById('edimt').innerHTML = 'gestion des modifications';
+                document.getElementById('editpageuse').innerHTML = 'La page des modifications est utilisée pour gérer les modifications sur votre système.';
+                document.getElementById('EF').innerHTML = 'Vous pouvez créer une nouvelle édition ou modifier une édition existante sur cette page :';
+                document.getElementById('editfeat').innerHTML = 'fonctionnalités de l\'édition';
+                document.getElementById('anedit').innerHTML = 'Vous pouvez définir les fonctionnalités d\'une édition sur cette page :';
+                // For In this doc section
+                document.getElementById('inthisdoc').innerHTML = 'dans ce document';
+                document.getElementById('secpgs').innerHTML = '<a href="#pac" class="text-black">Forfaits</a>';
+                document.getElementById('sectenant').innerHTML = '<a href="#pac" class="text-black">Signature de l\'édition locataire</a>';
+                document.getElementById('secconfig').innerHTML = '<a href="#pac" class="text-black">Configuration</a>';
+                document.getElementById('secusage').innerHTML = '<a href="#usage" class="text-black">Utilisation</a>';
+                document.getElementById('secuserinter').innerHTML = '<a href="#ui" class="text-black">Interface utilisateur</a>';
+                document.getElementById('secpagess').innerHTML = '<a href="#pag" class="text-black">Pages</a>';
+                document.getElementById('secstring').innerHTML = '<a href="#cs" class="text-black">Chaîne de connexion</a>';
+                document.getElementById('sectenantss').innerHTML = '<a href="#TF" class="text-black">Ressources locataires</a>';
+                document.getElementById('secedit').innerHTML = '<a href="#EF" class="text-black">Caractéristiques de l\'édition</a>';
+            }
+            else if (selectedLanguage === 'Finnish') {
+                // Sisältö
+document.getElementById('saamod').innerHTML = 'SaaS-moduuli';
+document.getElementById('thismodmanage').innerHTML = 'Tätä moduulia käytetään vuokralaisten ja versioiden hallintaan moniasiakassovelluksissa;';
+document.getElementById('tenantsand').innerHTML = 'Tätä moduulia käytetään vuokralaisten ja versioiden hallintaan moniasiakassovelluksissa;';
+document.getElementById('setfeat').innerHTML = 'Määritä vuokralaisen <strong>resurssit</strong>.';
+document.getElementById('connstr').innerHTML = 'Määritä vuokralaisen <strong>yhteysmerkkijono</strong>.';
+document.getElementById('pac').innerHTML = 'Vuokralaisversioiden <strong>toiminnot</strong>.';
+document.getElementById('overviewof').innerHTML = 'Katso <a href="https://commercial.abp.io/modules/Volo.Saas">moduulin kuvaussivu</a> saadaksesi yleiskatsauksen moduulin ominaisuuksista.';
+document.getElementById('psge').innerHTML = 'paketit';
+document.getElementById('thismodfoll').innerHTML = 'Tämä moduuli noudattaa <a href="https://docs.abp.io/en/abp/latest/Best-Practices/Index">parhaita käytäntöjä moduulien kehityksessä</a> ja koostuu useista NuGet- ja NPM-paketeista. Tarkista opas, jos haluat ymmärtää paketit ja niiden väliset suhteet.';
+document.getElementById('packagesrelated').innerHTML = 'Voit käydä sivulla <a href="https://abp.io/packages?moduleName=Volo.Saas">SaaS-moduulin pakettiluettelo</a> nähdäksesi listan tämän moduulin liittyvistä paketeista.';
+document.getElementById('tenantedit').innerHTML = 'Vuokralaisversion muokkaus';
+document.getElementById('toeditions').innerHTML = 'SaaS-moduuli toteuttaa vuokralaisversioiden tilauksen vuokralaisille, jotka käyttävät maksamisen moduulia. Aktivoidaksesi sen, projektin on sisällettävä <span class="txt-color">Volo.Saas</span> ja <span class="txt-color">Volo.Payment</span> ja nämä moduulit on määritettävä kuten alla on ohjeistettu.';
+document.getElementById('confign').innerHTML = 'Asetukset';
+document.getElementById('paymodd').innerHTML = 'Ensinnäkin maksamisen moduuli on konfiguroitava oikein:';
+document.getElementById('instvol').innerHTML = 'Asenna Volo.Payment -moduuli.';
+document.getElementById('bassh').innerHTML = 'koputa';
+document.getElementById('cyp').innerHTML = 'kopioi';
+document.getElementById('oryou').innerHTML = 'Tai voit asentaa sen käyttämällä ABP Suitea.';
+document.getElementById('ccy').innerHTML = 'kopioi';
+document.getElementById('follthe').innerHTML = 'Seuraa <a href="https://docs.abp.io/en/commercial/7.0/modules/payment#subscriptions">tilauksia</a> -osaa <a href="https://docs.abp. io/en/commercial/7.0/modules/payment#subscriptions">Maksamisen moduulin dokumentaatiossa</a>. Täytä <a href="https://docs.abp.io/en/commercial/7.0/modules/payment#enabling-webhooks">aktivoi webhookit</a> ja <a href="https://docs.abp .io/en/commercial/7.0/modules/payment#configuring-plans">konfigurointi -osioita suunnitelmien osalta</a>.';
+document.getElementById('runtheapp').innerHTML = 'Suorita sovellus ja siirry sivulle <span class="txt-color">SaaS > Muutokset</span> sovelluksen valikosta.';
+document.getElementById('usage').innerHTML = 'Luo tai muokkaa olemassa olevaa numeroa. Jos olet noudattanut edellä mainittuja vaiheita oikein, valikon avattavassa valikossa pitäisi näkyä <strong>Suunnitelma</strong>-valinta. Valitse suunnitelma versiolle.';
+document.getElementById('uge').innerHTML = 'Käytä';
+document.getElementById('containeapub').innerHTML = 'SaaS-moduuli ei sisällä julkista listasivua, jossa uudet asiakkaat/vuokralaiset voivat rekisteröityä. Sinun on ensin luotava tämä sivu sovellukseesi. Kun uusi asiakas/vuokralainen valitsee yhden näistä versioista, voit luoda tilauksen ja ohjata käyttäjän maksamisen moduuliin kuten alla on kuvattu.';
+document.getElementById('inje').innerHTML = 'Injektoi <span class="txt-color">ISubscriptionAppService</span> tilauksen luomiseksi vuokralaisversiolle:';
+document.getElementById('whenthepay').innerHTML = 'Kun maksu on suoritettu onnistuneesti, vuokralaisten ja versioiden luettelo päivittyy tilauksen tilan mukaan. Varmista, että maksunvälityspalvelun web-hookit on konfiguroitu oikein.';
+document.getElementById('ui').innerHTML = 'Kaiken kaikkiaan maksamisen moduuli ohjaa käyttäjän callbackUrl-osoitteeseen, jos se on konfiguroitu <a href="https://docs.abp.io/en/commercial/7.0/modules/payment#paymentweboptions">maksamisen asetuksissa</a> paymentRequestId-parametrin kanssa. Tällä sivulla voit tarkistaa maksupyyntösi tilan ja näyttää käyttäjälle onnistumisilmoituksen, kun maksun tila on vahvistettu. Koska maksun vahvistaminen on asynkroninen, sinun on tarkistettava maksun tila useita kertoja, kunnes se vahvistetaan.';
+document.getElementById('usint').innerHTML = 'Käyttöliittymä';
+document.getElementById('menuits').innerHTML = 'valikkokohteet';
+document.getElementById('follite').innerHTML = 'SaaS-moduuli lisää seuraavat kohteet "Päävalikko" -valikkoon "Hallinta" -valikon kohtaan:';
+document.getElementById('tenantmgt').innerHTML = '<strong>Vuokralaiset</strong> : sivu vuokralaisten hallintaan.';
+document.getElementById('pag').innerHTML = '<strong>Versiot</strong> : sivu versioiden hallintaan.';
+document.getElementById('saashost').innerHTML = 'Luokilla <span class="txt-color">SaasHostMenuNames</span> ja <span class="txt-color">SaasTenantMenuNames</span> on vakioita valikon kohteiden nimille.';
+document.getElementById('paags').innerHTML = 'sivut';
+document.getElementById('tenantmgts').innerHTML = 'vuokralaisten hallinta';
+document.getElementById('isusee').innerHTML = 'Vuokralaissivua käytetään vuokralaisten hallintaan järjestelmässä.';
+document.getElementById('cs').innerHTML = 'Voit luoda uuden vuokralaisen tai muokata olemassa olevaa vuokralaista tällä sivulla:';
+document.getElementById('stringcon').innerHTML = 'yhteysmerkkijono';
+document.getElementById('managecon').innerHTML = 'Voit hallita vuokralaisen yhteysmerkkijonoa, jos haluat käyttää erillistä tietokantaa tietylle vuokralaiselle. Jos haluat käyttää isäntätietokantaa tietylle vuokralaiselle, valitse vaihtoehto "Käytä jaettua tietokantaa".';
+document.getElementById('TF').innerHTML = 'Voit myös käyttää moduulin tietokantakohtaista yhteysmerkkijono-ominaisuutta. Tässä tapauksessa sinun on valittava vaihtoehto "Käytä moduulille tietokantakohtaista yhteysmerkkijonoa" ja määritettävä moduulisi ja niiden yhteysmerkkijonot. Ennen lisäämistä voit tarkistaa yhteyden klikkaamalla "Tarkista"';
+document.getElementById('tenfeta').innerHTML = 'Vuokralaisten resurssit';
+document.getElementById('youcansette').innerHTML = 'Voit määrittää vuokralaisten resurssit.';
+document.getElementById('edimt').innerHTML = 'versionhallinta';
+document.getElementById('editpageuse').innerHTML = 'Versiosivua käytetään järjestelmässä olevien versioiden hallintaan.';
+document.getElementById('EF').innerHTML = 'Voit luoda uuden version tai muokata olemassa olevaa versiota tällä sivulla:';
+document.getElementById('editfeat').innerHTML = 'version ominaisuudet';
+document.getElementById('anedit').innerHTML = 'Voit määrittää version ominaisuudet tällä sivulla:';
+// Tässä asiakirjaosassa
+document.getElementById('inthisdoc').innerHTML = 'tässä asiakirjassa';
+document.getElementById('secpgs').innerHTML = '<a href="#pac" class="text-black">Paketit</a>';
+document.getElementById('sectenant').innerHTML = '<a href="#pac" class="text-black">Vuokralaisversion allekirjoitus</a>';
+document.getElementById('secconfig').innerHTML = '<a href="#pac" class="text-black">Määritys</a>';
+document.getElementById('secusage').innerHTML = '<a href="#usage" class="text-black">Käyttö</a>';
+document.getElementById('secuserinter').innerHTML = '<a href="#ui" class="text-black">Käyttöliittymä</a>';
+document.getElementById('secpagess').innerHTML = '<a href="#pag" class="text-black">Sivut</a>';
+document.getElementById('secstring').innerHTML = '<a href="#cs" class="text-black">Yhteysmerkkijono</a>';
+document.getElementById('sectenantss').innerHTML = '<a href="#TF" class="text-black">Vuokralaisten resurssit</a>';
+document.getElementById('secedit').innerHTML = '<a href="#EF" class="text-black">Version ominaisuudet</a>';
+
+
+            } 
+            else if (selectedLanguage === 'Slovak') {
+                // Sisältö
+document.getElementById('saamod').innerHTML = 'Modul SaaS';
+document.getElementById('thismodmanage').innerHTML = 'Tento modul slúži na správu nájomcov a verzií v multi-tenentnej aplikácii.';
+document.getElementById('tenantsand').innerHTML = 'Tento modul slúži na správu nájomcov a verzií v multi-tenentnej aplikácii.';
+document.getElementById('setfeat').innerHTML = 'Nastavte zdroje pre nájomcu <strong>(tenant)</strong>.';
+document.getElementById('connstr').innerHTML = 'Nastavte reťazec pre pripojenie pre nájomcu <strong>(tenant)</strong>.';
+document.getElementById('pac').innerHTML = 'Operácie pre verzie nájomcu <strong>(tenant)</strong>.';
+document.getElementById('overviewof').innerHTML = 'Pozrite si <a href="https://commercial.abp.io/modules/Volo.Saas">stránku modulu</a>, aby ste získali prehľad o jeho funkciách.';
+document.getElementById('psge').innerHTML = 'Balíčky';
+document.getElementById('thismodfoll').innerHTML = 'Tento modul nasleduje <a href="https://docs.abp.io/en/abp/latest/Best-Practices/Index">najlepšie postupy pri vývoji modulov</a> a pozostáva z viacerých NuGet a NPM balíčkov. Prehliadnite si sprievodcu, aby ste pochopili balíčky a ich vzájomné vzťahy.';
+document.getElementById('packagesrelated').innerHTML = 'Na stránke <a href="https://abp.io/packages?moduleName=Volo.Saas">zoznam balíčkov modulu SaaS</a> môžete nájsť zoznam súvisiacich balíčkov.';
+document.getElementById('tenantedit').innerHTML = 'Upravenie verzie nájomcu';
+document.getElementById('toeditions').innerHTML = 'Modul SaaS implementuje prihlásenie pre verzie nájomcu pre nájomcov používajúcich modul platby. Ak ho chcete aktivovať, projekt musí obsahovať moduly <span class="txt-color">Volo.Saas</span> a <span class="txt-color">Volo.Payment</span> a tieto moduly musia byť nakonfigurované podľa nižšie uvedených inštrukcií.';
+document.getElementById('confign').innerHTML = 'Konfigurácia';
+document.getElementById('paymodd').innerHTML = 'Najskôr musíte správne nastaviť modul platby:';
+document.getElementById('instvol').innerHTML = 'Inštalujte modul Volo.Payment.';
+document.getElementById('bassh').innerHTML = 'Skopírujte';
+document.getElementById('cyp').innerHTML = 'kopírovať';
+document.getElementById('oryou').innerHTML = 'Alebo môžete ho nainštalovať pomocou nástroja ABP Suite.';
+document.getElementById('ccy').innerHTML = 'skopírovať';
+document.getElementById('follthe').innerHTML = 'Pozrite sa na časť <a href="https://docs.abp.io/en/commercial/7.0/modules/payment#subscriptions">prihlásenia</a> v <a href="https://docs.abp. io/en/commercial/7.0/modules/payment#subscriptions">dokumentácii modulu platby</a>. Nastavte <a href="https://docs.abp.io/en/commercial/7.0/modules/payment#enabling-webhooks">webové udalosti</a> a <a href="https://docs.abp .io/en/commercial/7.0/modules/payment#configuring-plans">časť o konfigurácii plánov</a>.';
+document.getElementById('runtheapp').innerHTML = 'Spustite aplikáciu a prejdite na stránku <span class="txt-color">SaaS > Zmeny</span> v menu aplikácie.';
+document.getElementById('usage').innerHTML = 'Vytvorte alebo upravte existujúcu verziu. Ak ste postupovali podľa uvedených krokov správne, v roletovom menu by sa mal zobraziť výber <strong>Plán</strong>. Vyberte plán pre verziu.';
+document.getElementById('uge').innerHTML = 'Použitie';
+document.getElementById('containeapub').innerHTML = 'Modul SaaS neobsahuje verejnú stránku, na ktorej sa môžu noví zákazníci/nájomcovia zaregistrovať. Najskôr musíte túto stránku vytvoriť vo svojej aplikácii. Keď si nový zákazník/nájomca vyberie jednu z týchto verzií, môžete vytvoriť prihlásenie a presmerovať používateľa na modul platby, ako je opísané nižšie.';
+document.getElementById('inje').innerHTML = 'Inject <span class="txt-color">ISubscriptionAppService</span> pre vytvorenie prihlásenia pre verziu nájomcu:';
+document.getElementById('whenthepay').innerHTML = 'Keď je platba úspešne dokončená, zoznam nájomcov a verzií sa aktualizuje podľa stavu prihlásenia. Uistite sa, že webové udalosti pre platby sú správne nakonfigurované.';
+document.getElementById('ui').innerHTML = 'Celkovo modul platby presmeruje používateľa na callbackUrl, ak je nastavená v <a href="https://docs.abp.io/en/commercial/7.0/modules/payment#paymentweboptions">nastaveniach platby</a>, s parametrom paymentRequestId. Na tejto stránke môžete skontrolovať stav vašej platobnej požiadavky a zobraziť upozornenie o úspešnej platbe, keď je platobný stav potvrdený. Pretože potvrdenie platby je asynchrónne, musíte viackrát skontrolovať platobný stav, kým sa potvrdí.';
+document.getElementById('usint').innerHTML = 'Používateľské rozhranie';
+document.getElementById('menuits').innerHTML = 'položky menu';
+document.getElementById('follite').innerHTML = 'Modul SaaS pridáva nasledujúce položky do menu "Hlavné menu" pod položku "Správa":';
+document.getElementById('tenantmgt').innerHTML = '<strong>Nájomcovia</strong>: stránka pre správu nájomcov.';
+document.getElementById('pag').innerHTML = '<strong>Verzie</strong>: stránka pre správu verzií.';
+document.getElementById('saashost').innerHTML = 'Konštanty s názvami položiek menu sú definované v triedach <span class="txt-color">SaasHostMenuNames</span> a <span class="txt-color">SaasTenantMenuNames</span>.';
+document.getElementById('paags').innerHTML = 'stránky';
+document.getElementById('tenantmgts').innerHTML = 'správa nájomcov';
+document.getElementById('isusee').innerHTML = 'Stránka nájomcov sa používa na správu nájomcov v systéme.';
+document.getElementById('cs').innerHTML = 'Môžete vytvoriť nového nájomcu alebo upraviť existujúceho nájomcu na tejto stránke:';
+document.getElementById('stringcon').innerHTML = 'reťazec pre pripojenie';
+document.getElementById('managecon').innerHTML = 'Môžete spravovať reťazec pre pripojenie nájomcu, ak chcete použiť samostatnú databázu pre konkrétnych nájomcov. Ak chcete použiť hostiteľskú databázu pre konkrétnych nájomcov, vyberte možnosť "Použiť zdieľanú databázu".';
+document.getElementById('TF').innerHTML = 'Môžete tiež použiť vlastnosť reťazca pre pripojenie modulu. V tomto prípade musíte vybrať možnosť "Použiť vlastný reťazec pre pripojenie modulu" a nastaviť reťazce pre moduly. Pred pridaním môžete skontrolovať pripojenie kliknutím na "Skontrolovať".';
+document.getElementById('tenfeta').innerHTML = 'Zdroje nájomcu';
+document.getElementById('youcansette').innerHTML = 'Môžete nastaviť zdroje pre nájomcu.';
+document.getElementById('edimt').innerHTML = 'správa verzií';
+document.getElementById('editpageuse').innerHTML = 'Stránka verzií sa používa na správu verzií v systéme.';
+document.getElementById('EF').innerHTML = 'Môžete vytvoriť novú verziu alebo upraviť existujúcu verziu na tejto stránke:';
+document.getElementById('editfeat').innerHTML = 'vlastnosti verzie';
+document.getElementById('anedit').innerHTML = 'Môžete nastaviť vlastnosti verzie na tejto stránke:';
+// Tässä asiakirjaosassa
+document.getElementById('inthisdoc').innerHTML = 'v tejto dokumentácii';
+document.getElementById('secpgs').innerHTML = '<a href="#pac" class="text-black">Balíčky</a>';
+document.getElementById('sectenant').innerHTML = '<a href="#pac" class="text-black">Podpis nájomcu</a>';
+document.getElementById('secconfig').innerHTML = '<a href="#pac" class="text-black">Konfigurácia</a>';
+document.getElementById('secusage').innerHTML = '<a href="#usage" class="text-black">Použitie</a>';
+document.getElementById('secuserinter').innerHTML = '<a href="#ui" class="text-black">Používateľské rozhranie</a>';
+document.getElementById('secpagess').innerHTML = '<a href="#pag" class="text-black">Stránky</a>';
+document.getElementById('secstring').innerHTML = '<a href="#cs" class="text-black">Reťazec pre pripojenie</a>';
+document.getElementById('sectenantss').innerHTML = '<a href="#TF" class="text-black">Zdroje nájomcu</a>';
+document.getElementById('secedit').innerHTML = '<a href="#EF" class="text-black">Vlastnosti verzie</a>';
+
+            } 
+
+            else if (selectedLanguage === 'spanish') {
+            } else {
+
+            }
+        });
+    });
+</script>
+
+</html>

@@ -18,10 +18,10 @@
     "raaghuDocumentation.Web": {
       "commandName": "Project",
       "launchBrowser": true,
+      "applicationUrl": "https://localhost:44397",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
-      },
-      "applicationUrl": "https://localhost:44397"
+      }
     }
   }
 }

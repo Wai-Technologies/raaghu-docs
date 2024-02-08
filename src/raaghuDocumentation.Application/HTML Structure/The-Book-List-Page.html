@@ -1,0 +1,1051 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="Assets/images/raaghu-icon.png">
+    <title>Raaghu - The Book List Page</title>
+
+    <!-- bootstrap dependencies -->
+    <link rel="stylesheet" href="Assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/index.css">
+    <link href="Assets/prism.css" rel="stylesheet" />
+    <script src="Assets/prism.js"></script>
+</head>
+
+
+<body>
+
+    <main>
+
+        <nav class="navbar navbar-expand-lg navbar-light  ">
+            <div class="container-fluid ">
+                <div class="navbar-toggler-container">
+                    <button class="navbar-toggler " type="button" data-bs-toggle="collapse"
+                        data-bs-target="#sidebar,#navbarSupportedContent" aria-controls="sidebar" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <!-- <div class="dropdown show dropdown-specific">
+                        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Platform
+                        </a>
+
+                        <div class="dropdown-menu menu" aria-labelledby="dropdownMenuLink">
+                            <a class="dropdown-item" href="https://www.raaghu.io/features.html">Features</a>
+                            <a class="dropdown-item " href="https://portal.raaghu.io/">Documentation</a>
+                            <button type="button" class="btn btn-primary btn-contact mt-2">contact</button>
+                            <a href="https://github.com/Wai-Technologies/raaghu-angular" target="_blank">
+                                <li class="ps-lg-5 mt-2">
+                                    <img src="Assets/images/github-logo.svg" alt="abplogo logo" width="100%"
+                                        class="github-logo">
+                                </li>
+                            </a>
+                        </div>
+                    </div> -->
+                </div>
+                <a class="text-black navbar-brand" href="/">
+                    <img src="Assets/images/raaghu_logs.png" alt="raaghu logo" class="w-75  pe-lg-0">
+                </a>
+
+                <div class="collapse navbar-collapse align  justify-content-lg-end " id="navbarSupportedContent">
+                    <ul class="navbar-nav  mb-2 mb-lg-0">
+                        <li class="nav-item me-5">
+                            <a class="nav-link active " aria-current="page"
+                                href="https://raaghu-website-staging.netlify.app/raaghu-mfe-portal/_accordion.html">Components</a>
+                        </li>
+                        <li class="nav-item me-5">
+                            <a class="nav-link active " aria-current="page" href="#"><span
+                                    class="doc-color">Documentation</span></a>
+                        </li>
+                        <li class="nav-item me-5">
+                            <a class="nav-link active " aria-current="page"
+                                href="https://raaghu-website-staging.netlify.app/raaghu-mfe-portal/_accordion.html#">Support</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link active " aria-current="page"
+                                href="https://raaghu-website-staging.netlify.app/faq">FAQ</a>
+                        </li>
+                        <!-- <li class=" nav-item dropdown active">
+                            <a class="nav-link  text-dark me-5" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Platform
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-center " aria-labelledby="navbarDropdown">
+                                <ul class="list-unstyled dropdown-arrow">
+                                    <li class=" ps-4">
+                                        <p class="title pt-2">Raaghu Platform</p>
+                                        <div class="row">
+                                            <div class="col-lg-6 col-md-6">
+                                                <a href="https://portal.raaghu.io/" target="_blank"
+                                                    class="p-0 text-decoration-none text-reset">
+                                                    <div class="d-flex align-items-center gap-3">
+
+                                                        <img src="Assets/images/raaghu-portal-mg.svg"
+                                                            alt="raaghu-portal" class="mb-3">
+                                                        <p class="link-name">Raaghu Portal</p>
+
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="col-lg-6 col-md-6">
+                                                <a href="https://portal.raaghu.io/#Components-section" target="_blank"
+                                                    class="p-0 text-decoration-none text-reset">
+                                                    <div class="d-flex align-items-center gap-3">
+                                                        <img src="Assets/images/raaghu-components-mg.svg"
+                                                            alt="raaghu-components" class="mb-3">
+                                                        <p class="link-name">Raaghu Components</p>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-6 col-md-6">
+                                                <a href="https://portal.raaghu.io/#Elements-section" target="_blank"
+                                                    class="p-0 text-decoration-none text-reset">
+                                                    <div class="d-flex align-items-center gap-3">
+                                                        <img src="Assets/images/raaghu-elements-mg.svg"
+                                                            alt="raaghu-portal" class="mb-2">
+                                                        <p class="pt-2 link-name">Raaghu Elements</p>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="col-lg-6 col-md-6">
+                                                <div class="d-flex align-items-center gap-3">
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="bgcolor-dropdown">
+                                        <div class="ps-4">
+                                            <p class="pt-3 pb-1 title">WORKS ON</p>
+                                            <div class="row">
+                                                <div class="col-md-2 mb-2">
+                                                    <img src="Assets/images/asplogo-mg.svg" alt="asplogo logo"
+                                                        width="80%">
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <img src="Assets/images/abplogo-mg.svg" alt="abplogo logo"
+                                                        width="50%">
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item me-5">
+                            <a class="nav-link active " aria-current="page"
+                                href="https://www.raaghu.io/features.html">Features</a>
+                        </li>
+                        <li class="nav-item me-5">
+                            <a class="nav-link active" aria-current="page"
+                                href="https://portal.raaghu.io/">Documentation</a>
+                        </li>
+                        <button type="button" class="btn btn-primary btn-contact">contact</button>
+                        <a href="https://github.com/Wai-Technologies/raaghu-angular" target="_blank">
+                            <li class="ps-lg-5 pt-2">
+                                <img src="Assets/images/github-logo.svg" alt="abplogo logo" width="100%"
+                                    class="github-logo">
+                            </li>
+                        </a> -->
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="wrapper container-fluid">
+
+            <div class="row">
+
+                <div id="sidebar"
+                    class="col-12 col-lg-2 col-md-4 col-xl-2 col-xxl-2 collapse d-m-block mx-0 mx-lg-3 mx-md-3 mx-xl-3 mx-xxl-3 show">
+
+                    <nav>
+                        <div class="sidebar-header ">
+                            <a href="/" class="text-bg-dark">
+
+                                <h3 class="fs-5 fw-normal">Table Of Content</h3>
+                            </a>
+                        </div>
+
+                        <div class="accordion accordion-flush mx-3 doc-acc accordion-button-top" id="accordionExample">
+                            <div class="row pb-4">
+                                <div class="col-6 col-lg-6 col-md-6">
+                                    <select id="language-dropdown" class="sidebar-button">
+                                        <option value="en" selected>English</option>
+                                        <option value="pt">Português</option>
+                                        <option value="fr">French</option>
+                                        <option value="fi">Finnish</option>
+                                        <option value="hi">Hindi</option>
+                                        <option value="it">Italian</option>
+                                        <option value="sk">Slovak</option>
+                                        <option value="de">German</option>
+                                        <option value="ru">Russian</option>
+                                        <option value="zh">Chinese</option>
+                                        <option value="af">Afrikaan</option>
+                                        <option value="ar">Arabic</option>
+                                        <!-- Add more language options if needed -->
+                                    </select>
+                                </div>
+                                <div class="col-6 col-lg-6 col-md-6">
+                                    <select class="sidebar-button w-100">
+                                        <option value="option1" id="version">Version</option>
+                                        <option value="option2" id="version">Version 2</option>
+                                        <option value="option3">Version 3</option>
+                                        <option value="option4">Version 4</option>
+                                    </select>
+
+                                </div>
+                            </div>
+                            <div class="accordion-item bg-dark">
+                                <h2 class="accordion-header" id="headingOne">
+                                    <a href="Getting-Started.html">
+                                        <button
+                                            class="accordion-button d-flex flex-row-reverse justify-content-end p-0 bg-dark mt-1"
+                                            type="button" data-bs-toggle="collapse" data-bs-target="#coll"
+                                            aria-expanded="false" aria-controls="collapseOne">
+                                            Getting Started
+                                        </button></a>
+                                </h2>
+
+                                <div id="coll" class="accordion-collapse collapse  border-0 rounded-0 p-0"
+                                    aria-labelledby="headOne" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Setup-Your-Development-Environment.html">Setup your development
+                                            environment</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Creating-A-New-Solution.html">Creating A New Solution</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Running-The-Solution.html">Running the Solution</a>
+                                    </div>
+                                </div>
+                                <h2 class="accordion-header" id="headingTwo">
+                                    <button
+                                        class="accordion-button d-flex flex-row-reverse justify-content-end p-0 bg-dark mt-2"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                        aria-expanded="true" aria-controls="collapseOne">
+                                        Tutorials
+                                    </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse show border-0 rounded-0 p-0"
+                                    aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <h2 class="accordion-header" id="headingTwo">
+                                            <button
+                                                class="accordion-button d-flex flex-row-reverse show justify-content-end p-0 bg-dark mt-2"
+                                                type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                                                aria-expanded="true" aria-controls="collapseOne">
+                                                Web Application Development
+                                            </button>
+                                        </h2>
+                                        <div id="collapseThree"
+                                            class="accordion-collapse collapse show  border-0 rounded-0 p-0 pt-2"
+                                            aria-labelledby="headingTwo" data-bs-parent="#accordionExamplee">
+                                            <div class="accordion-body bg-dark px-4 p-1">
+                                                <a href="Creating-The-Server-Side.html">Creating the Server
+                                                    Side</a>
+                                            </div>
+                                        </div>
+                                        <div id="collapseThree"
+                                            class="accordion-collapse collapse show  border-0 rounded-0 p-0"
+                                            aria-labelledby="headingTwo" data-bs-parent="#accordionExamplee">
+                                            <div class="accordion-body bg-dark px-4 p-1">
+                                                <a href="The-Book-List-Page.html"><span class="accordian-active">The
+                                                        Book List Page</span></a>
+                                            </div>
+                                        </div>
+                                        <div id="collapseThree"
+                                            class="accordion-collapse collapse show border-0 rounded-0 p-0"
+                                            aria-labelledby="headingTwo" data-bs-parent="#accordionExamplee">
+                                            <div class="accordion-body bg-dark px-4 p-1">
+                                                <a href="Creating-Updating-And-Deleting-Book.html">Creating,Updating
+                                                    And
+                                                    Deleting Book</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <h2 class="accordion-header" id="headingFour">
+                                    <button
+                                        class="accordion-button d-flex flex-row-reverse justify-content-end p-0 bg-dark mt-2"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour"
+                                        aria-expanded="false" aria-controls="collapseOne">
+                                        Guides
+                                    </button>
+                                </h2>
+                                <div id="collapseFour" class="accordion-collapse collapse  border-0 rounded-0 p-0"
+                                    aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Customizing-The-Modules.html">Customizing the Modules</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Identity-Server-Deployment.html">Identity Server Deployment</a>
+                                    </div>
+                                </div>
+
+
+                                <h2 class="accordion-header" id="headingFive">
+                                    <button
+                                        class="accordion-button d-flex flex-row-reverse justify-content-end p-0 bg-dark mt-2"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive"
+                                        aria-expanded="false" aria-controls="collapseOne">
+                                        Samples
+                                    </button>
+                                </h2>
+                                <div id="collapseFive" class="accordion-collapse collapse  border-0 rounded-0 p-0"
+                                    aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="All-Samples.html">All Samples</a>
+                                    </div>
+                                </div>
+                                <h2 class="accordion-header" id="headingSix">
+                                    <a href="Startup-Template.html">
+                                        <button
+                                            class="accordion-button d-flex flex-row-reverse justify-content-end p-0 bg-dark mt-2"
+                                            type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix"
+                                            aria-expanded="false" aria-controls="collapseOne">
+                                            Startup Template
+                                        </button>
+                                    </a>
+                                </h2>
+                                <div id="collapseSix" class="accordion-collapse collapse  border-0 rounded-0 p-0"
+                                    aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <h2 class="accordion-header" id="headingSix">
+                                            <button
+                                                class="accordion-button d-flex flex-row-reverse justify-content-end p-0 bg-dark mt-2"
+                                                type="button" data-bs-toggle="collapse" data-bs-target="#headingS"
+                                                aria-expanded="false" aria-controls="collapseOne">
+                                                Application Templates
+                                            </button>
+                                        </h2>
+                                        <div id="headingS"
+                                            class="accordion-collapse collapse  border-0 rounded-0 p-0 pt-2"
+                                            aria-labelledby="headingSix" data-bs-parent="#accordionExamplee">
+                                            <div class="accordion-body bg-dark px-4 p-1">
+                                                <a href="Creating-Solution.html">Creating Solution</a>
+                                            </div>
+                                        </div>
+                                        <div id="headingS" class="accordion-collapse collapse  border-0 rounded-0 p-0"
+                                            aria-labelledby="headingSix" data-bs-parent="#accordionExamplee">
+                                            <div class="accordion-body bg-dark px-4 p-1">
+                                                <a href="Solution-Structure.html">Solution Structure</a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                                <h2 class="accordion-header" id="headingSeven">
+                                    <button
+                                        class="accordion-button d-flex flex-row-reverse justify-content-end p-0 bg-dark mt-2"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven"
+                                        aria-expanded="false" aria-controls="collapseOne">
+                                        Application Modules
+                                    </button>
+                                </h2>
+                                <div id="collapseSeven" class="accordion-collapse collapse  border-0 rounded-0 p-0"
+                                    aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Overall.html">Overall</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Account-Module.html">Account</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Audit-Logging.html">Audit Logging</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Chat.html">Chat</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="CMS-Kit-Pro.html">CMS Kit Pro</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="File-Management.html">File Management</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Forms.html">Forms</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Identity.html">Identity</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="OpenIddict.html">OpenIddict</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Language-Management.html">Language Management</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Payment.html">Payment</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="SaaS.html">SaaS</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Text-Template-Management.html">Text Template Management</a>
+                                    </div>
+                                </div>
+                                <h2 class="accordion-header" id="headingNine">
+                                    <a href="UI-Themes.html">
+                                        <button
+                                            class="accordion-button d-flex flex-row-reverse justify-content-end p-0 bg-dark mt-2"
+                                            type="button" data-bs-toggle="collapse" data-bs-target="#headingNine"
+                                            aria-expanded="false" aria-controls="collapseOne">
+                                            UI Themes
+                                        </button>
+                                    </a>
+                                </h2>
+                                <h2 class="accordion-header" id="headingReactUITheme">
+                                    <button
+                                        class="accordion-button d-flex flex-row-reverse justify-content-end p-0 bg-dark mt-2"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#headingReactUI"
+                                        aria-expanded="false" aria-controls="collapseOne">
+                                        React UI
+                                    </button>
+                                </h2>
+                                <div id="headingReactUI" class="accordion-collapse collapse  border-0 rounded-0 p-0"
+                                    aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Customization.html">customization</a>
+                                    </div>
+
+                                </div>
+                                <div id="headingReactUI" class="accordion-collapse collapse  border-0 rounded-0 p-0"
+                                    aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Components.html">Components</a>
+                                    </div>
+
+                                </div>
+                                <!-- For Release Information -->
+                                <h2 class="accordion-header" id="headingFive">
+                                    <button
+                                        class="accordion-button d-flex flex-row-reverse justify-content-end p-0 bg-dark mt-2"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseLast"
+                                        aria-expanded="false" aria-controls="collapseOne" id="samples">
+                                        <span id="relinfo">Release Information</span>
+                                    </button>
+                                </h2>
+                                <div id="collapseLast" class="accordion-collapse collapse  border-0 rounded-0 p-0"
+                                    aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Release-Notes.html" id="allSamples"><span id="relnote">Release
+                                                Notes</span></a>
+                                    </div>
+                                </div>
+                                <!-- ====================================== -->
+                            </div>
+                        </div>
+                        <ul class="list-unstyled CTAs  w-100">
+                            <li>
+                                <a href="https://bootstrapious.com/tutorial/files/sidebar.zip" class="download">Download
+                                    source</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div
+                    class="col-12 col-lg-8 col-md-7 col-xl-6 col-xxl-6 offset-lg-4 offset-md-5 offset-xl-3 offset-xxl-3 ps-xl-5 ps-xxl-0 px-lg-3 px-md-4 px-xl-0">
+
+                    <!-- Page Content  -->
+                    <div id="content">
+                        <div class="modal fade" id="contactusModal" tabindex="-1" aria-labelledby="contactusModalLabel"
+                            aria-hidden="true">
+
+                            <div class="modal-dialog modal-lg modal-dialog-centered">
+
+                                <div class="modal-content">
+
+                                    <!-- <div class="modal-header">
+                  
+                                  <h5 class="modal-title" id="contactusModalLabel">Modal title</h5>
+                  
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  
+                                </div> -->
+
+                                    <div class="modal-body p-0">
+
+
+
+
+                                        <div class="row">
+
+                                            <div class="col-md-6 col-sm-12 bg-dark">
+
+                                                <div class="mt-5">
+
+                                                    <img src="Assets/images/raaghu-logo-white.png"
+                                                        class="img-fluid w-25 pl-2">
+
+
+
+                                                    <img src="Assets/images/raaghu-banner-modal.png" class="img-fluid">
+
+                                                </div>
+
+                                            </div>
+
+
+
+                                            <div class="col-md-6 col-sm-12">
+
+                                                <div class="row">
+
+                                                    <div class="col-md-12 text-end pull-right">
+
+                                                        <button type="button"
+                                                            class="btn-close float-right pull-right m-3 text-muted"
+                                                            data-bs-dismiss="modal" aria-label="Close"></button>
+
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="p-4">
+
+                                                    <h6>
+
+                                                        Kindly fill the details below
+
+                                                    </h6>
+
+                                                    <p>
+
+                                                        <small> We will get back to you within 48 hours </small>
+
+                                                    </p>
+
+                                                    <div class="mt-5">
+
+                                                        <form method="post" id="want-to-hear-form">
+
+                                                            <div class="mb-3 form-group">
+
+                                                                <label for="emailId" class="form-label">Email ID
+
+                                                                    <span class="text-danger">*</span>
+
+                                                                </label>
+
+                                                                <input type="email" name="emailId"
+                                                                    class="form-control p-2" id="emailId"
+                                                                    placeholder="Enter your email id">
+
+                                                            </div>
+
+                                                            <div class="mb-3 form-group">
+
+                                                                <label for="companyName" class="form-label">Company Name
+
+                                                                    <span class="text-danger">*</span>
+
+                                                                </label>
+
+                                                                <input type="text" class="form-control p-2"
+                                                                    placeholder="Enter your Company Name"
+                                                                    name="companyName" id="companyName">
+
+                                                            </div>
+
+                                                            <div class="mb-3 form-group">
+
+                                                                <label for="message" class="form-label">Message
+
+                                                                    <span class="contactUs-Optional">(Optional)</span>
+
+                                                                </label>
+
+                                                                <textarea class="form-control p-2" name="message"
+                                                                    id="message" rows="3"
+                                                                    placeholder="Write your message.."></textarea>
+
+                                                            </div>
+
+                                                            <div class="mb-3 form-check">
+
+                                                                <input type="checkbox" class="form-check-input"
+                                                                    id="exampleCheck1">
+
+                                                                <label class="form-check-label" for="exampleCheck1">I
+                                                                    agree to the <a href="#"> terms & privacy policy
+                                                                    </a></label>
+
+                                                            </div>
+
+                                                            <button type="submit"
+                                                                class="btn btn-primary btn-sm btn-block float-end mb-4">Submit</button>
+
+                                                        </form>
+
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div> <input class="form-control  mb-5" type="search" placeholder="Search" aria-label="Search">
+                        </div>
+                        <div>
+                            <h1 class="fs-2 fw-semibold mb-3" id="GCLI">Part 2: Book List Page</h1>
+                            <h2 class="fw-semibold" id="gitCli">Github CLI</h2>
+                            <p id="selectA">Select a local Directory and run following command to download and output
+                                code using a
+                                local directory name where project is converted into zip</p>
+
+                            <pre
+                                class="my-4"><code class="language-javascript">curl -L https://github.com/Wai-Technologies/raaghu-react/archive/development-abp.zip --output (folder name).zip</code></pre>
+                            <p id="nowUnzip">now, unzip file using following command</p>
+                            <pre class="my-4"><code class="language-javascript">tar -xf (folder name).zip</code></pre>
+
+                        </div>
+                        <div>
+                            <h3 class="fw-semibold pt-3 pb-3" id="installnpm">Install NPM packages</h3>
+                            <p id="runbelow">Run below code at root level of your project folder</p>
+                            <pre class="my-4"><code class="language-javascript">raaghu install-all</code></pre>
+                        </div>
+                        <div>
+                            <h3 class="fw-semibold pt-3 pb-3" id="GP">Install Abp-React-Core</h3>
+                            <p id="codeatroot">Run below code at root level of your project folder</p>
+                            <pre class="my-4"><code class="language-javascript">raaghu create:core</code></pre>
+                        </div>
+                        <div>
+                            <h3 class="fw-semibold pt-3 pb-3" id="Gprox">Generate Proxy</h3>
+                            <p id="tocreate">to create proxies, we run following command at root level</p>
+                            <pre
+                                class="my-4"><code class="language-javascript">raaghu create:proxy --url=https://raaghu-react.azurewebsites.net</code></pre>
+                        </div>
+                        <div>
+                            <h3 class="fw-semibold pt-3 pb-3" id="createbook">Create a BookStore Module</h3>
+                            <p id="runfol">Run following command line to create a new Module, named BookStore on root
+                                folder and a
+                                Book page within it of React application</p>
+                            <pre
+                                class="my-4"><code class="language-javascript">raaghu create:page --moduleName=BookStore--pageName=book --projectName=Acme.BookStore</code></pre>
+                            <p id="CS"><strong>Note:Creating a page is case sensitive. name of page should be in small
+                                    letters</strong></p>
+                        </div>
+                        <div>
+                            <h3 class="fw-semibold pt-3 pb-3" id="csnip">Code Snippets</h3>
+                            <p id="dtable"><strong>Data Table</strong></p>
+                            <p id="hereIntegrate">Here we integrate a Data Table using a component RdsCompDataDable
+                                component having table
+                                headers and data corresponding to it.</p>
+                            <p id="codelooks">code looks like as shown below</p>
+                            <pre class="my-4"><code class="language-javascript">&lt;RdsCompDatatable classes="table__userTable" tableHeaders={tableHeaders} pagination={true} tableData={Data} onActionSelection={onActionSelection} recordsPerPage={5} 
+recordsPerPageSelectListOption={true}&gt;&lt;/RdsCompDatatable&gt;</code></pre>
+                            <p id="RdsCompDataTable">in RdsCompDataTable, we can add the neccessary data we want to show
+                                in tableData and following array of actions that you require as well as neccessary
+                                function using onActionSelection</p>
+                        </div>
+                        <div>
+                            <h3 class="fw-semibold pt-3 pb-3" id="colstruct">Column Structure</h3>
+                            <p id="nowe">Now we integrate table headers in data table</p>
+                            <pre class="my-4"><code class="language-javascript">const tableHeaders = [
+{
+    "displayName": "NAME",
+    "name": "Name",
+    "key": "name",
+    "datatype": "text",
+    "sortable": true,
+    "element": "RdsInput"
+},
+{
+    "displayName": "TYPE",
+    "name": "Type",
+    "key": "type",
+    "datatype": "text",
+    "sortable": true,
+    "element": "RdsSelectList"
+},
+{ 
+    "displayName": "PUBLISHDATE",
+    "name": "PublishDate",
+    "key": "publishDate",
+    "datatype": "text",
+    "sortable": true,
+    "element": "RdsDatePicker"
+},
+{ 
+    "displayName": "PRICE",
+    "name": "Price",
+    "key": "price",
+    "datatype": "text",
+    "sortable": true,
+    "element": "RdsInput"
+}
+]
+</code></pre>
+                        </div>
+                        <div>
+                            <h3 class="fw-semibold pt-3 pb-3" id="ASF">Adding a Slice File</h3>
+                            <p id="weNow">We now add a slice file that defines a piece of state and its corresponding
+                                reducer
+                                functions</p>
+                            <pre class="my-4"><code class="language-javascript">export const getBooksRequest = createAsyncThunk(
+'book/getBooksRequest',
+async ({
+    filterText,
+    name,
+    type,
+    publishDateMin,
+    publishDateMax,
+    priceMin,
+    priceMax,
+    sorting,
+    skipCount,
+    maxResultCount,
+}:{
+    filterText?: string,
+    name?: string,
+    type?: DemoSuite2_Books_BookType,
+    publishDateMin?: string,
+    publishDateMax?: string,
+    priceMin?: number,
+    priceMax?: number,
+    sorting?: string,
+    skipCount?: number,
+    maxResultCount?: number,
+}) => {
+    const response = await BookService.getBooks({
+    filterText,
+    name,
+    type,
+    publishDateMin,
+    publishDateMax,
+    priceMin,
+    priceMax,
+    sorting,
+    skipCount,
+    maxResultCount,
+});                       
+    return response;                     
+}
+); </code></pre>
+                            <p id="addThese">Add these builder cases inside BookSlice extra reducer</p>
+                            <pre class="my-4"><code class="language-javascript">builder.addCase(getBooksRequest.pending, (state) => {
+    state.loading = true;
+});
+    builder.addCase(getBooksRequest.fulfilled, (state, action) => {
+    state.loading = false;
+    state.error = "";
+    state.getBooks = action.payload
+});   
+    builder.addCase(getBooksRequest.rejected,(state, action)=> {
+    state.loading = false;
+    state.error = action.error.message || "Something went wrong";
+});
+                    </code></pre>
+                            <p id="weNowPerform">We now perform fetching data in Books Page and displaying it inside
+                                data table</p>
+                            <pre class="my-4"><code class="language-javascript">useEffect(() => {
+    dispatch(getBooksRequest({}) as any);
+}, []);
+</code></pre>
+                            
+                           
+                        </div>
+                        <div>
+                            <h3 class="fw-semibold pt-4 pb-3" id="nextPart">The Next Part</h3>
+                            <ul class="ps-3">
+                                <li id="seeTheA">See the <a href="Creating-Updating-And-Deleting-Book.html">next
+                                        part</a> of this tutorial.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+
+
+
+                </div>
+
+
+
+
+
+
+                <div
+                    class="col-12 col-lg-8 col-md-7 col-xl-2 col-xxl-2 docs-page-index offset-lg-4 offset-xl-0 offset-md-5 offset-xxl-0 px-md-4">
+                    <div
+                        class="position-fixed  my-3 w-auto mx-lg-0 mx-xl-3 mx-xxl-3 pe-lg-3 pe-xl-0 pe-xxl-0 position-lg-relative">
+                        <div class="card border-0 box rounded-3 mb-3">
+                            <div class="card-body">
+                                <h4 class="card-title py-1" id="inthisdoc">In this document</h4>
+                                <div class="opacity-50">
+                                    <ul class="card-text small  list-unstyled ul-ad">
+                                        <li id="secgithub"><a href="#GCLI" class="text-black">Github CLI</a></li>
+                                        <li id="secnpm"><a href="#GCLI" class="text-black">Install NPM packages</a></li>
+                                        <li id="seccore"><a href="#GCLI" class="text-black">Install Abp-React-Core</a>
+                                        </li>
+                                        <li id="secprox"><a href="#GP" class="text-black">Generate Proxy</a></li>
+                                        <li id="secbooks"><a href="#GP" class="text-black">Create a BookStore Module</a>
+                                        </li>
+                                        <li id="seccodes"><a href="#CS" class="text-black">Code Snippets</a></li>
+                                        <li id="seccol"><a href="#CS" class="text-black">Column Structure</a></li>
+                                        <li id="secadd"><a href="#ASF" class="text-black">Adding a Slice File</a></li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card  border-0 box  bg-advertise ">
+                            <div class="card-body abp-community-card  rounded-3 bg-sec ">
+                                <div class="row  ">
+                                    <div class="col-lg-5 col-md-5 col-5"> <img src="Assets/images/React_logo.png"
+                                            alt="raaghu logo" class="w-100"></div>
+                                    <div class="col-lg-7 mt-1  col-md-7 mt-1 col-7"> <img
+                                            src="Assets/images/abp-sec.png" alt="raaghu logo" class="w-100"></div>
+                                    <!-- <div class="col-lg-6"><img src="Assets/images/abp-com.svg" alt="raaghu logo" class="w-100"></div> -->
+
+                                </div>
+                                <div class="border-under-sec my-3"></div>
+                                <div class="colored-sec-design py-1">
+                                    <ul class="ps-4">
+                                        <li>CLI for CRUD generation</li>
+                                        <li>Component driven development</li>
+                                        <li>Purpose build UI kit for ABP commercial</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <button type="button" class="btn btn-primary mt-1 w-100" data-bs-toggle="modal"
+                                        data-bs-target="#contactusModal">Contact Us</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-0 col-12 docs-page-index">
+                    <div class="card mt-4 top-25 me-lg-4 border-0 shadow py-4">
+                        <div class="card-body">
+                            <h5 class="card-title">In This Document</h5>
+                            <p class="card-text small">Some quick example text to build on the card title and make up
+                                the bulk of the card's content.</p>
+
+                        </div>
+                    </div>
+                </div> -->
+
+            </div>
+
+
+
+        </div>
+
+    </main>
+
+    <!-- bootstrap dependencies -->
+    <script src="Assets/js/bootstrap.min.js"></script>
+    <script src="scripts/translation.js"></script>
+</body>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var languageDropdown = document.getElementById('language-dropdown');
+        languageDropdown.addEventListener('change', function () {
+            var selectedLanguage = languageDropdown.value;
+            if (selectedLanguage === 'pt') {
+                // Sidebar Code in js File
+
+
+                // Body Content
+                document.getElementById('GCLI').textContent = 'Parte 2: página da lista de livros';
+                document.getElementById('gitCli').textContent = 'CLI do Github';
+                document.getElementById('selectA').textContent = 'Selecione um diretório local e execute o seguinte comando para baixar e gerar o código usando um nome do diretório local onde o projeto é convertido em zip';
+                document.getElementById('nowUnzip').textContent = 'agora, descompacte o arquivo usando o seguinte comando';
+                document.getElementById('installnpm').textContent = 'Instalar pacotes NPM';
+                document.getElementById('runbelow').textContent = 'Execute o código abaixo no nível raiz da pasta do seu projeto';
+                document.getElementById('Gprox').textContent = 'Gerar Proxy';
+                document.getElementById('tocreate').textContent = 'para criar proxies, executamos o seguinte comando no nível raiz';
+                document.getElementById('createbook').textContent = 'Crie um Módulo Livraria';
+                document.getElementById('runfol').textContent = 'Execute a seguinte linha de comando para criar um novo módulo, chamado BookStore na pasta raiz e um Página do livro dentro do aplicativo React';
+                document.getElementById('CS').innerHTML = '<strong>Observação:A criação de uma página diferencia maiúsculas de minúsculas. nome da página deve estar em minúsculo letras</strong>';
+                document.getElementById('csnip').textContent = 'Partes de codigo';
+                document.getElementById('dtable').innerHTML = '<strong>Tabela de dados</strong>';
+                document.getElementById('hereIntegrate').textContent = 'Aqui integramos uma tabela de dados usando um componente RdsCompDataDable com tabela cabeçalhos e dados correspondentes a ele.';
+                document.getElementById('codelooks').textContent = 'código se parece com o mostrado abaixo';
+                document.getElementById('colstruct').textContent = 'Estrutura da Coluna';
+                document.getElementById('nowe').textContent = 'Agora integramos os cabeçalhos da tabela na tabela de dados';
+                document.getElementById('ASF').textContent = 'Adicionando um arquivo de fatia';
+                document.getElementById('weNow').textContent = 'Agora adicionamos um arquivo de fatia que define uma parte do estado e seu redutor correspondente funções';
+                document.getElementById('addThese').textContent = 'Adicione esses casos de construtor dentro do redutor extra BookSlice';
+                document.getElementById('weNowPerform').textContent = 'Agora realizamos a busca de dados na página de livros e os exibimos dentro da tabela de dados';
+                document.getElementById('nowInside').textContent = 'Agora dentro de RdsCompDatatable, substitua o seguinte código';
+                document.getElementById('nextPart').textContent = 'A Próxima Parte';
+                document.getElementById('seeTheA').innerHTML = 'Consulte a <a href="Creating-Updating-And-Deleting-Book.html">próxima parte</a> deste tutorial.';
+                // For In this doc section
+                document.getElementById('inthisdoc').innerHTML = 'neste documento';
+                document.getElementById('secgithub').innerHTML = '<a href="#GCLI" class="text-black">Github CLI</a>';
+                document.getElementById('secnpm').innerHTML = '<a href="#GCLI" class="text-black">Instalar pacotes NPM</a>';
+                document.getElementById('seccore').innerHTML = '<a href="#GCLI" class="text-black">Instalar Abp-React-Core</a>';
+                document.getElementById('secprox').innerHTML = '<a href="#GP" class="text-black">Gerar proxy</a>';
+                document.getElementById('secbooks').innerHTML = '<a href="#GP" class="text-black">Criar um Módulo Livraria</a>';
+                document.getElementById('seccodes').innerHTML = '<a href="#CS" class="text-black">Trechos de código</a>';
+                document.getElementById('seccol').innerHTML = '<a href="#CS" class="text-black">Estrutura da coluna</a>';
+                document.getElementById('secadd').innerHTML = '<a href="#ASF" class="text-black">Adicionando um arquivo Slice</a>';
+
+            }
+            else if (selectedLanguage === 'French') {
+                // Body Content
+                document.getElementById('GCLI').textContent = 'Partie 2 : Page de liste de livres';
+                document.getElementById('gitCli').textContent = 'CLI Github';
+                document.getElementById('selectA').textContent = 'Sélectionnez un répertoire local et exécutez la commande suivante pour télécharger et générer le code en utilisant un nom de répertoire local où le projet est converti en zip';
+                document.getElementById('nowUnzip').textContent = 'maintenant, décompressez le fichier en utilisant la commande suivante';
+                document.getElementById('installnpm').textContent = 'Installer les packages NPM';
+                document.getElementById('runbelow').textContent = 'Exécutez le code ci-dessous au niveau racine de votre dossier de projet';
+                document.getElementById('Gprox').textContent = 'Générer un proxy';
+                document.getElementById('tocreate').textContent = 'pour créer des proxys, nous exécutons la commande suivante au niveau racine';
+                document.getElementById('createbook').textContent = 'Créer un module Librairie';
+                document.getElementById('runfol').textContent = 'Exécutez la ligne de commande suivante pour créer un nouveau module, appelé BookStore dans le dossier racine et une page de livre dans l\'application React';
+                document.getElementById('CS').innerHTML = '<strong>Remarque : La création d\'une page est sensible à la casse. le nom de la page doit être en lettres minuscules</strong>';
+                document.getElementById('csnip').textContent = 'parties de code';
+                document.getElementById('dtable').innerHTML = '<strong>Tableau de données</strong>';
+                document.getElementById('hereIntegrate').textContent = 'Ici, nous intégrons une table de données à l\'aide d\'un composant RdsCompDataDable avec les en-têtes de table et les données correspondantes.';
+                document.getElementById('codelooks').textContent = 'le code ressemble à celui montré ci-dessous';
+                document.getElementById('colstruct').textContent = 'Structure de la colonne';
+                document.getElementById('nowe').textContent = 'Maintenant, nous intégrons les en-têtes de table dans la table de données';
+                document.getElementById('ASF').textContent = 'Ajout d\'un fichier de tranche';
+                document.getElementById('weNow').textContent = 'Maintenant, nous ajoutons un fichier de tranche qui définit une partie de l\'état et ses fonctions de réduction correspondantes';
+                document.getElementById('addThese').textContent = 'Ajoutez ces cas de constructeur à l\'intérieur du réducteur BookSlice supplémentaire';
+                document.getElementById('weNowPerform').textContent = 'Maintenant, nous récupérons les données de la page du livre et les affichons dans la table de données';
+                document.getElementById('nowInside').textContent = 'Maintenant, dans RdsCompDatatable, remplacez le code suivant';
+                document.getElementById('nextPart').textContent = 'La partie suivante';
+                document.getElementById('seeTheA').innerHTML = 'Voir la <a href="Creating-Updating-And-Deleting-Book.html">partie suivante</a> de ce didacticiel.';
+                // For In this doc section
+                document.getElementById('inthisdoc').innerHTML = 'dans ce document';
+                document.getElementById('secgithub').innerHTML = '<a href="#GCLI" class="text-black">CLI Github</a>';
+                document.getElementById('secnpm').innerHTML = '<a href="#GCLI" class="text-black">Installer les packages NPM</a>';
+                document.getElementById('seccore').innerHTML = '<a href="#GCLI" class="text-black">Installer Abp-React-Core</a>';
+                document.getElementById('secprox').innerHTML = '<a href="#GP" class="text-black">Générer un proxy</a>';
+                document.getElementById('secbooks').innerHTML = '<a href="#GP" class="text-black">Créer un module Librairie</a>';
+                document.getElementById('seccodes').innerHTML = '<a href="#CS" class="text-black">Extraits de code</a>';
+                document.getElementById('seccol').innerHTML = '<a href="#CS" class="text-black">Structure des colonnes</a>';
+                document.getElementById('secadd').innerHTML = '<a href="#ASF" class="text-black">Ajouter un fichier de tranche</a>';
+            }
+            else if (selectedLanguage === 'Finnish') {
+                // Sisältö
+                document.getElementById('GCLI').textContent = 'Osa 2: Kirjalistansivu';
+                document.getElementById('gitCli').textContent = 'GitHub-komentorivi';
+                document.getElementById('selectA').textContent = 'Valitse paikallinen hakemisto ja suorita seuraava komento ladataksesi ja generoidaksesi koodin käyttäen paikallista hakemistonimeä, jossa projekti on purettu zip-tiedostoksi';
+                document.getElementById('nowUnzip').textContent = 'Nyt pura tiedosto seuraavalla komennolla';
+                document.getElementById('installnpm').textContent = 'Asenna NPM-paketit';
+                document.getElementById('runbelow').textContent = 'Suorita alla oleva koodi projektisi juurihakemistossa';
+                document.getElementById('Gprox').textContent = 'Generoi valtuutusvälikappale';
+                document.getElementById('tocreate').textContent = 'Valtuutusvälikappaletta luodaksesi suorita seuraava komento projektisi juurihakemistossa';
+                document.getElementById('createbook').textContent = 'Luo Kirjasto-moduuli';
+                document.getElementById('runfol').textContent = 'Suorita seuraava komentorivi uuden moduulin luomiseksi, nimeltään BookStore juurihakemistoon ja kirjan sivu React-sovellukseen';
+                document.getElementById('CS').innerHTML = '<strong>Huomio: Sivun luominen on kirjainten suuruuseroja. Sivun nimen tulee olla pienaakkosissa</strong>';
+                document.getElementById('csnip').textContent = 'Koodin osat';
+                document.getElementById('dtable').innerHTML = '<strong>Tietotaulukko</strong>';
+                document.getElementById('hereIntegrate').textContent = 'Tässä integroimme tietotaulukon käyttämällä RdsCompDataDable-komponenttia taulukon otsikoilla ja vastaavilla tiedoilla.';
+                document.getElementById('codelooks').textContent = 'Koodi näyttää tältä';
+                document.getElementById('colstruct').textContent = 'Sarakkeen rakenne';
+                document.getElementById('nowe').textContent = 'Nyt integroimme taulukon otsikot tietotaulukkoon';
+                document.getElementById('ASF').textContent = 'Lisää viipaleen tiedosto';
+                document.getElementById('weNow').textContent = 'Nyt lisäämme viipaleen tiedoston, joka määrittelee osan tilasta ja vastaavat vähennysfunktiot';
+                document.getElementById('addThese').textContent = 'Lisää nämä rakentajatapaukset lisäviipaleen BookSlice sisälle';
+                document.getElementById('weNowPerform').textContent = 'Nyt noudatamme kirjasivun tiedot ja näytämme ne tietotaulukossa';
+                document.getElementById('nowInside').textContent = 'Nyt RdsCompDatatableissa korvaa seuraava koodi';
+                document.getElementById('nextPart').textContent = 'Seuraava osa';
+                document.getElementById('seeTheA').innerHTML = 'Katso tämän opetusohjelman <a href="Creating-Updating-And-Deleting-Book.html">seuraava osa</a>.';
+                // Tässä asiakirjassa -osio
+                document.getElementById('inthisdoc').innerHTML = 'tässä asiakirjassa';
+                document.getElementById('secgithub').innerHTML = '<a href="#GCLI" class="text-black">GitHub-komentorivi</a>';
+                document.getElementById('secnpm').innerHTML = '<a href="#GCLI" class="text-black">Asenna NPM-paketit</a>';
+                document.getElementById('seccore').innerHTML = '<a href="#GCLI" class="text-black">Asenna Abp-React-Core</a>';
+                document.getElementById('secprox').innerHTML = '<a href="#GP" class="text-black">Generoi valtuutusvälikappale</a>';
+                document.getElementById('secbooks').innerHTML = '<a href="#GP" class="text-black">Luo Kirjasto-moduuli</a>';
+                document.getElementById('seccodes').innerHTML = '<a href="#CS" class="text-black">Koodin katkelmat</a>';
+                document.getElementById('seccol').innerHTML = '<a href="#CS" class="text-black">Sarakkeen rakenne</a>';
+                document.getElementById('secadd').innerHTML = '<a href="#ASF" class="text-black">Lisää viipaleen tiedosto</a>';
+
+            }
+            else if (selectedLanguage === 'Slovak') {
+                // Sisältö
+                document.getElementById('GCLI').textContent = 'Časť 2: Stránka zoznamu kníh';
+                document.getElementById('gitCli').textContent = 'GitHub príkazový riadok';
+                document.getElementById('selectA').textContent = 'Vyberte lokálny adresár a potom spustite nasledujúci príkaz na stiahnutie a generovanie kódu pomocou názvu vášho adresára, kam ste rozbalili projekt z zip súboru';
+                document.getElementById('nowUnzip').textContent = 'Teraz rozbaľte súbor nasledujúcim príkazom';
+                document.getElementById('installnpm').textContent = 'Nainštalujte NPM balíčky';
+                document.getElementById('runbelow').textContent = 'Spustite nasledujúci kód vo svojom koreňovom adresári projektu';
+                document.getElementById('Gprox').textContent = 'Generovať autorizačný proxy';
+                document.getElementById('tocreate').textContent = 'Na vytvorenie autorizačného proxy spustite nasledujúci príkaz vo svojom koreňovom adresári projektu';
+                document.getElementById('createbook').textContent = 'Vytvoriť knižnicový modul';
+                document.getElementById('runfol').textContent = 'Pre vytvorenie nového modulu s názvom BookStore vo vašom koreňovom adresári a knižnicovými stránkami React aplikácie spustite nasledujúci príkaz';
+                document.getElementById('CS').innerHTML = '<strong>Poznámka: Názov stránky je rozlišovaný veľkými a malými písmenami. Názov stránky musí byť v malých písmenách</strong>';
+                document.getElementById('csnip').textContent = 'Kódové časti';
+                document.getElementById('dtable').innerHTML = '<strong>Tabuľka údajov</strong>';
+                document.getElementById('hereIntegrate').textContent = 'Tu integrujeme tabuľku údajov použitím komponentu RdsCompDataTable s hlavičkami tabuľky a príslušnými údajmi.';
+                document.getElementById('codelooks').textContent = 'Vzhľad kódu';
+                document.getElementById('colstruct').textContent = 'Štruktúra stĺpca';
+                document.getElementById('nowe').textContent = 'Teraz integrujeme hlavičky tabuľky do tabuľky údajov';
+                document.getElementById('ASF').textContent = 'Pridajte súbor s viapkami';
+                document.getElementById('weNow').textContent = 'Teraz pridáme súbor s viapkami, ktorý definuje stav časti a príslušné funkcie na zmenšovanie';
+                document.getElementById('addThese').textContent = 'Pridajte tieto stavebné prípady do súboru s viapkami s názvom BookSlice';
+                document.getElementById('weNowPerform').textContent = 'Teraz vytiahneme údaje zo stránky kníh a zobrazíme ich v tabuľke údajov';
+                document.getElementById('nowInside').textContent = 'Teraz vo funkcii RdsCompDataTable nahraďte nasledujúci kód';
+                document.getElementById('nextPart').textContent = 'Ďalšia časť';
+                document.getElementById('seeTheA').innerHTML = 'Prezrite si <a href="Creating-Updating-And-Deleting-Book.html">nasledujúcu časť tohto návodu</a>.';
+
+                // Táto časť dokumentu
+                document.getElementById('inthisdoc').innerHTML = 'v tomto dokumente';
+                document.getElementById('secgithub').innerHTML = '<a href="#GCLI" class="text-black">GitHub príkazový riadok</a>';
+                document.getElementById('secnpm').innerHTML = '<a href="#GCLI" class="text-black">Nainštalujte NPM balíčky</a>';
+                document.getElementById('seccore').innerHTML = '<a href="#GCLI" class="text-black">Inštalácia Abp-React-Core</a>';
+                document.getElementById('secprox').innerHTML = '<a href="#GP" class="text-black">Generovať autorizačný proxy</a>';
+                document.getElementById('secbooks').innerHTML = '<a href="#GP" class="text-black">Vytvoriť knižnicový modul</a>';
+                document.getElementById('seccodes').innerHTML = '<a href="#CS" class="text-black">Kódové časti</a>';
+                document.getElementById('seccol').innerHTML = '<a href="#CS" class="text-black">Štruktúra stĺpca</a>';
+                document.getElementById('secadd').innerHTML = '<a href="#ASF" class="text-black">Pridajte súbor s viapkami</a>';
+
+            }
+            else if (selectedLanguage === 'spanish') {
+            } else {
+
+            }
+        });
+    });
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>

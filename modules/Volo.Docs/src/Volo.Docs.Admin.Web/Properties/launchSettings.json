@@ -3,10 +3,10 @@
     "Volo.Docs.Admin.Web": {
       "commandName": "Project",
       "launchBrowser": true,
+      "applicationUrl": "https://localhost:52207;http://localhost:52208",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
-      },
-      "applicationUrl": "https://localhost:52207;http://localhost:52208"
+      }
     }
   }
 }

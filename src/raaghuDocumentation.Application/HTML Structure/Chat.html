@@ -1,0 +1,1525 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- bootstrap dependencies -->
+    <link rel="stylesheet" href="Assets/css/bootstrap.min.css">
+    <link href="Assets/prism.css" rel="stylesheet" />
+    <script src="Assets/prism.js"></script>
+    <link rel="stylesheet" href="/index.css">
+    <link rel="icon" type="image/x-icon" href="Assets/images/raaghu-icon.png">
+    <title>Raaghu - Chat</title>
+    <script src="/index.js"></script>
+</head>
+
+
+<body>
+
+    <main>
+
+        <nav class="navbar navbar-expand-lg navbar-light  ">
+            <div class="container-fluid ">
+                <div class="navbar-toggler-container">
+                    <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#sidebar,#navbarSupportedContent"
+                        aria-controls="sidebar" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <!-- <div class="dropdown show dropdown-specific">
+                        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Platform
+                        </a>
+
+                        <div class="dropdown-menu menu" aria-labelledby="dropdownMenuLink">
+                            <a class="dropdown-item" href="https://www.raaghu.io/features.html">Features</a>
+                            <a class="dropdown-item " href="https://portal.raaghu.io/">Documentation</a>
+                            <button type="button" class="btn btn-primary btn-contact mt-2">contact</button>
+                            <a href="https://github.com/Wai-Technologies/raaghu-angular" target="_blank">
+                                <li class="ps-lg-5 mt-2">
+                                    <img src="Assets/images/github-logo.svg" alt="abplogo logo" width="100%"
+                                        class="github-logo">
+                                </li>
+                            </a>
+                        </div>
+                    </div> -->
+                </div>
+                <a class="text-black navbar-brand" href="/">
+                    <img src="Assets/images/raaghu_logs.png" alt="raaghu logo" class="w-75  pe-lg-0">
+                </a>
+
+                <div class="collapse navbar-collapse align  justify-content-lg-end " id="navbarSupportedContent">
+                    <ul class="navbar-nav  mb-2 mb-lg-0">
+                        <li class="nav-item me-5">
+                            <a class="nav-link active " aria-current="page"
+                                href="https://raaghu-website-staging.netlify.app/raaghu-mfe-portal/_accordion.html">Components</a>
+                        </li>
+                        <li class="nav-item me-5">
+                            <a class="nav-link active " aria-current="page" href="#"><span
+                                    class="doc-color">Documentation</span></a>
+                        </li>
+                        <li class="nav-item me-5">
+                            <a class="nav-link active " aria-current="page"
+                                href="https://raaghu-website-staging.netlify.app/raaghu-mfe-portal/_accordion.html#">Support</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link active " aria-current="page"
+                                href="https://raaghu-website-staging.netlify.app/faq">FAQ</a>
+                        </li>
+                        <!-- <li class=" nav-item dropdown active">
+                            <a class="nav-link  text-dark me-5" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Platform
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-center " aria-labelledby="navbarDropdown">
+                                <ul class="list-unstyled dropdown-arrow">
+                                    <li class=" ps-4">
+                                        <p class="title pt-2">Raaghu Platform</p>
+                                        <div class="row">
+                                            <div class="col-lg-6 col-md-6">
+                                                <a href="https://portal.raaghu.io/" target="_blank"
+                                                    class="p-0 text-decoration-none text-reset">
+                                                    <div class="d-flex align-items-center gap-3">
+
+                                                        <img src="Assets/images/raaghu-portal-mg.svg"
+                                                            alt="raaghu-portal" class="mb-3">
+                                                        <p class="link-name">Raaghu Portal</p>
+
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="col-lg-6 col-md-6">
+                                                <a href="https://portal.raaghu.io/#Components-section" target="_blank"
+                                                    class="p-0 text-decoration-none text-reset">
+                                                    <div class="d-flex align-items-center gap-3">
+                                                        <img src="Assets/images/raaghu-components-mg.svg"
+                                                            alt="raaghu-components" class="mb-3">
+                                                        <p class="link-name">Raaghu Components</p>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-6 col-md-6">
+                                                <a href="https://portal.raaghu.io/#Elements-section" target="_blank"
+                                                    class="p-0 text-decoration-none text-reset">
+                                                    <div class="d-flex align-items-center gap-3">
+                                                        <img src="Assets/images/raaghu-elements-mg.svg"
+                                                            alt="raaghu-portal" class="mb-2">
+                                                        <p class="pt-2 link-name">Raaghu Elements</p>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="col-lg-6 col-md-6">
+                                                <div class="d-flex align-items-center gap-3">
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="bgcolor-dropdown">
+                                        <div class="ps-4">
+                                            <p class="pt-3 pb-1 title">WORKS ON</p>
+                                            <div class="row">
+                                                <div class="col-md-2 mb-2">
+                                                    <img src="Assets/images/asplogo-mg.svg" alt="asplogo logo"
+                                                        width="80%">
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <img src="Assets/images/abplogo-mg.svg" alt="abplogo logo"
+                                                        width="50%">
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item me-5">
+                            <a class="nav-link active " aria-current="page"
+                                href="https://www.raaghu.io/features.html">Features</a>
+                        </li>
+                        <li class="nav-item me-5">
+                            <a class="nav-link active " aria-current="page"
+                                href="https://portal.raaghu.io/">Documentation</a>
+                        </li>
+                        <button type="button" class="btn btn-primary btn-contact">contact</button>
+                        <a href="https://github.com/Wai-Technologies/raaghu-angular" target="_blank">
+                            <li class="ps-lg-5 pt-2">
+                                <img src="Assets/images/github-logo.svg" alt="abplogo logo" width="100%"
+                                    class="github-logo">
+                            </li>
+                        </a> -->
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="wrapper container-fluid">
+
+            <div class="row">
+
+                <div id="sidebar" class="col-12 col-lg-2 col-md-4 col-xl-2 col-xxl-2 collapse d-m-block mx-0 mx-lg-3 mx-md-3 mx-xl-3 mx-xxl-3 show">
+
+                    <nav>
+                        <div class="sidebar-header ">
+                            <a href="/" class="text-bg-dark">
+                                <h3 class="fs-5 fw-normal" id="tableOfContent">Table Of Content</h3>
+                            </a>
+                        </div>
+
+                        <div class="accordion accordion-flush mx-3 doc-acc accordion-button-top" id="accordionExample">
+                            <div class="row pb-4">
+                                <div class="col-6 col-lg-6 col-md-6">
+                                    <select id="language-dropdown" class="sidebar-button">
+                                        <option value="en" selected>English</option>
+                                        <option value="pt">Português</option>
+                                        <option value="fr">French</option>
+                                        <option value="fi">Finnish</option>
+                                        <option value="hi">Hindi</option>
+                                        <option value="it">Italian</option>                                        
+                                        <option value="sk">Slovak</option>
+                                        <option value="de">German</option>
+                                        <option value="ru">Russian</option>
+                                        <option value="zh">Chinese</option>
+                                        <option value="af">Afrikaan</option>
+                                        <option value="ar">Arabic</option>
+                                        <!-- Add more language options if needed -->
+                                    </select>
+                                </div>
+                                <div class="col-6 col-lg-6 col-md-6">
+                                    <select class="sidebar-button w-100">
+                                        <option value="option1" id="version">Version</option>
+                                        <option value="option2">Version 2</option>
+                                        <option value="option3">Version 3</option>
+                                        <option value="option4">Version 4</option>
+                                    </select>
+
+                                </div>
+                            </div>
+                            <div class="accordion-item bg-dark">
+                                <h2 class="accordion-header" id="headingOne">
+                                    <a href="Getting-Started.html">
+                                        <button
+                                            class="accordion-button d-flex flex-row-reverse justify-content-end p-0 bg-dark mt-1"
+                                            type="button" data-bs-toggle="collapse" data-bs-target="#coll"
+                                            aria-expanded="false" aria-controls="collapseOne" id="Getting">
+                                            Getting Started
+                                        </button></a>
+                                </h2>
+
+                                <div id="coll" class="accordion-collapse collapse  border-0 rounded-0 p-0"
+                                    aria-labelledby="headOne" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Setup-Your-Development-Environment.html" id="setupDev">Setup your
+                                            development
+                                            environment</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Creating-A-New-Solution.html" id="creatingNewSol">Creating A New
+                                            Solution</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Running-The-Solution.html" id="runningTheSol">Running the Solution</a>
+                                    </div>
+                                </div>
+                                <h2 class="accordion-header" id="headingTwo">
+                                    <button
+                                        class="accordion-button d-flex flex-row-reverse justify-content-end p-0 bg-dark mt-2"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                        aria-expanded="false" aria-controls="collapseOne" id="tut">
+                                        Tutorials
+                                    </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse  border-0 rounded-0 p-0"
+                                    aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <h2 class="accordion-header" id="headingTwo">
+                                            <button
+                                                class="accordion-button d-flex flex-row-reverse justify-content-end p-0 bg-dark mt-2"
+                                                type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                                                aria-expanded="false" aria-controls="collapseOne" id="webAppDev">
+                                                Web Application Development
+                                            </button>
+                                        </h2>
+                                        <div id="collapseThree"
+                                            class="accordion-collapse collapse  border-0 rounded-0 p-0 pt-2"
+                                            aria-labelledby="headingTwo" data-bs-parent="#accordionExamplee">
+                                            <div class="accordion-body bg-dark px-4 p-1">
+                                                <a href="Creating-The-Server-Side.html" id="creatingServer">Creating the
+                                                    Server
+                                                    Side</a>
+                                            </div>
+                                        </div>
+                                        <div id="collapseThree"
+                                            class="accordion-collapse collapse  border-0 rounded-0 p-0"
+                                            aria-labelledby="headingTwo" data-bs-parent="#accordionExamplee">
+                                            <div class="accordion-body bg-dark px-4 p-1">
+                                                <a href="The-Book-List-Page.html" id="bookList">The Book List Page</a>
+                                            </div>
+                                        </div>
+                                        <div id="collapseThree"
+                                            class="accordion-collapse collapse  border-0 rounded-0 p-0"
+                                            aria-labelledby="headingTwo" data-bs-parent="#accordionExamplee">
+                                            <div class="accordion-body bg-dark px-4 p-1">
+                                                <a href="Creating-Updating-And-Deleting-Book.html"
+                                                    id="creatingUpdating">Creating,Updating
+                                                    And
+                                                    Deleting Book</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <h2 class="accordion-header" id="headingFour">
+                                    <button
+                                        class="accordion-button d-flex flex-row-reverse justify-content-end p-0 bg-dark mt-2"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour"
+                                        aria-expanded="false" aria-controls="collapseOne" id="guides">
+                                        Guides
+                                    </button>
+                                </h2>
+                                <div id="collapseFour" class="accordion-collapse collapse  border-0 rounded-0 p-0"
+                                    aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Customizing-The-Modules.html" id="customizingTheModules">Customizing
+                                            the Modules</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Identity-Server-Deployment.html" id="identityServerDeploy">Identity
+                                            Server Deployment</a>
+                                    </div>
+                                </div>
+
+
+                                <h2 class="accordion-header" id="headingFive">
+                                    <button
+                                        class="accordion-button d-flex flex-row-reverse justify-content-end p-0 bg-dark mt-2"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive"
+                                        aria-expanded="false" aria-controls="collapseOne" id="samples">
+                                        Samples
+                                    </button>
+                                </h2>
+                                <div id="collapseFive" class="accordion-collapse collapse  border-0 rounded-0 p-0"
+                                    aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="All-Samples.html" id="allSamples">All Samples</a>
+                                    </div>
+                                </div>
+                                <h2 class="accordion-header" id="headingSix">
+                                    <a href="Startup-Template.html">
+                                        <button
+                                            class="accordion-button d-flex flex-row-reverse justify-content-end p-0 bg-dark mt-2"
+                                            type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix"
+                                            aria-expanded="false" aria-controls="collapseOne" id="startupTemplate">
+                                            Startup Template
+                                        </button></a>
+                                </h2>
+                                <div id="collapseSix" class="accordion-collapse collapse  border-0 rounded-0 p-0"
+                                    aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <h2 class="accordion-header" id="headingSix">
+                                            <button
+                                                class="accordion-button d-flex flex-row-reverse justify-content-end p-0 bg-dark mt-2"
+                                                type="button" data-bs-toggle="collapse" data-bs-target="#headingS"
+                                                aria-expanded="false" aria-controls="collapseOne">
+                                                Application Templates
+                                            </button>
+                                        </h2>
+                                        <div id="headingS"
+                                            class="accordion-collapse collapse  border-0 rounded-0 p-0 pt-2"
+                                            aria-labelledby="headingSix" data-bs-parent="#accordionExamplee">
+                                            <div class="accordion-body bg-dark px-4 p-1">
+                                                <a href="Creating-Solution.html">Creating Solution</a>
+                                            </div>
+                                        </div>
+                                        <div id="headingS" class="accordion-collapse collapse  border-0 rounded-0 p-0"
+                                            aria-labelledby="headingSix" data-bs-parent="#accordionExamplee">
+                                            <div class="accordion-body bg-dark px-4 p-1">
+                                                <a href="Solution-Structure.html">Solution Structure</a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                                <h2 class="accordion-header" id="headingSeven">
+                                    <button
+                                        class="accordion-button d-flex flex-row-reverse justify-content-end p-0 bg-dark mt-2"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven"
+                                        aria-expanded="true" aria-controls="collapseOne" id="appModules">
+                                        Application Modules
+                                    </button>
+                                </h2>
+                                <div id="collapseSeven" class="accordion-collapse show collapse  border-0 rounded-0 p-0"
+                                    aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Overall.html" id="overall">Overall</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Account-Module.html" id="ac">Account</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Audit-Logging.html" id="auditLogging">Audit Logging</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Chat.html" id="chat"><span class="accordian-active">Chat</span></a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="CMS-Kit-Pro.html" id="CMS">CMS Kit Pro</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="File-Management.html" id="fileMgt">File Management</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Forms.html" id="forms">Forms</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Identity.html" id="identity">Identity</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="OpenIddict.html" id="OpenIddict">OpenIddict</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Language-Management.html" id="languageMgt">Language Management</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Payment.html" id="payment">Payment</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="SaaS.html" id="saas">SaaS</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Text-Template-Management.html" id="ttm">Text Template Management</a>
+                                    </div>
+                                </div>
+                                <h2 class="accordion-header" id="headingNine">
+                                    <a href="UI-Themes.html">
+                                        <button
+                                            class="accordion-button d-flex flex-row-reverse justify-content-end p-0 bg-dark mt-2"
+                                            type="button" data-bs-toggle="collapse" data-bs-target="#headingNine"
+                                            aria-expanded="false" aria-controls="collapseOne" id="ui">
+                                            UI Themes
+                                        </button>
+                                    </a>
+                                </h2>
+                                <h2 class="accordion-header" id="headingReactUITheme">
+                                    <button
+                                        class="accordion-button d-flex flex-row-reverse justify-content-end p-0 bg-dark mt-2"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#headingReactUI"
+                                        aria-expanded="false" aria-controls="collapseOne" id="reactUI">
+                                        React UI
+                                    </button>
+                                </h2>
+                                <div id="headingReactUI" class="accordion-collapse collapse  border-0 rounded-0 p-0"
+                                    aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Customization.html" id="custom">customization</a>
+                                    </div>
+
+                                </div>
+                                <div id="headingReactUI" class="accordion-collapse collapse  border-0 rounded-0 p-0"
+                                    aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Components.html" id="compo">Components</a>
+                                    </div>
+
+                                </div>
+                                 <!-- For Release Information -->
+                                 <h2 class="accordion-header" id="headingFive">
+                                    <button
+                                        class="accordion-button d-flex flex-row-reverse justify-content-end p-0 bg-dark mt-2"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseLast"
+                                        aria-expanded="false" aria-controls="collapseOne" id="samples">
+                                       <span id="relinfo">Release Information</span> 
+                                    </button>
+                                </h2>
+                                <div id="collapseLast" class="accordion-collapse collapse  border-0 rounded-0 p-0"
+                                    aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Release-Notes.html" id="allSamples"><span id="relnote">Release Notes</span></a>
+                                    </div>
+                                </div>
+                                <!-- ====================================== -->
+                            </div>
+                        </div>
+                        <ul class="list-unstyled CTAs  w-100">
+                            <li>
+                                <a href="https://bootstrapious.com/tutorial/files/sidebar.zip" class="download"
+                                    id="downloadSource">Download
+                                    source</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="col-12 col-lg-8 col-md-7 col-xl-6 col-xxl-6 offset-lg-4 offset-md-5 offset-xl-3 offset-xxl-3 ps-xl-5 ps-xxl-0 px-lg-3 px-md-4 px-xl-0 ">
+
+                    <!-- Page Content  -->
+                    <div id="content">
+                        <div class="modal fade" id="contactusModal" tabindex="-1" aria-labelledby="contactusModalLabel"
+                            aria-hidden="true">
+
+                            <div class="modal-dialog modal-lg modal-dialog-centered">
+
+                                <div class="modal-content">
+
+                                    <!-- <div class="modal-header">
+                  
+                                  <h5 class="modal-title" id="contactusModalLabel">Modal title</h5>
+                  
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  
+                                </div> -->
+
+                                    <div class="modal-body p-0">
+
+
+
+
+                                        <div class="row">
+
+                                            <div class="col-md-6 col-sm-12 bg-dark">
+
+                                                <div class="mt-5">
+
+                                                    <img src="Assets/images/raaghu-logo-white.png"
+                                                        class="img-fluid w-25 pl-2">
+
+
+
+                                                    <img src="Assets/images/raaghu-banner-modal.png" class="img-fluid">
+
+                                                </div>
+
+                                            </div>
+
+
+
+                                            <div class="col-md-6 col-sm-12">
+
+                                                <div class="row">
+
+                                                    <div class="col-md-12 text-end pull-right">
+
+                                                        <button type="button"
+                                                            class="btn-close float-right pull-right m-3 text-muted"
+                                                            data-bs-dismiss="modal" aria-label="Close"></button>
+
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="p-4">
+
+                                                    <h6>
+
+                                                        Kindly fill the details below
+
+                                                    </h6>
+
+                                                    <p>
+
+                                                        <small> We will get back to you within 48 hours </small>
+
+                                                    </p>
+
+                                                    <div class="mt-5">
+
+                                                        <form method="post" id="want-to-hear-form">
+
+                                                            <div class="mb-3 form-group">
+
+                                                                <label for="emailId" class="form-label">Email ID
+
+                                                                    <span class="text-danger">*</span>
+
+                                                                </label>
+
+                                                                <input type="email" name="emailId"
+                                                                    class="form-control p-2" id="emailId"
+                                                                    placeholder="Enter your email id">
+
+                                                            </div>
+
+                                                            <div class="mb-3 form-group">
+
+                                                                <label for="companyName" class="form-label">Company Name
+
+                                                                    <span class="text-danger">*</span>
+
+                                                                </label>
+
+                                                                <input type="text" class="form-control p-2"
+                                                                    placeholder="Enter your Company Name"
+                                                                    name="companyName" id="companyName">
+
+                                                            </div>
+
+                                                            <div class="mb-3 form-group">
+
+                                                                <label for="message" class="form-label">Message
+
+                                                                    <span class="contactUs-Optional">(Optional)</span>
+
+
+                                                                </label>
+
+                                                                <textarea class="form-control p-2" name="message"
+                                                                    id="message" rows="3"
+                                                                    placeholder="Write your message.."></textarea>
+
+                                                            </div>
+
+                                                            <div class="mb-3 form-check">
+
+                                                                <input type="checkbox" class="form-check-input"
+                                                                    id="exampleCheck1">
+
+                                                                <label class="form-check-label" for="exampleCheck1">I
+                                                                    agree to the <a href="#"> terms & privacy policy
+                                                                    </a></label>
+
+                                                            </div>
+
+                                                            <button type="submit"
+                                                                class="btn btn-primary btn-sm btn-block float-end mb-4">Submit</button>
+
+                                                        </form>
+
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div> <input class="form-control mb-5" type="search" placeholder="Search" aria-label="Search">
+                        </div>
+                        <div>
+                            <h1 class="fw-semibold mb-3" id="installation">Chat module</h1>
+                            <p id="thismodre">This module implements real time messaging between users for an application.
+                            </p>
+                        </div>
+                        <div>
+                            <h2 class="fw-semibold" id="insta">Installation</h2>
+                            <p id="nofurther">No further installation is needed in terms of using ABP Suite and Manual
+                                Installation as
+                                it comes along with startup template</p>
+                        </div>
+                        <div>
+                            <h3 class="fw-semibold pt-3 pb-3" id="packs">Packages</h3>
+                            <p id="thismoduleallows">This module follows the <a
+                                    href="https://docs.abp.io/en/abp/latest/Best-Practices/Index">module development
+                                    best practices guide</a> and consists of several NuGet and NPM packages. See the
+                                guide if you want to understand the packages and relations between them.</p>
+                            <p id="youcanvisit">You can visit <a
+                                    href="https://abp.io/packages?moduleName=Volo.Chat">Chat module package
+                                    list page</a> to see list of packages related with this module.</p>
+                        </div>
+                        <div>
+                            <h3 class="fw-semibold pt-3 pb-3" id="chat-page">User interface</h3>
+                            <h3 class="fw-semibold pt-1 pb-3" id="chatp">Chat page</h3>
+                            <p id="thisisthe">This is the page that users send messages to each other.</p>
+                            <img src="Assets/images/userSendMessage.jpg"
+                                alt="This is the page that users send messages to each other" class="img-fluid my-4">
+                        </div>
+                        <div>
+                            <h3 class="fw-semibold pt-3 pb-3" id="dl">Internals</h3>
+                            <h3 class="fw-semibold pt-1 pb-3" id="domlayer">Domain Layer</h3>
+                            <p id="entitiesand">Entities and aggregate roots</p>
+
+
+                            <ul class="ps-3">
+                                <li>
+                                    <div id="messt"><span class="txt-color">Message</span> (aggregate root): Represents
+                                        a chat message.
+                                        Implements <span class="txt-color">IMultiTenant.</span></div>
+                                    <ul class="ps-3">
+                                        <li class="mt-2" id="messcont"><span class="txt-color">Text</span>: Message
+                                            content.</li>
+                                        <li class="mt-2" id="isallreads"><span class="txt-color">IsAllRead</span>:
+                                            Message read
+                                            information.</li>
+                                        <li class="mt-2" id="readtime"><span class="txt-color">ReadTime</span>: Message
+                                            read time
+                                            information.</li>
+                                    </ul>
+                                </li>
+                                <li class="mt-3" id="chatuse"><span class="txt-color">ChatUser</span> (aggregate root):
+                                    Represents a
+                                    chat user. </li>
+                                <p id="impleIuser">Implements <span class="txt-color">IUser</span> and <span
+                                        class="txt-color">IUpdateUserData</span> interfaces.</p>
+                                <li>
+                                    <div id="receivermsg"><span class="txt-color">UserMessage</span>: is created for
+                                        each side (sender and
+                                        receiver) of a message.</div>
+                                    <p id="Imultenant">Implements <span class="txt-color">IMultiTenant</span> and <span
+                                            class="txt-color">IAggregateRoot</span> interfaces.</p>
+                                    <ul class="ps-3">
+                                        <li class="mt-2" id="chatmsgid"><span class="txt-color">ChatMessageId</span>: Id
+                                            of related
+                                            <span class="txt-color">Message.</span>
+                                        </li>
+                                        <li class="mt-2" id="useri"><span class="txt-color">UserId</span>: Id of related
+                                            <span class="txt-color">ChatUser.</span></li>
+
+
+
+                                        <li class="mt-2" id="targetuser"><span class="txt-color">TargetUserId</span>: Id
+                                            of other
+                                            related <span class="txt-color">ChatUser.</span></li>
+                                        <li class="mt-2" id="stattes"><span class="txt-color">Side</span>: States that
+                                            if it is a
+                                            send message or received message.</li>
+                                        <li class="mt-2" id="isreadd"><span class="txt-color">IsRead</span>: Read
+                                            information.</li>
+                                        <li class="mt-2" id="readt"><span class="txt-color">ReadTime</span>: Read time
+                                            information.
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="mt-3">
+                                    <div id="conver"><span class="txt-color">Conversation</span>: is created for each
+                                        side
+                                        of a conversation between users. Implements IMultiTenant and IAggregateRoot
+                                        interfaces.</div>
+                                    <p id="imulti">Implements <span class="txt-color">IMultiTenant</span> and <span
+                                            class="txt-color">IAggregateRoot</span> interfaces.</p>
+                                    <ul class="ps-3">
+                                        <li class="mt-2" id="useriid"><span class="txt-color">UserId</span>: Id of
+                                            related ChatUser.
+                                        </li>
+                                        <li class="mt-2" id="targetus"><span class="txt-color">TargetUserId</span>: Id
+                                            of other
+                                            related ChatUser.</li>
+                                        <li class="mt-2" id="lastmsgside"><span
+                                                class="txt-color">LastMessageSide</span>: States the side
+                                            of the latest message (send or received).</li>
+                                        <li class="mt-2" id="lastmsg"><span class="txt-color">LastMessage</span>:
+                                            Content of the last
+                                            message in the conversation.</li>
+                                        <li class="mt-2" id="lastmsgdate"><span
+                                                class="txt-color">LastMessageDate</span>: Date of the
+                                            last message in the conversation.</li>
+                                        <li class="mt-2" id="repo"><span class="txt-color">UnreadMessageCount</span>:
+                                            Count of
+                                            unread messages in the conversation.</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="fw-semibold pt-3 pb-3" id="reposit">Repositories</h3>
+                            <p id="thismodfollgui">This module follows the <a
+                                    href="https://docs.abp.io/en/abp/latest/Best-Practices/Repositories">Repository Best
+                                    Practices & Conventions</a> guide.</p>
+                            <p id="follcustom">Following custom repositories are defined for this module:</p>
+                            <ul class="ps-3">
+                                <li class="mt-2"><span class="txt-color">IConversationRepository</span></li>
+                                <li class="mt-2"><span class="txt-color">IUserMessageRepository</span></li>
+                                <li class="mt-2"><span class="txt-color">IChatUserRepository</span></li>
+                                <li class="mt-2"><span class="txt-color">IMessageRepository</span></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="fw-semibold pt-3 pb-3" id="ds">Domain Services</h3>
+                            <ul class="ps-3">
+                                <li id="messmanager"><span class="txt-color">MessagingManager</span></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="fw-semibold pt-3 pb-3" id="applayers">Application layer</h3>
+                            <h3 class="fw-semibold pt-3 pb-3" id="app-services">Application services</h3>
+                            <ul class="ps-3">
+                                <li class="mt-2" id="conversationappservice"><span
+                                        class="txt-color">ConversationAppService</span> (implements <span
+                                        class="txt-color">IConversationAppService</span>): Used to send messages,
+                                    get conversation between users and mark a conversation as read.</li>
+                                <li class="mt-2" id="settingapp"><span class="txt-color">SettingsAppService</span>
+                                    (implements <span class="txt-color">ISettingsAppService</span>): Used to save chat
+                                    settings.
+                                </li>
+                                <li class="mt-2" id="conatactappser"><span class="txt-color">ContactAppService</span>
+                                    (implements <span class="txt-color">IContactAppService</span>): Used to get list of
+                                    contacts and
+                                    total unread message count of a user.</li>
+                                <li class="mt-2" id="distributedevent"><span
+                                        class="txt-color">DistributedEventBusRealTimeChatMessageSender</span>
+                                    (implements
+                                    <span class="txt-color">IRealTimeChatMessageSender</span>): Used to publish chat
+                                    messages to distributed event bus.
+                                </li>
+                                <li class="mt-2" id="signalR"><span
+                                        class="txt-color">SignalRRealTimeChatMessageSender</span>
+                                    (implements <span class="txt-color">IRealTimeChatMessageSender</span>): Used to
+                                    send messages to target SignalR client.</li>
+                            </ul>
+
+                        </div>
+
+
+
+
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-8 col-md-7 col-xl-2 col-xxl-2 docs-page-index offset-lg-4 offset-xl-0 offset-md-5 offset-xxl-0 px-md-4">
+                    <div class="position-fixed  my-3 w-auto mx-lg-0 mx-xl-3 mx-xxl-3 pe-lg-3 pe-xl-0 pe-xxl-0 position-lg-relative">
+                    <div class="card border-0 box rounded-3 mb-3">
+                        <div class="card-body">
+                            <h4 class="card-title py-1" id="inthisdoc">In this document</h4>
+                            <div class="opacity-50">
+                                <ul class="card-text small  list-unstyled ul-ad">
+                                    <li id="instt"><a href="#installation" class="text-black">Installation</a></li>
+                                    <li id="chatpa"><a href="#chat-page" class="text-black">Chat page</a></li>
+                                    <li id="domlayers"><a href="#dl" class="text-black">Domain Layer</a></li>
+                                    <li id="repss"><a href="#repo" class="text-black">Repositories</a></li>
+                                    <li id="domseras"><a href="#ds" class="text-black">Domain Services</a></li>
+                                    <li id="appsr"><a href="#app-services" class="text-black">Application services</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card  border-0 box  bg-advertise">
+                        <div class="card-body abp-community-card  rounded-3 bg-sec ">
+                            <div class="row  ">
+                                <div class="col-lg-5 col-md-5 col-5"> <img src="Assets/images/React_logo.png" alt="raaghu logo"
+                                        class="w-100"></div>
+                                <div class="col-lg-7 mt-1  col-md-7 mt-1 col-7"> <img src="Assets/images/abp-sec.png" alt="raaghu logo"
+                                        class="w-100"></div>
+                                <!-- <div class="col-lg-6"><img src="Assets/images/abp-com.svg" alt="raaghu logo" class="w-100"></div> -->
+
+                            </div>
+                            <div class="border-under-sec my-3"></div>
+                            <div class="colored-sec-design py-1">
+                                <ul class="ps-4">
+                                    <li>CLI for CRUD generation</li>
+                                    <li>Component driven development</li>
+                                    <li>Purpose build UI kit for ABP commercial</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <button type="button" class="btn btn-primary mt-1 w-100" data-bs-toggle="modal"
+                                    data-bs-target="#contactusModal">Contact Us</button>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <!-- <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-0 col-12 docs-page-index">
+                    <div class="card mt-4 top-25 me-lg-4 border-0 shadow py-4">
+                        <div class="card-body">
+                            <h5 class="card-title">In This Document</h5>
+                            <p class="card-text small">Some quick example text to build on the card title and make up
+                                the bulk of the card's content.</p>
+
+                        </div>
+                    </div>
+                </div> -->
+
+            </div>
+
+
+
+        </div>
+
+    </main>
+
+    <!-- bootstrap dependencies -->
+    <script src="Assets/js/bootstrap.min.js"></script>
+    <script src="scripts/translation.js"></script>
+</body>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var languageDropdown = document.getElementById('language-dropdown');
+        languageDropdown.addEventListener('change', function () {
+            var selectedLanguage = languageDropdown.value;
+            if (selectedLanguage === 'pt') {
+                // Sidebar Code in js File
+
+
+                // Body Content
+
+                document.getElementById('installation').innerHTML = 'módulo de bate-papo';
+                document.getElementById('thismod').innerHTML = 'Este módulo implementa mensagens em tempo real entre usuários para um aplicativo.';
+                document.getElementById('insta').innerHTML = 'Instalação';
+                document.getElementById('nofurther').innerHTML = 'Nenhuma instalação adicional é necessária em termos de uso do ABP Suite e instalação manual como ele vem junto com o modelo de inicialização';
+                document.getElementById('packs').innerHTML = 'Pacotes';
+                document.getElementById('thismoduleallows').innerHTML = 'Este módulo segue o <a href="https://docs.abp.io/en/abp/latest/Best-Practices/Index">desenvolvimento do módulo guia de práticas recomendadas</a> e consiste em vários pacotes NuGet e NPM. Veja o guia se você quiser entender os pacotes e as relações entre eles.';
+                document.getElementById('youcanvisit').innerHTML = 'Você pode visitar <a href="https://abp.io/packages?moduleName=Volo.Chat">Pacote do módulo de bate-papo página de lista</a> para ver a lista de pacotes relacionados com este módulo.';
+                document.getElementById('chat-page').innerHTML = 'Interface de usuário';
+                document.getElementById('chatp').innerHTML = 'página de bate-papo';
+                document.getElementById('thisisthe').innerHTML = 'Esta é a página que os usuários enviam mensagens uns aos outros.';
+                document.getElementById('dl').innerHTML = 'Internas';
+                document.getElementById('domlayer').innerHTML = 'Camada de domínio';
+                document.getElementById('entitiesand').innerHTML = 'Entidades e raízes agregadas';
+                document.getElementById('messt').innerHTML = '<span class="txt-color">Mensagem</span> (raiz agregada): representa uma mensagem de bate-papo. Implementa <span class="txt-color">IMultiTenant.</span>';
+                document.getElementById('messcont').innerHTML = '<span class="txt-color">Texto</span>: Conteúdo da mensagem.';
+                document.getElementById('isallreads').innerHTML = '<span class="txt-color">IsAllRead</span>: Mensagem lida Informação.';
+                document.getElementById('readtime').innerHTML = '<span class="txt-color">ReadTime</span>: tempo de leitura da mensagem Informação.';
+                document.getElementById('chatuse').innerHTML = '<span class="txt-color">ChatUser</span> (raiz agregada): representa um usuário de bate-papo.';
+                document.getElementById('impleIuser').innerHTML = 'Implementa <span class="txt-color">IUser</span> e <span interfaces class="txt-color">IUpdateUserData</span>.';
+                document.getElementById('receivermsg').innerHTML = '<span class="txt-color">UserMessage</span>: é criado para cada lado (remetente e receptor) de uma mensagem.';
+                document.getElementById('Imultenant').innerHTML = 'Implementa <span class="txt-color">IMultiTenant</span> e <span interfaces class="txt-color">IAggregateRoot</span>.';
+                document.getElementById('chatmsgid').innerHTML = '<span class="txt-color">ChatMessageId</span>: Id do relacionado <span class="txt-color">Mensagem.</span>';
+                document.getElementById('useri').innerHTML = '<span class="txt-color">UserId</span>: ID do <span relacionado class="txt-color">ChatUser.</span>';
+                document.getElementById('targetuser').innerHTML = '<span class="txt-color">TargetUserId</span>: Id de outro relacionado <span class="txt-color">ChatUser.</span>';
+                document.getElementById('stattes').innerHTML = '<span class="txt-color">Lado</span>: Informa que se for um enviar mensagem ou mensagem recebida.';
+                document.getElementById('isreadd').innerHTML = '<span class="txt-color">IsRead</span>: Leia as informações.';
+                document.getElementById('readt').innerHTML = '<span class="txt-color">ReadTime</span>: Leia as informações de tempo.';
+                document.getElementById('conver').innerHTML = '<span class="txt-color">Conversação</span>: é criada para cada lado de uma conversa entre usuários. Implementa IMultiTenant e IAggregateRoot interfaces.';
+                document.getElementById('imulti').innerHTML = 'Implementa <span class="txt-color">IMultiTenant</span> e <span interfaces class="txt-color">IAggregateRoot</span>.';
+                document.getElementById('useriid').innerHTML = '<span class="txt-color">UserId</span>: Id do ChatUser relacionado.';
+                document.getElementById('targetus').innerHTML = '<span class="txt-color">TargetUserId</span>: Id de outro ChatUser relacionado.';
+                document.getElementById('lastmsgside').innerHTML = '<span class="txt-color">LastMessageSide</span>: indica o lado da última mensagem (enviada ou recebida).';
+                document.getElementById('lastmsg').innerHTML = '<span class="txt-color">LastMessage</span>: Conteúdo da última mensagem na conversa.';
+                document.getElementById('lastmsgdate').innerHTML = '<span class="txt-color">LastMessageDate</span>: Data da última mensagem da conversa.';
+                document.getElementById('repo').innerHTML = '<span class="txt-color">UnreadMessageCount</span>: contagem de mensagens não lidas na conversa.';
+                document.getElementById('reposit').innerHTML = 'Repositórios';
+                document.getElementById('thismodfoll').innerHTML = 'Este módulo segue o <a href="https://docs.abp.io/en/abp/latest/Best-Practices/Repositories">Repositório Melhor Guia de práticas e convenções</a>.';
+                document.getElementById('follcustom').innerHTML = 'Os seguintes repositórios personalizados são definidos para este módulo:';
+                document.getElementById('ds').innerHTML = 'Serviços de domínio';
+                document.getElementById('messmanager').innerHTML = '<span class="txt-color">MessagingManager</span>';
+                document.getElementById('applayers').innerHTML = 'Camada de aplicação';
+                document.getElementById('app-services').innerHTML = 'serviços de aplicativos';
+                document.getElementById('conversationappservice').innerHTML = '<span class="txt-color">ConversationAppService</span> (implementa <span class="txt-color">IConversationAppService</span>): Usado para enviar mensagens, obtenha conversas entre usuários e marque uma conversa como lida.';
+                document.getElementById('settingapp').innerHTML = '<span class="txt-color">SettingsAppService</span> (implementa <span class="txt-color">ISettingsAppService</span>): Usado para salvar as configurações de chat.';
+                document.getElementById('conatactappser').innerHTML = '<span class="txt-color">ContactAppService</span> (implementa <span class="txt-color">IContactAppService</span>): Usado para obter lista de contatos e contagem total de mensagens não lidas de um usuário.';
+                document.getElementById('distributedevent').innerHTML = '<período class="txt-color">DistributedEventBusRealTimeChatMessageSender</span> (implementa <span class="txt-color">IRealTimeChatMessageSender</span>): Usado para publicar chat mensagens para o barramento de eventos distribuído.';
+                document.getElementById('signalR').innerHTML = '<span class="txt-color">SignalRRealTimeChatMessageSender</span> (implementa <span class="txt-color">IRealTimeChatMessageSender</span>): Usado para enviar mensagens para o cliente SignalR de destino.';
+                // For In this doc section
+                document.getElementById('inthisdoc').innerHTML = 'neste documento';
+                document.getElementById('instt').innerHTML = '<a href="#installation" class="text-black">Instalação</a>';
+                document.getElementById('chatpa').innerHTML = '<a href="#chat-page" class="text-black">Página de bate-papo</a>';
+                document.getElementById('domlayers').innerHTML = '<a href="#dl" class="text-black">Camada de domínio</a>';
+                document.getElementById('repss').innerHTML = '<a href="#repo" class="text-black">Repositórios</a>';
+                document.getElementById('domser').innerHTML = '<a href="#ds" class="text-black">Serviços de domínio</a>';
+                document.getElementById('appsr').innerHTML = '<a href="#app-services" class="text-black">Serviços de aplicativos</a>';
+
+            }
+            else if (selectedLanguage === 'French') {
+                // Body Content
+
+                document.getElementById('installation').innerHTML = 'module de discussion';
+                document.getElementById('thismod').innerHTML = 'Ce module implémente une messagerie en temps réel entre utilisateurs pour une application.';
+                document.getElementById('insta').innerHTML = 'Installation';
+                document.getElementById('nofurther').innerHTML = 'Aucune installation supplémentaire n\'est requise en termes d\'utilisation de la suite ABP et d\'installation manuelle car elle est fournie avec le modèle de démarrage.';
+                document.getElementById('packs').innerHTML = 'paquets';
+                document.getElementById('thismoduleallows').innerHTML = 'Ce module suit le <a href="https://docs.abp.io/en/abp/latest/Best-Practices/Index">guide des meilleures pratiques de développement de modules</a> et se compose de plusieurs packages NuGet et NPM. Consultez le guide si vous souhaitez comprendre les packages et les relations entre eux.';
+                document.getElementById('youcanvisit').innerHTML = 'Vous pouvez visiter la <a href="https://abp.io/packages?moduleName=Volo.Chat">page de la liste des packages du module de chat</a> pour voir la liste des packages liés à ce module.';
+                document.getElementById('chat-page').innerHTML = 'interface utilisateur';
+                document.getElementById('chatp').innerHTML = 'chat';
+                document.getElementById('thisisthe').innerHTML = 'Il s\'agit de la page sur laquelle les utilisateurs s\'envoient des messages.';
+                document.getElementById('dl').innerHTML = 'Interne';
+
+            }
+            else if (selectedLanguage === 'French') {
+                // Body Content
+
+                document.getElementById('domlayer').innerHTML = 'couche de domaine';
+                document.getElementById('entitiesand').innerHTML = 'Entités agrégées et racines';
+                document.getElementById('messt').innerHTML = '<span class="txt-color">Message</span> (racine agrégée) : représente un message de chat. Implémente <span class="txt-color">IMultiTenant.</span>';
+                document.getElementById('messcont').innerHTML = '<span class="txt-color">Texte</span> : contenu du message.';
+                document.getElementById('isallreads').innerHTML = '<span class="txt-color">IsAllRead</span> : informations sur la lecture du message.';
+                document.getElementById('readtime').innerHTML = '<span class="txt-color">ReadTime</span> : temps de lecture du message d\'information.';
+                document.getElementById('chatuse').innerHTML = '<span class="txt-color">ChatUser</span> (racine agrégée) : représente un utilisateur de chat.';
+                document.getElementById('impleIuser').innerHTML = 'Implémente <span class="txt-color">IUser</span> et <span interfaces class="txt-color">IUpdateUserData</span>.';
+                document.getElementById('receivermsg').innerHTML = '<span class="txt-color">UserMessage</span> : est créé pour chaque côté (expéditeur et destinataire) d\'un message.';
+                document.getElementById('Imultenant').innerHTML = 'Il implémente <span class="txt-color">IMultiTenant</span> et <span interfaces class="txt-color">IAggregateRoot</span>.';
+                document.getElementById('chatmsgid').innerHTML = '<span class="txt-color">ChatMessageId</span> : identifiant du <span class="txt-color">message associé.</span>';
+                document.getElementById('useri').innerHTML = '<span class="txt-color">UserId</span> : ID du <span related class="txt-color">ChatUser.</span>';
+                document.getElementById('targetuser').innerHTML = '<span class="txt-color">TargetUserId</span> : identifiant d\'un autre <span class="txt-color">ChatUser.</span> associé';
+                document.getElementById('stattes').innerHTML = '<span class="txt-color">Côté</span> : indique s\'il s\'agit d\'un message envoyé ou d\'un message reçu.';
+                document.getElementById('isreadd').innerHTML = '<span class="txt-color">IsRead</span> : lit les informations.';
+                document.getElementById('readt').innerHTML = '<span class="txt-color">ReadTime</span> : Lit les informations de temps.';
+
+
+                document.getElementById('domlayer').innerHTML = 'couche de domaine';
+                document.getElementById('entitiesand').innerHTML = 'Entités agrégées et racines';
+                document.getElementById('messt').innerHTML = '<span class="txt-color">Message</span> (racine agrégée) : représente un message de chat. Implémente <span class="txt-color">IMultiTenant.</span>';
+                document.getElementById('messcont').innerHTML = '<span class="txt-color">Texte</span> : contenu du message.';
+                document.getElementById('isallreads').innerHTML = '<span class="txt-color">IsAllRead</span> : informations sur la lecture du message.';
+                document.getElementById('readtime').innerHTML = '<span class="txt-color">ReadTime</span> : temps de lecture du message d\'information.';
+                document.getElementById('chatuse').innerHTML = '<span class="txt-color">ChatUser</span> (racine agrégée) : représente un utilisateur de chat.';
+                document.getElementById('impleIuser').innerHTML = 'Implémente <span class="txt-color">IUser</span> et <span interfaces class="txt-color">IUpdateUserData</span>.';
+                document.getElementById('receivermsg').innerHTML = '<span class="txt-color">UserMessage</span> : est créé pour chaque côté (expéditeur et destinataire) d\'un message.';
+                document.getElementById('Imultenant').innerHTML = 'Il implémente <span class="txt-color">IMultiTenant</span> et <span interfaces class="txt-color">IAggregateRoot</span>.';
+                document.getElementById('chatmsgid').innerHTML = '<span class="txt-color">ChatMessageId</span> : identifiant du <span class="txt-color">message associé.</span>';
+                document.getElementById('useri').innerHTML = '<span class="txt-color">UserId</span> : ID du <span related class="txt-color">ChatUser.</span>';
+                document.getElementById('targetuser').innerHTML = '<span class="txt-color">TargetUserId</span> : identifiant d\'un autre <span class="txt-color">ChatUser.</span> associé';
+                document.getElementById('stattes').innerHTML = '<span class="txt-color">Côté</span> : indique s\'il s\'agit d\'un message envoyé ou d\'un message reçu.';
+                document.getElementById('isreadd').innerHTML = '<span class="txt-color">IsRead</span> : lit les informations.';
+                document.getElementById('readt').innerHTML = '<span class="txt-color">ReadTime</span> : Lit les informations de temps.';
+
+
+                document.getElementById('conver').innerHTML = '<span class="txt-color">Conversation</span> : est créé pour chaque côté d\'une conversation entre utilisateurs. Implémente les interfaces IMultiTenant et IAggregateRoot.';
+                document.getElementById('imulti').innerHTML = 'Il implémente <span class="txt-color">IMultiTenant</span> et <span interfaces class="txt-color">IAggregateRoot</span>.';
+                document.getElementById('useriid').innerHTML = '<span class="txt-color">UserId</span> : identifiant ChatUser associé.';
+                document.getElementById('targetus').innerHTML = '<span class="txt-color">TargetUserId</span> : identifiant d\'un autre ChatUser associé.';
+                document.getElementById('lastmsgside').innerHTML = '<span class="txt-color">LastMessageSide</span> : indique le côté du dernier message (envoyé ou reçu).';
+                document.getElementById('lastmsg').innerHTML = '<span class="txt-color">LastMessage</span> : contenu du dernier message de la conversation.';
+                document.getElementById('lastmsgdate').innerHTML = '<span class="txt-color">LastMessageDate</span> : date du dernier message de la conversation.';
+                document.getElementById('repo').innerHTML = '<span class="txt-color">UnreadMessageCount</span> : nombre de messages non lus dans la conversation.';
+                document.getElementById('reposit').innerHTML = 'Référentiels';
+                document.getElementById('thismodfoll').innerHTML = 'Ce module suit le <a href="https://docs.abp.io/en/abp/latest/Best-Practices/Repositories">Guide des meilleures pratiques et conventions de référentiel</a>.';
+                document.getElementById('follcustom').innerHTML = 'Les référentiels personnalisés suivants sont définis pour ce module :';
+                document.getElementById('ds').innerHTML = 'services de domaine';
+                document.getElementById('messmanager').innerHTML = '<span class="txt-color">Gestionnaire de messagerie</span>';
+                document.getElementById('applayers').innerHTML = 'couche d\'application';
+
+
+                document.getElementById('conver').innerHTML = '<span class="txt-color">Conversation</span> : est créé pour chaque côté d\'une conversation entre utilisateurs. Implémente les interfaces IMultiTenant et IAggregateRoot.';
+                document.getElementById('imulti').innerHTML = 'Il implémente <span class="txt-color">IMultiTenant</span> et <span interfaces class="txt-color">IAggregateRoot</span>.';
+                document.getElementById('useriid').innerHTML = '<span class="txt-color">UserId</span> : identifiant ChatUser associé.';
+                document.getElementById('targetus').innerHTML = '<span class="txt-color">TargetUserId</span> : identifiant d\'un autre ChatUser associé.';
+                document.getElementById('lastmsgside').innerHTML = '<span class="txt-color">LastMessageSide</span> : indique le côté du dernier message (envoyé ou reçu).';
+                document.getElementById('lastmsg').innerHTML = '<span class="txt-color">LastMessage</span> : contenu du dernier message de la conversation.';
+                document.getElementById('lastmsgdate').innerHTML = '<span class="txt-color">LastMessageDate</span> : date du dernier message de la conversation.';
+                document.getElementById('repo').innerHTML = '<span class="txt-color">UnreadMessageCount</span> : nombre de messages non lus dans la conversation.';
+                document.getElementById('reposit').innerHTML = 'Référentiels';
+                document.getElementById('thismodfoll').innerHTML = 'Ce module suit le <a href="https://docs.abp.io/en/abp/latest/Best-Practices/Repositories">Guide des meilleures pratiques et conventions de référentiel</a>.';
+                document.getElementById('follcustom').innerHTML = 'Les référentiels personnalisés suivants sont définis pour ce module :';
+                document.getElementById('ds').innerHTML = 'services de domaine';
+                document.getElementById('messmanager').innerHTML = '<span class="txt-color">Gestionnaire de messagerie</span>';
+                document.getElementById('applayers').innerHTML = 'couche d\'application';
+
+                document.getElementById('app-services').innerHTML = 'services d\'application';
+                document.getElementById('conversationappservice').innerHTML = '<span class="txt-color">ConversationAppService</span> (implémente <span class="txt-color">IConversationAppService</span>) : utilisé pour envoyer des messages, obtenir des conversations entre utilisateurs et marquer une conversation comme lue .';
+                document.getElementById('settingapp').innerHTML = '<span class="txt-color">SettingsAppService</span> (implémente <span class="txt-color">ISettingsAppService</span>) : utilisé pour enregistrer les paramètres de chat.';
+                document.getElementById('conatactappser').innerHTML = '<span class="txt-color">ContactAppService</span> (implémente <span class="txt-color">IContactAppService</span>) : utilisé pour obtenir la liste de contacts d\'un utilisateur et le nombre total de messages non lus .';
+                document.getElementById('distributedevent').innerHTML = '<span class="txt-color">DistributedEventBusRealTimeChatMessageSender</span> (implémente <span class="txt-color">IRealTimeChatMessageSender</span>) : utilisé pour publier des messages de discussion sur le bus d\'événements distribués.';
+                document.getElementById('signalR').innerHTML = '<span class="txt-color">SignalRRealTimeChatMessageSender</span> (implémente <span class="txt-color">IRealTimeChatMessageSender</span>) : utilisé pour envoyer des messages au client SignalR cible.';
+                // For In this doc section
+                document.getElementById('inthisdoc').innerHTML = 'dans ce document';
+                document.getElementById('instt').innerHTML = '<a href="#installation" class="text-black">Installation</a>';
+                document.getElementById('chatpa').innerHTML = '<a href="#chat-page" class="text-black">Page de discussion</a>';
+                document.getElementById('domlayers').innerHTML = '<a href="#dl" class="text-black">Couche de domaine</a>';
+                document.getElementById('repss').innerHTML = '<a href="#repo" class="text-black">Référentiels</a>';
+                document.getElementById('domser').innerHTML = '<a href="#ds" class="text-black">Services de domaine</a>';
+                document.getElementById('appsr').innerHTML = '<a href="#app-services" class="text-black">Services applicatifs</a>';
+            }
+            else if (selectedLanguage === 'Finnish') {
+                // Body Content
+
+                document.getElementById('installation').innerHTML = 'chat-moduuli';
+                document.getElementById('thismod').innerHTML = 'Tämä moduuli toteuttaa sovelluksen reaaliaikaisen käyttäjien välisen viestinnän.';
+                document.getElementById('insta').innerHTML = 'Laitos';
+                document.getElementById('nofurther').innerHTML = 'Lisäasennusta ei tarvita ABP-sarjan ja manuaalisen asennuksen kannalta, koska se tulee aloitusmallin mukana.';
+                document.getElementById('packs').innerHTML = 'paketteja';
+                document.getElementById('thismoduleallows').innerHTML = 'Tämä moduuli noudattaa <a href="https://docs.abp.io/en/abp/latest/Best-Practices/Index">Moduulikehityksen parhaiden käytäntöjen opasta</a> ja koostuu useista NuGet- ja NPM-paketeista. Tutustu oppaaseen, jos haluat ymmärtää paketteja ja niiden välisiä suhteita.';
+                document.getElementById('youcanvisit').innerHTML = 'Voit käydä <a href="https://abp.io/packages?moduleName=Volo.Chat">chat-moduulin pakettiluettelosivulla</a> nähdäksesi luettelon tähän moduuliin liittyvistä paketeista .';
+                document.getElementById('chat-page').innerHTML = 'käyttöliittymä';
+                document.getElementById('chatp').innerHTML = 'kissa';
+                document.getElementById('thisisthe').innerHTML = 'Tämä on sivu, jolla käyttäjät lähettävät viestejä toisilleen.';
+                document.getElementById('dl').innerHTML = 'Sisäinen';
+                document.getElementById('domlayer').innerHTML = 'verkkotunnuksen kerros';
+                document.getElementById('entitiesand').innerHTML = 'Aggregoidut entiteetit ja juuret';
+                document.getElementById('messt').innerHTML = '<span class="txt-color">Viesti</span> (koostettu juuri): Edustaa chat-viestiä. Toteuttaa <span class="txt-color">IMultiTenantin.</span>';
+                document.getElementById('messcont').innerHTML = '<span class="txt-color">Teksti</span>: viestin sisältö.';
+                document.getElementById('isallreads').innerHTML = '<span class="txt-color">IsAllRead</span>: tiedot viestin lukemisesta.';
+                document.getElementById('readtime').innerHTML = '<span class="txt-color">Lukuaika</span>: Tietoviestin lukuaika.';
+                document.getElementById('chatuse').innerHTML = '<span class="txt-color">ChatUser</span> (koostettu juuri): Edustaa chatin käyttäjää.';
+                document.getElementById('impleIuser').innerHTML = 'Toteuttaa <span class="txt-color">IUser</span> ja <span interfaces class="txt-color">IUpdateUserData</span>.';
+                document.getElementById('receivermsg').innerHTML = '<span class="txt-color">Käyttäjäviesti</span>: luodaan viestin kummallekin puolelle (lähettäjä ja vastaanottaja).';
+                document.getElementById('Imultenant').innerHTML = 'Se toteuttaa <span class="txt-color">IMultiTenant</span> ja <span interfaces class="txt-color">IAggregateRoot</span>.';
+                document.getElementById('chatmsgid').innerHTML = '<span class="txt-color">ChatMessageId</span>: <span class="txt-color">liittyneen viestin</span> tunnus.';
+                document.getElementById('useri').innerHTML = '<span class="txt-color">UserId</span>: <span related class="txt-color">ChatUserin</span> tunnus.';
+                document.getElementById('targetuser').innerHTML = '<span class="txt-color">TargetUserId</span>: toisen yhdistetyn <span class="txt-color">ChatUser</span> tunnus.';
+                document.getElementById('stattes').innerHTML = '<span class="txt-color">Sivu</span>: Ilmaisee, onko tämä viesti lähetetty vai vastaanotettu.';
+                document.getElementById('isreadd').innerHTML = '<span class="txt-color">IsRead</span>: lukee tietoja.';
+                document.getElementById('readt').innerHTML = '<span class="txt-color">ReadTime</span>: Lukee aikatiedot.';
+                document.getElementById('conver').innerHTML = '<span class="txt-color">Keskustelu</span>: luodaan käyttäjien välisen keskustelun molemmille puolille. Toteuttaa IMultiTenant- ja IAggregateRoot-rajapinnat.';
+                document.getElementById('imulti').innerHTML = 'Se toteuttaa <span class="txt-color">IMultiTenant</span> ja <span interfaces class="txt-color">IAggregateRoot</span>.';
+                document.getElementById('useriid').innerHTML = '<span class="txt-color">Käyttäjätunnus</span>: yhdistetty chat-käyttäjätunnus.';
+                document.getElementById('targetus').innerHTML = '<span class="txt-color">TargetUserId</span>: toisen yhdistetyn ChatUserin tunnus.';
+                document.getElementById('lastmsgside').innerHTML = '<span class="txt-color">LastMessageSide</span>: Ilmaisee viimeisen viestin puolen (lähetetty tai vastaanotettu).';
+                document.getElementById('lastmsg').innerHTML = '<span class="txt-color">Viimeinen viesti</span>: keskustelun viimeisen viestin sisältö.';
+
+                document.getElementById('app-services').innerHTML = 'services d\'application';
+                document.getElementById('conversationappservice').innerHTML = '<span class="txt-color">ConversationAppService</span> (implémente <span class="txt-color">IConversationAppService</span>) : utilisé pour envoyer des messages, obtenir des conversations entre utilisateurs et marquer une conversation comme lue .';
+                document.getElementById('settingapp').innerHTML = '<span class="txt-color">SettingsAppService</span> (implémente <span class="txt-color">ISettingsAppService</span>) : utilisé pour enregistrer les paramètres de chat.';
+                document.getElementById('conatactappser').innerHTML = '<span class="txt-color">ContactAppService</span> (implémente <span class="txt-color">IContactAppService</span>) : utilisé pour obtenir la liste de contacts d\'un utilisateur et le nombre total de messages non lus .';
+                document.getElementById('distributedevent').innerHTML = '<span class="txt-color">DistributedEventBusRealTimeChatMessageSender</span> (implémente <span class="txt-color">IRealTimeChatMessageSender</span>) : utilisé pour publier des messages de discussion sur le bus d\'événements distribués.';
+                document.getElementById('signalR').innerHTML = '<span class="txt-color">SignalRRealTimeChatMessageSender</span> (implémente <span class="txt-color">IRealTimeChatMessageSender</span>) : utilisé pour envoyer des messages au client SignalR cible.';
+                // For In this doc section
+                document.getElementById('inthisdoc').innerHTML = 'dans ce document';
+                document.getElementById('instt').innerHTML = '<a href="#installation" class="text-black">Installation</a>';
+                document.getElementById('chatpa').innerHTML = '<a href="#chat-page" class="text-black">Page de discussion</a>';
+                document.getElementById('domlayers').innerHTML = '<a href="#dl" class="text-black">Couche de domaine</a>';
+                document.getElementById('repss').innerHTML = '<a href="#repo" class="text-black">Référentiels</a>';
+                document.getElementById('domser').innerHTML = '<a href="#ds" class="text-black">Services de domaine</a>';
+                document.getElementById('appsr').innerHTML = '<a href="#app-services" class="text-black">Services applicatifs</a>';
+            }
+            else if (selectedLanguage === 'Finnish') {
+                // Body Content
+
+                document.getElementById('lastmsgdate').innerHTML = '<span class="txt-color">LastMessageDate</span>: keskustelun viimeisen viestin päivämäärä.';
+                document.getElementById('repo').innerHTML = '<span class="txt-color">UnreadMessageCount</span>: keskustelun lukemattomien viestien määrä.';
+                document.getElementById('reposit').innerHTML = 'Tietovarastot';
+                document.getElementById('thismodfoll').innerHTML = 'Tämä moduuli noudattaa <a href="https://docs.abp.io/en/abp/latest/Best-Practices/Repositories">Arkiston parhaiden käytäntöjen ja käytäntöjen opas</a>.';
+                document.getElementById('follcustom').innerHTML = 'Tälle moduulille on määritetty seuraavat mukautetut arkistot:';
+                document.getElementById('ds').innerHTML = 'verkkotunnuksen palvelut';
+                document.getElementById('messmanager').innerHTML = '<span class="txt-color">Sähköpostin hallinta</span>';
+                document.getElementById('applayers').innerHTML = 'sovelluskerros';
+                document.getElementById('app-services').innerHTML = 'sovelluspalvelut';
+                document.getElementById('conversationappservice').innerHTML = '<span class="txt-color">ConversationAppService</span> (toteuttaa <span class="txt-color">IConversationAppServicen</span>): käytetään viestien lähettämiseen, käyttäjien välisten keskustelujen vastaanottamiseen ja keskustelun merkitsemiseen luetuksi.';
+                document.getElementById('settingapp').innerHTML = '<span class="txt-color">SettingsAppService</span> (toteuttaa <span class="txt-color">ISettingsAppServicen</span>): Käytetään chat-asetusten tallentamiseen.';
+                document.getElementById('conatactappser').innerHTML = '<span class="txt-color">ContactAppService</span> (toteuttaa <span class="txt-color">IContactAppServicen</span>): käytetään käyttäjän yhteystietoluettelon saamiseen ja lukemattomien viestien kokonaismäärään.';
+
+                document.getElementById('distributedevent').innerHTML = '<span class="txt-color">DistributedEventBusRealTimeChatMessageSender</span> (toteuttaa <span class="txt-color">IRealTimeChatMessageSender</span>): Käytetään chat-viestien lähettämiseen hajautettuun tapahtumaväylään.';
+                document.getElementById('signalR').innerHTML = '<span class="txt-color">SignalRRealTimeChatMessageSender</span> (toteuttaa <span class="txt-color">IRealTimeChatMessageSenderin</span>): Käytetään viestien lähettämiseen kohde SignalR -asiakkaalle.';
+                // For In this doc section
+                document.getElementById('inthisdoc').innerHTML = 'tässä asiakirjassa';
+                document.getElementById('instt').innerHTML = '<a href="#installation" class="text-black">Asennus</a>';
+                document.getElementById('chatpa').innerHTML = '<a href="#chat-page" class="text-black">Pikaviestisivu</a>';
+                document.getElementById('domlayers').innerHTML = '<a href="#dl" class="text-black">Verkkotunnustaso</a>';
+                document.getElementById('repss').innerHTML = '<a href="#repo" class="text-black">Arkistot</a>';
+                document.getElementById('domser').innerHTML = '<a href="#ds" class="text-black">Verkkotunnuspalvelut</a>';
+                document.getElementById('appsr').innerHTML = '<a href="#app-services" class="text-black">Sovelluspalvelut</a>';
+            }
+            else if (selectedLanguage === 'Slovak') {
+                // Obsah tela
+document.getElementById('installation').innerHTML = 'Modul pre chat';
+document.getElementById('thismod').innerHTML = 'Tento modul implementuje reálny časový komunikačný systém medzi používateľmi.';
+document.getElementById('insta').innerHTML = 'Inštalácia';
+document.getElementById('nofurther').innerHTML = 'Ďalšia inštalácia nie je potrebná pre sériu ABP a manuálnu inštaláciu, pretože je súčasťou štartovacej šablóny.';
+document.getElementById('packs').innerHTML = 'balíky';
+document.getElementById('thismoduleallows').innerHTML = 'Tento modul dodržiava <a href="https://docs.abp.io/en/abp/latest/Best-Practices/Index">najlepšie postupy vývoja modulov</a> a pozostáva z viacerých balíkov NuGet a NPM. Pre porozumenie balíkom a ich vzťahom si prečítajte príručku.';
+document.getElementById('youcanvisit').innerHTML = 'Môžete navštíviť <a href="https://abp.io/packages?moduleName=Volo.Chat">zoznam balíkov modulu pre chat</a>, aby ste videli súvisiace balíky.';
+document.getElementById('chat-page').innerHTML = 'Rozhranie chatu';
+document.getElementById('chatp').innerHTML = 'Mačka';
+document.getElementById('thisisthe').innerHTML = 'Toto je stránka, na ktorej používatelia posielať správy jeden druhému.';
+document.getElementById('dl').innerHTML = 'Doménová vrstva';
+document.getElementById('domlayer').innerHTML = 'Doménová vrstva';
+document.getElementById('entitiesand').innerHTML = 'Agregované entity a korene';
+document.getElementById('messt').innerHTML = '<span class="txt-color">Správa</span> (agregovaný koreň): Reprezentuje správu v chate. Implementuje <span class="txt-color">IMultiTenant</span>.';
+document.getElementById('messcont').innerHTML = '<span class="txt-color">Obsah</span>: Obsah správy.';
+document.getElementById('isallreads').innerHTML = '<span class="txt-color">IsAllRead</span>: Informácie o prečítaní správy.';
+document.getElementById('readtime').innerHTML = '<span class="txt-color">Čas čítania</span>: Čas čítania správy.';
+document.getElementById('chatuse').innerHTML = '<span class="txt-color">Používateľ chatu</span> (agregovaný koreň): Reprezentuje používateľa chatu.';
+document.getElementById('impleIuser').innerHTML = 'Implementuje <span class="txt-color">IUser</span> a <span class="txt-color">IUpdateUserData</span>.';
+document.getElementById('receivermsg').innerHTML = '<span class="txt-color">Používateľská správa</span>: Vytvára správu pre obe strany (odosielateľ a prijímateľ).';
+document.getElementById('Imultenant').innerHTML = 'Implementuje <span class="txt-color">IMultiTenant</span> a <span class="txt-color">IAggregateRoot</span>.';
+document.getElementById('chatmsgid').innerHTML = '<span class="txt-color">Id správy chatu</span>: Identifikátor pripojenej správy.';
+document.getElementById('useri').innerHTML = '<span class="txt-color">Id používateľa</span>: Identifikátor používateľa chatu.';
+document.getElementById('targetuser').innerHTML = '<span class="txt-color">Id cieľového používateľa</span>: Identifikátor cieľového používateľa chatu.';
+document.getElementById('stattes').innerHTML = '<span class="txt-color">Stav</span>: Určuje, či bola správa odoslaná alebo prijatá.';
+document.getElementById('isreadd').innerHTML = '<span class="txt-color">IsRead</span>: Informácie o prečítaní.';
+document.getElementById('readt').innerHTML = '<span class="txt-color">Čas čítania</span>: Časové údaje o čítaní.';
+document.getElementById('conver').innerHTML = '<span class="txt-color">Konverzácia</span>: Vytvára konverzáciu medzi používateľmi. Implementuje rozhrania IMultiTenant a IAggregateRoot.';
+document.getElementById('imulti').innerHTML = 'Implementuje <span class="txt-color">IMultiTenant</span> a <span class="txt-color">IAggregateRoot</span>.';
+document.getElementById('useriid').innerHTML = '<span class="txt-color">Id používateľa</span>: Identifikátor používateľa chatu.';
+document.getElementById('targetus').innerHTML = '<span class="txt-color">Id cieľového používateľa</span>: Identifikátor cieľového používateľa chatu.';
+document.getElementById('lastmsgside').innerHTML = '<span class="txt-color">Strana poslednej správy</span>: Určuje poslednú stranu správy (odoslaná alebo prijatá).';
+document.getElementById('lastmsg').innerHTML = '<span class="txt-color">Posledná správa</span>: Obsah poslednej správy v konverzácii.';
+
+document.getElementById('lastmsgdate').innerHTML = '<span class="txt-color">Dátum poslednej správy</span>: Dátum poslednej správy v konverzácii.';
+document.getElementById('repo').innerHTML = '<span class="txt-color">Počet neprečítaných správ</span>: Počet neprečítaných správ v konverzácii.';
+document.getElementById('reposit').innerHTML = 'Úložiská';
+document.getElementById('thismodfoll').innerHTML = 'Tento modul dodržiava <a href="https://docs.abp.io/en/abp/latest/Best-Practices/Repositories">najlepšie postupy úložísk</a>.';
+document.getElementById('follcustom').innerHTML = 'Pre tento modul sú nastavené tieto vlastné úložiská:';
+document.getElementById('ds').innerHTML = 'Doménové služby';
+document.getElementById('messmanager').innerHTML = '<span class="txt-color">Správca správ</span>';
+document.getElementById('applayers').innerHTML = 'Aplikačná vrstva';
+document.getElementById('app-services').innerHTML = 'Aplikačné služby';
+document.getElementById('conversationappservice').innerHTML = '<span class="txt-color">Služba pre konverzácie</span> (implementuje <span class="txt-color">IConversationAppService</span>): Slúži na odosielanie správ, prijímanie konverzácií medzi používateľmi a označovanie konverzácie ako prečítanej.';
+document.getElementById('settingapp').innerHTML = '<span class="txt-color">Služba nastavení</span> (implementuje <span class="txt-color">ISettingsAppService</span>): Slúži na ukladanie chatových nastavení.';
+document.getElementById('conatactappser').innerHTML = '<span class="txt-color">Služba pre kontakty</span> (implementuje <span class="txt-color">IContactAppService</span>): Slúži na získanie zoznamu kontaktov používateľa a celkový počet neprečítaných správ.';
+
+document.getElementById('distributedevent').innerHTML = '<span class="txt-color">DistributedEventBusRealTimeChatMessageSender</span> (implementuje <span class="txt-color">IRealTimeChatMessageSender</span>): Slúži na odosielanie chatových správ do distribuovaného event busu.';
+document.getElementById('signalR').innerHTML = '<span class="txt-color">SignalRRealTimeChatMessageSender</span> (implementuje <span class="txt-color">IRealTimeChatMessageSender</span>): Slúži na odosielanie správ na konkrétny SignalR klient.';
+// Pre sekciu V tomto dokumente
+document.getElementById('inthisdoc').innerHTML = 'v tomto dokumente';
+document.getElementById('instt').innerHTML = '<a href="#installation" class="text-black">Inštalácia</a>';
+document.getElementById('chatpa').innerHTML = '<a href="#chat-page" class="text-black">Stránka chatu</a>';
+document.getElementById('domlayers').innerHTML = '<a href="#dl" class="text-black">Doménová vrstva</a>';
+document.getElementById('repss').innerHTML = '<a href="#repo" class="text-black">Úložiská</a>';
+document.getElementById('domser').innerHTML = '<a href="#ds" class="text-black">Doménové služby</a>';
+document.getElementById('appsr').innerHTML = '<a href="#app-services" class="text-black">Aplikačné služby</a>';
+
+            } 
+            
+ else if (selectedLanguage === 'German') {
+    // Inhaltsverzeichnis
+document.getElementById('installation').innerHTML = 'Chat-Modul';
+document.getElementById('thismod').innerHTML = 'Dieses Modul implementiert ein Echtzeit-Kommunikationssystem zwischen Benutzern.';
+document.getElementById('insta').innerHTML = 'Installation';
+document.getElementById('nofurther').innerHTML = 'Für die ABP-Serie und die manuelle Installation ist keine weitere Installation erforderlich, da es Teil der Startvorlage ist.';
+document.getElementById('packs').innerHTML = 'Pakete';
+document.getElementById('thismoduleallows').innerHTML = 'Dieses Modul entspricht den <a href="https://docs.abp.io/en/abp/latest/Best-Practices/Index">Best Practices für die Modulentwicklung</a> und besteht aus mehreren NuGet- und NPM-Paketen. Informationen zu den Paketen und deren Beziehung finden Sie in der Dokumentation.';
+document.getElementById('youcanvisit').innerHTML = 'Sie können die <a href="https://abp.io/packages?moduleName=Volo.Chat">Liste der Chat-Modulpakete</a> besuchen, um verwandte Pakete zu sehen.';
+document.getElementById('chat-page').innerHTML = 'Chat-Oberfläche';
+document.getElementById('chatp').innerHTML = 'Chat-Seite';
+document.getElementById('thisisthe').innerHTML = 'Dies ist die Seite, auf der Benutzer Nachrichten aneinander senden.';
+document.getElementById('dl').innerHTML = 'Domänenschicht';
+document.getElementById('domlayer').innerHTML = 'Domänenschicht';
+document.getElementById('entitiesand').innerHTML = 'Aggregate-Entitäten und Wurzeln';
+document.getElementById('messt').innerHTML = '<span class="txt-color">Nachricht</span> (Aggregate-Wurzel): Stellt eine Chat-Nachricht dar. Implementiert <span class="txt-color">IMultiTenant</span>.';
+document.getElementById('messcont').innerHTML = '<span class="txt-color">Inhalt</span>: Inhalt der Nachricht.';
+document.getElementById('isallreads').innerHTML = '<span class="txt-color">IsAllRead</span>: Informationen über das Lesen der Nachricht.';
+document.getElementById('readtime').innerHTML = '<span class="txt-color">Lesezeit</span>: Lesezeitpunkt der Nachricht.';
+document.getElementById('chatuse').innerHTML = '<span class="txt-color">Chat-Benutzer</span> (Aggregate-Wurzel): Stellt einen Chat-Benutzer dar.';
+document.getElementById('impleIuser').innerHTML = 'Implementiert <span class="txt-color">IUser</span> und <span class="txt-color">IUpdateUserData</span>.';
+document.getElementById('receivermsg').innerHTML = '<span class="txt-color">Benutzernachricht</span>: Erstellt eine Nachricht für beide Seiten (Absender und Empfänger).';
+document.getElementById('Imultenant').innerHTML = 'Implementiert <span class="txt-color">IMultiTenant</span> und <span class="txt-color">IAggregateRoot</span>.';
+document.getElementById('chatmsgid').innerHTML = '<span class="txt-color">Chat-Nachrichten-ID</span>: Kennung der zugehörigen Nachricht.';
+document.getElementById('useri').innerHTML = '<span class="txt-color">Benutzer-ID</span>: Benutzerkennung im Chat.';
+document.getElementById('targetuser').innerHTML = '<span class="txt-color">Zielbenutzer-ID</span>: Kennung des Zielbenutzers im Chat.';
+document.getElementById('stattes').innerHTML = '<span class="txt-color">Status</span>: Gibt an, ob die Nachricht gesendet oder empfangen wurde.';
+document.getElementById('isreadd').innerHTML = '<span class="txt-color">IsRead</span>: Informationen über das Lesen der Nachricht.';
+document.getElementById('readt').innerHTML = '<span class="txt-color">Lesezeit</span>: Zeitpunkt des Lesens.';
+document.getElementById('conver').innerHTML = '<span class="txt-color">Unterhaltung</span>: Erstellt eine Konversation zwischen Benutzern. Implementiert die Schnittstellen IMultiTenant und IAggregateRoot.';
+document.getElementById('imulti').innerHTML = 'Implementiert <span class="txt-color">IMultiTenant</span> und <span class="txt-color">IAggregateRoot</span>.';
+document.getElementById('useriid').innerHTML = '<span class="txt-color">Benutzer-ID</span>: Benutzerkennung im Chat.';
+document.getElementById('targetus').innerHTML = '<span class="txt-color">Zielbenutzer-ID</span>: Kennung des Zielbenutzers im Chat.';
+document.getElementById('lastmsgside').innerHTML = '<span class="txt-color">Letzte Nachrichtenseite</span>: Gibt die letzte Seite der Nachricht an (gesendet oder empfangen).';
+document.getElementById('lastmsg').innerHTML = '<span class="txt-color">Letzte Nachricht</span>: Inhalt der letzten Nachricht in der Konversation.';
+document.getElementById('lastmsgdate').innerHTML = '<span class="txt-color">Datum der letzten Nachricht</span>: Datum der letzten Nachricht in der Konversation.';
+document.getElementById('repo').innerHTML = '<span class="txt-color">Anzahl der ungelesenen Nachrichten</span>: Anzahl der ungelesenen Nachrichten in der Konversation.';
+document.getElementById('reposit').innerHTML = 'Repositories';
+document.getElementById('thismodfoll').innerHTML = 'Dieses Modul entspricht den <a href="https://docs.abp.io/en/abp/latest/Best-Practices/Repositories">Best Practices für Repositories</a>.';
+document.getElementById('follcustom').innerHTML = 'Für dieses Modul sind folgende benutzerdefinierte Repositories festgelegt:';
+document.getElementById('ds').innerHTML = 'Domänendienste';
+document.getElementById('messmanager').innerHTML = '<span class="txt-color">Nachrichten-Manager</span>';
+document.getElementById('applayers').innerHTML = 'Anwendungsebene';
+document.getElementById('app-services').innerHTML = 'Anwendungsdienste';
+document.getElementById('conversationappservice').innerHTML = '<span class="txt-color">Konversationsdienst</span> (implementiert <span class="txt-color">IConversationAppService</span>): Dient zum Senden von Nachrichten, Empfangen von Konversationen zwischen Benutzern und Markieren von Konversationen als gelesen.';
+document.getElementById('settingapp').innerHTML = '<span class="txt-color">Einstellungs-App-Service</span> (implementiert <span class="txt-color">ISettingsAppService</span>): Dient zum Speichern von Chat-Einstellungen.';
+document.getElementById('conatactappser').innerHTML = '<span class="txt-color">Kontakt-App-Service</span> (implementiert <span class="txt-color">IContactAppService</span>): Dient zum Abrufen der Kontaktliste eines Benutzers und der Gesamtzahl der ungelesenen Nachrichten.';
+
+document.getElementById('distributedevent').innerHTML = '<span class="txt-color">DistributedEventBusRealTimeChatMessageSender</span> (implementiert <span class="txt-color">IRealTimeChatMessageSender</span>): Dient zum Senden von Chat-Nachrichten an den verteilten Eventbus.';
+document.getElementById('signalR').innerHTML = '<span class="txt-color">SignalRRealTimeChatMessageSender</span> (implementiert <span class="txt-color">IRealTimeChatMessageSender</span>): Dient zum Senden von Nachrichten an einen bestimmten SignalR-Client.';
+// Für den Abschnitt In diesem Dokument
+document.getElementById('inthisdoc').innerHTML = 'in diesem Dokument';
+document.getElementById('instt').innerHTML = '<a href="#installation" class="text-black">Installation</a>';
+document.getElementById('chatpa').innerHTML = '<a href="#chat-page" class="text-black">Chat-Oberfläche</a>';
+document.getElementById('domlayers').innerHTML = '<a href="#dl" class="text-black">Domänenschicht</a>';
+document.getElementById('repss').innerHTML = '<a href="#repo" class="text-black">Repositories</a>';
+document.getElementById('domser').innerHTML = '<a href="#ds" class="text-black">Domänendienste</a>';
+document.getElementById('appsr').innerHTML = '<a href="#app-services" class="text-black">Anwendungsdienste</a>';
+
+            } 
+     else if (selectedLanguage === 'hi') {
+                // Body Content
+
+                document.getElementById('installation').innerHTML = 'संवाद मॉड्यूल';
+                document.getElementById('thismod').innerHTML = 'यह मॉड्यूल एक एप्लिकेशन के बीच वास्तविक समय में संदेश भेजने को लागू करता है।';
+                document.getElementById('insta').innerHTML = 'स्थापना';
+                document.getElementById('nofurther').innerHTML = 'ABP सुइट उपयोग करने और स्टार्टअप टेम्पलेट के साथ मैनुअल स्थापना करने की कोई आवश्यकता नहीं है।';
+                document.getElementById('packs').innerHTML = 'पैकेजेस';
+                document.getElementById('thismoduleallows').innerHTML = 'यह मॉड्यूल <a href="https://docs.abp.io/en/abp/latest/Best-Practices/Index">मॉड्यूल विकास के श्रेष्ठ अभ्यास गाइड</a> का पालन करता है और कई नूगेट और एनपीएम पैकेजों से मिलकर बनता है। पैकेजों और उनमें संबंधों को समझना चाहते हैं तो गाइड देखें।';
+                document.getElementById('youcanvisit').innerHTML = 'आप <a href="https://abp.io/packages?moduleName=Volo.Chat">संवाद मॉड्यूल पैकेज सूची पृष्ठ</a> पर जाकर इस मॉड्यूल से संबंधित पैकेजों की सूची देख सकते हैं।';
+                document.getElementById('chat-page').innerHTML = 'उपयोगकर्ता इंटरफ़ेस';
+                document.getElementById('chatp').innerHTML = 'संवाद पृष्ठ';
+                document.getElementById('thisisthe').innerHTML = 'यह पृष्ठ उपयोगकर्ताओं को एक-दूसरे को संदेश भेजते हैं।';
+                document.getElementById('dl').innerHTML = 'अंतर्नाल';
+                document.getElementById('domlayer').innerHTML = 'डोमेन परत';
+                document.getElementById('entitiesand').innerHTML = 'एंटिटी और समूह मूल';
+                document.getElementById('messt').innerHTML = '<span class="txt-color">संदेश</span> (समूह मूल): संवाद संदेश को प्रतिनिधित्व करता है। <span class="txt-color">IMultiTenant</span> का पालन करता है।';
+                document.getElementById('messcont').innerHTML = '<span class="txt-color">पाठ</span>: संदेश सामग्री।';
+                document.getElementById('isallreads').innerHTML = '<span class="txt-color">IsAllRead</span>: संदेश पढ़ने की जानकारी।';
+                document.getElementById('readtime').innerHTML = '<span class="txt-color">ReadTime</span>: संदेश पढ़ने का समय जानकारी।';
+                document.getElementById('chatuse').innerHTML = '<span class="txt-color">चैट उपयोगकर्ता</span> (समूह मूल): एक चैट उपयोगकर्ता को प्रतिनिधित्व करता है।';
+                document.getElementById('impleIuser').innerHTML = ' <span class="txt-color">IUser</span> और <span class="txt-color">IUpdateUserData</span> इंटरफ़ेस का पालन करता है।';
+                document.getElementById('receivermsg').innerHTML = '<span class="txt-color">उपयोगकर्ता संदेश</span>: प्रत्येक ओर (भेजनेवाला और प्राप्तकर्ता) के लिए एक संदेश बनाया जाता है।';
+                document.getElementById('Imultenant').innerHTML = ' <span class="txt-color">IMultiTenant</span> और <span class="txt-color">IAggregateRoot</span> इंटरफ़ेस का पालन करता है।';
+                document.getElementById('chatmsgid').innerHTML = '<span class="txt-color">चैट संदेश आईडी</span>: संबंधित <span class="txt-color">संदेश</span> का आईडी।';
+                document.getElementById('useri').innerHTML = '<span class="txt-color">उपयोगकर्ता आईडी</span>: संबंधित <span class="txt-color">चैट उपयोगकर्ता</span> का आईडी।';
+                document.getElementById('targetuser').innerHTML = '<span class="txt-color">टारगेट उपयोगकर्ता आईडी</span>: अन्य संबंधित <span class="txt-color">चैट उपयोगकर्ता</span> का आईडी।';
+                document.getElementById('stattes').innerHTML = '<span class="txt-color">पक्ष</span>: यह स्थिति बताता है कि यह एक भेजा गया संदेश है या प्राप्त किया गया संदेश।';
+                document.getElementById('isreadd').innerHTML = '<span class="txt-color">IsRead</span>: पढ़ने की जानकारी।';
+                document.getElementById('readt').innerHTML = '<span class="txt-color">ReadTime</span>: पढ़ने का समय जानकारी।';
+                document.getElementById('conver').innerHTML = '<span class="txt-color">संवाद</span>: यह उपयोगकर्ताओं के बीच एक संवाद के लिए बनाया जाता है। IMultiTenant और IAggregateRoot इंटरफ़ेस का पालन करता है।';
+                document.getElementById('imulti').innerHTML = '<span class="txt-color">IMultiTenant</span> और <span class="txt-color">IAggregateRoot</span> इंटरफ़ेस का पालन करता है।';
+                document.getElementById('useriid').innerHTML = '<span class="txt-color">उपयोगकर्ता आईडी</span>: संबंधित चैट उपयोगकर्ता का आईडी।';
+                document.getElementById('targetus').innerHTML = '<span class="txt-color">टारगेट उपयोगकर्ता आईडी</span>: अन्य संबंधित चैट उपयोगकर्ता का आईडी।';
+                document.getElementById('lastmsgside').innerHTML = '<span class="txt-color">अंतिम संदेश पक्ष</span>: संवाद में नवीनतम संदेश (भेजा गया या प्राप्त किया गया) का पक्ष बताता है।';
+                document.getElementById('lastmsg').innerHTML = '<span class="txt-color">अंतिम संदेश</span>: संवाद में अंतिम संदेश की सामग्री।';
+                document.getElementById('lastmsgdate').innerHTML = '<span class="txt-color">अंतिम संदेश की तारीख</span>: संवाद में अंतिम संदेश की तारीख।';
+                document.getElementById('repo').innerHTML = '<span class="txt-color">अपठित संदेश गणना</span>: संवाद में अपठित संदेशों की गणना।';
+                document.getElementById('reposit').innerHTML = 'भंडारण स्थल';
+                document.getElementById('thismodfoll').innerHTML = 'यह मॉड्यूल <a href="https://docs.abp.io/en/abp/latest/Best-Practices/Repositories">रिपोजिटरी श्रेष्ठ अभ्यास और अनुशासन</a> गाइड का पालन करता है।';
+                document.getElementById('follcustom').innerHTML = 'इस मॉड्यूल के लिए निम्नलिखित कस्टम रिपोजिटरी परिभाषित किए गए हैं:';
+                document.getElementById('ds').innerHTML = 'डोमेन सेवाएं';
+                document.getElementById('messmanager').innerHTML = '<span class="txt-color">मैसेजिंग प्रबंधक</span>';
+                document.getElementById('applayers').innerHTML = 'आवेदन परत';
+                document.getElementById('app-services').innerHTML = 'आवेदन सेवाएं';
+                document.getElementById('conversationappservice').innerHTML = '<span class="txt-color">संवाद आवेदन सेवा</span> (पालन करता है <span class="txt-color">IConversationAppService</span>): संदेश भेजने, उपयोगकर्ता के बीच संवाद प्राप्त करने और एक संवाद को पढ़ाई गई युक्ति के रूप में चिह्नित करने के लिए उपयोग किया जाता है।';
+                document.getElementById('settingapp').innerHTML = '<span class="txt-color">सेटिंग्स आवेदन सेवा</span> (पालन करता है <span class="txt-color">ISettingsAppService</span>): चैट सेटिंग्स सहेजने के लिए उपयोग किया जाता है।';
+                document.getElementById('conatactappser').innerHTML = '<span class="txt-color">संपर्क आवेदन सेवा</span> (पालन करता है <span class="txt-color">IContactAppService</span>): संपर्कों की सूची और एक उपयोगकर्ता के कुल अपठित संदेशों की गणना प्राप्त करने के लिए उपयोग किया जाता है।';
+                document.getElementById('distributedevent').innerHTML = '<span class="txt-color">वितरित ईवेंटबस वास्तविक समय मॉड्यूल संदेश भेजकर</span> (पालन करता है <span class="txt-color">IRealTimeChatMessageSender</span>): वितरित ईवेंटबस पर चैट संदेश प्रकाशित करने के लिए उपयोग किया जाता है।';
+                document.getElementById('signalR').innerHTML = '<span class="txt-color">SignalR वास्तविक समय मॉड्यूल संदेश भेजकर</span> (पालन करता है <span class="txt-color">IRealTimeChatMessageSender</span>): लक्षित SignalR क्लाइंट को संदेश भेजने के लिए उपयोग किया जाता है।';
+                // For In this doc section          
+                document.getElementById('inthisdoc').innerHTML = 'इस दस्तावेज़ में';
+                document.getElementById('instt').innerHTML = '<a href="#installation" class="text-black">स्थापना</a>';
+                document.getElementById('chatpa').innerHTML = '<a href="#chat-page" class="text-black">संवाद पृष्ठ</a>';
+                document.getElementById('domlayers').innerHTML = '<a href="#dl" class="text-black">डोमेन परत</a>';
+                document.getElementById('repss').innerHTML = '<a href="#repo" class="text-black">भंडारण स्थल</a>';
+                document.getElementById('domser').innerHTML = '<a href="#ds" class="text-black">डोमेन सेवाएं</a>';
+                document.getElementById('appsr').innerHTML = '<a href="#app-services" class="text-black">आवेदन सेवाएं</a>';
+
+            }
+            else if (selectedLanguage === 'it') {
+                // Body Content
+
+                document.getElementById('installation').innerHTML = 'Modulo Chat';
+                document.getElementById('thismod').innerHTML = 'Questo modulo implementa la messaggistica in tempo reale tra gli utenti per un\'applicazione.';
+                document.getElementById('insta').innerHTML = 'Installazione';
+                document.getElementById('nofurther').innerHTML = 'Non è necessaria alcuna ulteriore installazione per l\'utilizzo di ABP Suite e l\'installazione manuale poiché è inclusa nel modello di avvio.';
+                document.getElementById('packs').innerHTML = 'Pacchetti';
+                document.getElementById('thismoduleallows').innerHTML = 'Questo modulo segue la <a href="https://docs.abp.io/en/abp/latest/Best-Practices/Index">guida alle migliori pratiche per lo sviluppo di moduli</a> e consiste in diversi pacchetti NuGet e NPM. Consulta la guida se desideri comprendere i pacchetti e le relazioni tra di loro.';
+                document.getElementById('youcanvisit').innerHTML = 'Puoi visitare la <a href="https://abp.io/packages?moduleName=Volo.Chat">pagina dell\'elenco dei pacchetti del modulo Chat</a> per vedere l\'elenco dei pacchetti correlati a questo modulo.';
+                document.getElementById('chat-page').innerHTML = 'Interfaccia utente';
+                document.getElementById('chatp').innerHTML = 'Pagina di chat';
+                document.getElementById('thisisthe').innerHTML = 'Questa è la pagina in cui gli utenti inviano messaggi l\'uno all\'altro.';
+                document.getElementById('dl').innerHTML = 'Interno';
+                document.getElementById('domlayer').innerHTML = 'Livello del Dominio';
+                document.getElementById('entitiesand').innerHTML = 'Entità e radici aggregate';
+                document.getElementById('messt').innerHTML = '<span class="txt-color">Messaggio</span> (radice aggregate): Rappresenta un messaggio di chat. Implementa <span class="txt-color">IMultiTenant.</span>';
+                document.getElementById('messcont').innerHTML = '<span class="txt-color">Testo</span>: Contenuto del messaggio.';
+                document.getElementById('isallreads').innerHTML = '<span class="txt-color">IsAllRead</span>: Informazioni sulla lettura del messaggio.';
+                document.getElementById('readtime').innerHTML = '<span class="txt-color">ReadTime</span>: Informazioni sull\'ora di lettura del messaggio.';
+                document.getElementById('chatuse').innerHTML = '<span class="txt-color">Utente di Chat</span> (radice aggregate): Rappresenta un utente di chat.';
+                document.getElementById('impleIuser').innerHTML = 'Implementa le interfacce <span class="txt-color">IUser</span> e <span class="txt-color">IUpdateUserData</span>.';
+                document.getElementById('receivermsg').innerHTML = '<span class="txt-color">MessaggioUtente</span>: viene creato per ogni lato (mittente e destinatario) di un messaggio.';
+                document.getElementById('Imultenant').innerHTML = 'Implementa le interfacce <span class="txt-color">IMultiTenant</span> e <span class="txt-color">IAggregateRoot</span>.';
+                document.getElementById('chatmsgid').innerHTML = '<span class="txt-color">ChatMessageId</span>: ID del <span class="txt-color">Messaggio</span> correlato.';
+                document.getElementById('useri').innerHTML = '<span class="txt-color">UserId</span>: ID del <span class="txt-color">ChatUser</span> correlato.';
+                document.getElementById('targetuser').innerHTML = '<span class="txt-color">TargetUserId</span>: ID di un altro <span class="txt-color">ChatUser</span> correlato.';
+                document.getElementById('stattes').innerHTML = '<span class="txt-color">Side</span>: Indica se è un messaggio inviato o ricevuto.';
+                document.getElementById('isreadd').innerHTML = '<span class="txt-color">IsRead</span>: Informazioni sulla lettura.';
+                document.getElementById('readt').innerHTML = '<span class="txt-color">ReadTime</span>: Informazioni sull\'ora di lettura.';
+                document.getElementById('conver').innerHTML = '<span class="txt-color">Conversazione</span>: viene creata per ogni lato di una conversazione tra utenti. Implementa le interfacce <span class="txt-color">IMultiTenant</span> e <span class="txt-color">IAggregateRoot</span>.';
+                document.getElementById('imulti').innerHTML = 'Implementa le interfacce <span class="txt-color">IMultiTenant</span> e <span class="txt-color">IAggregateRoot</span>.';
+                document.getElementById('useriid').innerHTML = '<span class="txt-color">UserId</span>: ID del <span class="txt-color">ChatUser</span> correlato.';
+                document.getElementById('targetus').innerHTML = '<span class="txt-color">TargetUserId</span>: ID di un altro <span class="txt-color">ChatUser</span> correlato.';
+                document.getElementById('lastmsgside').innerHTML = '<span class="txt-color">LastMessageSide</span>: Indica il lato dell\'ultimo messaggio (inviato o ricevuto).';
+                document.getElementById('lastmsg').innerHTML = '<span class="txt-color">LastMessage</span>: Contenuto dell\'ultimo messaggio nella conversazione.';
+                document.getElementById('lastmsgdate').innerHTML = '<span class="txt-color">LastMessageDate</span>: Data dell\'ultimo messaggio nella conversazione.';
+                document.getElementById('repo').innerHTML = '<span class="txt-color">UnreadMessageCount</span>: Conteggio dei messaggi non letti nella conversazione.';
+                document.getElementById('reposit').innerHTML = 'Repository';
+                document.getElementById('thismodfoll').innerHTML = 'Questo modulo segue la <a href="https://docs.abp.io/en/abp/latest/Best-Practices/Repositories">guida alle migliori pratiche e convenzioni per i repository</a>.';
+                document.getElementById('follcustom').innerHTML = 'Sono definiti i seguenti repository personalizzati per questo modulo:';
+                document.getElementById('ds').innerHTML = 'Servizi di Dominio';
+                document.getElementById('messmanager').innerHTML = '<span class="txt-color">GestoreMessaggi</span>';
+                document.getElementById('applayers').innerHTML = 'Livello dell\'Applicazione';
+                document.getElementById('app-services').innerHTML = 'Servizi dell\'Applicazione';
+                document.getElementById('conversationappservice').innerHTML = '<span class="txt-color">ConversationAppService</span> (implementa <span class="txt-color">IConversationAppService</span>): Usato per inviare messaggi, ottenere la conversazione tra gli utenti e segnare una conversazione come letta.';
+                document.getElementById('settingapp').innerHTML = '<span class="txt-color">SettingsAppService</span> (implementa <span class="txt-color">ISettingsAppService</span>): Usato per salvare le impostazioni di chat.';
+                document.getElementById('conatactappser').innerHTML = '<span class="txt-color">ContactAppService</span> (implementa <span class="txt-color">IContactAppService</span>): Usato per ottenere l\'elenco dei contatti e il conteggio totale dei messaggi non letti di un utente.';
+                document.getElementById('distributedevent').innerHTML = '<span class="txt-color">DistributedEventBusRealTimeChatMessageSender</span> (implementa <span class="txt-color">IRealTimeChatMessageSender</span>): Usato per pubblicare messaggi di chat su un bus di eventi distribuito.';
+                document.getElementById('signalR').innerHTML = '<span class="txt-color">SignalRRealTimeChatMessageSender</span> (implementa <span class="txt-color">IRealTimeChatMessageSender</span>): Usato per inviare messaggi a un client SignalR di destinazione.';
+
+                // For In this doc section
+                document.getElementById('inthisdoc').innerHTML = 'In questo documento';
+                document.getElementById('instt').innerHTML = '<a href="#installation" class="text-black">Installazione</a>';
+                document.getElementById('chatpa').innerHTML = '<a href="#chat-page" class="text-black">Pagina di chat</a>';
+                document.getElementById('domlayers').innerHTML = '<a href="#dl" class="text-black">Livello del Dominio</a>';
+                document.getElementById('repss').innerHTML = '<a href="#repo" class="text-black">Repository</a>';
+                document.getElementById('domser').innerHTML = '<a href="#ds" class="text-black">Servizi di Dominio</a>';
+                document.getElementById('appsr').innerHTML = '<a href="#app-services" class="text-black">Servizi dell\'Applicazione</a>';
+
+            }
+            else if (selectedLanguage === 'ru') {
+                // Body Content
+                document.getElementById('installation').innerHTML = 'Модуль Чата';
+                document.getElementById('thismod').innerHTML = 'Этот модуль реализует обмен сообщениями в реальном времени между пользователями для приложения.';
+                document.getElementById('insta').innerHTML = 'Установка';
+                document.getElementById('nofurther').innerHTML = 'Дополнительная установка не требуется для использования ABP Suite, так как она включена в шаблон запуска.';
+                document.getElementById('packs').innerHTML = 'Пакеты';
+                document.getElementById('thismoduleallows').innerHTML = 'Этот модуль следует руководству по <a href="https://docs.abp.io/en/abp/latest/Best-Practices/Index">лучшим практикам разработки модулей</a> и состоит из нескольких пакетов NuGet и NPM. См. руководство, если вы хотите понять пакеты и связи между ними.';
+                document.getElementById('youcanvisit').innerHTML = 'Вы можете посетить страницу списка пакетов <a href="https://abp.io/packages?moduleName=Volo.Chat">модуля Чата</a>, чтобы увидеть список пакетов, связанных с этим модулем.';
+                document.getElementById('chat-page').innerHTML = 'Пользовательский интерфейс';
+                document.getElementById('chatp').innerHTML = 'Страница чата';
+                document.getElementById('thisisthe').innerHTML = 'Это страница, на которой пользователи отправляют сообщения друг другу.';
+                document.getElementById('dl').innerHTML = 'Внутренности';
+                document.getElementById('domlayer').innerHTML = 'Уровень Домена';
+                document.getElementById('entitiesand').innerHTML = 'Сущности и агрегатные корни';
+                document.getElementById('messt').innerHTML = '<span class="txt-color">Message</span> (агрегатный корень): Представляет чат-сообщение. Реализует <span class="txt-color">IMultiTenant.</span>';
+                document.getElementById('messcont').innerHTML = '<span class="txt-color">Text</span>: Содержание сообщения.';
+                document.getElementById('isallreads').innerHTML = '<span class="txt-color">IsAllRead</span>: Информация о прочтении сообщения.';
+                document.getElementById('readtime').innerHTML = '<span class="txt-color">ReadTime</span>: Информация о времени прочтения сообщения.';
+                document.getElementById('chatuse').innerHTML = '<span class="txt-color">ChatUser</span> (агрегатный корень): Представляет пользователя чата.';
+                document.getElementById('impleIuser').innerHTML = 'Реализует интерфейсы <span class="txt-color">IUser</span> и <span class="txt-color">IUpdateUserData</span>.';
+                document.getElementById('receivermsg').innerHTML = '<span class="txt-color">UserMessage</span>: Создается для каждой стороны (отправитель и получатель) сообщения.';
+                document.getElementById('Imultenant').innerHTML = 'Реализует интерфейсы <span class="txt-color">IMultiTenant</span> и <span class="txt-color">IAggregateRoot</span>.';
+                document.getElementById('chatmsgid').innerHTML = '<span class="txt-color">ChatMessageId</span>: Идентификатор связанного <span class="txt-color">Message.</span>';
+                document.getElementById('useri').innerHTML = '<span class="txt-color">UserId</span>: Идентификатор связанного <span class="txt-color">ChatUser.</span>';
+                document.getElementById('targetuser').innerHTML = '<span class="txt-color">TargetUserId</span>: Идентификатор другого связанного <span class="txt-color">ChatUser.</span>';
+                document.getElementById('stattes').innerHTML = '<span class="txt-color">Side</span>: Указывает, является ли сообщение отправленным или полученным.';
+                document.getElementById('isreadd').innerHTML = '<span class="txt-color">IsRead</span>: Информация о прочтении.';
+                document.getElementById('readt').innerHTML = '<span class="txt-color">ReadTime</span>: Информация о времени прочтения.';
+                document.getElementById('conver').innerHTML = '<span class="txt-color">Conversation</span>: Создается для каждой стороны разговора между пользователями. Реализует интерфейсы IMultiTenant и IAggregateRoot.';
+                document.getElementById('imulti').innerHTML = 'Реализует интерфейсы <span class="txt-color">IMultiTenant</span> и <span class="txt-color">IAggregateRoot</span>.';
+                document.getElementById('useriid').innerHTML = '<span class="txt-color">UserId</span>: Идентификатор связанного ChatUser.';
+                document.getElementById('targetus').innerHTML = '<span class="txt-color">TargetUserId</span>: Идентификатор другого связанного ChatUser.';
+                document.getElementById('lastmsgside').innerHTML = '<span class="txt-color">LastMessageSide</span>: Указывает сторону последнего сообщения (отправленное или полученное).';
+                document.getElementById('lastmsg').innerHTML = '<span class="txt-color">LastMessage</span>: Содержание последнего сообщения в разговоре.';
+                document.getElementById('lastmsgdate').innerHTML = '<span class="txt-color">LastMessageDate</span>: Дата последнего сообщения в разговоре.';
+                document.getElementById('repo').innerHTML = '<span class="txt-color">UnreadMessageCount</span>: Количество непрочитанных сообщений в разговоре.';
+                document.getElementById('reposit').innerHTML = 'Репозитории';
+                document.getElementById('thismodfoll').innerHTML = 'Этот модуль следует руководству по <a href="https://docs.abp.io/en/abp/latest/Best-Practices/Repositories">лучшим практикам и соглашениям репозиториев</a>.';
+                document.getElementById('follcustom').innerHTML = 'Для этого модуля определены следующие пользовательские репозитории:';
+                document.getElementById('ds').innerHTML = 'Сервисы Домена';
+                document.getElementById('messmanager').innerHTML = '<span class="txt-color">MessagingManager</span>';
+                document.getElementById('applayers').innerHTML = 'Слой приложения';
+                document.getElementById('app-services').innerHTML = 'Приложение сервисы';
+                document.getElementById('conversationappservice').innerHTML = '<span class="txt-color">ConversationAppService</span> (реализует <span class="txt-color">IConversationAppService</span>): Используется для отправки сообщений, получения разговора между пользователями и пометки разговора как прочитанного.';
+                document.getElementById('settingapp').innerHTML = '<span class="txt-color">SettingsAppService</span> (реализует <span class="txt-color">ISettingsAppService</span>): Используется для сохранения настроек чата.';
+                document.getElementById('conatactappser').innerHTML = '<span class="txt-color">ContactAppService</span> (реализует <span class="txt-color">IContactAppService</span>): Используется для получения списка контактов и общего количества непрочитанных сообщений пользователя.';
+                document.getElementById('distributedevent').innerHTML = '<span class="txt-color">DistributedEventBusRealTimeChatMessageSender</span> (реализует <span class="txt-color">IRealTimeChatMessageSender</span>): Используется для публикации чат-сообщений в распределенную шину событий.';
+                document.getElementById('signalR').innerHTML = '<span class="txt-color">SignalRRealTimeChatMessageSender</span> (реализует <span class="txt-color">IRealTimeChatMessageSender</span>): Используется для отправки сообщений целевому клиенту SignalR.';
+
+                // For In this doc section
+                document.getElementById('inthisdoc').innerHTML = 'В этом документе';
+                document.getElementById('instt').innerHTML = '<a href="#installation" class="text-black">Установка</a>';
+                document.getElementById('chatpa').innerHTML = '<a href="#chat-page" class="text-black">Страница чата</a>';
+                document.getElementById('domlayers').innerHTML = '<a href="#dl" class="text-black">Уровень Домена</a>';
+                document.getElementById('repss').innerHTML = '<a href="#repo" class="text-black">Репозитории</a>';
+                document.getElementById('domser').innerHTML = '<a href="#ds" class="text-black">Сервисы Домена</a>';
+                document.getElementById('appsr').innerHTML = '<a href="#app-services" class="text-black">Приложение сервисы</a>';
+
+
+            }
+            else if (selectedLanguage === 'zh') {
+                // Body Content
+                document.getElementById('installation').innerHTML = '安装';
+                document.getElementById('thismod').innerHTML = '该模块实现了应用程序用户之间的实时消息传递。';
+                document.getElementById('insta').innerHTML = '安装';
+                document.getElementById('nofurther').innerHTML = '在使用ABP套件时不需要其他安装步骤，因为它已随启动模板一起安装。';
+                document.getElementById('packs').innerHTML = '软件包';
+                document.getElementById('thismoduleallows').innerHTML = '该模块遵循<a href="https://docs.abp.io/en/abp/latest/Best-Practices/Index">模块开发最佳实践指南</a>，包含多个NuGet和NPM软件包。如果您想了解这些软件包及其之间的关系，请查阅该指南。';
+                document.getElementById('youcanvisit').innerHTML = '您可以访问<a href="https://abp.io/packages?moduleName=Volo.Chat">Chat模块软件包列表页面</a>以查看与该模块相关的软件包列表。';
+                document.getElementById('chat-page').innerHTML = '用户界面';
+                document.getElementById('chatp').innerHTML = '聊天页面';
+                document.getElementById('thisisthe').innerHTML = '这是用户之间发送消息的页面。';
+                document.getElementById('dl').innerHTML = '内部结构';
+                document.getElementById('domlayer').innerHTML = '领域层';
+                document.getElementById('entitiesand').innerHTML = '实体和聚合根';
+                document.getElementById('messt').innerHTML = '<span class="txt-color">Message</span>（聚合根）：表示聊天消息。实现<span class="txt-color">IMultiTenant</span>。';
+                document.getElementById('messcont').innerHTML = '<span class="txt-color">Text</span>：消息内容。';
+                document.getElementById('isallreads').innerHTML = '<span class="txt-color">IsAllRead</span>：消息阅读信息。';
+                document.getElementById('readtime').innerHTML = '<span class="txt-color">ReadTime</span>：消息阅读时间信息。';
+                document.getElementById('chatuse').innerHTML = '<span class="txt-color">ChatUser</span>（聚合根）：表示聊天用户。';
+                document.getElementById('impleIuser').innerHTML = '实现<span class="txt-color">IUser</span>和<span class="txt-color">IUpdateUserData</span>接口。';
+                document.getElementById('receivermsg').innerHTML = '<span class="txt-color">UserMessage</span>：为每个消息的发送方和接收方创建。';
+                document.getElementById('Imultenant').innerHTML = '实现<span class="txt-color">IMultiTenant</span>和<span class="txt-color">IAggregateRoot</span>接口。';
+                document.getElementById('chatmsgid').innerHTML = '<span class="txt-color">ChatMessageId</span>：相关<span class="txt-color">Message</span>的ID。';
+                document.getElementById('useri').innerHTML = '<span class="txt-color">UserId</span>：相关<span class="txt-color">ChatUser</span>的ID。';
+                document.getElementById('targetuser').innerHTML = '<span class="txt-color">TargetUserId</span>：其他相关<span class="txt-color">ChatUser</span>的ID。';
+                document.getElementById('stattes').innerHTML = '<span class="txt-color">Side</span>：指示是发送消息还是接收消息的状态。';
+                document.getElementById('isreadd').innerHTML = '<span class="txt-color">IsRead</span>：阅读信息。';
+                document.getElementById('readt').innerHTML = '<span class="txt-color">ReadTime</span>：阅读时间信息。';
+                document.getElementById('conver').innerHTML = '<span class="txt-color">Conversation</span>：为每个用户之间的对话创建。实现IMultiTenant和IAggregateRoot接口。';
+                document.getElementById('imulti').innerHTML = '实现<span class="txt-color">IMultiTenant</span>和<span class="txt-color">IAggregateRoot</span>接口。';
+                document.getElementById('useriid').innerHTML = '<span class="txt-color">UserId</span>：相关ChatUser的ID。';
+                document.getElementById('targetus').innerHTML = '<span class="txt-color">TargetUserId</span>：其他相关ChatUser的ID。';
+                document.getElementById('lastmsgside').innerHTML = '<span class="txt-color">LastMessageSide</span>：表示对话中最新消息的一方（发送方或接收方）。';
+                document.getElementById('lastmsg').innerHTML = '<span class="txt-color">LastMessage</span>：对话中最新消息的内容。';
+                document.getElementById('lastmsgdate').innerHTML = '<span class="txt-color">LastMessageDate</span>：对话中最新消息的日期。';
+                document.getElementById('repo').innerHTML = '<span class="txt-color">UnreadMessageCount</span>：对话中未读消息的计数。';
+                document.getElementById('reposit').innerHTML = '存储库';
+                document.getElementById('thismodfoll').innerHTML = '该模块遵循<a href="https://docs.abp.io/en/abp/latest/Best-Practices/Repositories">存储库最佳实践和约定</a>指南。';
+                document.getElementById('follcustom').innerHTML = '为该模块定义了以下自定义存储库：';
+                document.getElementById('ds').innerHTML = '领域服务';
+                document.getElementById('messmanager').innerHTML = '<span class="txt-color">MessagingManager</span>';
+                document.getElementById('applayers').innerHTML = '应用程序层';
+                document.getElementById('app-services').innerHTML = '应用程序服务';
+                document.getElementById('conversationappservice').innerHTML = '<span class="txt-color">ConversationAppService</span>（实现<span class="txt-color">IConversationAppService</span>）：用于发送消息、获取用户之间的对话并标记对话为已读。';
+                document.getElementById('settingapp').innerHTML = '<span class="txt-color">SettingsAppService</span>（实现<span class="txt-color">ISettingsAppService</span>）：用于保存聊天设置。';
+                document.getElementById('conatactappser').innerHTML = '<span class="txt-color">ContactAppService</span>（实现<span class="txt-color">IContactAppService</span>）：用于获取联系人列表和用户的总未读消息计数。';
+                document.getElementById('distributedevent').innerHTML = '<span class="txt-color">DistributedEventBusRealTimeChatMessageSender</span>（实现<span class="txt-color">IRealTimeChatMessageSender</span>）：用于将聊天消息发布到分布式事件总线。';
+                document.getElementById('signalR').innerHTML = '<span class="txt-color">SignalRRealTimeChatMessageSender</span>（实现<span class="txt-color">IRealTimeChatMessageSender</span>）：用于向目标SignalR客户端发送消息。';
+                // For In this doc section
+                document.getElementById('inthisdoc').innerHTML = '本文内容';
+                document.getElementById('instt').innerHTML = '<a href="#installation" class="text-black">安装</a>';
+                document.getElementById('chatpa').innerHTML = '<a href="#chat-page" class="text-black">聊天页面</a>';
+                document.getElementById('domlayers').innerHTML = '<a href="#dl" class="text-black">领域层</a>';
+                document.getElementById('repss').innerHTML = '<a href="#repo" class="text-black">存储库</a>';
+                document.getElementById('domser').innerHTML = '<a href="#ds" class="text-black">领域服务</a>';
+                document.getElementById('appsr').innerHTML = '<a href="#app-services" class="text-black">应用程序服务</a>';
+
+            }
+            else if (selectedLanguage === 'ar') {
+                // Body Content
+                document.getElementById('installation').innerHTML = 'وحدة المحادثة';
+                document.getElementById('thismod').innerHTML = 'تنفيذ محادثات فورية بين المستخدمين لتطبيق.';
+                document.getElementById('insta').innerHTML = 'التثبيت';
+                document.getElementById('nofurther').innerHTML = 'لا يتطلب تثبيت إضافي فيما يتعلق باستخدام ABP Suite والتثبيت اليدوي لأنه يأتي مع قالب البدء.';
+                document.getElementById('packs').innerHTML = 'الحزم';
+                document.getElementById('thismoduleallows').innerHTML = 'تتبع هذه الوحدة <a href="https://docs.abp.io/en/abp/latest/Best-Practices/Index">دليل ممارسات تطوير الوحدات</a> وتتألف من العديد من حزم NuGet و NPM. راجع الدليل إذا كنت ترغب في فهم الحزم والعلاقات بينها.';
+                document.getElementById('youcanvisit').innerHTML = 'يمكنك زيارة <a href="https://abp.io/packages?moduleName=Volo.Chat">صفحة قائمة حزم وحدة المحادثة</a> لعرض قائمة الحزم المتعلقة بهذه الوحدة.';
+                document.getElementById('chat-page').innerHTML = 'واجهة المستخدم';
+                document.getElementById('chatp').innerHTML = 'صفحة المحادثة';
+                document.getElementById('thisisthe').innerHTML = 'هذه هي الصفحة التي يقوم فيها المستخدمون بإرسال الرسائل لبعضهم البعض.';
+                document.getElementById('dl').innerHTML = 'الطبقة الداخلية';
+                document.getElementById('domlayer').innerHTML = 'طبقة المجال';
+                document.getElementById('entitiesand').innerHTML = 'الكيانات والجذور المجمعة';
+                document.getElementById('messt').innerHTML = '<span class="txt-color">Message</span> (الجذر المجمع): يمثل رسالة المحادثة. ينفذ <span class="txt-color">IMultiTenant.</span>';
+                document.getElementById('messcont').innerHTML = '<span class="txt-color">Text</span>: محتوى الرسالة.';
+                document.getElementById('isallreads').innerHTML = '<span class="txt-color">IsAllRead</span>: معلومات قراءة الرسالة.';
+                document.getElementById('readtime').innerHTML = '<span class="txt-color">ReadTime</span>: معلومات وقت قراءة الرسالة.';
+                document.getElementById('chatuse').innerHTML = '<span class="txt-color">ChatUser</span> (الجذر المجمع): يمثل مستخدم المحادثة.';
+                document.getElementById('impleIuser').innerHTML = 'ينفذ واجهات <span class="txt-color">IUser</span> و <span class="txt-color">IUpdateUserData</span>.';
+                document.getElementById('receivermsg').innerHTML = '<span class="txt-color">UserMessage</span>: يتم إنشاؤها لكل جانب (المرسل والمستلم) لرسالة.';
+                document.getElementById('Imultenant').innerHTML = 'ينفذ واجهات <span class="txt-color">IMultiTenant</span> و <span class="txt-color">IAggregateRoot</span>.';
+                document.getElementById('chatmsgid').innerHTML = '<span class="txt-color">ChatMessageId</span>: معرف الرسالة ذات الصلة.';
+                document.getElementById('useri').innerHTML = '<span class="txt-color">UserId</span>: معرف مستخدم المحادثة ذات الصلة.';
+                document.getElementById('targetuser').innerHTML = '<span class="txt-color">TargetUserId</span>: معرف مستخدم المحادثة الآخر ذات الصلة.';
+                document.getElementById('stattes').innerHTML = '<span class="txt-color">Side</span>: يحدد ما إذا كانت الرسالة مرسلة أو مستقبلة.';
+                document.getElementById('isreadd').innerHTML = '<span class="txt-color">IsRead</span>: معلومات القراءة.';
+                document.getElementById('readt').innerHTML = '<span class="txt-color">ReadTime</span>: معلومات وقت القراءة.';
+                document.getElementById('conver').innerHTML = '<span class="txt-color">Conversation</span>: يتم إنشاؤها لكل جانب من محادثة بين المستخدمين. ينفذ واجهات IMultiTenant و IAggregateRoot.';
+                document.getElementById('imulti').innerHTML = 'ينفذ واجهات <span class="txt-color">IMultiTenant</span> و <span class="txt-color">IAggregateRoot</span>.';
+                document.getElementById('useriid').innerHTML = '<span class="txt-color">UserId</span>: معرف مستخدم المحادثة ذات الصلة.';
+                document.getElementById('targetus').innerHTML = '<span class="txt-color">TargetUserId</span>: معرف مستخدم المحادثة الآخر ذات الصلة.';
+                document.getElementById('lastmsgside').innerHTML = '<span class="txt-color">LastMessageSide</span>: يحدد جانب أحدث رسالة (مرسلة أو مستقبلة).';
+                document.getElementById('lastmsg').innerHTML = '<span class="txt-color">LastMessage</span>: محتوى آخر رسالة في المحادثة.';
+                document.getElementById('lastmsgdate').innerHTML = '<span class="txt-color">LastMessageDate</span>: تاريخ آخر رسالة في المحادثة.';
+                document.getElementById('repo').innerHTML = '<span class="txt-color">UnreadMessageCount</span>: عدد الرسائل غير المقروءة في المحادثة.';
+                document.getElementById('reposit').innerHTML = 'المستودعات';
+                document.getElementById('thismodfoll').innerHTML = 'تتبع هذه الوحدة <a href="https://docs.abp.io/en/abp/latest/Best-Practices/Repositories">دليل ممارسات وتقاليد مستودع</a>.';
+                document.getElementById('follcustom').innerHTML = 'تم تعريف مستودعات مخصصة التالية لهذه الوحدة:';
+                document.getElementById('ds').innerHTML = 'الخدمات المجالية';
+                document.getElementById('messmanager').innerHTML = '<span class="txt-color">MessagingManager</span>';
+                document.getElementById('applayers').innerHTML = 'الطبقة التطبيقية';
+                document.getElementById('app-services').innerHTML = 'الخدمات التطبيقية';
+                document.getElementById('conversationappservice').innerHTML = '<span class="txt-color">ConversationAppService</span> (ينفذ <span class="txt-color">IConversationAppService</span>): يستخدم لإرسال الرسائل والحصول على المحادثة بين المستخدمين وتحديد محادثة كمقروءة.';
+                document.getElementById('settingapp').innerHTML = '<span class="txt-color">SettingsAppService</span> (ينفذ <span class="txt-color">ISettingsAppService</span>): يستخدم لحفظ إعدادات المحادثة.';
+                document.getElementById('conatactappser').innerHTML = '<span class="txt-color">ContactAppService</span> (ينفذ <span class="txt-color">IContactAppService</span>): يستخدم للحصول على قائمة جهات الاتصال وإجمالي عدد الرسائل غير المقروءة لمستخدم.';
+                document.getElementById('distributedevent').innerHTML = '<span class="txt-color">DistributedEventBusRealTimeChatMessageSender</span> (ينفذ <span class="txt-color">IRealTimeChatMessageSender</span>): يستخدم لنشر رسائل المحادثة إلى حافلة الأحداث الموزعة.';
+                document.getElementById('signalR').innerHTML = '<span class="txt-color">SignalRRealTimeChatMessageSender</span> (ينفذ <span class="txt-color">IRealTimeChatMessageSender</span>): يستخدم لإرسال الرسائل إلى عميل SignalR المستهدف.';
+                // For In this doc section
+                document.getElementById('inthisdoc').innerHTML = 'في هذه الوثيقة';
+                document.getElementById('instt').innerHTML = '<a href="#installation" class="text-black">التثبيت</a>';
+                document.getElementById('chatpa').innerHTML = '<a href="#chat-page" class="text-black">صفحة المحادثة</a>';
+                document.getElementById('domlayers').innerHTML = '<a href="#dl" class="text-black">طبقة المجال</a>';
+                document.getElementById('repss').innerHTML = '<a href="#repo" class="text-black">المستودعات</a>';
+                document.getElementById('domser').innerHTML = '<a href="#ds" class="text-black">الخدمات المجالية</a>';
+                document.getElementById('appsr').innerHTML = '<a href="#app-services" class="text-black">الخدمات التطبيقية</a>';
+
+            }        
+    else if (selectedLanguage === 'spanish') {
+            } else {
+
+            }
+        });
+    });
+</script>
+
+</html>

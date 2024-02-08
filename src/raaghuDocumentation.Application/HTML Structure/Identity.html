@@ -1,0 +1,1242 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- bootstrap dependencies -->
+    <link rel="stylesheet" href="Assets/css/bootstrap.min.css">
+    <link href="Assets/prism.css" rel="stylesheet" />
+    <script src="Assets/prism.js"></script>
+    <link rel="stylesheet" href="/index.css">
+    <link rel="icon" type="image/x-icon" href="Assets/images/raaghu-icon.png">
+    <title>Raaghu - Identity</title>
+</head>
+
+
+<body>
+
+    <main>
+
+        <nav class="navbar navbar-expand-lg navbar-light  ">
+            <div class="container-fluid ">
+                <div class="navbar-toggler-container">
+                    <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#sidebar,#navbarSupportedContent"
+                        aria-controls="sidebar" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <!-- <div class="dropdown show dropdown-specific">
+                        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Platform
+                        </a>
+
+                        <div class="dropdown-menu menu" aria-labelledby="dropdownMenuLink">
+                            <a class="dropdown-item" href="https://www.raaghu.io/features.html">Features</a>
+                            <a class="dropdown-item " href="https://portal.raaghu.io/">Documentation</a>
+                            <button type="button" class="btn btn-primary btn-contact mt-2">contact</button>
+                            <a href="https://github.com/Wai-Technologies/raaghu-angular" target="_blank">
+                                <li class="ps-lg-5 mt-2">
+                                    <img src="Assets/images/github-logo.svg" alt="abplogo logo" width="100%"
+                                        class="github-logo">
+                                </li>
+                            </a>
+                        </div>
+                    </div> -->
+                </div>
+                <a class="text-black navbar-brand" href="/">
+                    <img src="Assets/images/raaghu_logs.png" alt="raaghu logo" class="w-75  pe-lg-0">
+                </a>
+
+                <div class="collapse navbar-collapse align  justify-content-lg-end " id="navbarSupportedContent">
+                    <ul class="navbar-nav  mb-2 mb-lg-0">
+                        <li class="nav-item me-5">
+                            <a class="nav-link active " aria-current="page"
+                                href="https://raaghu-website-staging.netlify.app/raaghu-mfe-portal/_accordion.html">Components</a>
+                        </li>
+                        <li class="nav-item me-5">
+                            <a class="nav-link active " aria-current="page" href="#"><span
+                                    class="doc-color">Documentation</span></a>
+                        </li>
+                        <li class="nav-item me-5">
+                            <a class="nav-link active " aria-current="page"
+                                href="https://raaghu-website-staging.netlify.app/raaghu-mfe-portal/_accordion.html#">Support</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link active " aria-current="page"
+                                href="https://raaghu-website-staging.netlify.app/faq">FAQ</a>
+                        </li>
+                        <!-- <li class=" nav-item dropdown active">
+                            <a class="nav-link  text-dark me-5" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Platform
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-center " aria-labelledby="navbarDropdown">
+                                <ul class="list-unstyled dropdown-arrow">
+                                    <li class=" ps-4">
+                                        <p class="title pt-2">Raaghu Platform</p>
+                                        <div class="row">
+                                            <div class="col-lg-6 col-md-6">
+                                                <a href="https://portal.raaghu.io/" target="_blank"
+                                                    class="p-0 text-decoration-none text-reset">
+                                                    <div class="d-flex align-items-center gap-3">
+
+                                                        <img src="Assets/images/raaghu-portal-mg.svg"
+                                                            alt="raaghu-portal" class="mb-3">
+                                                        <p class="link-name">Raaghu Portal</p>
+
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="col-lg-6 col-md-6">
+                                                <a href="https://portal.raaghu.io/#Components-section" target="_blank"
+                                                    class="p-0 text-decoration-none text-reset">
+                                                    <div class="d-flex align-items-center gap-3">
+                                                        <img src="Assets/images/raaghu-components-mg.svg"
+                                                            alt="raaghu-components" class="mb-3">
+                                                        <p class="link-name">Raaghu Components</p>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-6 col-md-6">
+                                                <a href="https://portal.raaghu.io/#Elements-section" target="_blank"
+                                                    class="p-0 text-decoration-none text-reset">
+                                                    <div class="d-flex align-items-center gap-3">
+                                                        <img src="Assets/images/raaghu-elements-mg.svg"
+                                                            alt="raaghu-portal" class="mb-2">
+                                                        <p class="pt-2 link-name">Raaghu Elements</p>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="col-lg-6 col-md-6">
+                                                <div class="d-flex align-items-center gap-3">
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="bgcolor-dropdown">
+                                        <div class="ps-4">
+                                            <p class="pt-3 pb-1 title">WORKS ON</p>
+                                            <div class="row">
+                                                <div class="col-md-2 mb-2">
+                                                    <img src="Assets/images/asplogo-mg.svg" alt="asplogo logo"
+                                                        width="80%">
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <img src="Assets/images/abplogo-mg.svg" alt="abplogo logo"
+                                                        width="50%">
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item me-5">
+                            <a class="nav-link active " aria-current="page"
+                                href="https://www.raaghu.io/features.html">Features</a>
+                        </li>
+                        <li class="nav-item me-5">
+                            <a class="nav-link active " aria-current="page"
+                                href="https://portal.raaghu.io/">Documentation</a>
+                        </li>
+                        <button type="button" class="btn btn-primary btn-contact">contact</button>
+                        <a href="https://github.com/Wai-Technologies/raaghu-angular" target="_blank">
+                            <li class="ps-lg-5 pt-2">
+                                <img src="Assets/images/github-logo.svg" alt="abplogo logo" width="100%"
+                                    class="github-logo">
+                            </li>
+                        </a> -->
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="wrapper container-fluid">
+
+            <div class="row">
+
+                <div id="sidebar" class="col-12 col-lg-2 col-md-4 col-xl-2 col-xxl-2 collapse d-m-block mx-0 mx-lg-3 mx-md-3 mx-xl-3 mx-xxl-3 show">
+
+                    <nav>
+                        <div class="sidebar-header ">
+                            <a href="/" class="text-bg-dark">
+                                <h3 class="fs-5 fw-normal">Table Of Content</h3>
+                            </a>
+                        </div>
+
+                        <div class="accordion accordion-flush mx-3 doc-acc accordion-button-top" id="accordionExample">
+                            <div class="row pb-4">
+                                <div class="col-6 col-lg-6 col-md-6">
+                                    <select id="language-dropdown" class="sidebar-button">
+                                        <option value="en" selected>English</option>
+                                        <option value="pt">Português</option>
+                                        <option value="fr">French</option>
+                                        <option value="fi">Finnish</option>
+                                        <option value="hi">Hindi</option>
+                                        <option value="it">Italian</option>                                        
+                                        <option value="sk">Slovak</option>
+                                        <option value="de">German</option>
+                                        <option value="ru">Russian</option>
+                                        <option value="zh">Chinese</option>
+                                        <option value="af">Afrikaan</option>
+                                        <option value="ar">Arabic</option>
+                                        <!-- Add more language options if needed -->
+                                    </select>
+                                </div>
+                                <div class="col-6 col-lg-6 col-md-6">
+                                    <select class="sidebar-button w-100">
+                                        <option value="option1" id="version">Version</option>
+                                        <option value="option2" id="version">Version 2</option>
+                                        <option value="option3">Version 3</option>
+                                        <option value="option4">Version 4</option>
+                                    </select>
+
+                                </div>
+                            </div>
+                            <div class="accordion-item bg-dark">
+                                <h2 class="accordion-header" id="headingOne">
+                                    <a href="Getting-Started.html">
+                                        <button
+                                            class="accordion-button d-flex flex-row-reverse justify-content-end p-0 bg-dark mt-1"
+                                            type="button" data-bs-toggle="collapse" data-bs-target="#coll"
+                                            aria-expanded="false" aria-controls="collapseOne">
+                                            Getting Started
+                                        </button></a>
+                                </h2>
+
+                                <div id="coll" class="accordion-collapse collapse  border-0 rounded-0 p-0"
+                                    aria-labelledby="headOne" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Setup-Your-Development-Environment.html">Setup your development
+                                            environment</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Creating-A-New-Solution.html">Creating A New Solution</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Running-The-Solution.html">Running the Solution</a>
+                                    </div>
+                                </div>
+                                <h2 class="accordion-header" id="headingTwo">
+                                    <button
+                                        class="accordion-button d-flex flex-row-reverse justify-content-end p-0 bg-dark mt-2"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                        aria-expanded="false" aria-controls="collapseOne">
+                                        Tutorials
+                                    </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse  border-0 rounded-0 p-0"
+                                    aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <h2 class="accordion-header" id="headingTwo">
+                                            <button
+                                                class="accordion-button d-flex flex-row-reverse justify-content-end p-0 bg-dark mt-2"
+                                                type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                                                aria-expanded="false" aria-controls="collapseOne">
+                                                Web Application Development
+                                            </button>
+                                        </h2>
+                                        <div id="collapseThree"
+                                            class="accordion-collapse collapse  border-0 rounded-0 p-0 pt-2"
+                                            aria-labelledby="headingTwo" data-bs-parent="#accordionExamplee">
+                                            <div class="accordion-body bg-dark px-4 p-1">
+                                                <a href="Creating-The-Server-Side.html">Creating the Server
+                                                    Side</a>
+                                            </div>
+                                        </div>
+                                        <div id="collapseThree"
+                                            class="accordion-collapse collapse  border-0 rounded-0 p-0"
+                                            aria-labelledby="headingTwo" data-bs-parent="#accordionExamplee">
+                                            <div class="accordion-body bg-dark px-4 p-1">
+                                                <a href="The-Book-List-Page.html">The Book List Page</a>
+                                            </div>
+                                        </div>
+                                        <div id="collapseThree"
+                                            class="accordion-collapse collapse  border-0 rounded-0 p-0"
+                                            aria-labelledby="headingTwo" data-bs-parent="#accordionExamplee">
+                                            <div class="accordion-body bg-dark px-4 p-1">
+                                                <a href="Creating-Updating-And-Deleting-Book.html">Creating,Updating
+                                                    And
+                                                    Deleting Book</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <h2 class="accordion-header" id="headingFour">
+                                    <button
+                                        class="accordion-button d-flex flex-row-reverse justify-content-end p-0 bg-dark mt-2"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour"
+                                        aria-expanded="false" aria-controls="collapseOne">
+                                        Guides
+                                    </button>
+                                </h2>
+                                <div id="collapseFour" class="accordion-collapse collapse  border-0 rounded-0 p-0"
+                                    aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Customizing-The-Modules.html">Customizing the Modules</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Identity-Server-Deployment.html">Identity Server Deployment</a>
+                                    </div>
+                                </div>
+
+
+                                <h2 class="accordion-header" id="headingFive">
+                                    <button
+                                        class="accordion-button d-flex flex-row-reverse justify-content-end p-0 bg-dark mt-2"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive"
+                                        aria-expanded="false" aria-controls="collapseOne">
+                                        Samples
+                                    </button>
+                                </h2>
+                                <div id="collapseFive" class="accordion-collapse collapse  border-0 rounded-0 p-0"
+                                    aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="All-Samples.html">All Samples</a>
+                                    </div>
+                                </div>
+                                <h2 class="accordion-header" id="headingSix">
+                                    <a href="Startup-Template.html">
+                                        <button
+                                            class="accordion-button d-flex flex-row-reverse justify-content-end p-0 bg-dark mt-2"
+                                            type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix"
+                                            aria-expanded="false" aria-controls="collapseOne">
+                                            Startup Template
+                                        </button></a>
+                                </h2>
+                                <div id="collapseSix" class="accordion-collapse collapse  border-0 rounded-0 p-0"
+                                    aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <h2 class="accordion-header" id="headingSix">
+                                            <button
+                                                class="accordion-button d-flex flex-row-reverse justify-content-end p-0 bg-dark mt-2"
+                                                type="button" data-bs-toggle="collapse" data-bs-target="#headingS"
+                                                aria-expanded="false" aria-controls="collapseOne">
+                                                Application Templates
+                                            </button>
+                                        </h2>
+                                        <div id="headingS"
+                                            class="accordion-collapse collapse  border-0 rounded-0 p-0 pt-2"
+                                            aria-labelledby="headingSix" data-bs-parent="#accordionExamplee">
+                                            <div class="accordion-body bg-dark px-4 p-1">
+                                                <a href="Creating-Solution.html">Creating Solution</a>
+                                            </div>
+                                        </div>
+                                        <div id="headingS" class="accordion-collapse collapse  border-0 rounded-0 p-0"
+                                            aria-labelledby="headingSix" data-bs-parent="#accordionExamplee">
+                                            <div class="accordion-body bg-dark px-4 p-1">
+                                                <a href="Solution-Structure.html">Solution Structure</a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                                <h2 class="accordion-header" id="headingSeven">
+                                    <button
+                                        class="accordion-button d-flex flex-row-reverse justify-content-end p-0 bg-dark mt-2"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven"
+                                        aria-expanded="true" aria-controls="collapseOne">
+                                        Application Modules
+                                    </button>
+                                </h2>
+                                <div id="collapseSeven" class="accordion-collapse show collapse  border-0 rounded-0 p-0"
+                                    aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Overall.html">Overall</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Account-Module.html">Account</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Audit-Logging.html">Audit Logging</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Chat.html">Chat</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="CMS-Kit-Pro.html">CMS Kit Pro</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="File-Management.html">File Management</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Forms.html">Forms</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Identity.html"><span class="accordian-active">Identity</span></a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="OpenIddict.html">OpenIddict</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Language-Management.html">Language Management</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Payment.html">Payment</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="SaaS.html">SaaS</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Text-Template-Management.html">Text Template Management</a>
+                                    </div>
+                                </div>
+                                <h2 class="accordion-header" id="headingNine">
+                                    <a href="UI-Themes.html">
+                                        <button
+                                            class="accordion-button d-flex flex-row-reverse justify-content-end p-0 bg-dark mt-2"
+                                            type="button" data-bs-toggle="collapse" data-bs-target="#headingNine"
+                                            aria-expanded="false" aria-controls="collapseOne">
+                                            UI Themes
+                                        </button>
+                                    </a>
+                                </h2>
+                                <h2 class="accordion-header" id="headingReactUITheme">
+                                    <button
+                                        class="accordion-button d-flex flex-row-reverse justify-content-end p-0 bg-dark mt-2"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#headingReactUI"
+                                        aria-expanded="false" aria-controls="collapseOne">
+                                        React UI
+                                    </button>
+                                </h2>
+                                <div id="headingReactUI" class="accordion-collapse collapse  border-0 rounded-0 p-0"
+                                    aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Customization.html">customization</a>
+                                    </div>
+
+                                </div>
+                                <div id="headingReactUI" class="accordion-collapse collapse  border-0 rounded-0 p-0"
+                                    aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Components.html">Components</a>
+                                    </div>
+
+                                </div>
+                                <!-- For Release Information -->
+                                <h2 class="accordion-header" id="headingFive">
+                                    <button
+                                        class="accordion-button d-flex flex-row-reverse justify-content-end p-0 bg-dark mt-2"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseLast"
+                                        aria-expanded="false" aria-controls="collapseOne" id="samples">
+                                       <span id="relinfo">Release Information</span> 
+                                    </button>
+                                </h2>
+                                <div id="collapseLast" class="accordion-collapse collapse  border-0 rounded-0 p-0"
+                                    aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Release-Notes.html" id="allSamples"><span id="relnote">Release Notes</span></a>
+                                    </div>
+                                </div>
+                                <!-- ====================================== -->
+                            </div>
+                        </div>
+                        <ul class="list-unstyled CTAs  w-100">
+                            <li>
+                                <a href="https://bootstrapious.com/tutorial/files/sidebar.zip" class="download">Download
+                                    source</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="col-12 col-lg-8 col-md-7 col-xl-6 col-xxl-6 offset-lg-4 offset-md-5 offset-xl-3 offset-xxl-3 ps-xl-5 ps-xxl-0 px-lg-3 px-md-4 px-xl-0">
+
+                    <!-- Page Content  -->
+                    <div id="content">
+                        <div class="modal fade" id="contactusModal" tabindex="-1" aria-labelledby="contactusModalLabel"
+                            aria-hidden="true">
+
+                            <div class="modal-dialog modal-lg modal-dialog-centered">
+
+                                <div class="modal-content">
+
+                                    <!-- <div class="modal-header">
+                  
+                                  <h5 class="modal-title" id="contactusModalLabel">Modal title</h5>
+                  
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  
+                                </div> -->
+
+                                    <div class="modal-body p-0">
+
+
+
+
+                                        <div class="row">
+
+                                            <div class="col-md-6 col-sm-12 bg-dark">
+
+                                                <div class="mt-5">
+
+                                                    <img src="Assets/images/raaghu-logo-white.png"
+                                                        class="img-fluid w-25 pl-2">
+
+
+
+                                                    <img src="Assets/images/raaghu-banner-modal.png" class="img-fluid">
+
+                                                </div>
+
+                                            </div>
+
+
+
+                                            <div class="col-md-6 col-sm-12">
+
+                                                <div class="row">
+
+                                                    <div class="col-md-12 text-end pull-right">
+
+                                                        <button type="button"
+                                                            class="btn-close float-right pull-right m-3 text-muted"
+                                                            data-bs-dismiss="modal" aria-label="Close"></button>
+
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="p-4">
+
+                                                    <h6>
+
+                                                        Kindly fill the details below
+
+                                                    </h6>
+
+                                                    <p>
+
+                                                        <small> We will get back to you within 48 hours </small>
+
+                                                    </p>
+
+                                                    <div class="mt-5">
+
+                                                        <form method="post" id="want-to-hear-form">
+
+                                                            <div class="mb-3 form-group">
+
+                                                                <label for="emailId" class="form-label">Email ID
+
+                                                                    <span class="text-danger">*</span>
+
+                                                                </label>
+
+                                                                <input type="email" name="emailId"
+                                                                    class="form-control p-2" id="emailId"
+                                                                    placeholder="Enter your email id">
+
+                                                            </div>
+
+                                                            <div class="mb-3 form-group">
+
+                                                                <label for="companyName" class="form-label">Company Name
+
+                                                                    <span class="text-danger">*</span>
+
+                                                                </label>
+
+                                                                <input type="text" class="form-control p-2"
+                                                                    placeholder="Enter your Company Name"
+                                                                    name="companyName" id="companyName">
+
+                                                            </div>
+
+                                                            <div class="mb-3 form-group">
+
+                                                                <label for="message" class="form-label">Message
+
+                                                                    <span class="contactUs-Optional">(Optional)</span>
+
+
+                                                                </label>
+
+                                                                <textarea class="form-control p-2" name="message"
+                                                                    id="message" rows="3"
+                                                                    placeholder="Write your message.."></textarea>
+
+                                                            </div>
+
+                                                            <div class="mb-3 form-check">
+
+                                                                <input type="checkbox" class="form-check-input"
+                                                                    id="exampleCheck1">
+
+                                                                <label class="form-check-label" for="exampleCheck1">I
+                                                                    agree to the <a href="#"> terms & privacy policy
+                                                                    </a></label>
+
+                                                            </div>
+
+                                                            <button type="submit"
+                                                                class="btn btn-primary btn-sm btn-block float-end mb-4">Submit</button>
+
+                                                        </form>
+
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div> <input class="form-control  mb-5" type="search" placeholder="Search" aria-label="Search">
+                        </div>
+
+                        <div>
+                            <h1 class="fw-semibold mb-3" id="immod">Identity Management module</h1>
+                            <p id="thismoduse">This module implements the User and Role system of an application;</p>
+                            <ul class="ps-3">
+                                <li class="mt-2" id="managerol">Manage <strong>roles</strong> and <strong>users</strong>
+                                    in the system.
+                                    A user is allowed to have <strong>multiple roles.</strong></li>
+                                <li class="mt-2" id="roleanduser">Set <strong>permissions</strong> in role and user
+                                    levels.</li>
+                                <li class="mt-2" id="enadisa">Enable/disable <strong>two factor authentication</strong>
+                                    and user
+                                    <strong>lockout</strong> per user.
+                                </li>
+                                <li class="mt-2" id="userprof">Manage basic <strong>user profile</strong> and
+                                    <strong>password.</strong>
+                                </li>
+                                <li class="mt-2" id="inthesys">Manage <strong>claim types</strong> in the system, set
+                                    claims to roles
+                                    and users.</li>
+                                <li class="mt-2" id="settpage">Setting page to manage <strong>password
+                                        complexity,</strong> user
+                                    sign-in, account and lockout.</li>
+                                <li class="mt-2" id="supts">Supports <strong>LDAP</strong> authentication.</li>
+                                <li class="mt-2" id="prov">Provides <strong>email & phone number</strong> verification.
+                                </li>
+                                <li class="mt-2" id="sociallog">Supports social login integrations ( Microsoft, Google, Twitter.)
+                                </li>
+                                <li class="mt-2" id="inthesyss">Manage <strong>organization units</strong> in the
+                                    system.</li>
+                                <li class="mt-2" id="packages">View security logs (login, logout, change password...) in
+                                    the system.
+                                </li>
+                            </ul>
+                            <p id="moddes">See the module description page for an overview of the module features.</p>
+                        </div>
+                        <div>
+                            <h2 class="fw-semibold my-3" id="pes">Packages</h2>
+                            <p id="thsmodf">This module follows the <a
+                                    href="https://docs.abp.io/en/abp/latest/Best-Practices/Index">module development
+                                    best practices guide</a> and consists of several NuGet and NPM packages. See the
+                                guide if you want to understand the packages and relations between them.</p>
+                            <p id="toseelist">You can visit <a
+                                    href="https://abp.io/packages?moduleName=Volo.Identity.Pro">Identity
+                                    module package list page</a> to see list of packages related with this module.</p>
+                        </div>
+                        <div>
+                            <h3 class="fw-semibold pt-2 pb-2" id="menuit">Menu items</h3>
+                            <p id="addthefoll">Identity module adds the following items to the "Main" menu, under the
+                                "Administration"
+                                menu item:</p>
+                            <ul class="ps-3">
+                                <li class="mt-2" id="rollmanage"><strong>Roles</strong>: Role management page.</li>
+                                <li class="mt-2" id="usermg"><strong>Users</strong>: User management page.</li>
+                                <li class="mt-2" id="claimtype"><strong>Claim Types</strong>: Claim type management
+                                    page.</li>
+                                <li class="mt-2" id="ogu"><strong>Organization Units</strong>: Organization unit
+                                    management page.
+                                </li>
+                                <li class="mt-2" id="ssl"><strong>Security Logs</strong>: Security log search page.</li>
+                            </ul>
+                            <p id="classhas"><span class="txt-color">IdentityMenuNames</span> class has the constants
+                                for the menu
+                                item names.</p>
+                        </div>
+                        <div>
+                            <h3 class="fw-semibold pt-2 pb-2" id="ppp">Pages</h3>
+                            <p id="rolll">Role management</p>
+                            <p id="useto">Roles page is used to manage roles in the system. A role is a set of
+                                permissions assigned
+                                to the users.</p>
+
+                            <img src="Assets/images/newRole.jpg" alt="New Role" class="img-fluid my-4">
+                            <p id="cancreate">You can create a new role or edit a role in this page:</p>
+                            <img src="Assets/images/createNewRole.jpg"
+                                alt="You can create a new role or edit a role in this page" class="img-fluid my-4">
+                            <ul class="ps-3">
+                                <li class="mt-2" id="rp"><strong>Default</strong> roles are assigned to new users by
+                                    default.
+                                </li>
+                                <li class="mt-2" id="pubrol"><strong>Public</strong> roles are visible to other users.
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="fw-semibold pt-2 pb-2" id="rolper">Role permissions</h3>
+                            <p id="manca">You can manage permissions of a role:</p>
+                        </div>
+                        <div>
+                            <h3 class="fw-semibold pt-2 pb-2" id="tobead">UI to be added </h3>
+                            <ul class="ps-3">
+                                <li class="mt-2" id="perisa">A permission is an <strong>action of the
+                                        application</strong> granted
+                                    to roles and users.</li>
+                                <li class="mt-2" id="witha">A user with a role will <strong>inherit</strong> all the
+                                    permissions
+                                    granted for the role.</li>
+                                <li class="mt-2" id="modcan">Any module can <a
+                                        href="https://docs.abp.io/en/abp/latest/Authorization#permission-system">define
+                                        permissions</a>. Once you define a new permission, it will be available in this
+                                    page.</li>
+                                <li class="mt-2" id="leftside">Left side is the <strong>list of modules.</strong> Once
+                                    you click to a
+                                    module name, you
+                                    can check/uncheck permissions related to that module.</li>
+                            </ul>
+
+                        </div>
+                        <div>
+                            <h3 class="fw-semibold pt-2 pb-2" id="rocl">Role claims</h3>
+                            <p id="setcust">You can set custom claim values for a role:</p>
+
+                            <img src="Assets/images/editRole.jpg" alt="Edit Role" class="img-fluid my-4">
+                            <p id="um">Claim types are retrieved from the claim list defined in the Claim Types
+                                Management page
+                                (see below).</p>
+                        </div>
+                        <div>
+                            <h3 class="fw-semibold pt-2 pb-2" id="usermgt">User management</h3>
+                            <p id="isuseds">Users page is used to manage the users in your system.</p>
+                            <img src="Assets/images/userManagement.jpg" alt="User Management " class="img-fluid my-4">
+                            <p id="cancre">You can create a new user or edit an existing user in this page:</p>
+                            <img src="Assets/images/createANewUser.jpg"
+                                alt="You can create a new user or edit an existing user in this page "
+                                class="img-fluid my-4">
+                            <ul class="ps-3">
+                                <li class="mt-2" id="canhav">A user can have <strong>zero or more roles</strong> in the
+                                    system.</li>
+                                <li class="mt-2" id="twofact">You can set <strong>two factor</strong> verification and
+                                    user
+                                    <strong>lockout</strong> settings per user.
+                                </li>
+                                <img src="Assets/images/newUser.jpg" alt="New User " class="img-fluid my-4">
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="fw-semibold pt-2 pb-2" id="up">User permissions</h3>
+                            <p id="unionof">A user has union of the permissions of the assigned roles. Identity module
+                                also allows to
+                                grant extra permissions to a specific user.</p>
+                            <img src="Assets/images/editUser.jpg" alt="Edit User " class="img-fluid my-4">
+                            <ul class="ps-3">
+                                <li class="mt-2" id="isan">A permission is an <strong>action of the application</strong>
+                                    granted
+                                    to roles and users.</li>
+                                <li class="mt-2" id="withrole">A user with a role will <strong>inherit</strong> all the
+                                    permissions
+                                    granted for the role.</li>
+                                <li class="mt-2" id="ctm">Any module can <a
+                                        href="https://docs.abp.io/en/abp/latest/Authorization#permission-system">define
+                                        permissions</a>. Once you define a new permission, it will be available in this
+                                    page.</li>
+                                <li class="mt-2" id="sideis">Left side is the <strong>list of modules.</strong> Once you
+                                    click to a
+                                    module name, you can check/uncheck permissions related to that module.</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="fw-semibold pt-2 pb-2" id="claim">Claim type management</h3>
+                            <p id="customclaim">Identity module allows to define custom claim types.</p>
+                            <img src="Assets/images/newClaimType.png" alt="New Claim Type " class="img-fluid my-4">
+                            <ul class="ps-3">
+                                <li class="mt-2" id="usedtostore">Custom claims can be used to store additional
+                                    information to a user or
+                                    role.</li>
+                                <li class="mt-2" id="OU">Custom claim values then can be accessed in the application
+                                    code for an
+                                    authenticated user.</li>
+                                <li class="mt-2" id="arealso">Claim Types are also used by the OpenIddict module if
+                                    you're using it.
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="fw-semibold pt-2 pb-2" id="orgunit">Organization Units</h3>
+                            <p id="isusedto">Organization units page is used to manage organization units, members of
+                                organization
+                                units and roles of organization units.</p>
+                            <img src="Assets/images/organizationUnit.jpg"
+                                alt="Organization units page is used to manage organization units, members of organization units and roles of organization units"
+                                class="img-fluid my-4">
+                            <p id="unitoredit">You can add a new organization unit or edit an existing organization unit
+                                on this page.
+                                In order to add a new root organization unit, click "New root unit" button and fill the
+                                opening form.</p>
+                            <img src="Assets/images/newOrgUnit.jpg" alt="New Organization Unit" class="img-fluid my-4">
+                            <p id="unitto">In order to add a sub-unit to an existing organization unit, right click on
+                                an existing
+                                organization unit and click "Add sub-unit" context menu item. Similarly, in order to
+                                edit an organization unit, right click on an existing organization unit and click "Edit"
+                                context menu item.</p>
+                            <img src="Assets/images/editOrgUnit.jpg" alt="Edit Organization Unit"
+                                class="img-fluid my-4">
+                            <p id="youcanmange">You can manage members of an organization unit using the members tab by
+                                selection an organization unit </p>
+                        </div>
+                        <div>
+                            <h3 class="fw-semibold pt-2 pb-2" id="sl">Security Logs</h3>
+                            <p id="securitypage">Security logs page is used to search and view authentication related
+                                operations (login, logout, change password...) in the system.</p>
+                            <img src="Assets/images/securityLogs.jpg" alt="Security Logs" class="img-fluid my-4">
+                        </div>
+
+
+
+
+                    </div>
+                </div>
+                <div class="col-12 col-lg-8 col-md-7 col-xl-2 col-xxl-2 docs-page-index offset-lg-4 offset-xl-0 offset-md-5 offset-xxl-0 px-md-4">
+                    <div class="position-fixed  my-3 w-auto mx-lg-0 mx-xl-3 mx-xxl-3 pe-lg-3 pe-xl-0 pe-xxl-0 position-lg-relative">
+                    <div class="card border-0 box rounded-3 mb-3">
+                        <div class="card-body">
+                            <h4 class="card-title py-1" id="inthisdoc">In this document</h4>
+                            <div class="opacity-50">
+                                <ul class="card-text small  list-unstyled ul-ad">
+                                    <li id="secpack"><a href="#packages" class="text-black">Packages</a></li>
+                                    <li id="secmenu"><a href="#packages" class="text-black">Menu items</a></li>
+                                    <li id="secmenus"><a href="#packages" class="text-black">Pages</a></li>
+                                    <li id="secpagesrole"><a href="#rp" class="text-black">Role permissions</a></li>
+                                    <li id="secrole"><a href="#um" class="text-black">User management</a></li>
+                                    <li id="secuser"><a href="#up" class="text-black">User permissions</a></li>
+                                    <li id="secclaim"><a href="#ctm" class="text-black">Claim type management</a></li>
+                                    <li id="secorg"><a href="#OU" class="text-black">Organization Units</a></li>
+                                    <li id="secsecure"><a href="#sl" class="text-black">Security Logs</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card  border-0 box  bg-advertise "  >
+                        <div class="card-body abp-community-card  rounded-3 bg-sec ">
+                            <div class="row  ">
+                                <div class="col-lg-5 col-md-5 col-5"> <img src="Assets/images/React_logo.png" alt="raaghu logo" class="w-100"></div>
+                                <div class="col-lg-7 mt-1  col-md-7 mt-1 col-7"> <img src="Assets/images/abp-sec.png" alt="raaghu logo" class="w-100"></div>
+                                <!-- <div class="col-lg-6"><img src="Assets/images/abp-com.svg" alt="raaghu logo" class="w-100"></div> -->
+
+                            </div>
+                            <div class="border-under-sec my-3"></div>
+                            <div class="colored-sec-design py-1">
+                                <ul class="ps-4">
+                                    <li>CLI for CRUD generation</li>
+                                    <li>Component driven development</li>
+                                    <li>Purpose build UI kit for ABP commercial</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <button type="button" class="btn btn-primary mt-1 w-100" data-bs-toggle="modal"
+                                    data-bs-target="#contactusModal">Contact Us</button>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <!-- <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-0 col-12 docs-page-index">
+                    <div class="card mt-4 top-25 me-lg-4 border-0 shadow py-4">
+                        <div class="card-body">
+                            <h5 class="card-title">In This Document</h5>
+                            <p class="card-text small">Some quick example text to build on the card title and make up
+                                the bulk of the card's content.</p>
+
+                        </div>
+                    </div>
+                </div> -->
+
+            </div>
+
+
+
+        </div>
+
+    </main>
+
+    <!-- bootstrap dependencies -->
+    <script src="Assets/js/bootstrap.min.js"></script>
+    <script src="scripts/translation.js"></script>
+</body>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var languageDropdown = document.getElementById('language-dropdown');
+        languageDropdown.addEventListener('change', function () {
+            var selectedLanguage = languageDropdown.value;
+            if (selectedLanguage === 'pt') {
+                // Sidebar Code in js File
+
+
+                // Body Content
+
+                document.getElementById('immod').innerHTML = 'módulo de gerenciamento de identidade';
+                document.getElementById('thismoduse').innerHTML = 'Este módulo implementa o sistema User and Role de um aplicativo;';
+                document.getElementById('managerol').innerHTML = 'Gerencie <strong>funções</strong> e <strong>usuários</strong> no sistema. Um usuário pode ter <strong>várias funções.</strong>';
+                document.getElementById('roleanduser').innerHTML = 'Defina <strong>permissões</strong> em função e níveis de usuário.';
+                document.getElementById('enadisa').innerHTML = 'Ativar/desativar <strong>autenticação de dois fatores</strong> e usuário <strong>bloqueio</strong> por usuário.';
+                document.getElementById('userprof').innerHTML = 'Gerenciar o <strong>perfil de usuário</strong> básico e <strong>senha.';
+                document.getElementById('inthesys').innerHTML = 'Gerenciar <strong>tipos de declaração</strong> no sistema, definir declarações para funções e usuários.';
+                document.getElementById('settpage').innerHTML = 'Página de configuração para gerenciar <strong>complexidade de senha,</strong> usuário login, conta e bloqueio.';
+                document.getElementById('supts').innerHTML = 'Suporta autenticação <strong>LDAP</strong>.';
+                document.getElementById('prov').innerHTML = 'Fornece verificação de <strong>e-mail e número de telefone</strong>.';
+                document.getElementById('sociallog').innerHTML = 'Suporta integrações de login social (Twitter, Facebook, GitHub etc...).';
+                document.getElementById('inthesyss').innerHTML = 'Gerencie <strong>unidades organizacionais</strong> no sistema.';
+                document.getElementById('packages').innerHTML = 'Visualize logs de segurança (login, logout, alteração de senha...) no sistema.';
+                document.getElementById('moddes').innerHTML = 'Consulte a página de descrição do módulo para obter uma visão geral dos recursos do módulo.';
+                document.getElementById('pes').innerHTML = 'pacotes';
+                document.getElementById('thsmodf').innerHTML = 'Este módulo segue o <a href="https://docs.abp.io/en/abp/latest/Best-Practices/Index">desenvolvimento do módulo guia de práticas recomendadas</a> e consiste em vários pacotes NuGet e NPM. Veja o guia se você quiser entender os pacotes e as relações entre eles.';
+                document.getElementById('toseelist').innerHTML = 'Você pode visitar <a href="https://abp.io/packages?moduleName=Volo.Identity.Pro">Identidade página de lista de pacotes do módulo</a> para ver a lista de pacotes relacionados com este módulo.';
+                document.getElementById('menuit').innerHTML = 'Itens do menu';
+                document.getElementById('addthefoll').innerHTML = 'O módulo de identidade adiciona os seguintes itens ao menu "Principal", em "Administração" item do menu:';
+                document.getElementById('rollmanage').innerHTML = '<strong>Funções</strong>: página de gerenciamento de funções.';
+                document.getElementById('usermg').innerHTML = '<strong>Usuários</strong>: página de gerenciamento de usuários.';
+                document.getElementById('claimtype').innerHTML = '<strong>Tipos de reivindicação</strong>: página de gerenciamento do tipo de reivindicação.';
+                document.getElementById('ogu').innerHTML = '<strong>Unidades organizacionais</strong>: página de gerenciamento da unidade organizacional.';
+                document.getElementById('ssl').innerHTML = '<strong>Logs de segurança</strong>: página de pesquisa de logs de segurança.';
+                document.getElementById('classhas').innerHTML = 'A classe <span class="txt-color" >IdentityMenuNames</span> tem as constantes para o menu nomes de itens.';
+                document.getElementById('ppp').innerHTML = 'Páginas';
+                document.getElementById('rolll').innerHTML = 'Gerenciamento de funções';
+                document.getElementById('useto').innerHTML = 'A página de funções é usada para gerenciar funções no sistema. Uma função é um conjunto de permissões atribuídas aos usuários.';
+                document.getElementById('cancreate').innerHTML = 'Você pode criar uma nova função ou editar uma função nesta página:';
+                document.getElementById('rp').innerHTML = 'As funções <strong>padrão</strong> são atribuídas a novos usuários por padrão.';
+                document.getElementById('pubrol').innerHTML = 'funções strong>públicas</strong> são visíveis para outros usuários.</li>';
+                document.getElementById('rolper').innerHTML = 'Permissões de função';
+                document.getElementById('manca').innerHTML = 'Você pode gerenciar as permissões de uma função:';
+                document.getElementById('tobead').innerHTML = 'IU a ser adicionada';
+                document.getElementById('perisa').innerHTML = 'Uma permissão é uma <strong>ação do aplicativo</strong> concedida para funções e usuários.';
+                document.getElementById('witha').innerHTML = 'Um usuário com uma função <strong>herdará</strong> todas as permissões concedida para a função.';
+                document.getElementById('modcan').innerHTML = 'Qualquer módulo pode <a href="https://docs.abp.io/en/abp/latest/Authorization#permission-system">define permissões</a>. Depois de definir uma nova permissão, ela estará disponível neste página.';
+                document.getElementById('leftside').innerHTML = 'O lado esquerdo é a <strong>lista de módulos.</strong> Depois de clicar em um nome do módulo, você pode marcar/desmarcar as permissões relacionadas a esse módulo.';
+                document.getElementById('rocl').innerHTML = 'Reivindicações de função';
+                document.getElementById('setcust').innerHTML = 'Você pode definir valores de declaração personalizados para uma função:';
+                document.getElementById('um').innerHTML = 'Os tipos de declaração são recuperados da lista de declarações definida na página Gerenciamento de tipos de declaração (Veja abaixo).';
+                document.getElementById('usermgt').innerHTML = 'gerenciamento de usuários';
+                document.getElementById('isuseds').innerHTML = 'A página de usuários é usada para gerenciar os usuários em seu sistema.';
+                document.getElementById('cancre').innerHTML = 'Você pode criar um novo usuário ou editar um usuário existente nesta página:';
+                document.getElementById('canhav').innerHTML = 'Um usuário pode ter <strong>zero ou mais papéis</strong> no sistema.';
+                document.getElementById('twofact').innerHTML = 'Você pode definir a verificação de <strong>dois fatores</strong> e o usuário Configurações de <strong>bloqueio</strong> por usuário.';
+                document.getElementById('up').innerHTML = 'Permissões de usuário';
+                document.getElementById('unionof').innerHTML = 'Um usuário tem união das permissões das funções atribuídas. O módulo de identidade também permite conceder permissões extras a um usuário específico.';
+                document.getElementById('isan').innerHTML = 'Uma permissão é uma <strong>ação do aplicativo</strong> concedida para funções e usuários.';
+                document.getElementById('withrole').innerHTML = 'Um usuário com uma função <strong>herdará</strong> todas as permissões concedida para a função.';
+                document.getElementById('ctm').innerHTML = 'Qualquer módulo pode <a href="https://docs.abp.io/en/abp/latest/Authorization#permission-system">define permissões</a>. Depois de definir uma nova permissão, ela estará disponível neste página.';
+                document.getElementById('sideis').innerHTML = 'O lado esquerdo é a <strong>lista de módulos.</strong> Depois de clicar em um nome do módulo, você pode marcar/desmarcar as permissões relacionadas a esse módulo.';
+                document.getElementById('claim').innerHTML = 'Gerenciamento de tipo de reivindicação';
+                document.getElementById('customclaim').innerHTML = 'O módulo de identidade permite definir tipos de declaração personalizados.';
+                document.getElementById('usedtostore').innerHTML = 'As declarações personalizadas podem ser usadas para armazenar informações adicionais para um usuário ou papel.';
+                document.getElementById('OU').innerHTML = 'Os valores de declaração personalizados podem ser acessados ​​no código do aplicativo para um usuário autenticado.';
+                document.getElementById('arealso').innerHTML = 'Os tipos de declaração também são usados ​​pelo módulo OpenIddict, se você o estiver usando.';
+                document.getElementById('orgunit').innerHTML = 'Unidades Organizacionais';
+                document.getElementById('isusedto').innerHTML = 'A página de unidades organizacionais é usada para gerenciar unidades organizacionais, membros da organização unidades e papéis das unidades organizacionais.';
+                document.getElementById('unitoredit').innerHTML = 'Você pode adicionar uma nova unidade organizacional ou editar uma unidade organizacional existente nesta página. Para adicionar uma nova unidade de organização raiz, clique no botão "Nova unidade raiz" e preencha o formulário de abertura.';
+                document.getElementById('unitto').innerHTML = 'Para adicionar uma subunidade a uma unidade organizacional existente, clique com o botão direito do mouse em uma unidade existente unidade organizacional e clique no item de menu de contexto "Adicionar subunidade". Da mesma forma, para editar uma unidade organizacional, clique com o botão direito do mouse em uma unidade organizacional existente e clique em "Editar" item do menu de contexto.';
+                document.getElementById('youcanmange').innerHTML = 'Você pode gerenciar membros de uma unidade organizacional usando a guia membros selecionando uma unidade organizacional';
+                document.getElementById('sl').innerHTML = 'Registros de segurança';
+                document.getElementById('securitypage').innerHTML = 'A página de logs de segurança é usada para pesquisar e visualizar operações relacionadas à autenticação (login, logout, alterar senha...) no sistema.';
+
+                // For In this doc section
+                document.getElementById('inthisdoc').innerHTML = 'neste documento';
+                document.getElementById('secpack').innerHTML = '<a href="#packages" class="text-black">Pacotes</a>';
+                document.getElementById('secmenu').innerHTML = '<a href="#packages" class="text-black">Itens de menu</a>';
+                document.getElementById('secmenu').innerHTML = '<a href="#packages" class="text-black">Páginas</a>';
+                document.getElementById('secpages').innerHTML = '<a href="#rp" class="text-black">Permissões de função</a>';
+                document.getElementById('secrole').innerHTML = '<a href="#um" class="text-black">Gerenciamento de usuários</a>';
+                document.getElementById('secuser').innerHTML = '<a href="#up" class="text-black">Permissões do usuário</a>';
+                document.getElementById('secclaim').innerHTML = '<a href="#ctm" class="text-black">Gerenciamento do tipo de reivindicação</a>';
+                document.getElementById('secorg').innerHTML = '<a href="#OU" class="text-black">Unidades de organização</a>';
+                document.getElementById('secsecure').innerHTML = '<a href="#sl" class="text-black">Registros de segurança</a>';
+            }
+            else if (selectedLanguage === 'French') {
+
+                // Body Content
+
+                document.getElementById('immod').innerHTML = 'module de gestion des identités';
+                document.getElementById('thismoduse').innerHTML = 'Ce module implémente le système d\'utilisateur et de rôle d\'une application ;';
+                document.getElementById('managerol').innerHTML = 'Gérez les <strong>rôles</strong> et les <strong>utilisateurs</strong> sur le système. Un utilisateur peut avoir <strong>plusieurs rôles.</strong>';
+                document.getElementById('roleanduser').innerHTML = 'Définissez des <strong>autorisations</strong> au niveau des rôles et des utilisateurs.';
+                document.getElementById('enadisa').innerHTML = 'Activez/désactivez l\'<strong>authentification à deux facteurs</strong> et le <strong>verrouillage</strong> utilisateur par utilisateur.';
+                document.getElementById('userprof').innerHTML = 'Gérez le <strong>profil utilisateur</strong> et le <strong>mot de passe de base.';
+                document.getElementById('inthesys').innerHTML = 'Gérez les <strong>types de revendications</strong> dans le système, définissez les revendications pour les rôles et les utilisateurs.';
+                document.getElementById('settpage').innerHTML = 'Page de configuration pour gérer la <strong>complexité des mots de passe,</strong> la connexion de l\'utilisateur, le compte et le verrouillage.';
+                document.getElementById('supts').innerHTML = 'Prend en charge l\'authentification <strong>LDAP</strong>.';
+                document.getElementById('prov').innerHTML = 'Fournit une vérification <strong>de l\'adresse e-mail et du numéro de téléphone</strong>.';
+                document.getElementById('sociallog').innerHTML = 'Prend en charge les intégrations de connexion sociale (Twitter, Facebook, GitHub, etc.).';
+                document.getElementById('inthesyss').innerHTML = 'Gérez les <strong>unités organisationnelles</strong> dans le système.';
+                document.getElementById('packages').innerHTML = 'Afficher les journaux de sécurité (connexion, déconnexion, changement de mot de passe...) sur le système.';
+                document.getElementById('moddes').innerHTML = 'Voir la page de description du module pour un aperçu des fonctionnalités du module.';
+                document.getElementById('pes').innerHTML = 'paquets';
+                document.getElementById('thsmodf').innerHTML = 'Ce module suit le <a href="https://docs.abp.io/en/abp/latest/Best-Practices/Index">guide des meilleures pratiques de développement de modules</a> et se compose de plusieurs packages NuGet et NPM. Consultez le guide si vous souhaitez comprendre les packages et les relations entre eux.';
+                document.getElementById('toseelist').innerHTML = 'Vous pouvez visiter la <a href="https://abp.io/packages?moduleName=Volo.Identity.Pro">page de la liste des packages du module d\'identité</a> pour voir la liste des packages liés à ce module.';
+                document.getElementById('menuit').innerHTML = 'éléments de menu';
+                document.getElementById('addthefoll').innerHTML = 'Le module d\'identité ajoute les éléments suivants au menu "Principal" sous l\'élément de menu "Administration" :';
+                document.getElementById('rollmanage').innerHTML = '<strong>Rôles</strong> : page de gestion des rôles.';
+                document.getElementById('usermg').innerHTML = '<strong>Utilisateurs</strong> : page de gestion des utilisateurs.';
+                document.getElementById('claimtype').innerHTML = '<strong>Types de réclamations</strong> : page de gestion des types de réclamations.';
+                document.getElementById('ogu').innerHTML = '<strong>Unités organisationnelles</strong> : page de gestion des unités organisationnelles.';
+                document.getElementById('ssl').innerHTML = '<strong>Journaux de sécurité</strong> : page de recherche des journaux de sécurité.';
+                document.getElementById('classhas').innerHTML = 'La classe <span class="txt-color">IdentityMenuNames</span> a des constantes pour les noms des éléments de menu.';
+                document.getElementById('ppp').innerHTML = 'pages';
+                document.getElementById('rolll').innerHTML = 'gestion des rôles';
+                document.getElementById('useto').innerHTML = 'La page des rôles est utilisée pour gérer les rôles sur le système. Un rôle est un ensemble d\'autorisations attribuées aux utilisateurs.';
+                document.getElementById('cancreate').innerHTML = 'Vous pouvez créer un nouveau rôle ou modifier un rôle sur cette page :';
+                document.getElementById('rp').innerHTML = 'Les rôles <strong>par défaut</strong> sont attribués aux nouveaux utilisateurs par défaut.';
+                document.getElementById('pubrol').innerHTML = 'strong>les fonctions publiques</strong> sont visibles par les autres utilisateurs.</li>';
+                document.getElementById('rolper').innerHTML = 'autorisations de rôle';
+                document.getElementById('manca').innerHTML = 'Vous pouvez gérer les autorisations d\'un rôle :';
+                document.getElementById('tobead').innerHTML = 'UI à ajouter';
+                document.getElementById('perisa').innerHTML = 'Une autorisation est une <strong>action d\'application</strong> accordée aux rôles et aux utilisateurs.';
+                document.getElementById('witha').innerHTML = 'Un utilisateur avec un rôle <strong>héritera</strong> de toutes les autorisations accordées au rôle.';
+                document.getElementById('modcan').innerHTML = 'Tout module peut <a href="https://docs.abp.io/en/abp/latest/Authorization#permission-system">définir des autorisations</a>. Après avoir défini une nouvelle autorisation, elle sera disponible sur cette page.';
+                document.getElementById('leftside').innerHTML = 'Le côté gauche est la <strong>liste des modules.</strong> Après avoir cliqué sur un nom de module, vous pouvez cocher/décocher les permissions liées à ce module.';
+                document.getElementById('rocl').innerHTML = 'Revendications de rôle';
+                document.getElementById('setcust').innerHTML = 'Vous pouvez définir des valeurs de déclaration personnalisées pour une fonction :';
+                document.getElementById('um').innerHTML = 'Les types de réclamations sont extraits de la liste des réclamations définies sur la page Gestion des types de réclamations (voir ci-dessous).';
+                document.getElementById('usermgt').innerHTML = 'gestion des utilisateurs';
+                document.getElementById('isuseds').innerHTML = 'La page des utilisateurs est utilisée pour gérer les utilisateurs de votre système.';
+                document.getElementById('cancre').innerHTML = 'Vous pouvez créer un nouvel utilisateur ou modifier un utilisateur existant sur cette page :';
+                document.getElementById('canhav').innerHTML = 'Un utilisateur peut avoir <strong>zéro ou plusieurs rôles</strong> dans le système.';
+                document.getElementById('twofact').innerHTML = 'Vous pouvez définir les paramètres de vérification <strong>à deux facteurs</strong> et de <strong>verrouillage</strong> de l\'utilisateur pour chaque utilisateur.';
+                document.getElementById('up').innerHTML = 'autorisations utilisateur';
+                document.getElementById('unionof').innerHTML = 'Un utilisateur dispose des autorisations d\'union des rôles attribués. Le module d\'identité vous permet également d\'accorder des autorisations supplémentaires à un utilisateur spécifique.';
+                document.getElementById('isan').innerHTML = 'Une autorisation est une <strong>action d\'application</strong> accordée aux rôles et aux utilisateurs.';
+                document.getElementById('withrole').innerHTML = 'Un utilisateur avec un rôle <strong>héritera</strong> de toutes les autorisations accordées au rôle.';
+                document.getElementById('ctm').innerHTML = 'Tout module peut <a href="https://docs.abp.io/en/abp/latest/Authorization#permission-system">définir des autorisations</a>. Après avoir défini une nouvelle autorisation, elle sera disponible sur cette page.';
+                document.getElementById('sideis').innerHTML = 'Le côté gauche est la <strong>liste des modules.</strong> Après avoir cliqué sur un nom de module, vous pouvez cocher/décocher les permissions liées à ce module.';
+                document.getElementById('claim').innerHTML = 'Gestion des types de réclamation';
+                document.getElementById('customclaim').innerHTML = 'Le module d\'identité vous permet de définir des types de revendications personnalisés.';
+                document.getElementById('usedtostore').innerHTML = 'Les revendications personnalisées peuvent être utilisées pour stocker des informations supplémentaires pour un utilisateur ou un rôle.';
+                document.getElementById('OU').innerHTML = 'Les valeurs de revendication personnalisées sont accessibles dans le code de l\'application pour un utilisateur authentifié.';
+                document.getElementById('arealso').innerHTML = 'Les types de réclamation sont également utilisés par le module OpenIddict si vous l\'utilisez.';
+                document.getElementById('orgunit').innerHTML = 'Unités organisationnelles';
+                document.getElementById('isusedto').innerHTML = 'La page des unités organisationnelles est utilisée pour gérer les unités organisationnelles, les membres de l\'organisation, les unités organisationnelles et les rôles d\'unité organisationnelle.';
+                document.getElementById('unitoredit').innerHTML = 'Vous pouvez ajouter une nouvelle unité organisationnelle ou modifier une unité organisationnelle existante sur cette page. Pour ajouter une nouvelle unité d\'organisation racine, cliquez sur le bouton "Nouvelle unité racine" et remplissez le formulaire d\'ouverture.';
+                document.getElementById('unitto').innerHTML = 'Pour ajouter une sous-unité à une unité organisationnelle existante, faites un clic droit sur une unité organisationnelle existante et cliquez sur l\'élément de menu contextuel "Ajouter une sous-unité". De même, pour modifier une unité organisationnelle, faites un clic droit sur une unité organisationnelle existante et cliquez sur l\'élément de menu contextuel "Modifier".';
+                document.getElementById('youcanmange').innerHTML = 'Vous pouvez gérer les membres d\'une unité organisationnelle à l\'aide de l\'onglet Membres en sélectionnant une unité organisationnelle';
+                document.getElementById('sl').innerHTML = 'dossiers de sécurité';
+                document.getElementById('securitypage').innerHTML = 'La page des journaux de sécurité est utilisée pour rechercher et afficher les opérations liées à l\'authentification (connexion, déconnexion, changement de mot de passe...) sur le système.';
+
+                // For In this doc section
+                document.getElementById('inthisdoc').innerHTML = 'dans ce document';
+                document.getElementById('secpack').innerHTML = '<a href="#packages" class="text-black">Forfaits</a>';
+                document.getElementById('secmenu').innerHTML = '<a href="#packages" class="text-black">Éléments de menu</a>';
+                document.getElementById('secmenu').innerHTML = '<a href="#packages" class="text-black">Pages</a>';
+                document.getElementById('secpages').innerHTML = '<a href="#rp" class="text-black">Autorisations de rôle</a>';
+                document.getElementById('secrole').innerHTML = '<a href="#um" class="text-black">Gestion des utilisateurs</a>';
+                document.getElementById('secuser').innerHTML = '<a href="#up" class="text-black">Autorisations utilisateur</a>';
+                document.getElementById('secclaim').innerHTML = '<a href="#ctm" class="text-black">Gestion des types de réclamation</a>';
+                document.getElementById('secorg').innerHTML = '<a href="#OU" class="text-black">Unités organisationnelles</a>';
+                document.getElementById('secsecure').innerHTML = '<a href="#sl" class="text-black">Journaux de sécurité</a>';
+            }
+            else if (selectedLanguage === 'Finnish') {
+                document.getElementById('immod').innerHTML = 'Tunnistetietojen hallintamoduuli';
+                document.getElementById('thismoduse').innerHTML = 'Tämä moduuli toteuttaa sovelluksen käyttäjä- ja roolijärjestelmän.';
+                document.getElementById('managerol').innerHTML = 'Hallitse <strong>rooleja</strong> ja <strong>käyttäjiä</strong> järjestelmässä. Käyttäjällä voi olla <strong>useita rooleja</strong>.';
+                document.getElementById('roleanduser').innerHTML = 'Määritä <strong>oikeuksia</strong> roolien ja käyttäjien tasolla.';
+                document.getElementById('enadisa').innerHTML = 'Ota käyttöön/poista käytöstä <strong>kaksivaiheinen tunnistautuminen</strong> ja käyttäjän <strong>lukitus</strong> yksilöllisesti.';
+                document.getElementById('userprof').innerHTML = 'Hallitse käyttäjän <strong>profiilia</strong> ja <strong>perus salasanaa</strong>.';
+                document.getElementById('inthesys').innerHTML = 'Hallitse <strong>väitteiden tyyppejä</strong> järjestelmässä, määritä väitteet rooleille ja käyttäjille.';
+                document.getElementById('settpage').innerHTML = 'Määritä sivu asetusten hallintaan, kuten salasanan monimutkaisuus, käyttäjän kirjautuminen, tili ja lukitus.';
+                document.getElementById('supts').innerHTML = 'Tukee <strong>LDAP-tunnistautumista</strong>.';
+                document.getElementById('prov').innerHTML = 'Tarjoaa tarkistuksen <strong>sähköpostiosoitteelle ja puhelinnumerolle</strong>.';
+                document.getElementById('sociallog').innerHTML = 'Tukee sosiaalisen kirjautumisen integraatioita (Twitter, Facebook, GitHub, jne.).';
+                document.getElementById('inthesyss').innerHTML = 'Hallitse <strong>organisaatioyksiköitä</strong> järjestelmässä.';
+                document.getElementById('packages').innerHTML = 'Näytä turvallisuuslokit (kirjautuminen, uloskirjautuminen, salasanan vaihto...) järjestelmässä.';
+                document.getElementById('moddes').innerHTML = 'Katso moduulin kuvaussivu saadaksesi yleiskuvan moduulin toiminnoista.';
+                document.getElementById('pes').innerHTML = 'pakettia';
+                document.getElementById('thsmodf').innerHTML = 'Tämä moduuli noudattaa <a href="https://docs.abp.io/en/abp/latest/Best-Practices/Index">parhaita kehityskäytäntöjä</a> ja koostuu useista NuGet- ja NPM-paketeista. Lue opas ymmärtääksesi paketit ja niiden suhteet.';
+                document.getElementById('toseelist').innerHTML = 'Voit käydä <a href="https://abp.io/packages?moduleName=Volo.Identity.Pro">tunnistusmoduulin pakettiluettelosivulla</a> nähdäksesi listan tähän moduuliin liittyvistä paketeista.';
+                document.getElementById('menuit').innerHTML = 'valikko kohteet';
+                document.getElementById('addthefoll').innerHTML = 'Tunnistusmoduuli lisää seuraavat kohteet "Päävalikkoon" "Hallinta" valikon alle:';
+                document.getElementById('rollmanage').innerHTML = '<strong>Roolit</strong>: roolien hallintasivu.';
+                document.getElementById('usermg').innerHTML = '<strong>Käyttäjät</strong>: käyttäjien hallintasivu.';
+                document.getElementById('claimtype').innerHTML = '<strong>Väitetyyppi</strong>: väitetyyppien hallintasivu.';
+                document.getElementById('ogu').innerHTML = '<strong>Organisaatioyksiköt</strong>: organisaatioyksiköiden hallintasivu.';
+                document.getElementById('ssl').innerHTML = '<strong>Turvallisuuslokit</strong>: turvallisuuslokit-haun sivu.';
+                document.getElementById('classhas').innerHTML = 'Luokalla <span class="txt-color">IdentityMenuNames</span> on vakiot valikon kohteiden nimille.';
+                document.getElementById('ppp').innerHTML = 'sivut';
+                document.getElementById('rolll').innerHTML = 'roolien hallinta';
+                document.getElementById('useto').innerHTML = 'Roolien sivua käytetään roolien hallintaan järjestelmässä. Rooli on käyttäjille myönnettyjen oikeuksien joukko.';
+                document.getElementById('cancreate').innerHTML = 'Voit luoda uuden roolin tai muokata olemassa olevaa roolia tällä sivulla:';
+                document.getElementById('rp').innerHTML = 'Oletusarvoiset <strong>roolit</strong> annetaan oletuksena uusille käyttäjille.';
+                document.getElementById('pubrol').innerHTML = 'Julkiset <strong>roolit</strong> ovat näkyvissä muille käyttäjille.';
+                document.getElementById('rolper').innerHTML = 'roolien oikeudet';
+                document.getElementById('manca').innerHTML = 'Voit hallita roolin oikeuksia:';
+                document.getElementById('tobead').innerHTML = 'Lisättävä UI';
+                document.getElementById('perisa').innerHTML = 'Oikeus on sovellustoiminto, joka myönnetään rooleille ja käyttäjille.';
+                document.getElementById('witha').innerHTML = 'Käyttäjä, jolla on rooli, <strong>perii</strong> kaikki roolille myönnetyt oikeudet.';
+                document.getElementById('modcan').innerHTML = 'Mikä tahansa moduuli voi <a href="https://docs.abp.io/en/abp/latest/Authorization#permission-system">määrittää oikeuksia</a>. Kun olet määrittänyt uuden oikeuden, se tulee saataville tälle sivulle.';
+                document.getElementById('leftside').innerHTML = 'Vasemmalla puolella on <strong>moduuliluettelo</strong>. Napsauttamalla moduulin nimeä voit valita liittyvät oikeudet.';
+                document.getElementById('rocl').innerHTML = 'Rooliväitteet';
+                document.getElementById('setcust').innerHTML = 'Voit määrittää mukautetun väitteenarvon toiminnolle:';
+                document.getElementById('um').innerHTML = 'Väitetyypit haetaan väitetyypit-sivulla määritellystä luettelosta (ks. alla).';
+                document.getElementById('usermgt').innerHTML = 'käyttäjien hallinta';
+                document.getElementById('isuseds').innerHTML = 'Käyttäjäsivua käytetään järjestelmäsi käyttäjien hallintaan.';
+                document.getElementById('cancre').innerHTML = 'Voit luoda uuden käyttäjän tai muokata olemassa olevaa käyttäjää tällä sivulla:';
+                document.getElementById('canhav').innerHTML = 'Käyttäjällä voi olla <strong>0 tai useampia rooleja</strong> järjestelmässä.';
+                document.getElementById('twofact').innerHTML = 'Voit määrittää <strong>kaksivaiheisen tunnistautumisen</strong> ja <strong>käyttäjän lukituksen</strong> kunkin käyttäjän osalta.';
+                document.getElementById('up').innerHTML = 'käyttäjän oikeudet';
+                document.getElementById('unionof').innerHTML = 'Käyttäjällä on liitännäisroolien oikeudet. Tunnistusmoduuli antaa myös mahdollisuuden myöntää lisäoikeuksia tietylle käyttäjälle.';
+                document.getElementById('isan').innerHTML = 'Oikeus on sovellustoiminto, joka myönnetään rooleille ja käyttäjille.';
+                document.getElementById('withrole').innerHTML = 'Käyttäjä, jolla on rooli, <strong>perii</strong> kaikki roolille myönnetyt oikeudet.';
+                document.getElementById('ctm').innerHTML = 'Mikä tahansa moduuli voi <a href="https://docs.abp.io/en/abp/latest/Authorization#permission-system">määrittää oikeuksia</a>. Kun olet määrittänyt uuden oikeuden, se tulee saataville tälle sivulle.';
+                document.getElementById('sideis').innerHTML = 'Vasemmalla puolella on <strong>moduuliluettelo</strong>. Napsauttamalla moduulin nimeä voit valita liittyvät oikeudet.';
+                document.getElementById('claim').innerHTML = 'Väitetyyppien hallinta';
+                document.getElementById('customclaim').innerHTML = 'Tunnistusmoduuli mahdollistaa mukautettujen väitetyyppien määrittämisen.';
+                document.getElementById('usedtostore').innerHTML = 'Mukautettuja väitteitä voidaan käyttää lisätietojen tallentamiseen käyttäjille tai rooleille.';
+                document.getElementById('OU').innerHTML = 'Mukautetut väitearvot ovat saatavilla sovelluskoodissa kirjautuneelle käyttäjälle.';
+                document.getElementById('arealso').innerHTML = 'Väitetyyppejä käytetään myös OpenIddict-moduulissa, jos sitä käytetään.';
+                document.getElementById('orgunit').innerHTML = 'Organisaatioyksiköt';
+                document.getElementById('isusedto').innerHTML = 'Organisaatioyksiköiden sivua käytetään organisaatioyksiköiden, jäsenten, alayksiköiden ja alayksikköjen roolien hallintaan.';
+                document.getElementById('unitoredit').innerHTML = 'Voit lisätä uuden organisaatioyksikön tai muokata olemassa olevaa organisaatioyksikköä tällä sivulla. Lisätäksesi uuden juurialayksikön, napsauta "Uusi juurialayksikkö" -painiketta ja täytä avautuva lomake.';
+                document.getElementById('unitto').innerHTML = 'Lisätäksesi alayksikön olemassa olevaan organisaatioyksikköön, napsauta olemassa olevaa organisaatioyksikköä hiiren kakkospainikkeella ja valitse "Lisää alayksikkö" -kontekstivalikosta. Samoin voit muokata olemassa olevaa organisaatioyksikköä napsauttamalla sitä hiiren kakkospainikkeella ja valitsemalla "Muokkaa" -kontekstivalikosta.';
+                document.getElementById('youcanmange').innerHTML = 'Voit hallita organisaatioyksikön jäseniä "Jäsenet" -välilehdellä valitsemalla organisaatioyksikön.';
+                document.getElementById('sl').innerHTML = 'turvallisuuslokit';
+                document.getElementById('securitypage').innerHTML = 'Turvallisuuslokit-sivua käytetään kirjautumiseen, uloskirjautumiseen, salasanan vaihtoon liittyvien tapahtumien hakemiseen ja näyttämiseen järjestelmässä.';
+                // For In this doc section
+                document.getElementById('inthisdoc').innerHTML = 'tässä asiakirjassa';
+                document.getElementById('secpack').innerHTML = '<a href="#packages" class="text-black">Paketit</a>';
+                document.getElementById('secmenu').innerHTML = '<a href="#packages" class="text-black">Valikkokohteet</a>';
+                document.getElementById('secpages').innerHTML = '<a href="#rp" class="text-black">Roolioikeudet</a>';
+                document.getElementById('secrole').innerHTML = '<a href="#um" class="text-black">Käyttäjien hallinta</a>';
+                document.getElementById('secuser').innerHTML = '<a href="#up" class="text-black">Käyttäjäoikeudet</a>';
+                document.getElementById('secclaim').innerHTML = '<a href="#ctm" class="text-black">Väitetyyppien hallinta</a>';
+                document.getElementById('secorg').innerHTML = '<a href="#OU" class="text-black">Organisaatioyksiköt</a>';
+                document.getElementById('secsecure').innerHTML = '<a href="#sl" class="text-black">Turvallisuuslokit</a>';
+
+            }
+            else if (selectedLanguage === 'Slovak') {
+                document.getElementById('immod').innerHTML = 'Modul správy identitných údajov';
+document.getElementById('thismoduse').innerHTML = 'Tento modul implementuje používateľský a rollový systém aplikácie.';
+document.getElementById('managerol').innerHTML = 'Spravujte <strong>roly</strong> a <strong>používateľov</strong> v systéme. Používateľ môže mať <strong>viacero rolí</strong>.';
+document.getElementById('roleanduser').innerHTML = 'Definujte <strong>oprávnenia</strong> na úrovni rolí a používateľov.';
+document.getElementById('enadisa').innerHTML = 'Povoľte/zakážte <strong>dvojstupňové overenie totožnosti</strong> a <strong>uzamknutie používateľa</strong> individuálne.';
+document.getElementById('userprof').innerHTML = 'Spravujte používateľský <strong>profil</strong> a <strong>základné heslo</strong>.';
+document.getElementById('inthesys').innerHTML = 'Spravujte <strong>typy tvrdení</strong> v systéme, definujte tvrdenia pre roly a používateľov.';
+document.getElementById('settpage').innerHTML = 'Nastavte stránku pre správu nastavení, ako napríklad zložitosť hesla, prihlasovanie používateľov, účet a uzamknutie.';
+document.getElementById('supts').innerHTML = 'Podporuje <strong>LDAP autentifikáciu</strong>.';
+document.getElementById('prov').innerHTML = 'Poskytuje kontrolu e-mailovej adresy a telefónneho čísla.';
+document.getElementById('sociallog').innerHTML = 'Podporuje integráciu sociálneho prihlásenia (Twitter, Facebook, GitHub atď.).';
+document.getElementById('inthesyss').innerHTML = 'Spravujte <strong>jednotky organizácií</strong> v systéme.';
+document.getElementById('packages').innerHTML = 'Zobraziť bezpečnostné logy (prihlásenie, odhlásenie, zmena hesla...) v systéme.';
+document.getElementById('moddes').innerHTML = 'Prehliadnite popis modulu pre celkový prehľad funkcií modulu.';
+document.getElementById('pes').innerHTML = 'balíčky';
+document.getElementById('thsmodf').innerHTML = 'Tento modul dodržiava <a href="https://docs.abp.io/en/abp/latest/Best-Practices/Index">najlepšie praktiky</a> a pozostáva z viacerých balíčkov NuGet a NPM. Prečítajte si sprievodcu pre pochopenie balíčkov a ich vzájomných vzťahov.';
+document.getElementById('toseelist').innerHTML = 'Pre zoznam balíčkov súvisiacich s týmto modulom navštívte stránku zoznamu balíčkov <a href="https://abp.io/packages?moduleName=Volo.Identity.Pro">tunneľového modulu</a>.';
+document.getElementById('menuit').innerHTML = 'položky menu';
+document.getElementById('addthefoll').innerHTML = 'Modul Identity pridáva nasledujúce položky do menu "Hlavné menu" pod položku "Správa":';
+document.getElementById('rollmanage').innerHTML = '<strong>Role</strong>: stránka pre správu rol.';
+document.getElementById('usermg').innerHTML = '<strong>Používatelia</strong>: stránka pre správu používateľov.';
+document.getElementById('claimtype').innerHTML = '<strong>Typ tvrdenia</strong>: stránka pre správu typov tvrdení.';
+document.getElementById('ogu').innerHTML = '<strong>Jednotky organizácií</strong>: stránka pre správu jednotiek organizácií.';
+document.getElementById('ssl').innerHTML = '<strong>Bezpečnostné logy</strong>: stránka pre vyhľadávanie bezpečnostných logov.';
+document.getElementById('classhas').innerHTML = 'Trieda <span class="txt-color">IdentityMenuNames</span> obsahuje konštanty pre názvy položiek menu.';
+document.getElementById('ppp').innerHTML = 'stránky';
+document.getElementById('rolll').innerHTML = 'správa rol';
+document.getElementById('useto').innerHTML = 'Stránka Rôl sa používa na správu rol v systéme. Rola je súborom práv pridelených používateľom.';
+document.getElementById('cancreate').innerHTML = 'Môžete vytvoriť novú rolu alebo upraviť existujúcu rolu na tejto stránke:';
+document.getElementById('rp').innerHTML = 'Predvolené <strong>role</strong> sú automaticky pridelené novým používateľom.';
+document.getElementById('pubrol').innerHTML = 'Verejné <strong>role</strong> sú viditeľné pre ostatných používateľov.';
+document.getElementById('rolper').innerHTML = 'oprávnenia rolí';
+document.getElementById('manca').innerHTML = 'Môžete spravovať oprávnenia rolí:';
+document.getElementById('tobead').innerHTML = 'Pridané na UI';
+document.getElementById('perisa').innerHTML = 'Oprávnenie je akcia v aplikácii, ktorá sa pridáva roliam a používateľom.';
+document.getElementById('witha').innerHTML = 'Používateľ s rolou "dedične" zdedia všetky oprávnenia pridelené role.';
+document.getElementById('modcan').innerHTML = 'Akýkoľvek modul môže <a href="https://docs.abp.io/en/abp/latest/Authorization#permission-system">definovať oprávnenia</a>. Po definovaní nového oprávnenia sa automaticky zobrazí na tejto stránke.';
+document.getElementById('leftside').innerHTML = 'Na ľavej strane je <strong>zoznam modulov</strong>. Kliknutím na názov modulu vyberte súvisiace oprávnenia.';
+document.getElementById('rocl').innerHTML = 'Role Tvrdení';
+document.getElementById('setcust').innerHTML = 'Môžete definovať vlastnú hodnotu tvrdenia pre akciu:';
+document.getElementById('um').innerHTML = 'Typy tvrdení sú načítavané z listu definovaného na stránke Typy tvrdení (viď nižšie).';
+document.getElementById('usermgt').innerHTML = 'správa používateľov';
+document.getElementById('isuseds').innerHTML = 'Stránka Používateľov sa používa na správu používateľov vášho systému.';
+document.getElementById('cancre').innerHTML = 'Môžete vytvoriť nového používateľa alebo upraviť existujúceho používateľa na tejto stránke:';
+document.getElementById('canhav').innerHTML = 'Používateľ môže mať <strong>0 alebo viac rolí</strong> v systéme.';
+document.getElementById('twofact').innerHTML = 'Môžete nastaviť <strong>dvojstupňové overenie totožnosti</strong> a <strong>uzamknutie používateľa</strong> pre každého používateľa.';
+document.getElementById('up').innerHTML = 'oprávnenia používateľa';
+document.getElementById('unionof').innerHTML = 'Používateľ má oprávnenia združených rolí. Modul Identity tiež umožňuje pridelenie ďalších oprávnení pre konkrétnych používateľov.';
+document.getElementById('isan').innerHTML = 'Oprávnenie je akcia v aplikácii, ktorá sa pridáva roliam a používateľom.';
+document.getElementById('withrole').innerHTML = 'Používateľ s rolou "dedične" zdedia všetky oprávnenia pridelené role.';
+document.getElementById('ctm').innerHTML = 'Akýkoľvek modul môže <a href="https://docs.abp.io/en/abp/latest/Authorization#permission-system">definovať oprávnenia</a>. Po definovaní nového oprávnenia sa automaticky zobrazí na tejto stránke.';
+document.getElementById('sideis').innerHTML = 'Na ľavej strane je <strong>zoznam modulov</strong>. Kliknutím na názov modulu vyberte súvisiace oprávnenia.';
+document.getElementById('claim').innerHTML = 'Správa typov tvrdení';
+document.getElementById('customclaim').innerHTML = 'Modul Identity umožňuje definovať vlastné typy tvrdení.';
+document.getElementById('usedtostore').innerHTML = 'Vlastné tvrdenia môžu byť použité na ukladanie dodatočných informácií o používateľoch alebo rolách.';
+document.getElementById('OU').innerHTML = 'Vlastné tvrdenia sú k dispozícii aplikácii, ktorá je prihlásená.';
+document.getElementById('arealso').innerHTML = 'Typy tvrdení sa používajú aj v module OpenIddict, ak je použitý.';
+document.getElementById('orgunit').innerHTML = 'Jednotky organizácií';
+document.getElementById('isusedto').innerHTML = 'Stránka Jednotky organizácií sa používa na správu jednotiek organizácií, členov, podjednotiek a podjednotiek rolí.';
+document.getElementById('unitoredit').innerHTML = 'Môžete pridať novú jednotku organizácie alebo upraviť existujúcu jednotku organizácie na tejto stránke. Pre pridanie novej koreňovej jednotky kliknite na tlačidlo "Nová koreňová jednotka" a vyplňte sa vyskytujúci sa formulár.';
+document.getElementById('unitto').innerHTML = 'Na pridanie podjednotky do existujúcej jednotky organizácie kliknite pravým tlačidlom myši na existujúcu jednotku organizácie a z kontextového menu vyberte možnosť "Pridať podjednotku". Rovnako môžete upraviť existujúcu jednotku organizácie kliknutím pravým tlačidlom myši na ňu a výberom možnosti "Upraviť" z kontextového menu.';
+document.getElementById('youcanmange').innerHTML = 'Na stránke "Členovia" môžete spravovať členov jednotky organizácie vybratím jednotky organizácie.';
+document.getElementById('sl').innerHTML = 'Bezpečnostné logy';
+document.getElementById('securitypage').innerHTML = 'Stránka Bezpečnostné logy sa používa na vyhľadávanie a zobrazenie udalostí súvisiacich s prihlásením, odhlásením, zmenou hesla a ďalších v systéme.';
+// For In this doc section
+document.getElementById('inthisdoc').innerHTML = 'v tejto sekcii dokumentu';
+document.getElementById('secpack').innerHTML = '<a href="#packages" class="text-black">Balíčky</a>';
+document.getElementById('secmenu').innerHTML = '<a href="#packages" class="text-black">Položky menu</a>';
+document.getElementById('secpages').innerHTML = '<a href="#rp" class="text-black">Oprávnenia rolí</a>';
+document.getElementById('secrole').innerHTML = '<a href="#um" class="text-black">Správa používateľov</a>';
+document.getElementById('secuser').innerHTML = '<a href="#up" class="text-black">Oprávnenia používateľa</a>';
+document.getElementById('secclaim').innerHTML = '<a href="#ctm" class="text-black">Správa typov tvrdení</a>';
+document.getElementById('secorg').innerHTML = '<a href="#OU" class="text-black">Jednotky organizácií</a>';
+document.getElementById('secsecure').innerHTML = '<a href="#sl" class="text-black">Bezpečnostné logy</a>';
+
+            } 
+
+            else if (selectedLanguage === 'spanish') {
+            } else {
+
+            }
+        });
+    });
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>

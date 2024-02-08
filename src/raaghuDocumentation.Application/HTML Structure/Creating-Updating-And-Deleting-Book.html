@@ -1,0 +1,1271 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="Assets/images/raaghu-icon.png">
+    <title>Raaghu - Creating Updating And Deleting Book</title>
+
+    <!-- bootstrap dependencies -->
+    <link rel="stylesheet" href="Assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/index.css">
+    <link href="Assets/prism.css" rel="stylesheet" />
+    <script src="Assets/prism.js"></script>
+    <script src="/index.js"></script>
+
+</head>
+
+
+<body>
+
+    <main>
+
+        <nav class="navbar navbar-expand-lg navbar-light  ">
+            <div class="container-fluid ">
+                <div class="navbar-toggler-container">
+                    <button class="navbar-toggler " type="button" data-bs-toggle="collapse"
+                        data-bs-target="#sidebar,#navbarSupportedContent" aria-controls="sidebar" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <!-- <div class="dropdown show dropdown-specific">
+                        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Platform
+                        </a>
+
+                        <div class="dropdown-menu menu" aria-labelledby="dropdownMenuLink">
+                            <a class="dropdown-item" href="https://www.raaghu.io/features.html">Features</a>
+                            <a class="dropdown-item " href="https://portal.raaghu.io/">Documentation</a>
+                            <button type="button" class="btn btn-primary btn-contact mt-2">contact</button>
+                            <a href="https://github.com/Wai-Technologies/raaghu-angular" target="_blank">
+                                <li class="ps-lg-5 mt-2">
+                                    <img src="Assets/images/github-logo.svg" alt="abplogo logo" width="100%"
+                                        class="github-logo">
+                                </li>
+                            </a>
+                        </div>
+                    </div> -->
+                </div>
+                <a class="text-black navbar-brand" href="/">
+                    <img src="Assets/images/raaghu_logs.png" alt="raaghu logo" class="w-75  pe-lg-0">
+                </a>
+
+                <div class="collapse navbar-collapse align  justify-content-lg-end " id="navbarSupportedContent">
+                    <ul class="navbar-nav  mb-2 mb-lg-0">
+                        <li class="nav-item me-5">
+                            <a class="nav-link active " aria-current="page"
+                                href="https://raaghu-website-staging.netlify.app/raaghu-mfe-portal/_accordion.html">Components</a>
+                        </li>
+                        <li class="nav-item me-5">
+                            <a class="nav-link active " aria-current="page" href="#"><span
+                                    class="doc-color">Documentation</span></a>
+                        </li>
+                        <li class="nav-item me-5">
+                            <a class="nav-link active " aria-current="page"
+                                href="https://raaghu-website-staging.netlify.app/raaghu-mfe-portal/_accordion.html#">Support</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link active " aria-current="page"
+                                href="https://raaghu-website-staging.netlify.app/faq">FAQ</a>
+                        </li>
+                        <!-- <li class=" nav-item dropdown active">
+                            <a class="nav-link  text-dark me-5" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Platform
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-center " aria-labelledby="navbarDropdown">
+                                <ul class="list-unstyled dropdown-arrow">
+                                    <li class=" ps-4">
+                                        <p class="title pt-2">Raaghu Platform</p>
+                                        <div class="row">
+                                            <div class="col-lg-6 col-md-6">
+                                                <a href="https://portal.raaghu.io/" target="_blank"
+                                                    class="p-0 text-decoration-none text-reset">
+                                                    <div class="d-flex align-items-center gap-3">
+
+                                                        <img src="Assets/images/raaghu-portal-mg.svg"
+                                                            alt="raaghu-portal" class="mb-3">
+                                                        <p class="link-name">Raaghu Portal</p>
+
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="col-lg-6 col-md-6">
+                                                <a href="https://portal.raaghu.io/#Components-section" target="_blank"
+                                                    class="p-0 text-decoration-none text-reset">
+                                                    <div class="d-flex align-items-center gap-3">
+                                                        <img src="Assets/images/raaghu-components-mg.svg"
+                                                            alt="raaghu-components" class="mb-3">
+                                                        <p class="link-name">Raaghu Components</p>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-6 col-md-6">
+                                                <a href="https://portal.raaghu.io/#Elements-section" target="_blank"
+                                                    class="p-0 text-decoration-none text-reset">
+                                                    <div class="d-flex align-items-center gap-3">
+                                                        <img src="Assets/images/raaghu-elements-mg.svg"
+                                                            alt="raaghu-portal" class="mb-2">
+                                                        <p class="pt-2 link-name">Raaghu Elements</p>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="col-lg-6 col-md-6">
+                                                <div class="d-flex align-items-center gap-3">
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="bgcolor-dropdown">
+                                        <div class="ps-4">
+                                            <p class="pt-3 pb-1 title">WORKS ON</p>
+                                            <div class="row">
+                                                <div class="col-md-2 mb-2">
+                                                    <img src="Assets/images/asplogo-mg.svg" alt="asplogo logo"
+                                                        width="80%">
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <img src="Assets/images/abplogo-mg.svg" alt="abplogo logo"
+                                                        width="50%">
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item me-5">
+                            <a class="nav-link active " aria-current="page"
+                                href="https://www.raaghu.io/features.html">Features</a>
+                        </li>
+                        <li class="nav-item me-5">
+                            <a class="nav-link active " aria-current="page"
+                                href="https://portal.raaghu.io/">Documentation</a>
+                        </li>
+                        <button type="button" class="btn btn-primary btn-contact">contact</button>
+                        <a href="https://github.com/Wai-Technologies/raaghu-angular" target="_blank">
+                            <li class="ps-lg-5 pt-2">
+                                <img src="Assets/images/github-logo.svg" alt="abplogo logo" width="100%"
+                                    class="github-logo">
+                            </li>
+                        </a> -->
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="wrapper container-fluid">
+
+            <div class="row">
+
+                <div id="sidebar"
+                    class="col-12 col-lg-2 col-md-4 col-xl-2 col-xxl-2 collapse d-m-block mx-0 mx-lg-3 mx-md-3 mx-xl-3 mx-xxl-3 show">
+
+                    <nav>
+                        <div class="sidebar-header ">
+                            <a href="/" class="text-bg-dark">
+                                <h3 class="fs-5 fw-normal" id="tableOfContent">Table Of Content</h3>
+                            </a>
+                        </div>
+
+                        <div class="accordion accordion-flush mx-3 doc-acc accordion-button-top" id="accordionExample">
+                            <div class="row pb-4">
+                                <div class="col-6 col-lg-6 col-md-6">
+                                    <select id="language-dropdown" class="sidebar-button">
+                                        <option value="en" selected>English</option>
+                                        <option value="pt">Português</option>
+                                        <option value="fr">French</option>
+                                        <option value="fi">Finnish</option>
+                                        <option value="hi">Hindi</option>
+                                        <option value="it">Italian</option>
+                                        <option value="sk">Slovak</option>
+                                        <option value="de">German</option>
+                                        <option value="ru">Russian</option>
+                                        <option value="zh">Chinese</option>
+                                        <option value="af">Afrikaan</option>
+                                        <option value="ar">Arabic</option>
+                                        <!-- Add more language options if needed -->
+                                    </select>
+                                </div>
+                                <div class="col-6 col-lg-6 col-md-6">
+                                    <select class="sidebar-button w-100">
+                                        <option value="option1" id="version">Version</option>
+                                        <option value="option2" id="version">Version 2</option>
+                                        <option value="option3">Version 3</option>
+                                        <option value="option4">Version 4</option>
+                                    </select>
+
+                                </div>
+                            </div>
+                            <div class="accordion-item bg-dark">
+                                <h2 class="accordion-header" id="headingOne">
+                                    <a href="Getting-Started.html">
+                                        <button
+                                            class="accordion-button d-flex flex-row-reverse justify-content-end p-0 bg-dark mt-1"
+                                            type="button" data-bs-toggle="collapse" data-bs-target="#coll"
+                                            aria-expanded="false" aria-controls="collapseOne" id="Getting">
+                                            Getting Started
+                                        </button></a>
+                                </h2>
+
+                                <div id="coll" class="accordion-collapse collapse  border-0 rounded-0 p-0"
+                                    aria-labelledby="headOne" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Setup-Your-Development-Environment.html" id="setupDev">Setup your
+                                            development
+                                            environment</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Creating-A-New-Solution.html" id="creatingNewSol">Creating A New
+                                            Solution</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Running-The-Solution.html" id="runningTheSol">Running the Solution</a>
+                                    </div>
+                                </div>
+                                <h2 class="accordion-header" id="headingTwo">
+                                    <button
+                                        class="accordion-button d-flex flex-row-reverse justify-content-end p-0 bg-dark mt-2"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                        aria-expanded="true" aria-controls="collapseOne" id="tut">
+                                        Tutorials
+                                    </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse show border-0 rounded-0 p-0"
+                                    aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <h2 class="accordion-header" id="headingTwo">
+                                            <button
+                                                class="accordion-button d-flex flex-row-reverse show justify-content-end p-0 bg-dark mt-2"
+                                                type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                                                aria-expanded="true" aria-controls="collapseOne" id="webAppDev">
+                                                Web Application Development
+                                            </button>
+                                        </h2>
+                                        <div id="collapseThree"
+                                            class="accordion-collapse collapse show border-0 rounded-0 p-0 pt-2"
+                                            aria-labelledby="headingTwo" data-bs-parent="#accordionExamplee">
+                                            <div class="accordion-body bg-dark px-4 p-1">
+                                                <a href="Creating-The-Server-Side.html" id="creatingServer">Creating the
+                                                    Server
+                                                    Side</a>
+                                            </div>
+                                        </div>
+                                        <div id="collapseThree"
+                                            class="accordion-collapse collapse show  border-0 rounded-0 p-0"
+                                            aria-labelledby="headingTwo" data-bs-parent="#accordionExamplee">
+                                            <div class="accordion-body bg-dark px-4 p-1">
+                                                <a href="The-Book-List-Page.html" id="bookList">The Book List Page</a>
+                                            </div>
+                                        </div>
+                                        <div id="collapseThree"
+                                            class="accordion-collapse collapse show  border-0 rounded-0 p-0"
+                                            aria-labelledby="headingTwo" data-bs-parent="#accordionExamplee">
+                                            <div class="accordion-body bg-dark px-4 p-1">
+                                                <a href="Creating-Updating-And-Deleting-Book.html"
+                                                    id="creatingUpdating"><span
+                                                        class="accordian-active">Creating,Updating
+                                                        And
+                                                        Deleting Book</span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <h2 class="accordion-header" id="headingFour">
+                                    <button
+                                        class="accordion-button d-flex flex-row-reverse justify-content-end p-0 bg-dark mt-2"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour"
+                                        aria-expanded="false" aria-controls="collapseOne" id="guides">
+                                        Guides
+                                    </button>
+                                </h2>
+                                <div id="collapseFour" class="accordion-collapse collapse  border-0 rounded-0 p-0"
+                                    aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Customizing-The-Modules.html" id="customizingTheModules">Customizing
+                                            the Modules</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Identity-Server-Deployment.html" id="identityServerDeploy">Identity
+                                            Server Deployment</a>
+                                    </div>
+                                </div>
+
+
+                                <h2 class="accordion-header" id="headingFive">
+                                    <button
+                                        class="accordion-button d-flex flex-row-reverse justify-content-end p-0 bg-dark mt-2"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive"
+                                        aria-expanded="false" aria-controls="collapseOne" id="samples">
+                                        Samples
+                                    </button>
+                                </h2>
+                                <div id="collapseFive" class="accordion-collapse collapse  border-0 rounded-0 p-0"
+                                    aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="All-Samples.html" id="allSamples">All Samples</a>
+                                    </div>
+                                </div>
+                                <h2 class="accordion-header" id="headingSix">
+                                    <a href="Startup-Template.html">
+                                        <button
+                                            class="accordion-button d-flex flex-row-reverse justify-content-end p-0 bg-dark mt-2"
+                                            type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix"
+                                            aria-expanded="false" aria-controls="collapseOne" id="startupTemplate">
+                                            Startup Template
+                                        </button></a>
+                                </h2>
+                                <div id="collapseSix" class="accordion-collapse collapse  border-0 rounded-0 p-0"
+                                    aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <h2 class="accordion-header" id="headingSix">
+                                            <button
+                                                class="accordion-button d-flex flex-row-reverse justify-content-end p-0 bg-dark mt-2"
+                                                type="button" data-bs-toggle="collapse" data-bs-target="#headingS"
+                                                aria-expanded="false" aria-controls="collapseOne"
+                                                id="applicationTemplate">
+                                                Application Templates
+                                            </button>
+                                        </h2>
+                                        <div id="headingS"
+                                            class="accordion-collapse collapse  border-0 rounded-0 p-0 pt-2"
+                                            aria-labelledby="headingSix" data-bs-parent="#accordionExamplee">
+                                            <div class="accordion-body bg-dark px-4 p-1">
+                                                <a href="Creating-Solution.html" id="creatingSolution">Creating
+                                                    Solution</a>
+                                            </div>
+                                        </div>
+                                        <div id="headingS" class="accordion-collapse collapse  border-0 rounded-0 p-0"
+                                            aria-labelledby="headingSix" data-bs-parent="#accordionExamplee">
+                                            <div class="accordion-body bg-dark px-4 p-1">
+                                                <a href="Solution-Structure.html" id="solutionStruct">Solution
+                                                    Structure</a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                                <h2 class="accordion-header" id="headingSeven">
+                                    <button
+                                        class="accordion-button d-flex flex-row-reverse justify-content-end p-0 bg-dark mt-2"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven"
+                                        aria-expanded="false" aria-controls="collapseOne" id="appModules">
+                                        Application Modules
+                                    </button>
+                                </h2>
+                                <div id="collapseSeven" class="accordion-collapse collapse  border-0 rounded-0 p-0"
+                                    aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Overall.html" id="overall">Overall</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Account-Module.html" id="ac">Account</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Audit-Logging.html" id="auditLogging">Audit Logging</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Chat.html" id="chat">Chat</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="CMS-Kit-Pro.html" id="CMS">CMS Kit Pro</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="File-Management.html" id="fileMgt">File Management</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Forms.html" id="forms">Forms</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Identity.html" id="identity">Identity</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="OpenIddict.html" id="OpenIddict">OpenIddict</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Language-Management.html" id="languageMgt">Language Management</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Payment.html" id="payment">Payment</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="SaaS.html" id="saas">SaaS</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Text-Template-Management.html" id="ttm">Text Template Management</a>
+                                    </div>
+                                </div>
+                                <h2 class="accordion-header" id="headingNine">
+                                    <a href="UI-Themes.html">
+                                        <button
+                                            class="accordion-button d-flex flex-row-reverse justify-content-end p-0 bg-dark mt-2"
+                                            type="button" data-bs-toggle="collapse" data-bs-target="#headingNine"
+                                            aria-expanded="false" aria-controls="collapseOne" id="ui">
+                                            UI Themes
+                                        </button>
+                                    </a>
+                                </h2>
+                                <h2 class="accordion-header" id="headingReactUITheme">
+                                    <button
+                                        class="accordion-button d-flex flex-row-reverse justify-content-end p-0 bg-dark mt-2"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#headingReactUI"
+                                        aria-expanded="false" aria-controls="collapseOne" id="reactUI">
+                                        React UI
+                                    </button>
+                                </h2>
+                                <div id="headingReactUI" class="accordion-collapse collapse  border-0 rounded-0 p-0"
+                                    aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Customization.html" id="custom">customization</a>
+                                    </div>
+
+                                </div>
+                                <div id="headingReactUI" class="accordion-collapse collapse  border-0 rounded-0 p-0"
+                                    aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Components.html" id="compo">Components</a>
+                                    </div>
+
+                                </div>
+                                <!-- For Release Information -->
+                                <h2 class="accordion-header" id="headingFive">
+                                    <button
+                                        class="accordion-button d-flex flex-row-reverse justify-content-end p-0 bg-dark mt-2"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseLast"
+                                        aria-expanded="false" aria-controls="collapseOne" id="samples">
+                                        <span id="relinfo">Release Information</span>
+                                    </button>
+                                </h2>
+                                <div id="collapseLast" class="accordion-collapse collapse  border-0 rounded-0 p-0"
+                                    aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Release-Notes.html" id="allSamples"><span id="relnote">Release
+                                                Notes</span></a>
+                                    </div>
+                                </div>
+                                <!-- ====================================== -->
+                            </div>
+                        </div>
+                        <ul class="list-unstyled CTAs  w-100">
+                            <li>
+                                <a href="https://bootstrapious.com/tutorial/files/sidebar.zip" class="download"
+                                    id="downloadSource">Download
+                                    source</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div
+                    class="col-12 col-lg-8 col-md-7 col-xl-6 col-xxl-6 offset-lg-4 offset-md-5 offset-xl-3 offset-xxl-3 ps-xl-5 ps-xxl-0 px-lg-3 px-md-4 px-xl-0">
+
+                    <!-- Page Content  -->
+                    <div id="content">
+                        <div class="modal fade" id="contactusModal" tabindex="-1" aria-labelledby="contactusModalLabel"
+                            aria-hidden="true">
+
+                            <div class="modal-dialog modal-lg modal-dialog-centered">
+
+                                <div class="modal-content">
+
+                                    <!-- <div class="modal-header">
+                  
+                                  <h5 class="modal-title" id="contactusModalLabel">Modal title</h5>
+                  
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  
+                                </div> -->
+
+                                    <div class="modal-body p-0">
+
+
+
+
+                                        <div class="row">
+
+                                            <div class="col-md-6 col-sm-12 bg-dark">
+
+                                                <div class="mt-5">
+
+                                                    <img src="Assets/images/raaghu-logo-white.png"
+                                                        class="img-fluid w-25 pl-2">
+
+
+
+                                                    <img src="Assets/images/raaghu-banner-modal.png" class="img-fluid">
+
+                                                </div>
+
+                                            </div>
+
+
+
+                                            <div class="col-md-6 col-sm-12">
+
+                                                <div class="row">
+
+                                                    <div class="col-md-12 text-end pull-right">
+
+                                                        <button type="button"
+                                                            class="btn-close float-right pull-right m-3 text-muted"
+                                                            data-bs-dismiss="modal" aria-label="Close"></button>
+
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="p-4">
+
+                                                    <h6>
+
+                                                        Kindly fill the details below
+
+                                                    </h6>
+
+                                                    <p>
+
+                                                        <small> We will get back to you within 48 hours </small>
+
+                                                    </p>
+
+                                                    <div class="mt-5">
+
+                                                        <form method="post" id="want-to-hear-form">
+
+                                                            <div class="mb-3 form-group">
+
+                                                                <label for="emailId" class="form-label">Email ID
+
+                                                                    <span class="text-danger">*</span>
+
+                                                                </label>
+
+                                                                <input type="email" name="emailId"
+                                                                    class="form-control p-2" id="emailId"
+                                                                    placeholder="Enter your email id">
+
+                                                            </div>
+
+                                                            <div class="mb-3 form-group">
+
+                                                                <label for="companyName" class="form-label">Company Name
+
+                                                                    <span class="text-danger">*</span>
+
+                                                                </label>
+
+                                                                <input type="text" class="form-control p-2"
+                                                                    placeholder="Enter your Company Name"
+                                                                    name="companyName" id="companyName">
+
+                                                            </div>
+
+                                                            <div class="mb-3 form-group">
+
+                                                                <label for="message" class="form-label">Message
+
+                                                                    <span class="contactUs-Optional">(Optional)</span>
+
+
+                                                                </label>
+
+                                                                <textarea class="form-control p-2" name="message"
+                                                                    id="message" rows="3"
+                                                                    placeholder="Write your message.."></textarea>
+
+                                                            </div>
+
+                                                            <div class="mb-3 form-check">
+
+                                                                <input type="checkbox" class="form-check-input"
+                                                                    id="exampleCheck1">
+
+                                                                <label class="form-check-label" for="exampleCheck1">I
+                                                                    agree to the <a href="#"> terms & privacy policy
+                                                                    </a></label>
+
+                                                            </div>
+
+                                                            <button type="submit"
+                                                                class="btn btn-primary btn-sm btn-block float-end mb-4">Submit</button>
+
+                                                        </form>
+
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div> <input class="form-control  mb-5" type="search" placeholder="Search" aria-label="Search">
+                        </div>
+                        <div>
+                            <h1 class=" fw-semibold mb-3" id="creating-A-New-Book">Part 3: Creating, Updating and
+                                Deleting Book</h1>
+                            <h2 class="fw-semibold pb-2" id="createBook">Creating a new Book -</h2>
+                            <p id="inOrder">In order to create a new book, we will create a new component called
+                                RdsCompBookForm. Run
+                                code below in root folder</p>
+                            <pre
+                                class="my-4"><code class="language-javascript">raaghu create:component --name=rds-comp-book-form</code></pre>
+                            <p id="goTo">Go to following path and perform html operations</p>
+                            <pre
+                                class="my-4"><code class="language-javascript">&lt;project path&gt;\raaghu-components\src\rds-comp-book-form</code></pre>
+                            <p id="addFollCode">
+                                Add following code in slice file and add builder case in extra reducer similar to
+                                fetchbooks
+                            </p>
+                            <pre class="my-4"><code class="language-javascript">export const postNewBook = createAsyncThunk(
+        "book/postNewBook",
+        (model:any) => {                        
+         return proxy.bookPOST(model).then((result:any)=>{                     
+          return result
+         })});
+</code></pre>
+                            <p id="HereWe">Here, we bring a button of a New Book using RdsButton and on clicking, we get
+                                different
+                                parameters of a form inside a RdsOffcanvas</p>
+                            <pre class="my-4"><code class="language-javascript"> &lt;RdsOffcanvas
+offcanvasbutton={
+&lt;div&gt;
+&lt;RdsButton
+    type={"button"}
+    label={"New Book"}
+    iconColorVariant="light"
+    size="small"
+    colorVariant="primary"
+    icon="plus"
+    iconFill={false}
+    iconStroke={true}
+    iconHeight="12px"
+    iconWidth="12px"
+>&lt;/RdsButton&gt;
+&lt;/div&gt;
+}
+    placement={"end"}
+    backDrop={true}
+    scrolling={false}
+    preventEscapeKey={false}
+    offId={"newBook"}
+    canvasTitle={"New Book"}
+    offcanvaswidth={550}
+    &gt;
+&lt;RdsCompBook
+    NameProp = {""}
+    TypeProp = {""}
+    PublishDateProp = {""}
+    PriceProp = {""}
+    onSaveHandler={onNewCreate}
+    offCanvasType={"create"}
+    TypeEnumItems={TypeEnum}
+    &gt;&lt;/RdsCompBook&gt;
+&lt;/RdsOffcanvas&gt;                     
+
+                                   </code></pre>
+                            <p id="updating-book">Now add this function inside book component</p>
+                            <pre class="my-4"><code class="language-javascript">const onNewCreate = (datafromcomponent: any) => {
+    let TypeIndex = datafromcomponent.data.Type
+    const data = {
+    name: datafromcomponent.data.Name,
+    type:TypeIndex,
+    publishDate: datafromcomponent.data.PublishDate.toISOString().substring(0, 19),
+    price: datafromcomponent.data.Price
+}
+dispatch(postBooksRequest({requestBody:data}) as any).then((res: any) => {
+if (res.type.includes("rejected")) {
+setAlert({
+            ...Alert,
+            show: true,
+            message: "Something went wrong",
+            color: "danger",
+        });
+    } 
+    else {
+            setAlert({
+                ...Alert,
+                show: true,
+                message: "Added Successfully",
+                color: "success",
+            });
+        }
+            dispatch(getBooksRequest({}) as any);
+            }).catch((error: any) => {
+            setAlert({
+                        ...Alert,
+                        show: true,
+                        message: "Something went wrong",
+                        color: "danger",
+                    });
+        console.error(error);
+    });
+};
+                          
+                          </code></pre>
+                            <div>
+                                <h3 class="fw-semibold pt-3 pb-3" id="updateBook">Updating a new Book -</h3>
+                                <p id="define">Define the actions for Edit in the form of an array as shown below</p>
+                                <pre
+                                    class="my-4"><code class="language-javascript">const actions = [{ id: "edit", displayName: t("Edit"), offId: "BookEdit"}]</code></pre>
+                                <p id="updateTable">Update table using actions used in data table. Updated data table
+                                    will look like</p>
+
+                                <pre class="my-4"><code class="language-jsx">
+                                    &lt;RdsCompDatatable classes="table__userTable" tableHeaders={tableHeaders} pagination={true}
+    tableData={Data} actions={actions}onActionSelection={onActionSelection} recordsPerPage={5}  recordsPerPageSelectListOption={true}>&lt;/RdsCompDatatable &gt;
+ </code></pre>
+                                <p id="addFoll">Add following slice code inside Slice file and add builder cases similar
+                                    to fetchbook
+                                </p>
+
+                                <pre class="my-4"><code class="language-javascript">export const putBooksRequest = createAsyncThunk(
+'book/putBooksRequest',
+async   ({
+            id,
+            requestBody,
+        }:{
+            id: string,
+            requestBody?: DemoSuite2_Books_BookUpdateDto,
+        }) => {                    
+            const response = await BookService.putBooks({
+            id,
+            requestBody,
+        });
+            return response;
+        }
+);
+</code></pre>
+                                <p id="addThese">Add these builder cases inside BookSlice extra reducer</p>
+                                <pre class="my-4"><code class="language-javascript">builder.addCase(putBooksRequest.pending, (state) => {
+    state.loading = true;
+});
+    builder.addCase(putBooksRequest.fulfilled, (state, action) => {
+    state.loading = false;
+    state.error = "";
+});
+    builder.addCase(putBooksRequest.rejected,(state, action)=> {
+    state.loading = false;
+    state.error = action.error.message || "Something went wrong";
+});
+                    </code></pre>
+                                <p id="addedit">Add the Edit function in Book Page</p>
+
+                                <pre class="my-4"><code class="language-javascript">const onEdithandler = (datafromcomponent: any) => {
+const id = dataEmit.id;
+let TypeIndex = datafromcomponent.data.Type
+function dateChange (inputdate:any)
+{
+    const date = new Date(inputdate);
+    const year = date.getFullYear();
+    const month = (date.getMonth() + 1).toString().padStart(2, "0");
+    const day = date.getDate().toString().padStart(2, "0");
+    const hours = date.getHours().toString().padStart(2, "0");
+    const minutes = date.getMinutes().toString().padStart(2, "0");
+    const seconds = date.getSeconds().toString().padStart(2, "0");
+    const formattedDate = `${year}-${month}-${day}T${hours}:${minutes}:${seconds}`;
+    return formattedDate
+}
+    const data = 
+{
+    concurrencyStamp : dataEmit.concurrencyStamp,
+    name: datafromcomponent.data.Name,
+    type:TypeIndex,
+    publishDate: dateChange(datafromcomponent.data.PublishDate),
+    price: datafromcomponent.data.Price
+}
+    dispatch(putBooksRequest({ id: id ,requestBody: data }) as any)
+        .then((res: any) => {
+        setdataEmit([{}]);
+        if (res.type.includes("rejected")){
+        setAlert({
+            ...Alert,
+            show: true,
+            message: "Error while updating",
+            color: "danger",
+        });
+            }else{
+            dispatch(getBooksRequest({}) as any);
+            setAlert({
+            ...Alert,
+            show: true,
+            message: "Updated Succesfully",
+            color: "success",
+        });
+    }
+})
+    .catch((error: any) => {
+        setAlert({
+        ...Alert,
+        show: true,
+        message: "Something went wrong",
+        color: "danger",
+    });
+        console.error(error);
+    });
+};   
+   </code></pre>
+                                <p class="pb-2" id="del">Add property of RdsOffcanvas element below RdsCompDatatable</p>
+
+                                <pre><code class="language-jsx">
+&lt;RdsOffcanvas
+    placement={"end"}
+    backDrop={true}
+    scrolling={false}
+    preventEscapeKey={false}
+    offId={"BookEdit"}
+    canvasTitle={"Edit"}
+    offcanvaswidth={550}
+&gt;
+&lt;&gt;
+    &lt;RdsCompBook
+    NameProp = {dataEmit.name}
+    TypeProp = {dataEmit.type}
+    PublishDateProp = {dataEmit.publishDate}
+    PriceProp = {dataEmit.price}
+    offCanvasType={"update"}
+    TypeEnumItems={TypeEnum}
+    onSaveHandler={onEdithandler}
+    &gt;&lt;/RdsCompBook&gt;
+&lt;/&gt;
+&lt;/RdsOffcanvas&gt;
+  </code></pre>
+                                <div>
+                                    <h3 class="fw-semibold pt-3 pb-3" id="delbook">Deleting a new Book –</h3>
+                                    <p id="addFun">Add Edit function in Book Page</p>
+                                    <pre class="my-4"><code class="language-javascript">const actions = [    
+        { id: "Delete", displayName: t("Delete"), modalId: "bookDel" }]
+                           ] 
+     </code></pre>
+                                    <p id="weAddSlice">We now add a slice file used for Delete functionality</p>
+                                    <pre class="my-4"><code class="language-javascript">export const deleteBooksRequest = createAsyncThunk(
+'book/deleteBooksRequest',
+async   ({
+            id,
+        }:{
+            id: string,
+        }) => {
+            const response = await BookService.deleteBooks({
+            id,
+        });                       
+            return response;
+        }
+); </code></pre>
+
+                                    <p id="addThese">Add these builder cases inside BookSlice extra reducer</p>
+                                    <pre class="my-4"><code class="language-javascript">builder.addCase(deleteBooksRequest.pending, (state) => {
+    state.loading = true;
+});
+    builder.addCase(deleteBooksRequest.fulfilled, (state, action) => {
+    state.loading = false;
+    state.error = "";
+});
+    builder.addCase(deleteBooksRequest.rejected,(state, action)=> {
+    state.loading = false;
+    state.error = action.error.message || "Something went wrong";
+});
+</code></pre>
+
+
+                                    <p id="weIntegrate">We integrate a component called RdsCompAlertPopup to display
+                                        alert during
+                                        deleting a book list</p>
+                                    <pre class="my-4"><code class="language-javascript">&lt;RdsCompAlertPopup
+        alertID={"bookDel"}
+        onSuccess={onDeleteHandler}
+        >&lt;/RdsCompAlertPopup&gt;;</code></pre>
+                                    <p id="addDelete">Add delete function in Book Page</p>
+                                </div>
+
+
+
+
+
+                            </div>
+                        </div>
+
+
+
+
+                    </div>
+                </div>
+
+                <div
+                    class="col-12 col-lg-8 col-md-7 col-xl-2 col-xxl-2 docs-page-index offset-lg-4 offset-xl-0 offset-md-5 offset-xxl-0 px-md-4">
+                    <div
+                        class="position-fixed  my-3 w-auto mx-lg-0 mx-xl-3 mx-xxl-3 pe-lg-3 pe-xl-0 pe-xxl-0 position-lg-relative">
+                        <div class="card border-0 box rounded-3 mb-3">
+                            <div class="card-body">
+                                <h4 class="card-title py-1" id="inthisdoc">In this document</h4>
+                                <div class="opacity-50">
+                                    <ul class="card-text small  list-unstyled ul-ad">
+                                        <li id="cretinganew"><a href="#creating-A-New-Book" class="text-black">Creating
+                                                a
+                                                new Book</a></li>
+                                        <li id="updatebooks"><a href="#updating-book" class="text-black">Updating a new
+                                                Book</a></li>
+                                        <li id="deletebooks"><a href="#del" class="text-black">Deleting a new Book</a>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card  border-0 box  bg-advertise ">
+                            <div class="card-body abp-community-card  rounded-3 bg-sec ">
+                                <div class="row  ">
+                                    <div class="col-lg-5 col-md-5 col-5"> <img src="Assets/images/React_logo.png"
+                                            alt="raaghu logo" class="w-100"></div>
+                                    <div class="col-lg-7 mt-1  col-md-7 mt-1 col-7"> <img
+                                            src="Assets/images/abp-sec.png" alt="raaghu logo" class="w-100"></div>
+                                    <!-- <div class="col-lg-6"><img src="Assets/images/abp-com.svg" alt="raaghu logo" class="w-100"></div> -->
+
+                                </div>
+                                <div class="border-under-sec my-3"></div>
+                                <div class="colored-sec-design py-1">
+                                    <ul class="ps-4">
+                                        <li>CLI for CRUD generation</li>
+                                        <li>Component driven development</li>
+                                        <li>Purpose build UI kit for ABP commercial</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <button type="button" class="btn btn-primary mt-1 w-100" data-bs-toggle="modal"
+                                        data-bs-target="#contactusModal">Contact Us</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-0 col-12 docs-page-index">
+                    <div class="card mt-4 top-25 me-lg-4 border-0 shadow py-4">
+                        <div class="card-body">
+                            <h5 class="card-title">In This Document</h5>
+                            <p class="card-text small">Some quick example text to build on the card title and make up
+                                the bulk of the card's content.</p>
+
+                        </div>
+                    </div>
+                </div> -->
+
+            </div>
+
+
+
+        </div>
+
+    </main>
+
+    <!-- bootstrap dependencies -->
+    <script src="Assets/js/bootstrap.min.js"></script>
+    <script src="scripts/translation.js"></script>
+</body>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var languageDropdown = document.getElementById('language-dropdown');
+        languageDropdown.addEventListener('change', function () {
+            var selectedLanguage = languageDropdown.value;
+            if (selectedLanguage === 'pt') {
+                // Sidebar Code in js File
+
+
+                // Body Content
+                document.getElementById('creating-A-New-Book').textContent = 'Parte 3: Criando, atualizando e excluindo livro';
+                document.getElementById('createBook').textContent = 'Criando um novo livro -';
+                document.getElementById('inOrder').textContent = 'Para criar um novo livro, criaremos um novo componente chamado RdsCompBookForm. Correr código abaixo na pasta raiz';
+                document.getElementById('goTo').textContent = 'Vá para o seguinte caminho e execute operações html';
+                document.getElementById('addFoll').textContent = 'Adicione o seguinte código no arquivo de fatia e adicione o caso do construtor no redutor extra semelhante a livros de busca';
+                document.getElementById('HereWe').textContent = 'Aqui, trazemos um botão de um Novo Livro usando RdsButton e ao clicar, obtemos diferentes parâmetros de um formulário dentro de um RdsOffcanvas';
+                document.getElementById('updating-book').textContent = 'Agora adicione esta função dentro do componente do livro';
+                document.getElementById('updateBook').textContent = 'Atualizando um novo livro -';
+                document.getElementById('define').textContent = 'Defina as ações para Editar na forma de uma matriz conforme mostrado abaixo';
+
+                document.getElementById('updateTable').textContent = 'Atualize a tabela usando as ações usadas na tabela de dados. A tabela de dados atualizada se parecerá com';
+                document.getElementById('addFollCode').textContent = 'Adicione o seguinte código de fatia dentro do arquivo Slice e adicione casos de construtor semelhantes ao fetchbook';
+                document.getElementById('addedit').textContent = 'Adicione a função Editar na página do livro';
+                document.getElementById('del').textContent = 'Adicionar propriedade do elemento RdsOffcanvas abaixo de RdsCompDatatable';
+                document.getElementById('delbook').textContent = 'Excluindo um novo livro –';
+                document.getElementById('addFun').textContent = 'Adicionar função de edição na página do livro';
+                document.getElementById('weAddSlice').textContent = 'Agora adicionamos um arquivo de fatia usado para a funcionalidade Excluir';
+                document.getElementById('weIntegrate').textContent = 'Integramos um componente chamado RdsCompAlertPopup para exibir o alerta durante excluir uma lista de livros';
+                document.getElementById('addDelete').textContent = 'Adicionar função de exclusão na página do livro';
+                // For In this doc section
+                document.getElementById('inthisdoc').innerHTML = 'neste documento';
+                document.getElementById('cretinganew').innerHTML = '<a href="#creating-A-New-Book" class="text-black">Criando um novo livro</a>';
+                document.getElementById('updatebooks').innerHTML = '<a href="#updating-book" class="text-black">Atualizando um novo livro</a>';
+                document.getElementById('deletebooks').innerHTML = '<a href="#del" class="text-black">Excluindo um novo livro</a>';
+            }
+            else if (selectedLanguage === 'French') {
+                // Body Content
+                document.getElementById('creating-A-New-Book').textContent = 'Partie 3 : Créer, mettre à jour et supprimer un livre';
+                document.getElementById('createBook').textContent = 'Créer un nouveau livre -';
+                document.getElementById('inOrder').textContent = 'Pour créer un nouveau livre, nous allons créer un nouveau composant appelé RdsCompBookForm. Exécutez le code ci-dessous dans le dossier racine';
+                document.getElementById('goTo').textContent = 'Accédez au chemin suivant et effectuez des opérations html';
+                document.getElementById('addFoll').textContent = 'Ajoutez le code suivant dans le fichier de tranche et ajoutez le cas du constructeur dans le réducteur supplémentaire similaire aux livres de recherche';
+                document.getElementById('HereWe').textContent = 'Ici, nous apportons un bouton Nouveau livre en utilisant RdsButton et en cliquant, nous obtenons différents paramètres d\'un formulaire à l\'intérieur d\'un RdsOffcanvas';
+                document.getElementById('updating-book').textContent = 'Ajoutez maintenant cette fonction dans le composant book';
+                document.getElementById('updateBook').textContent = 'Mise à jour d\'un nouveau livre -';
+                document.getElementById('define').textContent = 'Définissez les actions sur Modifier sous la forme d\'une matrice comme indiqué ci-dessous';
+
+                document.getElementById('updateTable').textContent = 'Mettez à jour la table à l\'aide des actions utilisées sur la table de données. La table de données mise à jour ressemblera à';
+                document.getElementById('addFollCode').textContent = 'Ajoutez le code de tranche suivant dans le fichier Slice et ajoutez des cas de constructeur similaires au fetchbook';
+                document.getElementById('addedit').textContent = 'Ajouter une fonction d\'édition sur la page du livre';
+                document.getElementById('del').textContent = 'Ajouter la propriété d\'élément RdsOffcanvas sous RdsCompDatatable';
+                document.getElementById('delbook').textContent = 'Supprimer un nouveau livre –';
+                document.getElementById('addFun').textContent = 'Ajouter une fonction d\'édition sur la page du livre';
+                document.getElementById('weAddSlice').textContent = 'Nous ajoutons maintenant un fichier de tranche utilisé pour la fonctionnalité d\'exclusion';
+                document.getElementById('weIntegrate').textContent = 'Nous avons intégré un composant appelé RdsCompAlertPopup pour afficher l\'alerte lors de la suppression d\'une liste de livres';
+                document.getElementById('addDelete').textContent = 'Ajouter une fonction de suppression sur la page du livre';
+                // For In this doc section
+                document.getElementById('inthisdoc').innerHTML = 'dans ce document';
+                document.getElementById('cretinganew').innerHTML = '<a href="#creating-A-New-Book" class="text-black">Créer un nouveau livre</a>';
+                document.getElementById('updatebooks').innerHTML = '<a href="#updating-book" class="text-black">Mettre à jour un nouveau livre</a>';
+                document.getElementById('deletebooks').innerHTML = '<a href="#del" class="text-black">Supprimer un nouveau livre</a>';
+            }
+
+            else if (selectedLanguage === 'Finnish') {
+                // Body Content
+                document.getElementById('creating-A-New-Book').textContent = 'Osa 3: Luo, päivitä ja poista kirja';
+                document.getElementById('createBook').textContent = 'Luo uusi kirja -';
+                document.getElementById('inOrder').textContent = 'Uuden kirjan luomiseksi luomme uuden komponentin nimeltä RdsCompBookForm. Suorita alla oleva koodi juurikansiossa';
+                document.getElementById('goTo').textContent = 'Siirry seuraavaan polkuun ja suorita html-toiminnot';
+                document.getElementById('addFoll').textContent = 'Lisää seuraava koodi slice-tiedostoon ja lisää konstruktorin tapaus ylimääräiseen supistimeen, joka on samanlainen kuin tutkimuskirjoja';
+                document.getElementById('HereWe').textContent = 'Tässä tuomme Uusi kirja -painikkeen RdsButtonilla ja napsauttamalla saamme RdsOffcanvasin sisällä olevan lomakkeen erilaisia ​​parametreja';
+                document.getElementById('updating-book').textContent = 'Lisää tämä toiminto nyt kirjakomponenttiin';
+                document.getElementById('updateBook').textContent = 'Uusi kirjapäivitys -';
+                document.getElementById('define').textContent = 'Aseta toiminnot Muokkaa matriisina alla olevan kuvan mukaisesti';
+
+                document.getElementById('updateTable').textContent = 'Päivitä taulukko tietotaulukossa käytetyillä toimilla. Päivitetty tietotaulukko näyttää tältä';
+                document.getElementById('addFollCode').textContent = 'Lisää seuraava slice-koodi Slice-tiedostoon ja lisää samankaltaisia ​​rakentajatapauksia hakukirjaan';
+                document.getElementById('addedit').textContent = 'Lisää muokkaustoiminto kirjan sivulle';
+                document.getElementById('del').textContent = 'Lisää RdsOffcanvas-kohteen ominaisuus kohtaan RdsCompDatatable';
+                document.getElementById('delbook').textContent = 'Poista uusi kirja–';
+                document.getElementById('addFun').textContent = 'Lisää muokkaustoiminto kirjan sivulle';
+                document.getElementById('weAddSlice').textContent = 'Lisäämme nyt slice-tiedoston, jota käytetään poissulkemistoimintoon';
+                document.getElementById('weIntegrate').textContent = 'Integroimme RdsCompAlertPopup-nimisen komponentin näyttämään varoituksen kirjaluettelon poistamisesta';
+                document.getElementById('addDelete').textContent = 'Lisää poistotoiminto kirjan sivulle';
+                // For In this doc section
+                document.getElementById('inthisdoc').innerHTML = 'tässä asiakirjassa';
+                document.getElementById('cretinganew').innerHTML = '<a href="#creating-A-New-Book" class="text-black">Uuden kirjan luominen</a>';
+                document.getElementById('updatebooks').innerHTML = '<a href="#updating-book" class="text-black">Uuden kirjan päivittäminen</a>';
+                document.getElementById('deletebooks').innerHTML = '<a href="#del" class="text-black">Poista uusi kirja</a>';
+            }
+            else if (selectedLanguage === 'Slovak') {
+                // Obsah tela
+                document.getElementById('creating-A-New-Book').textContent = 'Časť 3: Vytváranie, aktualizácia a odstránenie kníh';
+                document.getElementById('createBook').textContent = 'Vytvoriť novú knihu -';
+                document.getElementById('inOrder').textContent = 'Na vytvorenie novej knihy vytvoríme novú komponentu s názvom RdsCompBookForm. Vykonajte nasledujúci kód v koreňovom adresári:';
+                document.getElementById('goTo').textContent = 'Prejdite na nasledujúcu cestu a vykonajte html operácie';
+                document.getElementById('addFoll').textContent = 'Pridajte nasledujúci kód do súboru so skriptom slice a pridajte prípad konštruktora do ďalšieho rezáka podobného ako pri výskume kníh';
+                document.getElementById('HereWe').textContent = 'Tu pridávame tlačidlo "Vytvoriť novú knihu" pomocou komponentu RdsButton a kliknutím naň sa otvorí formulár v RdsOffcanvas s rôznymi parametrami';
+                document.getElementById('updating-book').textContent = 'Teraz pridajte túto funkciu do komponentu pre knihy';
+                document.getElementById('updateBook').textContent = 'Aktualizovať knihu -';
+                document.getElementById('define').textContent = 'Definujte akcie Aktualizácie v matici podľa nasledujúceho obrázka';
+
+                document.getElementById('updateTable').textContent = 'Aktualizujte tabuľku s akciami použitými v tabuľke dát. Aktualizovaná tabuľka dát bude vyzerať takto';
+                document.getElementById('addFollCode').textContent = 'Pridajte nasledujúci kód do súboru so skriptom Slice a pridajte podobné prípady konštruktora pre vyhľadávanie kníh';
+                document.getElementById('addedit').textContent = 'Pridajte funkciu úpravy na stránku kníh';
+                document.getElementById('del').textContent = 'Pridajte vlastnosť "RdsOffcanvas" na komponent "RdsCompDatatable"';
+                document.getElementById('delbook').textContent = 'Odstrániť novú knihu -';
+                document.getElementById('addFun').textContent = 'Pridajte funkciu úpravy na stránku kníh';
+                document.getElementById('weAddSlice').textContent = 'Teraz pridáme súbor Slice, ktorý sa použije pre funkciu odstránenia';
+                document.getElementById('weIntegrate').textContent = 'Integrujeme komponent s názvom "RdsCompAlertPopup" na zobrazenie upozornenia o odstránení zoznamu kníh';
+                document.getElementById('addDelete').textContent = 'Pridajte funkciu odstránenia na stránku kníh';
+                // Pre sekciu V tomto dokumente
+                document.getElementById('inthisdoc').innerHTML = 'v tomto dokumente';
+                document.getElementById('cretinganew').innerHTML = '<a href="#creating-A-New-Book" class="text-black">Vytvorenie novej knihy</a>';
+                document.getElementById('updatebooks').innerHTML = '<a href="#updating-book" class="text-black">Aktualizácia novej knihy</a>';
+                document.getElementById('deletebooks').innerHTML = '<a href="#del" class="text-black">Odstránenie novej knihy</a>';
+
+            }
+            else if (selectedLanguage === 'German') {
+                // Inhalt des Hauptbereichs
+                document.getElementById('creating-A-New-Book').textContent = 'Teil 3: Erstellen, Aktualisieren und Löschen von Büchern';
+                document.getElementById('createBook').textContent = 'Neues Buch erstellen -';
+                document.getElementById('inOrder').textContent = 'Um ein neues Buch zu erstellen, erstellen wir eine neue Komponente mit dem Namen RdsCompBookForm. Führen Sie den folgenden Code im Stammverzeichnis aus:';
+                document.getElementById('goTo').textContent = 'Gehen Sie weiter und führen Sie die HTML-Operationen aus';
+                document.getElementById('addFoll').textContent = 'Fügen Sie den folgenden Code in die Datei SliceScript hinzu und fügen Sie einen Konstruktorfall in den nächsten Slice ähnlich wie beim Erforschen von Büchern hinzu';
+                document.getElementById('HereWe').textContent = 'Hier fügen wir eine Schaltfläche "Neues Buch erstellen" mit der Komponente RdsButton hinzu, die beim Klicken ein Formular im RdsOffcanvas mit verschiedenen Parametern öffnet';
+                document.getElementById('updating-book').textContent = 'Fügen Sie nun diese Funktion zur Buchkomponente hinzu';
+                document.getElementById('updateBook').textContent = 'Buch aktualisieren -';
+                document.getElementById('define').textContent = 'Definieren Sie die Aktualisierungsfunktionen in der Matrix wie im folgenden Bild';
+
+                document.getElementById('updateTable').textContent = 'Aktualisieren Sie die Tabelle mit den in der Datentabelle verwendeten Aktionen. Die aktualisierte Datentabelle sieht folgendermaßen aus';
+                document.getElementById('addFollCode').textContent = 'Fügen Sie den folgenden Code in die Datei SliceScript hinzu und fügen Sie ähnliche Konstruktorfälle für die Buchsuche hinzu';
+                document.getElementById('addedit').textContent = 'Fügen Sie die Bearbeitungsfunktion auf der Buchseite hinzu';
+                document.getElementById('del').textContent = 'Fügen Sie der "RdsCompDatatable"-Komponente die Eigenschaft "RdsOffcanvas" hinzu';
+                document.getElementById('delbook').textContent = 'Neues Buch löschen -';
+                document.getElementById('addFun').textContent = 'Fügen Sie die Bearbeitungsfunktion auf der Buchseite hinzu';
+                document.getElementById('weAddSlice').textContent = 'Nun fügen wir die Datei Slice hinzu, die für die Löschfunktion verwendet wird';
+                document.getElementById('weIntegrate').textContent = 'Wir integrieren die Komponente "RdsCompAlertPopup", um eine Warnung über das Löschen der Bücherliste anzuzeigen';
+                document.getElementById('addDelete').textContent = 'Fügen Sie die Löschfunktion auf der Buchseite hinzu';
+                // Für den Abschnitt "In diesem Dokument"
+                document.getElementById('inthisdoc').innerHTML = 'in diesem Dokument';
+                document.getElementById('cretinganew').innerHTML = '<a href="#creating-A-New-Book" class="text-black">Neues Buch erstellen</a>';
+                document.getElementById('updatebooks').innerHTML = '<a href="#updating-book" class="text-black">Buch aktualisieren</a>';
+                document.getElementById('deletebooks').innerHTML = '<a href="#del" class="text-black">Neues Buch löschen</a>';
+
+            }
+            else if (selectedLanguage === 'hi') {
+                // Body Content
+                document.getElementById('creating-A-New-Book').textContent = 'भाग 3: पुस्तक बनाना, अपडेट करना और हटाना';
+                document.getElementById('createBook').textContent = 'नई पुस्तक बनाना -';
+                document.getElementById('inOrder').textContent = 'नई पुस्तक बनाने के लिए, हम एक नया घटक RdsCompBookForm बनाएंगे। नीचे दिए गए कोड को रूट फ़ोल्डर में चलाएं';
+                document.getElementById('goTo').textContent = 'निम्नलिखित पथ पर जाएं और HTML कार्यों को करें';
+                document.getElementById('addFoll').textContent = 'जांचें कि स्लाइस फ़ाइल में निम्नलिखित कोड शामिल है और fetchbooks की तरह अतिरिक्त रिड्यूसर में बिल्डर केस जोड़ें';
+                document.getElementById('HereWe').textContent = 'यहां, हम RdsButton का उपयोग करके एक "नई पुस्तक" का बटन लाते हैं और क्लिक करने पर RdsOffcanvas के अंदर एक फ़ॉर्म के विभिन्न पैरामीटर प्राप्त करते हैं';
+                document.getElementById('updating-book').textContent = 'अब पुस्तक घटक में इस फ़ंक्शन को जोड़ें';
+                document.getElementById('updateBook').textContent = 'पुस्तक अपडेट करना -';
+                document.getElementById('define').textContent = 'नीचे दिए गए रूप में संपादन के लिए क्रियाएँ परिभाषित करें';
+                document.getElementById('updateTable').textContent = 'डेटा टेबल में अपडेट करें, डेटा टेबल में उपयोग की जाने वाली क्रियाएँ द्वारा। अपडेट की गई डेटा टेबल का दृश्य निम्नलिखित होगा';
+                document.getElementById('addFollCode').textContent = 'स्लाइस फ़ाइल में निम्नलिखित स्लाइस कोड जोड़ें और fetchbook की तरह बिल्डर केस जोड़ें';
+                document.getElementById('addedit').textContent = 'पुस्तक पेज में संपादित करने की फ़ंक्शन जोड़ें';
+                document.getElementById('del').textContent = 'RdsCompDatatable के नीचे RdsOffcanvas एलिमेंट की प्रॉपर्टी जोड़ें';
+                document.getElementById('delbook').textContent = 'नई पुस्तक हटाना –';
+                document.getElementById('addFun').textContent = 'पुस्तक पेज में संपादित करने की फ़ंक्शन जोड़ें';
+                document.getElementById('weAddSlice').textContent = 'अब हम हटाने की क्षमता के लिए एक स्लाइस फ़ाइल जोड़ते हैं';
+                document.getElementById('weIntegrate').textContent = 'हम RdsCompAlertPopup कॉम्पोनेंट को एकत्रित करते हैं ताकि हम पुस्तक सूची को हटाते समय अलर्ट प्रदर्शित कर सकें';
+                document.getElementById('addDelete').textContent = 'पुस्तक पेज में हटाने की फ़ंक्शन जोड़ें';
+                // For In this doc section
+                document.getElementById('inthisdoc').innerHTML = 'इस दस्तावेज़ में';
+                document.getElementById('cretinganew').innerHTML = '<a href="#creating-A-New-Book" class="text-black">नई पुस्तक बनाना</a>';
+                document.getElementById('updatebooks').innerHTML = '<a href="#updating-book" class="text-black">पुस्तक अपडेट करना</a>';
+                document.getElementById('deletebooks').innerHTML = '<a href="#del" class="text-black">नई पुस्तक हटाना</a>';
+
+            }
+            else if (selectedLanguage === 'it') {
+                // Body Content
+                document.getElementById('creating-A-New-Book').textContent = 'Parte 3: Creazione, Aggiornamento e Eliminazione del Libro';
+                document.getElementById('createBook').textContent = 'Creazione di un nuovo libro -';
+                document.getElementById('inOrder').textContent = 'Per creare un nuovo libro, creeremo un nuovo componente chiamato RdsCompBookForm. Esegui il codice seguente nella cartella principale';
+                document.getElementById('goTo').textContent = 'Vai al percorso seguente e esegui le operazioni HTML';
+                document.getElementById('addFoll').textContent = 'Aggiungi il seguente codice nel file di segmento e aggiungi il caso del costruttore in extra reducer simile a fetchbooks';
+                document.getElementById('HereWe').textContent = 'Qui, aggiungiamo un pulsante di un nuovo libro utilizzando RdsButton e al clic, otteniamo diversi parametri di un modulo all\'interno di un RdsOffcanvas';
+                document.getElementById('updating-book').textContent = 'Ora aggiungi questa funzione all\'interno del componente del libro';
+                document.getElementById('updateBook').textContent = 'Aggiornamento di un nuovo libro -';
+                document.getElementById('define').textContent = 'Definisci le azioni per la modifica sotto forma di un array come mostrato di seguito';
+                document.getElementById('updateTable').textContent = 'Aggiorna la tabella utilizzando le azioni utilizzate nella tabella dei dati. La tabella dei dati aggiornata avrà questo aspetto';
+                document.getElementById('addFollCode').textContent = 'Aggiungi il seguente codice di segmento nel file di segmento e aggiungi i casi del costruttore simili a fetchbook';
+                document.getElementById('addedit').textContent = 'Aggiungi la funzione di modifica nella pagina del libro';
+                document.getElementById('del').textContent = 'Aggiungi la proprietà dell\'elemento RdsOffcanvas sotto RdsCompDatatable';
+                document.getElementById('delbook').textContent = 'Eliminazione di un nuovo libro -';
+                document.getElementById('addFun').textContent = 'Aggiungi la funzione di modifica nella pagina del libro';
+                document.getElementById('weAddSlice').textContent = 'Ora aggiungiamo un file di segmento utilizzato per la funzionalità di eliminazione';
+                document.getElementById('weIntegrate').textContent = 'Integriamo un componente chiamato RdsCompAlertPopup per mostrare un avviso durante l\'eliminazione di un elenco di libri';
+                document.getElementById('addDelete').textContent = 'Aggiungi la funzione di eliminazione nella pagina del libro';
+
+                // For In this doc section
+                document.getElementById('inthisdoc').innerHTML = 'In questo documento';
+                document.getElementById('cretinganew').innerHTML = '<a href="#creating-A-New-Book" class="text-black">Creazione di un nuovo libro</a>';
+                document.getElementById('updatebooks').innerHTML = '<a href="#updating-book" class="text-black">Aggiornamento di un nuovo libro</a>';
+                document.getElementById('deletebooks').innerHTML = '<a href="#del" class="text-black">Eliminazione di un nuovo libro</a>';
+
+            }
+            else if (selectedLanguage === 'ru') {
+                // Body Content
+                document.getElementById('creating-A-New-Book').textContent = 'Часть 3: Создание, Обновление и Удаление Книги';
+                document.getElementById('createBook').textContent = 'Создание новой книги -';
+                document.getElementById('inOrder').textContent = 'Для создания новой книги мы создадим новый компонент под названием RdsCompBookForm. Запустите код ниже в корневой папке';
+                document.getElementById('goTo').textContent = 'Перейдите по следующему пути и выполните операции с HTML';
+                document.getElementById('addFoll').textContent = 'Добавьте следующий код в файл среза и добавьте кейс в дополнительный редьюсер, аналогичный fetchbooks';
+                document.getElementById('HereWe').textContent = 'Здесь мы добавляем кнопку для создания новой книги с помощью RdsButton, и при нажатии мы получаем различные параметры формы внутри RdsOffcanvas';
+                document.getElementById('updating-book').textContent = 'Теперь добавьте эту функцию в компонент книги';
+                document.getElementById('updateBook').textContent = 'Обновление новой книги -';
+                document.getElementById('define').textContent = 'Определите действия для редактирования в форме в виде массива, как показано ниже';
+                document.getElementById('updateTable').textContent = 'Обновите таблицу, используя действия, используемые в таблице данных. Обновленная таблица данных будет выглядеть следующим образом';
+                document.getElementById('addFollCode').textContent = 'Добавьте следующий код среза в файл Slice и добавьте кейсы в builder, аналогичные fetchbook';
+                document.getElementById('addedit').textContent = 'Добавьте функцию редактирования на странице книги';
+                document.getElementById('del').textContent = 'Добавьте свойство элемента RdsOffcanvas под RdsCompDatatable';
+                document.getElementById('delbook').textContent = 'Удаление новой книги -';
+                document.getElementById('addFun').textContent = 'Добавьте функцию редактирования на странице книги';
+                document.getElementById('weAddSlice').textContent = 'Теперь мы добавляем файл среза, используемый для функциональности удаления';
+                document.getElementById('weIntegrate').textContent = 'Мы интегрируем компонент под названием RdsCompAlertPopup, чтобы отображать предупреждение при удалении списка книг';
+                document.getElementById('addDelete').textContent = 'Добавьте функцию удаления на странице книг';
+                // For In this doc section
+                document.getElementById('inthisdoc').innerHTML = 'В этом документе';
+                document.getElementById('cretinganew').innerHTML = '<a href="#creating-A-New-Book" class="text-black">Создание новой книги</a>';
+                document.getElementById('updatebooks').innerHTML = '<a href="#updating-book" class="text-black">Обновление новой книги</a>';
+                document.getElementById('deletebooks').innerHTML = '<a href="#del" class="text-black">Удаление новой книги</a>';
+
+            }
+            else if (selectedLanguage === 'zh') {
+                // Body Content
+                document.getElementById('creating-A-New-Book').textContent = '第三部分：创建、更新和删除图书';
+                document.getElementById('createBook').textContent = '创建新图书 -';
+                document.getElementById('inOrder').textContent = '为了创建一本新图书，我们将创建一个名为 RdsCompBookForm 的新组件。在根目录下运行以下代码：';
+                document.getElementById('goTo').textContent = '转到以下路径并执行 HTML 操作：';
+                document.getElementById('addFoll').textContent = '在切片文件中添加以下代码，并在额外的 reducer 中添加类似于 fetchbooks 的 builder case。';
+                document.getElementById('HereWe').textContent = '在这里，我们使用 RdsButton 按钮带来了一个新图书的按钮，点击后，在 RdsOffcanvas 中获取表单的不同参数。';
+                document.getElementById('updating-book').textContent = '现在将此函数添加到图书组件中：';
+                document.getElementById('updateBook').textContent = '更新新图书 -';
+                document.getElementById('define').textContent = '定义 Edit 的操作，如下所示：';
+                document.getElementById('updateTable').textContent = '使用数据表中使用的操作来更新表格。更新后的数据表如下所示：';
+                document.getElementById('addFollCode').textContent = '在切片文件中添加以下代码，并添加与 fetchbook 类似的 builder case。';
+                document.getElementById('addedit').textContent = '在图书页面中添加 Edit 函数：';
+                document.getElementById('del').textContent = '在 RdsCompDatatable 下面添加 RdsOffcanvas 元素的属性：';
+                document.getElementById('delbook').textContent = '删除新图书 -';
+                document.getElementById('addFun').textContent = '在图书页面中添加 Edit 函数：';
+                document.getElementById('weAddSlice').textContent = '现在我们添加一个用于删除功能的切片文件：';
+                document.getElementById('weIntegrate').textContent = '我们集成了一个名为 RdsCompAlertPopup 的组件，用于在删除图书列表时显示警报。';
+                document.getElementById('addDelete').textContent = '在图书页面中添加删除函数：';
+
+                // For In this doc section
+                document.getElementById('inthisdoc').innerHTML = '在本文中';
+                document.getElementById('cretinganew').innerHTML = '<a href="#creating-A-New-Book" class="text-black">创建新图书</a>';
+                document.getElementById('updatebooks').innerHTML = '<a href="#updating-book" class="text-black">更新新图书</a>';
+                document.getElementById('deletebooks').innerHTML = '<a href="#del" class="text-black">删除新图书</a>';
+
+            }
+            else if (selectedLanguage === 'ar') {
+                // Body Content
+                document.getElementById('creating-A-New-Book').textContent = 'الجزء 3: إنشاء، تحديث وحذف الكتاب';
+                document.getElementById('createBook').textContent = 'إنشاء كتاب جديد -';
+                document.getElementById('inOrder').textContent = 'لإنشاء كتاب جديد، سنقوم بإنشاء مكون جديد يسمى RdsCompBookForm. قم بتشغيل الشيفرة أدناه في المجلد الجذري';
+                document.getElementById('goTo').textContent = 'انتقل إلى المسار التالي وقم بإجراء عمليات HTML';
+                document.getElementById('addFoll').textContent = 'أضف الشيفرة التالية في ملف الشريحة وأضف حالة بناء إضافية في المخفض مماثلة لـ fetchbooks';
+                document.getElementById('HereWe').textContent = 'هنا، نضيف زرًا لكتاب جديد باستخدام RdsButton وعند النقر عليه، نحصل على معلمات مختلفة لنموذج داخل RdsOffcanvas';
+                document.getElementById('updating-book').textContent = 'الآن قم بإضافة هذه الوظيفة داخل مكون الكتاب';
+                document.getElementById('updateBook').textContent = 'تحديث كتاب جديد -';
+                document.getElementById('define').textContent = 'حدد الإجراءات للتحرير في شكل مصفوفة كما هو موضح أدناه';
+                document.getElementById('updateTable').textContent = 'تحديث الجدول باستخدام الإجراءات المستخدمة في جدول البيانات. سيبدو جدول البيانات المحدث كما يلي';
+                document.getElementById('addFollCode').textContent = 'أضف الشيفرة التالية في ملف الشريحة وأضف حالات البناء مماثلة لـ fetchbook';
+                document.getElementById('addedit').textContent = 'أضف وظيفة التحرير في صفحة الكتاب';
+                document.getElementById('del').textContent = 'أضف خاصية لعنصر RdsOffcanvas أدناه RdsCompDatatable';
+                document.getElementById('delbook').textContent = 'حذف كتاب جديد –';
+                document.getElementById('addFun').textContent = 'أضف وظيفة التحرير في صفحة الكتاب';
+                document.getElementById('weAddSlice').textContent = 'نقوم الآن بإضافة ملف شريحة يُستخدم لوظيفة الحذف';
+                document.getElementById('weIntegrate').textContent = 'ندمج مكونًا يسمى RdsCompAlertPopup لعرض تنبيه أثناء حذف قائمة الكتب';
+                document.getElementById('addDelete').textContent = 'أضف وظيفة الحذف في صفحة الكتاب';
+                // For In this doc section
+                document.getElementById('inthisdoc').innerHTML = 'في هذه الوثيقة';
+                document.getElementById('cretinganew').innerHTML = '<a href="#creating-A-New-Book" class="text-black">إنشاء كتاب جديد</a>';
+                document.getElementById('updatebooks').innerHTML = '<a href="#updating-book" class="text-black">تحديث كتاب جديد</a>';
+                document.getElementById('deletebooks').innerHTML = '<a href="#del" class="text-black">حذف كتاب جديد</a>';
+
+            }
+            else if (selectedLanguage === 'spanish') {
+            } else {
+
+            }
+        });
+    });
+</script>
+
+</html>

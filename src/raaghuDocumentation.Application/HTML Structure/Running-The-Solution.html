@@ -1,0 +1,990 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="Assets/images/raaghu-icon.png">
+    <title>Raaghu - Running The Solution</title>
+
+    <!-- bootstrap dependencies -->
+    <link rel="stylesheet" href="Assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/index.css">
+    <link href="Assets/prism.css" rel="stylesheet" />
+    <script src="Assets/prism.js"></script>
+    <script src="/index.js"></script>
+
+</head>
+
+
+<body>
+
+    <main>
+
+        <nav class="navbar navbar-expand-lg navbar-light ">
+            <div class="container-fluid ">
+                <div class="navbar-toggler-container">
+                    <button class="navbar-toggler " type="button" data-bs-toggle="collapse"
+                        data-bs-target="#sidebar,#navbarSupportedContent" aria-controls="sidebar" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <!-- <div class="dropdown show dropdown-specific">
+                        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Platform
+                        </a>
+
+                        <div class="dropdown-menu menu" aria-labelledby="dropdownMenuLink">
+                            <a class="dropdown-item" href="https://www.raaghu.io/features.html">Features</a>
+                            <a class="dropdown-item " href="https://portal.raaghu.io/">Documentation</a>
+                            <button type="button" class="btn btn-primary btn-contact mt-2">contact</button>
+                            <a href="https://github.com/Wai-Technologies/raaghu-angular" target="_blank">
+                                <li class="ps-lg-5 mt-2">
+                                    <img src="Assets/images/github-logo.svg" alt="abplogo logo" width="100%"
+                                        class="github-logo">
+                                </li>
+                            </a>
+                        </div>
+                    </div> -->
+                </div>
+                <a class="text-black navbar-brand" href="/">
+                    <img src="Assets/images/raaghu_logs.png" alt="raaghu logo" class="w-75  pe-lg-0">
+                </a>
+
+                <div class="collapse navbar-collapse align  justify-content-lg-end " id="navbarSupportedContent">
+                    <ul class="navbar-nav  mb-2 mb-lg-0">
+                        <li class="nav-item me-5">
+                            <a class="nav-link active " aria-current="page"
+                                href="https://raaghu-website-staging.netlify.app/raaghu-mfe-portal/_accordion.html">Components</a>
+                        </li>
+                        <li class="nav-item me-5">
+                            <a class="nav-link active " aria-current="page" href="#"><span
+                                    class="doc-color">Documentation</span></a>
+                        </li>
+                        <li class="nav-item me-5">
+                            <a class="nav-link active " aria-current="page"
+                                href="https://raaghu-website-staging.netlify.app/raaghu-mfe-portal/_accordion.html#">Support</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link active " aria-current="page"
+                                href="https://raaghu-website-staging.netlify.app/faq">FAQ</a>
+                        </li>
+                        <!-- <li class=" nav-item dropdown active">
+                            <a class="nav-link  text-dark me-5" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Platform
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-center " aria-labelledby="navbarDropdown">
+                                <ul class="list-unstyled dropdown-arrow">
+                                    <li class=" ps-4">
+                                        <p class="title pt-2">Raaghu Platform</p>
+                                        <div class="row">
+                                            <div class="col-lg-6 col-md-6">
+                                                <a href="https://portal.raaghu.io/" target="_blank"
+                                                    class="p-0 text-decoration-none text-reset">
+                                                    <div class="d-flex align-items-center gap-3">
+
+                                                        <img src="Assets/images/raaghu-portal-mg.svg"
+                                                            alt="raaghu-portal" class="mb-3">
+                                                        <p class="link-name">Raaghu Portal</p>
+
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="col-lg-6 col-md-6">
+                                                <a href="https://portal.raaghu.io/#Components-section" target="_blank"
+                                                    class="p-0 text-decoration-none text-reset">
+                                                    <div class="d-flex align-items-center gap-3">
+                                                        <img src="Assets/images/raaghu-components-mg.svg"
+                                                            alt="raaghu-components" class="mb-3">
+                                                        <p class="link-name">Raaghu Components</p>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-6 col-md-6">
+                                                <a href="https://portal.raaghu.io/#Elements-section" target="_blank"
+                                                    class="p-0 text-decoration-none text-reset">
+                                                    <div class="d-flex align-items-center gap-3">
+                                                        <img src="Assets/images/raaghu-elements-mg.svg"
+                                                            alt="raaghu-portal" class="mb-2">
+                                                        <p class="pt-2 link-name">Raaghu Elements</p>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="col-lg-6 col-md-6">
+                                                <div class="d-flex align-items-center gap-3">
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="bgcolor-dropdown">
+                                        <div class="ps-4">
+                                            <p class="pt-3 pb-1 title">WORKS ON</p>
+                                            <div class="row">
+                                                <div class="col-md-2 mb-2">
+                                                    <img src="Assets/images/asplogo-mg.svg" alt="asplogo logo"
+                                                        width="80%">
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <img src="Assets/images/abplogo-mg.svg" alt="abplogo logo"
+                                                        width="50%">
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item me-5">
+                            <a class="nav-link active" aria-current="page"
+                                href="https://www.raaghu.io/features.html">Features</a>
+                        </li>
+                        <li class="nav-item me-5">
+                            <a class="nav-link active" aria-current="page"
+                                href="https://portal.raaghu.io/">Documentation</a>
+                        </li>
+                        <button type="button" class="btn btn-primary btn-contact">contact</button>
+                        <a href="https://github.com/Wai-Technologies/raaghu-angular" target="_blank">
+                            <li class="ps-lg-5 pt-2">
+                                <img src="Assets/images/github-logo.svg" alt="abplogo logo" width="100%"
+                                    class="github-logo">
+                            </li>
+                        </a> -->
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="wrapper container-fluid">
+
+            <div class="row">
+
+                <div id="sidebar"
+                    class="col-12 col-lg-2 col-md-4 col-xl-2 col-xxl-2 collapse d-m-block mx-0 mx-lg-3 mx-md-3 mx-xl-3 mx-xxl-3 show">
+
+                    <nav>
+                        <div class="sidebar-header ">
+                            <a href="/" class="text-bg-dark">
+                                <h3 class="fs-5 fw-normal" id="tableOfContent">Table Of Content</h3>
+                            </a>
+                        </div>
+
+                        <div class="accordion accordion-flush mx-3 doc-acc accordion-button-top" id="accordionExample">
+
+                            <div class="row pb-4">
+                                <div class="col-6 col-lg-6 col-md-6">
+                                    <select id="language-dropdown" class="sidebar-button">
+                                        <option value="en" selected>English</option>
+                                        <option value="pt">Português</option>
+                                        <option value="fr">French</option>
+                                        <option value="fi">Finnish</option>
+                                        <option value="hi">Hindi</option>
+                                        <option value="it">Italian</option>
+                                        <option value="sk">Slovak</option>
+                                        <option value="de">German</option>
+                                        <option value="ru">Russian</option>
+                                        <option value="zh">Chinese</option>
+                                        <option value="af">Afrikaan</option>
+                                        <option value="ar">Arabic</option>
+                                        <!-- Add more language options if needed -->
+                                    </select>
+                                </div>
+                                <div class="col-6 col-lg-6 col-md-6">
+                                    <select class="sidebar-button w-100">
+                                        <option value="option1" id="version">Version</option>
+                                        <option value="option2" id="version">Version 2</option>
+                                        <option value="option3">Version 3</option>
+                                        <option value="option4">Version 4</option>
+                                    </select>
+
+                                </div>
+                            </div>
+                            <div class="accordion-item bg-dark">
+                                <h2 class="accordion-header" id="headingOne">
+                                    <a href="Getting-Started.html">
+                                        <button
+                                            class="accordion-button d-flex flex-row-reverse justify-content-end p-0 bg-dark mt-1"
+                                            type="button" data-bs-toggle="collapse" data-bs-target="#coll"
+                                            aria-expanded="true" aria-controls="collapseOne" id="Getting">
+                                            Getting Started
+                                        </button></a>
+                                </h2>
+
+                                <div id="coll" class="accordion-collapse collapse show border-0 rounded-0 p-0"
+                                    aria-labelledby="headOne" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Setup-Your-Development-Environment.html" id="setupDev">Setup your
+                                            development
+                                            environment</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Creating-A-New-Solution.html" id="creatingNewSol">Creating A New
+                                            Solution</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Running-The-Solution.html"><span class="accordian-active"
+                                                id="runningTheSol">Running the Solution</span></a>
+                                    </div>
+                                </div>
+                                <h2 class="accordion-header" id="headingTwo">
+                                    <button
+                                        class="accordion-button d-flex flex-row-reverse justify-content-end p-0 bg-dark mt-2"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                        aria-expanded="false" aria-controls="collapseOne" id="tut">
+                                        Tutorials
+                                    </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse  border-0 rounded-0 p-0"
+                                    aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <h2 class="accordion-header" id="headingTwo">
+                                            <button
+                                                class="accordion-button d-flex flex-row-reverse justify-content-end p-0 bg-dark mt-2"
+                                                type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                                                aria-expanded="false" aria-controls="collapseOne" id="webAppDev">
+                                                Web Application Development
+                                            </button>
+                                        </h2>
+                                        <div id="collapseThree"
+                                            class="accordion-collapse collapse  border-0 rounded-0 p-0 pt-2"
+                                            aria-labelledby="headingTwo" data-bs-parent="#accordionExamplee">
+                                            <div class="accordion-body bg-dark px-4 p-1">
+                                                <a href="Creating-The-Server-Side.html" id="creatingServer">Creating the
+                                                    Server
+                                                    Side</a>
+                                            </div>
+                                        </div>
+                                        <div id="collapseThree"
+                                            class="accordion-collapse collapse  border-0 rounded-0 p-0"
+                                            aria-labelledby="headingTwo" data-bs-parent="#accordionExamplee">
+                                            <div class="accordion-body bg-dark px-4 p-1">
+                                                <a href="The-Book-List-Page.html" id="bookList">The Book List Page</a>
+                                            </div>
+                                        </div>
+                                        <div id="collapseThree"
+                                            class="accordion-collapse collapse  border-0 rounded-0 p-0"
+                                            aria-labelledby="headingTwo" data-bs-parent="#accordionExamplee">
+                                            <div class="accordion-body bg-dark px-4 p-1">
+                                                <a href="Creating-Updating-And-Deleting-Book.html"
+                                                    id="creatingUpdating">Creating,Updating
+                                                    And
+                                                    Deleting Book</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <h2 class="accordion-header" id="headingFour">
+                                    <button
+                                        class="accordion-button d-flex flex-row-reverse justify-content-end p-0 bg-dark mt-2"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour"
+                                        aria-expanded="false" aria-controls="collapseOne" id="guides">
+                                        Guides
+                                    </button>
+                                </h2>
+                                <div id="collapseFour" class="accordion-collapse collapse  border-0 rounded-0 p-0"
+                                    aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Customizing-The-Modules.html" id="customizingTheModules">Customizing
+                                            the Modules</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Identity-Server-Deployment.html" id="identityServerDeploy">Identity
+                                            Server Deployment</a>
+                                    </div>
+                                </div>
+
+
+                                <h2 class="accordion-header" id="headingFive">
+                                    <button
+                                        class="accordion-button d-flex flex-row-reverse justify-content-end p-0 bg-dark mt-2"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive"
+                                        aria-expanded="false" aria-controls="collapseOne" id="samples">
+                                        Samples
+                                    </button>
+                                </h2>
+                                <div id="collapseFive" class="accordion-collapse collapse  border-0 rounded-0 p-0"
+                                    aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="All-Samples.html" id="allSamples">All Samples</a>
+                                    </div>
+                                </div>
+                                <h2 class="accordion-header" id="headingSix">
+                                    <a href="Startup-Template.html">
+                                        <button
+                                            class="accordion-button d-flex flex-row-reverse justify-content-end p-0 bg-dark mt-2"
+                                            type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix"
+                                            aria-expanded="false" aria-controls="collapseOne" id="startupTemplate">
+                                            Startup Template
+                                        </button></a>
+                                </h2>
+                                <div id="collapseSix" class="accordion-collapse collapse  border-0 rounded-0 p-0"
+                                    aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <h2 class="accordion-header" id="headingSix">
+                                            <button
+                                                class="accordion-button d-flex flex-row-reverse justify-content-end p-0 bg-dark mt-2"
+                                                type="button" data-bs-toggle="collapse" data-bs-target="#headingS"
+                                                aria-expanded="false" aria-controls="collapseOne"
+                                                id="applicationTemplate">
+                                                Application Templates
+                                            </button>
+                                        </h2>
+                                        <div id="headingS"
+                                            class="accordion-collapse collapse  border-0 rounded-0 p-0 pt-2"
+                                            aria-labelledby="headingSix" data-bs-parent="#accordionExamplee">
+                                            <div class="accordion-body bg-dark px-4 p-1">
+                                                <a href="Creating-Solution.html" id="creatingSolution">Creating
+                                                    Solution</a>
+                                            </div>
+                                        </div>
+                                        <div id="headingS" class="accordion-collapse collapse  border-0 rounded-0 p-0"
+                                            aria-labelledby="headingSix" data-bs-parent="#accordionExamplee">
+                                            <div class="accordion-body bg-dark px-4 p-1">
+                                                <a href="Solution-Structure.html" id="solutionStruct">Solution
+                                                    Structure</a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                                <h2 class="accordion-header" id="headingSeven">
+                                    <button
+                                        class="accordion-button d-flex flex-row-reverse justify-content-end p-0 bg-dark mt-2"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven"
+                                        aria-expanded="false" aria-controls="collapseOne" id="appModules">
+                                        Application Modules
+                                    </button>
+                                </h2>
+                                <div id="collapseSeven" class="accordion-collapse collapse  border-0 rounded-0 p-0"
+                                    aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Overall.html" id="overall">Overall</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Account-Module.html" id="ac">Account</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Audit-Logging.html" id="auditLogging">Audit Logging</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Chat.html" id="chat">Chat</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="CMS-Kit-Pro.html" id="CMS">CMS Kit Pro</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="File-Management.html" id="fileMgt">File Management</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Forms.html" id="forms">Forms</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Identity.html" id="identity">Identity</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="OpenIddict.html" id="OpenIddict">OpenIddict</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Language-Management.html" id="languageMgt">Language Management</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Payment.html" id="payment">Payment</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="SaaS.html" id="saas">SaaS</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Text-Template-Management.html" id="ttm">Text Template Management</a>
+                                    </div>
+                                </div>
+                                <h2 class="accordion-header" id="headingNine">
+                                    <a href="UI-Themes.html">
+                                        <button
+                                            class="accordion-button d-flex flex-row-reverse justify-content-end p-0 bg-dark mt-2"
+                                            type="button" data-bs-toggle="collapse" data-bs-target="#headingNine"
+                                            aria-expanded="false" aria-controls="collapseOne" id="ui">
+                                            UI Themes
+                                        </button>
+                                    </a>
+                                </h2>
+                                <h2 class="accordion-header" id="headingReactUITheme">
+                                    <button
+                                        class="accordion-button d-flex flex-row-reverse justify-content-end p-0 bg-dark mt-2"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#headingReactUI"
+                                        aria-expanded="false" aria-controls="collapseOne" id="reactUI">
+                                        React UI
+                                    </button>
+                                </h2>
+                                <div id="headingReactUI" class="accordion-collapse collapse  border-0 rounded-0 p-0"
+                                    aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Customization.html" id="custom">customization</a>
+                                    </div>
+
+                                </div>
+                                <div id="headingReactUI" class="accordion-collapse collapse  border-0 rounded-0 p-0"
+                                    aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Components.html" id="compo">Components</a>
+                                    </div>
+
+                                </div>
+                                <!-- For Release Information -->
+                                <h2 class="accordion-header" id="headingFive">
+                                    <button
+                                        class="accordion-button d-flex flex-row-reverse justify-content-end p-0 bg-dark mt-2"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseLast"
+                                        aria-expanded="false" aria-controls="collapseOne" id="samples">
+                                        <span id="relinfo">Release Information</span>
+                                    </button>
+                                </h2>
+                                <div id="collapseLast" class="accordion-collapse collapse  border-0 rounded-0 p-0"
+                                    aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Release-Notes.html" id="allSamples"><span id="relnote">Release
+                                                Notes</span></a>
+                                    </div>
+                                </div>
+                                <!-- ====================================== -->
+                            </div>
+                        </div>
+                        <ul class="list-unstyled CTAs  w-100">
+                            <li>
+                                <a href="https://bootstrapious.com/tutorial/files/sidebar.zip" class="download"
+                                    id="downloadSource">Download
+                                    source</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div
+                    class="col-12 col-lg-8 col-md-7 col-xl-6 col-xxl-6 offset-lg-4 offset-md-5 offset-xl-3 offset-xxl-3 ps-xl-5 ps-xxl-0 px-lg-3 px-md-4 px-xl-0">
+
+                    <!-- Page Content  -->
+                    <div id="content">
+                        <div class="modal fade" id="contactusModal" tabindex="-1" aria-labelledby="contactusModalLabel"
+                            aria-hidden="true">
+
+                            <div class="modal-dialog modal-lg modal-dialog-centered">
+
+                                <div class="modal-content">
+
+
+
+                                    <div class="modal-body p-0">
+
+
+
+
+                                        <div class="row">
+
+                                            <div class="col-md-6 col-sm-12 bg-dark">
+
+                                                <div class="mt-5">
+
+                                                    <img src="Assets/images/raaghu-logo-white.png"
+                                                        class="img-fluid w-25 pl-2">
+
+
+
+                                                    <img src="Assets/images/raaghu-banner-modal.png" class="img-fluid">
+
+                                                </div>
+
+                                            </div>
+
+
+
+                                            <div class="col-md-6 col-sm-12">
+
+                                                <div class="row">
+
+                                                    <div class="col-md-12 text-end pull-right">
+
+                                                        <button type="button"
+                                                            class="btn-close float-right pull-right m-3 text-muted"
+                                                            data-bs-dismiss="modal" aria-label="Close"></button>
+
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="p-4">
+
+                                                    <h6>
+
+                                                        Kindly fill the details below
+
+                                                    </h6>
+
+                                                    <p>
+
+                                                        <small> We will get back to you within 48 hours </small>
+
+                                                    </p>
+
+                                                    <div class="mt-5">
+
+                                                        <form method="post" id="want-to-hear-form">
+
+                                                            <div class="mb-3 form-group">
+
+                                                                <label for="emailId" class="form-label">Email ID
+
+                                                                    <span class="text-danger">*</span>
+
+                                                                </label>
+
+                                                                <input type="email" name="emailId"
+                                                                    class="form-control p-2" id="emailId"
+                                                                    placeholder="Enter your email id">
+
+                                                            </div>
+
+                                                            <div class="mb-3 form-group">
+
+                                                                <label for="companyName" class="form-label">Company Name
+
+                                                                    <span class="text-danger">*</span>
+
+                                                                </label>
+
+                                                                <input type="text" class="form-control p-2"
+                                                                    placeholder="Enter your Company Name"
+                                                                    name="companyName" id="companyName">
+
+                                                            </div>
+
+                                                            <div class="mb-3 form-group">
+
+                                                                <label for="message" class="form-label">Message
+
+                                                                    <span class="contactUs-Optional">(Optional)</span>
+
+
+                                                                </label>
+
+                                                                <textarea class="form-control p-2" name="message"
+                                                                    id="message" rows="3"
+                                                                    placeholder="Write your message.."></textarea>
+
+                                                            </div>
+
+                                                            <div class="mb-3 form-check">
+
+                                                                <input type="checkbox" class="form-check-input"
+                                                                    id="exampleCheck1">
+
+                                                                <label class="form-check-label" for="exampleCheck1">I
+                                                                    agree to the <a href="#"> terms & privacy policy
+                                                                    </a></label>
+
+                                                            </div>
+
+                                                            <button type="submit"
+                                                                class="btn btn-primary btn-sm btn-block float-end mb-4">Submit</button>
+
+                                                        </form>
+
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div> <input class="form-control  mb-5" type="search" placeholder="Search" aria-label="Search">
+                        </div>
+
+                        <div>
+                            <h1 class="fs-2 fw-semibold mb-3" id="conn">Create the Database</h1>
+                            <!-- <h2 class="fw-semibold pt-3 pb-1"></h2> -->
+                        </div>
+                        <div>
+                            <h3 class="fw-semibold pt-3 pb-3" id="constring">Connection String</h3>
+                            <p id="check">Check the connection string in the <span
+                                    class="txt-color">appsettings.json</span>
+                                file
+                                under the .Web project.</p>
+                            <pre
+                                class="my-4"><code class="language-javascript ">"ConnectionStrings": {"Default": "Server=localhost;Database=BookStore;Trusted_Connection=True"}</code></pre>
+                            <!--  -->
+                            <p class="fw-bolder" id="about">About the Connection Strings and Database Management Systems
+                            </p>
+                            <p id="theSolEF">The solution is configured to use Entity Framework Core with MS SQL Server
+                                by
+                                default.
+                                However, if you've selected another DBMS using the <span class="txt-color">-dbms</span>
+                                parameter on the ABP CLI <span class="txt-color">new</span> command (like <span
+                                    class="txt-color">-dbms MySQL</span>), the connection string might be different
+                                for
+                                you.</p>
+                            <p id="EFC">EF Core supports <a
+                                    href="https://learn.microsoft.com/en-us/ef/core/providers/">various
+                                </a>database providers and you can use any supported DBMS. See <a
+                                    href="https://docs.abp.io/en/abp/latest/Entity-Framework-Core">the Entity
+                                    Framework
+                                    integration document</a>
+                                to learn how to <a
+                                    href="https://docs.abp.io/en/abp/latest/Entity-Framework-Core-Other-DBMS">switch
+                                    to
+                                    another DBMS</a>
+                                if you need later.</p>
+                        </div>
+                        <div>
+                            <h3 class="fw-semibold py-3" id="DMS">Database Migrations</h2>
+                                <p id="TheSolS">The solution uses the <a
+                                        href="https://learn.microsoft.com/en-us/ef/core/managing-schemas/migrations/?tabs=dotnet-core-cli">Entity
+                                        Framework Core Code First Migrations.</a> It comes with a <span
+                                        class="txt-color">.DbMigrator</span> console application which
+                                    <strong>applies
+                                        the migrations</strong> and also <strong>seeds the initial data.</strong> It
+                                    is
+                                    useful on <strong>development</strong> as well as on <strong>production</strong>
+                                    environment.
+                                </p>
+                        </div>
+
+                        <div>
+                            <p id="db"><span class="txt-color">.DbMigrator</span> project has its own <span
+                                    class="txt-color">appsettings.json.</span> So, if you have changed the
+                                connection
+                                string above, you should also change this one.</p>
+                        </div>
+                        <div>
+                            <h3 class="fw-semibold pt-3 pb-3" id="Initial">The Initial Migration</h3>
+                            <p id="DBapp"><span class="txt-color">.DbMigrator</span> application automatically
+                                <strong>creates
+                                    the
+                                    Initial migration</strong> on first run.</p>
+                            <p id="ifYouvs"><strong>If you are using Visual Studio, you can skip to the Running the
+                                    DbMigrator
+                                    section.</strong> However, other IDEs (e.g. Rider) may have problems for the
+                                first
+                                run since it adds the initial migration and compiles the project. In this case, open
+                                a
+                                command line terminal in the folder of the <span class="txt-color">.DbMigrator</span>
+                                project and run the following command:</p>
+
+                            <pre class="my-4"><code class="language-javascript">dotnet run</code></pre>
+                        </div>
+                        <div>
+                            <h3 class="fw-semibold pt-3 pb-3" id="Runn">Running the DbMigrator</h3>
+                            <p id="RTC">Right click to the <span class="txt-color">.DbMigrator</span> project and select
+                                <strong>Set as StartUp Project</strong>
+                            </p>
+                            <img src="Assets/images/runningTheMigrator.jpg" alt="Running the DB DbMigrator"
+                                class="img-fluid mt-3 mb-4">
+                            <p id="Hit">Hit F5 (or Ctrl+F5) to run the application. It will have an output like shown
+                                below:
+                            </p>
+                            <img src="Assets/images/databaseMigrations.jpg" alt="Database Migrations"
+                                class="img-fluid mt-3 mb-4">
+                            <p id="run">Initial <a href="https://docs.abp.io/en/abp/latest/Data-Seeding">seed data
+                                </a>creates the <span class="txt-color">admin</span> user in the database (with the
+                                password is <span class="txt-color">.1q2w3E*</span>) which is then used to login to
+                                the application. So, you need to use <span class="txt-color">.DbMigrator</span> at
+                                least once for a new database.</p>
+                        </div>
+                        <div>
+                            <h3 class="fw-semibold pt-3 pb-3" id="RunThe">Run the application</h3>
+                            <p id="Warn">Warning: When you create an ABP solution, the client-side packages are being
+                                restored
+                                by ABP CLI and Suite. But if you fetch the source-code that's commited by another
+                                team member, your <span class="txt-color">libs</span> folder will be empty. Before
+                                starting the application, run <span class="txt-color">abp install-libs</span>
+                                command in your Web directory to restore the client-side libraries. This will
+                                populate the <span class="txt-color">libs</span> folder.
+                                Ensure that the <span class="txt-color">.Web</span> project is the startup project.
+                                Run the application which will open the <strong>login</strong> page in your browser:
+                            </p>
+                            <p id="USe">Use Ctrl+F5 in Visual Studio (instead of F5) to run the application without
+                                debugging. If you don't have a debug purpose, this will be faster.</p>
+                            <img src="Assets/images/swagger.jpg" alt="Swagger" class="img-fluid mt-3 mb-4">
+                            <p id="TheApp">The application is up and running. You can start developing your application
+                                based on
+                                this startup template.</p>
+                        </div>
+                        <div>
+                            <h3 class="fw-semibold pt-4 pb-3" id="NS">Next Step</h3>
+                            <ul class="ps-3">
+                                <li id="WebTut"><a href="Creating-The-Server-Side.html">Web Application development
+                                        tutorial</a></li>
+                            </ul>
+                        </div>
+
+
+
+
+                    </div>
+                </div>
+                <div
+                    class="col-12 col-lg-8 col-md-7 col-xl-2 col-xxl-2 docs-page-index offset-lg-4 offset-xl-0 offset-md-5 offset-xxl-0 px-md-4">
+                    <div
+                        class="position-fixed  my-3 w-auto mx-lg-0 mx-xl-3 mx-xxl-3 pe-lg-3 pe-xl-0 pe-xxl-0 position-lg-relative">
+                        <div class="card border-0 box rounded-3 mb-3">
+                            <div class="card-body">
+                                <h4 class="card-title py-1" id="inthisdoc">In this document</h4>
+                                <div class="opacity-50">
+                                    <ul class="card-text small  list-unstyled ul-ad">
+                                        <li id="secconn"><a href="#conn" class="text-black">Connection String</a></li>
+                                        <li id="secdatabase"><a href="#conn" class="text-black">Database Migrations</a>
+                                        </li>
+                                        <li id="secthe"><a href="#db" class="text-black">The Initial Migration</a></li>
+                                        <li id="secrunning"><a href="#db" class="text-black">Running the DbMigrator</a>
+                                        </li>
+                                        <li id="secapp"><a href="#run" class="text-black">Run the application</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card  border-0 box  bg-advertise ">
+                            <div class="card-body abp-community-card  rounded-3 bg-sec ">
+                                <div class="row  ">
+                                    <div class="col-lg-5 col-md-5 col-5"> <img src="Assets/images/React_logo.png"
+                                            alt="raaghu logo" class="w-100"></div>
+                                    <div class="col-lg-7 mt-1  col-md-7 mt-1 col-7"> <img
+                                            src="Assets/images/abp-sec.png" alt="raaghu logo" class="w-100"></div>
+                                    <!-- <div class="col-lg-6"><img src="Assets/images/abp-com.svg" alt="raaghu logo" class="w-100"></div> -->
+
+                                </div>
+                                <div class="border-under-sec my-3"></div>
+                                <div class="colored-sec-design py-1">
+                                    <ul class="ps-4">
+                                        <li>CLI for CRUD generation</li>
+                                        <li>Component driven development</li>
+                                        <li>Purpose build UI kit for ABP commercial</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <button type="button" class="btn btn-primary mt-1 w-100" data-bs-toggle="modal"
+                                        data-bs-target="#contactusModal">Contact Us</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+</div>
+                </div>
+
+
+
+            </div>
+
+    </main>
+
+    <!-- bootstrap dependencies -->
+    <script src="Assets/js/bootstrap.min.js"></script>
+    <script src="scripts/translation.js"></script>
+</body>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var languageDropdown = document.getElementById('language-dropdown');
+        languageDropdown.addEventListener('change', function () {
+            var selectedLanguage = languageDropdown.value;
+            if (selectedLanguage === 'pt') {
+                // Sidebar
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                // Sidebar
+
+
+                // Body Content
+                document.getElementById('conn').textContent = 'Criar o banco de dados';
+                document.getElementById('constring').textContent = 'Cadeia de conexão';
+                document.getElementById('check').textContent = 'Verifique a string de conexão no arquivo appsettings.json no projeto .Web.';
+                document.getElementById('about').textContent = 'Sobre as strings de conexão e sistemas de gerenciamento de banco de dados';
+                document.getElementById('theSol').innerHTML = 'A solução está configurada para usar Entity Framework Core com MS SQL Server por padrão. No entanto, se você selecionou outro DBMS usando o <span class="txt-color">-dbms</span> parâmetro no comando ABP CLI <span class="txt-color">novo</span> (como <span class="txt-color">-dbms MySQL</span>), a string de conexão pode ser diferente para você.';
+                document.getElementById('EFC').innerHTML = 'EF Core suporta <a href="https://learn.microsoft.com/en-us/ef/core/providers/">vários </a>provedores de banco de dados e você pode usar qualquer DBMS compatível. Ver <a href="https://docs.abp.io/en/abp/latest/Entity-Framework-Core">a Entidade Estrutura documento de integração</a> para aprender a <a href="https://docs.abp.io/en/abp/latest/Entity-Framework-Core-Other-DBMS">switch para outro DBMS</a> se você precisar mais tarde.';
+                document.getElementById('DMS').textContent = 'Migrações de banco de dados';
+                document.getElementById('TheSol').innerHTML = 'A solução usa o <a href="https://learn.microsoft.com/en-us/ef/core/managing-schemas/migrations/?tabs=dotnet-core-cli">Entidade Migrações do Framework Core Code First.</a> Ele vem com um <span aplicativo de console class="txt-color">.DbMigrator</span> que <strong>aplica-se as migrações</strong> e também <strong>semeia os dados iniciais.</strong> é útil tanto no <strong>desenvolvimento</strong> quanto na <strong>produção</strong> ambiente.';
+                document.getElementById('db').textContent = 'O projeto .DbMigrator tem seu próprio appsettings.json. Portanto, se você alterou a string de conexão acima, altere também esta.';
+                document.getElementById('Initial').textContent = 'A migração inicial';
+                document.getElementById('DBapp').innerHTML = '<span class="txt-color">.DbMigrator</span> aplicativo <strong>cria automaticamente o Migração inicial</strong> na primeira execução.';
+                document.getElementById('ifYou').innerHTML = '<strong>Se você estiver usando o Visual Studio, pode pular para Executando o DbMigrator seção.</strong> No entanto, outros IDEs (por exemplo, Rider) podem ter problemas para o primeiro run, pois adiciona a migração inicial e compila o projeto. Neste caso, abra a terminal de linha de comando na pasta do <span class="txt-color">.DbMigrator</span> projeto e execute o seguinte comando:';
+                document.getElementById('Runn').textContent = 'Executando o DbMigrator';
+                document.getElementById('RTC').textContent = 'Clique com o botão direito no projeto .DbMigrator e selecione Set as StartUp Project';
+                document.getElementById('Hit').textContent = 'Pressione F5 (ou Ctrl+F5) para executar o aplicativo. Terá uma saída como mostrado abaixo:';
+                document.getElementById('run').innerHTML = 'Dados iniciais <a href="https://docs.abp.io/en/abp/latest/Data-Seeding">semente </a>cria o usuário <span class="txt-color">admin</span> no banco de dados (com o a senha é <span class="txt-color">.1q2w3E*</span>) que é usada para fazer login no a aplicação. Então, você precisa usar <span class="txt-color">.DbMigrator</span> em menos uma vez para um novo banco de dados.';
+                document.getElementById('RunThe').textContent = 'Execute o aplicativo';
+                document.getElementById('Warn').innerHTML = 'Aviso: quando você cria uma solução ABP, os pacotes do lado do cliente estão sendo restaurados por ABP CLI e Suite. Mas se você buscar o código-fonte que foi confirmado por outro membro da equipe, sua pasta <span class="txt-color">libs</span> estará vazia. Antes iniciando o aplicativo, execute <span class="txt-color">abp install-libs</span> comando em seu diretório da Web para restaurar as bibliotecas do lado do cliente. Isso vai preencha a pasta <span class="txt-color">libs</span>. Certifique-se de que o projeto <span class="txt-color">.Web</span> seja o projeto de inicialização. Execute o aplicativo que abrirá a página de <strong>login</strong> em seu navegador:';
+                document.getElementById('USe').innerHTML = 'Use Ctrl+F5 no Visual Studio (em vez de F5) para executar o aplicativo sem depuração. Se você não tiver um propósito de depuração, isso será mais rápido.';
+                document.getElementById('TheApp').innerHTML = 'O aplicativo está instalado e funcionando. Você pode começar a desenvolver seu aplicativo baseado em este modelo de inicialização.';
+                document.getElementById('NS').innerHTML = 'Próxima Etapa';
+                document.getElementById('WebTut').innerHTML = '<a href="Creating-The-Server-Side.html">Tutorial de desenvolvimento de aplicativos da Web</a>';
+                // For In this doc section
+                document.getElementById('inthisdoc').innerHTML = 'neste documento';
+                document.getElementById('secconn').innerHTML = '<a href="#conn" class="text-black">String de conexão</a>';
+                document.getElementById('secdatabase').innerHTML = '<a href="#conn" class="text-black">Migrações de banco de dados</a>';
+                document.getElementById('secthe').innerHTML = '<a href="#db" class="text-black">A migração inicial</a>';
+                document.getElementById('secrunning').innerHTML = '<a href="#db" class="text-black">Executando o DbMigrator</a>';
+                document.getElementById('secapp').innerHTML = '<a href="#run" class="text-black">Execute o aplicativo</a>';
+
+            }
+
+            else if (selectedLanguage === 'French') {
+                // Body Content
+                document.getElementById('conn').textContent = 'Créer la base de données';
+                document.getElementById('constring').textContent = 'chaîne de connexion';
+                document.getElementById('check').textContent = 'Vérifiez la chaîne de connexion dans le fichier appsettings.json du projet .web.';
+                document.getElementById('about').textContent = 'À propos des chaînes de connexion et des systèmes de gestion de base de données';
+                document.getElementById('theSol').innerHTML = 'La solution est configurée pour utiliser Entity Framework Core avec MS SQL Server par défaut. Cependant, si vous avez sélectionné un autre SGBD à l\'aide du paramètre <span class="txt-color">-dbms</span> dans la commande CLI ABP <span class="txt-color">new</span> (tel que < span class="txt-color">-dbms MySQL</span>), la chaîne de connexion peut être différente pour vous.';
+                document.getElementById('EFC').innerHTML = 'EF Core prend en charge <a href="https://learn.microsoft.com/en-us/ef/core/providers/">diverses</a>bases de données de prestataires bancaires et vous pouvez utiliser n\'importe quel SGBD compatible. Consultez <a href="https://docs.abp.io/en/abp/latest/Entity-Framework-Core">le document d\'intégration Entity Framework</a> pour savoir comment <a href="https:/ /docs.abp.io/en/abp/latest/Entity-Framework-Core-Other-DBMS">passez à un autre SGBD</a> si vous en avez besoin plus tard.';
+                document.getElementById('DMS').textContent = 'Migrations de bases de données';
+                document.getElementById('TheSol').innerHTML = 'La solution utilise <a href="https://learn.microsoft.com/en-us/ef/core/managing-schemas/migrations/?tabs=dotnet-core-cli">Code First Framework Core Migrations Entity . </a> Il est livré avec une application console <span class="txt-color">.DbMigrator</span> qui <strong>applique les migrations</strong> et <strong>génère également les données initiales.</strong > est utile dans les environnements de <strong>développement</strong> et de <strong>production</strong>.';
+                document.getElementById('db').textContent = 'Le projet .DbMigrator a son propre appsettings.json. Donc, si vous avez modifié la chaîne de connexion ci-dessus, modifiez également celle-ci.';
+                document.getElementById('Initial').textContent = 'La migration initiale';
+                document.getElementById('DBapp').innerHTML = 'L\'application <span class="txt-color">.DbMigrator</span> <strong>crée automatiquement le Migrateur initial</strong> lors de la première exécution.';
+                document.getElementById('ifYou').innerHTML = '<strong>Si vous utilisez Visual Studio, vous pouvez passer à la section Exécution de DbMigrator.</strong> Cependant, d\'autres IDE (par exemple, Rider) peuvent rencontrer des problèmes lors de la première exécution, car ils ajoutent la migration initiale et compilent le projet. Dans ce cas, ouvrez un terminal de ligne de commande dans le dossier du projet <span class="txt-color">.DbMigrator</span> et exécutez la commande suivante :';
+                document.getElementById('Runn').textContent = 'Exécution de DbMigrator';
+                document.getElementById('RTC').textContent = 'Faites un clic droit sur le projet .DbMigrator et sélectionnez Définir comme projet de démarrage';
+                document.getElementById('Hit').textContent = 'Appuyez sur F5 (ou Ctrl+F5) pour exécuter l\'application. Il aura une sortie comme indiqué ci-dessous :';
+                document.getElementById('run').innerHTML = 'Les données initiales <a href="https://docs.abp.io/en/abp/latest/Data-Seeding">seed </a>créent l\'utilisateur <span class="txt-color">admin</span> dans la base de données (avec le mot de passe étant <span class="txt-color">.1q2w3E*</span>) qui est utilisé pour se connecter à l\'application. Vous devez donc utiliser <span class="txt-color">.DbMigrator</span> au moins une fois pour une nouvelle base de données.';
+                document.getElementById('RunThe').textContent = 'exécuter l\'application';
+                document.getElementById('Warn').innerHTML = 'Avertissement : lorsque vous créez une solution ABP, les packages côté client sont restaurés par ABP CLI et Suite. Mais si vous récupérez le code source qui a été validé par un autre membre de l\'équipe, votre dossier <span class="txt-color">libs</span> sera vide. Avant de démarrer l\'application, exécutez la commande <span class="txt-color">abp install-libs</span> dans votre répertoire Web pour restaurer les bibliothèques côté client. Cela remplira le dossier <span class="txt-color">libs</span>. Assurez-vous que le projet <span class="txt-color">.Web</span> est le projet de démarrage. Exécutez l\'application qui ouvrira la page de <strong>connexion</strong> dans votre navigateur :';
+
+
+
+                document.getElementById('USe').innerHTML = 'Utilisez Ctrl + F5 dans Visual Studio (au lieu de F5) pour exécuter l\'application sans débogage. Si vous n\'avez pas d\'objectif de débogage, ce sera plus rapide.';
+                document.getElementById('TheApp').innerHTML = 'L\'application est opérationnelle. Vous pouvez commencer à développer votre application sur la base de ce modèle de démarrage.';
+                document.getElementById('NS').innerHTML = 'L\'étape suivante';
+                document.getElementById('WebTut').innerHTML = '<a href="Creating-The-Server-Side.html">Tutoriel de développement d\'applications Web</a>';
+                // For In this doc section
+                document.getElementById('inthisdoc').innerHTML = 'dans ce document';
+                document.getElementById('secconn').innerHTML = '<a href="#conn" class="text-black">Chaîne de connexion</a>';
+                document.getElementById('secdatabase').innerHTML = '<a href="#conn" class="text-black">Migrations de bases de données</a>';
+                document.getElementById('secthe').innerHTML = '<a href="#db" class="text-black">La migration initiale</a>';
+                document.getElementById('secrunning').innerHTML = '<a href="#db" class="text-black">Exécuter DbMigrator</a>';
+                document.getElementById('secapp').innerHTML = '<a href="#run" class="text-black">Lancer l\'application</a>';
+            }
+            else if (selectedLanguage === 'Finnish') {
+                // Sisältö
+                document.getElementById('conn').textContent = 'Luo tietokanta';
+                document.getElementById('constring').textContent = 'Yhteysmerkkijono';
+                document.getElementById('check').textContent = 'Tarkista yhteysmerkkijono projektitiedoston appsettings.json-tiedostosta .web.';
+                document.getElementById('about').textContent = 'Tietoa yhteysmerkkijonoista ja tietokannan hallintajärjestelmistä';
+                document.getElementById('theSol').innerHTML = 'Ratkaisu on määritetty käyttämään oletusarvoisesti Entity Framework Corea MS SQL Serverin kanssa. Jos olet kuitenkin valinnut toisen tietokannanhallintajärjestelmän (DBMS) ABP CLI:n <span class="txt-color">new</span> -komentoon antamalla parametrin <span class="txt-color">-dbms</span> (kuten <span class="txt-color">-dbms MySQL</span>), yhteysmerkkijono voi olla sinulle erilainen.';
+                document.getElementById('EFC').innerHTML = 'EF Core tukee <a href="https://learn.microsoft.com/en-us/ef/core/providers/">monenlaisia</a> tietokantapalveluntarjoajia, ja voit käyttää mitä tahansa yhteensopivaa DBMS-järjestelmää. Katso <a href="https://docs.abp.io/en/abp/latest/Entity-Framework-Core">Entity Framework -integroinnin dokumentaatio</a> saadaksesi ohjeita, kuinka <a href="https://docs.abp.io/en/abp/latest/Entity-Framework-Core-Other-DBMS">siirtyä toiseen DBMS-järjestelmään</a> tarvittaessa.';
+                document.getElementById('DMS').textContent = 'Tietokannan migraatiot';
+                document.getElementById('TheSol').innerHTML = 'Ratkaisu käyttää <a href="https://learn.microsoft.com/en-us/ef/core/managing-schemas/migrations/?tabs=dotnet-core-cli">Entity Framework Coren Code First -migraatioita. </a> Se sisältää <span class="txt-color">.DbMigrator</span> -konsolisovelluksen, joka <strong>soveltaa migraatioita</strong> ja <strong>generoi myös alkuperäiset tiedot.</strong> Se on hyödyllinen <strong>kehitys-</strong> ja <strong>tuotantoympäristöissä.</strong>';
+                document.getElementById('db').textContent = '.DbMigrator-projektiin liittyy oma appsettings.json-tiedosto. Jos olet muokannut yllä olevaa yhteysmerkkijonoa, muokkaa myös tätä tiedostoa.';
+                document.getElementById('Initial').textContent = 'Alkuperäinen migraatio';
+                document.getElementById('DBapp').innerHTML = '<span class="txt-color">.DbMigrator</span>-sovellus <strong>luo automaattisesti alkuperäisen migraation</strong> ensimmäisellä suorituskerralla.';
+                document.getElementById('ifYou').innerHTML = '<strong>Jos käytät Visual Studioa, voit siirtyä kohtaan DbMigratorin suorittaminen.</strong> Kuitenkin toiset IDE:t (kuten Rider) voivat kohdata ongelmia ensimmäisellä suorituskerralla, koska ne lisäävät alkuperäisen migraation ja kääntävät projektin. Tässä tapauksessa avaa komentokehote projektikansiossa <span class="txt-color">.DbMigrator</span> ja suorita seuraava komento:';
+                document.getElementById('Runn').textContent = 'DbMigratorin suorittaminen';
+                document.getElementById('RTC').textContent = 'Napsauta hiiren kakkospainikkeella .DbMigrator-projektia ja valitse Aseta käynnistysprojektiksi';
+                document.getElementById('Hit').textContent = 'Paina F5 (tai Ctrl+F5) suorittaaksesi sovelluksen. Tulos näyttää alla olevan kaltaiselta:';
+                document.getElementById('run').innerHTML = '<a href="https://docs.abp.io/en/abp/latest/Data-Seeding">Alkuperäiset siemenarvot</a> luovat tietokantaan käyttäjän <span class="txt-color">admin</span> (salasana on <span class="txt-color">.1q2w3E*</span>), jota käytetään sovellukseen kirjautumiseen. Joten sinun tulee käyttää <span class="txt-color">.DbMigrator</span> ainakin kerran uutta tietokantaa varten.';
+                document.getElementById('RunThe').textContent = 'suorita sovellus';
+                document.getElementById('Warn').innerHTML = 'Varoitus: Kun luot ABP-ratkaisun, asiakaspuolen paketit palautetaan ABP CLI:n ja Suite:n toimesta. Jos kuitenkin noudatat koodia, joka on tarkistettu toisen tiimin jäsenen toimesta, <span class="txt-color">libs</span>-kansio voi olla tyhjä. Ennen sovelluksen käynnistämistä suorita komento <span class="txt-color">abp install-libs</span> web-kansiossasi asiakaspuolen kirjastojen palauttamiseksi. Tämä täyttää <span class="txt-color">libs</span>-kansion. Varmista, että <span class="txt-color">.Web</span>-projekti on käynnistysprojektina. Käynnistä sovellus, joka avaa <strong>kirjautumissivun</strong> selaimessasi:';
+                document.getElementById('USe').innerHTML = 'Käytä Visual Studion Ctrl + F5 -komentoa (F5:n sijaan) suorittaaksesi sovelluksen ilman vianetsintää. Tämä on nopeampaa, jos et tarvitse vianetsintää.';
+                document.getElementById('TheApp').innerHTML = 'Sovellus on käyttövalmis. Voit alkaa kehittää sovellustasi tämän käynnistysmallin pohjalta.';
+                document.getElementById('NS').innerHTML = 'Seuraava vaihe';
+                document.getElementById('WebTut').innerHTML = '<a href="Creating-The-Server-Side.html">Web-sovelluksen kehitysohjeet</a>';
+                // Tässä asiakirjaosassa
+
+                document.getElementById('inthisdoc').innerHTML = 'tässä asiakirjassa';
+                document.getElementById('secconn').innerHTML = '<a href="#conn" class="text-black">Yhteysmerkkijono</a>';
+                document.getElementById('secdatabase').innerHTML = '<a href="#conn" class="text-black">Tietokannan migraatiot</a>';
+                document.getElementById('secthe').innerHTML = '<a href="#db" class="text-black">Alkuperäinen migraatio</a>';
+                document.getElementById('secrunning').innerHTML = '<a href="#db" class="text-black">DbMigratorin suorittaminen</a>';
+                document.getElementById('secapp').innerHTML = '<a href="#run" class="text-black">Sovelluksen käynnistäminen</a>';
+
+            }
+            else if (selectedLanguage === 'Slovak') {
+                // Sisältö
+                document.getElementById('conn').textContent = 'Vytvorenie databázy';
+                document.getElementById('constring').textContent = 'Reťazec pre pripojenie';
+                document.getElementById('check').textContent = 'Skontrolujte reťazec pre pripojenie v súbore appsettings.json projektu .web.';
+                document.getElementById('about').textContent = 'Informácie o reťazcoch pre pripojenie a správcovských systémoch databázy';
+                document.getElementById('theSol').innerHTML = 'Riešenie je predvolené na používanie Entity Framework Core s MS SQL Serverom. Ak ste však zvolili iný správcovský systém databázy (DBMS) prostredníctvom ABP CLI príkazu <span class="txt-color">new</span> s parametrom <span class="txt-color">-dbms</span> (napr. <span class="txt-color">-dbms MySQL</span>), reťazec pre pripojenie môže byť iný.';
+                document.getElementById('EFC').innerHTML = 'EF Core podporuje <a href="https://learn.microsoft.com/en-us/ef/core/providers/">rôzne</a> poskytovatele databázy a môžete použiť akýkoľvek kompatibilný DBMS. Pozrite si <a href="https://docs.abp.io/en/abp/latest/Entity-Framework-Core">dokumentáciu k integrácii Entity Framework</a> pre pokyny o <a href="https://docs.abp.io/en/abp/latest/Entity-Framework-Core-Other-DBMS">prepnutí na iný DBMS</a>, ak je to potrebné.';
+                document.getElementById('DMS').textContent = 'Migrácie databázy';
+                document.getElementById('TheSol').innerHTML = 'Riešenie používa migrácie v kóde podľa Entity Framework Core. Obsahuje konzolovú aplikáciu <span class="txt-color">.DbMigrator</span>, ktorá <strong>aplikuje migrácie</strong> a <strong>generuje aj počiatočné dáta.</strong> Je to užitočné pre <strong>prostredie vývoja</strong> aj <strong>produkcie.</strong>';
+                document.getElementById('db').textContent = '.DbMigrator projekt má vlastný súbor appsettings.json. Ak ste zmenili reťazec pre pripojenie vyššie, upravte aj tento súbor.';
+                document.getElementById('Initial').textContent = 'Počiatočná migrácia';
+                document.getElementById('DBapp').innerHTML = 'Aplikácia <span class="txt-color">.DbMigrator</span> <strong>automaticky vytvorí počiatočnú migráciu</strong> pri prvom spustení.';
+                document.getElementById('ifYou').innerHTML = '<strong>Ak používate Visual Studio, môžete prejsť na sekciu Spustenie DbMigratora.</strong> Avšak niektoré IDE (ako Rider) môžu naraziť na problémy pri prvom spustení, pretože pridávajú počiatočnú migráciu a prekladajú projekt. V tom prípade otvorte terminál v priečinku projektu <span class="txt-color">.DbMigrator</span> a spustite nasledujúci príkaz:';
+                document.getElementById('Runn').textContent = 'Spustenie DbMigratora';
+                document.getElementById('RTC').textContent = 'Kliknutím pravým tlačidlom myši na projekt .DbMigrator vyberte Nastaviť ako spustiteľný projekt';
+                document.getElementById('Hit').textContent = 'Stlačte kláves F5 (alebo Ctrl+F5) pre spustenie aplikácie. Výsledok by mal vyzerať podobne ako nižšie:';
+                document.getElementById('run').innerHTML = '<a href="https://docs.abp.io/en/abp/latest/Data-Seeding">Počiatočné údaje</a> vytvoria do databázy používateľa <span class="txt-color">admin</span> (heslo je <span class="txt-color">.1q2w3E*</span>), ktorého použijete na prihlásenie do aplikácie. Preto musíte použiť <span class="txt-color">.DbMigrator</span> aspoň raz pre novú databázu.';
+                document.getElementById('RunThe').textContent = 'Spustenie aplikácie';
+                document.getElementById('Warn').innerHTML = 'Upozornenie: Pri vytváraní riešenia ABP sú klientovské balíky obnovené ABP CLI a Suite. Avšak ak nasledujete kód, ktorý bol skontrolovaný iným členom tímu, adresár <span class="txt-color">libs</span> môže byť prázdny. Pred spustením aplikácie spustite príkaz <span class="txt-color">abp install-libs</span> v priečinku web, aby boli obnovené klientovské knižnice. Tým sa naplní adresár <span class="txt-color">libs</span>. Uistite sa, že projekt <span class="txt-color">.Web</span> je nastavený ako spustiteľný projekt. Spustite aplikáciu, ktorá otvorí <strong>stránku prihlásenia</strong> vo vašom prehliadači:';
+                document.getElementById('USe').innerHTML = 'Pre spustenie aplikácie bez ladenia použite skratku Ctrl + F5 vo Visual Studiu namiesto klávesu F5. Toto je rýchlejšie, ak nie je potrebné ladenie.';
+                document.getElementById('TheApp').innerHTML = 'Aplikácia je pripravená na použitie. Môžete začať vývoj na základe tejto šablóny spustenia.';
+                document.getElementById('NS').innerHTML = 'Ďalší krok';
+                document.getElementById('WebTut').innerHTML = '<a href="Creating-The-Server-Side.html">Návod na vývoj serverovej časti webu</a>';
+                // Tässä asiakirjaosassa
+
+                document.getElementById('inthisdoc').innerHTML = 'v tejto dokumentácii';
+                document.getElementById('secconn').innerHTML = '<a href="#conn" class="text-black">Reťazec pre pripojenie</a>';
+                document.getElementById('secdatabase').innerHTML = '<a href="#conn" class="text-black">Migrácie databázy</a>';
+                document.getElementById('secthe').innerHTML = '<a href="#db" class="text-black">Počiatočná migrácia</a>';
+                document.getElementById('secrunning').innerHTML = '<a href="#db" class="text-black">Spustenie DbMigratora</a>';
+                document.getElementById('secapp').innerHTML = '<a href="#run" class="text-black">Spustenie aplikácie</a>';
+
+
+            }
+            else if (selectedLanguage === 'spanish') {
+            } else {
+
+            }
+        });
+    });
+
+
+
+
+
+</script>
+
+</html>

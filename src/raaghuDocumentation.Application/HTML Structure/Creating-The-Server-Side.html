@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="Assets/images/raaghu-icon.png">
+    <title>Raaghu - Creating The Server Side</title>
+
+    <!-- bootstrap dependencies -->
+    <link rel="stylesheet" href="Assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/index.css">
+    <link href="Assets/prism.css" rel="stylesheet" />
+    <script src="Assets/prism.js"></script>
+    <script src="/index.js"></script>
+</head>
+
+
+<body>
+
+    <main>
+
+        <nav class="navbar navbar-expand-lg navbar-light  ">
+            <div class="container-fluid ">
+                <div class="navbar-toggler-container">
+                    <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#sidebar,#navbarSupportedContent"
+                        aria-controls="sidebar" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                </div>
+                <a class="text-black navbar-brand" href="/">
+                    <img src="Assets/images/raaghu_logs.png" alt="raaghu logo" class="w-75  pe-lg-0">
+                </a>
+
+                <div class="collapse navbar-collapse align  justify-content-lg-end " id="navbarSupportedContent">
+                    <ul class="navbar-nav  mb-2 mb-lg-0 ">
+                        <li class="nav-item me-5">
+                            <a class="nav-link active " aria-current="page"
+                                href="https://raaghu-website-staging.netlify.app/raaghu-mfe-portal/_accordion.html">Components</a>
+                        </li>
+                        <li class="nav-item me-5">
+                            <a class="nav-link active " aria-current="page" href="#"><span
+                                    class="doc-color">Documentation</span></a>
+                        </li>
+                        <li class="nav-item me-5">
+                            <a class="nav-link active " aria-current="page"
+                                href="https://raaghu-website-staging.netlify.app/raaghu-mfe-portal/_accordion.html#">Support</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link active " aria-current="page"
+                                href="https://raaghu-website-staging.netlify.app/faq">FAQ</a>
+                        </li>
+                        <!-- <li class=" nav-item dropdown active">
+                            <a class="nav-link  text-dark me-5" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Platform
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-center " aria-labelledby="navbarDropdown">
+                                <ul class="list-unstyled dropdown-arrow">
+                                    <li class=" ps-4">
+                                        <p class="title pt-2">Raaghu Platform</p>
+                                        <div class="row">
+                                            <div class="col-lg-6 col-md-6">
+                                                <a href="https://portal.raaghu.io/" target="_blank"
+                                                    class="p-0 text-decoration-none text-reset">
+                                                    <div class="d-flex align-items-center gap-3">
+
+                                                        <img src="Assets/images/raaghu-portal-mg.svg"
+                                                            alt="raaghu-portal" class="mb-3">
+                                                        <p class="link-name">Raaghu Portal</p>
+
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="col-lg-6 col-md-6">
+                                                <a href="https://portal.raaghu.io/#Components-section" target="_blank"
+                                                    class="p-0 text-decoration-none text-reset">
+                                                    <div class="d-flex align-items-center gap-3">
+                                                        <img src="Assets/images/raaghu-components-mg.svg"
+                                                            alt="raaghu-components" class="mb-3">
+                                                        <p class="link-name">Raaghu Components</p>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-6 col-md-6">
+                                                <a href="https://portal.raaghu.io/#Elements-section" target="_blank"
+                                                    class="p-0 text-decoration-none text-reset">
+                                                    <div class="d-flex align-items-center gap-3">
+                                                        <img src="Assets/images/raaghu-elements-mg.svg"
+                                                            alt="raaghu-portal" class="mb-2">
+                                                        <p class="pt-2 link-name">Raaghu Elements</p>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="col-lg-6 col-md-6">
+                                                <div class="d-flex align-items-center gap-3">
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="bgcolor-dropdown">
+                                        <div class="ps-4">
+                                            <p class="pt-3 pb-1 title">WORKS ON</p>
+                                            <div class="row">
+                                                <div class="col-md-2 mb-2">
+                                                    <img src="Assets/images/asplogo-mg.svg" alt="asplogo logo"
+                                                        width="80%">
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <img src="Assets/images/abplogo-mg.svg" alt="abplogo logo"
+                                                        width="50%">
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item me-5">
+                            <a class="nav-link active " aria-current="page"
+                                href="https://www.raaghu.io/features.html">Features</a>
+                        </li>
+                        <li class="nav-item me-5">
+                            <a class="nav-link active " aria-current="page"
+                                href="https://portal.raaghu.io/">Documentation</a>
+                        </li>
+                        <button type="button" class="btn btn-primary btn-contact">contact</button>
+                        <a href="https://github.com/Wai-Technologies/raaghu-angular" target="_blank">
+                            <li class="ps-lg-5 pt-2">
+                                <img src="Assets/images/github-logo.svg" alt="abplogo logo" width="100%"
+                                    class="github-logo">
+                            </li>
+                        </a> -->
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="wrapper container-fluid">
+
+            <div class="row">
+
+                <div id="sidebar" class="col-12 col-lg-2 col-md-4 col-xl-2 col-xxl-2 collapse d-m-block mx-0 mx-lg-3 mx-md-3 mx-xl-3 mx-xxl-3 show">
+
+                    <nav>
+                        <div class="sidebar-header ">
+                            <a href="/" class="text-bg-dark">
+                                <h3 class="fs-5 fw-normal" id="tableOfContent">Table Of Content</h3>
+                            </a>
+                        </div>
+
+                        <div class="accordion accordion-flush mx-3 doc-acc accordion-button-top" id="accordionExample">
+
+                            <div class="row pb-4">
+                                <div class="col-6 col-lg-6 col-md-6">
+                                    <select id="language-dropdown" class="sidebar-button">
+                                        <option value="en" selected>English</option>
+                                        <option value="pt">Português</option>
+                                        <option value="fr">French</option>
+                                        <option value="fi">Finnish</option>
+                                        <option value="hi">Hindi</option>
+                                        <option value="it">Italian</option>                                        
+                                        <option value="sk">Slovak</option>
+                                        <option value="de">German</option>
+                                        <option value="ru">Russian</option>
+                                        <option value="zh">Chinese</option>
+                                        <option value="af">Afrikaan</option>
+                                        <option value="ar">Arabic</option>
+                                        <!-- Add more language options if needed -->
+                                    </select>
+                                </div>
+                                <div class="col-6 col-lg-6 col-md-6">
+                                    <select class="sidebar-button w-100">
+                                        <option value="option1" id="version">Version</option>
+                                        <option value="option2" id="version">Version 2</option>
+                                        <option value="option3">Version 3</option>
+                                        <option value="option4">Version 4</option>
+                                    </select>
+
+                                </div>
+                            </div>
+                            <div class="accordion-item bg-dark">
+                                <h2 class="accordion-header" id="headingOne">
+                                    <a href="Getting-Started.html">
+                                        <button
+                                            class="accordion-button d-flex flex-row-reverse justify-content-end p-0 bg-dark mt-1"
+                                            type="button" data-bs-toggle="collapse" data-bs-target="#coll"
+                                            aria-expanded="false" aria-controls="collapseOne" id="Getting">
+                                            Getting Started
+                                        </button></a>
+                                </h2>
+
+                                <div id="coll" class="accordion-collapse collapse  border-0 rounded-0 p-0"
+                                    aria-labelledby="headOne" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Setup-Your-Development-Environment.html" id="setupDev">Setup your
+                                            development
+                                            environment</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Creating-A-New-Solution.html" id="creatingNewSol">Creating A New
+                                            Solution</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Running-The-Solution.html" id="runningTheSol">Running the Solution</a>
+                                    </div>
+                                </div>
+                                <h2 class="accordion-header" id="headingTwo">
+                                    <button
+                                        class="accordion-button d-flex flex-row-reverse show justify-content-end p-0 bg-dark mt-2"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                        aria-expanded="true" aria-controls="collapseOne" id="tut">
+                                        Tutorials
+                                    </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse show  border-0 rounded-0 p-0"
+                                    aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <h2 class="accordion-header" id="headingTwo">
+                                            <button
+                                                class="accordion-button d-flex flex-row-reverse show justify-content-end p-0 bg-dark mt-2"
+                                                type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                                                aria-expanded="true" aria-controls="collapseOne" id="webAppDev">
+                                                Web Application Development
+                                            </button>
+                                        </h2>
+                                        <div id="collapseThree"
+                                            class="accordion-collapse collapse show border-0 rounded-0 p-0 pt-2"
+                                            aria-labelledby="headingTwo" data-bs-parent="#accordionExamplee">
+                                            <div class="accordion-body bg-dark px-4 p-1">
+                                                <a href="Creating-The-Server-Side.html" id="creatingServer"><span
+                                                        class="accordian-active">Creating the Server
+                                                        Side</span></a>
+                                            </div>
+                                        </div>
+                                        <div id="collapseThree"
+                                            class="accordion-collapse collapse show border-0 rounded-0 p-0"
+                                            aria-labelledby="headingTwo" data-bs-parent="#accordionExamplee">
+                                            <div class="accordion-body bg-dark px-4 p-1">
+                                                <a href="The-Book-List-Page.html" id="bookList">The Book List Page</a>
+                                            </div>
+                                        </div>
+                                        <div id="collapseThree"
+                                            class="accordion-collapse collapse show border-0 rounded-0 p-0"
+                                            aria-labelledby="headingTwo" data-bs-parent="#accordionExamplee">
+                                            <div class="accordion-body bg-dark px-4 p-1">
+                                                <a href="Creating-Updating-And-Deleting-Book.html"
+                                                    id="creatingUpdating">Creating,Updating
+                                                    And
+                                                    Deleting Book</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <h2 class="accordion-header" id="headingFour">
+                                    <button
+                                        class="accordion-button d-flex flex-row-reverse justify-content-end p-0 bg-dark mt-2"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour"
+                                        aria-expanded="false" aria-controls="collapseOne" id="guides">
+                                        Guides
+                                    </button>
+                                </h2>
+                                <div id="collapseFour" class="accordion-collapse collapse  border-0 rounded-0 p-0"
+                                    aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Customizing-The-Modules.html" id="customizingTheModules">Customizing
+                                            the Modules</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Identity-Server-Deployment.html" id="identityServerDeploy">Identity
+                                            Server Deployment</a>
+                                    </div>
+                                </div>
+
+
+                                <h2 class="accordion-header" id="headingFive">
+                                    <button
+                                        class="accordion-button d-flex flex-row-reverse justify-content-end p-0 bg-dark mt-2"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive"
+                                        aria-expanded="false" aria-controls="collapseOne" id="samples">
+                                        Samples
+                                    </button>
+                                </h2>
+                                <div id="collapseFive" class="accordion-collapse collapse  border-0 rounded-0 p-0"
+                                    aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="All-Samples.html" id="allSamples">All Samples</a>
+                                    </div>
+                                </div>
+                                <h2 class="accordion-header" id="headingSix">
+                                    <a href="Startup-Template.html">
+                                        <button
+                                            class="accordion-button d-flex flex-row-reverse justify-content-end p-0 bg-dark mt-2"
+                                            type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix"
+                                            aria-expanded="false" aria-controls="collapseOne" id="startupTemplate">
+                                            Startup Template
+                                        </button></a>
+                                </h2>
+                                <div id="collapseSix" class="accordion-collapse collapse  border-0 rounded-0 p-0"
+                                    aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <h2 class="accordion-header" id="headingSix">
+                                            <button
+                                                class="accordion-button d-flex flex-row-reverse justify-content-end p-0 bg-dark mt-2"
+                                                type="button" data-bs-toggle="collapse" data-bs-target="#headingS"
+                                                aria-expanded="false" aria-controls="collapseOne"
+                                                id="applicationTemplate">
+                                                Application Templates
+                                            </button>
+                                        </h2>
+                                        <div id="headingS"
+                                            class="accordion-collapse collapse  border-0 rounded-0 p-0 pt-2"
+                                            aria-labelledby="headingSix" data-bs-parent="#accordionExamplee">
+                                            <div class="accordion-body bg-dark px-4 p-1">
+                                                <a href="Creating-Solution.html" id="creatingSolution">Creating
+                                                    Solution</a>
+                                            </div>
+                                        </div>
+                                        <div id="headingS" class="accordion-collapse collapse  border-0 rounded-0 p-0"
+                                            aria-labelledby="headingSix" data-bs-parent="#accordionExamplee">
+                                            <div class="accordion-body bg-dark px-4 p-1">
+                                                <a href="Solution-Structure.html" id="solutionStruct">Solution
+                                                    Structure</a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                                <h2 class="accordion-header" id="headingSeven">
+                                    <button
+                                        class="accordion-button d-flex flex-row-reverse justify-content-end p-0 bg-dark mt-2"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven"
+                                        aria-expanded="false" aria-controls="collapseOne" id="appModules">
+                                        Application Modules
+                                    </button>
+                                </h2>
+                                <div id="collapseSeven" class="accordion-collapse collapse  border-0 rounded-0 p-0"
+                                    aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Overall.html" id="overall">Overall</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Account-Module.html" id="ac">Account</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Audit-Logging.html" id="auditLogging">Audit Logging</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Chat.html" id="chat">Chat</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="CMS-Kit-Pro.html" id="CMS">CMS Kit Pro</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="File-Management.html" id="fileMgt">File Management</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Forms.html" id="forms">Forms</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Identity.html" id="identity">Identity</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="OpenIddict.html" id="OpenIddict">OpenIddict</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Language-Management.html" id="languageMgt">Language Management</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Payment.html" id="payment">Payment</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="SaaS.html" id="saas">SaaS</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Text-Template-Management.html" id="ttm">Text Template Management</a>
+                                    </div>
+                                </div>
+                                <h2 class="accordion-header" id="headingNine">
+                                    <a href="UI-Themes.html">
+                                        <button
+                                            class="accordion-button d-flex flex-row-reverse justify-content-end p-0 bg-dark mt-2"
+                                            type="button" data-bs-toggle="collapse" data-bs-target="#headingNine"
+                                            aria-expanded="false" aria-controls="collapseOne" id="ui">
+                                            UI Themes
+                                        </button>
+                                    </a>
+                                </h2>
+                                <h2 class="accordion-header" id="headingReactUITheme">
+                                    <button
+                                        class="accordion-button d-flex flex-row-reverse justify-content-end p-0 bg-dark mt-2"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#headingReactUI"
+                                        aria-expanded="false" aria-controls="collapseOne" id="reactUI">
+                                        React UI
+                                    </button>
+                                </h2>
+                                <div id="headingReactUI" class="accordion-collapse collapse  border-0 rounded-0 p-0"
+                                    aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Customization.html" id="custom">customization</a>
+                                    </div>
+
+                                </div>
+                                <div id="headingReactUI" class="accordion-collapse collapse  border-0 rounded-0 p-0"
+                                    aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Components.html" id="compo">Components</a>
+                                    </div>
+
+                                </div>
+                                <!-- For Release Information -->
+                                <h2 class="accordion-header" id="headingFive">
+                                    <button
+                                        class="accordion-button d-flex flex-row-reverse justify-content-end p-0 bg-dark mt-2"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseLast"
+                                        aria-expanded="false" aria-controls="collapseOne" id="samples">
+                                       <span id="relinfo">Release Information</span> 
+                                    </button>
+                                </h2>
+                                <div id="collapseLast" class="accordion-collapse collapse  border-0 rounded-0 p-0"
+                                    aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Release-Notes.html" id="allSamples"><span id="relnote">Release Notes</span></a>
+                                    </div>
+                                </div>
+                                <!-- ====================================== -->
+                            </div>
+                        </div>
+                        <ul class="list-unstyled CTAs  w-100">
+                            <li>
+                                <a href="https://bootstrapious.com/tutorial/files/sidebar.zip" class="download"
+                                    id="downloadSource">Download
+                                    source</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="col-12 col-lg-8 col-md-7 col-xl-6 col-xxl-6 offset-lg-4 offset-md-5 offset-xl-3 offset-xxl-3 ps-xl-5 ps-xxl-0 px-lg-3 px-md-4 px-xl-0">
+
+                    <!-- Page Content  -->
+                    <div id="content">
+                        <div class="modal fade" id="contactusModal" tabindex="-1" aria-labelledby="contactusModalLabel"
+                            aria-hidden="true">
+
+                            <div class="modal-dialog modal-lg modal-dialog-centered">
+
+                                <div class="modal-content">
+
+                                    <!-- <div class="modal-header">
+                  
+                                  <h5 class="modal-title" id="contactusModalLabel">Modal title</h5>
+                  
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  
+                                </div> -->
+
+                                    <div class="modal-body p-0">
+
+
+
+
+                                        <div class="row">
+
+                                            <div class="col-md-6 col-sm-12 bg-dark">
+
+                                                <div class="mt-5">
+
+                                                    <img src="Assets/images/raaghu-logo-white.png"
+                                                        class="img-fluid w-25 pl-2">
+
+
+
+                                                    <img src="Assets/images/raaghu-banner-modal.png" class="img-fluid">
+
+                                                </div>
+
+                                            </div>
+
+
+
+                                            <div class="col-md-6 col-sm-12">
+
+                                                <div class="row">
+
+                                                    <div class="col-md-12 text-end pull-right">
+
+                                                        <button type="button"
+                                                            class="btn-close float-right pull-right m-3 text-muted"
+                                                            data-bs-dismiss="modal" aria-label="Close"></button>
+
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="p-4">
+
+                                                    <h6>
+
+                                                        Kindly fill the details below
+
+                                                    </h6>
+
+                                                    <p>
+
+                                                        <small> We will get back to you within 48 hours </small>
+
+                                                    </p>
+
+                                                    <div class="mt-5">
+
+                                                        <form method="post" id="want-to-hear-form">
+
+                                                            <div class="mb-3 form-group">
+
+                                                                <label for="emailId" class="form-label">Email ID
+
+                                                                    <span class="text-danger">*</span>
+
+                                                                </label>
+
+                                                                <input type="email" name="emailId"
+                                                                    class="form-control p-2" id="emailId"
+                                                                    placeholder="Enter your email id">
+
+                                                            </div>
+
+                                                            <div class="mb-3 form-group">
+
+                                                                <label for="companyName" class="form-label">Company Name
+
+                                                                    <span class="text-danger">*</span>
+
+                                                                </label>
+
+                                                                <input type="text" class="form-control p-2"
+                                                                    placeholder="Enter your Company Name"
+                                                                    name="companyName" id="companyName">
+
+                                                            </div>
+
+                                                            <div class="mb-3 form-group">
+
+                                                                <label for="message" class="form-label">Message
+
+                                                                    <span class="contactUs-Optional">(Optional)</span>
+
+
+                                                                </label>
+
+                                                                <textarea class="form-control p-2" name="message"
+                                                                    id="message" rows="3"
+                                                                    placeholder="Write your message.."></textarea>
+
+                                                            </div>
+
+                                                            <div class="mb-3 form-check">
+
+                                                                <input type="checkbox" class="form-check-input"
+                                                                    id="exampleCheck1">
+
+                                                                <label class="form-check-label" for="exampleCheck1">I
+                                                                    agree to the <a href="#"> terms & privacy policy
+                                                                    </a></label>
+
+                                                            </div>
+
+                                                            <button type="submit"
+                                                                class="btn btn-primary btn-sm btn-block float-end mb-4">Submit</button>
+
+                                                        </form>
+
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div> <input class="form-control  mb-5" type="search" placeholder="Search" aria-label="Search">
+                        </div>
+                        <div>
+                            <h1 class="fs-2 fw-semibold mb-3" id="WebAPP">Web Application Development Tutorial -</h1>
+                            <h2 class="fw-semibold pt-3 pb-2" id="part">Part 1: Creating Server Side</h2>
+                            <h3 class="fw-semibold pt-3 pb-3" id="AboutThe">About this tutorial</h3>
+                            <p id="developed">
+                                Developed with utilization of following technologies, this tutorial series will guide
+                                you in constructing an ABP Commercial application named Acme.BookStore, which functions
+                                as a tool for managing a catalogue of books and their corresponding authors.
+                            </p>
+                            <ul class="ps-3">
+                                <li class="mt-2" id="EFCdata"><strong>Entity Framework Core</strong> as database provider
+                                </li>
+                                <li class="mt-2" id="raaghuas"><strong>Raghu</strong> as a React UI Framework</li>
+                            </ul>
+                        </div>
+
+
+                        <div>
+                            <h3 class="fw-semibold pt-4 pb-3" id="theNext">The Next Part</h3>
+                            <ul class="ps-3">
+                                <li id="SeeNext">See the <a href="The-Book-List-Page.html">next part</a> of this
+                                    tutorial.</li>
+                            </ul>
+                        </div>
+
+
+
+
+                    </div>
+                </div>
+                <div class="col-12 col-lg-8 col-md-7 col-xl-2 col-xxl-2 docs-page-index offset-lg-4 offset-xl-0 offset-md-5 offset-xxl-0 px-md-4">
+                    <div class="position-fixed  my-3 w-auto mx-lg-0 mx-xl-3 mx-xxl-3 pe-lg-3 pe-xl-0 pe-xxl-0 position-lg-relative">
+                    <div class="card border-0 box rounded-3 mb-3">
+                        <div class="card-body">
+                            <h4 class="card-title py-1" id="inthisdoc">In this document</h4>
+                            <div class="opacity-50">
+                                <ul class="card-text small  list-unstyled ul-ad">
+                                    <li id="partonee"><a href="#" class="text-black">Part 1: Creating Server Side</a>
+                                    </li>
+                                    <li id="aboutt"><a href="#" class="text-black">About this tutorial</a></li>
+                                    <li id="nextpart"><a href="#" class="text-black">The Next Part
+                                        </a></li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card  border-0 box  bg-advertise "  >
+                        <div class="card-body abp-community-card  rounded-3 bg-sec ">
+                            <div class="row  ">
+                                <div class="col-lg-5 col-md-5 col-5"> <img src="Assets/images/React_logo.png" alt="raaghu logo" class="w-100"></div>
+                                <div class="col-lg-7 mt-1  col-md-7 mt-1 col-7"> <img src="Assets/images/abp-sec.png" alt="raaghu logo" class="w-100"></div>
+                                <!-- <div class="col-lg-6"><img src="Assets/images/abp-com.svg" alt="raaghu logo" class="w-100"></div> -->
+
+                            </div>
+                            <div class="border-under-sec my-3"></div>
+                            <div class="colored-sec-design py-1">
+                                <ul class="ps-4">
+                                    <li>CLI for CRUD generation</li>
+                                    <li>Component driven development</li>
+                                    <li>Purpose build UI kit for ABP commercial</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <button type="button" class="btn btn-primary mt-1 w-100" data-bs-toggle="modal"
+                                    data-bs-target="#contactusModal">Contact Us</button>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <!-- <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-0 col-12 docs-page-index">
+                    <div class="card mt-4 top-25 me-lg-4 border-0 shadow py-4">
+                        <div class="card-body">
+                            <h5 class="card-title">In This Document</h5>
+                            <p class="card-text small">Some quick example text to build on the card title and make up
+                                the bulk of the card's content.</p>
+
+                        </div>
+                    </div>
+                </div> -->
+
+            </div>
+
+
+
+        </div>
+
+    </main>
+
+    <!-- bootstrap dependencies -->
+    <script src="Assets/js/bootstrap.min.js"></script>
+    <script src="scripts/translation.js"></script>
+</body>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var languageDropdown = document.getElementById('language-dropdown');
+        languageDropdown.addEventListener('change', function () {
+            var selectedLanguage = languageDropdown.value;
+            if (selectedLanguage === 'pt') {
+                // Sidebar Code in js File
+
+
+                // Body Content
+                document.getElementById('WebAPP').textContent = 'Tutorial de Desenvolvimento de Aplicativos Web -';
+                document.getElementById('part').textContent = 'Parte 1: Criando o lado do servidor';
+                document.getElementById('AboutThe').textContent = 'Sobre este tutorial';
+                document.getElementById('developed').textContent = 'Desenvolvido com a utilização das seguintes tecnologias, esta série de tutoriais guiar você na construção de um aplicativo comercial ABP chamado Acme.BookStore, que funciona como uma ferramenta para gerenciar um catálogo de livros e seus respectivos autores.';
+                document.getElementById('EFC').innerHTML = '<strong>Entity Framework Core</strong> como provedor de banco de dados';
+                document.getElementById('raaghuas').innerHTML = '<strong>Raghu</strong> como React UI Framework';
+                document.getElementById('theNext').textContent = 'A Próxima Parte';
+                document.getElementById('SeeNext').innerHTML = 'Veja a <a href="The-Book-List-Page.html">próxima parte</a> deste tutorial.';
+                // For In this doc section
+                document.getElementById('inthisdoc').innerHTML = 'neste documento';
+                document.getElementById('partonee').innerHTML = '<a href="#" class="text-black">Parte 1: Criando o lado do servidor</a>';
+                document.getElementById('aboutt').innerHTML = '<a href="#" class="text-black">Sobre este tutorial</a>';
+                document.getElementById('nextpart').innerHTML = '<a href="#" class="text-black">A próxima parte</a>';
+
+            }
+            else if (selectedLanguage === 'French') {
+                // Body Content
+                document.getElementById('WebAPP').textContent = 'Tutoriel de développement d\'applications Web -';
+                document.getElementById('part').textContent = 'Partie 1 : Création du côté serveur';
+                document.getElementById('AboutThe').textContent = 'À propos de ce tutoriel';
+                document.getElementById('developed').textContent = 'Développée à l\'aide des technologies suivantes, cette série de didacticiels vous guide dans la création d\'une application ABP commerciale appelée Acme.BookStore, qui fonctionne comme un outil pour gérer un catalogue de livres et leurs auteurs respectifs.';
+                document.getElementById('EFC').innerHTML = '<strong>Entity Framework Core</strong> en tant que fournisseur de base de données';
+                document.getElementById('raaghuas').innerHTML = '<strong>Raghu</strong> en tant que cadre d\'interface utilisateur React';
+                document.getElementById('theNext').textContent = 'La partie suivante';
+                document.getElementById('SeeNext').innerHTML = 'Voir la <a href="The-Book-List-Page.html">partie suivante</a> de ce didacticiel.';
+                // For In this doc section
+                document.getElementById('inthisdoc').innerHTML = 'dans ce document';
+                document.getElementById('partonee').innerHTML = '<a href="#" class="text-black">Partie 1 : Création du côté serveur</a>';
+                document.getElementById('aboutt').innerHTML = '<a href="#" class="text-black">À propos de ce tutoriel</a>';
+                document.getElementById('nextpart').innerHTML = '<a href="#" class="text-black">La partie suivante</a>';
+
+            }
+            else if (selectedLanguage === 'Finnish') {
+                // Body Content
+                document.getElementById('WebAPP').textContent = 'Verkkosovelluskehityksen opetusohjelma -';
+                document.getElementById('part').textContent = 'Osa 1: Palvelinpuolen luominen';
+                document.getElementById('AboutThe').textContent = 'Tietoja tästä opetusohjelmasta';
+                document.getElementById('developed').textContent = 'Tämä seuraavien tekniikoiden avulla kehitetty opetusohjelmasarja opastaa sinua luomaan kaupallisen ABP-sovelluksen nimeltä Acme.BookStore, joka toimii työkaluna kirjojen ja niiden kirjoittajien luettelon hallintaan.';
+                document.getElementById('EFC').innerHTML = '<strong>Entity Framework Core</strong> tietokannan tarjoajana';
+                document.getElementById('raaghuas').innerHTML = '<strong>Raghu</strong> React-käyttöliittymäkehyksenä';
+                document.getElementById('theNext').textContent = 'Seuraava osa';
+                document.getElementById('SeeNext').innerHTML = 'Katso tämän opetusohjelman <a href="The-Book-List-Page.html">seuraava osa</a>.';
+                // For In this doc section
+                document.getElementById('inthisdoc').innerHTML = 'tässä asiakirjassa';
+                document.getElementById('partonee').innerHTML = '<a href="#" class="text-black">Osa 1: Palvelinpuolen luominen</a>';
+                document.getElementById('aboutt').innerHTML = '<a href="#" class="text-black">Tietoja tästä opetusohjelmasta</a>';
+                document.getElementById('nextpart').innerHTML = '<a href="#" class="text-black">Seuraava osa</a>';
+            }
+            else if (selectedLanguage === 'Slovak') {
+                // Obsah tela
+                document.getElementById('WebAPP').textContent = 'Návod na vývoj webových aplikácií -';
+                document.getElementById('part').textContent = 'Časť 1: Vytvorenie serverovej časti';
+                document.getElementById('AboutThe').textContent = 'O tomto návode';
+                document.getElementById('developed').textContent = 'Táto séria návodov vám pomôže vytvoriť komerčnú ABP aplikáciu s názvom Acme.BookStore, ktorá slúži na správu zoznamu kníh a ich autorov.';
+                document.getElementById('EFC').innerHTML = 'Použitie <strong>Entity Framework Core</strong> ako poskytovateľa databázy';
+                document.getElementById('raaghuas').innerHTML = 'Použitie <strong>Raaghu</strong> ako React frameworku pre používateľské rozhranie';
+                document.getElementById('theNext').textContent = 'Ďalšia časť';
+                document.getElementById('SeeNext').innerHTML = 'Prejdite na <a href="The-Book-List-Page.html">ďalšiu časť tohto návodu</a>.';
+                // Pre sekciu V tomto dokumente
+                document.getElementById('inthisdoc').innerHTML = 'v tomto dokumente';
+                document.getElementById('partonee').innerHTML = '<a href="#" class="text-black">Časť 1: Vytvorenie serverovej časti</a>';
+                document.getElementById('aboutt').innerHTML = '<a href="#" class="text-black">O tomto návode</a>';
+                document.getElementById('nextpart').innerHTML = '<a href="#" class="text-black">Ďalšia časť</a>';
+
+
+            }
+            else if (selectedLanguage === 'German') {
+                // Inhalt des Hauptbereichs
+                document.getElementById('WebAPP').textContent = 'Anleitung zur Entwicklung von Webanwendungen -';
+                document.getElementById('part').textContent = 'Teil 1: Erstellen des Serverteils';
+                document.getElementById('AboutThe').textContent = 'Über diese Anleitung';
+                document.getElementById('developed').textContent = 'Diese Anleitungsserie hilft Ihnen bei der Erstellung einer kommerziellen ABP-Anwendung mit dem Namen Acme.BookStore, die zur Verwaltung von Bücherlisten und ihren Autoren dient.';
+                document.getElementById('EFC').innerHTML = 'Verwendung von <strong>Entity Framework Core</strong> als Datenbankanbieter';
+                document.getElementById('raaghuas').innerHTML = 'Verwendung von <strong>Raaghu</strong> als React-Framework für die Benutzeroberfläche';
+                document.getElementById('theNext').textContent = 'Nächster Teil';
+                document.getElementById('SeeNext').innerHTML = 'Gehen Sie zur <a href="The-Book-List-Page.html">nächsten Teil dieser Anleitung</a>.';
+                // Für den Abschnitt "In diesem Dokument"
+                document.getElementById('inthisdoc').innerHTML = 'in diesem Dokument';
+                document.getElementById('partonee').innerHTML = '<a href="#" class="text-black">Teil 1: Erstellen des Serverteils</a>';
+                document.getElementById('aboutt').innerHTML = '<a href="#" class="text-black">Über diese Anleitung</a>';
+                document.getElementById('nextpart').innerHTML = '<a href="#" class="text-black">Nächster Teil</a>';
+
+            }
+      else if (selectedLanguage === 'hi') {
+                // Body Content
+                document.getElementById('WebAPP').textContent = 'वेब एप्लिकेशन विकास ट्यूटोरियल -';
+                document.getElementById('part').textContent = 'पार्ट 1: सर्वर साइड बनाना';
+                document.getElementById('AboutThe').textContent = 'इस ट्यूटोरियल के बारे में';
+                document.getElementById('developed').textContent = 'निम्नलिखित प्रौद्योगिकियों का उपयोग करके विकसित, इस ट्यूटोरियल श्रृंखला में आपको एक ABP कमर्शियल एप्लिकेशन नामक एकमे.बुकस्टोर बनाने में मार्गदर्शन किया जाएगा, जो किताबों की एक सूची और उनके संबंधित लेखकों का प्रबंधन करने के लिए एक उपकरण के रूप में कार्य करता है।';
+                document.getElementById('EFC').innerHTML = 'डेटाबेस प्रदाता के रूप में <strong>एंटिटी फ्रेमवर्क कोर</strong>';
+                document.getElementById('raaghuas').innerHTML = '<strong>रघु</strong> के रूप में एक रिएक्ट यूआई फ्रेमवर्क';
+                document.getElementById('theNext').textContent = 'अगला हिस्सा';
+                document.getElementById('SeeNext').innerHTML = 'इस ट्यूटोरियल के <a href="The-Book-List-Page.html">अगले हिस्से</a> को देखें।';
+                // For In this doc section
+                document.getElementById('inthisdoc').innerHTML = 'इस दस्तावेज़ में';
+                document.getElementById('partonee').innerHTML = '<a href="#" class="text-black">पार्ट 1: सर्वर साइड बनाना</a>';
+                document.getElementById('aboutt').innerHTML = '<a href="#" class="text-black">इस ट्यूटोरियल के बारे में</a>';
+                document.getElementById('nextpart').innerHTML = '<a href="#" class="text-black">अगला हिस्सा</a>';
+
+            }
+            else if (selectedLanguage === 'it') {
+                // Contenuto del Corpo
+                document.getElementById('WebAPP').textContent = 'Tutorial sulla Sviluppo di Applicazioni Web -';
+                document.getElementById('part').textContent = 'Parte 1: Creazione del Lato Server';
+                document.getElementById('AboutThe').textContent = 'Informazioni su questo tutorial';
+                document.getElementById('developed').textContent = 'Sviluppata utilizzando le seguenti tecnologie, questa serie di tutorial ti guiderà nella costruzione di un\'applicazione commerciale ABP chiamata Acme.BookStore, che funge da strumento per la gestione di un catalogo di libri e dei loro autori corrispondenti.';
+                document.getElementById('EFC').innerHTML = '<strong>Entity Framework Core</strong> come provider di database';
+                document.getElementById('raaghuas').innerHTML = '<strong>Raghu</strong> come framework UI React';
+                document.getElementById('theNext').textContent = 'La Prossima Parte';
+                document.getElementById('SeeNext').innerHTML = 'Vedi la <a href="The-Book-List-Page.html">prossima parte</a> di questo tutorial.';
+                // Per questa sezione del documento
+                document.getElementById('inthisdoc').innerHTML = 'In questo documento';
+                document.getElementById('partonee').innerHTML = '<a href="#" class="text-black">Parte 1: Creazione del Lato Server</a>';
+                document.getElementById('aboutt').innerHTML = '<a href="#" class="text-black">Informazioni su questo tutorial</a>';
+                document.getElementById('nextpart').innerHTML = '<a href="#" class="text-black">La Prossima Parte</a>';
+            }
+            else if (selectedLanguage === 'ru') {
+                // Тело содержания
+                document.getElementById('WebAPP').textContent = 'Учебник по разработке веб-приложений -';
+                document.getElementById('part').textContent = 'Часть 1: Создание серверной части';
+                document.getElementById('AboutThe').textContent = 'Об этом учебнике';
+                document.getElementById('developed').textContent = ' Разработанный с использованием следующих технологий, этот учебный курс научит вас создавать коммерческое приложение ABP под названием Acme.BookStore, которое представляет собой инструмент для управления каталогом книг и их соответствующих авторов.';
+                document.getElementById('EFC').innerHTML = '<strong>Entity Framework Core</strong> в качестве базы данных';
+                document.getElementById('raaghuas').innerHTML = '<strong>Raghu</strong> в качестве фреймворка пользовательского интерфейса React';
+                document.getElementById('theNext').textContent = 'Следующая часть';
+                document.getElementById('SeeNext').innerHTML = 'Перейдите к <a href="The-Book-List-Page.html">следующей части</a> этого учебника.';
+                // Для раздела В этом документе
+                document.getElementById('inthisdoc').innerHTML = 'В этом документе';
+                document.getElementById('partonee').innerHTML = '<a href="#" class="text-black">Часть 1: Создание серверной части</a>';
+                document.getElementById('aboutt').innerHTML = '<a href="#" class="text-black">Об этом учебнике</a>';
+                document.getElementById('nextpart').innerHTML = '<a href="#" class="text-black">Следующая часть</a>';
+
+
+            }
+            else if (selectedLanguage === 'zh') {
+                // Body Content
+                document.getElementById('WebAPP').textContent = 'Web应用程序开发教程 -';
+                document.getElementById('part').textContent = '第1部分：创建服务器端';
+                document.getElementById('AboutThe').textContent = '关于本教程';
+                document.getElementById('developed').textContent = '利用以下技术开发，本教程系列将指导您构建一个名为Acme.BookStore的ABP商业应用程序，用于管理图书及其对应作者的目录。';
+                document.getElementById('EFC').innerHTML = '使用<strong>Entity Framework Core</strong>作为数据库提供程序';
+                document.getElementById('raaghuas').innerHTML = '使用<strong>Raghu</strong>作为React UI框架';
+                document.getElementById('theNext').textContent = '下一部分';
+                document.getElementById('SeeNext').innerHTML = '查看本教程的<a href="The-Book-List-Page.html">下一部分</a>。';
+                // For In this doc section
+                document.getElementById('inthisdoc').innerHTML = '在本文中';
+                document.getElementById('partonee').innerHTML = '<a href="#" class="text-black">第1部分：创建服务器端</a>';
+                document.getElementById('aboutt').innerHTML = '<a href="#" class="text-black">关于本教程</a>';
+                document.getElementById('nextpart').innerHTML = '<a href="#" class="text-black">下一部分</a>';
+
+            }
+            else if (selectedLanguage === 'ar') {
+                // Body Content
+                document.getElementById('WebAPP').textContent = 'برنامج تطوير تطبيقات الويب -';
+                document.getElementById('part').textContent = 'الجزء 1: إنشاء الجانب الخادم';
+                document.getElementById('AboutThe').textContent = 'حول هذا البرنامج التعليمي';
+                document.getElementById('developed').textContent = ' تم تطوير هذه السلسلة التعليمية باستخدام التقنيات التالية، وستقوم هذه السلسلة بإرشادك في بناء تطبيق تجاري ABP يحمل اسم Acme.BookStore، والذي يعمل كأداة لإدارة مجموعة من الكتب ومؤلفيها المقابلين.';
+                document.getElementById('EFC').innerHTML = '<strong>Entity Framework Core</strong> كمزود لقاعدة البيانات';
+                document.getElementById('raaghuas').innerHTML = '<strong>Raghu</strong> كإطار واجهة مستخدم React';
+                document.getElementById('theNext').textContent = 'الجزء التالي';
+                document.getElementById('SeeNext').innerHTML = 'انظر <a href="The-Book-List-Page.html">الجزء التالي</a> من هذا البرنامج التعليمي.';
+                // For In this doc section
+                document.getElementById('inthisdoc').innerHTML = 'في هذا المستند';
+                document.getElementById('partonee').innerHTML = '<a href="#" class="text-black">الجزء 1: إنشاء الجانب الخادم</a>';
+                document.getElementById('aboutt').innerHTML = '<a href="#" class="text-black">حول هذا البرنامج التعليمي</a>';
+                document.getElementById('nextpart').innerHTML = '<a href="#" class="text-black">الجزء التالي </a>';
+
+            }
+            else if (selectedLanguage === 'spanish') {
+            } else {
+
+            }
+        });
+    });
+
+
+
+
+
+</script>
+
+</html>

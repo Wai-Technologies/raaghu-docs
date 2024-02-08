@@ -1,0 +1,1293 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- bootstrap dependencies -->
+    <link rel="stylesheet" href="Assets/css/bootstrap.min.css">
+    <link href="Assets/prism.css" rel="stylesheet" />
+    <script src="Assets/prism.js"></script>
+    <link rel="stylesheet" href="/index.css">
+    <link rel="icon" type="image/x-icon" href="Assets/images/raaghu-icon.png">
+    <title>Raaghu - Solution Structure</title>
+</head>
+
+
+<body>
+
+    <main>
+
+        <nav class="navbar navbar-expand-lg navbar-light ">
+            <div class="container-fluid ">
+                <div class="navbar-toggler-container">
+                    <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#sidebar,#navbarSupportedContent"
+                        aria-controls="sidebar" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <!-- <div class="dropdown show dropdown-specific">
+                        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Platform
+                        </a>
+
+                        <div class="dropdown-menu menu" aria-labelledby="dropdownMenuLink">
+                            <a class="dropdown-item" href="https://www.raaghu.io/features.html">Features</a>
+                            <a class="dropdown-item " href="https://portal.raaghu.io/">Documentation</a>
+                            <button type="button" class="btn btn-primary btn-contact mt-2">contact</button>
+                            <a href="https://github.com/Wai-Technologies/raaghu-angular" target="_blank">
+                                <li class="ps-lg-5 mt-2">
+                                    <img src="Assets/images/github-logo.svg" alt="abplogo logo" width="100%"
+                                        class="github-logo">
+                                </li>
+                            </a>
+                        </div>
+                    </div> -->
+                </div>
+                <a class="text-black navbar-brand" href="/">
+                    <img src="Assets/images/raaghu_logs.png" alt="raaghu logo" class="w-75  pe-lg-0">
+                </a>
+
+                <div class="collapse navbar-collapse align  justify-content-lg-end " id="navbarSupportedContent">
+                    <ul class="navbar-nav  mb-2 mb-lg-0 ">
+                        <li class="nav-item me-5">
+                            <a class="nav-link active " aria-current="page"
+                                href="https://raaghu-website-staging.netlify.app/raaghu-mfe-portal/_accordion.html">Components</a>
+                        </li>
+                        <li class="nav-item me-5">
+                            <a class="nav-link active " aria-current="page" href="#"><span
+                                    class="doc-color">Documentation</span></a>
+                        </li>
+                        <li class="nav-item me-5">
+                            <a class="nav-link active " aria-current="page"
+                                href="https://raaghu-website-staging.netlify.app/raaghu-mfe-portal/_accordion.html#">Support</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link active " aria-current="page"
+                                href="https://raaghu-website-staging.netlify.app/faq">FAQ</a>
+                        </li>
+                        <!-- <li class=" nav-item dropdown active">
+                            <a class="nav-link  text-dark me-5" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Platform
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-center " aria-labelledby="navbarDropdown">
+                                <ul class="list-unstyled dropdown-arrow">
+                                    <li class=" ps-4">
+                                        <p class="title pt-2">Raaghu Platform</p>
+                                        <div class="row">
+                                            <div class="col-lg-6 col-md-6">
+                                                <a href="https://portal.raaghu.io/" target="_blank"
+                                                    class="p-0 text-decoration-none text-reset">
+                                                    <div class="d-flex align-items-center gap-3">
+
+                                                        <img src="Assets/images/raaghu-portal-mg.svg"
+                                                            alt="raaghu-portal" class="mb-3">
+                                                        <p class="link-name">Raaghu Portal</p>
+
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="col-lg-6 col-md-6">
+                                                <a href="https://portal.raaghu.io/#Components-section" target="_blank"
+                                                    class="p-0 text-decoration-none text-reset">
+                                                    <div class="d-flex align-items-center gap-3">
+                                                        <img src="Assets/images/raaghu-components-mg.svg"
+                                                            alt="raaghu-components" class="mb-3">
+                                                        <p class="link-name">Raaghu Components</p>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-6 col-md-6">
+                                                <a href="https://portal.raaghu.io/#Elements-section" target="_blank"
+                                                    class="p-0 text-decoration-none text-reset">
+                                                    <div class="d-flex align-items-center gap-3">
+                                                        <img src="Assets/images/raaghu-elements-mg.svg"
+                                                            alt="raaghu-portal" class="mb-2">
+                                                        <p class="pt-2 link-name">Raaghu Elements</p>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="col-lg-6 col-md-6">
+                                                <div class="d-flex align-items-center gap-3">
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="bgcolor-dropdown">
+                                        <div class="ps-4">
+                                            <p class="pt-3 pb-1 title">WORKS ON</p>
+                                            <div class="row">
+                                                <div class="col-md-2 mb-2">
+                                                    <img src="Assets/images/asplogo-mg.svg" alt="asplogo logo"
+                                                        width="80%">
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <img src="Assets/images/abplogo-mg.svg" alt="abplogo logo"
+                                                        width="50%">
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item me-5">
+                            <a class="nav-link active " aria-current="page"
+                                href="https://www.raaghu.io/features.html">Features</a>
+                        </li>
+                        <li class="nav-item me-5">
+                            <a class="nav-link active " aria-current="page"
+                                href="https://portal.raaghu.io/">Documentation</a>
+                        </li>
+                        <button type="button" class="btn btn-primary btn-contact">contact</button>
+                        <a href="https://github.com/Wai-Technologies/raaghu-angular" target="_blank">
+                            <li class="ps-lg-5 pt-2">
+                                <img src="Assets/images/github-logo.svg" alt="abplogo logo" width="100%"
+                                    class="github-logo">
+                            </li>
+                        </a> -->
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="wrapper container-fluid">
+
+            <div class="row">
+
+                <div id="sidebar" class="col-12 col-lg-2 col-md-4 col-xl-2 col-xxl-2 collapse d-m-block mx-0 mx-lg-3 mx-md-3 mx-xl-3 mx-xxl-3 show">
+
+                    <nav>
+                        <div class="sidebar-header ">
+                            <a href="/" class="text-bg-dark">
+
+                                <h3 class="fs-5 fw-normal">Table Of Content</h3>
+                            </a>
+                        </div>
+                        <div class="accordion accordion-flush mx-3 doc-acc accordion-button-top" id="accordionExample">
+                            <div class="row pb-4">
+                                <div class="col-6 col-lg-6 col-md-6">
+                                    <select id="language-dropdown" class="sidebar-button">
+                                        <option value="en" selected>English</option>
+                                        <option value="pt">Português</option>
+                                        <option value="fr">French</option>
+                                        <option value="fi">Finnish</option>
+                                        <option value="hi">Hindi</option>
+                                        <option value="it">Italian</option>                                        
+                                        <option value="sk">Slovak</option>
+                                        <option value="de">German</option>
+                                        <option value="ru">Russian</option>
+                                        <option value="zh">Chinese</option>
+                                        <option value="af">Afrikaan</option>
+                                        <option value="ar">Arabic</option>
+                                        <!-- Add more language options if needed -->
+                                    </select>
+                                </div>
+                                <div class="col-6 col-lg-6 col-md-6">
+                                    <select class="sidebar-button w-100">
+                                        <option value="option1" id="version">Version</option>
+                                        <option value="option2" id="version">Version 2</option>
+                                        <option value="option3">Version 3</option>
+                                        <option value="option4">Version 4</option>
+                                    </select>
+
+                                </div>
+                            </div>
+                            <div class="accordion-item bg-dark">
+                                <h2 class="accordion-header" id="headingOne">
+                                    <a href="Getting-Started.html">
+                                        <button
+                                            class="accordion-button d-flex flex-row-reverse justify-content-end p-0 bg-dark mt-1"
+                                            type="button" data-bs-toggle="collapse" data-bs-target="#coll"
+                                            aria-expanded="false" aria-controls="collapseOne">
+                                            Getting Started
+                                        </button></a>
+                                </h2>
+
+                                <div id="coll" class="accordion-collapse collapse  border-0 rounded-0 p-0"
+                                    aria-labelledby="headOne" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Setup-Your-Development-Environment.html">Setup your development
+                                            environment</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Creating-A-New-Solution.html">Creating A New Solution</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Running-The-Solution.html">Running the Solution</a>
+                                    </div>
+                                </div>
+                                <h2 class="accordion-header" id="headingTwo">
+                                    <button
+                                        class="accordion-button d-flex flex-row-reverse justify-content-end p-0 bg-dark mt-2"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                        aria-expanded="false" aria-controls="collapseOne">
+                                        Tutorials
+                                    </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse  border-0 rounded-0 p-0"
+                                    aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <h2 class="accordion-header" id="headingTwo">
+                                            <button
+                                                class="accordion-button d-flex flex-row-reverse justify-content-end p-0 bg-dark mt-2"
+                                                type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                                                aria-expanded="false" aria-controls="collapseOne">
+                                                Web Application Development
+                                            </button>
+                                        </h2>
+                                        <div id="collapseThree"
+                                            class="accordion-collapse collapse  border-0 rounded-0 p-0 pt-2"
+                                            aria-labelledby="headingTwo" data-bs-parent="#accordionExamplee">
+                                            <div class="accordion-body bg-dark px-4 p-1">
+                                                <a href="Creating-The-Server-Side.html">Creating the Server
+                                                    Side</a>
+                                            </div>
+                                        </div>
+                                        <div id="collapseThree"
+                                            class="accordion-collapse collapse  border-0 rounded-0 p-0"
+                                            aria-labelledby="headingTwo" data-bs-parent="#accordionExamplee">
+                                            <div class="accordion-body bg-dark px-4 p-1">
+                                                <a href="The-Book-List-Page.html">The Book List Page</a>
+                                            </div>
+                                        </div>
+                                        <div id="collapseThree"
+                                            class="accordion-collapse collapse  border-0 rounded-0 p-0"
+                                            aria-labelledby="headingTwo" data-bs-parent="#accordionExamplee">
+                                            <div class="accordion-body bg-dark px-4 p-1">
+                                                <a href="Creating-Updating-And-Deleting-Book.html">Creating,Updating
+                                                    And
+                                                    Deleting Book</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <h2 class="accordion-header" id="headingFour">
+                                    <button
+                                        class="accordion-button d-flex flex-row-reverse justify-content-end p-0 bg-dark mt-2"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour"
+                                        aria-expanded="false" aria-controls="collapseOne">
+                                        Guides
+                                    </button>
+                                </h2>
+                                <div id="collapseFour" class="accordion-collapse collapse  border-0 rounded-0 p-0"
+                                    aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Customizing-The-Modules.html">Customizing the Modules</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Identity-Server-Deployment.html">Identity Server Deployment</a>
+                                    </div>
+                                </div>
+
+
+                                <h2 class="accordion-header" id="headingFive">
+                                    <button
+                                        class="accordion-button d-flex flex-row-reverse justify-content-end p-0 bg-dark mt-2"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive"
+                                        aria-expanded="false" aria-controls="collapseOne">
+                                        Samples
+                                    </button>
+                                </h2>
+                                <div id="collapseFive" class="accordion-collapse collapse  border-0 rounded-0 p-0"
+                                    aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="All-Samples.html">All Samples</a>
+                                    </div>
+                                </div>
+                                <h2 class="accordion-header" id="headingSix">
+                                    <a href="Startup-Template.html">
+                                        <button
+                                            class="accordion-button d-flex flex-row-reverse justify-content-end p-0 bg-dark mt-2"
+                                            type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix"
+                                            aria-expanded="true" aria-controls="collapseOne">
+                                            Startup Template
+                                        </button></a>
+                                </h2>
+                                <div id="collapseSix" class="accordion-collapse collapse show  border-0 rounded-0 p-0"
+                                    aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <h2 class="accordion-header" id="headingSix">
+                                            <a href="Application-Templates.html">
+                                                <button
+                                                    class="accordion-button d-flex flex-row-reverse justify-content-end p-0 bg-dark mt-2"
+                                                    type="button" data-bs-toggle="collapse" data-bs-target="#headingS"
+                                                    aria-expanded="true" aria-controls="collapseOne">
+                                                    Application Templates
+                                                </button>
+                                            </a>
+                                        </h2>
+                                        <div id="headingS"
+                                            class="accordion-collapse collapse show border-0 rounded-0 p-0 pt-2"
+                                            aria-labelledby="headingSix" data-bs-parent="#accordionExamplee">
+                                            <div class="accordion-body bg-dark px-4 p-1">
+                                                <a href="Creating-Solution.html">Creating Solution</a>
+                                            </div>
+                                        </div>
+                                        <div id="headingS"
+                                            class="accordion-collapse collapse show border-0 rounded-0 p-0"
+                                            aria-labelledby="headingSix" data-bs-parent="#accordionExamplee">
+                                            <div class="accordion-body bg-dark px-4 p-1" id="sstrct">
+                                                <a href="Solution-Structure.html"><span
+                                                        class="accordian-active">Solution Structure</span></a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                                <h2 class="accordion-header" id="headingSeven">
+                                    <button
+                                        class="accordion-button d-flex flex-row-reverse justify-content-end p-0 bg-dark mt-2"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven"
+                                        aria-expanded="false" aria-controls="collapseOne">
+                                        Application Modules
+                                    </button>
+                                </h2>
+                                <div id="collapseSeven" class="accordion-collapse collapse  border-0 rounded-0 p-0"
+                                    aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Overall.html">Overall</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Account-Module.html">Account</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Audit-Logging.html">Audit Logging</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Chat.html">Chat</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="CMS-Kit-Pro.html">CMS Kit Pro</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="File-Management.html">File Management</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Forms.html">Forms</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Identity.html">Identity</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="OpenIddict.html">OpenIddict</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Language-Management.html">Language Management</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Payment.html">Payment</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="SaaS.html">SaaS</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Text-Template-Management.html">Text Template Management</a>
+                                    </div>
+                                </div>
+                                <h2 class="accordion-header" id="headingNine">
+                                    <a href="UI-Themes.html">
+                                        <button
+                                            class="accordion-button d-flex flex-row-reverse justify-content-end p-0 bg-dark mt-2"
+                                            type="button" data-bs-toggle="collapse" data-bs-target="#headingNine"
+                                            aria-expanded="false" aria-controls="collapseOne">
+                                            UI Themes
+                                        </button>
+                                    </a>
+                                </h2>
+                                <h2 class="accordion-header" id="headingReactUITheme">
+                                    <button
+                                        class="accordion-button d-flex flex-row-reverse justify-content-end p-0 bg-dark mt-2"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#headingReactUI"
+                                        aria-expanded="false" aria-controls="collapseOne">
+                                        React UI
+                                    </button>
+                                </h2>
+                                <div id="headingReactUI" class="accordion-collapse collapse  border-0 rounded-0 p-0"
+                                    aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Customization.html">customization</a>
+                                    </div>
+
+                                </div>
+                                <div id="headingReactUI" class="accordion-collapse collapse  border-0 rounded-0 p-0"
+                                    aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Components.html">Components</a>
+                                    </div>
+
+                                </div>
+                                <!-- For Release Information -->
+                                <h2 class="accordion-header" id="headingFive">
+                                    <button
+                                        class="accordion-button d-flex flex-row-reverse justify-content-end p-0 bg-dark mt-2"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseLast"
+                                        aria-expanded="false" aria-controls="collapseOne" id="samples">
+                                       <span id="relinfo">Release Information</span> 
+                                    </button>
+                                </h2>
+                                <div id="collapseLast" class="accordion-collapse collapse  border-0 rounded-0 p-0"
+                                    aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Release-Notes.html" id="allSamples"><span id="relnote">Release Notes</span></a>
+                                    </div>
+                                </div>
+                                <!-- ====================================== -->
+                            </div>
+                        </div>
+                        <ul class="list-unstyled CTAs  w-100">
+                            <li>
+                                <a href="https://bootstrapious.com/tutorial/files/sidebar.zip" class="download">Download
+                                    source</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="col-12 col-lg-8 col-md-7 col-xl-6 col-xxl-6 offset-lg-4 offset-md-5 offset-xl-3 offset-xxl-3 ps-xl-5 ps-xxl-0 px-lg-3 px-md-4 px-xl-0">
+
+                    <!-- Page Content  -->
+                    <div id="content">
+                        <div class="modal fade" id="contactusModal" tabindex="-1" aria-labelledby="contactusModalLabel"
+                            aria-hidden="true">
+
+                            <div class="modal-dialog modal-lg modal-dialog-centered">
+
+                                <div class="modal-content">
+
+                                    <!-- <div class="modal-header">
+                  
+                                  <h5 class="modal-title" id="contactusModalLabel">Modal title</h5>
+                  
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  
+                                </div> -->
+
+                                    <div class="modal-body p-0">
+
+
+
+
+                                        <div class="row">
+
+                                            <div class="col-md-6 col-sm-12 bg-dark">
+
+                                                <div class="mt-5">
+
+                                                    <img src="Assets/images/raaghu-logo-white.png"
+                                                        class="img-fluid w-25 pl-2">
+
+
+
+                                                    <img src="Assets/images/raaghu-banner-modal.png" class="img-fluid">
+
+                                                </div>
+
+                                            </div>
+
+
+
+                                            <div class="col-md-6 col-sm-12">
+
+                                                <div class="row">
+
+                                                    <div class="col-md-12 text-end pull-right">
+
+                                                        <button type="button"
+                                                            class="btn-close float-right pull-right m-3 text-muted"
+                                                            data-bs-dismiss="modal" aria-label="Close"></button>
+
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="p-4">
+
+                                                    <h6>
+
+                                                        Kindly fill the details below
+
+                                                    </h6>
+
+                                                    <p>
+
+                                                        <small> We will get back to you within 48 hours </small>
+
+                                                    </p>
+
+                                                    <div class="mt-5">
+
+                                                        <form method="post" id="want-to-hear-form">
+
+                                                            <div class="mb-3 form-group">
+
+                                                                <label for="emailId" class="form-label">Email ID
+
+                                                                    <span class="text-danger">*</span>
+
+                                                                </label>
+
+                                                                <input type="email" name="emailId"
+                                                                    class="form-control p-2" id="emailId"
+                                                                    placeholder="Enter your email id">
+
+                                                            </div>
+
+                                                            <div class="mb-3 form-group">
+
+                                                                <label for="companyName" class="form-label">Company Name
+
+                                                                    <span class="text-danger">*</span>
+
+                                                                </label>
+
+                                                                <input type="text" class="form-control p-2"
+                                                                    placeholder="Enter your Company Name"
+                                                                    name="companyName" id="companyName">
+
+                                                            </div>
+
+                                                            <div class="mb-3 form-group">
+
+                                                                <label for="message" class="form-label">Message
+
+                                                                    <span class="contactUs-Optional">(Optional)</span>
+
+
+                                                                </label>
+
+                                                                <textarea class="form-control p-2" name="message"
+                                                                    id="message" rows="3"
+                                                                    placeholder="Write your message.."></textarea>
+
+                                                            </div>
+
+                                                            <div class="mb-3 form-check">
+
+                                                                <input type="checkbox" class="form-check-input"
+                                                                    id="exampleCheck1">
+
+                                                                <label class="form-check-label" for="exampleCheck1">I
+                                                                    agree to the <a href="#"> terms & privacy policy
+                                                                    </a></label>
+
+                                                            </div>
+
+                                                            <button type="submit"
+                                                                class="btn btn-primary btn-sm btn-block float-end mb-4">Submit</button>
+
+                                                        </form>
+
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div> <input class="form-control  mb-5" type="search" placeholder="Search" aria-label="Search">
+                        </div>
+
+                        <div>
+                            <h1 class="fw-semibold mb-3" id="ss">Solution structure</h1>
+                            <p id="ywg">You will get a slightly different solution structure, based on the options you
+                                have
+                                specified.</p>
+                        </div>
+                        <div>
+                            <h2 class="fw-semibold" id="dstruct">Default structure</h2>
+                            <p class="py-2" id="iyd"> If you don't specify any additional option, you will have a
+                                solution in the
+                                <strong>aspnet-core</strong> folder like the below:
+                            </p>
+                            <img src="Assets/images/defaultStructure.jpg" alt="Default Structure"
+                                class="img-fluid mt-3 mb-5">
+                            <p id="proare">Projects are located in aspnet-core/src and aspnet-core/test folders. While
+                                the
+                                aspnet-core/src folder contains the actual application, aspnet-core/test folder contains
+                                unit tests and test base projects. The below diagram shows the layers & project
+                                dependencies of the application:</p>
+                            <img src="Assets/images/flow-chart.jpg" alt="flow-chart Structure"
+                                class="img-fluid mt-3 mb-5">
+                            <p id="ES">Each section below describes the related project and its dependencies.</p>
+                        </div>
+                        <div>
+                            <h3 class="fw-semibold pt-3 pb-3" id="dsp">*.Domain.Shared project</h3>
+                            <p id="tpc">This project contains <span class="txt-color">constants, enums</span> and the
+                                other
+                                objects which are part of the domain layer, but shared across by all projects in the
+                                solution.</p>
+                            <p id="fex">For example <span class="txt-color">BookType <enum> or BookConsts <class>
+                                </span>(contains validation constants like <span class="txt-color">MaxNameLength</span>)
+                                are good candidates to be in the <span class="txt-color">*.Domain.Shared project.</span>
+                            </p>
+                        </div>
+                        <div>
+                            <h3 class="fw-semibold pt-3 pb-3" id="depen">Dependencies:</h3>
+                            <ul class="ps-3">
+                                <li id="domains"><span class="txt-color">Domain.Shared</span> project has no dependency to other
+                                    projects in the solution. All other projects depend on this directly or indirectly.
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="fw-semibold pt-3 pb-3" id="dpro">*.Domain project</h3>
+                            <p id="titd">This is the domain layer of the solution. It contains
+                                <a href="https://docs.abp.io/en/abp/latest/Entities">entities,</a>
+                                <a href="https://docs.abp.io/en/abp/latest/Entities">aggregate roots, </a>
+                                <a href="https://docs.abp.io/en/abp/latest/Domain-Services">domain services, </a>
+                                <a href="https://docs.abp.io/en/abp/latest/Value-Types">value types, </a>
+                                <a href="https://docs.abp.io/en/abp/latest/Repositories">repository interfaces </a>and
+                                other domain objects.
+                            </p>
+                            <p id="bookent">A <span class="txt-color">Book</span> entity, a <span
+                                    class="txt-color">BookManager</span> domain service and an <span
+                                    class="txt-color">IBookRepository</span> interface are good examples to be inside
+                                the <span class="txt-color">*.Domain</span> project.</p>
+
+                        </div>
+                        <div>
+                            <h3 class="fw-semibold pt-3 pb-3" id="ded">Dependencies:</h3>
+                            <ul class="ps-3">
+                                <li id="depenon">Depends on the <span class="txt-color">*.Domain.Shared</span> because it uses <span
+                                        class="txt-color">constants, enums</span> and other objects defined in that
+                                    project.</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="fw-semibold pt-3 pb-3" id="acp">*.Application.Contracts project</h3>
+                            <p id="tpca">This project contains <a href="">application service</a> interfaces and <a href="">Data
+                                    Transfer Objects</a> (DTO) of the application layer. It separates the interface &
+                                implementation of the application layer. In this way, the interface project can be
+                                shared to the clients as a contract package.</p>
+                            <p id="ibs"><span class="txt-color">IBookAppService</span> interface and <span
+                                    class="txt-color">BookCreationDto</span> class are good examples to be inside the
+                                <span class="txt-color">*.Application.Contracts</span> project.
+                            </p>
+                        </div>
+
+                        <div>
+                            <h3 class="fw-semibold pt-3 pb-3" id="dds">Dependencies:</h3>
+                            <ul class="ps-3">
+                                <li id="dot">Depends on the <span class="txt-color">*.Domain.Shared</span> because it may use
+                                    <span class="txt-color">constants, enums</span> and other shared objects of this
+                                    project in the application service interfaces and DTOs.
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="fw-semibold pt-3 pb-3" id="AP">*.Application project</h3>
+                            <p id="tpconta">This project contains the <a
+                                    href="https://docs.abp.io/en/abp/latest/Application-Services">application
+                                    service</a> <strong>implementations</strong> of the interfaces defined in the <span
+                                    class="txt-color">.Application.Contracts</span> project.</p>
+                            <p id="bookAppSer"><span class="txt-color">BookAppService</span> is the implementation of <span
+                                    class="txt-color">IBookAppService</span> interface and good examples to be inside
+                                the <span class="txt-color">*.Application</span> project.</p>
+                        </div>
+                        <div>
+                            <h3 class="fw-semibold pt-3 pb-3" id="ddp">Dependencies:</h3>
+                            <ul class="ps-3">
+                                <li id="depoth">Depends on the <span class="txt-color">*.Application.Contracts</span> project to be
+                                    able to implement the interfaces and use the <span class="txt-color">DTOs.</span>
+                                </li>
+                                <li id="EFCDepend">Depends on the <span class="txt-color">*.Domain </span> project to be able
+                                    to use
+                                    domain objects like entities, repository interfaces, etc... to perform the
+                                    application logic.</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="fw-semibold pt-3 pb-3" id="EFCP">*.EntityFrameworkCore project</h3>
+                            <p id="tiinte">This is the integration project for the <span class="txt-color">EF Core.</span> It
+                                defines the <span class="txt-color">DbContext</span> and implements repository
+                                interfaces defined in the <span class="txt-color">*.Domain</span> project.</p>
+                        </div>
+                        <div>
+                            <h3 class="fw-semibold pt-3 pb-3" id="dependent">Dependencies:</h3>
+                            <ul class="ps-3">
+                                <li id="depenonthe">Depends on the <span class="txt-color">*.Domain</span> project to be able to
+                                    reference to entities and repository interfaces.</li>
+                            </ul>
+                            <p id="tprojis">This project is available only if you are using EF Core as the database provider. If you
+                                select another database provider, its name will be different.</p>
+                        </div>
+                        <div>
+                            <h3 class="fw-semibold pt-3 pb-3" id="dbmigrate">*.DbMigrator project</h3>
+                            <p id="ticonsole">This is a console application which simplifies to execute database migrations on
+                                development and production environments. When you run this application, it;</p>
+                            <ul class="ps-3">
+                                <li id="createthedta">Creates the database if necessary.</li>
+                                <li id="appthepending">Applies the pending database migrations.</li>
+                                <li id="seeds">Seeds initial data if needed.</li>
+                            </ul>
+                            <p id="noticethat">Notice that, this project has its own <span class="txt-color">appsettings.json
+                                </span>file. If you need to change the default database connection string, you must set
+                                it in its own <span class="txt-color">appsettings.json .</span></p>
+                            <p id="seedInitialData">Seeding initial data is important at this point. ABP has a modular data seed
+                                infrastructure. Further information see <a
+                                    href="https://docs.abp.io/en/abp/latest/Data-Seeding">data seeding
+                                    documentation.</a></p>
+                            <p id="whileCreatingdata">While creating database and applying migrations seem only necessary for relational
+                                databases, this project is included even if you choose a <span
+                                    class="txt-color">NoSQL</span> database provider (like <span
+                                    class="txt-color">MongoDB</span>). In that case, it still seeds initial data which
+                                is necessary for the application startup.</p>
+                        </div>
+                        <div>
+                            <h3 class="fw-semibold pt-3 pb-3" id="des">Dependencies:</h3>
+                            <ul class="ps-3">
+                                <li id="depeonthe">Depends on the <span class="txt-color">*.EntityFrameworkCore</span> project (for EF
+                                    Core) since it needs to access to the migrations.</li>
+                                <li id="ht">Depends on the <span class="txt-color">*.Application.Contracts</span>
+                                    project to be
+                                    able to access permission definitions, because initial data seeder grants all
+                                    permissions for the admin role by default.</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="fw-semibold pt-3 pb-3" id="httpapi">*.HttpApi project</h3>
+                            <p id="thisprojis">This project is used to define your API Controllers.</p>
+                            <p id="mostofthet">Most of the time you don't need to manually define API Controllers since ABP's <a
+                                    href="https://docs.abp.io/en/abp/latest/API/Auto-API-Controllers">Auto API
+                                    Controllers</a> feature creates them automagically based on your application layer.
+                                However, in case, you need to write API controllers, this is the best place to do it.
+                            </p>
+                        </div>
+                        <div>
+                            <h3 class="fw-semibold pt-3 pb-3" id="detent">Dependencies:</h3>
+                            <ul class="ps-3">
+                                <li id="dependsontheapp">Depends on the <span class="txt-color">*.Application.Contracts</span> project to be
+                                    able to inject the application service interfaces.</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="fw-semibold pt-3 pb-3" id="httap">*.HttpApi.Client project</h3>
+                            <p id="thisisprojdef">This is project defines <span class="txt-color">C#</span> client proxies to use the HTTP
+                                APIs of the solution. You can share this library to 3rd-party clients, so they can
+                                easily consume your HTTP APIs in their <span class="txt-color">.NET</span> applications.
+                                For other type of applications, they can still use the APIs, either manually or using a
+                                tool in their own platform.</p>
+                            <p id="mostofthe">Most of the time you don't need to manually create C# client proxies, thanks to ABP's
+                                <a href="https://docs.abp.io/en/abp/latest/API/Dynamic-CSharp-API-Clients"> Dynamic C#
+                                    API Clients feature.</a>
+                            </p>
+                            <p id="consoletestapp"><span class="txt-color">*.HttpApi.Client.ConsoleTestApp</span> project is a console
+                                application created to demonstrate the usage of the client proxies.</p>
+                            <ul class="ps-3">
+                                <li id="dependsonthe">Depends on the <span class="txt-color">*.Application.Contracts</span> project to be
+                                    able to share the same application service interfaces and DTOs with the remote
+                                    service.</li>
+                            </ul>
+                            <p id="WP">Notice that, you can delete this project & dependencies if you don't need to
+                                create C#
+                                client proxies for your APIs</p>
+                        </div>
+                        <div>
+                            <h3 class="fw-semibold pt-3 pb-3" id="wepproj">*.Web project</h3>
+                            <p id="thisprojcon">This project contains the user interface (UI) of the application if you are using ASP.NET
+                                Core MVC UI. It contains Razor pages, JavaScript files, CSS files, images and so on...
+                            </p>
+                            <p id="thisprojhas">This project has a <span class="txt-color">appsettings.json</span> file which contains
+                                the connection string and other configuration of the application.</p>
+                        </div>
+                        <div>
+                            <h3 class="fw-semibold pt-3 pb-3" id="depenhttp">Dependencies:</h3>
+                            <ul class="ps-3">
+                                <li id="depenonthehttp">Depends on the <span class="txt-color">*.HttpApi</span> since the UI layer needs to
+                                    use APIs and application service interfaces of the solution.</li>
+                            </ul>
+                            <p id="ifyoucheck">If you check the source code of the <span class="txt-color">*.Web.csproj</span> file, you
+                                will see the references to the <span class="txt-color">*.Application</span> and the
+                                <span class="txt-color">*.EntityFrameworkCore</span> projects. These references are
+                                actually not needed while coding your UI layer, because UI layer doesn't depend on the
+                                <span class="txt-color">EF Core</span> or the Application layer's implementation. This
+                                startup template is pre-configured for the tiered deployment, where API layer is hosted
+                                in a separate server apart from the UI layer.
+
+                            </p>
+                            <p id="RA">However, if you don't choose the <span class="txt-color">--tiered</span> option
+                                when you create a solution, these references will be in the <span
+                                    class="txt-color">*.Web</span> project to be able to host the Web, API and
+                                application layers in a single application endpoint. This gives you the ability to use
+                                the domain entities & repositories in your presentation layer. However, this is
+                                considered as a bad practice according to the DDD rules.</p>
+                        </div>
+                        <div>
+                            <h3 class="fw-semibold pt-3 pb-3" id="reactarc">REACT Architecture</h3>
+                            <p id="follare">Following are the architecture on how raaghu-react is being used as a part of UI
+                                application</p>
+                            <img src="Assets/images/raaghu-architecture.jpg"
+                                alt="Following are the architecture on how raaghu-react is being used as a part of UI application"
+                                class="img-fluid my-4">
+                        </div>
+                        <div>
+                            <h3 class="fw-semibold pt-4 pb-3" id="raghuath">Raaghu - Authentication flow(login page)</h3>
+                            <img src="Assets/images/raaghuAuthenticationFlow.jpg" alt="raaghu-Authentication Flow"
+                                class="img-fluid my-4">
+                        </div>
+                        <div>
+                            <h3 class="fw-semibold pt-4 pb-3" id="raaghuloc">Raaghu - Localization</h3>
+                            <img src="Assets/images/raaghuLocalization.jpg" alt="raaghu Localization"
+                                class="img-fluid my-4">
+                        </div>
+                        <div>
+                            <h3 class="fw-semibold pt-4 pb-3" id="pageflow">Raaghu - Page flow</h3>
+                            <img src="Assets/images/raaghuPageFlow.jpg" alt="Raaghu - Page flow" class="img-fluid my-4">
+                        </div>
+                        <div>
+                            <h3 class="fw-semibold pt-4 pb-3" id="whatnex">What's next?</h3>
+                            <ul class="ps-3">
+                                <li id="seeethe">See the <a href="Getting-Started.html">Getting Started</a> document to create a new
+                                    solution and run it for this template.</li>
+                            </ul>
+                        </div>
+
+
+
+
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-8 col-md-7 col-xl-2 col-xxl-2 docs-page-index offset-lg-4 offset-xl-0 offset-md-5 offset-xxl-0 px-md-4">
+                    <div class="position-fixed  my-3 w-auto mx-lg-0 mx-xl-3 mx-xxl-3 pe-lg-3 pe-xl-0 pe-xxl-0 position-lg-relative">
+                    <div class="card border-0 box rounded-3 mb-3">
+                        <div class="card-body">
+                            <h4 class="card-title py-1" id="inthisdoc">In this document</h4>
+                            <div class="opacity-50">
+                                <ul class="card-text small  list-unstyled ul-ad">
+                                    <!-- <li><a href="#ss" class="text-black"></a></li>    -->
+                                    <li id="sdefault"><a href="#ss" class="text-black">Default structure</a></li>
+                                    <li id="sdomain"><a href="#ES" class="text-black">Domain.Shared project</a></li>
+                                    <li id="sdepen"><a href="#ES" class="text-black">Dependencies:</a></li>
+                                    <li id="secpro"><a href="#ES" class="text-black">Domain project</a></li>
+                                    <li id="secapplication"><a href="#AP" class="text-black">Application project</a></li>
+                                    <li id="secentity"><a href="#EFC" class="text-black">EntityFrameworkCore project</a></li>
+                                    <li id="secdb"><a href="#EFC" class="text-black">DbMigrator project</a></li>
+                                    <li id="shttp"><a href="#ht" class="text-black">HttpApi project</a></li>
+
+                                    <li id="secweb"><a href="#WP" class="text-black">Web project</a></li>
+                                    <li id="secreact"><a href="#RA" class="text-black">REACT Architecture</a></li>
+                                    <!-- <li><a href="#" class="text-black">Raaghu - Localization</a></li>
+<li><a href="#" class="text-black">Raaghu - Page flow</a></li>  -->
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card  border-0 box  bg-advertise "  >
+                        <div class="card-body abp-community-card  rounded-3 bg-sec ">
+                            <div class="row  ">
+                                <div class="col-lg-5 col-md-5 col-5"> <img src="Assets/images/React_logo.png" alt="raaghu logo" class="w-100"></div>
+                                <div class="col-lg-7 mt-1  col-md-7 mt-1 col-7"> <img src="Assets/images/abp-sec.png" alt="raaghu logo" class="w-100"></div>
+                                <!-- <div class="col-lg-6"><img src="Assets/images/abp-com.svg" alt="raaghu logo" class="w-100"></div> -->
+
+                            </div>
+                            <div class="border-under-sec my-3"></div>
+                            <div class="colored-sec-design py-1">
+                                <ul class="ps-4">
+                                    <li>CLI for CRUD generation</li>
+                                    <li>Component driven development</li>
+                                    <li>Purpose build UI kit for ABP commercial</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <button type="button" class="btn btn-primary mt-1 w-100" data-bs-toggle="modal"
+                                    data-bs-target="#contactusModal">Contact Us</button>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <!-- <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-0 col-12 docs-page-index">
+                    <div class="card mt-4 top-25 me-lg-4 border-0 shadow py-4">
+                        <div class="card-body">
+                            <h5 class="card-title">In This Document</h5>
+                            <p class="card-text small">Some quick example text to build on the card title and make up
+                                the bulk of the card's content.</p>
+
+                        </div>
+                    </div>
+                </div> -->
+
+            </div>
+
+
+
+        </div>
+
+    </main>
+
+    <!-- bootstrap dependencies -->
+    <script src="Assets/js/bootstrap.min.js"></script>
+    <script src="scripts/translation.js"></script>
+</body>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var languageDropdown = document.getElementById('language-dropdown');
+        languageDropdown.addEventListener('change', function () {
+            var selectedLanguage = languageDropdown.value;
+            if (selectedLanguage === 'pt') {
+                // Sidebar Code in js File
+
+
+                // Body Content
+                document.getElementById('sstrct').innerHTML = '<span class="accordian-active">Estrutura da solução</span>';
+                document.getElementById('ss').innerHTML = 'Estrutura da solução';
+                document.getElementById('ywg').innerHTML = 'Você obterá uma estrutura de solução ligeiramente diferente, com base nas opções que você tem Especificadas.';
+                document.getElementById('dstruct').innerHTML = 'Estrutura padrão';
+                document.getElementById('iyd').innerHTML = 'Se você não especificar nenhuma opção adicional, terá uma solução no pasta <strong>aspnet-core</strong> como abaixo:';
+                document.getElementById('proare').innerHTML = 'Os projetos estão localizados nas pastas aspnet-core/src e aspnet-core/test. Enquanto o a pasta aspnet-core/src contém o aplicativo real, a pasta aspnet-core/test contém testes de unidade e projetos base de teste. O diagrama abaixo mostra as camadas e o projeto dependências do aplicativo:';
+                document.getElementById('ES').innerHTML = 'Cada seção abaixo descreve o projeto relacionado e suas dependências.';
+                document.getElementById('dsp').innerHTML = '*.Domínio.Projeto compartilhado';
+                document.getElementById('tpc').innerHTML = 'Este projeto contém <span class="txt-color">constantes, enums</span> e os outros objetos que fazem parte da camada de domínio, mas compartilhados por todos os projetos na camada solução.';
+                document.getElementById('fex').innerHTML = 'Por exemplo <span class="txt-color">BookType <enum> ou BookConsts <class> </span>(contém constantes de validação como <span class="txt-color">MaxNameLength</span>) são bons candidatos para o projeto <span class="txt-color">*.Domain.Shared.</span>';
+                document.getElementById('depen').innerHTML = 'Dependências:';
+                document.getElementById('domains').innerHTML = 'O projeto <span class="txt-color">Domain.Shared</span> não depende de outro projetos na solução. Todos os outros projetos dependem disso direta ou indiretamente.';
+                document.getElementById('dpro').innerHTML = '*Projeto de domínio';
+                document.getElementById('titd').innerHTML = 'Esta é a camada de domínio da solução. Contém <a href="https://docs.abp.io/en/abp/latest/Entities">entidades,</a> <a href="https://docs.abp.io/en/abp/latest/Entities">raízes agregadas, </a> <a href="https://docs.abp.io/en/abp/latest/Domain-Services">serviços de domínio, </a> <a href="https://docs.abp.io/en/abp/latest/Value-Types">tipos de valor, </a> <a href="https://docs.abp.io/en/abp/latest/Repositories">interfaces de repositório </a>e outros objetos de domínio.';
+                document.getElementById('bookent').innerHTML = 'Uma entidade <span class="txt-color">Livro</span>, um <span serviço de domínio class="txt-color">BookManager</span> e um <span interface class="txt-color">IBookRepository</span> são bons exemplos para estar dentro o projeto <span class="txt-color">*.Domain</span>.';
+                document.getElementById('ded').innerHTML = 'Dependências:';
+                document.getElementById('depenon').innerHTML = 'Depende do <span class="txt-color">*.Domain.Shared</span> porque usa <span class="txt-color">constantes, enums</span> e outros objetos definidos nesse projeto.';
+                document.getElementById('acp').innerHTML = '*.Application.Contracts project';
+                document.getElementById('tpca').innerHTML = 'Este projeto contém <a href="">serviço de aplicativo</a> interfaces e <a href="">dados Transfer Objects</a> (DTO) da camada de aplicação. Ele separa a interface e implementação da camada de aplicação. Desta forma, o projeto de interface pode ser compartilhado com os clientes como um pacote de contrato.';
+                document.getElementById('ibs').innerHTML = 'interface <span class="txt-color">IBookAppService</span> e <span class="txt-color">BookCreationDto</span> são bons exemplos para estar dentro do Projeto <span class="txt-color">*.Application.Contracts</span>.';
+                document.getElementById('dds').innerHTML = 'Dependências';
+                document.getElementById('dot').innerHTML = 'Depende do <span class="txt-color">*.Domain.Shared</span> porque pode usar <span class="txt-color">constantes, enums</span> e outros objetos compartilhados deste projeto nas interfaces de serviço de aplicativo e DTOs.';
+                document.getElementById('AP').innerHTML = '*. Projeto de aplicação';
+                document.getElementById('tpconta').innerHTML = 'Este projeto contém o <a href="https://docs.abp.io/en/abp/latest/Application-Services">aplicativo serviço</a> <strong>implementações</strong> das interfaces definidas no <span class="txt-color">.Application.Contracts</span> projeto.';
+                document.getElementById('bookAppSer').innerHTML = '<span class="txt-color">BookAppService</span> é a implementação de <span interface class="txt-color">IBookAppService</span> e bons exemplos para estar dentro o projeto <span class="txt-color">*.Application</span>.';
+                document.getElementById('ddp').innerHTML = 'Dependências:';
+                document.getElementById('depoth').innerHTML = 'Depende do projeto <span class="txt-color">*.Application.Contracts</span> a ser capaz de implementar as interfaces e usar os <span class="txt-color">DTOs.</span>';
+                document.getElementById('EFC').innerHTML = 'Depende do projeto <span class="txt-color">*.Domain </span> para poder usar objetos de domínio como entidades, interfaces de repositório, etc... lógica do aplicativo.';
+                document.getElementById('EFCP').innerHTML = '*Projeto EntityFrameworkCore';
+                document.getElementById('tiinte').innerHTML = 'Este é o projeto de integração para o <span class="txt-color">EF Core.</span> define o <span class="txt-color">DbContext</span> e implementa o repositório interfaces definidas no projeto <span class="txt-color">*.Domain</span>.';
+                document.getElementById('dependent').innerHTML = 'Dependências';
+                document.getElementById('depenonthe').innerHTML = 'Depende do projeto <span class="txt-color">*.Domain</span> para poder referência a entidades e interfaces de repositório.';
+                document.getElementById('tprojis').innerHTML = 'Este projeto estará disponível somente se você estiver usando o EF Core como provedor de banco de dados. Se você selecione outro provedor de banco de dados, seu nome será diferente.';
+                document.getElementById('dbmigrate').innerHTML = 'Projeto *.DbMigrator';
+                document.getElementById('ticonsole').innerHTML = 'Este é um aplicativo de console que simplifica a execução de migrações de banco de dados em ambientes de desenvolvimento e produção. Quando você executa este aplicativo, ele;';
+                document.getElementById('createthedta').innerHTML = 'Cria o banco de dados, se necessário.';
+                document.getElementById('appthepending').innerHTML = 'Aplica as migrações de banco de dados pendentes.';
+                document.getElementById('seeds').innerHTML = 'Semeie os dados iniciais, se necessário.';
+                document.getElementById('noticethat').innerHTML = 'Observe que este projeto tem seu próprio <span class="txt-color">appsettings.json </span>arquivo. Se precisar alterar a string de conexão do banco de dados padrão, você deve definir em seu próprio <span class="txt-color">appsettings.json .</span>';
+                document.getElementById('seedInitialData').innerHTML = 'A propagação dos dados iniciais é importante neste momento. ABP tem uma semente de dados modular a infraestrutura. Mais informações consulte <a href="https://docs.abp.io/en/abp/latest/Data-Seeding">semeadura de dados documentação.</a>';
+                document.getElementById('whileCreatingdata').innerHTML = 'Embora a criação de banco de dados e a aplicação de migrações pareçam necessárias apenas para relacionamentos bancos de dados, este projeto é incluído mesmo se você escolher um <span provedor de banco de dados class="txt-color">NoSQL</span> (como <span class="txt-color">MongoDB</span>). Nesse caso, ele ainda semeia dados iniciais que é necessário para a inicialização do aplicativo.';
+                document.getElementById('des').innerHTML = 'Dependências:';
+                document.getElementById('depeonthe').innerHTML = 'Depende do projeto <span class="txt-color">*.EntityFrameworkCore</span> (para EF Core), pois precisa acessar as migrações.';
+                document.getElementById('ht').innerHTML = 'Depende do <span class="txt-color">*.Application.Contracts</span> projeto para ser capaz de acessar as definições de permissão, porque o semeador de dados inicial concede todos permissões para a função admin por padrão.';
+                document.getElementById('httpapi').innerHTML = '*Projeto .HttpApi';
+                document.getElementById('thisprojis').innerHTML = 'Na maioria das vezes, você não precisa definir manualmente os controladores de API, pois o ABP <a href="https://docs.abp.io/en/abp/latest/API/Auto-API-Controllers">API automática O recurso Controllers</a> os cria automaticamente com base em sua camada de aplicativo. No entanto, caso você precise escrever controladores de API, este é o melhor lugar para fazê-lo.';
+                document.getElementById('detent').innerHTML = 'Dependências:';
+                document.getElementById('dependsontheapp').innerHTML = 'Depende do projeto <span class="txt-color">*.Application.Contracts</span> a ser capaz de injetar as interfaces de serviço do aplicativo.';
+                document.getElementById('httap').innerHTML = 'Projeto *.HttpApi.Client';
+                document.getElementById('thisisprojdef').innerHTML = 'Este é o projeto que define os proxies do cliente <span class="txt-color">C#</span> para usar o HTTP APIs da solução. Você pode compartilhar esta biblioteca com clientes de terceiros, para que eles possam consomem facilmente suas APIs HTTP em seus aplicativos <span class="txt-color">.NET</span>. Para outros tipos de aplicativos, eles ainda podem usar as APIs, manualmente ou usando um ferramenta em sua própria plataforma.';
+                document.getElementById('mostofthe').innerHTML = 'Na maioria das vezes, você não precisa criar proxies de cliente C# manualmente, graças aos ABPs <a href="https://docs.abp.io/en/abp/latest/API/Dynamic-CSharp-API-Clients"> C# Dinâmico Recurso de clientes de API.</a>';
+                document.getElementById('consoletestapp').innerHTML = 'O projeto *.HttpApi.Client.ConsoleTestApp</span> é um console aplicativo criado para demonstrar o uso dos proxies do cliente.';
+                document.getElementById('dependsonthe').innerHTML = 'Depende do projeto <span class="txt-color">*.Application.Contracts</span> a ser capaz de compartilhar as mesmas interfaces de serviço de aplicativo e DTOs com o controle remoto serviço.';
+                document.getElementById('WP').innerHTML = 'Observe que você pode excluir este projeto e dependências se não precisar criar C# proxies de cliente para suas APIs';
+                document.getElementById('wepproj').innerHTML = '*.Projeto Web';
+                document.getElementById('thisprojcon').innerHTML = 'Este projeto contém a interface do usuário (UI) do aplicativo se você estiver usando ASP.NET IU principal do MVC. Ele contém páginas Razor, arquivos JavaScript, arquivos CSS, imagens e assim por diante...';
+                document.getElementById('thisprojhas').innerHTML = 'Este projeto tem um arquivo <span class="txt-color">appsettings.json</span> que contém a string de conexão e outras configurações do aplicativo.';
+                document.getElementById('depenhttp').innerHTML = 'Dependências:';
+                document.getElementById('depenonthehttp').innerHTML = 'Depende do <span class="txt-color">*.HttpApi</span>, pois a camada de IU precisa usar APIs e interfaces de serviço de aplicativo da solução.';
+                document.getElementById('ifyoucheck').innerHTML = 'Se você verificar o código fonte do arquivo <span class="txt-color">*.Web.csproj</span>, você verá as referências ao <span class="txt-color">*.Application</span> e ao Projetos <span class="txt-color">*.EntityFrameworkCore</span>. Essas referências são  realmente não é necessário ao codificar sua camada de interface do usuário, porque a camada de interface do usuário não depende do <span class="txt-color">EF Core</span> ou a implementação da camada de aplicativo. Esse modelo de inicialização é pré-configurado para a implantação em camadas, onde a camada de API é hospedada em um servidor separado, além da camada de interface do usuário.';
+                document.getElementById('RA').innerHTML = 'No entanto, se você não escolher a opção <span class="txt-color">--tiered</span> quando você cria uma solução, essas referências estarão no <span class="txt-color">*.Web</span> para poder hospedar a Web, API e camadas de aplicativos em um único endpoint de aplicativo. Isso lhe dá a capacidade de usar as entidades de domínio e repositórios em sua camada de apresentação. No entanto, isso é considerada uma prática ruim de acordo com as regras do DDD.';
+                document.getElementById('reactarc').innerHTML = 'Arquitetura REACT';
+                document.getElementById('follare').innerHTML = 'A seguir está a arquitetura de como o raaghu-react está sendo usado como parte da interface do usuário aplicativo';
+                document.getElementById('raghuath').innerHTML = 'Raaghu - Fluxo de autenticação (página de login)';
+                document.getElementById('raaghuloc').innerHTML = 'Raaghu - Localização';
+                document.getElementById('pageflow').innerHTML = 'Raaghu - Fluxo da página';
+                document.getElementById('whatnex').innerHTML = 'Qual é o próximo?';
+                document.getElementById('seeethe').innerHTML = 'Consulte o documento <a href="Getting-Started.html">Primeiros passos</a> para criar um novo solução e execute-a para este modelo.';
+                
+// For In this doc section
+                document.getElementById('inthisdoc').innerHTML = 'neste documento';
+                document.getElementById('sdefault').innerHTML = '<a href="#ss" class="text-black">Estrutura padrão</a>';
+                document.getElementById('sdomain').innerHTML = '<a href="#ES" class="text-black">Projeto Domain.Shared</a>';
+                document.getElementById('sdepen').innerHTML = '<a href="#ES" class="text-black">Dependências:</a>';
+                document.getElementById('secpro').innerHTML = '<a href="#ES" class="text-black">Projeto de domínio</a>';
+                document.getElementById('secapplication').innerHTML = '<a href="#AP" class="text-black">Projeto de aplicativo</a>';
+                document.getElementById('secentity').innerHTML = '<a href="#EFC" class="text-black">Projeto EntityFrameworkCore</a>';
+                document.getElementById('secdb').innerHTML = '<a href="#EFC" class="text-black">Projeto DbMigrator</a>';
+                document.getElementById('shttp').innerHTML = '<a href="#ht" class="text-black">projeto HttpApi</a>';
+                document.getElementById('secweb').innerHTML = '<a href="#WP" class="text-black">Projeto da Web</a>';
+                document.getElementById('secreact').innerHTML = '<a href="#RA" class="text-black">Arquitetura REACT</a>';
+               
+            }
+            else if (selectedLanguage === 'French') {
+                document.getElementById('sstrct').innerHTML = '<span class="accordian-active">Structure de la solution</span>';
+                document.getElementById('ss').innerHTML = 'structure de la solution';
+                document.getElementById('ywg').innerHTML = 'Vous obtiendrez une structure de solution légèrement différente en fonction des options que vous avez spécifiées.';
+                document.getElementById('dstruct').innerHTML = 'structure standard';
+                document.getElementById('iyd').innerHTML = 'Si vous ne spécifiez aucune option supplémentaire, vous aurez une solution dans le dossier <strong>aspnet-core</strong> comme ci-dessous :';
+                document.getElementById('proare').innerHTML = 'Les projets se trouvent dans les dossiers aspnet-core/src et aspnet-core/test. Alors que le dossier aspnet-core/src contient l\'application réelle, le dossier aspnet-core/test contient des tests unitaires et des projets de base de test. Le diagramme ci-dessous montre les couches de l\'application et les dépendances du projet :';
+                document.getElementById('ES').innerHTML = 'Chaque section ci-dessous décrit le projet associé et ses dépendances.';
+                document.getElementById('dsp').innerHTML = '*.Domain.Projet partagé';
+                document.getElementById('tpc').innerHTML = 'Ce projet contient des <span class="txt-color">constantes, des énumérations</span> et les autres objets qui font partie de la couche de domaine mais partagés par tous les projets de la couche de solution.';
+                document.getElementById('fex').innerHTML = 'Par exemple <span class="txt-color">BookType <enum> ou BookConsts <class> </span>(contient des constantes de validation comme <span class="txt-color">MaxNameLength</span>) sont de bons candidats pour projet <span class="txt-color">*.Domain.Shared.</span>';
+                document.getElementById('depen').innerHTML = 'Dépendances :';
+                document.getElementById('domains').innerHTML = 'Le projet <span class="txt-color">Domain.Shared</span> ne dépend pas d\'autres projets de la solution. Tous les autres projets en dépendent directement ou indirectement.';
+                document.getElementById('dpro').innerHTML = '* Conception de domaine';
+                document.getElementById('titd').innerHTML = 'Il s\'agit de la couche domaine de la solution. Contient <a href="https://docs.abp.io/en/abp/latest/Entities">entités,</a> <a href="https://docs.abp.io/en/abp/ latest/Entities">Racines agrégées, </a> <a href="https://docs.abp.io/en/abp/latest/Domain-Services">Services de domaine, </a> <a href= " https://docs.abp.io/en/abp/latest/Value-Types">Value-Types, </a> <a href="https://docs.abp.io/en/abp/latest / Référentiels">interfaces de référentiel </a>et autres objets du domaine.';
+                document.getElementById('bookent').innerHTML = 'Une entité <span class="txt-color">Livre</span>, un <span class="txt-color">BookManager</span> et un <span interface class="txt-color"> IBookRepository< /span> sont de bons exemples pour être dans le projet <span class="txt-color">*.Domain</span>.';
+                document.getElementById('ded').innerHTML = 'Dépendances :';
+                document.getElementById('depenon').innerHTML = 'Cela dépend de <span class="txt-color">*.Domain.Shared</span> car il utilise des <span class="txt-color">constantes, des énumérations</span> et d\'autres objets définis dans ce projet.';
+                document.getElementById('acp').innerHTML = 'Projet *.Application.Contracts';
+                document.getElementById('tpca').innerHTML = 'Ce projet contient des interfaces de <a href="">service d\'application</a> et des <a href="">objets de transfert de données</a> (DTO) de la couche application. Il sépare l\'interface et l\'implémentation de la couche application. De cette façon, la conception de l\'interface peut être partagée avec les clients sous la forme d\'un ensemble de contrats.';
+                document.getElementById('ibs').innerHTML = '<span class="txt-color">IBookAppService</span> et l\'interface <span class="txt-color">BookCreationDto</span> sont de bons exemples pour faire partie du projet <span class="txt-color"> *.Contrats.d\'application</span>.';
+                document.getElementById('dds').innerHTML = 'Dépendances';
+                document.getElementById('dot').innerHTML = 'Dépend de <span class="txt-color">*.Domain.Shared</span> car il peut utiliser <span class="txt-color">constantes, énumérations</span> et d\'autres objets partagés de ce projet dans le service applicatif et les DTO.';
+                document.getElementById('AP').innerHTML = '*. conception d\'applications';
+                document.getElementById('tpconta').innerHTML = 'Ce projet contient les <a href="https://docs.abp.io/en/abp/latest/Application-Services">application de service</a> <strong>implémentations</strong> des interfaces définies dans < span class="txt-color">.Application.Contracts</span> projet.';
+                document.getElementById('bookAppSer').innerHTML = '<span class="txt-color">BookAppService</span> est l\'implémentation de <span interface class="txt-color">IBookAppService</span> et de bons exemples pour être dans le projet <span class="txt- couleur">*.Application</span>.';
+                document.getElementById('ddp').innerHTML = 'Dépendances :';
+                document.getElementById('depoth').innerHTML = 'Cela dépend du projet <span class="txt-color">*.Application.Contracts</span> pour pouvoir implémenter les interfaces et utiliser les <span class="txt-color">DTO.</span>';
+                document.getElementById('EFC').innerHTML = 'Cela dépend du projet <span class="txt-color">*.Domain </span> pour pouvoir utiliser des objets de domaine comme entités, interfaces de référentiel, etc... logique d\'application.';
+                document.getElementById('EFCP').innerHTML = '*Projet EntityFrameworkCore';
+                document.getElementById('tiinte').innerHTML = 'Il s\'agit du projet d\'intégration pour <span class="txt-color">EF Core.</span> définit le <span class="txt-color">DbContext</span> et implémente les interfaces de référentiel définies dans le projet < span class="txt-color">*.Domain</span>.';
+                document.getElementById('dependent').innerHTML = 'Dépendances';
+                document.getElementById('depenonthe').innerHTML = 'Cela dépend du projet <span class="txt-color">*.Domain</span> pour pouvoir référencer les entités et les interfaces du référentiel.';
+                document.getElementById('tprojis').innerHTML = 'Ce projet n\'est disponible que si vous utilisez EF Core comme fournisseur de base de données. Si vous sélectionnez un autre fournisseur de base de données, son nom sera différent.';
+                document.getElementById('dbmigrate').innerHTML = 'Projet *.DbMigrator';
+                document.getElementById('ticonsole').innerHTML = 'Il s\'agit d\'une application console qui simplifie les migrations de bases de données dans les environnements de développement et de production. Lorsque vous exécutez cette application, elle ;';
+                document.getElementById('createthedta').innerHTML = 'Créez la base de données si nécessaire.';
+                document.getElementById('appthepending').innerHTML = 'Appliquer les migrations de base de données en attente.';
+                document.getElementById('seeds').innerHTML = 'Semeie os dados iniciais, se necessário.';
+                document.getElementById('noticethat').innerHTML = 'Notez que ce projet a son propre fichier <span class="txt-color">appsettings.json </span>. Si vous devez modifier la chaîne de connexion à la base de données par défaut, vous devez définir dans votre propre <span class="txt-color">appsettings.json .</span>';
+                document.getElementById('seedInitialData').innerHTML = 'La propagation des données initiales est importante à ce stade. ABP dispose d\'une infrastructure de semences de données modulaire. Pour plus d\'informations, consultez la <a href="https://docs.abp.io/en/abp/latest/Data-Seeding">documentation sur l\'amorçage des données.</a>';
+                document.getElementById('whileCreatingdata').innerHTML = 'Bien que la création de bases de données et l\'application de migrations semblent nécessaires uniquement pour les relations de base de données, ce projet est inclus même si vous choisissez un <span class="txt-color">fournisseur de base de données NoSQL</span> (comme <span class="txt-color" >MongoDB</span>). Dans ce cas, il génère toujours les données initiales nécessaires au démarrage de l\'application.';
+                document.getElementById('des').innerHTML = 'Dépendances :';
+                document.getElementById('depeonthe').innerHTML = 'Cela dépend du projet <span class="txt-color">*.EntityFrameworkCore</span> (pour EF Core) car il a besoin d\'accéder aux migrations.';
+                document.getElementById('ht').innerHTML = 'Cela dépend du projet <span class="txt-color">*.Application.Contracts</span> pour pouvoir accéder aux définitions d\'autorisation, car le générateur de données initial accorde toutes les autorisations au rôle admin par défaut.';
+                document.getElementById('httpapi').innerHTML = '* Projet .HttpApi';
+                document.getElementById('thisprojis').innerHTML = 'La plupart du temps, vous n\'avez pas besoin de définir manuellement les contrôleurs d\'API en tant qu\'ABP <a href="https://docs.abp.io/en/abp/latest/API/Auto-API-Controllers">API automatique La fonctionnalité Contrôleurs</a> les crée automatiquement en fonction de votre couche d\'application. Cependant, si vous avez besoin d\'écrire des contrôleurs d\'API, c\'est le meilleur endroit pour le faire.';
+                document.getElementById('detent').innerHTML = 'Dépendances :';
+                document.getElementById('dependsontheapp').innerHTML = 'Cela dépend du projet <span class="txt-color">*.Application.Contracts</span> pour pouvoir injecter les interfaces de service de l\'application.';
+                document.getElementById('httap').innerHTML = 'Projet *.HttpApi.Client';
+                document.getElementById('thisisprojdef').innerHTML = 'Il s\'agit du projet qui définit les proxys client <span class="txt-color">C#</span> pour utiliser les API HTTP de la solution. Vous pouvez partager cette bibliothèque avec des clients tiers afin qu\'ils puissent facilement utiliser vos API HTTP dans leurs applications <span class="txt-color">.NET</span>. Pour les autres types d\'applications, ils peuvent toujours utiliser les API, soit manuellement, soit à l\'aide d\'un outil sur leur propre plateforme.';
+                document.getElementById('mostofthe').innerHTML = 'La plupart du temps, vous n\'avez pas besoin de créer manuellement des proxys client C# grâce aux ABP <a href="https://docs.abp.io/en/abp/latest/API/Dynamic-CSharp-API-Clients" > Fonctionnalité des clients d\'API dynamiques C#.</a>';
+                document.getElementById('consoletestapp').innerHTML = 'Le projet *.HttpApi.Client.ConsoleTestApp</span> est une application console créée pour démontrer l\'utilisation de proxys clients.';
+                document.getElementById('dependsonthe').innerHTML = 'Cela dépend du projet <span class="txt-color">*.Application.Contracts</span> pour pouvoir partager les mêmes interfaces de service d\'application et DTO avec le service distant.';
+                document.getElementById('WP').innerHTML = 'Notez que vous pouvez supprimer ce projet et ses dépendances si vous n\'avez pas besoin de créer des proxys client C# pour vos API';
+                document.getElementById('wepproj').innerHTML = '*.Projet Web';
+                document.getElementById('thisprojcon').innerHTML = 'Ce projet contient l\'interface utilisateur (UI) de l\'application si vous utilisez l\'interface utilisateur principale ASP.NET MVC. Il contient des pages Razor, des fichiers JavaScript, des fichiers CSS, des images, etc.';
+                document.getElementById('thisprojhas').innerHTML = 'Ce projet contient un fichier <span class="txt-color">appsettings.json</span> qui contient la chaîne de connexion et d\'autres paramètres d\'application.';
+                document.getElementById('depenhttp').innerHTML = 'Dépendances :';
+                document.getElementById('depenonthehttp').innerHTML = 'Dépend de <span class="txt-color">*.HttpApi</span> car la couche d\'interface utilisateur doit utiliser les API et les interfaces App Service de la solution.';
+                document.getElementById('ifyoucheck').innerHTML = 'Si vous vérifiez le code source du fichier <span class="txt-color">*.Web.csproj</span>, vous verrez des références à <span class="txt-color">*.Application</span > et Projets <span class="txt-color">*.EntityFrameworkCore</span>. Ces références ne sont vraiment pas nécessaires lors du codage de votre couche d\'interface utilisateur, car la couche d\'interface utilisateur ne dépend pas de <span class="txt-color">EF Core</span> ou de l\'implémentation de la couche d\'application. Ce modèle de démarrage est préconfiguré pour un déploiement à plusieurs niveaux, où le niveau d\'API est hébergé sur un serveur distinct en plus du niveau d\'interface utilisateur.';
+                document.getElementById('RA').innerHTML = 'Cependant, si vous ne choisissez pas l\'option <span class="txt-color">--tiered</span> lorsque vous créez une solution, ces références seront dans le <span class="txt-color">*. Web< /span> pour pouvoir héberger les couches Web, API et application dans un seul point de terminaison d\'application. Cela vous donne la possibilité d\'utiliser des entités de domaine et des référentiels dans votre couche de présentation. Cependant, cela est considéré comme une mauvaise pratique selon les règles DDD.';
+                document.getElementById('reactarc').innerHTML = 'Architecture REACT';
+                document.getElementById('follare').innerHTML = 'Voici l\'architecture de la façon dont raaghu-react est utilisé dans le cadre de l\'interface utilisateur de l\'application';
+                document.getElementById('raghuath').innerHTML = 'Raaghu - Flux d\'authentification (page de connexion)';
+                document.getElementById('raaghuloc').innerHTML = 'Raaghu - Emplacement';
+                document.getElementById('pageflow').innerHTML = 'Raaghu - Flux de la page';
+                document.getElementById('whatnex').innerHTML = 'Quelle est la prochaine?';
+                document.getElementById('seeethe').innerHTML = 'Consultez le document <a href="Getting-Started.html">Getting Started</a> pour créer une nouvelle solution et l\'exécuter pour ce modèle.';
+            
+            // For In this doc section
+            document.getElementById('inthisdoc').innerHTML = 'dans ce document';
+                document.getElementById('sdefault').innerHTML = '<a href="#ss" class="text-black">Structure par défaut</a>';
+                document.getElementById('sdomain').innerHTML = '<a href="#ES" class="text-black">Domaine.Projet partagé</a>';
+                document.getElementById('sdepen').innerHTML = '<a href="#ES" class="text-black">Dépendances :</a>';
+                document.getElementById('secpro').innerHTML = '<a href="#ES" class="text-black">Domaine du projet</a>';
+                document.getElementById('secapplication').innerHTML = '<a href="#AP" class="text-black">Projet d\'application</a>';
+                document.getElementById('secentity').innerHTML = '<a href="#EFC" class="text-black">Projet EntityFrameworkCore</a>';
+                document.getElementById('secdb').innerHTML = '<a href="#EFC" class="text-black">Projet DbMigrator</a>';
+                document.getElementById('shttp').innerHTML = '<a href="#ht" class="text-black">Projet HTTPApi</a>';
+                document.getElementById('secweb').innerHTML = '<a href="#WP" class="text-black">Conception Web</a>';
+                document.getElementById('secreact').innerHTML = '<a href="#RA" class="text-black">Architecture REACT</a>';
+            } 
+            else if (selectedLanguage === 'Finnish') {
+                document.getElementById('sstrct').innerHTML = '<span class="accordian-active">Ratkaisun rakenne</span>';
+document.getElementById('ss').innerHTML = 'ratkaisun rakenne';
+document.getElementById('ywg').innerHTML = 'Saat hieman erilaisen ratkaisurakenteen riippuen määrittämistäsi vaihtoehdoista.';
+document.getElementById('dstruct').innerHTML = 'standardirakenne';
+document.getElementById('iyd').innerHTML = 'Jos et määritä mitään lisävaihtoehtoja, sinulla on ratkaisu kansiossa <strong>aspnet-core</strong> kuten alla:';
+document.getElementById('proare').innerHTML = 'Projektit ovat kansioissa aspnet-core/src ja aspnet-core/test. Kun aspnet-core/src kansio sisältää varsinaisen sovelluksen, aspnet-core/test kansio sisältää yksikkötestit ja testipohjaiset projektit. Alla oleva kaavio näyttää sovelluksen kerrokset ja projektien riippuvuudet:';
+document.getElementById('ES').innerHTML = 'Jokainen osio alla kuvaa siihen liittyvän projektin ja sen riippuvuudet.';
+document.getElementById('dsp').innerHTML = '*.Domain.Projekti jaettu';
+document.getElementById('tpc').innerHTML = 'Tämä projekti sisältää <span class="txt-color">vakioita, luetteloita</span> ja muita osia, jotka kuuluvat sovelluskerrokseen, mutta ovat jaettuja kaikkien ratkaisukerroksen projektien kesken.';
+document.getElementById('fex').innerHTML = 'Esimerkiksi <span class="txt-color">BookType <enum> tai BookConsts <class> </span>(sisältää tarkistuksen vakioita, kuten <span class="txt-color">MaxNameLength</span>) ovat hyviä ehdokkaita projektille <span class="txt-color">*.Domain.Shared.</span>';
+document.getElementById('depen').innerHTML = 'Riippuvuudet:';
+document.getElementById('domains').innerHTML = 'Projekti <span class="txt-color">Domain.Shared</span> ei riipu muista ratkaisun projekteista. Kaikki muut projektit ovat riippuvaisia suoraan tai välillisesti siitä.';
+document.getElementById('dpro').innerHTML = '* Domain-suunnittelu';
+document.getElementById('titd').innerHTML = 'Tämä on ratkaisun domain-kerros. Se sisältää <a href="https://docs.abp.io/en/abp/latest/Entities">tietueita,</a> <a href="https://docs.abp.io/en/abp/ latest/Entities">aggregaattijuuret,</a> <a href="https://docs.abp.io/en/abp/latest/Domain-Services">domain-palvelut,</a> <a href=" https://docs.abp.io/en/abp/latest/Value-Types">arvotyypit,</a> <a href="https://docs.abp.io/en/abp/latest / Référentiels">liitännät,</a> ja muita domain-objekteja.';
+document.getElementById('bookent').innerHTML = 'Entiteetti <span class="txt-color">Kirja</span>, <span class="txt-color">KirjaManager</span> ja liitännät <span interface class="txt-color"> IBookRepository< /span> ovat hyviä esimerkkejä projektista <span class="txt-color">*.Domain</span>.';
+document.getElementById('ded').innerHTML = 'Riippuvuudet:';
+document.getElementById('depenon').innerHTML = 'Tämä riippuu projektista <span class="txt-color">*.Domain.Shared</span>, koska se käyttää tässä projektissa määriteltyjä <span class="txt-color">vakioita, luetteloita</span> ja muita osia.';
+document.getElementById('acp').innerHTML = 'Projekti *.Application.Contracts';
+document.getElementById('tpca').innerHTML = 'Tämä projekti sisältää sovelluskerroksen <a href="">palveluiden liittymärajapinnat</a> ja <a href="">tietojen siirtoluokat</a> (DTO). Se erottaa sovelluskerroksen liittymän ja toteutuksen. Tällä tavoin liittymäsuunnittelu voidaan jakaa asiakkaille sopimuksena.';
+document.getElementById('ibs').innerHTML = '<span class="txt-color">IBookAppService</span> ja liitännät <span class="txt-color">BookCreationDto</span> ovat hyviä esimerkkejä projektista <span class="txt-color"> *.Application.Contracts.</span>';
+document.getElementById('dds').innerHTML = 'Riippuvuudet:';
+document.getElementById('dot').innerHTML = 'Tämä riippuu projektista <span class="txt-color">*.Domain.Shared</span>, koska se voi käyttää jakamiaan <span class="txt-color">vakioita, luetteloita</span> ja muita osia sovelluspalvelussa ja DTO:ssa.';
+document.getElementById('AP').innerHTML = '*. sovelluskerroksen suunnittelu';
+document.getElementById('tpconta').innerHTML = 'Tämä projekti sisältää liittymän määrittelyissä olevat <a href="https://docs.abp.io/en/abp/latest/Application-Services">sovelluspalvelun</a> <strong>toteutukset</strong> < span class="txt-color">.Application.Contracts</span> projektissa.';
+document.getElementById('bookAppSer').innerHTML = '<span class="txt-color">BookAppService</span> on toteutus <span interface class="txt-color">IBookAppService</span> ja on hyvä esimerkki projektista <span class="txt-color">*.Application</span>.';
+document.getElementById('ddp').innerHTML = 'Riippuvuudet:';
+document.getElementById('depoth').innerHTML = 'Tämä riippuu projektista <span class="txt-color">*.Application.Contracts</span> jotta voi toteuttaa liittymät ja käyttää <span class="txt-color">DTO:ita.</span>';
+document.getElementById('EFC').innerHTML = 'Tämä riippuu projektista <span class="txt-color">*.Domain</span> jotta voi käyttää domain-objekteja, kuten tietueita, liitännät jne. sovelluslogiikassa.';
+document.getElementById('EFCP').innerHTML = '*EntityFrameworkCore-projekti';
+document.getElementById('tiinte').innerHTML = 'Tämä on projekti <span class="txt-color">EF Core</span> -integraatiolle. Se määrittelee <span class="txt-color">DbContext</span> ja toteuttaa liittännät, jotka on määritelty projektissa < span class="txt-color">*.Domain</span>.';
+document.getElementById('dependent').innerHTML = 'Riippuvuudet';
+document.getElementById('depenonthe').innerHTML = 'Tämä riippuu projektista <span class="txt-color">*.Domain</span> voidakseen viitata tietueisiin ja liitännöihin.';
+document.getElementById('tprojis').innerHTML = 'Tämä projekti on käytettävissä vain, jos käytät EF Corea tietokantapalveluna. Jos valitset toisen tietokantapalvelun tarjoajan, sen nimi on erilainen.';
+document.getElementById('dbmigrate').innerHTML = 'Projekti *.DbMigrator';
+document.getElementById('ticonsole').innerHTML = 'Tämä on konsolisovellus, joka helpottaa tietokannan siirtymisiä kehitys- ja tuotantoympäristöissä. Kun suoritat tämän sovelluksen, se...';
+document.getElementById('createthedta').innerHTML = 'Luo tietokanta tarvittaessa.';
+document.getElementById('appthepending').innerHTML = 'Käytä odottavia tietokannan siirtymiä.';
+document.getElementById('seeds').innerHTML = 'Kylvä alkuperäistä dataa tarvittaessa.';
+document.getElementById('noticethat').innerHTML = 'Huomaa, että tällä projektilla on oma tiedosto <span class="txt-color">appsettings.json</span>. Jos haluat muuttaa oletusarvoista tietokantayhteyden merkkijonoa, sinun on määritettävä se omassa <span class="txt-color">appsettings.jsonissasi</span>.';
+document.getElementById('seedInitialData').innerHTML = 'Alkuperäisen datan kylvö on tärkeää tässä vaiheessa. ABP:llä on modulaarinen datan kylvöinfrastruktuuri. Lisätietoja löydät <a href="https://docs.abp.io/en/abp/latest/Data-Seeding">dokumentaatiosta datan kylvöstä</a>.';
+document.getElementById('whileCreatingdata').innerHTML = 'Vaikka tietokantojen luominen ja siirtymien käyttö saattavat vaikuttaa tarpeellisilta vain tietokantarajojen kannalta, tämä projekti sisältyy myös, kun valitset <span class="txt-color">NoSQL-tietokannan tarjoajan</span> (kuten <span class="txt-color">MongoDB</span>). Tässä tapauksessa se luo edelleen alkuperäisen datan, jota tarvitaan sovelluksen käynnistyksessä.';
+document.getElementById('des').innerHTML = 'Riippuvuudet:';
+document.getElementById('depeonthe').innerHTML = 'Tämä riippuu projektista <span class="txt-color">*.EntityFrameworkCore</span> (EF Core) koska se tarvitsee pääsyn siirtymiin.';
+document.getElementById('ht').innerHTML = 'Tämä riippuu projektista <span class="txt-color">*.Application.Contracts</span> voidakseen käyttää käyttöoikeusmäärittelyjä, koska alkuperäisten tietojen generaattori myöntää oletusarvoisesti kaikki käyttöoikeudet admin-roolille.';
+document.getElementById('httpapi').innerHTML = '* HTTPApi-projekti';
+document.getElementById('thisprojis').innerHTML = 'Useimmiten sinun ei tarvitse määrittää API-ohjaimia manuaalisesti, koska ABP <a href="https://docs.abp.io/en/abp/latest/API/Auto-API-Controllers">automaattisten API-ohjainten</a> ominaisuus luo ne automaattisesti sovelluskerroksen perusteella. Jos kuitenkin tarvitset kirjoittaa API-ohjaimia, tämä on paras paikka tehdä se.';
+document.getElementById('detent').innerHTML = 'Riippuvuudet:';
+document.getElementById('dependsontheapp').innerHTML = 'Tämä riippuu projektista <span class="txt-color">*.Application.Contracts</span> voidakseen injektoida sovelluskerroksen liittymien rajapintoja.';
+document.getElementById('httap').innerHTML = 'HTTPApi.Client-projekti';
+document.getElementById('thisisprojdef').innerHTML = 'Tämä on projekti, joka määrittelee <span class="txt-color">C#</span>-asiakasproksyt käyttämään ratkaisun HTTP API -palveluja. Voit jakaa tämän kirjaston kolmansien osapuolten asiakkaiden kanssa, jotta he voivat helposti käyttää HTTP API -palveluja sovelluksissaan <span class="txt-color">.NET</span>. Muille sovellustyypeille he voivat silti käyttää API:ta joko manuaalisesti tai käyttäen työkalua omalla alustallaan.';
+document.getElementById('mostofthe').innerHTML = 'Useimmiten sinun ei tarvitse luoda C#-asiakasproksyja manuaalisesti ABP:n <a href="https://docs.abp.io/en/abp/latest/API/Dynamic-CSharp-API-Clients" >dynaamisten C#-asiakasproksyjen</a> ominaisuuden ansiosta.';
+document.getElementById('consoletestapp').innerHTML = 'Projekti *.HttpApi.Client.ConsoleTestApp</span> on konsolisovellus, joka on luotu asiakasproksyjen käytön esittämiseksi.';
+document.getElementById('dependsonthe').innerHTML = 'Tämä riippuu projektista <span class="txt-color">*.Application.Contracts</span> voidakseen jakaa samat sovelluskerroksen liittymien rajapinnat ja DTO:t etäpalvelun kanssa.';
+document.getElementById('WP').innerHTML = 'Huomaa, että voit poistaa tämän projektin ja sen riippuvuudet, jos et tarvitse luoda C#-asiakasproksyja API:si.';
+document.getElementById('wepproj').innerHTML = '*.Web-projekti';
+document.getElementById('thisprojcon').innerHTML = 'Tämä projekti sisältää sovelluksen käyttöliittymän (UI), jos käytät pääkäyttöliittymänä ASP.NET MVC -käyttöliittymää. Se sisältää Razor-sivuja, JavaScript-tiedostoja, CSS-tiedostoja, kuvia jne.';
+document.getElementById('thisprojhas').innerHTML = 'Tämä projekti sisältää tiedoston <span class="txt-color">appsettings.json</span>, joka sisältää tietokantayhteyden merkkijonon ja muita sovellusparametreja.';
+document.getElementById('depenhttp').innerHTML = 'Riippuvuudet:';
+document.getElementById('depenonthehttp').innerHTML = 'Tämä riippuu projektista <span class="txt-color">*.HttpApi</span>, koska käyttöliittymäkerros tarvitsee käyttää ratkaisun API:ta ja sovelluspalvelun liittymien rajapintoja.';
+document.getElementById('ifyoucheck').innerHTML = 'Jos tarkistat tiedoston <span class="txt-color">*.Web.csproj</span> lähdekoodin, näet viittauksia <span class="txt-color">*.Application</span> ja <span class="txt-color">*.EntityFrameworkCore</span> projekteihin. Nämä viittaukset eivät ole todella tarpeellisia käyttöliittymäkerroksen koodaamisen aikana, koska käyttöliittymäkerros ei riipu <span class="txt-color">EF Coresta</span> tai sovelluskerroksen toteutuksesta. Tämä aloitusmalli on esiasetettu monitasoiseen käyttöön, jossa API-taso on isännöity erillisellä palvelimella yhdessä käyttöliittymäkerroksen kanssa. ';
+document.getElementById('RA').innerHTML = 'Kuitenkin, jos et valitse vaihtoehtoa <span class="txt-color">--tiered</span> luodessasi ratkaisua, nämä viittaukset ovat <span class="txt-color">*.Web</span>-projektissa, jotta voit isännöidä verkkokerrosta, API:a ja sovelluskerrosta yhdessä sovelluksen päätepisteessä. Tämä antaa sinulle mahdollisuuden käyttää domain-objekteja ja liitännöitä esittelykerroksessasi. Tämä katsotaan kuitenkin huonoksi käytännöksi DDD-sääntöjen mukaisesti.';
+document.getElementById('reactarc').innerHTML = 'REACT-arkkitehtuuri';
+document.getElementById('follare').innerHTML = 'Tässä on arkkitehtuuri, miten raaghu-reactia käytetään sovelluksen käyttöliittymässä.';
+document.getElementById('raghuath').innerHTML = 'Raaghu - Autentikointivirta (kirjautumissivu)';
+document.getElementById('raaghuloc').innerHTML = 'Raaghu - Sijainti';
+document.getElementById('pageflow').innerHTML = 'Raaghu - Sivuvirta';
+document.getElementById('whatnex').innerHTML = 'Mikä on seuraava askel?';
+document.getElementById('seeethe').innerHTML = 'Katso <a href="Getting-Started.html">Aloitusohje</a> uuden ratkaisun luomiseksi ja suorittamiseksi tämän mallin avulla.';
+
+
+document.getElementById('inthisdoc').innerHTML = 'tässä asiakirjassa';
+document.getElementById('sdefault').innerHTML = '<a href="#ss" class="text-black">Oletusrakenne</a>';
+document.getElementById('sdomain').innerHTML = '<a href="#ES" class="text-black">Jaettu.Domain.Projekti</a>';
+document.getElementById('sdepen').innerHTML = '<a href="#ES" class="text-black">Riippuvuudet:</a>';
+document.getElementById('secpro').innerHTML = '<a href="#ES" class="text-black">Domainin projekti</a>';
+document.getElementById('secapplication').innerHTML = '<a href="#AP" class="text-black">Sovelluksen projekti</a>';
+document.getElementById('secentity').innerHTML = '<a href="#EFC" class="text-black">Entity Framework Core -projekti</a>';
+document.getElementById('secdb').innerHTML = '<a href="#EFC" class="text-black">DbMigrator-projekti</a>';
+document.getElementById('shttp').innerHTML = '<a href="#ht" class="text-black">HTTPApi-projekti</a>';
+document.getElementById('secweb').innerHTML = '<a href="#WP" class="text-black">Web-suunnittelu</a>';
+document.getElementById('secreact').innerHTML = '<a href="#RA" class="text-black">REACT-arkkitehtuuri</a>';
+
+            } 
+            else if (selectedLanguage === 'Slovak') {
+                document.getElementById('sstrct').innerHTML = '<span class="accordian-active">Štruktúra riešenia</span>';
+document.getElementById('ss').innerHTML = 'Štruktúra riešenia';
+document.getElementById('ywg').innerHTML = 'Získate trochu odlišnú štruktúru riešenia v závislosti od zvolených možností.';
+document.getElementById('dstruct').innerHTML = 'štandardná štruktúra';
+document.getElementById('iyd').innerHTML = 'Ak nezadáte žiadne ďalšie možnosti, váš projekt bude v priečinku <strong>aspnet-core</strong> ako je nižšie:';
+document.getElementById('proare').innerHTML = 'Projekty sú v priečinkoch aspnet-core/src a aspnet-core/test. Priečinok aspnet-core/src obsahuje skutočnú aplikáciu, zatiaľ čo priečinok aspnet-core/test obsahuje jednotkové testy a testovacie projekty. Nasledujúci diagram zobrazuje vrstvy aplikácie a závislosti medzi projektmi:';
+document.getElementById('ES').innerHTML = 'Každá sekcia nižšie popisuje príslušný projekt a jeho závislosti.';
+document.getElementById('dsp').innerHTML = '*.Domain.Shared projekt';
+document.getElementById('tpc').innerHTML = 'Tento projekt obsahuje <span class="txt-color">konštanty, zoznamy</span> a ďalšie časti, ktoré patria do aplikačnej vrstvy, ale sú zdieľané medzi všetkými projektmi v riešení.';
+document.getElementById('fex').innerHTML = 'Napríklad <span class="txt-color">BookType <enum> alebo BookConsts <class> </span>(obsahuje konštanty, ako je <span class="txt-color">MaxNameLength</span>) sú dobrými kandidátmi pre projekt <span class="txt-color">*.Domain.Shared.</span>';
+document.getElementById('depen').innerHTML = 'Závislosti:';
+document.getElementById('domains').innerHTML = 'Projekt <span class="txt-color">Domain.Shared</span> nezávisí na žiadnych ďalších projektoch riešenia. Všetky ostatné projekty závisia priamo alebo nepriamo od tohto projektu.';
+document.getElementById('dpro').innerHTML = '* Domainový návrh';
+document.getElementById('titd').innerHTML = 'Toto je doménová vrstva riešenia. Obsahuje <a href="https://docs.abp.io/en/abp/latest/Entities">entity,</a> <a href="https://docs.abp.io/en/abp/ latest/Entities">agregačné korene,</a> <a href="https://docs.abp.io/en/abp/latest/Domain-Services">doménové služby,</a> <a href=" https://docs.abp.io/en/abp/latest/Value-Types">hodnotové typy,</a> <a href="https://docs.abp.io/en/abp/latest / Référentiels">rozhrania,</a> a ďalšie doménové objekty.';
+document.getElementById('bookent').innerHTML = 'Entita <span class="txt-color">Book</span>, <span class="txt-color">BookManager</span> a rozhrania <span interface class="txt-color"> IBookRepository< /span> sú dobrými príkladmi projektu <span class="txt-color">*.Domain</span>.';
+document.getElementById('ded').innerHTML = 'Závislosti:';
+document.getElementById('depenonthe').innerHTML = 'Tento projekt závisí od projektu <span class="txt-color">*.Domain.Shared</span>, pretože využíva definície <span class="txt-color">konštánt, zoznamov</span> a ďalších častí.';
+document.getElementById('acp').innerHTML = 'Projekt *.Application.Contracts';
+document.getElementById('tpca').innerHTML = 'Tento projekt obsahuje rozhrania <a href="">služieb aplikácie</a> a triedy prenosu údajov (DTO) v aplikačnej vrstve. Oddeľuje rozhranie aplikácie od jeho implementácie. Týmto spôsobom je rozhranie aplikácie možné zdieľať s klientmi ako zmluvu.';
+document.getElementById('ibs').innerHTML = '<span class="txt-color">IBookAppService</span> a rozhrania <span class="txt-color">BookCreationDto</span> sú dobrými príkladmi projektu <span class="txt-color"> *.Application.Contracts.</span>';
+document.getElementById('dds').innerHTML = 'Závislosti:';
+document.getElementById('dot').innerHTML = 'Tento projekt závisí od projektu <span class="txt-color">*.Domain.Shared</span>, pretože využíva zdieľané <span class="txt-color">konštanty, zoznamy</span> a ďalšie časti v službe aplikácie a DTO.';
+document.getElementById('AP').innerHTML = '*.Aplikačná vrstva';
+document.getElementById('tpconta').innerHTML = 'Tento projekt obsahuje implementácie služieb aplikácie definovaných v projekte <span class="txt-color">.Application.Contracts</span>.';
+document.getElementById('bookAppSer').innerHTML = '<span class="txt-color">BookAppService</span> je implementáciou rozhrania <span interface class="txt-color">IBookAppService</span> a je dobrým príkladom projektu <span class="txt-color">*.Application</span>.';
+document.getElementById('ddp').innerHTML = 'Závislosti:';
+document.getElementById('depoth').innerHTML = 'Tento projekt závisí od projektu <span class="txt-color">*.Application.Contracts</span>, aby mohol implementovať rozhrania a používať DTO.';
+document.getElementById('EFC').innerHTML = 'Tento projekt závisí od projektu <span class="txt-color">*.Domain</span>, aby mohol používať doménové objekty, ako sú entity, rozhrania atď. v aplikačnej logike.';
+document.getElementById('EFCP').innerHTML = '* Projekt EntityFrameworkCore';
+document.getElementById('tiinte').innerHTML = 'Toto je projekt pre integráciu s <span class="txt-color">EF Core</span>. Definuje <span class="txt-color">DbContext</span> a implementuje rozhrania, ktoré sú definované v projekte <span class="txt-color">*.Domain</span>.';
+document.getElementById('dependent').innerHTML = 'Závislosti';
+document.getElementById('depenonthe').innerHTML = 'Tento projekt závisí od projektu <span class="txt-color">*.Domain</span>, aby mohol odkazovať na entity a rozhrania.';
+document.getElementById('tprojis').innerHTML = 'Tento projekt je potrebný iba ak používate EF Core ako poskytovateľa databázových služieb. Ak zvolíte iného poskytovateľa databázy, názov projektu bude iný.';
+document.getElementById('dbmigrate').innerHTML = 'Projekt *.DbMigrator';
+document.getElementById('ticonsole').innerHTML = 'Toto je konzolová aplikácia, ktorá uľahčuje migráciu databázy vývojového a produkčného prostredia. Pri spustení tejto aplikácie...';
+document.getElementById('createthedta').innerHTML = 'Vytvorí databázu, ak neexistuje.';
+document.getElementById('appthepending').innerHTML = 'Používa neaplikované migrácie databázy.';
+document.getElementById('seeds').innerHTML = 'Seeduje počiatočné dáta, ak sú potrebné.';
+document.getElementById('noticethat').innerHTML = 'Všimnite si, že tento projekt má vlastný súbor <span class="txt-color">appsettings.json</span>. Ak chcete zmeniť predvolený reťazec pripojenia k databáze, musíte ho nastaviť vo svojom vlastnom súbore <span class="txt-color">appsettings.json</span>.';
+document.getElementById('seedInitialData').innerHTML = 'Seedovanie počiatočných dát je dôležité v tejto fáze. ABP má modulárnu infraštruktúru na seedovanie dát. Ďalšie informácie nájdete v dokumentácii o seedovaní dát <a href="https://docs.abp.io/en/abp/latest/Data-Seeding">tu</a>.';
+document.getElementById('whileCreatingdata').innerHTML = 'Aj keď vytváranie databáz a používanie migrácií sa môže zdať nevyhnutné iba z hľadiska obmedzení databázy, tento projekt je zahrnutý aj v prípade, že si vyberiete <span class="txt-color">NoSQL databázového poskytovateľa</span> (ako napríklad <span class="txt-color">MongoDB</span>). V takom prípade stále seeduje počiatočné dáta, ktoré sú potrebné pri spustení aplikácie.';
+document.getElementById('des').innerHTML = 'Závislosti:';
+document.getElementById('depeonthe').innerHTML = 'Tento projekt závisí od projektu <span class="txt-color">*.EntityFrameworkCore</span> (EF Core), pretože potrebuje prístup k migráciám.';
+document.getElementById('ht').innerHTML = 'Tento projekt závisí od projektu <span class="txt-color">*.Application.Contracts</span>, aby mohol používať definície oprávnení, pretože generátor počiatočných dát implicitne pridáva oprávnenia pre rolu administrátora.';
+document.getElementById('httpapi').innerHTML = '* HTTPApi projekt';
+document.getElementById('thisprojis').innerHTML = 'Väčšinou nemusíte manuálne definovať API kontroléry, pretože vďaka vlastnosti <a href="https://docs.abp.io/en/abp/latest/API/Auto-API-Controllers">Automatického vytvárania API kontrolérov</a> ABP ich vytvorí automaticky na základe aplikačnej vrstvy. Ak však potrebujete písať vlastné API kontroléry, toto je miesto, kde to môžete urobiť.';
+document.getElementById('detent').innerHTML = 'Závislosti:';
+document.getElementById('dependsontheapp').innerHTML = 'Tento projekt závisí od projektu <span class="txt-color">*.Application.Contracts</span>, aby mohol injektovať rozhrania aplikačnej vrstvy.';
+document.getElementById('httap').innerHTML = 'HTTPApi.Client projekt';
+document.getElementById('thisisprojdef').innerHTML = 'Toto je projekt, ktorý definuje <span class="txt-color">C#</span> klientov, ktorí používajú HTTP API služby riešenia. Môžete tento projekt zdieľať s tretími stranami, aby mohli jednoducho používať HTTP API služby vo svojich aplikáciách <span class="txt-color">.NET</span>. Pre iné typy aplikácií môžu používať API buď manuálne, alebo použiť generovaný kód na svojej platforme.';
+document.getElementById('mostofthe').innerHTML = 'Väčšinou nemusíte manuálne vytvárať C# klientov vďaka možnosti <a href="https://docs.abp.io/en/abp/latest/API/Dynamic-CSharp-API-Clients" >dynamických C# klientov</a> ABP.';
+document.getElementById('consoletestapp').innerHTML = 'Projekt *.HttpApi.Client.ConsoleTestApp je konzolová aplikácia, ktorá ukazuje, ako používať klientov vytvorených v projekte HTTPApi.Client.';
+document.getElementById('dependsonthe').innerHTML = 'Tento projekt závisí od projektu <span class="txt-color">*.Application.Contracts</span>, aby mohol zdieľať rovnaké rozhrania aplikačnej vrstvy a DTO s vzdialenou službou.';
+document.getElementById('WP').innerHTML = 'Pozor, tento projekt a jeho závislosti môžete odstrániť, ak nepotrebujete vytvárať C# klientov pre vaše API.';
+document.getElementById('wepproj').innerHTML = '*.Web projekt';
+document.getElementById('thisprojcon').innerHTML = 'Tento projekt obsahuje užívateľské rozhranie (UI), ak používate ako hlavné užívateľské rozhranie ASP.NET MVC. Obsahuje Razor stránky, JavaScriptové súbory, CSS súbory, obrázky atď.';
+document.getElementById('thisprojhas').innerHTML = 'Tento projekt obsahuje súbor <span class="txt-color">appsettings.json</span>, ktorý obsahuje reťazec pripojenia k databáze a ďalšie parametre aplikácie.';
+document.getElementById('depenhttp').innerHTML = 'Závislosti:';
+document.getElementById('depenonthehttp').innerHTML = 'Tento projekt závisí od projektu <span class="txt-color">*.HttpApi</span>, pretože aplikačná vrstva potrebuje používať API riešenia a rozhrania služieb aplikácie.';
+document.getElementById('ifyoucheck').innerHTML = 'Ak skontrolujete súbor <span class="txt-color">*.Web.csproj</span>, uvidíte odkazy na projekty <span class="txt-color">*.Application</span> a <span class="txt-color">*.EntityFrameworkCore</span>. Tieto odkazy nie sú v skutočnosti potrebné počas programovania užívateľského rozhrania, pretože užívateľské rozhranie nezávisí na <span class="txt-color">EF Core</span> ani na implementácii aplikačnej vrstvy. Tento výchozí model je nastavený na viacvrstvové použitie, kde vrstva API je hostovaná na samostatnom serveri spolu s užívateľským rozhraním.';
+document.getElementById('RA').innerHTML = 'Avšak ak si pri vytváraní riešenia nevyberiete možnosť <span class="txt-color">--tiered</span>, tieto odkazy budú v projekte <span class="txt-color">*.Web</span>, čo vám umožní hosťovať aplikačnú vrstvu, API a vrstvu užívateľského rozhrania v jednom bodovom koncovom bode aplikácie. Týmto spôsobom môžete používať doménové objekty a rozhrania aj vo vrstve prezentácie. Avšak táto prax je považovaná za nevhodnú z dôvodu pravidiel DDD.';
+document.getElementById('reactarc').innerHTML = 'Architektúra REACT';
+document.getElementById('follare').innerHTML = 'Tu je architektúra, ako sa používa raaghu-react v užívateľskom rozhraní aplikácie.';
+document.getElementById('raghuath').innerHTML = 'Raaghu - Autentifikačný tok (stránka prihlásenia)';
+document.getElementById('raaghuloc').innerHTML = 'Raaghu - Lokácia';
+document.getElementById('pageflow').innerHTML = 'Raaghu - Tok stránky';
+document.getElementById('whatnex').innerHTML = 'Čo je ďalší krok?';
+document.getElementById('seeethe').innerHTML = 'Pozrite si <a href="Getting-Started.html">Návod na začiatok</a> pre vytvorenie a spustenie nového riešenia s použitím tohto modelu.';
+
+document.getElementById('inthisdoc').innerHTML = 'v tomto dokumente';
+document.getElementById('sdefault').innerHTML = '<a href="#ss" class="text-black">Predvolená štruktúra</a>';
+document.getElementById('sdomain').innerHTML = '<a href="#ES" class="text-black">Projekt Shared.Domain</a>';
+document.getElementById('sdepen').innerHTML = '<a href="#ES" class="text-black">Závislosti:</a>';
+document.getElementById('secpro').innerHTML = '<a href="#ES" class="text-black">Projekt domény</a>';
+document.getElementById('secapplication').innerHTML = '<a href="#AP" class="text-black">Projekt aplikácie</a>';
+document.getElementById('secentity').innerHTML = '<a href="#EFC" class="text-black">Projekt Entity Framework Core</a>';
+document.getElementById('secdb').innerHTML = '<a href="#EFC" class="text-black">DbMigrator projekt</a>';
+document.getElementById('shttp').innerHTML = '<a href="#ht" class="text-black">HTTPApi projekt</a>';
+document.getElementById('secweb').innerHTML = '<a href="#WP" class="text-black">Web-suunnittelu</a>';
+document.getElementById('secreact').innerHTML = '<a href="#RA" class="text-black">REACT architektúra</a>';
+
+            } 
+            else if (selectedLanguage === 'spanish') {
+            } else {
+
+            }
+        });
+    });
+</script>
+
+</html>

@@ -1,0 +1,904 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- bootstrap dependencies -->
+    <link rel="stylesheet" href="Assets/css/bootstrap.min.css">
+    <link href="Assets/prism.css" rel="stylesheet" />
+    <script src="Assets/prism.js"></script>
+    <link rel="stylesheet" href="/index.css">
+    <link rel="icon" type="image/x-icon" href="Assets/images/raaghu-icon.png">
+    <title>Raaghu - Overall</title>
+    <script src="/index.js"></script>
+</head>
+
+
+<body>
+
+    <main>
+
+        <nav class="navbar navbar-expand-lg navbar-light ">
+            <div class="container-fluid ">
+                <div class="navbar-toggler-container">
+                    <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#sidebar,#navbarSupportedContent"
+                        aria-controls="sidebar" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <!-- <div class="dropdown show dropdown-specific">
+                        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Platform
+                        </a>
+
+                        <div class="dropdown-menu menu" aria-labelledby="dropdownMenuLink">
+                            <a class="dropdown-item" href="https://www.raaghu.io/features.html">Features</a>
+                            <a class="dropdown-item " href="https://portal.raaghu.io/">Documentation</a>
+                            <button type="button" class="btn btn-primary btn-contact mt-2">contact</button>
+                            <a href="https://github.com/Wai-Technologies/raaghu-angular" target="_blank">
+                                <li class="ps-lg-5 mt-2">
+                                    <img src="Assets/images/github-logo.svg" alt="abplogo logo" width="100%"
+                                        class="github-logo">
+                                </li>
+                            </a>
+                        </div>
+                    </div> -->
+                </div>
+                <a class="text-black navbar-brand" href="/">
+                    <img src="Assets/images/raaghu_logs.png" alt="raaghu logo" class="w-75  pe-lg-0">
+                </a>
+
+                <div class="collapse navbar-collapse align  justify-content-lg-end " id="navbarSupportedContent">
+                    <ul class="navbar-nav  mb-2 mb-lg-0 ">
+                        <li class="nav-item me-5">
+                            <a class="nav-link active " aria-current="page"
+                                href="https://raaghu-website-staging.netlify.app/raaghu-mfe-portal/_accordion.html">Components</a>
+                        </li>
+                        <li class="nav-item me-5">
+                            <a class="nav-link active " aria-current="page" href="#"><span
+                                    class="doc-color">Documentation</span></a>
+                        </li>
+                        <li class="nav-item me-5">
+                            <a class="nav-link active " aria-current="page"
+                                href="https://raaghu-website-staging.netlify.app/raaghu-mfe-portal/_accordion.html#">Support</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link active " aria-current="page"
+                                href="https://raaghu-website-staging.netlify.app/faq">FAQ</a>
+                        </li>
+                        <!-- <li class=" nav-item dropdown active">
+                            <a class="nav-link  text-dark me-5" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Platform
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-center " aria-labelledby="navbarDropdown">
+                                <ul class="list-unstyled dropdown-arrow">
+                                    <li class=" ps-4">
+                                        <p class="title pt-2">Raaghu Platform</p>
+                                        <div class="row">
+                                            <div class="col-lg-6 col-md-6">
+                                                <a href="https://portal.raaghu.io/" target="_blank"
+                                                    class="p-0 text-decoration-none text-reset">
+                                                    <div class="d-flex align-items-center gap-3">
+
+                                                        <img src="Assets/images/raaghu-portal-mg.svg"
+                                                            alt="raaghu-portal" class="mb-3">
+                                                        <p class="link-name">Raaghu Portal</p>
+
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="col-lg-6 col-md-6">
+                                                <a href="https://portal.raaghu.io/#Components-section" target="_blank"
+                                                    class="p-0 text-decoration-none text-reset">
+                                                    <div class="d-flex align-items-center gap-3">
+                                                        <img src="Assets/images/raaghu-components-mg.svg"
+                                                            alt="raaghu-components" class="mb-3">
+                                                        <p class="link-name">Raaghu Components</p>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-6 col-md-6">
+                                                <a href="https://portal.raaghu.io/#Elements-section" target="_blank"
+                                                    class="p-0 text-decoration-none text-reset">
+                                                    <div class="d-flex align-items-center gap-3">
+                                                        <img src="Assets/images/raaghu-elements-mg.svg"
+                                                            alt="raaghu-portal" class="mb-2">
+                                                        <p class="pt-2 link-name">Raaghu Elements</p>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="col-lg-6 col-md-6">
+                                                <div class="d-flex align-items-center gap-3">
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="bgcolor-dropdown">
+                                        <div class="ps-4">
+                                            <p class="pt-3 pb-1 title">WORKS ON</p>
+                                            <div class="row">
+                                                <div class="col-md-2 mb-2">
+                                                    <img src="Assets/images/asplogo-mg.svg" alt="asplogo logo"
+                                                        width="80%">
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <img src="Assets/images/abplogo-mg.svg" alt="abplogo logo"
+                                                        width="50%">
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item me-5">
+                            <a class="nav-link active " aria-current="page"
+                                href="https://www.raaghu.io/features.html">Features</a>
+                        </li>
+                        <li class="nav-item me-5">
+                            <a class="nav-link active " aria-current="page"
+                                href="https://portal.raaghu.io/">Documentation</a>
+                        </li>
+                        <button type="button" class="btn btn-primary btn-contact">contact</button>
+                        <a href="https://github.com/Wai-Technologies/raaghu-angular" target="_blank">
+                            <li class="ps-lg-5 pt-2">
+                                <img src="Assets/images/github-logo.svg" alt="abplogo logo" width="100%"
+                                    class="github-logo">
+                            </li>
+                        </a> -->
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="wrapper container-fluid">
+
+            <div class="row">
+
+                <div id="sidebar" class="col-12 col-lg-2 col-md-4 col-xl-2 col-xxl-2 collapse d-m-block mx-0 mx-lg-3 mx-md-3 mx-xl-3 mx-xxl-3 show">
+
+                    <nav>
+                        <div class="sidebar-header ">
+                            <a href="/" class="text-bg-dark">
+
+                                <h3 class="fs-5 fw-normal" id="tableOfContent">Table Of Content</h3>
+                            </a>
+                        </div>
+                        <div class="accordion accordion-flush mx-3 doc-acc accordion-button-top" id="accordionExample">
+                            <div class="row pb-4">
+                                <div class="col-6 col-lg-6 col-md-6">
+                                    <select id="language-dropdown" class="sidebar-button">
+                                        <option value="en" selected>English</option>
+                                        <option value="pt">Português</option>
+                                        <option value="fr">French</option>
+                                        <option value="fi">Finnish</option>
+                                        <option value="hi">Hindi</option>
+                                        <option value="it">Italian</option>                                        
+                                        <option value="sk">Slovak</option>
+                                        <option value="de">German</option>
+                                        <option value="ru">Russian</option>
+                                        <option value="zh">Chinese</option>
+                                        <option value="af">Afrikaan</option>
+                                        <option value="ar">Arabic</option>
+                                        <!-- Add more language options if needed -->
+                                    </select>
+                                </div>
+                                <div class="col-6 col-lg-6 col-md-6">
+                                    <select class="sidebar-button w-100">
+                                        <option value="option1" id="version">Version</option>
+                                        <option value="option2" id="version">Version 2</option>
+                                        <option value="option3">Version 3</option>
+                                        <option value="option4">Version 4</option>
+                                    </select>
+
+                                </div>
+                            </div>
+
+                            <div class="accordion-item bg-dark">
+                                <h2 class="accordion-header" id="headingOne">
+                                    <a href="Getting-Started.html">
+                                        <button
+                                            class="accordion-button d-flex flex-row-reverse justify-content-end p-0 bg-dark mt-1"
+                                            type="button" data-bs-toggle="collapse" data-bs-target="#coll"
+                                            aria-expanded="false" aria-controls="collapseOne" id="Getting">
+                                            Getting Started
+                                        </button></a>
+                                </h2>
+
+                                <div id="coll" class="accordion-collapse collapse  border-0 rounded-0 p-0"
+                                    aria-labelledby="headOne" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Setup-Your-Development-Environment.html" id="setupDev">Setup your
+                                            development
+                                            environment</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Creating-A-New-Solution.html" id="creatingNewSol">Creating A New
+                                            Solution</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Running-The-Solution.html" id="runningTheSol">Running the Solution</a>
+                                    </div>
+                                </div>
+                                <h2 class="accordion-header" id="headingTwo">
+                                    <button
+                                        class="accordion-button d-flex flex-row-reverse justify-content-end p-0 bg-dark mt-2"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                        aria-expanded="false" aria-controls="collapseOne" id="tut">
+                                        Tutorials
+                                    </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse  border-0 rounded-0 p-0"
+                                    aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <h2 class="accordion-header" id="headingTwo">
+                                            <button
+                                                class="accordion-button d-flex flex-row-reverse justify-content-end p-0 bg-dark mt-2"
+                                                type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                                                aria-expanded="false" aria-controls="collapseOne" id="webAppDev">
+                                                Web Application Development
+                                            </button>
+                                        </h2>
+                                        <div id="collapseThree"
+                                            class="accordion-collapse collapse  border-0 rounded-0 p-0 pt-2"
+                                            aria-labelledby="headingTwo" data-bs-parent="#accordionExamplee">
+                                            <div class="accordion-body bg-dark px-4 p-1">
+                                                <a href="Creating-The-Server-Side.html" id="creatingServer">Creating the
+                                                    Server
+                                                    Side</a>
+                                            </div>
+                                        </div>
+                                        <div id="collapseThree"
+                                            class="accordion-collapse collapse  border-0 rounded-0 p-0"
+                                            aria-labelledby="headingTwo" data-bs-parent="#accordionExamplee">
+                                            <div class="accordion-body bg-dark px-4 p-1">
+                                                <a href="The-Book-List-Page.html" id="bookList">The Book List Page</a>
+                                            </div>
+                                        </div>
+                                        <div id="collapseThree"
+                                            class="accordion-collapse collapse  border-0 rounded-0 p-0"
+                                            aria-labelledby="headingTwo" data-bs-parent="#accordionExamplee">
+                                            <div class="accordion-body bg-dark px-4 p-1">
+                                                <a href="Creating-Updating-And-Deleting-Book.html"
+                                                    id="creatingUpdating">Creating,Updating
+                                                    And
+                                                    Deleting Book</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <h2 class="accordion-header" id="headingFour">
+                                    <button
+                                        class="accordion-button d-flex flex-row-reverse justify-content-end p-0 bg-dark mt-2"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour"
+                                        aria-expanded="false" aria-controls="collapseOne" id="guides">
+                                        Guides
+                                    </button>
+                                </h2>
+                                <div id="collapseFour" class="accordion-collapse collapse  border-0 rounded-0 p-0"
+                                    aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Customizing-The-Modules.html" id="customizingTheModules">Customizing
+                                            the Modules</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Identity-Server-Deployment.html" id="identityServerDeploy">Identity
+                                            Server Deployment</a>
+                                    </div>
+                                </div>
+
+
+                                <h2 class="accordion-header" id="headingFive">
+                                    <button
+                                        class="accordion-button d-flex flex-row-reverse justify-content-end p-0 bg-dark mt-2"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive"
+                                        aria-expanded="false" aria-controls="collapseOne" id="samples">
+                                        Samples
+                                    </button>
+                                </h2>
+                                <div id="collapseFive" class="accordion-collapse collapse  border-0 rounded-0 p-0"
+                                    aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="All-Samples.html" id="allSamples">All Samples</a>
+                                    </div>
+                                </div>
+                                <h2 class="accordion-header" id="headingSix">
+                                    <a href="Startup-Template.html">
+                                        <button
+                                            class="accordion-button d-flex flex-row-reverse justify-content-end p-0 bg-dark mt-2"
+                                            type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix"
+                                            aria-expanded="false" aria-controls="collapseOne" id="startupTemplate">
+                                            Startup Template
+                                        </button></a>
+                                </h2>
+                                <div id="collapseSix" class="accordion-collapse collapse  border-0 rounded-0 p-0"
+                                    aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <h2 class="accordion-header" id="headingSix">
+                                            <button
+                                                class="accordion-button d-flex flex-row-reverse justify-content-end p-0 bg-dark mt-2"
+                                                type="button" data-bs-toggle="collapse" data-bs-target="#headingS"
+                                                aria-expanded="false" aria-controls="collapseOne">
+                                                Application Templates
+                                            </button>
+                                        </h2>
+                                        <div id="headingS"
+                                            class="accordion-collapse collapse  border-0 rounded-0 p-0 pt-2"
+                                            aria-labelledby="headingSix" data-bs-parent="#accordionExamplee">
+                                            <div class="accordion-body bg-dark px-4 p-1">
+                                                <a href="Creating-Solution.html">Creating Solution</a>
+                                            </div>
+                                        </div>
+                                        <div id="headingS" class="accordion-collapse collapse  border-0 rounded-0 p-0"
+                                            aria-labelledby="headingSix" data-bs-parent="#accordionExamplee">
+                                            <div class="accordion-body bg-dark px-4 p-1">
+                                                <a href="Solution-Structure.html">Solution Structure</a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                                <h2 class="accordion-header" id="headingSeven">
+                                    <button
+                                        class="accordion-button d-flex flex-row-reverse justify-content-end p-0 bg-dark mt-2"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven"
+                                        aria-expanded="true" aria-controls="collapseOne" id="appModules">
+                                        Application Modules
+                                    </button>
+                                </h2>
+                                <div id="collapseSeven" class="accordion-collapse show collapse  border-0 rounded-0 p-0"
+                                    aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Overall.html" id="overall"><span
+                                                class="accordian-active">Overall</span></a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Account-Module.html" id="ac">Account</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Audit-Logging.html" id="auditLogging">Audit Logging</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Chat.html" id="chat">Chat</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="CMS-Kit-Pro.html" id="CMS">CMS Kit Pro</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="File-Management.html" id="fileMgt">File Management</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Forms.html" id="forms">Forms</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Identity.html" id="identity">Identity</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="OpenIddict.html" id="OpenIddict">OpenIddict</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Language-Management.html" id="languageMgt">Language Management</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Payment.html" id="payment">Payment</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="SaaS.html" id="saas">SaaS</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Text-Template-Management.html" id="ttm">Text Template Management</a>
+                                    </div>
+                                </div>
+                                <h2 class="accordion-header" id="headingNine">
+                                    <a href="UI-Themes.html">
+                                        <button
+                                            class="accordion-button d-flex flex-row-reverse justify-content-end p-0 bg-dark mt-2"
+                                            type="button" data-bs-toggle="collapse" data-bs-target="#headingNine"
+                                            aria-expanded="false" aria-controls="collapseOne" id="ui">
+                                            UI Themes
+                                        </button>
+                                    </a>
+                                </h2>
+                                <h2 class="accordion-header" id="headingReactUITheme">
+                                    <button
+                                        class="accordion-button d-flex flex-row-reverse justify-content-end p-0 bg-dark mt-2"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#headingReactUI"
+                                        aria-expanded="false" aria-controls="collapseOne" id="reactUI">
+                                        React UI
+                                    </button>
+                                </h2>
+                                <div id="headingReactUI" class="accordion-collapse collapse  border-0 rounded-0 p-0"
+                                    aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Customization.html" id="custom">customization</a>
+                                    </div>
+
+                                </div>
+                                <div id="headingReactUI" class="accordion-collapse collapse  border-0 rounded-0 p-0"
+                                    aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Components.html" id="compo">Components</a>
+                                    </div>
+
+                                </div>
+                                <!-- For Release Information -->
+                                <h2 class="accordion-header" id="headingFive">
+                                    <button
+                                        class="accordion-button d-flex flex-row-reverse justify-content-end p-0 bg-dark mt-2"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseLast"
+                                        aria-expanded="false" aria-controls="collapseOne" id="samples">
+                                       <span id="relinfo">Release Information</span> 
+                                    </button>
+                                </h2>
+                                <div id="collapseLast" class="accordion-collapse collapse  border-0 rounded-0 p-0"
+                                    aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Release-Notes.html" id="allSamples"><span id="relnote">Release Notes</span></a>
+                                    </div>
+                                </div>
+                                <!-- ====================================== -->
+                            </div>
+                        </div>
+                        <ul class="list-unstyled CTAs  w-100">
+                            <li>
+                                <a href="https://bootstrapious.com/tutorial/files/sidebar.zip" class="download"
+                                    id="downloadSource">Download
+                                    source</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="col-12 col-lg-8 col-md-7 col-xl-6 col-xxl-6 offset-lg-4 offset-md-5 offset-xl-3 offset-xxl-3 ps-xl-5 ps-xxl-0 px-lg-3 px-md-4 px-xl-0">
+
+                    <!-- Page Content  -->
+                    <div id="content">
+                        <div class="modal fade" id="contactusModal" tabindex="-1" aria-labelledby="contactusModalLabel"
+                            aria-hidden="true">
+
+                            <div class="modal-dialog modal-lg modal-dialog-centered">
+
+                                <div class="modal-content">
+
+                                    <!-- <div class="modal-header">
+                  
+                                  <h5 class="modal-title" id="contactusModalLabel">Modal title</h5>
+                  
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  
+                                </div> -->
+
+                                    <div class="modal-body p-0">
+
+
+
+
+                                        <div class="row">
+
+                                            <div class="col-md-6 col-sm-12 bg-dark">
+
+                                                <div class="mt-5">
+
+                                                    <img src="Assets/images/raaghu-logo-white.png"
+                                                        class="img-fluid w-25 pl-2">
+
+
+
+                                                    <img src="Assets/images/raaghu-banner-modal.png" class="img-fluid">
+
+                                                </div>
+
+                                            </div>
+
+
+
+                                            <div class="col-md-6 col-sm-12">
+
+                                                <div class="row">
+
+                                                    <div class="col-md-12 text-end pull-right">
+
+                                                        <button type="button"
+                                                            class="btn-close float-right pull-right m-3 text-muted"
+                                                            data-bs-dismiss="modal" aria-label="Close"></button>
+
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="p-4">
+
+                                                    <h6>
+
+                                                        Kindly fill the details below
+
+                                                    </h6>
+
+                                                    <p>
+
+                                                        <small> We will get back to you within 48 hours </small>
+
+                                                    </p>
+
+                                                    <div class="mt-5">
+
+                                                        <form method="post" id="want-to-hear-form">
+
+                                                            <div class="mb-3 form-group">
+
+                                                                <label for="emailId" class="form-label">Email ID
+
+                                                                    <span class="text-danger">*</span>
+
+                                                                </label>
+
+                                                                <input type="email" name="emailId"
+                                                                    class="form-control p-2" id="emailId"
+                                                                    placeholder="Enter your email id">
+
+                                                            </div>
+
+                                                            <div class="mb-3 form-group">
+
+                                                                <label for="companyName" class="form-label">Company Name
+
+                                                                    <span class="text-danger">*</span>
+
+                                                                </label>
+
+                                                                <input type="text" class="form-control p-2"
+                                                                    placeholder="Enter your Company Name"
+                                                                    name="companyName" id="companyName">
+
+                                                            </div>
+
+                                                            <div class="mb-3 form-group">
+
+                                                                <label for="message" class="form-label">Message
+
+                                                                    <span class="contactUs-Optional">(Optional)</span>
+
+
+                                                                </label>
+
+                                                                <textarea class="form-control p-2" name="message"
+                                                                    id="message" rows="3"
+                                                                    placeholder="Write your message.."></textarea>
+
+                                                            </div>
+
+                                                            <div class="mb-3 form-check">
+
+                                                                <input type="checkbox" class="form-check-input"
+                                                                    id="exampleCheck1">
+
+                                                                <label class="form-check-label" for="exampleCheck1">I
+                                                                    agree to the <a href="#"> terms & privacy policy
+                                                                    </a></label>
+
+                                                            </div>
+
+                                                            <button type="submit"
+                                                                class="btn btn-primary btn-sm btn-block float-end mb-4">Submit</button>
+
+                                                        </form>
+
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div> <input class="form-control  mb-5" type="search" placeholder="Search" aria-label="Search">
+                        </div>
+                        <div>
+                            <h1 class="fw-semibold mb-4 pt-2" id="am">Application Modules</h1>
+                            <p id="abprovides">ABP Commercial provides <strong>production ready, enterprise level</strong> application
+                                modules. See <a href="https://commercial.abp.io/modules">the modules page</a> for a list
+                                and descriptions of the modules as an overview. This documentation is <strong>for
+                                    developers</strong> and explains <strong>technical details</strong> of the modules.
+                            </p>
+                        </div>
+                        <div>
+                            <h2 class="fw-semibold mb-4 pt-2" id="commod">Commercial Modules</h2>
+                            <ul class="ps-3" >
+                                <li class="mb-2" id="acli"><a
+                                        href="https://docs.abp.io/en/commercial/7.2/modules/account">Account</a>: Login,
+                                    register, forgot password, email activation, social logins and other account related
+                                    functionalities.</li>
+                                <li class="mb-2" id="logg"><a
+                                        href="https://docs.abp.io/en/commercial/7.2/modules/audit-logging">Audit
+                                        logging</a>: Reporting the user audit logs and entity histories in details.</li>
+                                <li class="mb-2" id="realtime"><a href="https://docs.abp.io/en/commercial/7.2/modules/chat">Chat</a>:
+                                    Real time messaging between users of the application.</li>
+                                <li class="mb-2" id="asetof"><a
+                                        href="https://docs.abp.io/en/commercial/7.2/modules/cms-kit/index">CMS Kit</a>:
+                                    A set of reusable CMS (Content Management System) building blocks.</li>
+                                <li class="mb-2" id="uplo"><a
+                                        href="https://docs.abp.io/en/commercial/7.2/modules/file-management">File
+                                        Management</a>: Upload, download and organize files in a hierarchical folder
+                                    structure.</li>
+                                <li class="mb-2" id="formandser"><a
+                                        href="https://docs.abp.io/en/commercial/7.2/modules/forms">Forms</a>: Create
+                                    forms and surveys.</li>
+                                <li class="mb-2" id="personaldata"><a href="https://docs.abp.io/en/commercial/7.2/modules/gdpr">GDPR</a>:
+                                    Personal data management.</li>
+                                <li class="mb-2" id="permngt"><a
+                                        href="https://docs.abp.io/en/commercial/7.2/modules/identity">Identity</a>:
+                                    User, role, claims and permission management.</li>
+                                <li class="mb-2" id="openid"><a
+                                        href="https://docs.abp.io/en/commercial/7.2/modules/OpenIddict">OpenIddict</a>:
+                                    Managing the openiddict objects like applications, scopes.</li>
+                                <li class="mb-2" id="managingtheid"><a
+                                        href="https://docs.abp.io/en/commercial/7.2/modules/identity-server">Identity
+                                        Server</a>: Managing the identity server objects like clients, API resources,
+                                    identity resources, secrets, application URLs, claims and more.</li>
+                                <li class="mb-2" id="addorremove"><a
+                                        href="https://docs.abp.io/en/commercial/7.2/modules/language-management">Language
+                                        management</a>: Add or remove languages and localize the application UI on the
+                                    fly.</li>
+                                <li class="mb-2" id="gateway"><a
+                                        href="https://docs.abp.io/en/commercial/7.2/modules/payment">Payment</a>Payment
+                                    gateway integrations.</li>
+                                <li class="mb-2" id="mngtenant"><a href="https://docs.abp.io/en/commercial/7.2/modules/saas">SaaS</a>:
+                                    Manage tenants, editions and features to create your multi-tenant / SaaS
+                                    application.</li>
+                                <li class="mb-2" id="managetext"><a
+                                        href="https://docs.abp.io/en/commercial/7.2/modules/text-template-management">Text
+                                        template management</a>: Manage text templates in the system.</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="fw-semibold pt-4 pb-3" id="see">See Also</h3>
+                            <ul class="ps-3">
+                                <li id="guiend"><a href="Customizing-The-Modules.html">Guide: Customizing the Modules</a></li>
+                            </ul>
+                        </div>
+
+
+
+
+                    </div>
+                </div>
+
+
+
+
+                <div class="col-12 col-lg-8 col-md-7 col-xl-2 col-xxl-2 docs-page-index offset-lg-4 offset-xl-0 offset-md-5 offset-xxl-0 px-md-4">
+                    <div class="position-fixed  my-3 w-auto mx-lg-0 mx-xl-3 mx-xxl-3 pe-lg-3 pe-xl-0 pe-xxl-0 position-lg-relative">
+                    <div class="card border-0 box rounded-3 mb-3">
+                        <div class="card-body">
+                            <h4 class="card-title py-1" id="inthisdoc">In this document</h4>
+                            <div class="opacity-50">
+                                <ul class="card-text small  list-unstyled ul-ad">
+                                    <li id="secapplicationmod"><a href="#am" class="text-black">Application Modules</a></li>
+                                    <li id="seccommercial"><a href="#am" class="text-black">Commercial Modules</a></li>
+                                    <li id="seealsosec"><a href="#see" class="text-black">See Also</a></li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card  border-0 box  bg-advertise "  >
+                        <div class="card-body abp-community-card  rounded-3 bg-sec ">
+                            <div class="row  ">
+                                <div class="col-lg-5 col-md-5 col-5"> <img src="Assets/images/React_logo.png" alt="raaghu logo" class="w-100"></div>
+                                <div class="col-lg-7 mt-1  col-md-7 mt-1 col-7"> <img src="Assets/images/abp-sec.png" alt="raaghu logo" class="w-100"></div>
+                                <!-- <div class="col-lg-6"><img src="Assets/images/abp-com.svg" alt="raaghu logo" class="w-100"></div> -->
+
+                            </div>
+                            <div class="border-under-sec my-3"></div>
+                            <div class="colored-sec-design py-1">
+                                <ul class="ps-4">
+                                    <li>CLI for CRUD generation</li>
+                                    <li>Component driven development</li>
+                                    <li>Purpose build UI kit for ABP commercial</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <button type="button" class="btn btn-primary mt-1 w-100" data-bs-toggle="modal"
+                                    data-bs-target="#contactusModal">Contact Us</button>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <!-- <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-0 col-12 docs-page-index">
+                    <div class="card mt-4 top-25 me-lg-4 border-0 shadow py-4">
+                        <div class="card-body">
+                            <h5 class="card-title">In This Document</h5>
+                            <p class="card-text small">Some quick example text to build on the card title and make up
+                                the bulk of the card's content.</p>
+
+                        </div>
+                    </div>
+                </div> -->
+
+            </div>
+
+
+
+        </div>
+
+    </main>
+
+    <!-- bootstrap dependencies -->
+    <script src="Assets/js/bootstrap.min.js"></script>
+    <script src="scripts/translation.js"></script>
+</body>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var languageDropdown = document.getElementById('language-dropdown');
+        languageDropdown.addEventListener('change', function () {
+            var selectedLanguage = languageDropdown.value;
+            if (selectedLanguage === 'pt') {
+                // Sidebar Code in js File
+
+    
+                // Body Content
+                document.getElementById('am').innerHTML = 'Módulos de aplicativos';
+                document.getElementById('abprovides').innerHTML = 'O ABP Commercial fornece aplicativos <strong>prontos para produção e de nível empresarial</strong> módulos. Consulte <a href="https://commercial.abp.io/modules">a página de módulos</a> para obter uma lista e descrições dos módulos como uma visão geral. Esta documentação é <strong>para desenvolvedores</strong> e explica <strong>detalhes técnicos</strong> dos módulos.';
+                document.getElementById('commod').innerHTML = 'Módulos Comerciais';
+                document.getElementById('acli').innerHTML = '<a href="https://docs.abp.io/en/commercial/7.2/modules/account">Conta</a>: Login, registro, senha esquecida, ativação de e-mail, logins sociais e outros relacionados à conta funcionalidades.';
+                document.getElementById('logg').innerHTML = '<a href="https://docs.abp.io/en/commercial/7.2/modules/audit-logging">Auditoria logging</a>: relatando os logs de auditoria do usuário e os históricos da entidade em detalhes.';
+                document.getElementById('realtime').innerHTML = '<a href="https://docs.abp.io/en/commercial/7.2/modules/chat">Chat</a>: Real time messaging between users of the application.';
+                document.getElementById('asetof').innerHTML = '<a href="https://docs.abp.io/en/commercial/7.2/modules/cms-kit/index">Kit CMS</a>: Um conjunto de blocos de construção CMS (Content Management System) reutilizáveis.';
+                document.getElementById('uplo').innerHTML = '<a href="https://docs.abp.io/en/commercial/7.2/modules/file-management">Arquivo Gerenciamento</a>: Carregar, baixar e organizar arquivos em uma pasta hierárquica estrutura.';
+                document.getElementById('formandser').innerHTML = '<a href="https://docs.abp.io/en/commercial/7.2/modules/forms">Formulários</a>: Criar formulários e pesquisas.';
+                document.getElementById('personaldata').innerHTML = '<a href="https://docs.abp.io/en/commercial/7.2/modules/gdpr">GDPR</a>: Gestão de dados pessoais.';
+                document.getElementById('permngt').innerHTML = '<a href="https://docs.abp.io/en/commercial/7.2/modules/identity">Identidade</a>: Gerenciamento de usuários, funções, reivindicações e permissões.';
+                document.getElementById('openid').innerHTML = '<a href="https://docs.abp.io/en/commercial/7.2/modules/OpenIddict">OpenIddict</a>: Gerenciando os objetos openiddict como aplicativos, escopos.';
+                document.getElementById('managingtheid').innerHTML = '<a href="https://docs.abp.io/en/commercial/7.2/modules/identity-server">Identidade Servidor</a>: Gerenciando os objetos do servidor de identidade como clientes, recursos de API, recursos de identidade, segredos, URLs de aplicativos, declarações e muito mais.';
+                document.getElementById('addorremove').innerHTML = '<a href="https://docs.abp.io/en/commercial/7.2/modules/language-management">Idioma gerenciamento</a>: adicione ou remova idiomas e localize a interface do usuário do aplicativo no voar.';
+                document.getElementById('gateway').innerHTML = '<a href="https://docs.abp.io/en/commercial/7.2/modules/payment">Pagamento</a>Pagamento integrações de gateway.';
+                document.getElementById('mngtenant').innerHTML = '<a href="https://docs.abp.io/en/commercial/7.2/modules/saas">SaaS</a>: Gerencie locatários, edições e recursos para criar seu multilocatário/SaaS aplicativo.';
+                document.getElementById('managetext').innerHTML = '<a href="https://docs.abp.io/en/commercial/7.2/modules/text-template-management">Texto gerenciamento de modelo</a>: gerencie modelos de texto no sistema.';
+                document.getElementById('see').innerHTML = 'Veja também';
+                document.getElementById('guiend').innerHTML = '<a href="Customizing-The-Modules.html">Guia: Personalizando os módulos</a>';
+                // For In this doc section
+                document.getElementById('inthisdoc').innerHTML = 'neste documento';
+                document.getElementById('secapplication').innerHTML = '<a href="#am" class="text-black">Módulos de aplicativos</a>';
+                document.getElementById('seccommercial').innerHTML = '<a href="#am" class="text-black">Módulos comerciais</a>';
+                document.getElementById('seealsosec').innerHTML = '<a href="#see" class="text-black">Veja também</a>';
+
+            }
+            
+ else if (selectedLanguage === 'French') {
+       // Body Content
+       document.getElementById('am').innerHTML = 'modules d\'application';
+                document.getElementById('abprovides').innerHTML = 'ABP Commercial fournit des modules d\'<strong>applications prêtes pour la production et de niveau entreprise</strong>. Voir la <a href="https://commercial.abp.io/modules">page des modules</a> pour une liste et une description des modules en guise d\'aperçu. Cette documentation est <strong>pour les développeurs</strong> et explique les <strong>détails techniques</strong> des modules.';
+                document.getElementById('commod').innerHTML = 'Modules commerciaux';
+                document.getElementById('acli').innerHTML = '<a href="https://docs.abp.io/en/commercial/7.2/modules/account">Compte</a> : connexion, enregistrement, mot de passe oublié, activation par e-mail, connexions sociales et autres liées aux fonctionnalités compte.';
+                document.getElementById('logg').innerHTML = '<a href="https://docs.abp.io/en/commercial/7.2/modules/audit-logging">Journalisation d\'audit</a> : rapports détaillés sur les journaux d\'audit des utilisateurs et les historiques des entités.';
+                document.getElementById('realtime').innerHTML = '<a href="https://docs.abp.io/en/commercial/7.2/modules/chat">Chat</a> : messagerie en temps réel entre les utilisateurs de l\'application.';
+                document.getElementById('asetof').innerHTML = '<a href="https://docs.abp.io/en/commercial/7.2/modules/cms-kit/index">Kit CMS</a> : un ensemble de blocs de construction de système de gestion de contenu (CMS) réutilisables .';
+                document.getElementById('uplo').innerHTML = '<a href="https://docs.abp.io/en/commercial/7.2/modules/file-management">Gestion des fichiers</a> : chargez, téléchargez et organisez les fichiers dans une structure de dossiers hiérarchique.';
+                document.getElementById('formandser').innerHTML = '<a href="https://docs.abp.io/en/commercial/7.2/modules/forms">Formulaires</a> : créez des formulaires et des enquêtes.';
+                document.getElementById('personaldata').innerHTML = '<a href="https://docs.abp.io/en/commercial/7.2/modules/gdpr">GDPR</a> : Gestion des données personnelles.';
+                document.getElementById('permngt').innerHTML = '<a href="https://docs.abp.io/en/commercial/7.2/modules/identity">Identité</a> : gestion des utilisateurs, des rôles, des revendications et des autorisations.';
+                document.getElementById('openid').innerHTML = '<a href="https://docs.abp.io/en/commercial/7.2/modules/OpenIddict">OpenIddict</a> : gestion des objets openiddict comme les applications, les portées.';
+                document.getElementById('managingtheid').innerHTML = '<a href="https://docs.abp.io/en/commercial/7.2/modules/identity-server">Identity Server</a> : gestion des objets du serveur d\'identité comme les clients, les ressources API, les codes d\'identité des ressources, les secrets , URL d\'application, revendications, etc.';
+                document.getElementById('addorremove').innerHTML = '<a href="https://docs.abp.io/en/commercial/7.2/modules/language-management">Gestion des langues</a> : ajoutez ou supprimez des langues et localisez l\'interface utilisateur de l\'application à la volée.';
+
+
+
+                document.getElementById('gateway').innerHTML = '<a href="https://docs.abp.io/en/commercial/7.2/modules/payment">Paiement</a>Intégrations de la passerelle de paiement.';
+                document.getElementById('mngtenant').innerHTML = '<a href="https://docs.abp.io/en/commercial/7.2/modules/saas">SaaS</a> : gérez les locataires, les éditions et les ressources pour créer votre application multi-locataire/SaaS.';
+                document.getElementById('managetext').innerHTML = '<a href="https://docs.abp.io/en/commercial/7.2/modules/text-template-management">Gestion des modèles de texte</a> : gérez les modèles de texte sur le système.';
+                document.getElementById('see').innerHTML = 'Voir aussi';
+                document.getElementById('guiend').innerHTML = '<a href="Customizing-The-Modules.html">Guide : Personnalisation des modules</a>';
+                // For In this doc section
+                document.getElementById('inthisdoc').innerHTML = 'dans ce document';
+                document.getElementById('secapplication').innerHTML = '<a href="#am" class="text-black">Modules d\'application</a>';
+                document.getElementById('seccommercial').innerHTML = '<a href="#am" class="text-black">Modules métier</a>';
+                document.getElementById('seealsosec').innerHTML = '<a href="#see" class="text-black">Voir aussi</a>';
+            } 
+            else if (selectedLanguage === 'Finnish') {
+                // Body-sisältö
+document.getElementById('am').innerHTML = 'sovellusmoduulit';
+document.getElementById('abprovides').innerHTML = 'ABP Kaupallinen tarjoaa valmiita <strong>tuotantovalmiita ja yritystason sovellusmoduuleita</strong>. Katso <a href="https://commercial.abp.io/modules">moduulisivulta</a> lista ja kuvaus moduuleista esikatseluna. Tämä dokumentaatio on <strong>kehittäjille</strong> ja selittää moduulien <strong>tekniset yksityiskohdat</strong>.';
+document.getElementById('commod').innerHTML = 'Kaupalliset moduulit';
+document.getElementById('acli').innerHTML = '<a href="https://docs.abp.io/en/commercial/7.2/modules/account">Tili</a> : Kirjautuminen, rekisteröinti, unohtunut salasana, sähköpostin aktivointi, sosiaaliset kirjautumiset ja muut tilaustoiminnot.';
+document.getElementById('logg').innerHTML = '<a href="https://docs.abp.io/en/commercial/7.2/modules/audit-logging">Tarkastusloki</a> : Yksityiskohtaiset raportit käyttäjien tarkastuslokeista ja tietueiden historioista.';
+document.getElementById('realtime').innerHTML = '<a href="https://docs.abp.io/en/commercial/7.2/modules/chat">Chat</a> : Reaaliaikainen viestintä sovelluksen käyttäjien kesken.';
+document.getElementById('asetof').innerHTML = '<a href="https://docs.abp.io/en/commercial/7.2/modules/cms-kit/index">CMS-sarja</a> : Joukko uudelleenkäytettäviä sisällönhallintajärjestelmän (CMS) rakennuspalikoita.';
+document.getElementById('uplo').innerHTML = '<a href="https://docs.abp.io/en/commercial/7.2/modules/file-management">Tiedostojenhallinta</a> : Lataa, lataa ylös ja järjestä tiedostoja hierarkkisessa kansiorakenteessa.';
+document.getElementById('formandser').innerHTML = '<a href="https://docs.abp.io/en/commercial/7.2/modules/forms">Lomakkeet</a> : Luo lomakkeita ja kyselyjä.';
+document.getElementById('personaldata').innerHTML = '<a href="https://docs.abp.io/en/commercial/7.2/modules/gdpr">GDPR</a> : Henkilötietojen käsittely.';
+document.getElementById('permngt').innerHTML = '<a href="https://docs.abp.io/en/commercial/7.2/modules/identity">Henkilöllisyys</a> : Käyttäjien, roolien, oikeuksien ja käyttöoikeuksien hallinta.';
+document.getElementById('openid').innerHTML = '<a href="https://docs.abp.io/en/commercial/7.2/modules/OpenIddict">OpenIddict</a> : OpenIddict-objektien hallinta, kuten sovellukset ja laajuudet.';
+document.getElementById('managingtheid').innerHTML = '<a href="https://docs.abp.io/en/commercial/7.2/modules/identity-server">Tunnistepalvelin</a> : Tunnistepalvelimen objektien hallinta, kuten asiakkaat, API-resurssit, resurssien tunnistetiedot, salaisuudet, sovellus-URL-osoitteet, vaatimukset jne.';
+document.getElementById('addorremove').innerHTML = '<a href="https://docs.abp.io/en/commercial/7.2/modules/language-management">Kielten hallinta</a> : Lisää tai poista kieliä ja lokalisoitu käyttöliittymä sovelluksessa lennossa.';
+
+document.getElementById('gateway').innerHTML = '<a href="https://docs.abp.io/en/commercial/7.2/modules/payment">Maksaminen</a> : Maksuyhdyskäytävien integraatiot.';
+document.getElementById('mngtenant').innerHTML = '<a href="https://docs.abp.io/en/commercial/7.2/modules/saas">SaaS</a> : Hallitse asiakkaita, versioita ja resursseja moni-asiakas/SaaS-sovelluksen luomiseksi.';
+document.getElementById('managetext').innerHTML = '<a href="https://docs.abp.io/en/commercial/7.2/modules/text-template-management">Tekstipohjien hallinta</a> : Hallitse tekstipohjia järjestelmässä.';
+document.getElementById('see').innerHTML = 'Katso myös';
+document.getElementById('guiend').innerHTML = '<a href="Customizing-The-Modules.html">Opas: Moduulien räätälöinti</a>';
+// Tässä asiakirjaosassa
+document.getElementById('inthisdoc').innerHTML = 'tässä asiakirjassa';
+document.getElementById('secapplication').innerHTML = '<a href="#am" class="text-black">Sovellusmoduulit</a>';
+document.getElementById('seccommercial').innerHTML = '<a href="#am" class="text-black">Kaupalliset moduulit</a>';
+document.getElementById('seealsosec').innerHTML = '<a href="#see" class="text-black">Katso myös</a>';
+
+            } 
+     
+            else if (selectedLanguage === 'Slovak') {
+                // Body-sisältö
+document.getElementById('am').innerHTML = 'Moduly aplikácií';
+document.getElementById('abprovides').innerHTML = 'ABP Commercial poskytuje hotové <strong>produkčne pripravené moduly aplikácií na podnikovú úroveň</strong>. Na tejto <a href="https://commercial.abp.io/modules">stránke s modulmi</a> nájdete zoznam a popis týchto modulov. Táto dokumentácia je určená pre <strong>programátorov</strong> a vysvetľuje <strong>technické detaily</strong> týchto modulov.';
+document.getElementById('commod').innerHTML = 'Komerčné moduly';
+document.getElementById('acli').innerHTML = '<a href="https://docs.abp.io/en/commercial/7.2/modules/account">Účet</a> : Prihlásenie, registrácia, zabudnuté heslo, aktivácia emailu, sociálne prihlásenia a ďalšie účtové funkcie.';
+document.getElementById('logg').innerHTML = '<a href="https://docs.abp.io/en/commercial/7.2/modules/audit-logging">Auditné záznamy</a> : Podrobné správy o auditných záznamoch používateľov a histórii záznamov.';
+document.getElementById('realtime').innerHTML = '<a href="https://docs.abp.io/en/commercial/7.2/modules/chat">Chat</a> : Reálny časový chat pre komunikáciu medzi používateľmi aplikácie.';
+document.getElementById('asetof').innerHTML = '<a href="https://docs.abp.io/en/commercial/7.2/modules/cms-kit/index">Sada pre CMS</a> : Súbor znovupoužiteľných stavebných blokov pre správu obsahu (CMS).';
+document.getElementById('uplo').innerHTML = '<a href="https://docs.abp.io/en/commercial/7.2/modules/file-management">Správa súborov</a> : Nahrávanie, sťahovanie a organizácia súborov v hierarchickej štruktúre priečinkov.';
+document.getElementById('formandser').innerHTML = '<a href="https://docs.abp.io/en/commercial/7.2/modules/forms">Formuláre</a> : Vytvárajte formuláre a dotazníky.';
+document.getElementById('personaldata').innerHTML = '<a href="https://docs.abp.io/en/commercial/7.2/modules/gdpr">GDPR</a> : Správa osobných údajov podľa nariadenia GDPR.';
+document.getElementById('permngt').innerHTML = '<a href="https://docs.abp.io/en/commercial/7.2/modules/identity">Identita</a> : Správa používateľov, rolí, práv a oprávnení.';
+document.getElementById('openid').innerHTML = '<a href="https://docs.abp.io/en/commercial/7.2/modules/OpenIddict">OpenIddict</a> : Správa objektov OpenIddict, ako sú aplikácie a rozsahy.';
+document.getElementById('managingtheid').innerHTML = '<a href="https://docs.abp.io/en/commercial/7.2/modules/identity-server">Správa identítnej služby</a> : Správa objektov identítnej služby, ako sú klienti, API zdroje, informácie o zdrojoch, tajomstvá, URL adresy aplikácií a požiadavky a podmienky.';
+document.getElementById('addorremove').innerHTML = '<a href="https://docs.abp.io/en/commercial/7.2/modules/language-management">Správa jazykov</a> : Pridajte alebo odstráňte jazyky a lokalizované používateľské rozhranie vo vašej aplikácii na letu.';
+
+document.getElementById('gateway').innerHTML = '<a href="https://docs.abp.io/en/commercial/7.2/modules/payment">Platby</a> : Integrácie platebných brán.';
+document.getElementById('mngtenant').innerHTML = '<a href="https://docs.abp.io/en/commercial/7.2/modules/saas">SaaS</a> : Správa zákazníkov, verzií a prostriedkov pre vytvorenie multi-tenant/SaaS aplikácií.';
+document.getElementById('managetext').innerHTML = '<a href="https://docs.abp.io/en/commercial/7.2/modules/text-template-management">Správa textových šablón</a> : Správa textových šablón vo vašej aplikácii.';
+document.getElementById('see').innerHTML = 'Pozrite si tiež';
+document.getElementById('guiend').innerHTML = '<a href="Customizing-The-Modules.html">Príručka: Rádovo prispôsobenie modulov</a>';
+// Tässä asiakirjaosassa
+document.getElementById('inthisdoc').innerHTML = 'v tejto dokumentácii';
+document.getElementById('secapplication').innerHTML = '<a href="#am" class="text-black">Moduly aplikácií</a>';
+document.getElementById('seccommercial').innerHTML = '<a href="#am" class="text-black">Komerčné moduly</a>';
+document.getElementById('seealsosec').innerHTML = '<a href="#see" class="text-black">Pozrite si tiež</a>';
+
+            }
+            else if (selectedLanguage === 'spanish') {
+            } else {
+
+            }
+        });
+    });
+</script>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+l>
