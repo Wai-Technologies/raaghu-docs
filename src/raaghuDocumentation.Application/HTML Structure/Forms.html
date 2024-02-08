@@ -1,0 +1,1128 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- bootstrap dependencies -->
+    <link rel="stylesheet" href="Assets/css/bootstrap.min.css">
+    <link href="Assets/prism.css" rel="stylesheet" />
+    <script src="Assets/prism.js"></script>
+    <link rel="stylesheet" href="/index.css">
+    <link rel="icon" type="image/x-icon" href="Assets/images/raaghu-icon.png">
+    <title>Raaghu - Forms</title>
+</head>
+
+
+<body>
+
+    <main>
+
+        <nav class="navbar navbar-expand-lg navbar-light  ">
+            <div class="container-fluid ">
+                <div class="navbar-toggler-container">
+                    <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#sidebar,#navbarSupportedContent"
+                        aria-controls="sidebar" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <!-- <div class="dropdown show dropdown-specific">
+                        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Platform
+                        </a>
+
+                        <div class="dropdown-menu menu" aria-labelledby="dropdownMenuLink">
+                            <a class="dropdown-item" href="https://www.raaghu.io/features.html">Features</a>
+                            <a class="dropdown-item " href="https://portal.raaghu.io/">Documentation</a>
+                            <button type="button" class="btn btn-primary btn-contact mt-2">contact</button>
+                            <a href="https://github.com/Wai-Technologies/raaghu-angular" target="_blank">
+                                <li class="ps-lg-5 mt-2">
+                                    <img src="Assets/images/github-logo.svg" alt="abplogo logo" width="100%"
+                                        class="github-logo">
+                                </li>
+                            </a>
+                        </div>
+                    </div> -->
+                </div>
+                <a class="text-black navbar-brand" href="/">
+                    <img src="Assets/images/raaghu_logs.png" alt="raaghu logo" class="w-75  pe-lg-0">
+                </a>
+
+                <div class="collapse navbar-collapse align  justify-content-lg-end " id="navbarSupportedContent">
+                    <ul class="navbar-nav  mb-2 mb-lg-0">
+                        <li class="nav-item me-5">
+                            <a class="nav-link active " aria-current="page"
+                                href="https://raaghu-website-staging.netlify.app/raaghu-mfe-portal/_accordion.html">Components</a>
+                        </li>
+                        <li class="nav-item me-5">
+                            <a class="nav-link active " aria-current="page" href="#"><span
+                                    class="doc-color">Documentation</span></a>
+                        </li>
+                        <li class="nav-item me-5">
+                            <a class="nav-link active " aria-current="page"
+                                href="https://raaghu-website-staging.netlify.app/raaghu-mfe-portal/_accordion.html#">Support</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link active " aria-current="page"
+                                href="https://raaghu-website-staging.netlify.app/faq">FAQ</a>
+                        </li>
+                        <!-- <li class=" nav-item dropdown active">
+                            <a class="nav-link  text-dark me-5" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Platform
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-center " aria-labelledby="navbarDropdown">
+                                <ul class="list-unstyled dropdown-arrow">
+                                    <li class=" ps-4">
+                                        <p class="title pt-2">Raaghu Platform</p>
+                                        <div class="row">
+                                            <div class="col-lg-6 col-md-6">
+                                                <a href="https://portal.raaghu.io/" target="_blank"
+                                                    class="p-0 text-decoration-none text-reset">
+                                                    <div class="d-flex align-items-center gap-3">
+
+                                                        <img src="Assets/images/raaghu-portal-mg.svg"
+                                                            alt="raaghu-portal" class="mb-3">
+                                                        <p class="link-name">Raaghu Portal</p>
+
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="col-lg-6 col-md-6">
+                                                <a href="https://portal.raaghu.io/#Components-section" target="_blank"
+                                                    class="p-0 text-decoration-none text-reset">
+                                                    <div class="d-flex align-items-center gap-3">
+                                                        <img src="Assets/images/raaghu-components-mg.svg"
+                                                            alt="raaghu-components" class="mb-3">
+                                                        <p class="link-name">Raaghu Components</p>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-6 col-md-6">
+                                                <a href="https://portal.raaghu.io/#Elements-section" target="_blank"
+                                                    class="p-0 text-decoration-none text-reset">
+                                                    <div class="d-flex align-items-center gap-3">
+                                                        <img src="Assets/images/raaghu-elements-mg.svg"
+                                                            alt="raaghu-portal" class="mb-2">
+                                                        <p class="pt-2 link-name">Raaghu Elements</p>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="col-lg-6 col-md-6">
+                                                <div class="d-flex align-items-center gap-3">
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="bgcolor-dropdown">
+                                        <div class="ps-4">
+                                            <p class="pt-3 pb-1 title">WORKS ON</p>
+                                            <div class="row">
+                                                <div class="col-md-2 mb-2">
+                                                    <img src="Assets/images/asplogo-mg.svg" alt="asplogo logo"
+                                                        width="80%">
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <img src="Assets/images/abplogo-mg.svg" alt="abplogo logo"
+                                                        width="50%">
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item me-5">
+                            <a class="nav-link active " aria-current="page"
+                                href="https://www.raaghu.io/features.html">Features</a>
+                        </li>
+                        <li class="nav-item me-5">
+                            <a class="nav-link active " aria-current="page"
+                                href="https://portal.raaghu.io/">Documentation</a>
+                        </li>
+                        <button type="button" class="btn btn-primary btn-contact">contact</button>
+                        <a href="https://github.com/Wai-Technologies/raaghu-angular" target="_blank">
+                            <li class="ps-lg-5 pt-2">
+                                <img src="Assets/images/github-logo.svg" alt="abplogo logo" width="100%"
+                                    class="github-logo">
+                            </li>
+                        </a> -->
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="wrapper container-fluid">
+
+            <div class="row">
+                <div id="sidebar" class="col-12 col-lg-2 col-md-4 col-xl-2 col-xxl-2 collapse d-m-block mx-0 mx-lg-3 mx-md-3 mx-xl-3 mx-xxl-3 show">
+
+
+                    <nav>
+                        <div class="sidebar-header ">
+                            <a href="/" class="text-bg-dark">
+                                <h3 class="fs-5 fw-normal">Table Of Content</h3>
+                            </a>
+                        </div>
+
+                        <div class="accordion accordion-flush mx-3 doc-acc accordion-button-top" id="accordionExample">
+                            <div class="row pb-4">
+                                <div class="col-6 col-lg-6 col-md-6">
+                                    <select id="language-dropdown" class="sidebar-button">
+                                        <option value="en" selected>English</option>
+                                        <option value="pt">Português</option>
+                                        <option value="fr">French</option>
+                                        <option value="fi">Finnish</option>
+                                        <option value="hi">Hindi</option>
+                                        <option value="it">Italian</option>                                        
+                                        <option value="sk">Slovak</option>
+                                        <option value="de">German</option>
+                                        <option value="ru">Russian</option>
+                                        <option value="zh">Chinese</option>
+                                        <option value="af">Afrikaan</option>
+                                        <option value="ar">Arabic</option>
+                                        <!-- Add more language options if needed -->
+                                    </select>
+                                </div>
+                                <div class="col-6 col-lg-6 col-md-6">
+                                    <select class="sidebar-button w-100">
+                                        <option value="option1" id="version">Version</option>
+                                        <option value="option2" id="version">Version 2</option>
+                                        <option value="option3">Version 3</option>
+                                        <option value="option4">Version 4</option>
+                                    </select>
+
+                                </div>
+                            </div>
+                            <div class="accordion-item bg-dark">
+                                <h2 class="accordion-header" id="headingOne">
+                                    <a href="Getting-Started.html">
+                                        <button
+                                            class="accordion-button d-flex flex-row-reverse justify-content-end p-0 bg-dark mt-1"
+                                            type="button" data-bs-toggle="collapse" data-bs-target="#coll"
+                                            aria-expanded="false" aria-controls="collapseOne">
+                                            Getting Started
+                                        </button></a>
+                                </h2>
+
+                                <div id="coll" class="accordion-collapse collapse  border-0 rounded-0 p-0"
+                                    aria-labelledby="headOne" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Setup-Your-Development-Environment.html">Setup your development
+                                            environment</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Creating-A-New-Solution.html">Creating A New Solution</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Running-The-Solution.html">Running the Solution</a>
+                                    </div>
+                                </div>
+                                <h2 class="accordion-header" id="headingTwo">
+                                    <button
+                                        class="accordion-button d-flex flex-row-reverse justify-content-end p-0 bg-dark mt-2"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                        aria-expanded="false" aria-controls="collapseOne">
+                                        Tutorials
+                                    </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse  border-0 rounded-0 p-0"
+                                    aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <h2 class="accordion-header" id="headingTwo">
+                                            <button
+                                                class="accordion-button d-flex flex-row-reverse justify-content-end p-0 bg-dark mt-2"
+                                                type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                                                aria-expanded="false" aria-controls="collapseOne">
+                                                Web Application Development
+                                            </button>
+                                        </h2>
+                                        <div id="collapseThree"
+                                            class="accordion-collapse collapse  border-0 rounded-0 p-0 pt-2"
+                                            aria-labelledby="headingTwo" data-bs-parent="#accordionExamplee">
+                                            <div class="accordion-body bg-dark px-4 p-1">
+                                                <a href="Creating-The-Server-Side.html">Creating the Server
+                                                    Side</a>
+                                            </div>
+                                        </div>
+                                        <div id="collapseThree"
+                                            class="accordion-collapse collapse  border-0 rounded-0 p-0"
+                                            aria-labelledby="headingTwo" data-bs-parent="#accordionExamplee">
+                                            <div class="accordion-body bg-dark px-4 p-1">
+                                                <a href="The-Book-List-Page.html">The Book List Page</a>
+                                            </div>
+                                        </div>
+                                        <div id="collapseThree"
+                                            class="accordion-collapse collapse  border-0 rounded-0 p-0"
+                                            aria-labelledby="headingTwo" data-bs-parent="#accordionExamplee">
+                                            <div class="accordion-body bg-dark px-4 p-1">
+                                                <a href="Creating-Updating-And-Deleting-Book.html">Creating,Updating
+                                                    And
+                                                    Deleting Book</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <h2 class="accordion-header" id="headingFour">
+                                    <button
+                                        class="accordion-button d-flex flex-row-reverse justify-content-end p-0 bg-dark mt-2"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour"
+                                        aria-expanded="false" aria-controls="collapseOne">
+                                        Guides
+                                    </button>
+                                </h2>
+                                <div id="collapseFour" class="accordion-collapse collapse  border-0 rounded-0 p-0"
+                                    aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Customizing-The-Modules.html">Customizing the Modules</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Identity-Server-Deployment.html">Identity Server Deployment</a>
+                                    </div>
+                                </div>
+
+
+                                <h2 class="accordion-header" id="headingFive">
+                                    <button
+                                        class="accordion-button d-flex flex-row-reverse justify-content-end p-0 bg-dark mt-2"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive"
+                                        aria-expanded="false" aria-controls="collapseOne">
+                                        Samples
+                                    </button>
+                                </h2>
+                                <div id="collapseFive" class="accordion-collapse collapse  border-0 rounded-0 p-0"
+                                    aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="All-Samples.html">All Samples</a>
+                                    </div>
+                                </div>
+                                <h2 class="accordion-header" id="headingSix">
+                                    <a href="Startup-Template.html">
+                                        <button
+                                            class="accordion-button d-flex flex-row-reverse justify-content-end p-0 bg-dark mt-2"
+                                            type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix"
+                                            aria-expanded="false" aria-controls="collapseOne">
+                                            Startup Template
+                                        </button></a>
+                                </h2>
+                                <div id="collapseSix" class="accordion-collapse collapse  border-0 rounded-0 p-0"
+                                    aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <h2 class="accordion-header" id="headingSix">
+                                            <button
+                                                class="accordion-button d-flex flex-row-reverse justify-content-end p-0 bg-dark mt-2"
+                                                type="button" data-bs-toggle="collapse" data-bs-target="#headingS"
+                                                aria-expanded="false" aria-controls="collapseOne">
+                                                Application Templates
+                                            </button>
+                                        </h2>
+                                        <div id="headingS"
+                                            class="accordion-collapse collapse  border-0 rounded-0 p-0 pt-2"
+                                            aria-labelledby="headingSix" data-bs-parent="#accordionExamplee">
+                                            <div class="accordion-body bg-dark px-4 p-1">
+                                                <a href="Creating-Solution.html">Creating Solution</a>
+                                            </div>
+                                        </div>
+                                        <div id="headingS" class="accordion-collapse collapse  border-0 rounded-0 p-0"
+                                            aria-labelledby="headingSix" data-bs-parent="#accordionExamplee">
+                                            <div class="accordion-body bg-dark px-4 p-1">
+                                                <a href="Solution-Structure.html">Solution Structure</a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                                <h2 class="accordion-header" id="headingSeven">
+                                    <button
+                                        class="accordion-button d-flex flex-row-reverse justify-content-end p-0 bg-dark mt-2"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven"
+                                        aria-expanded="true" aria-controls="collapseOne">
+                                        Application Modules
+                                    </button>
+                                </h2>
+                                <div id="collapseSeven" class="accordion-collapse collapse show border-0 rounded-0 p-0"
+                                    aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Overall.html">Overall</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Account-Module.html">Account</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Audit-Logging.html">Audit Logging</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Chat.html">Chat</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="CMS-Kit-Pro.html">CMS Kit Pro</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="File-Management.html">File Management</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Forms.html"><span class="accordian-active">Forms</span></a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Identity.html">Identity</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="OpenIddict.html">OpenIddict</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Language-Management.html">Language Management</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Payment.html">Payment</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="SaaS.html">SaaS</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Text-Template-Management.html">Text Template Management</a>
+                                    </div>
+                                </div>
+                                <h2 class="accordion-header" id="headingNine">
+                                    <a href="UI-Themes.html">
+                                        <button
+                                            class="accordion-button d-flex flex-row-reverse justify-content-end p-0 bg-dark mt-2"
+                                            type="button" data-bs-toggle="collapse" data-bs-target="#headingNine"
+                                            aria-expanded="false" aria-controls="collapseOne">
+                                            UI Themes
+                                        </button>
+                                    </a>
+                                </h2>
+                                <h2 class="accordion-header" id="headingReactUITheme">
+                                    <button
+                                        class="accordion-button d-flex flex-row-reverse justify-content-end p-0 bg-dark mt-2"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#headingReactUI"
+                                        aria-expanded="false" aria-controls="collapseOne">
+                                        React UI
+                                    </button>
+                                </h2>
+                                <div id="headingReactUI" class="accordion-collapse collapse  border-0 rounded-0 p-0"
+                                    aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Customization.html">customization</a>
+                                    </div>
+
+                                </div>
+                                <div id="headingReactUI" class="accordion-collapse collapse  border-0 rounded-0 p-0"
+                                    aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Components.html">Components</a>
+                                    </div>
+
+                                </div>
+                                <!-- For Release Information -->
+                                <h2 class="accordion-header" id="headingFive">
+                                    <button
+                                        class="accordion-button d-flex flex-row-reverse justify-content-end p-0 bg-dark mt-2"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseLast"
+                                        aria-expanded="false" aria-controls="collapseOne" id="samples">
+                                       <span id="relinfo">Release Information</span> 
+                                    </button>
+                                </h2>
+                                <div id="collapseLast" class="accordion-collapse collapse  border-0 rounded-0 p-0"
+                                    aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Release-Notes.html" id="allSamples"><span id="relnote">Release Notes</span></a>
+                                    </div>
+                                </div>
+                                <!-- ====================================== -->
+                            </div>
+                        </div>
+                        <ul class="list-unstyled CTAs  w-100">
+                            <li>
+                                <a href="https://bootstrapious.com/tutorial/files/sidebar.zip" class="download">Download
+                                    source</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="col-12 col-lg-8 col-md-7 col-xl-6 col-xxl-6 offset-lg-4 offset-md-5 offset-xl-3 offset-xxl-3 ps-xl-5 ps-xxl-0 px-lg-3 px-md-4 px-xl-0">
+
+                    <!-- Page Content  -->
+                    <div id="content">
+                        <div class="modal fade" id="contactusModal" tabindex="-1" aria-labelledby="contactusModalLabel"
+                            aria-hidden="true">
+
+                            <div class="modal-dialog modal-lg modal-dialog-centered">
+
+                                <div class="modal-content">
+
+                                    <!-- <div class="modal-header">
+                  
+                                  <h5 class="modal-title" id="contactusModalLabel">Modal title</h5>
+                  
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  
+                                </div> -->
+
+                                    <div class="modal-body p-0">
+
+
+
+
+                                        <div class="row">
+
+                                            <div class="col-md-6 col-sm-12 bg-dark">
+
+                                                <div class="mt-5">
+
+                                                    <img src="Assets/images/raaghu-logo-white.png"
+                                                        class="img-fluid w-25 pl-2">
+
+
+
+                                                    <img src="Assets/images/raaghu-banner-modal.png" class="img-fluid">
+
+                                                </div>
+
+                                            </div>
+
+
+
+                                            <div class="col-md-6 col-sm-12">
+
+                                                <div class="row">
+
+                                                    <div class="col-md-12 text-end pull-right">
+
+                                                        <button type="button"
+                                                            class="btn-close float-right pull-right m-3 text-muted"
+                                                            data-bs-dismiss="modal" aria-label="Close"></button>
+
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="p-4">
+
+                                                    <h6>
+
+                                                        Kindly fill the details below
+
+                                                    </h6>
+
+                                                    <p>
+
+                                                        <small> We will get back to you within 48 hours </small>
+
+                                                    </p>
+
+                                                    <div class="mt-5">
+
+                                                        <form method="post" id="want-to-hear-form">
+
+                                                            <div class="mb-3 form-group">
+
+                                                                <label for="emailId" class="form-label">Email ID
+
+                                                                    <span class="text-danger">*</span>
+
+                                                                </label>
+
+                                                                <input type="email" name="emailId"
+                                                                    class="form-control p-2" id="emailId"
+                                                                    placeholder="Enter your email id">
+
+                                                            </div>
+
+                                                            <div class="mb-3 form-group">
+
+                                                                <label for="companyName" class="form-label">Company Name
+
+                                                                    <span class="text-danger">*</span>
+
+                                                                </label>
+
+                                                                <input type="text" class="form-control p-2"
+                                                                    placeholder="Enter your Company Name"
+                                                                    name="companyName" id="companyName">
+
+                                                            </div>
+
+                                                            <div class="mb-3 form-group">
+
+                                                                <label for="message" class="form-label">Message
+
+                                                                    <span class="contactUs-Optional">(Optional)</span>
+
+
+                                                                </label>
+
+                                                                <textarea class="form-control p-2" name="message"
+                                                                    id="message" rows="3"
+                                                                    placeholder="Write your message.."></textarea>
+
+                                                            </div>
+
+                                                            <div class="mb-3 form-check">
+
+                                                                <input type="checkbox" class="form-check-input"
+                                                                    id="exampleCheck1">
+
+                                                                <label class="form-check-label" for="exampleCheck1">I
+                                                                    agree to the <a href="#"> terms & privacy policy
+                                                                    </a></label>
+
+                                                            </div>
+
+                                                            <button type="submit"
+                                                                class="btn btn-primary btn-sm btn-block float-end mb-4">Submit</button>
+
+                                                        </form>
+
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div> <input class="form-control mb-5" type="search" placeholder="Search" aria-label="Search">
+                        </div>
+
+                        <div>
+                            <h1 class="fw-semibold mb-3" id="formmod">Forms Module</h1>
+                            <p id="allowsyouto">This module allows you to create questionnaires to gather information.
+                                The forms module
+                                can store responses as they come in and you can export the data to a CSV file. You can
+                                share your form with others with your form unique link. You can request authentication
+                                or allow anonymous reply. It is similar to the Google Form application. Usage area is
+                                quite wide, you can create surveys, manage event registrations, collect email addresses
+                                for a newsletter, create a quiz, and even receive an order request.</p>
+                            <p id="internals">See <a href="https://commercial.abp.io/modules/Volo.Forms">the module
+                                    description
+                                    page</a> for an overview of the module features.</p>
+                            <p class="fw-semibold" id="uiss">UI SCREENSHOTS TO BE ADDED </p>
+                        </div>
+                        <div>
+                            <h2 class="fw-semibold" id="intter">Internals</h2>
+                            <h3 class="fw-semibold pt-3 pb-3" id="laydom">Domain layer</h3>
+                            <p id="aggre">Aggregates</p>
+                            <p id="thismodfol">This module follows the <a
+                                    href="https://docs.abp.io/en/abp/latest/Best-Practices/Entities">Entity Best
+                                    Practices &
+                                    Conventions</a> guide.</p>
+                            <ul class="ps-3">
+                                <li class="mt-3"><span id="frmm"><strong>Form</strong></span>
+                                    <ul class="ps-3">
+                                        <li id="rootofthe">The main aggregate root of the form entities. The form
+                                            options, title and
+                                            description is being stored on this entity.</li>
+                                    </ul>
+                                </li>
+                                <li class="mt-3"><span id="qbase"><strong>QuestionBase</strong></span>
+                                    <ul class="ps-3">
+                                        <li>
+                                            <div id="storesque">It stores questions of the form. This entity is
+                                                dependent to form entity by
+                                                <span class="txt-color">FormId.</span>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="mt-3"><strong>FormResponse</strong>
+                                    <ul class="ps-3">
+                                        <li id="formsub">Each form submit is a new form response record. The form
+                                            response has answer
+                                            records.</span></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <p id="reto">Repositories</p>
+                            <p id="modfollthe">This module follows the <a
+                                    href="https://docs.abp.io/en/abp/latest/Best-Practices/Repositories">Repository Best
+                                    Practices & Conventions</a> guide.</p>
+                            <p id="csutomrepo">Following custom repositories are defined for this module:</p>
+                            <ul class="ps-3">
+                                <li class="mt-2"><span class="txt-color">IFormRepository</span></li>
+                                <li class="mt-2"><span class="txt-color">IQuestionRepository</span></li>
+                                <li class="mt-2"><span class="txt-color">IChoiceRepository</span></li>
+                                <li class="mt-2"><span class="txt-color">IResponseRepository</span></li>
+                            </ul>
+                            <p id="domser">Domain services</p>
+                            <p id="qm">This module follows the <a
+                                    href="https://docs.abp.io/en/abp/latest/Best-Practices/Domain-Services">Domain
+                                    Services
+                                    Best Practices & Conventions</a> guide.</p>
+                            <div>
+                            </div>
+                            <div>
+                                <h3 class="fw-semibold pt-3 pb-3">QuestionManager</h3>
+                                <p id="qmis"><span class="txt-color">QuestionManager</span> is used to manage the
+                                    questions of
+                                    your form.</p>
+                            </div>
+                            <div>
+                                <h3 class="fw-semibold pt-3 pb-3" id="applayers">Application layer</h3>
+                                <p id="appser">Application services</p>
+                                <ul class="ps-3">
+                                    <li class="mt-2"><span class="txt-color">FormApplicationService</span></li>
+                                    <li class="mt-2"><span class="txt-color">QuestionAppService</span></li>
+                                    <li class="mt-2"><span class="txt-color">ResponseAppService</span></li>
+                                </ul>
+
+                            </div>
+                            <div>
+                                <h3 class="fw-semibold pt-3 pb-3" id="datapro">Database providers</h3>
+                                <p id="cmn">Common</p>
+                            </div>
+                            <div>
+                                <h3 class="fw-semibold pt-3 pb-3" id="collprex">Table / collection prefix & schema</h3>
+                                <p id="alltab">All tables/collections use the <span class="txt-color">Frm</span> prefix
+                                    by default.
+                                    Set static properties on the <span class="txt-color">FormsDbProperties</span> class
+                                    if you need to change the table prefix or set a schema name (if supported by your
+                                    database provider).</p>
+                            </div>
+                            <div>
+                                <h3 class="fw-semibold pt-3 pb-3" id="constrt">Connection string</h3>
+                                <p id="moduse">This module uses <span class="txt-color">Forms</span> for the connection
+                                    string name.
+                                    If you don't define a connection string with this name, it fallbacks to the <span
+                                        class="txt-color">Default</span> connection string.</p>
+                                <p id="fordetails">See the <a
+                                        href="https://docs.abp.io/en/abp/latest/Connection-Strings">connection
+                                        strings</a> documentation for details.</p>
+                                <p id="efcmd">Entity Framework Core / MongoDB</p>
+                                <p class="fw-bolder" id="tabcol">Tables / Collections</p>
+                                <ul class="ps-3">
+                                    <li class="mt-2" id="forli"><strong>FrmForms</strong>: Form list.</li>
+                                    <li class="mt-2" id="frmque"><strong>FrmQuestions</strong>: Questions of the forms
+                                    </li>
+                                    <li class="mt-2" id="frmans"><strong>FrmAnswers</strong>: Answers of the form
+                                        response.</li>
+                                    <li class="mt-2" id="frmchoi"><strong>FrmChoices</strong>: Choices of questions.
+                                    </li>
+                                    <li class="mt-2" id="frmform"><strong>FrmFormResponses</strong>: A new form response
+                                        is being
+                                        created each time user submits the form.</li>
+                                </ul>
+                                <p id="entrel"><strong>
+                                        Entity Relationships
+                                    </strong></p>
+
+                                <img src="Assets/images/entityRelationship.jpg" alt="Entity Relationships"
+                                    class="img-fluid my-4">
+                            </div>
+                            <div>
+                                <h3 class="fw-semibold pt-3 pb-3" id="per">Permissions</h3>
+                                <p id="formper">See the <span class="txt-color">FormsPermissions</span> class members
+                                    for all
+                                    permissions defined for this module.</p>
+                            </div>
+                        </div>
+
+
+
+
+                    </div>
+                </div>
+                <div class="col-12 col-lg-8 col-md-7 col-xl-2 col-xxl-2 docs-page-index offset-lg-4 offset-xl-0 offset-md-5 offset-xxl-0 px-md-4">
+                    <div class="position-fixed  my-3 w-auto mx-lg-0 mx-xl-3 mx-xxl-3 pe-lg-3 pe-xl-0 pe-xxl-0 position-lg-relative">
+                    <div class="card border-0 box rounded-3 mb-3">
+                        <div class="card-body">
+                            <h4 class="card-title py-1" id="inthisdoc">In this document</h4>
+                            <div class="opacity-50">
+                                <ul class="card-text small  list-unstyled ul-ad">
+                                    <li id="docinternal"><a href="#internals" class="text-black">Internals</a></li>
+                                    <li id="docdomlayer"><a href="#internals" class="text-black">Domain layer</a></li>
+
+                                    <li id="docque"><a href="#qm" class="text-black">Question Manager</a></li>
+                                    <li id="docapp"><a href="#qm" class="text-black">Application layer</a></li>
+                                    <li id="dataprood"><a href="#qm" class="text-black">Database providers</a></li>
+                                    <li id="doctable"><a href="#qm" class="text-black">Table / collection prefix &
+                                            schema</a></li>
+                                    <li id="doccon"><a href="#qm" class="text-black">Connection string</a></li>
+                                    <li id="docper"><a href="#per" class="text-black">Permissions</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card  border-0 box  bg-advertise "  >
+                        <div class="card-body abp-community-card  rounded-3 bg-sec ">
+                            <div class="row  ">
+                                <div class="col-lg-5 col-md-5 col-5"> <img src="Assets/images/React_logo.png" alt="raaghu logo" class="w-100"></div>
+                                <div class="col-lg-7 mt-1  col-md-7 mt-1 col-7"> <img src="Assets/images/abp-sec.png" alt="raaghu logo" class="w-100"></div>
+                                <!-- <div class="col-lg-6"><img src="Assets/images/abp-com.svg" alt="raaghu logo" class="w-100"></div> -->
+
+                            </div>
+                            <div class="border-under-sec my-3"></div>
+                            <div class="colored-sec-design py-1">
+                                <ul class="ps-4">
+                                    <li>CLI for CRUD generation</li>
+                                    <li>Component driven development</li>
+                                    <li>Purpose build UI kit for ABP commercial</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <button type="button" class="btn btn-primary mt-1 w-100" data-bs-toggle="modal"
+                                    data-bs-target="#contactusModal">Contact Us</button>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <!-- <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-0 col-12 docs-page-index">
+                    <div class="card mt-4 top-25 me-lg-4 border-0 shadow py-4">
+                        <div class="card-body">
+                            <h5 class="card-title">In This Document</h5>
+                            <p class="card-text small">Some quick example text to build on the card title and make up
+                                the bulk of the card's content.</p>
+
+                        </div>
+                    </div>
+                </div> -->
+
+            </div>
+
+
+
+        </div>
+
+    </main>
+
+    <!-- bootstrap dependencies -->
+    <script src="Assets/js/bootstrap.min.js"></script>
+    <script src="scripts/translation.js"></script>
+</body>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var languageDropdown = document.getElementById('language-dropdown');
+        languageDropdown.addEventListener('change', function () {
+            var selectedLanguage = languageDropdown.value;
+            if (selectedLanguage === 'pt') {
+                // Sidebar Code in js File
+
+
+                // Body Content
+
+                document.getElementById('formmod').innerHTML = 'Módulo de formulários';
+                document.getElementById('allowsyouto').innerHTML = 'Este módulo permite criar questionários para coletar informações. O módulo de formulários pode armazenar as respostas conforme elas chegam e você pode exportar os dados para um arquivo CSV. Você pode compartilhe seu formulário com outras pessoas com o link exclusivo do formulário. Você pode solicitar autenticação ou permitir resposta anônima. É semelhante ao aplicativo Formulário do Google. A área de uso é bastante amplo, você pode criar pesquisas, gerenciar registros de eventos, coletar endereços de e-mail para um boletim informativo, crie um questionário e até mesmo receba uma solicitação de pedido.';
+                document.getElementById('internals').innerHTML = 'Veja <a href="https://commercial.abp.io/modules/Volo.Forms">a descrição do módulo page</a> para uma visão geral dos recursos do módulo.';
+                document.getElementById('uiss').innerHTML = 'CAPTURAS DE TELA DE IU A SEREM ADICIONADAS';
+                document.getElementById('intter').innerHTML = 'Internas';
+                document.getElementById('laydom').innerHTML = 'camada de domínio';
+                document.getElementById('aggre').innerHTML = 'Agregadas';
+                document.getElementById('thismodfol').innerHTML = 'Este módulo segue o <a href="https://docs.abp.io/en/abp/latest/Best-Practices/Entities">Melhor Entidade Práticas & Guia de convenções</a>.';
+                document.getElementById('frmm').innerHTML = '<strong>Formulário</strong>';
+                document.getElementById('rootofthe').innerHTML = 'A principal raiz agregada das entidades de formulário. As opções de formulário, título e descrição está sendo armazenada nesta entidade.';
+                document.getElementById('qbase').innerHTML = '<strong>Base de perguntas</strong></span>';
+                document.getElementById('storesque').innerHTML = 'Armazena questões do formulário. Esta entidade é dependente para formar entidade por <span class="txt-color">FormId.</span></div>';
+                document.getElementById('formsub').innerHTML = 'Cada envio de formulário é um novo registro de resposta de formulário. A resposta do formulário tem resposta registros.</span>';
+                document.getElementById('reto').innerHTML = 'Repositórios';
+                document.getElementById('modfollthe').innerHTML = 'Este módulo segue o <a href="https://docs.abp.io/en/abp/latest/Best-Practices/Repositories">Repositório Melhor Guia de práticas e convenções</a>.';
+                document.getElementById('csutomrepo').innerHTML = 'Os seguintes repositórios personalizados são definidos para este módulo:';
+                document.getElementById('domser').innerHTML = 'serviços de domínio';
+                document.getElementById('qm').innerHTML = 'Este módulo segue o <a href="https://docs.abp.io/en/abp/latest/Best-Practices/Domain-Services">Domínio Serviços Guia de melhores práticas e convenções</a>.';
+                document.getElementById('qmis').innerHTML = '<span class="txt-color">QuestionManager</span> é usado para gerenciar as perguntas de sua forma.';
+                document.getElementById('applayers').innerHTML = 'Camada de aplicação';
+                document.getElementById('appser').innerHTML = 'Serviços de aplicativos';
+                document.getElementById('datapro').innerHTML = 'Provedores de banco de dados';
+                document.getElementById('cmn').innerHTML = 'Comum';
+                document.getElementById('collprex').innerHTML = 'Prefixo e esquema de tabela/coleção';
+                document.getElementById('alltab').innerHTML = 'Todas as tabelas/coleções usam o prefixo <span class="txt-color">Frm</span> por padrão. Definir propriedades estáticas na classe <span class="txt-color">FormsDbProperties</span> se você precisar alterar o prefixo da tabela ou definir um nome de esquema (se suportado pelo seu provedor de banco de dados).';
+                document.getElementById('constrt').innerHTML = 'Cadeia de conexão';
+                document.getElementById('moduse').innerHTML = 'Este módulo usa <span class="txt-color">Formulários</span> para o nome da string de conexão. Se você não definir uma string de conexão com esse nome, ela retornará ao <span class="txt-color">Padrão</span> string de conexão.';
+                document.getElementById('fordetails').innerHTML = 'Veja a <a href="https://docs.abp.io/en/abp/latest/Connection-Strings">conexão strings</a> documentação para detalhes.';
+                document.getElementById('efcmd').innerHTML = 'Núcleo do Entity Framework / MongoDB';
+                document.getElementById('tabcol').innerHTML = 'Tabelas / Coleções';
+                document.getElementById('forli').innerHTML = '<strong>FrmForms</strong>: Lista de formulários.';
+                document.getElementById('frmque').innerHTML = '<strong>FrmQuestions</strong>: perguntas dos formulários';
+                document.getElementById('frmans').innerHTML = '<strong>FrmAnswers</strong>: Respostas da resposta do formulário.';
+                document.getElementById('frmchoi').innerHTML = '<strong>FrmChoices</strong>: Escolhas de perguntas.';
+                document.getElementById('frmform').innerHTML = '<strong>FrmFormResponses</strong>: uma nova resposta de formulário está sendo criado cada vez que o usuário envia o formulário.';
+                document.getElementById('entrel').innerHTML = '<strong> Relacionamentos de Entidade </strong>';
+                document.getElementById('per').innerHTML = 'Permissões';
+                document.getElementById('formper').innerHTML = 'Consulte os membros da classe <span class="txt-color">FormsPermissions</span> para todos permissões definidas para este módulo.';
+                // For In this doc section
+                document.getElementById('inthisdoc').innerHTML = 'neste documento';
+                document.getElementById('docinternal').innerHTML = '<a href="#internals" class="text-black">Internos</a>';
+                document.getElementById('docdomlayer').innerHTML = '<a href="#internals" class="text-black">Camada de domínio</a>';
+                document.getElementById('docque').innerHTML = '<a href="#qm" class="text-black">Gerenciador de perguntas</a>';
+                document.getElementById('docapp').innerHTML = '<a href="#qm" class="text-black">Camada de aplicação</a>';
+                document.getElementById('dataproo').innerHTML = '<a href="#qm" class="text-black">Provedores de banco de dados</a>';
+                document.getElementById('doctable').innerHTML = '<a href="#qm" class="text-black">Prefixo e esquema de tabela/coleção</a>';
+                document.getElementById('doccon').innerHTML = '<a href="#qm" class="text-black">Cadeia de conexão</a>';
+                document.getElementById('docper').innerHTML = '<a href="#per" class="text-black">Permissões</a>';
+            }
+            else if (selectedLanguage === 'French') {
+                // Body Content
+
+                document.getElementById('formmod').innerHTML = 'module de formulaires';
+                document.getElementById('allowsyouto').innerHTML = 'Ce module vous permet de créer des questionnaires pour collecter des informations. Le module de formulaires peut stocker les réponses au fur et à mesure qu\'elles arrivent et vous pouvez exporter les données vers un fichier CSV. Vous pouvez partager votre formulaire avec d\'autres avec le lien de formulaire unique. Vous pouvez demander une authentification ou autoriser une réponse anonyme. Il est similaire à l\'application Google Form. Le domaine d\'utilisation est assez large, vous pouvez créer des sondages, gérer les inscriptions à des événements, collecter des adresses email pour une newsletter, créer un questionnaire et même recevoir une demande de commande.';
+                document.getElementById('internals').innerHTML = 'Voir la <a href="https://commercial.abp.io/modules/Volo.Forms">page de description du module</a> pour un aperçu des fonctionnalités du module.';
+                document.getElementById('uiss').innerHTML = 'CAPTURES D\'ÉCRAN DE L\'UI À AJOUTER';
+                document.getElementById('intter').innerHTML = 'Interne';
+                document.getElementById('laydom').innerHTML = 'couche de domaine';
+                document.getElementById('aggre').innerHTML = 'Agrégats';
+                document.getElementById('thismodfol').innerHTML = 'Ce module suit le <a href="https://docs.abp.io/en/abp/latest/Best-Practices/Entities">Guide des meilleures pratiques et conventions des entités</a>.';
+                document.getElementById('frmm').innerHTML = '<strong>Formulaire</strong>';
+                document.getElementById('rootofthe').innerHTML = 'La racine agrégée principale des entités du formulaire. Les options de formulaire, de titre et de description sont stockées dans cette entité.';
+                document.getElementById('qbase').innerHTML = '<strong>Base de questions</strong></span>';
+                document.getElementById('storesque').innerHTML = 'Stocke les questions du formulaire. Cette entité dépend de l\'entité de formulaire par <span class="txt-color">FormId.</span></div>';
+                document.getElementById('formsub').innerHTML = 'Chaque soumission de formulaire est un nouvel enregistrement de réponse de formulaire. La réponse du formulaire contient des enregistrements de réponse.</span>';
+                document.getElementById('reto').innerHTML = 'Référentiels';
+                document.getElementById('modfollthe').innerHTML = 'Ce module suit le <a href="https://docs.abp.io/en/abp/latest/Best-Practices/Repositories">Guide des meilleures pratiques et conventions de référentiel</a>.';
+                document.getElementById('csutomrepo').innerHTML = 'Les référentiels personnalisés suivants sont définis pour ce module :';
+                document.getElementById('domser').innerHTML = 'services de domaine';
+                document.getElementById('qm').innerHTML = 'Ce module suit le <a href="https://docs.abp.io/en/abp/latest/Best-Practices/Domain-Services">Guide des meilleures pratiques et conventions des services de domaine</a>.';
+                document.getElementById('qmis').innerHTML = '<span class="txt-color">QuestionManager</span> est utilisé pour gérer les questions dans votre formulaire.';
+                document.getElementById('applayers').innerHTML = 'couche d\'application';
+                document.getElementById('appser').innerHTML = 'services d\'application';
+                document.getElementById('datapro').innerHTML = 'fournisseurs de bases de données';
+                document.getElementById('cmn').innerHTML = 'Commun';
+
+                document.getElementById('collprex').innerHTML = 'Préfixe et schéma de table/collection';
+                document.getElementById('alltab').innerHTML = 'Toutes les tables/collections utilisent le préfixe <span class="txt-color">Frm</span> par défaut. Définissez des propriétés statiques dans la classe <span class="txt-color">FormsDbProperties</span> si vous devez modifier le préfixe de la table ou définir un nom de schéma (si pris en charge par votre fournisseur de base de données).';
+                document.getElementById('constrt').innerHTML = 'chaîne de connexion';
+                document.getElementById('moduse').innerHTML = 'Ce module utilise <span class="txt-color">Forms</span> pour le nom de la chaîne de connexion. Si vous ne définissez pas de chaîne de connexion avec ce nom, elle reviendra à la chaîne de connexion <span class="txt-color">Défaut</span>.';
+                document.getElementById('fordetails').innerHTML = 'Voir la documentation <a href="https://docs.abp.io/en/abp/latest/Connection-Strings">chaînes de connexion</a> pour plus de détails.';
+                document.getElementById('efcmd').innerHTML = 'Entity Framework Core / MongoDB';
+                document.getElementById('tabcol').innerHTML = 'Tableaux / Collections';
+                document.getElementById('forli').innerHTML = '<strong>FrmForms</strong> : liste des formulaires.';
+                document.getElementById('frmque').innerHTML = '<strong>FrmQuestions</strong> : formulaire de questions';
+                document.getElementById('frmans').innerHTML = '<strong>FrmAnswers</strong> : réponses de la réponse du formulaire.';
+                document.getElementById('frmchoi').innerHTML = '<strong>FrmChoices</strong> : choix de questions.';
+                document.getElementById('frmform').innerHTML = '<strong>FrmFormResponses</strong> : une nouvelle réponse au formulaire est créée chaque fois que l\'utilisateur soumet le formulaire.';
+                document.getElementById('entrel').innerHTML = '<strong> Relations d\'entité </strong>';
+                document.getElementById('per').innerHTML = 'Autorisations';
+                document.getElementById('formper').innerHTML = 'Voir les membres de la classe <span class="txt-color">FormsPermissions</span> pour toutes les autorisations définies pour ce module.';
+                // For In this doc section
+                document.getElementById('inthisdoc').innerHTML = 'dans ce document';
+                document.getElementById('docinternal').innerHTML = '<a href="#internals" class="text-black">Internes</a>';
+                document.getElementById('docdomlayer').innerHTML = '<a href="#internals" class="text-black">Couche de domaine</a>';
+                document.getElementById('docque').innerHTML = '<a href="#qm" class="text-black">Gestionnaire de questions</a>';
+                document.getElementById('docapp').innerHTML = '<a href="#qm" class="text-black">Couche applicative</a>';
+                document.getElementById('dataproo').innerHTML = '<a href="#qm" class="text-black">Fournisseurs de bases de données</a>';
+                document.getElementById('doctable').innerHTML = '<a href="#qm" class="text-black">Préfixe et schéma de table/collection</a>';
+                document.getElementById('doccon').innerHTML = '<a href="#qm" class="text-black">Chaîne de connexion</a>';
+                document.getElementById('docper').innerHTML = '<a href="#per" class="text-black">Autorisations</a>';
+
+            }
+            else if (selectedLanguage === 'Finnish') {
+                // Body Content
+
+                document.getElementById('formmod').innerHTML = 'lomakkeiden moduuli';
+                document.getElementById('allowsyouto').innerHTML = 'Tämän moduulin avulla voit luoda kyselylomakkeita tiedon keräämiseksi. Lomakemoduuli voi tallentaa vastaukset niiden saapuessa ja voit viedä tiedot CSV-tiedostoon. Voit jakaa lomakkeesi muiden kanssa ainutlaatuisen lomakelinkin avulla. Voit pyytää todennusta tai sallia anonyymin vastauksen. Se on samanlainen kuin Google Form -sovellus. Käyttöalue on varsin laaja, voit luoda kyselyitä, hallita tapahtumiin ilmoittautumisia, kerätä sähköpostiosoitteita uutiskirjettä varten, luoda kyselyn ja jopa vastaanottaa tilauspyynnön.';
+                document.getElementById('internals').innerHTML = 'Katso <a href="https://commercial.abp.io/modules/Volo.Forms">moduulin kuvaussivulta</a> yleiskatsaus moduulin toiminnoista.';
+                document.getElementById('uiss').innerHTML = 'LISÄTTÄVÄT KÄYTTÖJÄRJESTELMÄN KUVAKUVAT';
+                document.getElementById('intter').innerHTML = 'Sisäinen';
+                document.getElementById('laydom').innerHTML = 'verkkotunnuksen kerros';
+                document.getElementById('aggre').innerHTML = 'Aggregaatit';
+                document.getElementById('thismodfol').innerHTML = 'Tämä moduuli noudattaa <a href="https://docs.abp.io/en/abp/latest/Best-Practices/Entities">Entiteetin parhaiden käytäntöjen ja sopimusten opasta</a>.';
+                document.getElementById('frmm').innerHTML = '<strong>Lomake</strong>';
+                document.getElementById('rootofthe').innerHTML = 'Lomakekokonaisuuksien pääaggregaattijuuri. Lomake-, otsikko- ja kuvausvaihtoehdot tallennetaan tähän entiteettiin.';
+                document.getElementById('qbase').innerHTML = '<strong>Kysymyspohja</strong></span>';
+                document.getElementById('storesque').innerHTML = 'Tallentaa lomakekysymyksiä. Tämä entiteetti riippuu lomakeentiteetistä <span class="txt-color">FormId.</span></div>';
+                document.getElementById('formsub').innerHTML = 'Jokainen lomakkeen lähetys on uusi lomakkeen vastaustietue. Lomakkeen vastaus sisältää vastaustietueita.</span>';
+                document.getElementById('reto').innerHTML = 'Tietovarastot';
+                document.getElementById('modfollthe').innerHTML = 'Tämä moduuli noudattaa <a href="https://docs.abp.io/en/abp/latest/Best-Practices/Repositories">Arkiston parhaiden käytäntöjen ja käytäntöjen opas</a>.';
+                document.getElementById('csutomrepo').innerHTML = 'Tälle moduulille on määritetty seuraavat mukautetut arkistot:';
+                document.getElementById('domser').innerHTML = 'verkkotunnuksen palvelut';
+                document.getElementById('qm').innerHTML = 'Tämä moduuli noudattaa <a href="https://docs.abp.io/en/abp/latest/Best-Practices/Domain-Services">verkkotunnuspalveluiden parhaiden käytäntöjen ja sopimusten opasta</a>.';
+                document.getElementById('qmis').innerHTML = '<span class="txt-color">QuestionManageria</span> käytetään lomakkeen kysymysten hallintaan.';
+                document.getElementById('applayers').innerHTML = 'sovelluskerros';
+                document.getElementById('appser').innerHTML = 'sovelluspalvelut';
+                document.getElementById('datapro').innerHTML = 'tietokannan tarjoajat';
+                document.getElementById('cmn').innerHTML = 'Yleistä';
+                document.getElementById('collprex').innerHTML = 'Taulukon/kokoelman etuliite ja skeema';
+                document.getElementById('alltab').innerHTML = 'Kaikissa taulukoissa/kokoelmissa käytetään oletuksena <span class="txt-color">Frm</span>-etuliitettä. Aseta staattiset ominaisuudet luokassa <span class="txt-color">FormsDbProperties</span>, jos sinun on muutettava taulukon etuliitettä tai määritettävä skeeman nimi (jos tietokantatoimittajasi tukee sitä).';
+                document.getElementById('constrt').innerHTML = 'yhteysmerkkijono';
+                document.getElementById('moduse').innerHTML = 'Tämä moduuli käyttää <span class="txt-color">lomaketta</span> yhteysmerkkijonon nimenä. Jos et aseta tämännimistä yhteysmerkkijonoa, se palaa <span class="txt-color">oletus</span>-yhteysmerkkijonoon.';
+                document.getElementById('fordetails').innerHTML = 'Katso lisätietoja <a href="https://docs.abp.io/en/abp/latest/Connection-Strings">yhteysmerkkijonoista</a>.';
+
+
+                document.getElementById('efcmd').innerHTML = 'Entity Framework Core / MongoDB';
+                document.getElementById('tabcol').innerHTML = 'Maalaukset / Kokoelmat';
+                document.getElementById('forli').innerHTML = '<strong>FrmForms</strong>: lomakkeiden luettelo.';
+                document.getElementById('frmque').innerHTML = '<strong>FrmQuestions</strong>: kysymyslomake';
+                document.getElementById('frmans').innerHTML = '<strong>FrmAnswers</strong>: lomakevastauksen vastaukset.';
+                document.getElementById('frmchoi').innerHTML = '<strong>FrmChoices</strong>: kysymysten valinta.';
+                document.getElementById('frmform').innerHTML = '<strong>FrmFormResponses</strong>: Uusi lomakevastaus luodaan aina, kun käyttäjä lähettää lomakkeen.';
+                document.getElementById('entrel').innerHTML = '<strong>Kokosuhteet</strong>';
+                document.getElementById('per').innerHTML = 'Käyttöoikeudet';
+                document.getElementById('formper').innerHTML = 'Katso kaikki tälle moduulille määritetyt käyttöoikeudet <span class="txt-color">FormsPermissions</span>-luokan jäsenistä.';
+                // For In this doc section
+                document.getElementById('inthisdoc').innerHTML = 'tässä asiakirjassa';
+                document.getElementById('docinternal').innerHTML = '<a href="#internals" class="text-black">Sisäiset</a>';
+                document.getElementById('docdomlayer').innerHTML = '<a href="#internals" class="text-black">Verkkotunnustaso</a>';
+                document.getElementById('docque').innerHTML = '<a href="#qm" class="text-black">Kysymystenhallinta</a>';
+                document.getElementById('docapp').innerHTML = '<a href="#qm" class="text-black">Sovelluskerros</a>';
+                document.getElementById('dataproo').innerHTML = '<a href="#qm" class="text-black">Tietokantojen tarjoajat</a>';
+                document.getElementById('doctable').innerHTML = '<a href="#qm" class="text-black">Taulukon/kokoelman etuliite ja malli</a>';
+                document.getElementById('doccon').innerHTML = '<a href="#qm" class="text-black">Yhteysmerkkijono</a>';
+                document.getElementById('docper').innerHTML = '<a href="#per" class="text-black">Käyttöoikeudet</a>';
+            } 
+            else if (selectedLanguage === 'Slovak') {
+                // Obsah tela
+
+document.getElementById('formmod').innerHTML = 'modul pre formuláre';
+document.getElementById('allowsyouto').innerHTML = 'Tento modul vám umožňuje vytvárať dotazníkové formuláre na zhromažďovanie údajov. Modul pre formuláre dokáže ukladať odpovede pri ich príchode a môžete dáta exportovať do súboru CSV. Môžete zdieľať svoje formuláre s inými pomocou jedinečného odkazu na formulár. Môžete vyžadovať overenie totožnosti alebo povoliť anonymné odpovede. Je podobný aplikácii Google Form. Jeho použitie je pomerne rozsiahle, môžete vytvárať prieskumy, spravovať prihlášky na udalosti, zbierať e-mailové adresy pre bulletin a dokonca prijímať objednávky.';
+document.getElementById('internals').innerHTML = 'Pozrite si <a href="https://commercial.abp.io/modules/Volo.Forms">stručný prehľad modulu</a> o jeho funkcionalite.';
+document.getElementById('uiss').innerHTML = 'Pridať obrázky operačného systému';
+document.getElementById('intter').innerHTML = 'Interné';
+document.getElementById('laydom').innerHTML = 'doména vrstvy';
+document.getElementById('aggre').innerHTML = 'Agregácie';
+document.getElementById('thismodfol').innerHTML = 'Tento modul nasleduje <a href="https://docs.abp.io/en/abp/latest/Best-Practices/Entities">príručku pre osvedčené postupy a konvencie entít</a>.';
+document.getElementById('frmm').innerHTML = '<strong>Formulár</strong>';
+document.getElementById('rootofthe').innerHTML = 'Koreňový agregát pre celé formulárové jednotky. Možnosti pre formulár, názov a popis sa ukladajú do tejto entity.';
+document.getElementById('qbase').innerHTML = '<strong>Základ otázok</strong></span>';
+document.getElementById('storesque').innerHTML = 'Ukladá otázky pre formuláre. Táto entita závisí na entite formulára podľa <span class="txt-color">FormId.</span></div>';
+document.getElementById('formsub').innerHTML = 'Každé odoslanie formulára je nový záznam o odpovedi na formulár. Záznam o odpovedi formulára obsahuje záznamy o odpovediach.</span>';
+document.getElementById('reto').innerHTML = 'Skladovanie údajov';
+document.getElementById('modfollthe').innerHTML = 'Tento modul nasleduje <a href="https://docs.abp.io/en/abp/latest/Best-Practices/Repositories">príručku pre osvedčené postupy a konvencie repozitárov</a>.';
+document.getElementById('csutomrepo').innerHTML = 'Tento modul používa nasledujúce vlastné repozitáre:';
+document.getElementById('domser').innerHTML = 'Doménové služby';
+document.getElementById('qm').innerHTML = 'Tento modul nasleduje <a href="https://docs.abp.io/en/abp/latest/Best-Practices/Domain-Services">príručku pre osvedčené postupy a konvencie doménových služieb</a>.';
+document.getElementById('qmis').innerHTML = '<span class="txt-color">QuestionManager</span> sa používa na správu otázok pre formuláre.';
+document.getElementById('applayers').innerHTML = 'aplikačná vrstva';
+document.getElementById('appser').innerHTML = 'aplikačné služby';
+document.getElementById('datapro').innerHTML = 'poskytovatelia databázy';
+document.getElementById('cmn').innerHTML = 'Všeobecné';
+document.getElementById('collprex').innerHTML = 'Predpona a schéma pre tabuľku/kolekciu';
+document.getElementById('alltab').innerHTML = 'Všetky tabuľky/kolekcie sú predvolene označené predponou <span class="txt-color">Frm</span>. Ak chcete zmeniť predponu tabuľky alebo nastaviť názov schémy (ak váš poskytovateľ databázy to podporuje), nastavte statické vlastnosti v triede <span class="txt-color">FormsDbProperties</span>.';
+document.getElementById('constrt').innerHTML = 'reťazec pripojenia';
+document.getElementById('moduse').innerHTML = 'Tento modul používa názov reťazca pripojenia <span class="txt-color">form</span>. Ak nezadáte reťazec pripojenia s týmto názvom, bude použitý predvolený reťazec pripojenia <span class="txt-color">default</span>.';
+document.getElementById('fordetails').innerHTML = 'Pre viac informácií pozrite <a href="https://docs.abp.io/en/abp/latest/Connection-Strings">reťazce pripojenia</a>.'; 
+
+document.getElementById('efcmd').innerHTML = 'Entity Framework Core / MongoDB';
+document.getElementById('tabcol').innerHTML = 'Tabuľky / Kolekcie';
+document.getElementById('forli').innerHTML = '<strong>FrmForms</strong>: Zoznam formulárov.';
+document.getElementById('frmque').innerHTML = '<strong>FrmQuestions</strong>: Otázky formulára.';
+document.getElementById('frmans').innerHTML = '<strong>FrmAnswers</strong>: Odpovede na formulár.';
+document.getElementById('frmchoi').innerHTML = '<strong>FrmChoices</strong>: Výbery pre otázky.';
+document.getElementById('frmform').innerHTML = '<strong>FrmFormResponses</strong>: Každé odoslanie formulára vytvorí novú odpoveď.';
+document.getElementById('entrel').innerHTML = '<strong>Vzťahy medzi entitami</strong>';
+document.getElementById('per').innerHTML = 'Povolenia';
+document.getElementById('formper').innerHTML = 'Prezrite si všetky povolenia priradené k tomuto modulu v členoch triedy <span class="txt-color">FormsPermissions</span>.';
+// Pre túto časť dokumentu
+document.getElementById('inthisdoc').innerHTML = 'v tomto dokumente';
+document.getElementById('docinternal').innerHTML = '<a href="#internals" class="text-black">Interné</a>';
+document.getElementById('docdomlayer').innerHTML = '<a href="#internals" class="text-black">Doménová vrstva</a>';
+document.getElementById('docque').innerHTML = '<a href="#qm" class="text-black">Správa otázok</a>';
+document.getElementById('docapp').innerHTML = '<a href="#qm" class="text-black">Aplikačná vrstva</a>';
+document.getElementById('dataproo').innerHTML = '<a href="#qm" class="text-black">Poskytovatelia databázy</a>';
+document.getElementById('doctable').innerHTML = '<a href="#qm" class="text-black">Predpona a schéma tabuľky/kolekcie</a>';
+document.getElementById('doccon').innerHTML = '<a href="#qm" class="text-black">Reťazec pripojenia</a>';
+document.getElementById('docper').innerHTML = '<a href="#per" class="text-black">Povolenia</a>';
+
+            } 
+            else if (selectedLanguage === 'German') {
+                document.getElementById('formmod').innerHTML = 'Modul für Formulare';
+document.getElementById('allowsyouto').innerHTML = 'Dieses Modul ermöglicht Ihnen das Erstellen von Umfrageformularen zur Datenerfassung. Das Formularmodul kann Antworten speichern, wenn sie eingehen, und Sie können die Daten in eine CSV-Datei exportieren. Sie können Ihre Formulare über einen eindeutigen Formularlink mit anderen teilen. Sie können Identitätsüberprüfung erfordern oder anonyme Antworten zulassen. Es ähnelt der Google Form-Anwendung. Es ist vielseitig einsetzbar, Sie können Umfragen erstellen, Veranstaltungsanmeldungen verwalten, E-Mail-Adressen für Newsletter sammeln und sogar Bestellungen entgegennehmen.';
+document.getElementById('internals').innerHTML = 'Schauen Sie sich einen <a href="https://commercial.abp.io/modules/Volo.Forms">kurzen Überblick über das Modul</a> mit seiner Funktionalität an.';
+document.getElementById('uiss').innerHTML = 'Betriebssystem-Bilder hinzufügen';
+document.getElementById('intter').innerHTML = 'Intern';
+document.getElementById('laydom').innerHTML = 'Domänenschicht';
+document.getElementById('aggre').innerHTML = 'Aggregate';
+document.getElementById('thismodfol').innerHTML = 'Dieses Modul folgt <a href="https://docs.abp.io/en/abp/latest/Best-Practices/Entities">bewährten Praktiken und Konventionen für Entitäten</a>.';
+document.getElementById('frmm').innerHTML = '<strong>Formular</strong>';
+document.getElementById('rootofthe').innerHTML = 'Root-Aggregat für das gesamte Formularelement. Optionen für das Formular, den Namen und die Beschreibung werden in dieser Entität gespeichert.';
+document.getElementById('qbase').innerHTML = '<strong>Fragebasis</strong>';
+document.getElementById('storesque').innerHTML = 'Speichert Fragen für Formulare. Diese Entität hängt von der Formular-Entität ab, abhängig von <span class="txt-color">FormId</span>.</div>';
+document.getElementById('formsub').innerHTML = 'Jede Formulareinsendung ist ein neuer Antwortdatensatz auf das Formular. Der Formularantwortdatensatz enthält Antwortdatensätze.</span>';
+document.getElementById('reto').innerHTML = 'Datenspeicher';
+document.getElementById('modfollthe').innerHTML = 'Dieses Modul folgt <a href="https://docs.abp.io/en/abp/latest/Best-Practices/Repositories">bewährten Praktiken und Konventionen für Repositories</a>.';
+document.getElementById('csutomrepo').innerHTML = 'Dieses Modul verwendet die folgenden benutzerdefinierten Repositories:';
+document.getElementById('domser').innerHTML = 'Domänendienste';
+document.getElementById('qm').innerHTML = 'Dieses Modul folgt <a href="https://docs.abp.io/en/abp/latest/Best-Practices/Domain-Services">bewährten Praktiken und Konventionen für Domänendienste</a>.';
+document.getElementById('qmis').innerHTML = '<span class="txt-color">QuestionManager</span> wird zur Verwaltung von Fragen für Formulare verwendet.';
+document.getElementById('applayers').innerHTML = 'Anwendungsschicht';
+document.getElementById('appser').innerHTML = 'Anwendungsdienste';
+document.getElementById('datapro').innerHTML = 'Datenbankanbieter';
+document.getElementById('cmn').innerHTML = 'Allgemein';
+document.getElementById('collprex').innerHTML = 'Präfix und Schema für Tabelle / Sammlung';
+document.getElementById('alltab').innerHTML = 'Standardmäßig sind alle Tabellen / Sammlungen mit dem Präfix <span class="txt-color">Frm</span> versehen. Wenn Sie das Tabellenpräfix ändern oder ein Schemaname festlegen möchten (sofern Ihr Datenbankanbieter dies unterstützt), legen Sie die statischen Eigenschaften in der Klasse <span class="txt-color">FormsDbProperties</span> fest.';
+document.getElementById('constrt').innerHTML = 'Verbindungszeichenfolge';
+document.getElementById('moduse').innerHTML = 'Dieses Modul verwendet den Verbindungszeichenfolgennamen <span class="txt-color">form</span>. Wenn Sie keine Verbindungszeichenfolge mit diesem Namen angeben, wird die Standardverbindungszeichenfolge <span class="txt-color">default</span> verwendet.';
+document.getElementById('fordetails').innerHTML = 'Weitere Informationen finden Sie unter <a href="https://docs.abp.io/en/abp/latest/Connection-Strings">Verbindungszeichenfolgen</a>.'; 
+
+document.getElementById('efcmd').innerHTML = 'Entity Framework Core / MongoDB';
+document.getElementById('tabcol').innerHTML = 'Tabellen / Sammlungen';
+document.getElementById('forli').innerHTML = '<strong>FrmForms</strong>: Liste der Formulare.';
+document.getElementById('frmque').innerHTML = '<strong>FrmQuestions</strong>: Fragen des Formulars.';
+document.getElementById('frmans').innerHTML = '<strong>FrmAnswers</strong>: Antworten auf das Formular.';
+document.getElementById('frmchoi').innerHTML = '<strong>FrmChoices</strong>: Auswahlmöglichkeiten für Fragen.';
+document.getElementById('frmform').innerHTML = '<strong>FrmFormResponses</strong>: Jede Formulareinreichung erstellt eine neue Antwort.';
+document.getElementById('entrel').innerHTML = '<strong>Entitätsbeziehungen</strong>';
+document.getElementById('per').innerHTML = 'Berechtigungen';
+document.getElementById('formper').innerHTML = 'Überprüfen Sie alle diesem Modul zugewiesenen Berechtigungen in den Membern der Klasse <span class="txt-color">FormsPermissions</span>.';
+// Für diesen Teil des Dokuments
+document.getElementById('inthisdoc').innerHTML = 'in diesem Dokument';
+document.getElementById('docinternal').innerHTML = '<a href="#internals" class="text-black">Intern</a>';
+document.getElementById('docdomlayer').innerHTML = '<a href="#internals" class="text-black">Domänenschicht</a>';
+document.getElementById('docque').innerHTML = '<a href="#qm" class="text-black">Frageverwaltung</a>';
+document.getElementById('docapp').innerHTML = '<a href="#qm" class="text-black">Anwendungsschicht</a>';
+document.getElementById('dataproo').innerHTML = '<a href="#qm" class="text-black">Datenbankanbieter</a>';
+document.getElementById('doctable').innerHTML = '<a href="#qm" class="text-black">Präfix und Schema für Tabelle / Sammlung</a>';
+document.getElementById('doccon').innerHTML = '<a href="#qm" class="text-black">Verbindungszeichenfolge</a>';
+document.getElementById('docper').innerHTML = '<a href="#per" class="text-black">Berechtigungen</a>';
+
+            } 
+            else if (selectedLanguage === 'spanish') {
+            } else {
+
+            }
+        });
+    });
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>

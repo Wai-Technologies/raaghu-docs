@@ -1,0 +1,1307 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- bootstrap dependencies -->
+    <link rel="stylesheet" href="Assets/css/bootstrap.min.css">
+    <link href="Assets/prism.css" rel="stylesheet" />
+    <script src="Assets/prism.js"></script>
+    <link rel="stylesheet" href="/index.css">
+    <link rel="icon" type="image/x-icon" href="Assets/images/raaghu-icon.png">
+    <title>Raaghu - CMS Kit Pro</title>
+    <script src="/index.js"></script>
+</head>
+
+
+<body>
+
+    <main>
+
+        <nav class="navbar navbar-expand-lg navbar-light ">
+            <div class="container-fluid ">
+                <div class="navbar-toggler-container">
+                    <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#sidebar,#navbarSupportedContent"
+                        aria-controls="sidebar" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <!-- <div class="dropdown show dropdown-specific">
+                        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Platform
+                        </a>
+
+                        <div class="dropdown-menu menu" aria-labelledby="dropdownMenuLink">
+                            <a class="dropdown-item" href="https://www.raaghu.io/features.html">Features</a>
+                            <a class="dropdown-item " href="https://portal.raaghu.io/">Documentation</a>
+                            <button type="button" class="btn btn-primary btn-contact mt-2">contact</button>
+                            <a href="https://github.com/Wai-Technologies/raaghu-angular" target="_blank">
+                                <li class="ps-lg-5 mt-2">
+                                    <img src="Assets/images/github-logo.svg" alt="abplogo logo" width="100%"
+                                        class="github-logo">
+                                </li>
+                            </a>
+                        </div>
+                    </div> -->
+                </div>
+                <a class="text-black navbar-brand" href="/">
+                    <img src="Assets/images/raaghu_logs.png" alt="raaghu logo" class="w-75  pe-lg-0">
+                </a>
+
+                <div class="collapse navbar-collapse align  justify-content-lg-end " id="navbarSupportedContent">
+                    <ul class="navbar-nav  mb-2 mb-lg-0">
+                        <li class="nav-item me-5">
+                            <a class="nav-link active " aria-current="page"
+                                href="https://raaghu-website-staging.netlify.app/raaghu-mfe-portal/_accordion.html">Components</a>
+                        </li>
+                        <li class="nav-item me-5">
+                            <a class="nav-link active " aria-current="page" href="#"><span
+                                    class="doc-color">Documentation</span></a>
+                        </li>
+                        <li class="nav-item me-5">
+                            <a class="nav-link active " aria-current="page"
+                                href="https://raaghu-website-staging.netlify.app/raaghu-mfe-portal/_accordion.html#">Support</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link active " aria-current="page"
+                                href="https://raaghu-website-staging.netlify.app/faq">FAQ</a>
+                        </li>
+                        <!-- <li class=" nav-item dropdown active">
+                            <a class="nav-link  text-dark me-5" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Platform
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-center " aria-labelledby="navbarDropdown">
+                                <ul class="list-unstyled dropdown-arrow">
+                                    <li class=" ps-4">
+                                        <p class="title pt-2">Raaghu Platform</p>
+                                        <div class="row">
+                                            <div class="col-lg-6 col-md-6">
+                                                <a href="https://portal.raaghu.io/" target="_blank"
+                                                    class="p-0 text-decoration-none text-reset">
+                                                    <div class="d-flex align-items-center gap-3">
+
+                                                        <img src="Assets/images/raaghu-portal-mg.svg"
+                                                            alt="raaghu-portal" class="mb-3">
+                                                        <p class="link-name">Raaghu Portal</p>
+
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="col-lg-6 col-md-6">
+                                                <a href="https://portal.raaghu.io/#Components-section" target="_blank"
+                                                    class="p-0 text-decoration-none text-reset">
+                                                    <div class="d-flex align-items-center gap-3">
+                                                        <img src="Assets/images/raaghu-components-mg.svg"
+                                                            alt="raaghu-components" class="mb-3">
+                                                        <p class="link-name">Raaghu Components</p>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-6 col-md-6">
+                                                <a href="https://portal.raaghu.io/#Elements-section" target="_blank"
+                                                    class="p-0 text-decoration-none text-reset">
+                                                    <div class="d-flex align-items-center gap-3">
+                                                        <img src="Assets/images/raaghu-elements-mg.svg"
+                                                            alt="raaghu-portal" class="mb-2">
+                                                        <p class="pt-2 link-name">Raaghu Elements</p>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="col-lg-6 col-md-6">
+                                                <div class="d-flex align-items-center gap-3">
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="bgcolor-dropdown">
+                                        <div class="ps-4">
+                                            <p class="pt-3 pb-1 title">WORKS ON</p>
+                                            <div class="row">
+                                                <div class="col-md-2 mb-2">
+                                                    <img src="Assets/images/asplogo-mg.svg" alt="asplogo logo"
+                                                        width="80%">
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <img src="Assets/images/abplogo-mg.svg" alt="abplogo logo"
+                                                        width="50%">
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item me-5">
+                            <a class="nav-link active" aria-current="page"
+                                href="https://www.raaghu.io/features.html">Features</a>
+                        </li>
+                        <li class="nav-item me-5">
+                            <a class="nav-link active " aria-current="page"
+                                href="https://portal.raaghu.io/">Documentation</a>
+                        </li>
+                        <button type="button" class="btn btn-primary btn-contact">contact</button>
+                        <a href="https://github.com/Wai-Technologies/raaghu-angular" target="_blank">
+                            <li class="ps-lg-5 pt-2">
+                                <img src="Assets/images/github-logo.svg" alt="abplogo logo" width="100%"
+                                    class="github-logo">
+                            </li>
+                        </a> -->
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="wrapper container-fluid">
+
+            <div class="row">
+
+                <div id="sidebar" class="col-12 col-lg-2 col-md-4 col-xl-2 col-xxl-2 collapse d-m-block mx-0 mx-lg-3 mx-md-3 mx-xl-3 mx-xxl-3 show">
+
+                    <nav>
+                        <div class="sidebar-header ">
+                            <a href="/" class="text-bg-dark">
+                                <h3 class="fs-5 fw-normal" id="tableOfContent">Table Of Content</h3>
+                            </a>
+                        </div>
+
+                        <div class="accordion accordion-flush mx-3 doc-acc accordion-button-top" id="accordionExample">
+                            <div class="row pb-4">
+                                <div class="col-6 col-lg-6 col-md-6">
+                                    <select id="language-dropdown" class="sidebar-button">
+                                        <option value="en" selected>English</option>
+                                        <option value="pt">Português</option>
+                                        <option value="fr">French</option>
+                                        <option value="fi">Finnish</option>
+                                        <option value="hi">Hindi</option>
+                                        <option value="it">Italian</option>                                        
+                                        <option value="sk">Slovak</option>
+                                        <option value="de">German</option>
+                                        <option value="ru">Russian</option>
+                                        <option value="zh">Chinese</option>
+                                        <option value="af">Afrikaan</option>
+                                        <option value="ar">Arabic</option>
+                                        <!-- Add more language options if needed -->
+                                    </select>
+                                </div>
+                                <div class="col-6 col-lg-6 col-md-6">
+                                    <select class="sidebar-button w-100">
+                                        <option value="option1" id="version">Version</option>
+                                        <option value="option2" id="version">Version 2</option>
+                                        <option value="option3">Version 3</option>
+                                        <option value="option4">Version 4</option>
+                                    </select>
+
+                                </div>
+                            </div>
+                            <div class="accordion-item bg-dark">
+                                <h2 class="accordion-header" id="headingOne">
+                                    <a href="Getting-Started.html">
+                                        <button
+                                            class="accordion-button d-flex flex-row-reverse justify-content-end p-0 bg-dark mt-1"
+                                            type="button" data-bs-toggle="collapse" data-bs-target="#coll"
+                                            aria-expanded="false" aria-controls="collapseOne" id="Getting">
+                                            Getting Started
+                                        </button></a>
+                                </h2>
+
+                                <div id="coll" class="accordion-collapse collapse  border-0 rounded-0 p-0"
+                                    aria-labelledby="headOne" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Setup-Your-Development-Environment.html" id="setupDev">Setup your
+                                            development
+                                            environment</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Creating-A-New-Solution.html" id="creatingNewSol">Creating A New
+                                            Solution</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Running-The-Solution.html" id="runningTheSol">Running the Solution</a>
+                                    </div>
+                                </div>
+                                <h2 class="accordion-header" id="headingTwo">
+                                    <button
+                                        class="accordion-button d-flex flex-row-reverse justify-content-end p-0 bg-dark mt-2"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                        aria-expanded="false" aria-controls="collapseOne" id="tut">
+                                        Tutorials
+                                    </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse  border-0 rounded-0 p-0"
+                                    aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <h2 class="accordion-header" id="headingTwo">
+                                            <button
+                                                class="accordion-button d-flex flex-row-reverse justify-content-end p-0 bg-dark mt-2"
+                                                type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                                                aria-expanded="false" aria-controls="collapseOne" id="webAppDev">
+                                                Web Application Development
+                                            </button>
+                                        </h2>
+                                        <div id="collapseThree"
+                                            class="accordion-collapse collapse  border-0 rounded-0 p-0 pt-2"
+                                            aria-labelledby="headingTwo" data-bs-parent="#accordionExamplee">
+                                            <div class="accordion-body bg-dark px-4 p-1">
+                                                <a href="Creating-The-Server-Side.html" id="creatingServer">Creating the
+                                                    Server
+                                                    Side</a>
+                                            </div>
+                                        </div>
+                                        <div id="collapseThree"
+                                            class="accordion-collapse collapse  border-0 rounded-0 p-0"
+                                            aria-labelledby="headingTwo" data-bs-parent="#accordionExamplee">
+                                            <div class="accordion-body bg-dark px-4 p-1">
+                                                <a href="The-Book-List-Page.html" id="bookList">The Book List Page</a>
+                                            </div>
+                                        </div>
+                                        <div id="collapseThree"
+                                            class="accordion-collapse collapse  border-0 rounded-0 p-0"
+                                            aria-labelledby="headingTwo" data-bs-parent="#accordionExamplee">
+                                            <div class="accordion-body bg-dark px-4 p-1">
+                                                <a href="Creating-Updating-And-Deleting-Book.html"
+                                                    id="creatingUpdating">Creating,Updating
+                                                    And
+                                                    Deleting Book</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <h2 class="accordion-header" id="headingFour">
+                                    <button
+                                        class="accordion-button d-flex flex-row-reverse justify-content-end p-0 bg-dark mt-2"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour"
+                                        aria-expanded="false" aria-controls="collapseOne" id="guides">
+                                        Guides
+                                    </button>
+                                </h2>
+                                <div id="collapseFour" class="accordion-collapse collapse  border-0 rounded-0 p-0"
+                                    aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Customizing-The-Modules.html" id="customizingTheModules">Customizing
+                                            the Modules</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Identity-Server-Deployment.html" id="identityServerDeploy">Identity
+                                            Server Deployment</a>
+                                    </div>
+                                </div>
+
+
+                                <h2 class="accordion-header" id="headingFive">
+                                    <button
+                                        class="accordion-button d-flex flex-row-reverse justify-content-end p-0 bg-dark mt-2"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive"
+                                        aria-expanded="false" aria-controls="collapseOne" id="samples">
+                                        Samples
+                                    </button>
+                                </h2>
+                                <div id="collapseFive" class="accordion-collapse collapse  border-0 rounded-0 p-0"
+                                    aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="All-Samples.html" id="allSamples">All Samples</a>
+                                    </div>
+                                </div>
+                                <h2 class="accordion-header" id="headingSix">
+                                    <a href="Startup-Template.html">
+                                        <button
+                                            class="accordion-button d-flex flex-row-reverse justify-content-end p-0 bg-dark mt-2"
+                                            type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix"
+                                            aria-expanded="false" aria-controls="collapseOne" id="startupTemplate">
+                                            Startup Template
+                                        </button></a>
+                                </h2>
+                                <div id="collapseSix" class="accordion-collapse collapse  border-0 rounded-0 p-0"
+                                    aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <h2 class="accordion-header" id="headingSix">
+                                            <button
+                                                class="accordion-button d-flex flex-row-reverse justify-content-end p-0 bg-dark mt-2"
+                                                type="button" data-bs-toggle="collapse" data-bs-target="#headingS"
+                                                aria-expanded="false" aria-controls="collapseOne">
+                                                Application Templates
+                                            </button>
+                                        </h2>
+                                        <div id="headingS"
+                                            class="accordion-collapse collapse  border-0 rounded-0 p-0 pt-2"
+                                            aria-labelledby="headingSix" data-bs-parent="#accordionExamplee">
+                                            <div class="accordion-body bg-dark px-4 p-1">
+                                                <a href="Creating-Solution.html">Creating Solution</a>
+                                            </div>
+                                        </div>
+                                        <div id="headingS" class="accordion-collapse collapse  border-0 rounded-0 p-0"
+                                            aria-labelledby="headingSix" data-bs-parent="#accordionExamplee">
+                                            <div class="accordion-body bg-dark px-4 p-1">
+                                                <a href="Solution-Structure.html">Solution Structure</a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                                <h2 class="accordion-header" id="headingSeven">
+                                    <button
+                                        class="accordion-button d-flex flex-row-reverse justify-content-end p-0 bg-dark mt-2"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven"
+                                        aria-expanded="true" aria-controls="collapseOne" id="appModules">
+                                        Application Modules
+                                    </button>
+                                </h2>
+                                <div id="collapseSeven" class="accordion-collapse collapse show border-0 rounded-0 p-0"
+                                    aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Overall.html" id="overall">Overall</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Account-Module.html" id="ac">Account</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Audit-Logging.html" id="auditLogging">Audit Logging</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Chat.html" id="chat">Chat</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="CMS-Kit-Pro.html" id="CMS"><span class="accordian-active">CMS Kit
+                                                Pro</span></a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="File-Management.html" id="fileMgt">File Management</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Forms.html" id="forms">Forms</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Identity.html" id="identity">Identity</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="OpenIddict.html" id="OpenIddict">OpenIddict</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Language-Management.html" id="languageMgt">Language Management</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Payment.html" id="payment">Payment</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="SaaS.html" id="saas">SaaS</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Text-Template-Management.html" id="ttm">Text Template Management</a>
+                                    </div>
+                                </div>
+                                <h2 class="accordion-header" id="headingNine">
+                                    <a href="UI-Themes.html">
+                                        <button
+                                            class="accordion-button d-flex flex-row-reverse justify-content-end p-0 bg-dark mt-2"
+                                            type="button" data-bs-toggle="collapse" data-bs-target="#headingNine"
+                                            aria-expanded="false" aria-controls="collapseOne" id="ui">
+                                            UI Themes
+                                        </button>
+                                    </a>
+                                </h2>
+                                <h2 class="accordion-header" id="headingReactUITheme">
+                                    <button
+                                        class="accordion-button d-flex flex-row-reverse justify-content-end p-0 bg-dark mt-2"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#headingReactUI"
+                                        aria-expanded="false" aria-controls="collapseOne" id="reactUI">
+                                        React UI
+                                    </button>
+                                </h2>
+                                <div id="headingReactUI" class="accordion-collapse collapse  border-0 rounded-0 p-0"
+                                    aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Customization.html" id="custom">customization</a>
+                                    </div>
+
+                                </div>
+                                <div id="headingReactUI" class="accordion-collapse collapse  border-0 rounded-0 p-0"
+                                    aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Components.html" id="compo">Components</a>
+                                    </div>
+
+                                </div>
+                                 <!-- For Release Information -->
+                                 <h2 class="accordion-header" id="headingFive">
+                                    <button
+                                        class="accordion-button d-flex flex-row-reverse justify-content-end p-0 bg-dark mt-2"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseLast"
+                                        aria-expanded="false" aria-controls="collapseOne" id="samples">
+                                       <span id="relinfo">Release Information</span> 
+                                    </button>
+                                </h2>
+                                <div id="collapseLast" class="accordion-collapse collapse  border-0 rounded-0 p-0"
+                                    aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Release-Notes.html" id="allSamples"><span id="relnote">Release Notes</span></a>
+                                    </div>
+                                </div>
+                                <!-- ====================================== -->
+                            </div>
+                        </div>
+                        <ul class="list-unstyled CTAs  w-100">
+                            <li>
+                                <a href="https://bootstrapious.com/tutorial/files/sidebar.zip" class="download"
+                                    id="downloadSource">Download
+                                    source</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="col-12 col-lg-8 col-md-7 col-xl-6 col-xxl-6 offset-lg-4 offset-md-5 offset-xl-3 offset-xxl-3 ps-xl-5 ps-xxl-0 px-lg-3 px-md-4 px-xl-0">
+
+                    <!-- Page Content  -->
+                    <div id="content">
+                        <div class="modal fade" id="contactusModal" tabindex="-1" aria-labelledby="contactusModalLabel"
+                            aria-hidden="true">
+
+                            <div class="modal-dialog modal-lg modal-dialog-centered">
+
+                                <div class="modal-content">
+
+                                    <!-- <div class="modal-header">
+                  
+                                  <h5 class="modal-title" id="contactusModalLabel">Modal title</h5>
+                  
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  
+                                </div> -->
+
+                                    <div class="modal-body p-0">
+
+
+
+
+                                        <div class="row">
+
+                                            <div class="col-md-6 col-sm-12 bg-dark">
+
+                                                <div class="mt-5">
+
+                                                    <img src="Assets/images/raaghu-logo-white.png"
+                                                        class="img-fluid w-25 pl-2">
+
+
+
+                                                    <img src="Assets/images/raaghu-banner-modal.png" class="img-fluid">
+
+                                                </div>
+
+                                            </div>
+
+
+
+                                            <div class="col-md-6 col-sm-12">
+
+                                                <div class="row">
+
+                                                    <div class="col-md-12 text-end pull-right">
+
+                                                        <button type="button"
+                                                            class="btn-close float-right pull-right m-3 text-muted"
+                                                            data-bs-dismiss="modal" aria-label="Close"></button>
+
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="p-4">
+
+                                                    <h6>
+
+                                                        Kindly fill the details below
+
+                                                    </h6>
+
+                                                    <p>
+
+                                                        <small> We will get back to you within 48 hours </small>
+
+                                                    </p>
+
+                                                    <div class="mt-5">
+
+                                                        <form method="post" id="want-to-hear-form">
+
+                                                            <div class="mb-3 form-group">
+
+                                                                <label for="emailId" class="form-label">Email ID
+
+                                                                    <span class="text-danger">*</span>
+
+                                                                </label>
+
+                                                                <input type="email" name="emailId"
+                                                                    class="form-control p-2" id="emailId"
+                                                                    placeholder="Enter your email id">
+
+                                                            </div>
+
+                                                            <div class="mb-3 form-group">
+
+                                                                <label for="companyName" class="form-label">Company Name
+
+                                                                    <span class="text-danger">*</span>
+
+                                                                </label>
+
+                                                                <input type="text" class="form-control p-2"
+                                                                    placeholder="Enter your Company Name"
+                                                                    name="companyName" id="companyName">
+
+                                                            </div>
+
+                                                            <div class="mb-3 form-group">
+
+                                                                <label for="message" class="form-label">Message
+
+                                                                    <span class="contactUs-Optional">(Optional)</span>
+
+
+                                                                </label>
+
+                                                                <textarea class="form-control p-2" name="message"
+                                                                    id="message" rows="3"
+                                                                    placeholder="Write your message.."></textarea>
+
+                                                            </div>
+
+                                                            <div class="mb-3 form-check">
+
+                                                                <input type="checkbox" class="form-check-input"
+                                                                    id="exampleCheck1">
+
+                                                                <label class="form-check-label" for="exampleCheck1">I
+                                                                    agree to the <a href="#"> terms & privacy policy
+                                                                    </a></label>
+
+                                                            </div>
+
+                                                            <button type="submit"
+                                                                class="btn btn-primary btn-sm btn-block float-end mb-4">Submit</button>
+
+                                                        </form>
+
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div> <input class="form-control  mb-5" type="search" placeholder="Search" aria-label="Search">
+                        </div>
+                        <div>
+                            <h1 class="fw-semibold mb-3" id="CMS-Kit">CMS Kit Pro Module</h1>
+                            <p id="thismodulecap">This module extends the <a
+                                    href="https://docs.abp.io/en/abp/latest/Modules/Cms-Kit/Index">open-source CMS Kit
+                                    module</a> and adds additional CMS (Content Management System) capabilities to your
+                                application.</p>
+                        </div>
+                        <div>
+                            <p id="follfeature">The following features are provided by the open source CMS Kit module:
+                            </p>
+                        </div>
+                        <ul class="ps-3">
+                            <li class="mt-2"><span class="txt-color fw-semibold" id="bbb">Blogging</span> <span
+                                    id="blogg">system to create publish blog posts with multiple blog support.</span>
+                            </li>
+                            <li class="mt-2"><span class="txt-color fw-semibold" id="taaging">Tagging</span> <span
+                                    id="systemtotag">system to tag any kind of resource, like a blog post.</span></li>
+                            <li class="mt-2"><span class="txt-color fw-semibold" id="comet">Comment</span> <span
+                                    id="systemtoadd"> system to add comments feature to any kind of resource, like blog
+                                    post or a product review page.</span></li>
+                            <li class="mt-2"><span class="txt-color fw-semibold" id="react">Reaction</span> <span
+                                    id="systemreact"> system to add reactions (smileys) feature to any kind of resource,
+                                    like a blog post or a comment.</span></li>
+                            <li class="mt-2"><span class="txt-color fw-semibold" id="rate">Rating</span> <span
+                                    id="ratingfeature"> system to add rating feature to any kind of resource.</span>
+                            </li>
+                            <li class="mt-2"><span class="txt-color fw-semibold" id="systemmg">Menu</span> <span
+                                    id="managepub"> system to manage public menus dynamically</span></li>
+                            <li class="mt-2"><span class="txt-color fw-semibold" id="globalresource">Global
+                                    resources</span> <span id="globalstyle">system to add global styles and scripts
+                                    dynamically.</span></li>
+                            <li class="mt-2"><span class="txt-color fw-semibold" id="dynamicwidget">Dynamic
+                                    widget</span> <span id="createsynamic"> system to create dynamic widgets for page
+                                    and blog posts.</span></li>
+                        </ul>
+                        <p id="andthe">And the following features are provided by the CMS Kit pro version:</p>
+                        <ul class="ps-3">
+                            <li class="mt-2"><span class="txt-color fw-semibold" id="news">Newsletter</span> <span
+                                    id="systemtoallow">system to allow users to subscribe to newsletters.</span></li>
+                            <li class="mt-2"><span class="txt-color fw-semibold" id="cont">Contact form</span> <span
+                                    id="towrite"> system to allow users to write messages to you.</span></li>
+                            <li class="mt-2"><span class="txt-color fw-semibold" id="urlfor">URL forwarding</span> <span
+                                    id="createurl"> system to create URLs that redirect to other pages or external
+                                    websites.</span></li>
+                            <li class="mt-2"><span class="txt-color fw-semibold" id="pol">Poll</span> <span
+                                    id="quickoll"> system to create quick polls for users</span></li>
+                        </ul>
+                        <p id="onafeat">Click on a feature to understand and learn how to use it. See
+                            <a href="https://commercial.abp.io/modules/Volo.CmsKit.Pro" id="Existing-Solutions">the
+                                module description page</a>
+                            for an overview of the module features.
+                        </p>
+                        <div>
+                            <h2 class="fw-semibold pt-3 pb-4" id="exst">Existing Solutions</h2>
+                            <p id="ifwant">If you want to add the CMS kit to your existing solution, you can use the ABP
+                                CLI add-module command:</p>
+                            <pre
+                                class="my-4"><code class="language-javascript">abp add-module Volo.CmsKit.Pro</code></pre>
+                            <p class="opacity-50" id="bass">Bash</p>
+                            <p id="ccc">Copy</p>
+                            <p id="opentheglobal">Open the <span class="txt-color">GlobalFeatureConfigurator</span>
+                                class in the <span class="txt-color">Domain.Shared</span> project and place the
+                                following code to the <span class="txt-color">Configure</span> method to enable all
+                                open-source and commercial features in the CMS Kit module.</p>
+                        </div>
+                        <div>
+                            <pre class="my-4"><code class="language-javascript">GlobalFeatureManager.Instance.Modules.CmsKit(cmsKit =>
+                {
+                cmsKit.EnableAll();});
+                GlobalFeatureManager.Instance.Modules.CmsKitPro(cmsKitPro =>
+                {
+                    cmsKitPro.EnableAll();
+                }); </code></pre>
+                            <p class="opacity-50">C#</p>
+                            <p id="cpy">Copy</p>
+                            <p id="alternative">Alternatively, you can enable features individually, like <span
+                                    class="txt-color">cmsKit.Comments.Enable();.</span></p>
+                            <p id="ifyour">If you are using Entity Framework Core, do not forget to add a new migration
+                                and update your database.</p>
+                        </div>
+
+
+                    </div>
+
+
+
+
+                </div>
+
+                <div class="col-12 col-lg-8 col-md-7 col-xl-2 col-xxl-2 docs-page-index offset-lg-4 offset-xl-0 offset-md-5 offset-xxl-0 px-md-4">
+                    <div class="position-fixed  my-3 w-auto mx-lg-0 mx-xl-3 mx-xxl-3 pe-lg-3 pe-xl-0 pe-xxl-0 position-lg-relative">
+                    <div class="card border-0 box rounded-3 mb-3">
+                        <div class="card-body">
+                            <h4 class="card-title py-1" id="inthisdoc">In this document</h4>
+                            <div class="opacity-50">
+                                <ul class="card-text small  list-unstyled ul-ad">
+                                    <li id="ccmmss"><a href="#CMS-Kit" class="text-black">CMS Kit Pro Module</a></li>
+                                    <li id="exsol"><a href="#Existing-Solutions" class="text-black">Existing
+                                            Solutions</a></li>
+
+                                </ul>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="card  border-0 box  bg-advertise "  >
+                        <div class="card-body abp-community-card  rounded-3 bg-sec ">
+                            <div class="row  ">
+                                <div class="col-lg-5 col-md-5 col-5"> <img src="Assets/images/React_logo.png" alt="raaghu logo" class="w-100"></div>
+                                <div class="col-lg-7 mt-1  col-md-7 mt-1 col-7"> <img src="Assets/images/abp-sec.png" alt="raaghu logo" class="w-100"></div>
+                                <!-- <div class="col-lg-6"><img src="Assets/images/abp-com.svg" alt="raaghu logo" class="w-100"></div> -->
+
+                            </div>
+                            <div class="border-under-sec my-3"></div>
+                            <div class="colored-sec-design py-1">
+                                <ul class="ps-4">
+                                    <li>CLI for CRUD generation</li>
+                                    <li>Component driven development</li>
+                                    <li>Purpose build UI kit for ABP commercial</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <button type="button" class="btn btn-primary mt-1 w-100" data-bs-toggle="modal"
+                                    data-bs-target="#contactusModal">Contact Us</button>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <!-- <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-0 col-12 docs-page-index">
+                    <div class="card mt-4 top-25 me-lg-4 border-0 shadow py-4">
+                        <div class="card-body">
+                            <h5 class="card-title">In This Document</h5>
+                            <p class="card-text small">Some quick example text to build on the card title and make up
+                                the bulk of the card's content.</p>
+
+                        </div>
+                    </div>
+                </div> -->
+
+            </div>
+
+
+
+        </div>
+
+    </main>
+
+    <!-- bootstrap dependencies -->
+    <script src="Assets/js/bootstrap.min.js"></script>
+    <script src="scripts/translation.js"></script>
+</body>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var languageDropdown = document.getElementById('language-dropdown');
+        languageDropdown.addEventListener('change', function () {
+            var selectedLanguage = languageDropdown.value;
+            if (selectedLanguage === 'pt') {
+                // Sidebar Code in js File
+
+
+                // Body Content
+
+                document.getElementById('CMS-Kit').innerHTML = 'Módulo CMS Kit Pro';
+                document.getElementById('thismodule').innerHTML = 'Este módulo estende o <a href="https://docs.abp.io/en/abp/latest/Modules/Cms-Kit/Index">módulo CMS Kit de código aberto</a> e adiciona CMS (Content Management System) para sua aplicação.';
+                document.getElementById('follfeature').innerHTML = 'Os seguintes recursos são fornecidos pelo módulo CMS Kit de código aberto:';
+                document.getElementById('bbb').innerHTML = 'Blogar';
+                document.getElementById('blogg').innerHTML = 'sistema para criar postagens de blog de publicação com suporte a vários blogs.';
+                document.getElementById('taaging').innerHTML = 'marcação';
+                document.getElementById('comet').innerHTML = 'Comente';
+                document.getElementById('react').innerHTML = 'Reação';
+                document.getElementById('rate').innerHTML = 'Avaliação';
+                document.getElementById('systemmg').innerHTML = 'Cardápio';
+                document.getElementById('globalresource').innerHTML = 'Recursos globais';
+                document.getElementById('dynamicwidget').innerHTML = 'Widget dinâmico';
+                document.getElementById('systemtotag').innerHTML = 'sistema para marcar qualquer tipo de recurso, como uma postagem de blog.';
+                document.getElementById('systemtoadd').innerHTML = 'sistema para adicionar recurso de comentários a qualquer tipo de recurso, como postagem de blog ou página de revisão de produto.';
+                document.getElementById('systemreact').innerHTML = 'sistema para adicionar recurso de reações (sorrisos) a qualquer tipo de recurso, como uma postagem de blog ou um comentário.';
+                document.getElementById('ratingfeature').innerHTML = 'sistema para adicionar recurso de classificação a qualquer tipo de recurso.';
+                document.getElementById('managepub').innerHTML = 'sistema para gerenciar menus públicos dinamicamente';
+                document.getElementById('globalstyle').innerHTML = 'sistema para adicionar estilos globais e scripts dinamicamente.';
+                document.getElementById('createsynamic').innerHTML = 'sistema para criar widgets dinâmicos para postagens de páginas e blogs.';
+                document.getElementById('andthe').innerHTML = 'E os seguintes recursos são fornecidos pela versão pro do CMS Kit:';
+                document.getElementById('news').innerHTML = 'Boletim de Notícias';
+                document.getElementById('cont').innerHTML = 'Formulário de Contato';
+                document.getElementById('urlfor').innerHTML = 'encaminhamento de URL';
+                document.getElementById('pol').innerHTML = 'Enquete'
+                document.getElementById('systemtoallow').innerHTML = 'sistema para permitir que os usuários assinem newsletters.';
+                document.getElementById('towrite').innerHTML = 'sistema para permitir que os usuários escrevam mensagens para você.';
+                document.getElementById('createurl').innerHTML = 'sistema para criar URLs que redirecionam para outras páginas ou sites externos.';
+                document.getElementById('quickoll').innerHTML = 'sistema para criar enquetes rápidas para usuários';
+                document.getElementById('onafeat').innerHTML = 'Clique em um recurso para entender e aprender como usá-lo. Ver <a href="https://commercial.abp.io/modules/Volo.CmsKit.Pro" id="Existing-Solutions">a página de descrição do módulo</a> para obter uma visão geral dos recursos do módulo.';
+                document.getElementById('exst').innerHTML = 'Soluções existentes';
+                document.getElementById('ifwant').innerHTML = 'Se quiser adicionar o kit CMS à sua solução existente, você pode usar o comando ABP CLI add-module:';
+                document.getElementById('ccc').innerHTML = 'cópia de';
+                document.getElementById('bass').innerHTML = 'bash';
+                document.getElementById('opentheglobal').innerHTML = 'Abra a classe <span class="txt-color">GlobalFeatureConfigurator</span> no projeto <span class="txt-color">Domain.Shared</span> e coloque o seguinte código no <span class=" txt-color">Configure</span> método para habilitar todos os recursos comerciais e de código aberto no módulo CMS Kit.';
+                document.getElementById('cpy').innerHTML = 'cópia de';
+                document.getElementById('alternative').innerHTML = 'Alternativamente, você pode habilitar recursos individualmente, como <span class="txt-color">cmsKit.Comments.Enable();.</span>';
+                document.getElementById('ifyour').innerHTML = 'Se você estiver usando o Entity Framework Core, não se esqueça de adicionar uma nova migração e atualizar seu banco de dados.';
+
+                // For In this doc section
+                document.getElementById('inthisdoc').innerHTML = 'neste documento';
+                document.getElementById('ccmmss').innerHTML = '<a href="#CMS-Kit" class="text-black">Módulo CMS Kit Pro</a>';
+                document.getElementById('exsol').innerHTML = '<a href="#Existing-Solutions" class="text-black">Soluções existentes</a>';
+
+                // Body Content
+
+                document.getElementById('CMS-Kit').innerHTML = 'Módulo CMS Kit Pro';
+                document.getElementById('thismodule').innerHTML = 'Este módulo estende o <a href="https://docs.abp.io/en/abp/latest/Modules/Cms-Kit/Index">módulo CMS Kit de código aberto</a> e adiciona CMS (Content Management System) para sua aplicação.';
+                document.getElementById('follfeature').innerHTML = 'Os seguintes recursos são fornecidos pelo módulo CMS Kit de código aberto:';
+                document.getElementById('bbb').innerHTML = 'Blogar';
+                document.getElementById('blogg').innerHTML = 'sistema para criar postagens de blog de publicação com suporte a vários blogs.';
+                document.getElementById('taaging').innerHTML = 'marcação';
+                document.getElementById('comet').innerHTML = 'Comente';
+                document.getElementById('react').innerHTML = 'Reação';
+                document.getElementById('rate').innerHTML = 'Avaliação';
+                document.getElementById('systemmg').innerHTML = 'Cardápio';
+                document.getElementById('globalresource').innerHTML = 'Recursos globais';
+                document.getElementById('dynamicwidget').innerHTML = 'Widget dinâmico';
+                document.getElementById('systemtotag').innerHTML = 'sistema para marcar qualquer tipo de recurso, como uma postagem de blog.';
+                document.getElementById('systemtoadd').innerHTML = 'sistema para adicionar recurso de comentários a qualquer tipo de recurso, como postagem de blog ou página de revisão de produto.';
+                document.getElementById('systemreact').innerHTML = 'sistema para adicionar recurso de reações (sorrisos) a qualquer tipo de recurso, como uma postagem de blog ou um comentário.';
+                document.getElementById('ratingfeature').innerHTML = 'sistema para adicionar recurso de classificação a qualquer tipo de recurso.';
+                document.getElementById('managepub').innerHTML = 'sistema para gerenciar menus públicos dinamicamente';
+                document.getElementById('globalstyle').innerHTML = 'sistema para adicionar estilos globais e scripts dinamicamente.';
+                document.getElementById('createsynamic').innerHTML = 'sistema para criar widgets dinâmicos para postagens de páginas e blogs.';
+                document.getElementById('andthe').innerHTML = 'E os seguintes recursos são fornecidos pela versão pro do CMS Kit:';
+                document.getElementById('news').innerHTML = 'Boletim de Notícias';
+                document.getElementById('cont').innerHTML = 'Formulário de Contato';
+                document.getElementById('urlfor').innerHTML = 'encaminhamento de URL';
+                document.getElementById('pol').innerHTML = 'Enquete'
+                document.getElementById('systemtoallow').innerHTML = 'sistema para permitir que os usuários assinem newsletters.';
+                document.getElementById('towrite').innerHTML = 'sistema para permitir que os usuários escrevam mensagens para você.';
+                document.getElementById('createurl').innerHTML = 'sistema para criar URLs que redirecionam para outras páginas ou sites externos.';
+                document.getElementById('quickoll').innerHTML = 'sistema para criar enquetes rápidas para usuários';
+                document.getElementById('onafeat').innerHTML = 'Clique em um recurso para entender e aprender como usá-lo. Ver <a href="https://commercial.abp.io/modules/Volo.CmsKit.Pro" id="Existing-Solutions">a página de descrição do módulo</a> para obter uma visão geral dos recursos do módulo.';
+                document.getElementById('exst').innerHTML = 'Soluções existentes';
+                document.getElementById('ifwant').innerHTML = 'Se quiser adicionar o kit CMS à sua solução existente, você pode usar o comando ABP CLI add-module:';
+                document.getElementById('ccc').innerHTML = 'cópia de';
+                document.getElementById('bass').innerHTML = 'bash';
+                document.getElementById('opentheglobal').innerHTML = 'Abra a classe <span class="txt-color">GlobalFeatureConfigurator</span> no projeto <span class="txt-color">Domain.Shared</span> e coloque o seguinte código no <span class=" txt-color">Configure</span> método para habilitar todos os recursos comerciais e de código aberto no módulo CMS Kit.';
+                document.getElementById('cpy').innerHTML = 'cópia de';
+                document.getElementById('alternative').innerHTML = 'Alternativamente, você pode habilitar recursos individualmente, como <span class="txt-color">cmsKit.Comments.Enable();.</span>';
+                document.getElementById('ifyour').innerHTML = 'Se você estiver usando o Entity Framework Core, não se esqueça de adicionar uma nova migração e atualizar seu banco de dados.';
+
+            }
+
+            else if (selectedLanguage === 'French') {
+                // Body Content
+
+                document.getElementById('CMS-Kit').innerHTML = 'Module CMS Kit Pro';
+                document.getElementById('thismodule').innerHTML = 'Ce module étend le <a href="https://docs.abp.io/en/abp/latest/Modules/Cms-Kit/Index">module CMS Kit open source</a> et ajoute CMS (Content Management System ) pour votre application.';
+                document.getElementById('follfeature').innerHTML = 'Les fonctionnalités suivantes sont fournies par le module open source CMS Kit :';
+                document.getElementById('bbb').innerHTML = 'bloguer';
+                document.getElementById('blogg').innerHTML = 'système de création d\'articles de blog avec prise en charge de plusieurs blogs.';
+                document.getElementById('taaging').innerHTML = 'marquage';
+                document.getElementById('comet').innerHTML = 'commentaire';
+
+                document.getElementById('react').innerHTML = 'Réaction';
+                document.getElementById('rate').innerHTML = 'Évaluation';
+                document.getElementById('systemmg').innerHTML = 'Menu';
+                document.getElementById('globalresource').innerHTML = 'ressources mondiales';
+                document.getElementById('dynamicwidget').innerHTML = 'widget dynamique';
+                document.getElementById('systemtotag').innerHTML = 'système de marquage de tout type de ressource, comme un article de blog.';
+                document.getElementById('systemtoadd').innerHTML = 'système pour ajouter une fonction de commentaire à tout type de ressource comme un article de blog ou une page de révision de produit.';
+                document.getElementById('systemreact').innerHTML = 'système pour ajouter des réactions (sourires) à tout type de fonctionnalité comme un article de blog ou un commentaire.';
+                document.getElementById('ratingfeature').innerHTML = 'système pour ajouter une fonction d\'évaluation à tout type de ressource.';
+                document.getElementById('managepub').innerHTML = 'système de gestion dynamique des menus publics';
+                document.getElementById('globalstyle').innerHTML = 'système d\'ajout dynamique de styles et de scripts globaux.';
+                document.getElementById('createsynamic').innerHTML = 'système pour créer des widgets dynamiques pour les articles de page et de blog.';
+                document.getElementById('andthe').innerHTML = 'Et les fonctionnalités suivantes sont fournies par la version pro de CMS Kit :';
+                document.getElementById('news').innerHTML = 'Bulletin';
+                document.getElementById('cont').innerHTML = 'Formulaire de contact';
+                document.getElementById('urlfor').innerHTML = 'redirection d\'url';
+                document.getElementById('pol').innerHTML = 'Enquête'
+                document.getElementById('systemtoallow').innerHTML = 'système permettant aux utilisateurs de s\'abonner à des newsletters.';
+                document.getElementById('towrite').innerHTML = 'système pour permettre aux utilisateurs de vous écrire des messages.';
+                document.getElementById('createurl').innerHTML = 'système pour créer des URL qui redirigent vers d\'autres pages ou sites externes.';
+                document.getElementById('quickoll').innerHTML = 'système pour créer des sondages rapides pour les utilisateurs';
+                document.getElementById('onafeat').innerHTML = 'Cliquez sur une fonctionnalité pour comprendre et apprendre à l\'utiliser. Voir la <a href="https://commercial.abp.io/modules/Volo.CmsKit.Pro" id="Existing-Solutions">page de description du module</a> pour un aperçu des fonctionnalités du module.';
+                document.getElementById('exst').innerHTML = 'Solutions existantes';
+                document.getElementById('ifwant').innerHTML = 'Si vous souhaitez ajouter le kit CMS à votre solution existante, vous pouvez utiliser la commande ABP CLI add-module :';
+                document.getElementById('ccc').innerHTML = 'copie de';
+                document.getElementById('bass').innerHTML = 'frapper';
+                document.getElementById('opentheglobal').innerHTML = 'Ouvrez la classe <span class="txt-color">GlobalFeatureConfigurator</span> dans le projet <span class="txt-color">Domain.Shared</span> et placez le code suivant dans <span class=" txt - color">Configure</span> méthode pour activer toutes les fonctionnalités commerciales et open source dans le module CMS Kit.';
+
+                document.getElementById('cpy').innerHTML = 'copie de';
+                document.getElementById('alternative').innerHTML = 'Vous pouvez également activer les fonctionnalités individuellement, telles que <span class="txt-color">cmsKit.Comments.Enable();.</span>';
+                document.getElementById('ifyour').innerHTML = 'Si vous utilisez Entity Framework Core, n\'oubliez pas d\'ajouter une nouvelle migration et de mettre à jour votre base de données.';
+
+                // For In this doc section
+                document.getElementById('inthisdoc').innerHTML = 'dans ce document';
+                document.getElementById('ccmmss').innerHTML = '<a href="#CMS-Kit" class="text-black">Module CMS Kit Pro</a>';
+                document.getElementById('exsol').innerHTML = '<a href="#Existing-Solutions" class="text-black">Solutions existantes</a>';
+            }
+            else if (selectedLanguage === 'Finnish') {
+                // Body Content
+
+                document.getElementById('CMS-Kit').innerHTML = 'CMS Module Pro Kit';
+                document.getElementById('thismodule').innerHTML = 'Tämä moduuli laajentaa <a href="https://docs.abp.io/en/abp/latest/Modules/Cms-Kit/Index">avoimen lähdekoodin CMS Kit -moduulia</a> ja lisää sisällönhallintajärjestelmän (CMS) ) hakemuksellesi.';
+                document.getElementById('follfeature').innerHTML = 'Avoimen lähdekoodin CMS Kit -moduuli tarjoaa seuraavat ominaisuudet:';
+                document.getElementById('bbb').innerHTML = 'blogi';
+                document.getElementById('blogg').innerHTML = 'blogiviestien luontijärjestelmä, joka tukee useita blogeja.';
+                document.getElementById('taaging').innerHTML = 'merkintä';
+                document.getElementById('comet').innerHTML = 'kommentti';
+
+                document.getElementById('cpy').innerHTML = 'copie de';
+                document.getElementById('alternative').innerHTML = 'Vous pouvez également activer les fonctionnalités individuellement, telles que <span class="txt-color">cmsKit.Comments.Enable();.</span>';
+                document.getElementById('ifyour').innerHTML = 'Si vous utilisez Entity Framework Core, n\'oubliez pas d\'ajouter une nouvelle migration et de mettre à jour votre base de données.';
+
+                // For In this doc section
+                document.getElementById('inthisdoc').innerHTML = 'dans ce document';
+                document.getElementById('ccmmss').innerHTML = '<a href="#CMS-Kit" class="text-black">Module CMS Kit Pro</a>';
+                document.getElementById('exsol').innerHTML = '<a href="#Existing-Solutions" class="text-black">Solutions existantes</a>';
+            }
+            else if (selectedLanguage === 'Finnish') {
+                // Body Content
+
+                document.getElementById('react').innerHTML = 'Reaktio';
+                document.getElementById('rate').innerHTML = 'Arviointi';
+                document.getElementById('systemmg').innerHTML = 'Valikko';
+                document.getElementById('globalresource').innerHTML = 'maailmanlaajuisia resursseja';
+                document.getElementById('dynamicwidget').innerHTML = 'dynaaminen widget';
+                document.getElementById('systemtotag').innerHTML = 'merkintäjärjestelmä mille tahansa resurssille, kuten blogikirjoitukselle.';
+                document.getElementById('systemtoadd').innerHTML = 'järjestelmä, jolla voit lisätä kommenttiominaisuuden mihin tahansa resurssiin, kuten blogikirjoitukseen tai tuotearvostelusivulle.';
+                document.getElementById('systemreact').innerHTML = 'järjestelmä lisätä reaktioita (hymyt) mihin tahansa toimintoon, kuten blogikirjoitukseen tai kommenttiin.';
+                document.getElementById('ratingfeature').innerHTML = 'järjestelmä lisätä luokitustoiminto mille tahansa resurssille.';
+                document.getElementById('managepub').innerHTML = 'dynaaminen julkisen valikon hallintajärjestelmä';
+                document.getElementById('globalstyle').innerHTML = 'järjestelmä tyylien ja yleisten komentosarjojen dynaamiseen lisäämiseen.';
+                document.getElementById('createsynamic').innerHTML = 'järjestelmä dynaamisten widgetien luomiseen sivuille ja blogikirjoituksille.';
+                document.getElementById('andthe').innerHTML = 'CMS Kitin pro-versio tarjoaa seuraavat ominaisuudet:';
+                document.getElementById('news').innerHTML = 'Uutiskirje';
+                document.getElementById('cont').innerHTML = 'Yhteydenottolomake';
+                document.getElementById('urlfor').innerHTML = 'url-uudelleenohjaus';
+                document.getElementById('pol').innerHTML = 'Tutkinta'
+                document.getElementById('systemtoallow').innerHTML = 'järjestelmä, jonka avulla käyttäjät voivat tilata uutiskirjeitä.';
+                document.getElementById('towrite').innerHTML = 'järjestelmä, jonka avulla käyttäjät voivat kirjoittaa sinulle viestejä.';
+                document.getElementById('createurl').innerHTML = 'järjestelmä luoda URL-osoitteita, jotka ohjaavat muille ulkoisille sivuille tai sivustoille.';
+                document.getElementById('quickoll').innerHTML = 'järjestelmä nopeiden kyselyiden luomiseen käyttäjille';
+
+
+                document.getElementById('onafeat').innerHTML = 'Napsauta ominaisuutta ymmärtääksesi ja oppiaksesi käyttämään sitä. Katso <a href="https://commercial.abp.io/modules/Volo.CmsKit.Pro" id="Existing-Solutions">moduulin kuvaussivulta</a> yleiskatsauksen moduulin toiminnoista.';
+                document.getElementById('exst').innerHTML = 'Olemassa olevat ratkaisut';
+                document.getElementById('ifwant').innerHTML = 'Jos haluat lisätä CMS-paketin olemassa olevaan ratkaisuun, voit käyttää ABP CLI add-module -komentoa:';
+                document.getElementById('ccc').innerHTML = 'kopio';
+                document.getElementById('bass').innerHTML = 'lyödä';
+                document.getElementById('opentheglobal').innerHTML = 'Avaa <span class="txt-color">GlobalFeatureConfigurator</span>-luokka <span class="txt-color">Domain.Shared</span>-projektissa ja sijoita seuraava koodi tiedostoon <span class=" txt - color">Määritä</span> menetelmä ottaaksesi kaikki kaupalliset ja avoimen lähdekoodin ominaisuudet käyttöön CMS Kit -moduulissa.';
+
+                document.getElementById('cpy').innerHTML = 'kopio';
+                document.getElementById('alternative').innerHTML = 'Voit myös ottaa ominaisuuksia käyttöön yksitellen, kuten <span class="txt-color">cmsKit.Comments.Enable();.</span>';
+                document.getElementById('ifyour').innerHTML = 'Jos käytät Entity Framework Corea, muista lisätä uusi siirto ja päivittää tietokanta.';
+
+                // For In this doc section
+                document.getElementById('inthisdoc').innerHTML = 'tässä asiakirjassa';
+                document.getElementById('ccmmss').innerHTML = '<a href="#CMS-Kit" class="text-black">CMS Kit Pro -moduuli</a>';
+                document.getElementById('exsol').innerHTML = '<a href="#Existing-Solutions" class="text-black">Olemassa olevat ratkaisut</a>';
+            }
+            else if (selectedLanguage === 'Slovak') {
+                // Obsah tela
+                document.getElementById('CMS-Kit').innerHTML = 'CMS Modul Pro Kit';
+                document.getElementById('thismodule').innerHTML = 'Tento modul rozširuje <a href="https://docs.abp.io/en/abp/latest/Modules/Cms-Kit/Index">otvorený zdrojový modul CMS Kit</a> a pridáva systém správy obsahu (CMS) do vášho aplikácie.';
+                document.getElementById('follfeature').innerHTML = 'Modul CMS Kit s otvoreným zdrojom poskytuje nasledujúce funkcie:';
+                document.getElementById('bbb').innerHTML = 'blog';
+                document.getElementById('blogg').innerHTML = 'systém na vytváranie blogových príspevkov s podporou viacerých blogov.';
+                document.getElementById('taaging').innerHTML = 'štítok';
+                document.getElementById('comet').innerHTML = 'komentár';
+                document.getElementById('react').innerHTML = 'Reakcia';
+                document.getElementById('rate').innerHTML = 'Hodnotenie';
+                document.getElementById('systemmg').innerHTML = 'Menu';
+                document.getElementById('globalresource').innerHTML = 'globálne zdroje';
+                document.getElementById('dynamicwidget').innerHTML = 'dynamický widget';
+                document.getElementById('systemtotag').innerHTML = 'systém na označovanie akéhokoľvek zdroja, ako napríklad blogového príspevku.';
+                document.getElementById('systemtoadd').innerHTML = 'systém na pridávanie komentárov k akémukoľvek zdroju, ako napríklad k blogovému príspevku alebo stránke hodnotení produktu.';
+                document.getElementById('systemreact').innerHTML = 'systém na pridávanie reakcií (úsmievov) k akémukoľvek prvku, ako napríklad k blogovému príspevku alebo komentáru.';
+                document.getElementById('ratingfeature').innerHTML = 'systém na pridávanie hodnotení k akémukoľvek zdroju.';
+                document.getElementById('managepub').innerHTML = 'systém dynamického riadenia verejného menu';
+                document.getElementById('globalstyle').innerHTML = 'systém na dynamické pridávanie štýlov a všeobecných príkazových skriptov.';
+                document.getElementById('createsynamic').innerHTML = 'systém na vytváranie dynamických widgetov na stránky a blogové príspevky.';
+                document.getElementById('andthe').innerHTML = 'Verzia Pro modulu CMS Kit ponúka tieto funkcie:';
+                document.getElementById('news').innerHTML = 'Noviny';
+                document.getElementById('cont').innerHTML = 'Kontaktný formulár';
+                document.getElementById('urlfor').innerHTML = 'presmerovanie url';
+                document.getElementById('pol').innerHTML = 'Prieskum';
+                document.getElementById('systemtoallow').innerHTML = 'systém, ktorý umožňuje používateľom prihlásiť sa k odberu novín.';
+                document.getElementById('towrite').innerHTML = 'systém, ktorý umožňuje používateľom písať vám správy.';
+                document.getElementById('createurl').innerHTML = 'systém na vytváranie URL adries, ktoré presmerovávajú na externé stránky alebo weby.';
+                document.getElementById('quickoll').innerHTML = 'systém na vytváranie rýchlych prieskumov pre používateľov.';
+
+                document.getElementById('onafeat').innerHTML = 'Prechádzajte jednotlivé funkcie, aby ste ich pochopili a naučili sa ich používať. Pozrite si <a href="https://commercial.abp.io/modules/Volo.CmsKit.Pro" id="Existing-Solutions">stránku s popisom modulu</a> pre prehľad o funkcionalite modulu CMS Kit.';
+                document.getElementById('exst').innerHTML = 'Existujúce riešenia';
+                document.getElementById('ifwant').innerHTML = 'Ak chcete pridať CMS balík k existujúcemu riešeniu, môžete použiť príkaz ABP CLI add-module:';
+                document.getElementById('ccc').innerHTML = 'kopírovať';
+                document.getElementById('bass').innerHTML = 'Vložiť';
+                document.getElementById('opentheglobal').innerHTML = 'Otvorte triedu <span class="txt-color">GlobalFeatureConfigurator</span> v projekte <span class="txt-color">Domain.Shared</span> a vložte nasledujúci kód do metódy <span class="txt-color">Configure</span> na aktiváciu komerčných a otvorených zdrojových funkcií modulu CMS Kit.';
+
+                document.getElementById('cpy').innerHTML = 'kopírovať';
+                document.getElementById('alternative').innerHTML = 'Môžete tiež jednotlivo aktivovať funkcie, napríklad <span class="txt-color">cmsKit.Comments.Enable();.</span>';
+                document.getElementById('ifyour').innerHTML = 'Ak používate Entity Framework Core, nezabudnite vytvoriť a aktualizovať migrácie databázy.';
+
+                // Pre sekciu V tomto dokumente
+                document.getElementById('inthisdoc').innerHTML = 'v tomto dokumente';
+                document.getElementById('ccmmss').innerHTML = '<a href="#CMS-Kit" class="text-black">Modul CMS Kit Pro</a>';
+                document.getElementById('exsol').innerHTML = '<a href="#Existing-Solutions" class="text-black">Existujúce riešenia</a>';
+
+            }
+
+            else if (selectedLanguage === 'German') {
+                // Inhaltsverzeichnis
+document.getElementById('CMS-Kit').innerHTML = 'CMS-Modul Pro Kit';
+document.getElementById('thismodule').innerHTML = 'Dieses Modul erweitert das <a href="https://docs.abp.io/en/abp/latest/Modules/Cms-Kit/Index">Open-Source CMS Kit-Modul</a> und fügt Ihrem Anwendungsprojekt ein Content-Management-System (CMS) hinzu.';
+document.getElementById('follfeature').innerHTML = 'Das Open-Source CMS Kit-Modul bietet folgende Funktionen:';
+document.getElementById('bbb').innerHTML = 'Blog';
+document.getElementById('blogg').innerHTML = 'System zum Erstellen von Blogbeiträgen mit Unterstützung mehrerer Blogs.';
+document.getElementById('taaging').innerHTML = 'Tag';
+document.getElementById('comet').innerHTML = 'Kommentar';
+document.getElementById('react').innerHTML = 'Reaktion';
+document.getElementById('rate').innerHTML = 'Bewertung';
+document.getElementById('systemmg').innerHTML = 'Menü';
+document.getElementById('globalresource').innerHTML = 'globale Ressourcen';
+document.getElementById('dynamicwidget').innerHTML = 'dynamisches Widget';
+document.getElementById('systemtotag').innerHTML = 'System zum Taggen beliebiger Ressourcen wie Blogbeiträge.';
+document.getElementById('systemtoadd').innerHTML = 'System zum Hinzufügen von Kommentaren zu beliebigen Ressourcen wie Blogbeiträgen oder Produktbewertungen.';
+document.getElementById('systemreact').innerHTML = 'System zum Hinzufügen von Reaktionen (Smileys) zu beliebigen Elementen wie Blogbeiträgen oder Kommentaren.';
+document.getElementById('ratingfeature').innerHTML = 'System zum Hinzufügen von Bewertungen zu beliebigen Ressourcen.';
+document.getElementById('managepub').innerHTML = 'System zur dynamischen Verwaltung des öffentlichen Menüs';
+document.getElementById('globalstyle').innerHTML = 'System zum dynamischen Hinzufügen von Stilen und allgemeinen Skripten.';
+document.getElementById('createsynamic').innerHTML = 'System zum Erstellen dynamischer Widgets für Seiten und Blogbeiträge.';
+document.getElementById('andthe').innerHTML = 'Die Pro-Version des CMS Kit-Moduls bietet diese Funktionen:';
+document.getElementById('news').innerHTML = 'Nachrichten';
+document.getElementById('cont').innerHTML = 'Kontaktformular';
+document.getElementById('urlfor').innerHTML = 'URL-Umleitung';
+document.getElementById('pol').innerHTML = 'Umfrage';
+document.getElementById('systemtoallow').innerHTML = 'System, das es Benutzern ermöglicht, sich für den Newsletter anzumelden.';
+document.getElementById('towrite').innerHTML = 'System, das es Benutzern ermöglicht, Ihnen Nachrichten zu schreiben.';
+document.getElementById('createurl').innerHTML = 'System zum Erstellen von URLs, die auf externe Seiten oder Websites umleiten.';
+document.getElementById('quickoll').innerHTML = 'System zum schnellen Erstellen von Umfragen für Benutzer.';
+
+document.getElementById('onafeat').innerHTML = 'Gehen Sie durch einzelne Funktionen, um sie zu verstehen und zu lernen, wie sie verwendet werden. Schauen Sie sich die <a href="https://commercial.abp.io/modules/Volo.CmsKit.Pro" id="Existing-Solutions">Modulseite</a> für eine Übersicht über die Funktionalität des CMS Kit-Moduls an.';
+document.getElementById('exst').innerHTML = 'Existierende Lösungen';
+document.getElementById('ifwant').innerHTML = 'Wenn Sie das CMS-Kit-Paket zu einer bestehenden Lösung hinzufügen möchten, können Sie den ABP CLI-Befehl add-module verwenden:';
+document.getElementById('ccc').innerHTML = 'kopieren';
+document.getElementById('bass').innerHTML = 'Einfügen';
+document.getElementById('opentheglobal').innerHTML = 'Öffnen Sie die Klasse <span class="txt-color">GlobalFeatureConfigurator</span> im Projekt <span class="txt-color">Domain.Shared</span> und fügen Sie den folgenden Code in die Methode <span class="txt-color">Configure</span> ein, um die kommerziellen und Open-Source-Funktionen des CMS Kit-Moduls zu aktivieren.';
+
+document.getElementById('cpy').innerHTML = 'kopieren';
+document.getElementById('alternative').innerHTML = 'Sie können auch einzelne Funktionen aktivieren, z.B. <span class="txt-color">cmsKit.Comments.Enable();.</span>';
+document.getElementById('ifyour').innerHTML = 'Wenn Sie Entity Framework Core verwenden, vergessen Sie nicht, Datenbankmigrationen zu erstellen und zu aktualisieren.';
+
+// Für den Abschnitt In diesem Dokument
+document.getElementById('inthisdoc').innerHTML = 'in diesem Dokument';
+document.getElementById('ccmmss').innerHTML = '<a href="#CMS-Kit" class="text-black">CMS-Modul Pro Kit</a>';
+document.getElementById('exsol').innerHTML = '<a href="#Existing-Solutions" class="text-black">Existierende Lösungen</a>';
+
+            }
+
+    else if (selectedLanguage === 'hi') {
+                // Body Content
+                document.getElementById('CMS-Kit').innerHTML = 'CMS किट प्रो मॉड्यूल';
+                document.getElementById('thismodule').innerHTML = 'यह मॉड्यूल <a href="https://docs.abp.io/en/abp/latest/Modules/Cms-Kit/Index">ओपन-सोर्स सीएमएस किट मॉड्यूल</a> को विस्तारित करता है और आपके एप्लिकेशन में अतिरिक्त सीएमएस (कंटेंट मैनेजमेंट सिस्टम) क्षमताएँ जोड़ता है।';
+                document.getElementById('follfeature').innerHTML = 'ओपन-सोर्स सीएमएस किट मॉड्यूल द्वारा प्रदान की जाने वाली निम्नलिखित सुविधाएँ:';
+                document.getElementById('bbb').innerHTML = 'ब्लॉगिंग';
+                document.getElementById('blogg').innerHTML = 'सिस्टम बहुतेरे ब्लॉग समर्थन के साथ ब्लॉग पोस्ट बनाने के लिए।';
+                document.getElementById('taaging').innerHTML = 'टैगिंग';
+                document.getElementById('comet').innerHTML = 'कमेंट';
+                document.getElementById('react').innerHTML = 'प्रतिक्रिया';
+                document.getElementById('rate').innerHTML = 'रेटिंग';
+                document.getElementById('systemmg').innerHTML = 'मेनू';
+                document.getElementById('globalresource').innerHTML = 'ग्लोबल संसाधन';
+                document.getElementById('dynamicwidget').innerHTML = 'डायनामिक विजेट';
+                document.getElementById('systemtotag').innerHTML = 'सिस्टम किसी भी प्रकार के संसाधन को टैग करने के लिए, जैसे एक ब्लॉग पोस्ट।';
+                document.getElementById('systemtoadd').innerHTML = 'सिस्टम किसी भी प्रकार के संसाधन में टिप्पणियाँ जोड़ने के लिए, जैसे ब्लॉग पोस्ट या उत्पाद समीक्षा पृष्ठ।';
+                document.getElementById('systemreact').innerHTML = 'सिस्टम किसी भी प्रकार के संसाधन में प्रतिक्रियाएँ (मुस्कानियाँ) जोड़ने के लिए, जैसे एक ब्लॉग पोस्ट या टिप्पणी।';
+                document.getElementById('ratingfeature').innerHTML = 'सिस्टम किसी भी प्रकार के संसाधन में रेटिंग की सुविधा जोड़ने के लिए।';
+                document.getElementById('managepub').innerHTML = 'सिस्टम किसी भी प्रकार के सार्वजनिक मेनू को डाइनैमिक रूप से प्रबंधित करने के लिए।';
+                document.getElementById('globalstyle').innerHTML = 'सिस्टम किसी भी प्रकार की वैश्विक शैलियों और स्क्रिप्ट्स को डाइनैमिक रूप से जोड़ने के लिए।';
+                document.getElementById('createsynamic').innerHTML = 'सिस्टम पृष्ठ और ब्लॉग पोस्ट के लिए डायनामिक विजेट बनाने के लिए।';
+                document.getElementById('andthe').innerHTML = 'और CMS किट प्रो संस्करण द्वारा प्रदान की जाने वाली निम्नलिखित सुविधाएँ:';
+                document.getElementById('news').innerHTML = 'न्यूज़लेटर';
+                document.getElementById('cont').innerHTML = 'संपर्क फ़ॉर्म';
+                document.getElementById('urlfor').innerHTML = 'यूआरएल फ़ॉरवार्डिंग';
+                document.getElementById('pol').innerHTML = 'मतदान';
+                document.getElementById('systemtoallow').innerHTML = 'सिस्टम प्रयोक्ताओं को न्यूज़लेटरों की सदस्यता लेने की अनुमति देने के लिए।';
+                document.getElementById('towrite').innerHTML = 'सिस्टम प्रयोक्ताओं को आपको संदेश लिखने की अनुमति देने के लिए।';
+                document.getElementById('createurl').innerHTML = 'सिस्टम पृष्ठों या बाहरी वेबसाइटों पर पुनर्निर्देशित करने वाली यूआरएल बनाने के लिए।';
+                document.getElementById('quickoll').innerHTML = 'प्रयोक्ताओं के लिए त्वरित मतदान बनाने के लिए सिस्टम।';
+                document.getElementById('onafeat').innerHTML = 'इसे समझने और उपयोग करने के लिए किसी विशेषता पर क्लिक करें। <a href="https://commercial.abp.io/modules/Volo.CmsKit.Pro" id="Existing-Solutions">मॉड्यूल विवरण पृष्ठ</a> पर मॉड्यूल की सुविधाओं का अवलोकन देखें।';
+                document.getElementById('exst').innerHTML = 'मौजूदा समाधान';
+                document.getElementById('ifwant').innerHTML = 'यदि आप अपने मौजूदा समाधान में सीएमएस किट जोड़ना चाहते हैं, तो आप एबीपी सीएलआई ऐड-मॉड्यूल कमांड का उपयोग कर सकते हैं:';
+                document.getElementById('ccc').innerHTML = 'कॉपी करें';
+                document.getElementById('bass').innerHTML = 'बैश';
+                document.getElementById('opentheglobal').innerHTML = 'डोमेन.शेयर्ड प्रोजेक्ट में <span class="txt-color">GlobalFeatureConfigurator</span> क्लास खोलें और निम्नलिखित कोड को <span class="txt-color">Configure</span> मेथड में डालें ताकि सीएमएस किट मॉड्यूल में सभी ओपन-सोर्स और वाणिज्यिक सुविधाएँ सक्षम हों।';
+                document.getElementById('cpy').innerHTML = 'कॉपी करें';
+                document.getElementById('alternative').innerHTML = 'वैकल्पिक रूप से, आप सुविधाएँ विभागीय रूप से सक्षम कर सकते हैं, जैसे <span class="txt-color">cmsKit.Comments.Enable();</span>।';
+                document.getElementById('ifyour').innerHTML = 'यदि आप एंटिटी फ्रेमवर्क कोर का उपयोग कर रहे हैं, तो नई माइग्रेशन जोड़ना और अपने डेटाबेस को अपडेट करना न भूलें।';
+
+                // For In this doc section
+                document.getElementById('inthisdoc').innerHTML = 'इस दस्तावेज़ में';
+                document.getElementById('ccmmss').innerHTML = '<a href="#CMS-Kit" class="text-black">CMS किट प्रो मॉड्यूल</a>';
+                document.getElementById('exsol').innerHTML = '<a href="#Existing-Solutions" class="text-black">मौजूदा समाधान</a>';
+
+            }
+            else if (selectedLanguage === 'it') {
+                // Body Content
+                document.getElementById('CMS-Kit').innerHTML = 'Modulo CMS Kit Pro';
+                document.getElementById('thismodule').innerHTML = 'Questo modulo estende il <a href="https://docs.abp.io/en/abp/latest/Modules/Cms-Kit/Index">modulo open source CMS Kit</a> e aggiunge ulteriori funzionalità CMS (Sistema di Gestione dei Contenuti) alla tua applicazione.';
+                document.getElementById('follfeature').innerHTML = 'Le seguenti funzionalità sono fornite dal modulo CMS Kit open source:';
+                document.getElementById('bbb').innerHTML = 'Blogging';
+                document.getElementById('blogg').innerHTML = 'sistema per creare e pubblicare post di blog con il supporto di più blog.';
+                document.getElementById('taaging').innerHTML = 'Tag';
+                document.getElementById('comet').innerHTML = 'Commento';
+                document.getElementById('react').innerHTML = 'Reazione';
+                document.getElementById('rate').innerHTML = 'Valutazione';
+                document.getElementById('systemmg').innerHTML = 'Menu';
+                document.getElementById('globalresource').innerHTML = 'Risorse globali';
+                document.getElementById('dynamicwidget').innerHTML = 'Widget dinamico';
+                document.getElementById('systemtotag').innerHTML = 'sistema per etichettare qualsiasi tipo di risorsa, come un post di blog.';
+                document.getElementById('systemtoadd').innerHTML = 'sistema per aggiungere la funzionalità di commenti a qualsiasi tipo di risorsa, come un post di blog o una pagina di recensione di un prodotto.';
+                document.getElementById('systemreact').innerHTML = 'sistema per aggiungere la funzionalità di reazioni (emoticon) a qualsiasi tipo di risorsa, come un post di blog o un commento.';
+                document.getElementById('ratingfeature').innerHTML = 'sistema per aggiungere la funzionalità di valutazione a qualsiasi tipo di risorsa.';
+                document.getElementById('managepub').innerHTML = 'sistema per gestire menu pubblici dinamicamente';
+                document.getElementById('globalstyle').innerHTML = 'sistema per aggiungere stili e script globali dinamicamente.';
+                document.getElementById('createsynamic').innerHTML = 'sistema per creare widget dinamici per pagine e post di blog.';
+                document.getElementById('andthe').innerHTML = 'E le seguenti funzionalità sono fornite dalla versione Pro del CMS Kit:';
+                document.getElementById('news').innerHTML = 'Newsletter';
+                document.getElementById('cont').innerHTML = 'Modulo di contatto';
+                document.getElementById('urlfor').innerHTML = 'Inoltro URL';
+                document.getElementById('pol').innerHTML = 'Sondaggio';
+                document.getElementById('systemtoallow').innerHTML = 'sistema per consentire agli utenti di iscriversi alle newsletter.';
+                document.getElementById('towrite').innerHTML = 'sistema per consentire agli utenti di inviarti messaggi.';
+                document.getElementById('createurl').innerHTML = 'sistema per creare URL che reindirizzano a altre pagine o siti web esterni.';
+                document.getElementById('quickoll').innerHTML = 'sistema per creare sondaggi rapidi per gli utenti';
+                document.getElementById('onafeat').innerHTML = 'Fai clic su una funzionalità per capire e imparare come usarla. Vedi <a href="https://commercial.abp.io/modules/Volo.CmsKit.Pro" id="Existing-Solutions">la pagina di descrizione del modulo</a> per una panoramica delle funzionalità del modulo.';
+                document.getElementById('exst').innerHTML = 'Soluzioni Esistenti';
+                document.getElementById('ifwant').innerHTML = 'Se desideri aggiungere il kit CMS alla tua soluzione esistente, puoi utilizzare il comando add-module di ABP CLI:';
+                document.getElementById('ccc').innerHTML = 'Copia';
+                document.getElementById('bass').innerHTML = 'Bash';
+                document.getElementById('opentheglobal').innerHTML = 'Apri la classe <span class="txt-color">GlobalFeatureConfigurator</span> nel progetto <span class="txt-color">Domain.Shared</span> e inserisci il seguente codice nel metodo <span class="txt-color">Configure</span> per abilitare tutte le funzionalità open source e commerciali nel modulo CMS Kit.';
+                document.getElementById('cpy').innerHTML = 'Copia';
+                document.getElementById('alternative').innerHTML = 'In alternativa, puoi abilitare le funzionalità singolarmente, come <span class="txt-color">cmsKit.Comments.Enable();.</span>';
+                document.getElementById('ifyour').innerHTML = 'Se stai utilizzando Entity Framework Core, non dimenticare di aggiungere una nuova migrazione e aggiornare il tuo database.';
+
+                // For In this doc section
+                document.getElementById('inthisdoc').innerHTML = 'In questo documento';
+                document.getElementById('ccmmss').innerHTML = '<a href="#CMS-Kit" class="text-black">Modulo CMS Kit Pro</a>';
+                document.getElementById('exsol').innerHTML = '<a href="#Existing-Solutions" class="text-black">Soluzioni Esistenti</a>';
+            }
+
+            else if (selectedLanguage === 'ru') {
+                // Body Content
+                document.getElementById('CMS-Kit').innerHTML = 'Модуль CMS Kit Pro';
+                document.getElementById('thismodule').innerHTML = 'Этот модуль расширяет <a href="https://docs.abp.io/en/abp/latest/Modules/Cms-Kit/Index">модуль открытого исходного кода CMS Kit</a> и добавляет дополнительные возможности системы управления контентом (CMS) в ваше приложение.';
+                document.getElementById('follfeature').innerHTML = 'Следующие функции предоставляются модулем открытого исходного кода CMS Kit:';
+                document.getElementById('bbb').innerHTML = 'Блог';
+                document.getElementById('blogg').innerHTML = 'система для создания и публикации блогов с поддержкой нескольких блогов.';
+                document.getElementById('taaging').innerHTML = 'Маркировка';
+                document.getElementById('comet').innerHTML = 'Комментарий';
+                document.getElementById('react').innerHTML = 'Реакция';
+                document.getElementById('rate').innerHTML = 'Рейтинг';
+                document.getElementById('systemmg').innerHTML = 'Меню';
+                document.getElementById('globalresource').innerHTML = 'Глобальные ресурсы';
+                document.getElementById('dynamicwidget').innerHTML = 'Динамический виджет';
+                document.getElementById('systemtotag').innerHTML = 'система маркировки любого типа ресурса, например, блоговой записи.';
+                document.getElementById('systemtoadd').innerHTML = 'система добавления функции комментариев к любому виду ресурса, например, блоговой записи или странице обзора продукта.';
+                document.getElementById('systemreact').innerHTML = 'система добавления функции реакций (улыбок) к любому виду ресурса, например, блоговой записи или комментарию.';
+                document.getElementById('ratingfeature').innerHTML = 'система добавления функции рейтинга к любому виду ресурса.';
+                document.getElementById('managepub').innerHTML = 'система динамического управления общедоступными меню';
+                document.getElementById('globalstyle').innerHTML = 'система динамического добавления глобальных стилей и скриптов.';
+                document.getElementById('createsynamic').innerHTML = 'система создания динамических виджетов для страницы и блоговой записи.';
+                document.getElementById('andthe').innerHTML = 'И следующие функции предоставляются версией CMS Kit Pro:';
+                document.getElementById('news').innerHTML = 'Рассылка новостей';
+                document.getElementById('cont').innerHTML = 'Контактная форма';
+                document.getElementById('urlfor').innerHTML = 'Перенаправление URL';
+                document.getElementById('pol').innerHTML = 'Опрос';
+                document.getElementById('systemtoallow').innerHTML = 'система разрешения пользователям подписываться на рассылку новостей.';
+                document.getElementById('towrite').innerHTML = 'система разрешения пользователям отправлять вам сообщения.';
+                document.getElementById('createurl').innerHTML = 'система создания URL-адресов, перенаправляющих на другие страницы или внешние веб-сайты.';
+                document.getElementById('quickoll').innerHTML = 'система создания быстрых опросов для пользователей';
+                document.getElementById('onafeat').innerHTML = 'Щелкните по функции, чтобы понять и узнать, как ею пользоваться. См. <a href="https://commercial.abp.io/modules/Volo.CmsKit.Pro" id="Existing-Solutions">страницу описания модуля</a> для обзора функций модуля.';
+                document.getElementById('exst').innerHTML = 'Существующие решения';
+                document.getElementById('ifwant').innerHTML = 'Если вы хотите добавить набор CMS в ваше существующее решение, вы можете использовать команду ABP CLI add-module:';
+                document.getElementById('ccc').innerHTML = 'Копировать';
+                document.getElementById('bass').innerHTML = 'Bash';
+                document.getElementById('opentheglobal').innerHTML = 'Откройте класс <span class="txt-color">GlobalFeatureConfigurator</span> в проекте <span class="txt-color">Domain.Shared</span> и разместите следующий код в методе <span class="txt-color">Configure</span>, чтобы включить все функции с открытым исходным кодом и коммерческие функции в модуле CMS Kit.';
+                document.getElementById('cpy').innerHTML = 'Копировать';
+                document.getElementById('alternative').innerHTML = 'Альтернативно, вы можете включать функции по отдельности, например, <span class="txt-color">cmsKit.Comments.Enable();.</span>';
+                document.getElementById('ifyour').innerHTML = 'Если вы используете Entity Framework Core, не забудьте добавить новую миграцию и обновить базу данных.';
+
+                // For In this doc section
+                document.getElementById('inthisdoc').innerHTML = 'В этом документе';
+                document.getElementById('ccmmss').innerHTML = '<a href="#CMS-Kit" class="text-black">Модуль CMS Kit Pro</a>';
+                document.getElementById('exsol').innerHTML = '<a href="#Existing-Solutions" class="text-black">Существующие решения</a>';
+            }
+
+            else if (selectedLanguage === 'zh') {
+                // Body Content
+                document.getElementById('CMS-Kit').innerHTML = 'CMS Kit Pro 模块';
+                document.getElementById('thismodule').innerHTML = '该模块扩展了 <a href="https://docs.abp.io/en/abp/latest/Modules/Cms-Kit/Index">开源 CMS Kit 模块</a>，为您的应用程序添加了额外的 CMS（内容管理系统）功能。';
+                document.getElementById('follfeature').innerHTML = '开源 CMS Kit 模块提供以下功能：';
+                document.getElementById('bbb').innerHTML = '博客';
+                document.getElementById('blogg').innerHTML = '系统可创建具有多个博客支持的博客文章。';
+                document.getElementById('taaging').innerHTML = '标签';
+                document.getElementById('comet').innerHTML = '评论';
+                document.getElementById('react').innerHTML = '反应';
+                document.getElementById('rate').innerHTML = '评分';
+                document.getElementById('systemmg').innerHTML = '菜单';
+                document.getElementById('globalresource').innerHTML = '全局资源';
+                document.getElementById('dynamicwidget').innerHTML = '动态小部件';
+                document.getElementById('systemtotag').innerHTML = '系统可为任何类型的资源（如博客文章）添加标签。';
+                document.getElementById('systemtoadd').innerHTML = '系统可为任何类型的资源（如博客文章或产品评论页面）添加评论功能。';
+                document.getElementById('systemreact').innerHTML = '系统可为任何类型的资源（如博客文章或评论）添加反应（表情）功能。';
+                document.getElementById('ratingfeature').innerHTML = '系统可为任何类型的资源添加评分功能。';
+                document.getElementById('managepub').innerHTML = '系统可动态管理公共菜单';
+                document.getElementById('globalstyle').innerHTML = '系统可动态添加全局样式和脚本。';
+                document.getElementById('createsynamic').innerHTML = '系统可为页面和博客文章创建动态小部件。';
+                document.getElementById('andthe').innerHTML = 'CMS Kit Pro 版本提供以下功能：';
+                document.getElementById('news').innerHTML = '新闻简报';
+                document.getElementById('cont').innerHTML = '联系表单';
+                document.getElementById('urlfor').innerHTML = 'URL 转发';
+                document.getElementById('pol').innerHTML = '投票';
+                document.getElementById('systemtoallow').innerHTML = '系统可让用户订阅新闻简报。';
+                document.getElementById('towrite').innerHTML = '系统可让用户向您发送消息。';
+                document.getElementById('createurl').innerHTML = '系统可创建重定向到其他页面或外部网站的 URL。';
+                document.getElementById('quickoll').innerHTML = '系统可创建快速投票供用户使用。';
+                document.getElementById('onafeat').innerHTML = '单击功能以了解并学习如何使用它。请参阅 <a href="https://commercial.abp.io/modules/Volo.CmsKit.Pro" id="Existing-Solutions">模块描述页面</a> 以获取模块功能概述。';
+                document.getElementById('exst').innerHTML = '现有解决方案';
+                document.getElementById('ifwant').innerHTML = '如果要将 CMS Kit 添加到现有解决方案中，可以使用 ABP CLI 的 add-module 命令：';
+                document.getElementById('ccc').innerHTML = '复制';
+                document.getElementById('bass').innerHTML = 'Bash';
+                document.getElementById('opentheglobal').innerHTML = '打开 <span class="txt-color">GlobalFeatureConfigurator</span> 类，位于 <span class="txt-color">Domain.Shared</span> 项目中，将以下代码放入 <span class="txt-color">Configure</span> 方法中，以启用 CMS Kit 模块中的所有开源和商业功能。';
+                document.getElementById('cpy').innerHTML = '复制';
+                document.getElementById('alternative').innerHTML = '或者，您可以逐个启用功能，例如 <span class="txt-color">cmsKit.Comments.Enable();。</span>';
+                document.getElementById('ifyour').innerHTML = '如果您使用 Entity Framework Core，请不要忘记添加新迁移并更新数据库。';
+
+                // For In this doc section
+                document.getElementById('inthisdoc').innerHTML = '本文内容';
+                document.getElementById('ccmmss').innerHTML = '<a href="#CMS-Kit" class="text-black">CMS Kit Pro 模块</a>';
+                document.getElementById('exsol').innerHTML = '<a href="#Existing-Solutions" class="text-black">现有解决方案</a>';
+
+            }
+            else if (selectedLanguage === 'ar') {
+                // Body Content
+                document.getElementById('CMS-Kit').innerHTML = 'وحدة CMS Kit Pro';
+                document.getElementById('thismodule').innerHTML = 'توسع هذه الوحدة <a href="https://docs.abp.io/en/abp/latest/Modules/Cms-Kit/Index">وحدة CMS Kit مفتوحة المصدر</a> وتضيف إمكانيات إضافية لإدارة المحتوى (CMS) إلى تطبيقك.';
+                document.getElementById('follfeature').innerHTML = 'الميزات التالية مقدمة من وحدة CMS Kit المفتوحة المصدر:';
+                document.getElementById('bbb').innerHTML = 'المدونة';
+                document.getElementById('blogg').innerHTML = 'نظام لإنشاء ونشر مقالات المدونة مع دعم للعديد من المدونات.';
+                document.getElementById('taaging').innerHTML = 'وسم';
+                document.getElementById('comet').innerHTML = 'تعليق';
+                document.getElementById('react').innerHTML = 'تفاعل';
+                document.getElementById('rate').innerHTML = 'تقييم';
+                document.getElementById('systemmg').innerHTML = 'قائمة';
+                document.getElementById('globalresource').innerHTML = 'موارد عالمية';
+                document.getElementById('dynamicwidget').innerHTML = 'عنصر واجهة مستخدم ديناميكي';
+                document.getElementById('systemtotag').innerHTML = 'نظام لوسم أي نوع من الموارد، مثل مقالة المدونة.';
+                document.getElementById('systemtoadd').innerHTML = 'نظام لإضافة ميزة التعليقات إلى أي نوع من الموارد، مثل مقالة المدونة أو صفحة مراجعة المنتج.';
+                document.getElementById('systemreact').innerHTML = 'نظام لإضافة ميزة التفاعلات (ابتسامات) إلى أي نوع من الموارد، مثل مقالة المدونة أو التعليق.';
+                document.getElementById('ratingfeature').innerHTML = 'نظام لإضافة ميزة التقييم إلى أي نوع من الموارد.';
+                document.getElementById('managepub').innerHTML = 'نظام لإدارة القوائم العامة بشكل ديناميكي';
+                document.getElementById('globalstyle').innerHTML = 'نظام لإضافة أنماط ونصوص عالمية بشكل ديناميكي.';
+                document.getElementById('createsynamic').innerHTML = 'نظام لإنشاء عناصر واجهة مستخدم ديناميكية للصفحة ومقالات المدونة.';
+                document.getElementById('andthe').innerHTML = 'والميزات التالية مقدمة من نسخة CMS Kit Pro:';
+                document.getElementById('news').innerHTML = 'النشرة الإخبارية';
+                document.getElementById('cont').innerHTML = 'نموذج الاتصال';
+                document.getElementById('urlfor').innerHTML = 'توجيه عنوان URL';
+                document.getElementById('pol').innerHTML = 'استطلاع الرأي'
+                document.getElementById('systemtoallow').innerHTML = 'نظام للسماح للمستخدمين بالاشتراك في النشرات الإخبارية.';
+                document.getElementById('towrite').innerHTML = 'نظام للسماح للمستخدمين بإرسال رسائل إليك.';
+                document.getElementById('createurl').innerHTML = 'نظام لإنشاء عناوين URL التي تعيد التوجيه إلى صفحات أخرى أو مواقع خارجية.';
+                document.getElementById('quickoll').innerHTML = 'نظام لإنشاء استطلاعات سريعة للمستخدمين';
+                document.getElementById('onafeat').innerHTML = 'انقر على ميزة لفهم كيفية استخدامها. انظر <a href="https://commercial.abp.io/modules/Volo.CmsKit.Pro" id="Existing-Solutions">صفحة وصف الوحدة</a> للحصول على نظرة عامة على ميزات الوحدة.';
+                document.getElementById('exst').innerHTML = 'الحلول الموجودة';
+                document.getElementById('ifwant').innerHTML = 'إذا كنت ترغب في إضافة وحدة CMS Kit إلى حلاك الحالي، يمكنك استخدام أمر إضافة الوحدة في ABP CLI كالتالي:';
+                document.getElementById('ccc').innerHTML = 'انسخ';
+                document.getElementById('bass').innerHTML = 'شل';
+                document.getElementById('opentheglobal').innerHTML = 'افتح فئة <span class="txt-color">GlobalFeatureConfigurator</span> في المشروع <span class="txt-color">Domain.Shared</span> وضع الكود التالي في الطريقة <span class="txt-color">Configure</span> لتمكين جميع الميزات المفتوحة المصدر والتجارية في وحدة CMS Kit.';
+                document.getElementById('cpy').innerHTML = 'انسخ';
+                document.getElementById('alternative').innerHTML = 'بدلاً من ذلك، يمكنك تمكين الميزات بشكل فردي، مثل <span class="txt-color">cmsKit.Comments.Enable();</span>.';
+                document.getElementById('ifyour').innerHTML = 'إذا كنت تستخدم Entity Framework Core، لا تنسى إضافة تحديث قاعدة البيانات من خلال إنشاء تغيير جديد وتحديث قاعدة البيانات الخاصة بك.';
+
+                // For In this doc section
+                document.getElementById('inthisdoc').innerHTML = 'في هذه الوثيقة';
+                document.getElementById('ccmmss').innerHTML = '<a href="#CMS-Kit" class="text-black">وحدة CMS Kit Pro</a>';
+                document.getElementById('exsol').innerHTML = '<a href="#Existing-Solutions" class="text-black">الحلول الموجودة</a>';
+
+            }
+
+            else if (selectedLanguage === 'spanish') {
+            } else {
+
+            }
+        });
+    });
+</script>
+
+</html>

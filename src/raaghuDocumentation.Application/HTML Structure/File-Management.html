@@ -1,0 +1,1416 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- bootstrap dependencies -->
+    <link rel="stylesheet" href="Assets/css/bootstrap.min.css">
+    <link href="Assets/prism.css" rel="stylesheet" />
+    <script src="Assets/prism.js"></script>
+    <link rel="stylesheet" href="/index.css">
+    <link rel="icon" type="image/x-icon" href="Assets/images/raaghu-icon.png">
+    <title>Raaghu - File Management</title>
+</head>
+
+
+<body>
+
+    <main>
+
+        <nav class="navbar navbar-expand-lg navbar-light  ">
+            <div class="container-fluid ">
+                <div class="navbar-toggler-container">
+                    <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#sidebar,#navbarSupportedContent"
+                        aria-controls="sidebar" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <!-- <div class="dropdown show dropdown-specific">
+                        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Platform
+                        </a>
+
+                        <div class="dropdown-menu menu" aria-labelledby="dropdownMenuLink">
+                            <a class="dropdown-item" href="https://www.raaghu.io/features.html">Features</a>
+                            <a class="dropdown-item " href="https://portal.raaghu.io/">Documentation</a>
+                            <button type="button" class="btn btn-primary btn-contact mt-2">contact</button>
+                            <a href="https://github.com/Wai-Technologies/raaghu-angular" target="_blank">
+                                <li class="ps-lg-5 mt-2">
+                                    <img src="Assets/images/github-logo.svg" alt="abplogo logo" width="100%"
+                                        class="github-logo">
+                                </li>
+                            </a>
+                        </div>
+                    </div> -->
+                </div>
+                <a class="text-black navbar-brand" href="/">
+                    <img src="Assets/images/raaghu_logs.png" alt="raaghu logo" class="w-75  pe-lg-0">
+                </a>
+
+                <div class="collapse navbar-collapse align  justify-content-lg-end " id="navbarSupportedContent">
+                    <ul class="navbar-nav  mb-2 mb-lg-0">
+                        <li class="nav-item me-5">
+                            <a class="nav-link active " aria-current="page"
+                                href="https://raaghu-website-staging.netlify.app/raaghu-mfe-portal/_accordion.html">Components</a>
+                        </li>
+                        <li class="nav-item me-5">
+                            <a class="nav-link active " aria-current="page" href="#"><span
+                                    class="doc-color">Documentation</span></a>
+                        </li>
+                        <li class="nav-item me-5">
+                            <a class="nav-link active " aria-current="page"
+                                href="https://raaghu-website-staging.netlify.app/raaghu-mfe-portal/_accordion.html#">Support</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link active " aria-current="page"
+                                href="https://raaghu-website-staging.netlify.app/faq">FAQ</a>
+                        </li>
+                        <!-- <li class=" nav-item dropdown active">
+                            <a class="nav-link  text-dark me-5" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Platform
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-center " aria-labelledby="navbarDropdown">
+                                <ul class="list-unstyled dropdown-arrow">
+                                    <li class=" ps-4">
+                                        <p class="title pt-2">Raaghu Platform</p>
+                                        <div class="row">
+                                            <div class="col-lg-6 col-md-6">
+                                                <a href="https://portal.raaghu.io/" target="_blank"
+                                                    class="p-0 text-decoration-none text-reset">
+                                                    <div class="d-flex align-items-center gap-3">
+
+                                                        <img src="Assets/images/raaghu-portal-mg.svg"
+                                                            alt="raaghu-portal" class="mb-3">
+                                                        <p class="link-name">Raaghu Portal</p>
+
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="col-lg-6 col-md-6">
+                                                <a href="https://portal.raaghu.io/#Components-section" target="_blank"
+                                                    class="p-0 text-decoration-none text-reset">
+                                                    <div class="d-flex align-items-center gap-3">
+                                                        <img src="Assets/images/raaghu-components-mg.svg"
+                                                            alt="raaghu-components" class="mb-3">
+                                                        <p class="link-name">Raaghu Components</p>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-6 col-md-6">
+                                                <a href="https://portal.raaghu.io/#Elements-section" target="_blank"
+                                                    class="p-0 text-decoration-none text-reset">
+                                                    <div class="d-flex align-items-center gap-3">
+                                                        <img src="Assets/images/raaghu-elements-mg.svg"
+                                                            alt="raaghu-portal" class="mb-2">
+                                                        <p class="pt-2 link-name">Raaghu Elements</p>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="col-lg-6 col-md-6">
+                                                <div class="d-flex align-items-center gap-3">
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="bgcolor-dropdown">
+                                        <div class="ps-4">
+                                            <p class="pt-3 pb-1 title">WORKS ON</p>
+                                            <div class="row">
+                                                <div class="col-md-2 mb-2">
+                                                    <img src="Assets/images/asplogo-mg.svg" alt="asplogo logo"
+                                                        width="80%">
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <img src="Assets/images/abplogo-mg.svg" alt="abplogo logo"
+                                                        width="50%">
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item me-5">
+                            <a class="nav-link active " aria-current="page"
+                                href="https://www.raaghu.io/features.html">Features</a>
+                        </li>
+                        <li class="nav-item me-5">
+                            <a class="nav-link active " aria-current="page"
+                                href="https://portal.raaghu.io/">Documentation</a>
+                        </li>
+                        <button type="button" class="btn btn-primary btn-contact">contact</button>
+                        <a href="https://github.com/Wai-Technologies/raaghu-angular" target="_blank">
+                            <li class="ps-lg-5 pt-2">
+                                <img src="Assets/images/github-logo.svg" alt="abplogo logo" width="100%"
+                                    class="github-logo">
+                            </li>
+                        </a> -->
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="wrapper container-fluid">
+
+            <div class="row">
+
+                <div id="sidebar" class="col-12 col-lg-2 col-md-4 col-xl-2 col-xxl-2 collapse d-m-block mx-0 mx-lg-3 mx-md-3 mx-xl-3 mx-xxl-3 show">
+
+                    <nav>
+                        <div class="sidebar-header ">
+                            <a href="/" class="text-bg-dark">
+                                <h3 class="fs-5 fw-normal">Table Of Content</h3>
+                            </a>
+                        </div>
+
+                        <div class="accordion accordion-flush mx-3 doc-acc accordion-button-top" id="accordionExample">
+                            <div class="row pb-4">
+                                <div class="col-6 col-lg-6 col-md-6">
+                                    <select id="language-dropdown" class="sidebar-button">
+                                        <option value="en" selected>English</option>
+                                        <option value="pt">Português</option>
+                                        <option value="fr">French</option>
+                                        <option value="fi">Finnish</option>
+                                        <option value="hi">Hindi</option>
+                                        <option value="it">Italian</option>                                        
+                                        <option value="sk">Slovak</option>
+                                        <option value="de">German</option>
+                                        <option value="ru">Russian</option>
+                                        <option value="zh">Chinese</option>
+                                        <option value="af">Afrikaan</option>
+                                        <option value="ar">Arabic</option>
+                                        <!-- Add more language options if needed -->
+                                    </select>
+                                </div>
+                                <div class="col-6 col-lg-6 col-md-6">
+                                    <select class="sidebar-button w-100">
+                                        <option value="option1" id="version">Version</option>
+                                        <option value="option2" id="version">Version 2</option>
+                                        <option value="option3">Version 3</option>
+                                        <option value="option4">Version 4</option>
+                                    </select>
+
+                                </div>
+                            </div>
+                            <div class="accordion-item bg-dark">
+                                <h2 class="accordion-header" id="headingOne">
+                                    <a href="Getting-Started.html">
+                                        <button
+                                            class="accordion-button d-flex flex-row-reverse justify-content-end p-0 bg-dark mt-1"
+                                            type="button" data-bs-toggle="collapse" data-bs-target="#coll"
+                                            aria-expanded="false" aria-controls="collapseOne">
+                                            Getting Started
+                                        </button></a>
+                                </h2>
+
+                                <div id="coll" class="accordion-collapse collapse  border-0 rounded-0 p-0"
+                                    aria-labelledby="headOne" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Setup-Your-Development-Environment.html">Setup your development
+                                            environment</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Creating-A-New-Solution.html">Creating A New Solution</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Running-The-Solution.html">Running the Solution</a>
+                                    </div>
+                                </div>
+                                <h2 class="accordion-header" id="headingTwo">
+                                    <button
+                                        class="accordion-button d-flex flex-row-reverse justify-content-end p-0 bg-dark mt-2"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                        aria-expanded="false" aria-controls="collapseOne">
+                                        Tutorials
+                                    </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse  border-0 rounded-0 p-0"
+                                    aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <h2 class="accordion-header" id="headingTwo">
+                                            <button
+                                                class="accordion-button d-flex flex-row-reverse justify-content-end p-0 bg-dark mt-2"
+                                                type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                                                aria-expanded="false" aria-controls="collapseOne">
+                                                Web Application Development
+                                            </button>
+                                        </h2>
+                                        <div id="collapseThree"
+                                            class="accordion-collapse collapse  border-0 rounded-0 p-0 pt-2"
+                                            aria-labelledby="headingTwo" data-bs-parent="#accordionExamplee">
+                                            <div class="accordion-body bg-dark px-4 p-1">
+                                                <a href="Creating-The-Server-Side.html">Creating the Server
+                                                    Side</a>
+                                            </div>
+                                        </div>
+                                        <div id="collapseThree"
+                                            class="accordion-collapse collapse  border-0 rounded-0 p-0"
+                                            aria-labelledby="headingTwo" data-bs-parent="#accordionExamplee">
+                                            <div class="accordion-body bg-dark px-4 p-1">
+                                                <a href="The-Book-List-Page.html">The Book List Page</a>
+                                            </div>
+                                        </div>
+                                        <div id="collapseThree"
+                                            class="accordion-collapse collapse  border-0 rounded-0 p-0"
+                                            aria-labelledby="headingTwo" data-bs-parent="#accordionExamplee">
+                                            <div class="accordion-body bg-dark px-4 p-1">
+                                                <a href="Creating-Updating-And-Deleting-Book.html">Creating,Updating
+                                                    And
+                                                    Deleting Book</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <h2 class="accordion-header" id="headingFour">
+                                    <button
+                                        class="accordion-button d-flex flex-row-reverse justify-content-end p-0 bg-dark mt-2"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour"
+                                        aria-expanded="false" aria-controls="collapseOne">
+                                        Guides
+                                    </button>
+                                </h2>
+                                <div id="collapseFour" class="accordion-collapse collapse  border-0 rounded-0 p-0"
+                                    aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Customizing-The-Modules.html">Customizing the Modules</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Identity-Server-Deployment.html">Identity Server Deployment</a>
+                                    </div>
+                                </div>
+
+
+                                <h2 class="accordion-header" id="headingFive">
+                                    <button
+                                        class="accordion-button d-flex flex-row-reverse justify-content-end p-0 bg-dark mt-2"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive"
+                                        aria-expanded="false" aria-controls="collapseOne">
+                                        Samples
+                                    </button>
+                                </h2>
+                                <div id="collapseFive" class="accordion-collapse collapse  border-0 rounded-0 p-0"
+                                    aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="All-Samples.html">All Samples</a>
+                                    </div>
+                                </div>
+                                <h2 class="accordion-header" id="headingSix">
+                                    <a href="Startup-Template.html">
+                                        <button
+                                            class="accordion-button d-flex flex-row-reverse justify-content-end p-0 bg-dark mt-2"
+                                            type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix"
+                                            aria-expanded="false" aria-controls="collapseOne">
+                                            Startup Template
+                                        </button></a>
+                                </h2>
+                                <div id="collapseSix" class="accordion-collapse collapse  border-0 rounded-0 p-0"
+                                    aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <h2 class="accordion-header" id="headingSix">
+                                            <button
+                                                class="accordion-button d-flex flex-row-reverse justify-content-end p-0 bg-dark mt-2"
+                                                type="button" data-bs-toggle="collapse" data-bs-target="#headingS"
+                                                aria-expanded="false" aria-controls="collapseOne">
+                                                Application Templates
+                                            </button>
+                                        </h2>
+                                        <div id="headingS"
+                                            class="accordion-collapse collapse  border-0 rounded-0 p-0 pt-2"
+                                            aria-labelledby="headingSix" data-bs-parent="#accordionExamplee">
+                                            <div class="accordion-body bg-dark px-4 p-1">
+                                                <a href="Creating-Solution.html">Creating Solution</a>
+                                            </div>
+                                        </div>
+                                        <div id="headingS" class="accordion-collapse collapse  border-0 rounded-0 p-0"
+                                            aria-labelledby="headingSix" data-bs-parent="#accordionExamplee">
+                                            <div class="accordion-body bg-dark px-4 p-1">
+                                                <a href="Solution-Structure.html">Solution Structure</a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                                <h2 class="accordion-header" id="headingSeven">
+                                    <button
+                                        class="accordion-button d-flex flex-row-reverse justify-content-end p-0 bg-dark mt-2"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven"
+                                        aria-expanded="true" aria-controls="collapseOne">
+                                        Application Modules
+                                    </button>
+                                </h2>
+                                <div id="collapseSeven" class="accordion-collapse collapse show  border-0 rounded-0 p-0"
+                                    aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Overall.html">Overall</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Account-Module.html">Account</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Audit-Logging.html">Audit Logging</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Chat.html">Chat</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="CMS-Kit-Pro.html">CMS Kit Pro</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="File-Management.html"><span class="accordian-active">File
+                                                Management</span></a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Forms.html">Forms</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Identity.html">Identity</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="OpenIddict.html">OpenIddict</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Language-Management.html">Language Management</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Payment.html">Payment</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="SaaS.html">SaaS</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Text-Template-Management.html">Text Template Management</a>
+                                    </div>
+                                </div>
+                                <h2 class="accordion-header" id="headingNine">
+                                    <a href="UI-Themes.html">
+                                        <button
+                                            class="accordion-button d-flex flex-row-reverse justify-content-end p-0 bg-dark mt-2"
+                                            type="button" data-bs-toggle="collapse" data-bs-target="#headingNine"
+                                            aria-expanded="false" aria-controls="collapseOne">
+                                            UI Themes
+                                        </button>
+                                    </a>
+                                </h2>
+                                <h2 class="accordion-header" id="headingReactUITheme">
+                                    <button
+                                        class="accordion-button d-flex flex-row-reverse justify-content-end p-0 bg-dark mt-2"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#headingReactUI"
+                                        aria-expanded="false" aria-controls="collapseOne">
+                                        React UI
+                                    </button>
+                                </h2>
+                                <div id="headingReactUI" class="accordion-collapse collapse  border-0 rounded-0 p-0"
+                                    aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Customization.html">customization</a>
+                                    </div>
+
+                                </div>
+                                <div id="headingReactUI" class="accordion-collapse collapse  border-0 rounded-0 p-0"
+                                    aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Components.html">Components</a>
+                                    </div>
+
+                                </div>
+                                <!-- For Release Information -->
+                                <h2 class="accordion-header" id="headingFive">
+                                    <button
+                                        class="accordion-button d-flex flex-row-reverse justify-content-end p-0 bg-dark mt-2"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseLast"
+                                        aria-expanded="false" aria-controls="collapseOne" id="samples">
+                                       <span id="relinfo">Release Information</span> 
+                                    </button>
+                                </h2>
+                                <div id="collapseLast" class="accordion-collapse collapse  border-0 rounded-0 p-0"
+                                    aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Release-Notes.html" id="allSamples"><span id="relnote">Release Notes</span></a>
+                                    </div>
+                                </div>
+                                <!-- ====================================== -->
+                            </div>
+                        </div>
+                        <ul class="list-unstyled CTAs  w-100">
+                            <li>
+                                <a href="https://bootstrapious.com/tutorial/files/sidebar.zip" class="download">Download
+                                    source</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="col-12 col-lg-8 col-md-7 col-xl-6 col-xxl-6 offset-lg-4 offset-md-5 offset-xl-3 offset-xxl-3 ps-xl-5 ps-xxl-0 px-lg-3 px-md-4 px-xl-0">
+
+                    <!-- Page Content  -->
+                    <div id="content">
+                        <div class="modal fade" id="contactusModal" tabindex="-1" aria-labelledby="contactusModalLabel"
+                            aria-hidden="true">
+
+                            <div class="modal-dialog modal-lg modal-dialog-centered">
+
+                                <div class="modal-content">
+
+                                    <!-- <div class="modal-header">
+                  
+                                  <h5 class="modal-title" id="contactusModalLabel">Modal title</h5>
+                  
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  
+                                </div> -->
+
+                                    <div class="modal-body p-0">
+
+
+
+
+                                        <div class="row">
+
+                                            <div class="col-md-6 col-sm-12 bg-dark">
+
+                                                <div class="mt-5">
+
+                                                    <img src="Assets/images/raaghu-logo-white.png"
+                                                        class="img-fluid w-25 pl-2">
+
+
+
+                                                    <img src="Assets/images/raaghu-banner-modal.png" class="img-fluid">
+
+                                                </div>
+
+                                            </div>
+
+
+
+                                            <div class="col-md-6 col-sm-12">
+
+                                                <div class="row">
+
+                                                    <div class="col-md-12 text-end pull-right">
+
+                                                        <button type="button"
+                                                            class="btn-close float-right pull-right m-3 text-muted"
+                                                            data-bs-dismiss="modal" aria-label="Close"></button>
+
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="p-4">
+
+                                                    <h6>
+
+                                                        Kindly fill the details below
+
+                                                    </h6>
+
+                                                    <p>
+
+                                                        <small> We will get back to you within 48 hours </small>
+
+                                                    </p>
+
+                                                    <div class="mt-5">
+
+                                                        <form method="post" id="want-to-hear-form">
+
+                                                            <div class="mb-3 form-group">
+
+                                                                <label for="emailId" class="form-label">Email ID
+
+                                                                    <span class="text-danger">*</span>
+
+                                                                </label>
+
+                                                                <input type="email" name="emailId"
+                                                                    class="form-control p-2" id="emailId"
+                                                                    placeholder="Enter your email id">
+
+                                                            </div>
+
+                                                            <div class="mb-3 form-group">
+
+                                                                <label for="companyName" class="form-label">Company Name
+
+                                                                    <span class="text-danger">*</span>
+
+                                                                </label>
+
+                                                                <input type="text" class="form-control p-2"
+                                                                    placeholder="Enter your Company Name"
+                                                                    name="companyName" id="companyName">
+
+                                                            </div>
+
+                                                            <div class="mb-3 form-group">
+
+                                                                <label for="message" class="form-label">Message
+
+                                                                    <span class="contactUs-Optional">(Optional)</span>
+
+
+                                                                </label>
+
+                                                                <textarea class="form-control p-2" name="message"
+                                                                    id="message" rows="3"
+                                                                    placeholder="Write your message.."></textarea>
+
+                                                            </div>
+
+                                                            <div class="mb-3 form-check">
+
+                                                                <input type="checkbox" class="form-check-input"
+                                                                    id="exampleCheck1">
+
+                                                                <label class="form-check-label" for="exampleCheck1">I
+                                                                    agree to the <a href="#"> terms & privacy policy
+                                                                    </a></label>
+
+                                                            </div>
+
+                                                            <button type="submit"
+                                                                class="btn btn-primary btn-sm btn-block float-end mb-4">Submit</button>
+
+                                                        </form>
+
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div> <input class="form-control  mb-5" type="search" placeholder="Search" aria-label="Search">
+                        </div>
+                        <div>
+                            <h1 class="fw-semibold mb-3" id="filemgt">File Management Module</h1>
+                            <p id="thismduse">This module is used to upload, download and organize files in a
+                                hierarchical folder
+                                structure. It is also compatible to multi-tenancy and you can determine total size limit
+                                for your tenants.</p>
+                            <p id="reactblob">This module is based on the <a
+                                    href="https://docs.abp.io/en/abp/latest/Blob-Storing">BLOB
+                                    Storing</a> system, so it can use different storage providers to store the file
+                                contents.</p>
+                            <p id="seedes">See <a href="https://commercial.abp.io/modules/Volo.FileManagement">the
+                                    module
+                                    description page</a> for an overview of the module features.</p>
+                        </div>
+                        <div>
+                            <h2 class="fw-semibold py-4" id="uireact">React-UI</h2>
+                            <p id="baseonthe">File Management module is based on the <a
+                                    href="https://docs.abp.io/en/abp/latest/Blob-Storing">BLOB Storing </a>system as
+                                defined before, and it uses <span class="txt-color">FileManagementContainer</span> as a
+                                BLOB container.</p>
+                        </div>
+                        <div>
+                            <h2 class="fw-semibold py-4" id="blobprovide">Setting BLOB Provider</h2>
+                            <p id="filemgtmod">File Management module is based on the <a
+                                    href="https://docs.abp.io/en/abp/latest/Blob-Storing">BLOB Storing</a> system as
+                                defined before, and it uses <span class="txt-color">FileManagementContainer</span> as a
+                                BLOB container.</p>
+                            <p id="mustset">You must set a BLOB provider for FileManagementContainer.</p>
+                            <pre class="my-4"><code class="language-javascript"> Configure<AbpBlobStoringOptions>(options =>
+        {
+            options.Containers.Configure<FileManagementContainer>(c =>
+                {
+                    c.UseDatabase(); // You can use FileSystem or Azure providers also.
+                });
+            });
+</code></pre>
+                        </div>
+                        <div>
+                            <p class="opacity-50">C#</p>
+                            <p id="cpyy">Copy</p>
+                            <p id="pac">Please check the <a
+                                    href="https://docs.abp.io/en/abp/latest/Blob-Storing#blob-storage-providers">BLOB
+                                    Storage Providers documentation</a> for more information about providers and how to
+                                use them.</p>
+                        </div>
+                        <div>
+                            <h3 class="fw-semibold py-4" id="pgs">Packages</h3>
+                            <p id="followsthe">This module follows the <a
+                                    href="https://docs.abp.io/en/abp/latest/Best-Practices/Index">module development
+                                    best practices guide</a> and consists of several NuGet and NPM packages. See the
+                                guide if you want to understand the packages and relations between them.</p>
+                            <p id="canvisit">You can visit <a
+                                    href="https://abp.io/packages?moduleName=Volo.FileManagement">File
+                                    Management module package list</a> page to see list of packages related with this
+                                module.</p>
+                        </div>
+                        <div>
+                            <h3 class="fw-semibold pt-3 pb-3" id="UInter">User Interface</h3>
+                            <h3 class="fw-semibold pt-3 pb-3" id="menitem">Menu Items</h3>
+                            <p id="modadds">File Management module adds the following items to the "Main" menu, under
+                                the
+                                "Administration" menu item:</p>
+                            <ul class="ps-3">
+                                <li id="allfold"><Strong>File Management</Strong>: List, view all folder structure and
+                                    files.</li>
+                            </ul>
+                            <p id="filemenuname"><span class="txt-color">FileManagementMenuNames</span> class has the
+                                constants for the
+                                menu item names.</p>
+                        </div>
+                        <div>
+                            <h3 class="fw-semibold pt-3 pb-3" id="pas">Pages</h3>
+                            <p id="fgt">File Management</p>
+                            <p id="folders">File Management page is used to create folders, upload files and view the
+                                list of folders
+                                and files that stored in the application.</p>
+
+                            <img src="Assets/images/fileManagement.jpg"
+                                alt="File Management page is used to create folders, upload files and view the list of folders"
+                                class="img-fluid my-4">
+                        </div>
+                        <div>
+                            <h3 class="fw-semibold pt-3 pb-3" id="fder">Folders</h3>
+                            <p id="byclick">You can create a new folder by clicking <span class="txt-color">Create
+                                    Folder</span>
+                                button that located at top right on the page. The folder will be created at active
+                                directory.</p>
+                            <img src="Assets/images/createFolder.jpg"
+                                alt="You can create a new folder by clicking Create Folder button that located at top right on the page. The folder will be created at active directory."
+                                class="img-fluid my-4">
+                            <p id="canmove">You can move a folder to another directory on the left tree view.</p>
+                            <img src="Assets/images/moveFolder.jpg"
+                                alt="You can move a folder to another directory on the left tree view"
+                                class="img-fluid my-4">
+                            <p id="folderby">You can rename a folder by clicking <span class="txt-color">Actions ->
+                                    Rename</span> on
+                                the table.</p>
+                            <img src="Assets/images/renameFolder.jpg" alt="You can rename a folder"
+                                class="img-fluid my-4" id="files">
+                        </div>
+                        <div>
+                            <h3 class="fw-semibold pt-3 pb-3" id="fls">Files</h3>
+                            <p id="willopen">You can upload files by clicking <span class="txt-color">Upload
+                                    Files</span> button that
+                                located at top right on the page. This will open a new modal for selecting your local
+                                files to upload. The files will be uploaded at active directory.</p>
+                            <img src="Assets/images/uploadFiles.jpg"
+                                alt="You can upload files by clicking Upload Files button that located at top right on the page"
+                                class="img-fluid my-4">
+                            <p id="movefiles">You can move files by clicking <span class="txt-color">Actions ->
+                                    Move</span> on the data
+                                table.</p>
+                            <img src="Assets/images/moveFolderRaaghu.jpg"
+                                alt="You can move files by clicking Actions Move on the data table."
+                                class="img-fluid my-4">
+                            <p id="dataSeed">You can rename a file by clicking <span class="txt-color">Actions ->
+                                    Rename</span> on the
+                                data table.</p>
+
+                            <img src="Assets/images/renameFile.jpg"
+                                alt="You can rename a file by clicking Actions Rename on the data table"
+                                class="img-fluid my-4">
+                        </div>
+                        <div>
+                            <h3 class="fw-semibold pt-3 pb-3" id="dse">Data Seed</h3>
+                            <p id="thismodulesee">This module doesn't seed any data.</p>
+                            <h3 class="fw-semibold pt-3 pb-3" id="inte">Internals</h3>
+                            <h4 class="fw-semibold pt-3 pb-3" id="domlay">Domain Layer</h4>
+                            <p id="ttc">Aggregates</p>
+                            <p id="modfoll">This module follows the
+                                <a href="https://docs.abp.io/en/abp/latest/Best-Practices/Entities">Entity Best
+                                    Practices & Conventions</a> guide.
+                            </p>
+                        </div>
+                        <div>
+                            <h4 class="fw-semibold pt-3 pb-3" id="textteml">TextTemplateContent</h4>
+                            <ul class="ps-3">
+                                <li class="mt-2" id="desct"><span class="txt-color">DirectoryDescriptor</span>
+                                    (aggregate root):
+                                    Represents a folder.</li>
+                                <li class="mt-2" id="filedesct"><span class="txt-color">FileDescriptor</span> (aggregate
+                                    root):
+                                    Represents a file.</li>
+                            </ul>
+
+                        </div>
+
+                        <div>
+                            <p id="rep">Repositories</p>
+                            <p id="modfollo">This module follows the <a
+                                    href="https://docs.abp.io/en/abp/latest/Best-Practices/Repositories">Repository Best
+                                    Practices & Conventions</a> guide.</p>
+                            <p id="customrepo">Following custom repositories are defined for this module:</p>
+                            <ul class="ps-3">
+                                <li class="mt-2" id="idirect"><span
+                                        class="txt-color">IDirectoryDescriptorRepository</span></li>
+                                <li class="mt-2" id="ifile"><span class="txt-color">IFileDescriptorRepository</span>
+                                </li>
+                            </ul>
+                            <p id="domer">Domain Services</p>
+                            <p id="bestpract">This module follows the
+                                <a href="https://docs.abp.io/en/abp/latest/Best-Practices/Domain-Services">Domain
+                                    Services Best Practices & Conventions</a> guide.
+                            </p>
+                        </div>
+                        <div>
+                            <h4 class="fw-semibold pt-3 pb-3" id="dmm">Directory Manager</h4>
+                            <p id="rem"><span class="txt-color">DirectoryManager</span> is used to manage your folders
+                                like
+                                create, rename, move and delete.</p>
+                        </div>
+                        <div>
+                            <h4 class="fw-semibold pt-3 pb-3" id="fileman">FileManager</h4>
+                            <p id="isuse"><span class="txt-color">DirectoryManager</span> is used to manage your folders
+                                like
+                                create, rename, move and delete.</p>
+                        </div>
+                        <div>
+                            <h4 class="fw-semibold pt-3 pb-3" id="sets">Settings</h4>
+                            <p id="defineany">This module doesn't define any setting.</p>
+                        </div>
+                        <div>
+                            <h4 class="fw-semibold pt-3 pb-3" id="app">Features</h4>
+                            <p id="ucanen">You can enable or disable this module for each tenant, also you can set
+                                maximum storage
+                                size for each tenant. See the <span class="txt-color">FileManagementFeatures</span>
+                                class members for all features defined for this module.</p>
+                        </div>
+                        <div>
+                            <h4 class="fw-semibold pt-3 pb-3" id="applay">Application Layer</h4>
+                            <p id="appservices">Application Services</p>
+                            <ul class="ps-3">
+                                <li class="mt-2" id="ofthefile"><span
+                                        class="txt-color">DirectoryDescriptorAppService</span>
+                                    (implements <span class="txt-color">IDirectoryDescriptorAppService</span>):
+                                    Implements the use cases of the file management UI.</li>
+                                <li class="mt-2" id="filedes"><span
+                                        class="txt-color">FileDescriptorAppServiceFileDescriptorAppService</span>
+                                    (implements <span class="txt-color">IFileDescriptorAppService</span>): Implements
+                                    the use cases of the file management UI.</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="fw-semibold pt-3 pb-3" id="datapro">Database Providers</h4>
+                            <p id="ccco">Common</p>
+                        </div>
+                        <div>
+                            <h4 class="fw-semibold pt-3 pb-3" id="prefics">Table/Collection Prefix & Schema</h4>
+                            <p id="coluse">All tables/collections use the <span class="txt-color">Fm</span> prefix by
+                                default. Set
+                                static properties on the <span class="txt-color">FileManagementDbProperties</span> class
+                                if you need to change the table prefix or set a schema name (if supported by your
+                                database provider).</p>
+                        </div>
+                        <div>
+                            <h4 class="fw-semibold pt-3 pb-3" id="connstrng">Connection String</h4>
+                            <p id="moduses">This module uses <span class="txt-color">FileManagement</span> for the
+                                connection string
+                                name. If you don't define a connection string with this name, it fallbacks to the <span
+                                    class="txt-color">Default</span> connection string.</p>
+                            <p id="fordetails">See the <a
+                                    href="https://docs.abp.io/en/abp/latest/Connection-Strings">connection
+                                    strings</a> documentation for details.</p>
+                            <p id="efcore">Entity Framework Core</p>
+                        </div>
+                        <div>
+                            <h4 class="fw-semibold pt-3 pb-3" id="tabless">Tables</h4>
+                            <ul class="ps-3">
+                                <li class="mt-2"><strong>FmDirectoryDescriptors</strong></li>
+                                <li class="mt-2"><strong>FmFileDescriptors</strong></li>
+                            </ul>
+                            <p>MongoDB</p>
+                        </div>
+                        <div>
+                            <h4 class="fw-semibold pt-3 pb-3" id="cills">Collections</h4>
+                            <ul class="ps-3">
+                                <li class="mt-2"><strong>FmDirectoryDescriptors</strong></li>
+                                <li class="mt-2"><strong>FmFileDescriptors</strong></li>
+                            </ul>
+                            <p>MongoDB</p>
+                        </div>
+                        <div>
+                            <h4 class="fw-semibold pt-3 pb-3" id="permissions">Permissions</h4>
+                            <p id="thismodfile">See the <span class="txt-color">FileManagementPermissions</span> class
+                                members for all
+                                permissions defined for this module.</p>
+                        </div>
+
+
+
+
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-8 col-md-7 col-xl-2 col-xxl-2 docs-page-index offset-lg-4 offset-xl-0 offset-md-5 offset-xxl-0 px-md-4">
+                    <div class="position-fixed  my-3 w-auto mx-lg-0 mx-xl-3 mx-xxl-3 pe-lg-3 pe-xl-0 pe-xxl-0 position-lg-relative">
+                    <div class="card border-0 box rounded-3 mb-3">
+                        <div class="card-body">
+                            <h4 class="card-title py-1" id="inthisdoc">In this document</h4>
+                            <div class="opacity-50">
+                                <ul class="card-text small  list-unstyled ul-ad">
+                                    <li id="reauilink"><a href="#react" class="text-black">React-UI</a></li>
+                                    <li id="setblb"><a href="#react" class="text-black">Setting BLOB Provider</a></li>
+                                    <li id="pgsa"><a href="#pac" class="text-black">Packages</a></li>
+                                    <li id="useint"><a href="#pac" class="text-black">User Interface</a></li>
+                                    <li id="menuits"><a href="#pac" class="text-black">Menu Items</a></li>
+                                    <li id="pagg"><a href="#pac" class="text-black">Pages</a></li>
+                                    <li id="folds"><a href="#folders" class="text-black">Folders</a></li>
+                                    <li id="fillss"><a href="#files" class="text-black">Files</a></li>
+                                    <li id="dataseeds"><a href="#dataSeed" class="text-black">Data Seed</a></li>
+                                    <li id="intes"><a href="#dataSeed" class="text-black">Internals</a></li>
+                                    <li id="texttemps"><a href="#ttc" class="text-black">TextTemplateContent</a></li>
+                                    <li id="appslayers"><a href="#app" class="text-black">Application Layer</a></li>
+                                    <li id="Connectionstringss"><a href="#app" class="text-black">Connection String</a>
+                                    </li>
+                                    <li id="perms"><a href="#permissions" class="text-black">Permissions</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card  border-0 box  bg-advertise "  >
+                        <div class="card-body abp-community-card  rounded-3 bg-sec ">
+                            <div class="row  ">
+                                <div class="col-lg-5 col-md-5 col-5"> <img src="Assets/images/React_logo.png" alt="raaghu logo" class="w-100"></div>
+                                <div class="col-lg-7 mt-1  col-md-7 mt-1 col-7"> <img src="Assets/images/abp-sec.png" alt="raaghu logo" class="w-100"></div>
+                                <!-- <div class="col-lg-6"><img src="Assets/images/abp-com.svg" alt="raaghu logo" class="w-100"></div> -->
+
+                            </div>
+                            <div class="border-under-sec my-3"></div>
+                            <div class="colored-sec-design py-1">
+                                <ul class="ps-4">
+                                    <li>CLI for CRUD generation</li>
+                                    <li>Component driven development</li>
+                                    <li>Purpose build UI kit for ABP commercial</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <button type="button" class="btn btn-primary mt-1 w-100" data-bs-toggle="modal"
+                                    data-bs-target="#contactusModal">Contact Us</button>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <!-- <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-0 col-12 docs-page-index">
+                    <div class="card mt-4 top-25 me-lg-4 border-0 shadow py-4">
+                        <div class="card-body">
+                            <h5 class="card-title">In This Document</h5>
+                            <p class="card-text small">Some quick example text to build on the card title and make up
+                                the bulk of the card's content.</p>
+
+                        </div>
+                    </div>
+                </div> -->
+
+            </div>
+
+
+
+        </div>
+
+    </main>
+
+    <!-- bootstrap dependencies -->
+    <script src="Assets/js/bootstrap.min.js"></script>
+    <script src="scripts/translation.js"></script>
+</body>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var languageDropdown = document.getElementById('language-dropdown');
+        languageDropdown.addEventListener('change', function () {
+            var selectedLanguage = languageDropdown.value;
+            if (selectedLanguage === 'pt') {
+                // Sidebar Code in js File
+
+
+                // Body Content
+
+                document.getElementById('filemgt').innerHTML = 'Módulo de gerenciamento de arquivos';
+                document.getElementById('thismduse').innerHTML = 'Este módulo é usado para carregar, baixar e organizar arquivos em uma pasta hierárquica estrutura. Também é compatível com multilocação e você pode determinar o limite de tamanho total para seus inquilinos.';
+                document.getElementById('react').innerHTML = 'Este módulo é baseado no <a href="https://docs.abp.io/en/abp/latest/Blob-Storing">BLOB Sistema de armazenamento</a>, para que ele possa usar diferentes provedores de armazenamento para armazenar o arquivo conteúdo.';
+                document.getElementById('seedes').innerHTML = 'Consulte <a href="https://commercial.abp.io/modules/Volo.FileManagement">o módulo página de descrição</a> para uma visão geral dos recursos do módulo.';
+                document.getElementById('uireact').innerHTML = 'React-UI';
+                document.getElementById('baseonthe').innerHTML = 'O módulo de gerenciamento de arquivos é baseado no <a href="https://docs.abp.io/en/abp/latest/Blob-Storing">BLOB Storage </a>sistema como definido anteriormente e usa <span class="txt-color">FileManagementContainer</span> como um Contêiner BLOB.';
+                document.getElementById('blobprovide').innerHTML = 'Configurando Provedor BLOB';
+                document.getElementById('filemgtmod').innerHTML = 'O módulo de gerenciamento de arquivos é baseado no <a href="https://docs.abp.io/en/abp/latest/Blob-Storing">BLOB Storage</a> sistema como definido anteriormente e usa <span class="txt-color">FileManagementContainer</span> como um Contêiner BLOB.';
+                document.getElementById('mustset').innerHTML = 'Você deve definir um provedor BLOB para FileManagementContainer.';
+                document.getElementById('cpyy').innerHTML = 'cópia de';
+                document.getElementById('pac').innerHTML = 'Por favor, verifique o <a href="https://docs.abp.io/en/abp/latest/Blob-Storing#blob-storage-providers">BLOB Documentação dos provedores de armazenamento</a> para obter mais informações sobre provedores e como usa-os.';
+                document.getElementById('pgs').innerHTML = 'pacotes';
+                document.getElementById('followsthe').innerHTML = 'Este módulo segue o <a href="https://docs.abp.io/en/abp/latest/Best-Practices/Index">desenvolvimento do módulo guia de práticas recomendadas</a> e consiste em vários pacotes NuGet e NPM. Veja o guia se você quiser entender os pacotes e as relações entre eles.';
+                document.getElementById('canvisit').innerHTML = 'Você pode visitar <a href="https://abp.io/packages?moduleName=Volo.FileManagement">Arquivo Página de lista de pacotes do módulo de gerenciamento</a> para ver a lista de pacotes relacionados a isso módulo.';
+                document.getElementById('UInter').innerHTML = 'Interface de usuário';
+                document.getElementById('menitem').innerHTML = 'Itens do menu';
+                document.getElementById('modadds').innerHTML = 'O módulo de gerenciamento de arquivos adiciona os seguintes itens ao menu "Principal", sob o Item de menu "Administração":';
+                document.getElementById('allfold').innerHTML = '<Strong>Gerenciamento de arquivos</Strong>: lista, exibe toda a estrutura de pastas e arquivos.';
+                document.getElementById('filemenuname').innerHTML = 'A classe <span class="txt-color">FileManagementMenuNames</span> tem as constantes para o nomes de itens de menu.';
+                document.getElementById('pas').innerHTML = 'Páginas';
+                document.getElementById('fgt').innerHTML = 'Gerenciamento de arquivos';
+                document.getElementById('folders').innerHTML = 'A página de gerenciamento de arquivos é usada para criar pastas, carregar arquivos e visualizar o lista de pastas e arquivos armazenados no aplicativo.';
+                document.getElementById('fder').innerHTML = 'Pastas';
+                document.getElementById('byclick').innerHTML = 'Você pode criar uma nova pasta clicando em <span class="txt-color">Criar pasta</span> botão localizado no canto superior direito da página. A pasta será criada no ativo diretório.';
+                document.getElementById('canmove').innerHTML = 'Você pode mover uma pasta para outro diretório na visualização em árvore à esquerda.';
+                document.getElementById('folderby').innerHTML = 'Você pode renomear uma pasta clicando em <span class="txt-color">Ações -> Renomear</span> na a mesa.';
+                document.getElementById('fls').innerHTML = 'arquivos';
+                document.getElementById('willopen').innerHTML = 'Você pode fazer upload de arquivos clicando no botão <span class="txt-color">Fazer upload de arquivos</span> que localizado no canto superior direito da página. Isso abrirá um novo modal para selecionar seu local arquivos para carregar. Os arquivos serão carregados no diretório ativo.';
+                document.getElementById('movefiles').innerHTML = 'Você pode mover arquivos clicando em <span class="txt-color">Ações -> Mover</span> nos dados mesa.';
+                document.getElementById('dataSeed').innerHTML = 'Você pode renomear um arquivo clicando em <span class="txt-color">Ações -> Renomear</span> no Tabela de dados.';
+                document.getElementById('dse').innerHTML = 'Semente de dados';
+                document.getElementById('thismodule').innerHTML = 'This module doesnt seed any data.';
+                document.getElementById('inte').innerHTML = 'Internas';
+                document.getElementById('domlay').innerHTML = 'Camada de domínio';
+                document.getElementById('ttc').innerHTML = 'Agregadas';
+                document.getElementById('modfoll').innerHTML = 'Este módulo segue o <a href="https://docs.abp.io/en/abp/latest/Best-Practices/Entities">Melhor Entidade Guia de práticas e convenções</a>.';
+                document.getElementById('textteml').innerHTML = 'TextTemplateContent';
+                document.getElementById('desct').innerHTML = 'span class="txt-color">DirectoryDescriptor</span> (raiz agregada): Representa uma pasta.';
+                document.getElementById('filedesct').innerHTML = '<span class="txt-color">FileDescriptor</span> (raiz agregada): Representa um arquivo.';
+                document.getElementById('rep').innerHTML = 'Repositórios';
+                document.getElementById('modfollo').innerHTML = 'Este módulo segue o <a href="https://docs.abp.io/en/abp/latest/Best-Practices/Repositories">Repositório Melhor Guia de práticas e convenções</a>.';
+                document.getElementById('customrepo').innerHTML = 'Os seguintes repositórios personalizados são definidos para este módulo:';
+                document.getElementById('idirect').innerHTML = '<span class="txt-color">IDirectoryDescriptorRepository</span>';
+                document.getElementById('ifile').innerHTML = '<span class="txt-color">IFileDescriptorRepository</span>';
+                document.getElementById('domer').innerHTML = 'Serviços de domínio';
+                document.getElementById('bestpract').innerHTML = 'Este módulo segue o <a href="https://docs.abp.io/en/abp/latest/Best-Practices/Domain-Services">Domínio Guia de melhores práticas e convenções de serviços</a>.';
+                document.getElementById('dmm').innerHTML = 'DirectoryManager';
+                document.getElementById('rem').innerHTML = '<span class="txt-color">DirectoryManager</span> é usado para gerenciar suas pastas como criar, renomear, mover e excluir.';
+                document.getElementById('fileman').innerHTML = 'Gerenciador de arquivos';
+                document.getElementById('isuse').innerHTML = '<span class="txt-color">DirectoryManager</span> é usado para gerenciar suas pastas como criar, renomear, mover e excluir.';
+                document.getElementById('sets').innerHTML = 'Configurações';
+                document.getElementById('defineany').innerHTML = 'Este módulo não define nenhuma configuração.';
+                document.getElementById('app').innerHTML = 'Características';
+                document.getElementById('ucanen').innerHTML = 'Você pode ativar ou desativar este módulo para cada inquilino, também pode definir o armazenamento máximo tamanho para cada inquilino. Consulte os <span class="txt-color">Recursos de gerenciamento de arquivos</span> membros de classe para todos os recursos definidos para este módulo.';
+                document.getElementById('applay').innerHTML = 'Camada de aplicação';
+                document.getElementById('appservices').innerHTML = 'Serviços de aplicativos';
+                document.getElementById('ofthefile').innerHTML = '<span class="txt-color">DirectoryDescriptorAppService</span> (implementa <span class="txt-color">IDirectoryDescriptorAppService</span>): Implementa os casos de uso da interface do usuário de gerenciamento de arquivos.';
+                document.getElementById('filedes').innerHTML = '<span class="txt-color">FileDescriptorAppServiceFileDescriptorAppService</span> (implementa <span class="txt-color">IFileDescriptorAppService</span>): implementa os casos de uso da interface do usuário de gerenciamento de arquivos.';
+                document.getElementById('datapro').innerHTML = 'Provedores de banco de dados';
+                document.getElementById('ccc').innerHTML = 'Comum';
+                document.getElementById('prefics').innerHTML = 'Prefixo e Esquema de Tabela/Coleção';
+                document.getElementById('coluse').innerHTML = 'Todas as tabelas/coleções usam o prefixo <span class="txt-color">Fm</span> por padrão. Definir propriedades estáticas na classe <span class="txt-color">FileManagementDbProperties</span> se você precisar alterar o prefixo da tabela ou definir um nome de esquema (se suportado pelo seu provedor de banco de dados).';
+                document.getElementById('connstrng').innerHTML = 'Cadeia de conexão';
+                document.getElementById('moduses').innerHTML = 'Este módulo usa <span class="txt-color">FileManagement</span> para a string de conexão nome. Se você não definir uma string de conexão com esse nome, ela retornará ao <span class="txt-color">Padrão</span> string de conexão.';
+                document.getElementById('fordetails').innerHTML = 'Veja a <a href="https://docs.abp.io/en/abp/latest/Connection-Strings">conexão strings</a> documentação para detalhes.';
+                document.getElementById('efcore').innerHTML = 'Núcleo do Entity Framework';
+                document.getElementById('tabless').innerHTML = 'Tabelas';
+                document.getElementById('cills').innerHTML = 'Coleções';
+                document.getElementById('permissions').innerHTML = 'Permissões';
+                document.getElementById('thismod').innerHTML = 'Consulte os membros da classe <span class="txt-color">FileManagementPermissions</span> para todos permissões definidas para este módulo.';
+                // For In this doc section
+                document.getElementById('inthisdoc').innerHTML = 'neste documento';
+                document.getElementById('reaui').innerHTML = '<a href="#react" class="text-black">React-UI</a>';
+                document.getElementById('setblb').innerHTML = '<a href="#react" class="text-black">Definindo o provedor BLOB</a>';
+                document.getElementById('pgsa').innerHTML = '<a href="#pac" class="text-black">Pacotes</a>';
+                document.getElementById('useint').innerHTML = '<a href="#pac" class="text-black">Interface do usuário</a>';
+                document.getElementById('menuits').innerHTML = '<a href="#pac" class="text-black">Itens do menu</a>';
+                document.getElementById('pagg').innerHTML = '<a href="#pac" class="text-black">Páginas</a>';
+                document.getElementById('folds').innerHTML = '<a href="#folders" class="text-black">Pastas</a>';
+                document.getElementById('fillss').innerHTML = '<a href="#files" class="text-black">Arquivos</a>';
+                document.getElementById('dataseeds').innerHTML = '<a href="#dataSeed" class="text-black">Semente de dados</a>';
+                document.getElementById('intes').innerHTML = '<a href="#dataSeed" class="text-black">Internos</a>';
+                document.getElementById('texttemps').innerHTML = '<a href="#ttc" class="text-black">Conteúdo do modelo de texto</a>';
+                document.getElementById('appslayers').innerHTML = '<a href="#app" class="text-black">Camada de aplicativo</a>';
+                document.getElementById('Connectionstringss').innerHTML = '<a href="#app" class="text-black">String de conexão</a>';
+                document.getElementById('perms').innerHTML = '<a href="#permissions" class="text-black">Permissões</a>';
+            }
+            else if (selectedLanguage === 'French') {
+
+                // Body Content
+
+                document.getElementById('filemgt').innerHTML = 'module de gestion de fichiers';
+                document.getElementById('thismduse').innerHTML = 'Ce module est utilisé pour télécharger, télécharger et organiser des fichiers dans une structure de dossiers hiérarchique. Il prend également en charge la multilocation et vous pouvez définir la limite de taille totale pour vos locataires.';
+                document.getElementById('react').innerHTML = 'Ce module est basé sur le <a href="https://docs.abp.io/en/abp/latest/Blob-Storing">système de stockage BLOB</a>, il peut donc utiliser différents fournisseurs de stockage pour stocker le fichier de contenu.';
+                document.getElementById('seedes').innerHTML = 'Voir la <a href="https://commercial.abp.io/modules/Volo.FileManagement">page de description du module</a> pour un aperçu des fonctionnalités du module.';
+                document.getElementById('uireact').innerHTML = 'réagir-UI';
+                document.getElementById('baseonthe').innerHTML = 'Le module de gestion de fichiers est basé sur le système <a href="https://docs.abp.io/en/abp/latest/Blob-Storing">BLOB Storage </a>tel que défini précédemment et utilise <span class = "txt-color">FileManagementContainer</span> en tant que conteneur BLOB.';
+                document.getElementById('blobprovide').innerHTML = 'Configuration du fournisseur BLOB';
+                document.getElementById('filemgtmod').innerHTML = 'Le module de gestion de fichiers est basé sur le système <a href="https://docs.abp.io/en/abp/latest/Blob-Storing">BLOB Storage</a> tel que défini précédemment et utilise <span class = "txt-color">FileManagementContainer</span> en tant que conteneur BLOB.';
+                document.getElementById('mustset').innerHTML = 'Vous devez définir un fournisseur BLOB pour FileManagementContainer.';
+                document.getElementById('cpyy').innerHTML = 'copie de';
+                document.getElementById('pac').innerHTML = 'Veuillez consulter la <a href="https://docs.abp.io/en/abp/latest/Blob-Storing#blob-storage-providers">Documentation des fournisseurs de stockage BLOB</a> pour plus d\'informations sur les fournisseurs et comment vous les utilisez.';
+                document.getElementById('pgs').innerHTML = 'paquets';
+                document.getElementById('followsthe').innerHTML = 'Ce module suit le <a href="https://docs.abp.io/en/abp/latest/Best-Practices/Index">guide des meilleures pratiques de développement de modules</a> et se compose de plusieurs packages NuGet et NPM. Consultez le guide si vous souhaitez comprendre les packages et les relations entre eux.';
+                document.getElementById('canvisit').innerHTML = 'Vous pouvez visiter la <a href="https://abp.io/packages?moduleName=Volo.FileManagement">page de la liste des packages du module de gestion de fichiers</a> pour voir la liste des packages liés à ce module.';
+                document.getElementById('UInter').innerHTML = 'interface utilisateur';
+                document.getElementById('menitem').innerHTML = 'éléments de menu';
+                document.getElementById('modadds').innerHTML = 'Le module de gestion de fichiers ajoute les éléments suivants au menu « Principal » sous l\'élément de menu « Administration » :';
+                document.getElementById('allfold').innerHTML = '<Strong>Gestion des fichiers</Strong> : liste, affiche toute la structure des dossiers et des fichiers.';
+                document.getElementById('filemenuname').innerHTML = 'La classe <span class="txt-color">FileManagementMenuNames</span> a des constantes pour les noms des éléments de menu.';
+                document.getElementById('pas').innerHTML = 'pages';
+                document.getElementById('fgt').innerHTML = 'gestion de fichiers';
+                document.getElementById('folders').innerHTML = 'La page de gestion des fichiers est utilisée pour créer des dossiers, télécharger des fichiers et afficher la liste des dossiers et fichiers stockés dans l\'application.';
+                document.getElementById('fder').innerHTML = 'Dossiers';
+                document.getElementById('byclick').innerHTML = 'Vous pouvez créer un nouveau dossier en cliquant sur le bouton <span class="txt-color">Créer un dossier</span> situé dans le coin supérieur droit de la page. Le dossier sera créé dans le répertoire actif.';
+                document.getElementById('canmove').innerHTML = 'Vous pouvez déplacer un dossier vers un autre répertoire dans l\'arborescence à gauche.';
+                document.getElementById('folderby').innerHTML = 'Vous pouvez renommer un dossier en cliquant sur <span class="txt-color">Actions -> Renommer</span> sur le bureau.';
+                document.getElementById('fls').innerHTML = 'des dossiers';
+                document.getElementById('willopen').innerHTML = 'Vous pouvez télécharger des fichiers en cliquant sur le bouton <span class="txt-color">Télécharger des fichiers</span> qui se trouve dans le coin supérieur droit de la page. Cela ouvrira un nouveau modal pour sélectionner vos fichiers locaux à télécharger. Les fichiers seront téléchargés dans le répertoire de travail.';
+                document.getElementById('movefiles').innerHTML = 'Vous pouvez déplacer des fichiers en cliquant sur <span class="txt-color">Actions -> Déplacer</span> dans le tableau de données.';
+                document.getElementById('dataSeed').innerHTML = 'Vous pouvez renommer un fichier en cliquant sur <span class="txt-color">Actions -> Renommer</span> dans le tableau de données.';
+                document.getElementById('dse').innerHTML = 'graine de données';
+                document.getElementById('thismodule').innerHTML = 'Ce module ne génère aucune donnée.';
+                document.getElementById('inte').innerHTML = 'Interne';
+                document.getElementById('domlay').innerHTML = 'couche de domaine';
+                document.getElementById('ttc').innerHTML = 'Agrégats';
+                document.getElementById('modfoll').innerHTML = 'Ce module suit le <a href="https://docs.abp.io/en/abp/latest/Best-Practices/Entities">Guide des meilleures pratiques et conventions des entités</a>.';
+                document.getElementById('textteml').innerHTML = 'TextTemplateContent';
+                document.getElementById('desct').innerHTML = 'span class="txt-color">DirectoryDescriptor</span> (racine agrégée) : représente un dossier.';
+                document.getElementById('filedesct').innerHTML = '<span class="txt-color">FileDescriptor</span> (racine agrégée) : représente un fichier.';
+                document.getElementById('rep').innerHTML = 'Référentiels';
+                document.getElementById('modfollo').innerHTML = 'Ce module suit le <a href="https://docs.abp.io/en/abp/latest/Best-Practices/Repositories">Guide des meilleures pratiques et conventions de référentiel</a>.';
+                document.getElementById('customrepo').innerHTML = 'Les référentiels personnalisés suivants sont définis pour ce module :';
+                document.getElementById('idirect').innerHTML = '<span class="txt-color">IDirectoryDescriptorRepository</span>';
+                document.getElementById('ifile').innerHTML = '<span class="txt-color">IFileDescriptorRepository</span>';
+                document.getElementById('domer').innerHTML = 'services de domaine';
+                document.getElementById('bestpract').innerHTML = 'Ce module suit le <a href="https://docs.abp.io/en/abp/latest/Best-Practices/Domain-Services">Guide des meilleures pratiques et conventions des services de domaine</a>.';
+                document.getElementById('dmm').innerHTML = 'DirectoryManager';
+                document.getElementById('rem').innerHTML = '<span class="txt-color">DirectoryManager</span> est utilisé pour gérer vos dossiers comme créer, renommer, déplacer et supprimer.';
+                document.getElementById('fileman').innerHTML = 'Gestionnaire de fichiers';
+                document.getElementById('isuse').innerHTML = '<span class="txt-color">DirectoryManager</span> est utilisé pour gérer vos dossiers comme créer, renommer, déplacer et supprimer.';
+                document.getElementById('sets').innerHTML = 'paramètres';
+                document.getElementById('defineany').innerHTML = 'Ce module ne définit aucun paramètre.';
+                document.getElementById('app').innerHTML = 'Características';
+                document.getElementById('ucanen').innerHTML = 'Vous pouvez activer ou désactiver ce module pour chaque locataire, vous pouvez également définir la taille de stockage maximale pour chaque locataire. Consultez les membres de la classe <span class="txt-color">Fonctionnalités de gestion de fichiers</span> pour toutes les fonctionnalités définies pour ce module.';
+                document.getElementById('applay').innerHTML = 'couche d\'application';
+                document.getElementById('appservices').innerHTML = 'services d\'application';
+                document.getElementById('ofthefile').innerHTML = '<span class="txt-color">DirectoryDescriptorAppService</span> (implémente <span class="txt-color">IDirectoryDescriptorAppService</span>) : implémente les cas d\'utilisation de l\'interface utilisateur de gestion de fichiers.';
+                document.getElementById('filedes').innerHTML = '<span class="txt-color">FileDescriptorAppServiceFileDescriptorAppService</span> (implémente <span class="txt-color">IFileDescriptorAppService</span>) : implémente les cas d\'utilisation de l\'interface utilisateur de gestion de fichiers.';
+                document.getElementById('datapro').innerHTML = 'fournisseurs de bases de données';
+                document.getElementById('ccc').innerHTML = 'Commun';
+                document.getElementById('prefics').innerHTML = 'Préfixe et schéma de table/collection';
+                document.getElementById('coluse').innerHTML = 'Toutes les tables/collections utilisent le préfixe <span class="txt-color">Fm</span> par défaut. Définissez des propriétés statiques dans la classe <span class="txt-color">FileManagementDbProperties</span> si vous devez modifier le préfixe de la table ou définir un nom de schéma (si pris en charge par votre fournisseur de base de données).';
+                document.getElementById('connstrng').innerHTML = 'chaîne de connexion';
+                document.getElementById('moduses').innerHTML = 'Ce module utilise <span class="txt-color">FileManagement</span> pour la chaîne de connexion du nom. Si vous ne définissez pas de chaîne de connexion avec ce nom, elle reviendra à la chaîne de connexion <span class="txt-color">Défaut</span>.';
+                document.getElementById('fordetails').innerHTML = 'Voir la documentation <a href="https://docs.abp.io/en/abp/latest/Connection-Strings">chaînes de connexion</a> pour plus de détails.';
+                document.getElementById('efcore').innerHTML = 'Noyau Entity Framework';
+                document.getElementById('tabless').innerHTML = 'les tables';
+                document.getElementById('cills').innerHTML = 'Collections';
+                document.getElementById('permissions').innerHTML = 'Autorisations';
+                document.getElementById('thismod').innerHTML = 'Consultez les membres de la classe <span class="txt-color">FileManagementPermissions</span> pour toutes les autorisations définies pour ce module.';
+
+
+                // For In this doc section
+                document.getElementById('inthisdoc').innerHTML = 'dans ce document';
+                document.getElementById('reaui').innerHTML = '<a href="#react" class="text-black">React-UI</a>';
+                document.getElementById('setblb').innerHTML = '<a href="#react" class="text-black">Définir le fournisseur BLOB</a>';
+                document.getElementById('pgsa').innerHTML = '<a href="#pac" class="text-black">Forfaits</a>';
+                document.getElementById('useint').innerHTML = '<a href="#pac" class="text-black">Interface utilisateur</a>';
+                document.getElementById('menuits').innerHTML = '<a href="#pac" class="text-black">Éléments de menu</a>';
+                document.getElementById('pagg').innerHTML = '<a href="#pac" class="text-black">Pages</a>';
+                document.getElementById('folds').innerHTML = '<a href="#folders" class="text-black">Dossiers</a>';
+                document.getElementById('fillss').innerHTML = '<a href="#files" class="text-black">Fichiers</a>';
+                document.getElementById('dataseeds').innerHTML = '<a href="#dataSeed" class="text-black">Graine de données</a>';
+                document.getElementById('intes').innerHTML = '<a href="#dataSeed" class="text-black">Internes</a>';
+                document.getElementById('texttemps').innerHTML = '<a href="#ttc" class="text-black">Contenu du modèle de texte</a>';
+                document.getElementById('appslayers').innerHTML = '<a href="#app" class="text-black">Couche d\'application</a>';
+                document.getElementById('Connectionstringss').innerHTML = '<a href="#app" class="text-black">Chaîne de connexion</a>';
+                document.getElementById('perms').innerHTML = '<a href="#permissions" class="text-black">Autorisations</a>';
+            }
+
+            else if (selectedLanguage === 'Finnish') {
+                // Body Content
+
+                document.getElementById('filemgt').innerHTML = 'tiedostonhallintamoduuli';
+                document.getElementById('thismduse').innerHTML = 'Tätä moduulia käytetään tiedostojen lataamiseen, lataamiseen ja järjestämiseen hierarkkisessa kansiorakenteessa. Se tukee myös monivuokrausta ja voit asettaa vuokralaisten kokonaiskokorajan.';
+                document.getElementById('react').innerHTML = 'Tämä moduuli perustuu <a href="https://docs.abp.io/en/abp/latest/Blob-Storing">BLOB-tallennusjärjestelmään</a>, joten se voi käyttää eri tallennustarjoajia sisältötiedosto.';
+                document.getElementById('seedes').innerHTML = 'Katso <a href="https://commercial.abp.io/modules/Volo.FileManagement">moduulin kuvaussivulta</a> yleiskatsaus moduulin toiminnoista.';
+                document.getElementById('uireact').innerHTML = 'reagoi-UI';
+                document.getElementById('baseonthe').innerHTML = 'Tiedostonhallintamoduuli perustuu aiemmin määriteltyyn <a href="https://docs.abp.io/en/abp/latest/Blob-Storing">BLOB-tallennusjärjestelmään </a> ja käyttää < span class = "txt-color">FileManagementContainer</span> BLOB-säilönä.';
+                document.getElementById('blobprovide').innerHTML = 'BLOB Providerin määrittäminen';
+                document.getElementById('filemgtmod').innerHTML = 'Tiedostonhallintamoduuli perustuu aiemmin määriteltyyn <a href="https://docs.abp.io/en/abp/latest/Blob-Storing">BLOB-tallennusjärjestelmään</a> ja käyttää < span class = "txt-color">FileManagementContainer</span> BLOB-säilönä.';
+                document.getElementById('mustset').innerHTML = 'Sinun on määritettävä BLOB-toimittaja FileManagementContainerille.';
+                document.getElementById('cpyy').innerHTML = 'kopio';
+                document.getElementById('pac').innerHTML = 'Katso <a href="https://docs.abp.io/en/abp/latest/Blob-Storing#blob-storage-providers">BLOB-tallennuspalveluntarjoajien dokumentaatio</a> saadaksesi lisätietoja palveluntarjoajista ja miten käytät niitä.';
+                document.getElementById('pgs').innerHTML = 'paketteja';
+                document.getElementById('followsthe').innerHTML = 'Tämä moduuli noudattaa <a href="https://docs.abp.io/en/abp/latest/Best-Practices/Index">Moduulikehityksen parhaiden käytäntöjen opasta</a> ja koostuu useista NuGet- ja NPM-paketeista. Tutustu oppaaseen, jos haluat ymmärtää paketteja ja niiden välisiä suhteita.';
+                document.getElementById('canvisit').innerHTML = 'Voit käydä <a href="https://abp.io/packages?moduleName=Volo.FileManagement">tiedostonhallintamoduulin pakettiluettelosivulla</a> nähdäksesi luettelon tähän moduuliin liittyvistä paketeista.';
+                document.getElementById('UInter').innerHTML = 'käyttöliittymä';
+                document.getElementById('menitem').innerHTML = 'valikon kohteita';
+                document.getElementById('modadds').innerHTML = 'Tiedostonhallintamoduuli lisää seuraavat kohteet "Päävalikkoon" valikkokohdan "Hallinta" alla:';
+                document.getElementById('allfold').innerHTML = '<Strong>Tiedostonhallinta</Strong>: luettelo, näytä kaikki kansiot ja tiedostorakenne.';
+                document.getElementById('filemenuname').innerHTML = 'Luokassa <span class="txt-color">FileManagementMenuNames</span> on vakiot valikon kohteiden nimille.';
+                document.getElementById('pas').innerHTML = 'sivuja';
+                document.getElementById('fgt').innerHTML = 'Tiedostonhallinta';
+                document.getElementById('folders').innerHTML = 'Tiedostonhallintasivulla luodaan kansioita, ladataan tiedostoja ja tarkastellaan sovellukseen tallennettujen kansioiden ja tiedostojen luetteloa.';
+                document.getElementById('fder').innerHTML = 'Kansiot';
+                document.getElementById('byclick').innerHTML = 'Voit luoda uuden kansion napsauttamalla <span class="txt-color">Luo kansio</span> -painiketta sivun oikeassa yläkulmassa. Kansio luodaan nykyiseen hakemistoon.';
+                document.getElementById('canmove').innerHTML = 'Voit siirtää kansion toiseen hakemistoon vasemmalla olevassa puussa.';
+                document.getElementById('folderby').innerHTML = 'Voit nimetä kansion uudelleen napsauttamalla työpöydällä <span class="txt-color">Toiminnot -> Nimeä uudelleen</span>.';
+                document.getElementById('fls').innerHTML = 'tiedostot';
+                document.getElementById('willopen').innerHTML = 'Voit lähettää tiedostoja napsauttamalla <span class="txt-color">Lähetä tiedostot</span> -painiketta sivun oikeassa yläkulmassa. Tämä avaa uuden modaalin, jolla voit valita lähetettävät paikalliset tiedostot. Tiedostot ladataan työhakemistoon.';
+                document.getElementById('movefiles').innerHTML = 'Voit siirtää tiedostoja napsauttamalla tietotaulukossa <span class="txt-color">Toiminnot -> Siirrä</span>.';
+                document.getElementById('dataSeed').innerHTML = 'Katso nimetä tiedoston uudelleen asiakirja tietotaulukossa <span class="txt-color">Toiminnot -> Nimeä uudelleen</span>.';
+                document.getElementById('dse').innerHTML = 'data siemen';
+                document.getElementById('thismodule').innerHTML = 'Tämä moduuli ei tuota tietoja.';
+                document.getElementById('inte').innerHTML = 'Sisainen';
+                document.getElementById('domlay').innerHTML = 'verkkotunnuksen kerros';
+                document.getElementById('ttc').innerHTML = 'Aggregaatit';
+                document.getElementById('modfoll').innerHTML = 'Tämä moduuli noudattaa <a href="https://docs.abp.io/en/abp/latest/Best-Practices/Entities">Entiteetin parhaiden käytäntöjen ja sopimusten opasta</a>.';
+                document.getElementById('textteml').innerHTML = 'TextTemplateContent';
+                document.getElementById('desct').innerHTML = 'span class="txt-color">DirectoryDescriptor</span> (koostettu juuri): Edustaa kansiota.';
+                document.getElementById('filedesct').innerHTML = '<span class="txt-color">FileDescriptor</span> (koostettu juuri): Edustaa tiedostoa.';
+                document.getElementById('rep').innerHTML = 'Tietovarastot';
+                document.getElementById('modfollo').innerHTML = 'Tämä moduuli noudattaa <a href="https://docs.abp.io/en/abp/latest/Best-Practices/Repositories">Arkiston parhaiden käytäntöjen ja käytäntöjen opas</a>.';
+                document.getElementById('customrepo').innerHTML = 'Tälle moduulille on määritetty seuraavat mukautetut arkistot:';
+                document.getElementById('idirect').innerHTML = '<span class="txt-color">IDirectoryDescriptorRepository</span>';
+                document.getElementById('ifile').innerHTML = '<span class="txt-color">IFileDescriptorRepository</span>';
+                document.getElementById('domer').innerHTML = 'verkkotunnuksen palvelut';
+                document.getElementById('bestpract').innerHTML = 'Tämä moduuli noudattaa <a href="https://docs.abp.io/en/abp/latest/Best-Practices/Domain-Services">verkkotunnuspalveluiden parhaiden käytäntöjen ja sopimusten opasta</a>.';
+                document.getElementById('dmm').innerHTML = 'Hakemistonhallinta';
+                document.getElementById('rem').innerHTML = '<span class="txt-color">DirectoryManagerin</span> avulla voit hallita kansioitasi, kuten luoda, nimetä uudelleen, siirtää ja poistaa.';
+                document.getElementById('fileman').innerHTML = 'Tiedostonhallinta';
+                document.getElementById('isuse').innerHTML = '<span class="txt-color">DirectoryManagerin</span> avulla voit hallita kansioitasi, kuten luoda, nimetä uudelleen, siirtää ja poistaa.';
+                document.getElementById('sets').innerHTML = 'asetukset';
+                document.getElementById('defineany').innerHTML = 'Tämä moduuli ei määrittele mitään parametreja.';
+                document.getElementById('app').innerHTML = 'ominaisuudet';
+                document.getElementById('ucanen').innerHTML = 'Voit ottaa tämän moduulin käyttöön tai poistaa sen käytöstä jokaiselle vuokralaiselle, voit myös määrittää kunkin vuokralaisen enimmäistallennuskoon. Katso luokan jäsenten <span class="txt-color">tiedostonkäsittelyominaisuudet</span> kaikista tälle moduulille määritetyistä ominaisuuksista.';
+                document.getElementById('applay').innerHTML = 'sovelluskerros';
+                document.getElementById('appservices').innerHTML = 'sovelluspalvelut';
+                document.getElementById('ofthefile').innerHTML = '<span class="txt-color">DirectoryDescriptorAppService</span> (toteuttaa <span class="txt-color">IDirectoryDescriptorAppServicen</span>): toteuttaa hallintakäyttöliittymän käyttötapaustiedostot.';
+                document.getElementById('filedes').innerHTML = '<span class="txt-color">FileDescriptorAppServiceFileDescriptorAppService</span> (toteuttaa <span class="txt-color">IFileDescriptorAppServicen</span>): toteuttaa sovellushallinnan käyttöliittymän käyttötapaukset. tiedostot.';
+                document.getElementById('datapro').innerHTML = 'tietokannan tarjoajat';
+                document.getElementById('ccc').innerHTML = 'Yleistä';
+                document.getElementById('prefics').innerHTML = 'Taulukon/kokoelman etuliite ja skeema';
+                document.getElementById('coluse').innerHTML = 'Kaikissa taulukoissa/kokoelmissa käytetään oletuksena <span class="txt-color">Fm</span>-etuliitettä. Aseta staattiset ominaisuudet <span class="txt-color">FileManagementDbProperties</span>-luokassa, jos sinun on muutettava taulukon etuliitettä tai määritettävä skeeman nimi (jos tietokantatoimittajasi tukee sitä).';
+                document.getElementById('connstrng').innerHTML = 'yhteysmerkkijono';
+                document.getElementById('moduses').innerHTML = 'Tämä moduuli käyttää <span class="txt-color">tiedostonhallintaa</span> nimen yhteysmerkkijonona. Jos et aseta tämännimistä yhteysmerkkijonoa, se palaa <span class="txt-color">oletus</span>-yhteysmerkkijonoon.';
+
+                document.getElementById('fordetails').innerHTML = 'Katso lisätietoja <a href="https://docs.abp.io/en/abp/latest/Connection-Strings">yhteysmerkkijonoista</a>.';
+                document.getElementById('efcore').innerHTML = 'Entity Framework Core';
+                document.getElementById('tabless').innerHTML = 'pöydät';
+                document.getElementById('cills').innerHTML = 'kokoelmat';
+                document.getElementById('permissions').innerHTML = 'kokoelmat';
+                document.getElementById('thismod').innerHTML = 'Katso kaikki tälle moduulille määritetyt käyttöoikeudet <span class="txt-color">FileManagementPermissions</span>-luokan jäseniltä.';
+
+
+                // For In this doc section
+                document.getElementById('inthisdoc').innerHTML = 'tässä asiakirjassa';
+                document.getElementById('reaui').innerHTML = '<a href="#react" class="text-black">React-käyttöliittymä</a>';
+                document.getElementById('setblb').innerHTML = '<a href="#react" class="text-black">Aseta BLOB-tarjoaja</a>';
+                document.getElementById('pgsa').innerHTML = '<a href="#pac" class="text-black">Paketit</a>';
+                document.getElementById('useint').innerHTML = '<a href="#pac" class="text-black">Käyttöliittymä</a>';
+                document.getElementById('menuits').innerHTML = '<a href="#pac" class="text-black">Valikkokohteet</a>';
+                document.getElementById('pagg').innerHTML = '<a href="#pac" class="text-black">Sivut</a>';
+                document.getElementById('folds').innerHTML = '<a href="#folders" class="text-black">Kansiot</a>';
+                document.getElementById('fillss').innerHTML = '<a href="#files" class="text-black">Tiedostot</a>';
+                document.getElementById('dataseeds').innerHTML = '<a href="#dataSeed" class="text-black">Data Seed</a>';
+                document.getElementById('intes').innerHTML = '<a href="#dataSeed" class="text-black">Sisäosat</a>';
+                document.getElementById('texttemps').innerHTML = '<a href="#ttc" class="text-black">Tekstimallin sisältö</a>';
+                document.getElementById('appslayers').innerHTML = '<a href="#app" class="text-black">Sovelluskerros</a>';
+                document.getElementById('Connectionstringss').innerHTML = '<a href="#app" class="text-black">Yhteysmerkkijono</a>';
+                document.getElementById('perms').innerHTML = '<a href="#permissions" class="text-black">Käyttöoikeudet</a>';
+            }
+            else if (selectedLanguage === 'Slovak') {
+                // Obsah tela
+                document.getElementById('filemgt').innerHTML = 'Modul správy súborov';
+                document.getElementById('thismduse').innerHTML = 'Tento modul sa používa na sťahovanie, nahrávanie a usporiadanie súborov v hierarchickej adresárovej štruktúre. Podporuje aj viacnájomníctvo a môžete nastaviť celkový limit pre veľkosť nájomníka.';
+                document.getElementById('react').innerHTML = 'Tento modul je založený na <a href="https://docs.abp.io/en/abp/latest/Blob-Storing">systéme ukladania BLOB</a>, takže môže používať rôzne poskytovatele úložiska pre obsahové súbory.';
+                document.getElementById('seedes').innerHTML = 'Pozrite si <a href="https://commercial.abp.io/modules/Volo.FileManagement">stránku s popisom modulu</a> pre prehľad funkcií tohto modulu.';
+                document.getElementById('uireact').innerHTML = 'reaguj-UI';
+                document.getElementById('baseonthe').innerHTML = 'Modul správy súborov je založený na predchádzajúco definovanom <a href="https://docs.abp.io/en/abp/latest/Blob-Storing">systéme ukladania BLOB</a> a využíva kontajner < span class = "txt-color">FileManagementContainer</span> pre úložisko BLOB.';
+                document.getElementById('blobprovide').innerHTML = 'Nastavenie poskytovateľa BLOB';
+                document.getElementById('filemgtmod').innerHTML = 'Modul správy súborov je založený na predchádzajúco definovanom <a href="https://docs.abp.io/en/abp/latest/Blob-Storing">systéme ukladania BLOB</a> a využíva kontajner < span class = "txt-color">FileManagementContainer</span> pre úložisko BLOB.';
+                document.getElementById('mustset').innerHTML = 'Musíte nastaviť poskytovateľa BLOB pre kontajner FileManagementContainer.';
+                document.getElementById('cpyy').innerHTML = 'kópia';
+                document.getElementById('pac').innerHTML = 'Pozrite si <a href="https://docs.abp.io/en/abp/latest/Blob-Storing#blob-storage-providers">dokumentáciu k poskytovateľom úložiska BLOB</a> pre ďalšie informácie o poskytovateľoch a ich použití.';
+                document.getElementById('pgs').innerHTML = 'balíčky';
+                document.getElementById('followsthe').innerHTML = 'Tento modul nasleduje <a href="https://docs.abp.io/en/abp/latest/Best-Practices/Index">najlepšie postupy pre vývoj modulov</a> a skladá sa z viacerých balíčkov NuGet a NPM. Prehľad balíčkov a ich vzájomných vzťahov nájdete v sprievodcovi.';
+                document.getElementById('canvisit').innerHTML = 'Pre zoznam balíčkov spojených s týmto modulom môžete navštíviť <a href="https://abp.io/packages?moduleName=Volo.FileManagement">stránku s balíčkami modulu správy súborov</a>.';
+                document.getElementById('UInter').innerHTML = 'používateľské rozhranie';
+                document.getElementById('menitem').innerHTML = 'položky menu';
+                document.getElementById('modadds').innerHTML = 'Modul správy súborov pridáva nasledujúce položky do menu "Hlavné menu" pod položkou "Správa":';
+                document.getElementById('allfold').innerHTML = '<Strong>Správa súborov</Strong>: zoznam, zobraziť všetky priečinky a štruktúru súborov.';
+                document.getElementById('filemenuname').innerHTML = 'V triede <span class="txt-color">FileManagementMenuNames</span> sú definované konštanty pre mená položiek menu.';
+                document.getElementById('pas').innerHTML = 'stránky';
+                document.getElementById('fgt').innerHTML = 'Správa súborov';
+                document.getElementById('folders').innerHTML = 'Na stránke správy súborov môžete vytvárať priečinky, nahrávať súbory a prezerať zoznam priečinkov a súborov uložených v aplikácii.';
+                document.getElementById('fder').innerHTML = 'Priečinky';
+                document.getElementById('byclick').innerHTML = 'Na vytvorenie nového priečinka kliknite na tlačidlo <span class="txt-color">Vytvoriť priečinok</span> v pravom hornom rohu stránky. Priečinok sa vytvorí v aktuálnom adresári.';
+                document.getElementById('canmove').innerHTML = 'Priečinok môžete presunúť do inej adresárovej štruktúry pomocou ľavej stromovej štruktúry.';
+                document.getElementById('folderby').innerHTML = 'Môžete premenovať priečinok tak, že kliknete na ploche na <span class="txt-color">Akcie -> Premenovať</span>.';
+                document.getElementById('fls').innerHTML = 'súbory';
+                document.getElementById('willopen').innerHTML = 'Na odoslanie súborov kliknite na tlačidlo <span class="txt-color">Odoslať súbory</span> v pravom hornom rohu stránky. To otvorí nový modálny dialóg, ktorý vám umožní vybrať miestne súbory na odoslanie. Súbory sa uložia do pracovného adresára.';
+                document.getElementById('movefiles').innerHTML = 'Súbory môžete presúvať kliknutím na tlačidlo <span class="txt-color">Akcie -> Presunúť</span> vo výpise tabuľky.';
+                document.getElementById('dataSeed').innerHTML = 'Pre premenovanie súboru v tabuľke <span class="txt-color">Akcie -> Premenovať</span>.';
+                document.getElementById('dse').innerHTML = 'záznamy s údajmi';
+                document.getElementById('thismodule').innerHTML = 'Tento modul nevytvára žiadne záznamy s údajmi.';
+                document.getElementById('inte').innerHTML = 'Interné';
+                document.getElementById('domlay').innerHTML = 'doménová vrstva';
+                document.getElementById('ttc').innerHTML = 'Textové šablóny';
+                document.getElementById('modfoll').innerHTML = 'Tento modul nasleduje <a href="https://docs.abp.io/en/abp/latest/Best-Practices/Entities">najlepšie postupy a dohody pre entity</a>.';
+                document.getElementById('textteml').innerHTML = 'TextTemplateContent';
+                document.getElementById('desct').innerHTML = 'Trieda <span class="txt-color">DirectoryDescriptor</span> (zložená) - predstavuje adresár.';
+                document.getElementById('filedesct').innerHTML = 'Trieda <span class="txt-color">FileDescriptor</span> (zložená) - predstavuje súbor.';
+                document.getElementById('rep').innerHTML = 'Repositáre';
+                document.getElementById('modfollo').innerHTML = 'Tento modul nasleduje <a href="https://docs.abp.io/en/abp/latest/Best-Practices/Repositories">najlepšie postupy a dohody pre repozitáre</a>.';
+                document.getElementById('customrepo').innerHTML = 'Tento modul používa nasledujúce vlastné repozitáre:';
+                document.getElementById('idirect').innerHTML = '<span class="txt-color">IDirectoryDescriptorRepository</span>';
+                document.getElementById('ifile').innerHTML = '<span class="txt-color">IFileDescriptorRepository</span>';
+                document.getElementById('domer').innerHTML = 'doménové služby';
+                document.getElementById('bestpract').innerHTML = 'Tento modul nasleduje <a href="https://docs.abp.io/en/abp/latest/Best-Practices/Domain-Services">najlepšie postupy a dohody pre doménové služby</a>.';
+                document.getElementById('dmm').innerHTML = 'Správa adresárov';
+                document.getElementById('rem').innerHTML = '<span class="txt-color">DirectoryManager</span> vám umožňuje spravovať svoje priečinky, vrátane vytvárania, premenovávania, presúvania a odstraňovania.';
+                document.getElementById('fileman').innerHTML = 'Správa súborov';
+                document.getElementById('isuse').innerHTML = '<span class="txt-color">DirectoryManager</span> vám umožňuje spravovať svoje priečinky, vrátane vytvárania, premenovávania, presúvania a odstraňovania.';
+                document.getElementById('sets').innerHTML = 'nastavenia';
+                document.getElementById('defineany').innerHTML = 'Tento modul nezadefinoval žiadne špecifické parametre.';
+                document.getElementById('app').innerHTML = 'vlastnosti aplikácie';
+                document.getElementById('ucanen').innerHTML = 'Môžete povoliť alebo zakázať tento modul pre každého nájomníka a nastaviť maximálnu veľkosť úložiska pre každého nájomníka. Prehľad vlastností tohto modulu nájdete v článku o členoch triedy <span class="txt-color">FileManagementAppService</span>.';
+                document.getElementById('applay').innerHTML = 'aplikačná vrstva';
+                document.getElementById('appservices').innerHTML = 'aplikačné služby';
+                document.getElementById('ofthefile').innerHTML = '<span class="txt-color">DirectoryDescriptorAppService</span> (implementuje <span class="txt-color">IDirectoryDescriptorAppService</span>): implementuje prípady použitia správy súbory.';
+                document.getElementById('filedes').innerHTML = '<span class="txt-color">FileDescriptorAppServiceFileDescriptorAppService</span> (implementuje <span class="txt-color">IFileDescriptorAppService</span>): implementuje prípady použitia správy súbory.';
+                document.getElementById('datapro').innerHTML = 'poskytovatelia údajov';
+                document.getElementById('ccc').innerHTML = 'Všeobecné';
+                document.getElementById('prefics').innerHTML = 'Predpona a schéma tabuľky/kolekcie';
+                document.getElementById('coluse').innerHTML = 'Pre všetky tabuľky/kolekcie sa predvolene používa predpona <span class="txt-color">Fm</span>. Ak chcete zmeniť predponu tabuľky alebo určiť názov schémy (ak váš databázový poskytovateľ to podporuje), nastavte statické vlastnosti v triede <span class="txt-color">FileManagementDbProperties</span>.';
+                document.getElementById('connstrng').innerHTML = 'reťazec pripojenia';
+                document.getElementById('moduses').innerHTML = 'Tento modul používa názov pripojenia <span class="txt-color">FileManagement</span>. Ak nezadáte tento názov, vráti sa k predvolenému reťazcu pripojenia <span class="txt-color">Default</span>.';
+                document.getElementById('fordetails').innerHTML = 'Ďalšie informácie o reťazcoch pripojenia nájdete v článku o <a href="https://docs.abp.io/en/abp/latest/Connection-Strings">reťazcoch pripojenia</a>.';
+                document.getElementById('efcore').innerHTML = 'Entity Framework Core';
+                document.getElementById('tabless').innerHTML = 'tabuľky';
+                document.getElementById('cills').innerHTML = 'kolekcie';
+                document.getElementById('permissions').innerHTML = 'oprávnenia';
+                document.getElementById('thismod').innerHTML = 'Prehľadajte všetky oprávnenia pridelené tomuto modulu v členských premenných triedy <span class="txt-color">FileManagementPermissions</span>.';
+
+
+
+
+                // For In this doc section
+                document.getElementById('inthisdoc').innerHTML = 'v tomto dokumente';
+document.getElementById('reaui').innerHTML = '<a href="#react" class="text-black">React užívateľské rozhranie</a>';
+document.getElementById('setblb').innerHTML = '<a href="#react" class="text-black">Nastaviť poskytovateľa BLOB</a>';
+document.getElementById('pgsa').innerHTML = '<a href="#pac" class="text-black">Balíky</a>';
+document.getElementById('useint').innerHTML = '<a href="#pac" class="text-black">Rozhranie</a>';
+document.getElementById('menuits').innerHTML = '<a href="#pac" class="text-black">Položky menu</a>';
+document.getElementById('pagg').innerHTML = '<a href="#pac" class="text-black">Stránky</a>';
+document.getElementById('folds').innerHTML = '<a href="#folders" class="text-black">Priečinky</a>';
+document.getElementById('fillss').innerHTML = '<a href="#files" class="text-black">Súbory</a>';
+document.getElementById('dataseeds').innerHTML = '<a href="#dataSeed" class="text-black">Dáta na výsevku</a>';
+document.getElementById('intes').innerHTML = '<a href="#dataSeed" class="text-black">Vnútornosti</a>';
+document.getElementById('texttemps').innerHTML = '<a href="#ttc" class="text-black">Obsah textovej šablóny</a>';
+document.getElementById('appslayers').innerHTML = '<a href="#app" class="text-black">Vrstva aplikácie</a>';
+document.getElementById('Connectionstringss').innerHTML = '<a href="#app" class="text-black">Reťazec pripojenia</a>';
+document.getElementById('perms').innerHTML = '<a href="#permissions" class="text-black">Oprávnenia</a>';
+
+
+
+
+                // Body Content
+
+
+            }
+            else if (selectedLanguage === 'German') {
+                // Inhalt des Dokuments
+document.getElementById('filemgt').innerHTML = 'Dateiverwaltung Modul';
+document.getElementById('thismduse').innerHTML = 'Dieses Modul wird zum Herunterladen, Hochladen und Organisieren von Dateien in einer hierarchischen Ordnerstruktur verwendet. Es unterstützt auch Mandantenfähigkeit, und Sie können ein Gesamtlimit für die Größe eines Mandanten festlegen.';
+document.getElementById('react').innerHTML = 'Dieses Modul basiert auf dem <a href="https://docs.abp.io/en/abp/latest/Blob-Storing">BLOB-Speichersystem</a> und kann verschiedene BLOB-Speicheranbieter für die Dateiinhalte verwenden.';
+document.getElementById('seedes').innerHTML = 'Besuchen Sie die <a href="https://commercial.abp.io/modules/Volo.FileManagement">Modulseite</a> für eine Übersicht über die Funktionen dieses Moduls.';
+document.getElementById('uireact').innerHTML = 'React UI';
+document.getElementById('baseonthe').innerHTML = 'Das Dateiverwaltungsmodul basiert auf dem zuvor definierten <a href="https://docs.abp.io/en/abp/latest/Blob-Storing">BLOB-Speichersystem</a> und nutzt den Container <span class="txt-color">FileManagementContainer</span> als BLOB-Speicher.';
+document.getElementById('blobprovide').innerHTML = 'BLOB-Speicheranbieter einstellen';
+document.getElementById('filemgtmod').innerHTML = 'Das Dateiverwaltungsmodul basiert auf dem zuvor definierten <a href="https://docs.abp.io/en/abp/latest/Blob-Storing">BLOB-Speichersystem</a> und nutzt den Container <span class="txt-color">FileManagementContainer</span> als BLOB-Speicher.';
+document.getElementById('mustset').innerHTML = 'Sie müssen einen BLOB-Speicheranbieter für den FileManagementContainer-Container einstellen.';
+document.getElementById('cpyy').innerHTML = 'Kopie';
+document.getElementById('pac').innerHTML = 'Besuchen Sie die <a href="https://docs.abp.io/en/abp/latest/Blob-Storing#blob-storage-providers">Dokumentation zu BLOB-Speicheranbietern</a> für weitere Informationen zu den Anbietern und ihrer Verwendung.';
+document.getElementById('pgs').innerHTML = 'Pakete';
+document.getElementById('followsthe').innerHTML = 'Dieses Modul folgt den <a href="https://docs.abp.io/en/abp/latest/Best-Practices/Index">Best Practices für die Modulentwicklung</a> und besteht aus mehreren NuGet- und NPM-Paketen. Eine Übersicht über die Pakete und ihre Beziehungen finden Sie im Handbuch.';
+document.getElementById('canvisit').innerHTML = 'Sie können die <a href="https://abp.io/packages?moduleName=Volo.FileManagement">Paketsseite des Dateiverwaltungsmoduls</a> besuchen, um eine Liste der mit diesem Modul verbundenen Pakete zu erhalten.';
+document.getElementById('UInter').innerHTML = 'Benutzeroberfläche';
+document.getElementById('menitem').innerHTML = 'Menüpunkte';
+document.getElementById('modadds').innerHTML = 'Das Dateiverwaltungsmodul fügt folgende Menüpunkte zum "Hauptmenü" unter "Verwaltung" hinzu:';
+document.getElementById('allfold').innerHTML = '<Strong>Dateiverwaltung</Strong>: Listet alle Ordner und Dateistruktur auf.';
+document.getElementById('filemenuname').innerHTML = 'In der Klasse <span class="txt-color">FileManagementMenuNames</span> sind Konstanten für die Menüpunkt-Namen definiert.';
+document.getElementById('pas').innerHTML = 'Seiten';
+document.getElementById('fgt').innerHTML = 'Dateiverwaltung';
+document.getElementById('folders').innerHTML = 'Auf der Dateiverwaltungsseite können Sie Ordner erstellen, Dateien hochladen und eine Liste der in der Anwendung gespeicherten Ordner und Dateien anzeigen.';
+document.getElementById('fder').innerHTML = 'Ordner';
+document.getElementById('byclick').innerHTML = 'Um einen neuen Ordner zu erstellen, klicken Sie auf die Schaltfläche <span class="txt-color">Ordner erstellen</span> in der rechten oberen Ecke der Seite. Der Ordner wird im aktuellen Verzeichnis erstellt.';
+document.getElementById('canmove').innerHTML = 'Sie können einen Ordner mit Hilfe der linken Baumstruktur in eine andere Verzeichnisstruktur verschieben.';
+document.getElementById('folderby').innerHTML = 'Sie können einen Ordner umbenennen, indem Sie auf die Fläche klicken und dann auf <span class="txt-color">Aktionen -> Umbenennen</span> klicken.';
+document.getElementById('fls').innerHTML = 'Dateien';
+document.getElementById('willopen').innerHTML = 'Um Dateien hochzuladen, klicken Sie auf die Schaltfläche <span class="txt-color">Dateien hochladen</span> in der rechten oberen Ecke der Seite. Dadurch wird ein neuer Modaldialog geöffnet, der es Ihnen ermöglicht, lokale Dateien zum Hochladen auszuwählen. Die Dateien werden im Arbeitsverzeichnis gespeichert.';
+document.getElementById('movefiles').innerHTML = 'Sie können Dateien verschieben, indem Sie auf die Schaltfläche <span class="txt-color">Aktionen -> Verschieben</span> in der Tabellenansicht klicken.';
+document.getElementById('dataSeed').innerHTML = 'Um eine Datei in der Tabelle umzubenennen, klicken Sie auf <span class="txt-color">Aktionen -> Umbenennen</span>.';
+document.getElementById('dse').innerHTML = 'Datensatz mit Daten';
+document.getElementById('thismodule').innerHTML = 'Dieses Modul erstellt keine Datensätze mit Daten.';
+document.getElementById('inte').innerHTML = 'Internes';
+document.getElementById('domlay').innerHTML = 'Domänenschicht';
+document.getElementById('ttc').innerHTML = 'Textvorlagen';
+document.getElementById('modfoll').innerHTML = 'Dieses Modul folgt den <a href="https://docs.abp.io/en/abp/latest/Best-Practices/Entities">Best Practices und Vereinbarungen für Entitäten</a>.';
+document.getElementById('textteml').innerHTML = 'TextTemplateContent';
+document.getElementById('desct').innerHTML = 'Klasse <span class="txt-color">DirectoryDescriptor</span> (komplex) - stellt einen Ordner dar.';
+document.getElementById('filedesct').innerHTML = 'Klasse <span class="txt-color">FileDescriptor</span> (komplex) - stellt eine Datei dar.';
+document.getElementById('rep').innerHTML = 'Repositorien';
+document.getElementById('modfollo').innerHTML = 'Dieses Modul folgt den <a href="https://docs.abp.io/en/abp/latest/Best-Practices/Repositories">Best Practices und Vereinbarungen für Repositorien</a>.';
+document.getElementById('customrepo').innerHTML = 'Dieses Modul verwendet die folgenden benutzerdefinierten Repositorien:';
+document.getElementById('idirect').innerHTML = '<span class="txt-color">IDirectoryDescriptorRepository</span>';
+document.getElementById('ifile').innerHTML = '<span class="txt-color">IFileDescriptorRepository</span>';
+document.getElementById('domer').innerHTML = 'Domänendienste';
+document.getElementById('bestpract').innerHTML = 'Dieses Modul folgt den <a href="https://docs.abp.io/en/abp/latest/Best-Practices/Domain-Services">Best Practices und Vereinbarungen für Domänendienste</a>.';
+document.getElementById('dmm').innerHTML = 'Verwaltung von Verzeichnissen';
+document.getElementById('rem').innerHTML = '<span class="txt-color">DirectoryManager</span> ermöglicht es Ihnen, Ihre Ordner zu verwalten, einschließlich Erstellen, Umbenennen, Verschieben und Löschen.';
+document.getElementById('fileman').innerHTML = 'Dateiverwaltung';
+document.getElementById('isuse').innerHTML = '<span class="txt-color">DirectoryManager</span> ermöglicht es Ihnen, Ihre Ordner zu verwalten, einschließlich Erstellen, Umbenennen, Verschieben und Löschen.';
+document.getElementById('sets').innerHTML = 'Einstellungen';
+document.getElementById('defineany').innerHTML = 'Dieses Modul hat keine spezifischen Parameter definiert.';
+document.getElementById('app').innerHTML = 'Anwendungseigenschaften';
+document.getElementById('ucanen').innerHTML = 'Sie können dieses Modul für jeden Mandanten aktivieren oder deaktivieren und die maximale Größe des Speichers für jeden Mandanten festlegen. Eine Übersicht über die Eigenschaften dieses Moduls finden Sie in der Artikel über die Klassenmitglieder von <span class="txt-color">FileManagementAppService</span>.';
+document.getElementById('applay').innerHTML = 'Anwendungsschicht';
+document.getElementById('appservices').innerHTML = 'Anwendungsdienste';
+document.getElementById('ofthefile').innerHTML = '<span class="txt-color">DirectoryDescriptorAppService</span> (implementiert <span class="txt-color">IDirectoryDescriptorAppService</span>): implementiert Anwendungsfälle für die Dateiverwaltung.';
+document.getElementById('filedes').innerHTML = '<span class="txt-color">FileDescriptorAppServiceFileDescriptorAppService</span> (implementiert <span class="txt-color">IFileDescriptorAppService</span>): implementiert Anwendungsfälle für die Dateiverwaltung.';
+document.getElementById('datapro').innerHTML = 'Datenanbieter';
+document.getElementById('ccc').innerHTML = 'Allgemein';
+document.getElementById('prefics').innerHTML = 'Tabellen-/Sammlungsprefix und Schema';
+document.getElementById('coluse').innerHTML = 'Für alle Tabellen/Sammlungen wird standardmäßig das Präfix <span class="txt-color">Fm</span> verwendet. Wenn Sie das Tabellenpräfix ändern oder ein Schema (sofern Ihr Datenbankanbieter dies unterstützt) angeben möchten, legen Sie die statischen Eigenschaften in der Klasse <span class="txt-color">FileManagementDbProperties</span> fest.';
+document.getElementById('connstrng').innerHTML = 'Verbindungszeichenfolge';
+document.getElementById('moduses').innerHTML = 'Dieses Modul verwendet den Verbindungsname <span class="txt-color">FileManagement</span>. Wenn Sie diesen Namen nicht angeben, wird die Standardverbindungszeichenfolge <span class="txt-color">Default</span> verwendet.';
+document.getElementById('fordetails').innerHTML = 'Weitere Informationen zu Verbindungszeichenfolgen finden Sie im Artikel über <a href="https://docs.abp.io/en/abp/latest/Connection-Strings">Verbindungszeichenfolgen</a>.';
+document.getElementById('efcore').innerHTML = 'Entity Framework Core';
+document.getElementById('tabless').innerHTML = 'Tabellen';
+document.getElementById('cills').innerHTML = 'Sammlungen';
+document.getElementById('permissions').innerHTML = 'Berechtigungen';
+document.getElementById('thismod').innerHTML = 'Schauen Sie sich alle diesem Modul zugewiesenen Berechtigungen in den Klassenvariablen von <span class="txt-color">FileManagementPermissions</span> an.';
+
+// In diesem Dokument-Abschnitt
+document.getElementById('inthisdoc').innerHTML = 'tässä asiakirjassa';
+document.getElementById('reaui').innerHTML = '<a href="#react" class="text-black">React-käyttöliittymä</a>';
+document.getElementById('setblb').innerHTML = '<a href="#react" class="text-black">Aseta BLOB-tarjoaja</a>';
+document.getElementById('pgsa').innerHTML = '<a href="#pac" class="text-black">Paketit</a>';
+document.getElementById('useint').innerHTML = '<a href="#pac" class="text-black">Käyttöliittymä</a>';
+document.getElementById('menuits').innerHTML = '<a href="#pac" class="text-black">Valikkokohteet</a>';
+document.getElementById('pagg').innerHTML = '<a href="#pac" class="text-black">Sivut</a>';
+document.getElementById('folds').innerHTML = '<a href="#folders" class="text-black">Kansiot</a>';
+document.getElementById('fillss').innerHTML = '<a href="#files" class="text-black">Tiedostot</a>';
+document.getElementById('dataseeds').innerHTML = '<a href="#dataSeed" class="text-black">Data Seed</a>';
+document.getElementById('intes').innerHTML = '<a href="#dataSeed" class="text-black">Sisäosat</a>';
+document.getElementById('texttemps').innerHTML = '<a href="#ttc" class="text-black">Tekstimallin sisältö</a>';
+document.getElementById('appslayers').innerHTML = '<a href="#app" class="text-black">Sovelluskerros</a>';
+document.getElementById('Connectionstringss').innerHTML = '<a href="#app" class="text-black">Yhteysmerkkijono</a>';
+document.getElementById('perms').innerHTML = '<a href="#permissions" class="text-black">Käyttöoikeudet</a>';
+
+
+            } 
+            else if (selectedLanguage === 'spanish') {
+            } else {
+
+            }
+        });
+    });
+</script>
+
+</html>

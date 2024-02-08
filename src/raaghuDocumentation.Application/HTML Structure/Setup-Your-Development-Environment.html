@@ -1,0 +1,1024 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- bootstrap dependencies -->
+    <link rel="stylesheet" href="Assets/css/bootstrap.min.css">
+    <link href="Assets/prism.css" rel="stylesheet" />
+    <script src="Assets/prism.js"></script>
+    <link rel="stylesheet" href="/index.css">
+     <link rel="icon" type="image/x-icon" href="Assets/images/raaghu-icon.png">
+    <title>Raaghu - Setup Your Development Environment</title>
+</head>
+
+
+<body>
+
+    <main>
+
+        <nav class="navbar navbar-expand-lg navbar-light  ">
+            <div class="container-fluid ">
+                <div class="navbar-toggler-container">
+                    <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#sidebar,#navbarSupportedContent"
+                        aria-controls="sidebar" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <!-- <div class="dropdown show dropdown-specific">
+                        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Platform
+                        </a>
+
+                        <div class="dropdown-menu menu" aria-labelledby="dropdownMenuLink">
+                            <a class="dropdown-item" href="https://www.raaghu.io/features.html">Features</a>
+                            <a class="dropdown-item " href="https://portal.raaghu.io/">Documentation</a>
+                            <button type="button" class="btn btn-primary btn-contact mt-2">contact</button>
+                            <a href="https://github.com/Wai-Technologies/raaghu-angular" target="_blank">
+                                <li class="ps-lg-5 mt-2">
+                                    <img src="Assets/images/github-logo.svg" alt="abplogo logo" width="100%"
+                                        class="github-logo">
+                                </li>
+                            </a>
+                        </div>
+                    </div> -->
+                </div>
+                <a class="text-black navbar-brand" href="/">
+                    <img src="Assets/images/raaghu_logs.png" alt="raaghu logo" class="w-75  pe-lg-0">
+                </a>
+
+                <div class="collapse navbar-collapse align  justify-content-lg-end " id="navbarSupportedContent">
+                    <ul class="navbar-nav  mb-2 mb-lg-0 ">
+                        <li class="nav-item me-5">
+                            <a class="nav-link active " aria-current="page"
+                                href="https://raaghu-website-staging.netlify.app/raaghu-mfe-portal/_accordion.html">Components</a>
+                        </li>
+                        <li class="nav-item me-5">
+                            <a class="nav-link active " aria-current="page"
+                                href="#"><span class="doc-color">Documentation</span></a>
+                        </li>
+                        <li class="nav-item me-5">
+                            <a class="nav-link active " aria-current="page"
+                                href="https://raaghu-website-staging.netlify.app/raaghu-mfe-portal/_accordion.html#">Support</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link active " aria-current="page"
+                                href="https://raaghu-website-staging.netlify.app/faq">FAQ</a>
+                        </li>
+                        <!-- <li class=" nav-item dropdown active">
+                            <a class="nav-link  text-dark me-5" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Platform
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-center " aria-labelledby="navbarDropdown">
+                                <ul class="list-unstyled dropdown-arrow">
+                                    <li class=" ps-4">
+                                        <p class="title pt-2">Raaghu Platform</p>
+                                        <div class="row">
+                                            <div class="col-lg-6 col-md-6">
+                                                <a href="https://portal.raaghu.io/" target="_blank"
+                                                    class="p-0 text-decoration-none text-reset">
+                                                    <div class="d-flex align-items-center gap-3">
+
+                                                        <img src="Assets/images/raaghu-portal-mg.svg"
+                                                            alt="raaghu-portal" class="mb-3">
+                                                        <p class="link-name">Raaghu Portal</p>
+
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="col-lg-6 col-md-6">
+                                                <a href="https://portal.raaghu.io/#Components-section" target="_blank"
+                                                    class="p-0 text-decoration-none text-reset">
+                                                    <div class="d-flex align-items-center gap-3">
+                                                        <img src="Assets/images/raaghu-components-mg.svg"
+                                                            alt="raaghu-components" class="mb-3">
+                                                        <p class="link-name">Raaghu Components</p>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-6 col-md-6">
+                                                <a href="https://portal.raaghu.io/#Elements-section" target="_blank"
+                                                    class="p-0 text-decoration-none text-reset">
+                                                    <div class="d-flex align-items-center gap-3">
+                                                        <img src="Assets/images/raaghu-elements-mg.svg"
+                                                            alt="raaghu-portal" class="mb-2">
+                                                        <p class="pt-2 link-name">Raaghu Elements</p>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="col-lg-6 col-md-6">
+                                                <div class="d-flex align-items-center gap-3">
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="bgcolor-dropdown">
+                                        <div class="ps-4">
+                                            <p class="pt-3 pb-1 title">WORKS ON</p>
+                                            <div class="row">
+                                                <div class="col-md-2 mb-2">
+                                                    <img src="Assets/images/asplogo-mg.svg" alt="asplogo logo"
+                                                        width="80%">
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <img src="Assets/images/abplogo-mg.svg" alt="abplogo logo"
+                                                        width="50%">
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item me-5">
+                            <a class="nav-link active " aria-current="page"
+                                href="https://www.raaghu.io/features.html">Features</a>
+                        </li>
+                        <li class="nav-item me-5">
+                            <a class="nav-link active " aria-current="page"
+                                href="https://portal.raaghu.io/">Documentation</a>
+                        </li>
+                        <button type="button" class="btn btn-primary btn-contact">contact</button>
+                        <a href="https://github.com/Wai-Technologies/raaghu-angular" target="_blank">
+                            <li class="ps-lg-5 pt-2">
+                                <img src="Assets/images/github-logo.svg" alt="abplogo logo" width="100%"
+                                    class="github-logo">
+                            </li>
+                        </a> -->
+                    </ul>
+                </div>
+</div>
+        </nav>
+
+        <div class="wrapper container-fluid">
+
+            <div class="row">
+
+                <div id="sidebar" class="col-12 col-lg-2 col-md-4 col-xl-2 col-xxl-2 collapse d-m-block mx-0 mx-lg-3 mx-md-3 mx-xl-3 mx-xxl-3 show">
+
+                    <nav>
+                        <div class="sidebar-header ">
+                            <a href="/" class="text-bg-dark">
+                                <h3 class="fs-5 fw-normal" id="tableOfContent">Table Of Content</h3>
+                            </a>
+                        </div>
+
+                        <div class="accordion accordion-flush mx-3 doc-acc accordion-button-top"
+                            id="accordionExample">
+                            <div class="row pb-4">
+                                <div class="col-6 col-lg-6 col-md-6">
+                                    <select id="language-dropdown" class="sidebar-button">
+                                        <option value="en" selected>English</option>
+                                        <option value="pt">Português</option>
+                                        <option value="fr">French</option>
+                                        <option value="fi">Finnish</option>
+                                        <option value="hi">Hindi</option>
+                                        <option value="it">Italian</option>                                        
+                                        <option value="sk">Slovak</option>
+                                        <option value="de">German</option>
+                                        <option value="ru">Russian</option>
+                                        <option value="zh">Chinese</option>
+                                        <option value="af">Afrikaan</option>
+                                        <option value="ar">Arabic</option>
+                                        <!-- Add more language options if needed -->
+                                    </select>
+                                </div>
+                                <div class="col-6 col-lg-6 col-md-6">
+                                    <select class="sidebar-button w-100">
+                                        <option value="option1" id="version">Version</option>
+                                        <option value="option2" id="version">Version 2</option>
+                                        <option value="option3">Version 3</option>
+                                        <option value="option4">Version 4</option>
+                                    </select>
+
+                                </div>
+                            </div>
+                            <div class="accordion-item bg-dark">
+                                <h2 class="accordion-header" id="headingOne">
+                                    <a href="Getting-Started.html">
+                                    <button
+                                        class="accordion-button d-flex flex-row-reverse justify-content-end p-0 bg-dark mt-1"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#coll"
+                                        aria-expanded="true" aria-controls="collapseOne" id="Getting">
+                                        Getting Started
+                                    </button></a>
+                                </h2>
+
+                                <div id="coll" class="accordion-collapse collapse show border-0 rounded-0 p-0"
+                                    aria-labelledby="headOne" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Setup-Your-Development-Environment.html" ><span class="accordian-active" id="setupDev">Setup your development
+                                            environment</span></a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Creating-A-New-Solution.html" id="creatingNewSol">Creating A New Solution</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Running-The-Solution.html" id="runningTheSol">Running the Solution</a>
+                                    </div>
+                                </div>
+                                <h2 class="accordion-header" id="headingTwo">
+                                    <button
+                                        class="accordion-button d-flex flex-row-reverse justify-content-end p-0 bg-dark mt-2"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                        aria-expanded="false" aria-controls="collapseOne" id="tut">
+                                        Tutorials
+                                    </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse  border-0 rounded-0 p-0"
+                                    aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <h2 class="accordion-header" id="headingTwo">
+                                            <button
+                                                class="accordion-button d-flex flex-row-reverse justify-content-end p-0 bg-dark mt-2"
+                                                type="button" data-bs-toggle="collapse"
+                                                data-bs-target="#collapseThree" aria-expanded="false"
+                                                aria-controls="collapseOne" id="webAppDev">
+                                                Web Application Development
+                                            </button>
+                                        </h2>
+                                        <div id="collapseThree"
+                                            class="accordion-collapse collapse  border-0 rounded-0 p-0 pt-2"
+                                            aria-labelledby="headingTwo" data-bs-parent="#accordionExamplee">
+                                            <div class="accordion-body bg-dark px-4 p-1">
+                                                <a href="Creating-The-Server-Side.html" id="creatingServer">Creating the Server
+                                                    Side</a>
+                                            </div>
+                                        </div>
+                                        <div id="collapseThree"
+                                            class="accordion-collapse collapse  border-0 rounded-0 p-0"
+                                            aria-labelledby="headingTwo" data-bs-parent="#accordionExamplee">
+                                            <div class="accordion-body bg-dark px-4 p-1">
+                                                <a href="The-Book-List-Page.html" id="bookList">The Book List Page</a>
+                                            </div>
+                                        </div>
+                                        <div id="collapseThree"
+                                            class="accordion-collapse collapse  border-0 rounded-0 p-0"
+                                            aria-labelledby="headingTwo" data-bs-parent="#accordionExamplee">
+                                            <div class="accordion-body bg-dark px-4 p-1">
+                                                <a href="Creating-Updating-And-Deleting-Book.html" id="creatingUpdating">Creating,Updating
+                                                    And
+                                                    Deleting Book</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <h2 class="accordion-header" id="headingFour">
+                                    <button
+                                        class="accordion-button d-flex flex-row-reverse justify-content-end p-0 bg-dark mt-2"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour"
+                                        aria-expanded="false" aria-controls="collapseOne" id="guides">
+                                        Guides
+                                    </button>
+                                </h2>
+                                <div id="collapseFour" class="accordion-collapse collapse  border-0 rounded-0 p-0"
+                                    aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Customizing-The-Modules.html" id="customizingTheModules">Customizing the Modules</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Identity-Server-Deployment.html" id="identityServerDeploy">Identity Server Deployment</a>
+                                    </div>
+                                </div>
+
+
+                                <h2 class="accordion-header" id="headingFive">
+                                    <button
+                                        class="accordion-button d-flex flex-row-reverse justify-content-end p-0 bg-dark mt-2"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive"
+                                        aria-expanded="false" aria-controls="collapseOne" id="samples">
+                                        Samples
+                                    </button>
+                                </h2>
+                                <div id="collapseFive" class="accordion-collapse collapse  border-0 rounded-0 p-0"
+                                    aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="All-Samples.html" id="allSamples">All Samples</a>
+                                    </div>
+                                </div>
+                                <h2 class="accordion-header" id="headingSix">
+                                    <a href="Startup-Template.html">
+                                    <button
+                                        class="accordion-button d-flex flex-row-reverse justify-content-end p-0 bg-dark mt-2"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix"
+                                        aria-expanded="false" aria-controls="collapseOne" id="startupTemplate">
+                                        Startup Template
+                                    </button></a>
+                                </h2>
+                                <div id="collapseSix" class="accordion-collapse collapse  border-0 rounded-0 p-0"
+                                    aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <h2 class="accordion-header" id="headingSix">
+                                            <button
+                                                class="accordion-button d-flex flex-row-reverse justify-content-end p-0 bg-dark mt-2"
+                                                type="button" data-bs-toggle="collapse" data-bs-target="#headingS"
+                                                aria-expanded="false" aria-controls="collapseOne">
+                                                Application Templates
+                                            </button>
+                                        </h2>
+                                        <div id="headingS"
+                                            class="accordion-collapse collapse  border-0 rounded-0 p-0 pt-2"
+                                            aria-labelledby="headingSix" data-bs-parent="#accordionExamplee">
+                                            <div class="accordion-body bg-dark px-4 p-1">
+                                                <a href="Creating-Solution.html">Creating Solution</a>
+                                            </div>
+                                        </div>
+                                        <div id="headingS"
+                                            class="accordion-collapse collapse  border-0 rounded-0 p-0"
+                                            aria-labelledby="headingSix" data-bs-parent="#accordionExamplee">
+                                            <div class="accordion-body bg-dark px-4 p-1">
+                                                <a href="Solution-Structure.html">Solution Structure</a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                                <h2 class="accordion-header" id="headingSeven">
+                                    <button
+                                        class="accordion-button d-flex flex-row-reverse justify-content-end p-0 bg-dark mt-2"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven"
+                                        aria-expanded="false" aria-controls="collapseOne" id="appModules">
+                                        Application Modules
+                                    </button>
+                                </h2>
+                                <div id="collapseSeven" class="accordion-collapse collapse  border-0 rounded-0 p-0"
+                                    aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Overall.html" id="overall">Overall</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Account-Module.html" id="ac">Account</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Audit-Logging.html" id="auditLogging">Audit Logging</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Chat.html" id="chat">Chat</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="CMS-Kit-Pro.html" id="CMS">CMS Kit Pro</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="File-Management.html" id="fileMgt">File Management</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Forms.html" id="forms">Forms</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Identity.html" id="identity">Identity</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="OpenIddict.html" id="OpenIddict">OpenIddict</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Language-Management.html" id="languageMgt">Language Management</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Payment.html" id="payment">Payment</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="SaaS.html" id="saas">SaaS</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Text-Template-Management.html" id="ttm">Text Template Management</a>
+                                    </div>
+                                </div>
+                                <h2 class="accordion-header" id="headingNine">
+                                    <a href="UI-Themes.html">
+                                        <button
+                                            class="accordion-button d-flex flex-row-reverse justify-content-end p-0 bg-dark mt-2"
+                                            type="button" data-bs-toggle="collapse" data-bs-target="#headingNine"
+                                            aria-expanded="false" aria-controls="collapseOne" id="ui">
+                                            UI Themes
+                                        </button>
+                                    </a>
+                                </h2>
+                                <h2 class="accordion-header" id="headingReactUITheme">
+                                    <button
+                                        class="accordion-button d-flex flex-row-reverse justify-content-end p-0 bg-dark mt-2"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#headingReactUI"
+                                        aria-expanded="false" aria-controls="collapseOne" id="reactUI">
+                                        React UI
+                                    </button>
+                                </h2>
+                                <div id="headingReactUI" class="accordion-collapse collapse  border-0 rounded-0 p-0"
+                                    aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Customization.html" id="custom">customization</a>
+                                    </div>
+
+                                </div>
+                                <div id="headingReactUI" class="accordion-collapse collapse  border-0 rounded-0 p-0"
+                                    aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Components.html" id="compo">Components</a>
+                                    </div>
+
+                                </div>
+                                <!-- For Release Information -->
+                                <h2 class="accordion-header" id="headingFive">
+                                    <button
+                                        class="accordion-button d-flex flex-row-reverse justify-content-end p-0 bg-dark mt-2"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseLast"
+                                        aria-expanded="false" aria-controls="collapseOne" id="samples">
+                                       <span id="relinfo">Release Information</span> 
+                                    </button>
+                                </h2>
+                                <div id="collapseLast" class="accordion-collapse collapse  border-0 rounded-0 p-0"
+                                    aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Release-Notes.html" id="allSamples"><span id="relnote">Release Notes</span></a>
+                                    </div>
+                                </div>
+                                <!-- ====================================== -->
+                            </div>
+                        </div>
+                        <ul class="list-unstyled CTAs  w-100">
+                            <li>
+                                <a href="https://bootstrapious.com/tutorial/files/sidebar.zip"
+                                    class="download" id="downloadSource">Download
+                                    source</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="col-12 col-lg-8 col-md-7 col-xl-6 col-xxl-6 offset-lg-4 offset-md-5 offset-xl-3 offset-xxl-3 ps-xl-5 ps-xxl-0 px-lg-3 px-md-4 px-xl-0">
+
+                    <!-- Page Content  -->
+                    <div id="content">
+                        <div class="modal fade" id="contactusModal" tabindex="-1" aria-labelledby="contactusModalLabel" aria-hidden="true">
+
+                            <div class="modal-dialog modal-lg modal-dialog-centered">
+                  
+                              <div class="modal-content">
+                  
+                                <!-- <div class="modal-header">
+                  
+                                  <h5 class="modal-title" id="contactusModalLabel">Modal title</h5>
+                  
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  
+                                </div> -->
+                  
+                                <div class="modal-body p-0">
+                  
+                  
+                  
+                  
+                                      <div class="row">
+                  
+                                          <div class="col-md-6 col-sm-12 bg-dark">
+                  
+                                              <div class="mt-5">
+                  
+                                                  <img src="Assets/images/raaghu-logo-white.png" class="img-fluid w-25 pl-2">
+                  
+                                             
+                  
+                                                  <img src="Assets/images/raaghu-banner-modal.png" class="img-fluid">
+                  
+                                              </div>
+                  
+                                          </div>
+                  
+                                         
+                  
+                                          <div class="col-md-6 col-sm-12">
+                  
+                                              <div class="row">
+                  
+                                                  <div class="col-md-12 text-end pull-right">
+                  
+                                                      <button type="button" class="btn-close float-right pull-right m-3 text-muted" data-bs-dismiss="modal" aria-label="Close"></button>
+                  
+                                                  </div>
+                  
+                                              </div>
+                  
+                                              <div class="p-4">
+                  
+                                                  <h6>
+                  
+                                                      Kindly fill the details below
+                  
+                                                  </h6>
+                  
+                                                  <p>
+                  
+                                                     <small> We will get back to you within 48 hours </small>
+                  
+                                                  </p>
+                  
+                                                  <div class="mt-5">
+                  
+                                                      <form method="post" id="want-to-hear-form">
+                  
+                                                          <div class="mb-3 form-group">
+                  
+                                                              <label for="emailId" class="form-label">Email ID
+                  
+                                                                  <span class="text-danger">*</span>
+                  
+                                                              </label>
+                  
+                                                                  <input type="email" name="emailId" class="form-control p-2" id="emailId"
+                  
+                                                                      placeholder="Enter your email id">
+                  
+                                                          </div>
+                  
+                                                          <div class="mb-3 form-group">
+                  
+                                                              <label for="companyName" class="form-label">Company Name
+                  
+                                                                  <span class="text-danger">*</span>
+                  
+                                                              </label>
+                  
+                                                                  <input type="text" class="form-control p-2"
+                  
+                                                                      placeholder="Enter your Company Name" name="companyName"
+                  
+                                                                      id="companyName">
+                  
+                                                          </div>
+                  
+                                                          <div class="mb-3 form-group">
+                  
+                                                              <label for="message" class="form-label">Message
+                                                                <span class="contactUs-Optional">(Optional)</span>
+
+                  
+                                                              </label>
+                  
+                                                                  <textarea class="form-control p-2" name="message" id="message" rows="3"
+                  
+                                                                      placeholder="Write your message.."></textarea>
+                  
+                                                          </div>
+                  
+                                                          <div class="mb-3 form-check">
+                  
+                                                              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  
+                                                              <label class="form-check-label" for="exampleCheck1">I agree to the <a href="#"> terms & privacy policy </a></label>
+                  
+                                                          </div>
+                  
+                                                          <button type="submit" class="btn btn-primary btn-sm btn-block float-end mb-4">Submit</button>
+                  
+                                                      </form>
+                  
+                                                  </div>
+                  
+                                              </div>
+                  
+                                          </div>
+                  
+                                      </div>
+                  
+                                </div>
+                  
+                              </div>
+                  
+                            </div>
+                  
+                          </div>
+                        <div> <input class="form-control  mb-5" type="search" placeholder="Search"
+                            aria-label="Search"></div>
+
+                        <div>
+                            <h1 class="fw-semibold mb-3" id="gs">Getting Started</h1>
+                            <p id="thisTutabp">This tutorial assumes that you’ve already purchased an <a
+                                    href="https://commercial.abp.io/pricing">ABP Commercial license</a> and have an
+                                active ABP Commercial account.</p>
+                            <p id="docAssume">This document assumes that you refer to use raaghu-react Pages as the UI framework and
+                                Entity Framework Core as the database provider.</p>
+                        </div>
+                        <div>
+                            <h2 class="fw-semibold pt-3 pb-3" id="setup">Setup development environment</h2>
+                            <p class="pt-2" id="letSet">Let’s setup your development environment before creating the first project.
+                            </p>
+                        </div>
+                        <div>
+                            <h3 class="fw-semibold pt-3 pb-3" id="pre">Pre-requirements</h3>
+                            <p id="theFollowing">The following tools should be installed on your development machine.</p>
+                            <ul>
+                                <li class="mt-2" id="vss"><a href="https://visualstudio.microsoft.com/vs/">Visual Studio 2022</a>
+                                    (v17.3+) for Windows / <a href="https://visualstudio.microsoft.com/vs/mac/">Visual
+                                        Studio for Mac. 1</a></li>
+                                <li class="mt-2" id="net"><a href="https://dotnet.microsoft.com/en-us/download/dotnet">.NET
+                                        7.0+</a></li>
+                                <li class="mt-2" id="node"><a href="https://nodejs.org/en">Node v18</a> or above</li>
+                                <li class="mt-2" id="npm">npm v8 and above or <a
+                                        href="https://classic.yarnpkg.com/en/docs/install#windows-stable">Yarn v1.20+
+                                        (not v2) 2</a>.</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="fw-semibold pt-3 pb-3" id="install">Install the ABP CLI</h3>
+                            <p id="abpCli"><a href="https://docs.abp.io/en/abp/latest/CLI">ABP CLI</a> is a command line interface
+                                that is used to automate some common tasks for ABP based solutions.</p>
+                            <p id="abp"><a href="https://docs.abp.io/en/abp/latest/CLI">ABP CLI</a> is a free & open source tool
+                                for the ABP framework. It is also used for ABP Commercial application development.</p>
+                            <p id="first">First, you need to install the ABP CLI using the following command:</p>
+                            <pre
+                                class="my-4"><code class="language-javascript">dotnet tool install -g Volo.Abp.Cli</code></pre>
+                            <p id="ifYou">If you've already installed, you can update it using the following command:</p>
+                            <pre
+                                class="my-4"><code class="language-javascript">dotnet tool update -g Volo.Abp.Cli</code></pre>
+                        </div>
+                        <div>
+                            <h3 class="fw-semibold pt-3 pb-3" id="log">Login to your account</h3>
+                            <p id="inOrderCli">In order to use ABP Commercial features, you need to login your account using the ABP
+                                CLI:</p>
+                            <pre class="my-4"><code class="language-javascript">abp login &lt;username&gt;</code></pre>
+                            <p id="itWill">It will ask a password, so you must enter the password of your account.</p>
+                            <p id="youCan">You can freely create a new account from the ABP Account web site. However, your account
+                                should be registered to an organization as a developer to be able to use the ABP
+                                Commercial. If your company has an ABP Commercial license, ask your manager to add your
+                                account to the developer list of the organization.</p>
+                        </div>
+                        <div>
+                            <h3 class="fw-semibold pt-3 pb-3" id="instas">Install the ABP Suite</h3>
+                            <p id="aSuite"><a href="https://docs.abp.io/en/commercial/7.2/abp-suite/index">ABP Suite</a> is an
+                                application aims to assist you on your development.</p>
+                            <p id="firstNeedToInstall">First, you need to install the ABP Suite:</p>
+                            <pre class="my-4"><code class="language-javascript">abp suite install</code></pre>
+                            <p id="ifYouHave">If you’ve already installed , you can update it:</p>
+                            <pre class="my-4"><code class="language-javascript">abp suite update</code></pre>
+                        </div>
+
+                        <div>
+                            <h3 class="fw-semibold pt-4 pb-3" id="next">Next Step</h3>
+                            <ul class="ps-3">
+                                <li id="creaTing"><a href="Creating-A-New-Solution.html">Creating a new solution</a></li>
+                            </ul>
+                        </div>
+                       
+
+
+                        
+                     
+
+                    </div>
+                </div>
+                <div class="col-12 col-lg-8 col-md-7 col-xl-2 col-xxl-2 docs-page-index offset-lg-4 offset-xl-0 offset-md-5 offset-xxl-0 px-md-4">
+                    <div class="position-fixed  my-3 w-auto mx-lg-0 mx-xl-3 mx-xxl-3 pe-lg-3 pe-xl-0 pe-xxl-0 position-lg-relative">
+                    <div class="card border-0 box rounded-3 mb-3">
+                        <div class="card-body">
+                            <h4 class="card-title py-1" id="inthisdoc">In this document</h4>
+                            <div class="opacity-50">
+                                <ul class="card-text small  list-unstyled ul-ad">
+                                <li id="secstp"><a href="#docAssume" class="text-black">Setup development environment</a></li>   
+<li id="secpre"><a href="#docAssume" class="text-black">Pre-requirements</a></li>  
+<li id="secabp"><a href="#docAssume" class="text-black">Install the ABP CLI</a></li>  
+<li id="seclog"><a href="#ifYou" class="text-black">Login to your account</a></li>  
+<li id="secsuite"><a href="#ifYou" class="text-black">Install the ABP Suite</a></li>  
+<li id="secnext"><a href="#next" class="text-black">Next Step</a></li>  
+                                </ul>
+                      </div>
+                      </div>
+                    </div>
+                    <div class="card  border-0 box  bg-advertise "  >
+                        <div class="card-body abp-community-card  rounded-3 bg-sec " >
+                            <div class="row  ">
+                                <div class="col-lg-5 col-md-5 col-5"> <img src="Assets/images/React_logo.png" alt="raaghu logo" class="w-100"></div>
+                                <div class="col-lg-7 mt-1  col-md-7 mt-1 col-7"> <img src="Assets/images/abp-sec.png" alt="raaghu logo" class="w-100"></div>
+                                <!-- <div class="col-lg-6"><img src="Assets/images/abp-com.svg" alt="raaghu logo" class="w-100"></div> -->
+                                
+                            </div>
+                            <div class="border-under-sec my-3"></div>
+                            <div class="colored-sec-design py-1">
+                                <ul class="ps-4">
+                                    <li>CLI for CRUD generation</li>
+                                    <li>Component driven development</li>
+                                    <li>Purpose build UI kit for ABP commercial</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <button type="button" class="btn btn-primary mt-1 w-100" data-bs-toggle="modal" data-bs-target="#contactusModal">Contact Us</button> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-0 col-12 docs-page-index">
+                    <div class="card mt-4 top-25 me-lg-4 border-0 shadow py-4">
+                        <div class="card-body">
+                            <h5 class="card-title">In This Document</h5>
+                            <p class="card-text small">Some quick example text to build on the card title and make up
+                                the bulk of the card's content.</p>
+
+                        </div>
+                    </div>
+                </div> -->
+
+            </div>
+</div>
+
+
+        </div>
+
+    </main>
+
+    <!-- bootstrap dependencies -->
+    <script src="Assets/js/bootstrap.min.js"></script>
+    <script src="scripts/translation.js"></script>
+</body>
+<script>
+    // Language Functionality Changes
+    debugger;
+    document.addEventListener('DOMContentLoaded', function () {
+        var languageDropdown = document.getElementById('language-dropdown');
+        languageDropdown.addEventListener('change', function () {
+            var selectedLanguage = languageDropdown.value;
+            if (selectedLanguage === 'pt') {
+                // Sidebar 
+                document.getElementById('tableOfContent').textContent = 'Índice';
+                document.getElementById('downloadSource').textContent = 'Fonte de download';
+                document.getElementById('version').textContent = 'Versão';
+                // =============================================================
+                document.getElementById('Getting').textContent = 'Recebendo';
+                document.getElementById('setupDev').textContent = 'Configure seu desenvolvimento ambiente';
+                document.getElementById('creatingNewSol').textContent = 'Criando uma nova solução';
+                document.getElementById('runningTheSol').textContent = 'Executando a Solução';
+                document.getElementById('tut').textContent = 'Tutoriais';
+                document.getElementById('webAppDev').textContent = 'Desenvolvimento de Aplicativos Web';
+                document.getElementById('creatingServer').textContent = 'Criando o servidor Lado';
+                document.getElementById('bookList').textContent = 'A página da lista de livros';
+                document.getElementById('creatingUpdating').textContent = 'Criando, Atualizando E Excluindo livro';
+                document.getElementById('guides').textContent = 'Guias';
+                document.getElementById('customizingTheModules').textContent = 'Personalizando os Módulos';
+                document.getElementById('identityServerDeploy').textContent = 'Implantação do servidor de identidade';
+                document.getElementById('samples').textContent = 'Amostras';
+                document.getElementById('allSamples').textContent = 'Todas as amostras';
+                document.getElementById('startupTemplate').textContent = 'Modelo de inicialização';
+                document.getElementById('appModules').textContent = 'Módulos de aplicativos';
+                document.getElementById('overall').textContent = 'Geral';
+                document.getElementById('ac').textContent = 'Conta';
+                document.getElementById('auditLogging').textContent = 'Log de auditoria';
+                document.getElementById('chat').textContent = 'Bater papo';
+                document.getElementById('CMS').textContent = 'CMS Kit Profissional';
+                document.getElementById('fileMgt').textContent = 'Gerenciamento de arquivos';
+                document.getElementById('forms').textContent = 'Formulários';
+                document.getElementById('identity').textContent = 'Identidade';
+                document.getElementById('OpenIddict').textContent = 'OpenIddict';
+                document.getElementById('languageMgt').textContent = 'Gerenciamento de idiomas';
+                document.getElementById('payment').textContent = 'Pagamento';
+                document.getElementById('saas').textContent = 'SaaS';
+                document.getElementById('ttm').textContent = 'Gerenciamento de modelo de texto';
+                document.getElementById('ui').textContent = 'Temas de IU';
+                document.getElementById('reactUI').textContent = 'IU de reação';
+                document.getElementById('custom').textContent = 'costumização';
+                document.getElementById('compo').textContent = 'Componentes';
+
+                // Body Content
+                document.getElementById('gs').textContent = 'Começando';
+                document.getElementById('thisTut').innerHTML = 'Este tutorial assume que você já comprou um <a href="https://commercial.abp.io/pricing">Licença Comercial ABP</a> e ter uma conta ABP Comercial ativa.';
+                document.getElementById('docAssume').textContent = 'Este documento pressupõe que você se refere ao uso de páginas raaghu-react como a estrutura de interface do usuário e  Entity Framework Core como provedor de banco de dados.';
+                document.getElementById('setup').textContent = 'Ambiente de desenvolvimento de configuração';
+                document.getElementById('letSet').textContent = 'Vamos configurar seu ambiente de desenvolvimento antes de criar o primeiro projeto.';
+                document.getElementById('pre').textContent = 'Pré requisitos';
+                document.getElementById('theFollowing').textContent = 'As seguintes ferramentas devem ser instaladas em sua máquina de desenvolvimento.';
+                document.getElementById('vss').innerHTML = '<a href="https://visualstudio.microsoft.com/vs/">Visual Studio 2022</a> (v17.3+) para Windows / <a href="https://visualstudio.microsoft.com/vs/mac/"> Visual Studio para Mac. 1</a>';
+                document.getElementById('net').innerHTML = '<a href="https://dotnet.microsoft.com/en-us/download/dotnet"> .LÍQUIDO 7.0+</a>';
+                document.getElementById('node').innerHTML = '<a href="https://nodejs.org/en"> Nó v18</a> ou acima';
+                document.getElementById('npm').innerHTML = 'npm v8 e superior ou <a href="https://classic.yarnpkg.com/en/docs/install#windows-stable"> Fio v1.20+ (não v2) 2</a>.';
+                document.getElementById('install').textContent = 'Instalar a CLI do ABP';
+                document.getElementById('abpCli').innerHTML = '<a href="https://docs.abp.io/en/abp/latest/CLI">ABP CLI</a> é uma interface de linha de comando usada para automatizar algumas tarefas comuns para soluções baseadas em ABP.';
+                document.getElementById('abp').innerHTML = '<a href="https://docs.abp.io/en/abp/latest/CLI">ABP CLI</a> é uma ferramenta gratuita e de código aberto para a estrutura ABP. Também é usado para desenvolvimento de aplicativos ABP Commercial.';
+                document.getElementById('first').textContent = 'Primeiro, você precisa instalar o ABP CLI usando o seguinte comando:';
+                document.getElementById('ifYou').textContent = 'Se você já instalou, pode atualizá-lo usando o seguinte comando:';
+                document.getElementById('log').textContent = 'Faça login na sua conta';
+                document.getElementById('inOrder').textContent = 'Para usar os recursos comerciais do ABP, você precisa fazer login na sua conta usando o ABP CLI:';
+                document.getElementById('itWill').textContent = 'Ele pedirá uma senha, então você deve digitar a senha da sua conta.';
+                document.getElementById('youCan').textContent = 'Você pode criar livremente uma nova conta no site da conta da ABP. No entanto, sua conta deve ser registrado em uma organização como desenvolvedor para poder usar o ABP Comercial. Se sua empresa possui uma licença ABP Comercial, peça ao seu gerente para adicionar seu conta para a lista de desenvolvedores da organização.';
+                document.getElementById('insta').textContent = 'Instale o pacote ABP';
+                document.getElementById('aSuite').innerHTML = '<a href="https://docs.abp.io/en/commercial/7.2/abp-suite/index"> Suíte ABP</a> é um aplicativo que visa auxiliá-lo em seu desenvolvimento.';
+                document.getElementById('first').textContent = 'Primeiro, você precisa instalar o ABP Suite:';
+                document.getElementById('ifYouHave').textContent = 'Se você já instalou , você pode atualizá-lo:';
+                document.getElementById('next').textContent = 'Próxima Etapa';
+                document.getElementById('creaTing').innerHTML = '<a href="Creating-A-New-Solution.html"> Criando uma nova solução</a>';
+            // For In this doc section
+                document.getElementById('inthisdoc').innerHTML = 'neste documento';
+                document.getElementById('secstp').innerHTML = '<a href="#docAssume" class="text-black">Configuração do ambiente de desenvolvimento</a>';
+                document.getElementById('secpre').innerHTML = '<a href="#docAssume" class="text-black">Pré-requisitos</a>';
+                document.getElementById('secabp').innerHTML = '<a href="#docAssume" class="text-black">Instalar o ABP CLI</a>';
+                document.getElementById('seclog').innerHTML = '<a href="#ifYou" class="text-black">Faça login na sua conta</a>';
+                document.getElementById('secsuite').innerHTML = '<a href="#ifYou" class="text-black">Instalar o ABP Suite</a>';
+                document.getElementById('secnext').innerHTML = '<a href="#next" class="text-black">Próximo passo</a>';
+             
+            }
+            else if (selectedLanguage === 'French') {
+                  // Sidebar 
+             document.getElementById('tableOfContent').textContent = 'Indice';
+                document.getElementById('downloadSource').textContent = 'source de téléchargement';
+                document.getElementById('version').textContent = 'Version';
+                // =============================================================
+                document.getElementById('Getting').textContent = 'recevoir';
+                document.getElementById('setupDev').textContent = 'Configurer votre environnement de développement';
+                document.getElementById('creatingNewSol').textContent = 'Créer une nouvelle solution';
+                document.getElementById('runningTheSol').textContent = 'Exécution de la solution';
+                document.getElementById('tut').textContent = 'tutoriels';
+                document.getElementById('webAppDev').textContent = 'Développement d\'applications Web';
+                document.getElementById('creatingServer').textContent = 'Création du côté serveur';
+                document.getElementById('bookList').textContent = 'La page de la liste des livres';
+                document.getElementById('creatingUpdating').textContent = 'Créer, mettre à jour et supprimer un livre';
+                document.getElementById('guides').textContent = 'guider';
+                document.getElementById('customizingTheModules').textContent = 'Personnalisation des modules';
+                document.getElementById('identityServerDeploy').textContent = 'Déploiement du serveur d\'identité';
+                document.getElementById('samples').textContent = 'Échantillons';
+                document.getElementById('allSamples').textContent = 'tous les échantillons';
+                document.getElementById('startupTemplate').textContent = 'modèle de démarrage';
+                document.getElementById('appModules').textContent = 'modules d\'application';
+                document.getElementById('overall').textContent = 'Général';
+                document.getElementById('ac').textContent = 'Compte';
+                document.getElementById('auditLogging').textContent = 'journal d\'audit';
+                document.getElementById('chat').textContent = 'Discuter';
+                document.getElementById('CMS').textContent = 'Kit professionnel CMS';
+                document.getElementById('fileMgt').textContent = 'gestion de fichiers';
+                document.getElementById('forms').textContent = 'Formes';
+                document.getElementById('identity').textContent = 'Identité';
+                document.getElementById('OpenIddict').textContent = 'OpenIddict';
+                document.getElementById('languageMgt').textContent = 'gestion des langues';
+                document.getElementById('payment').textContent = 'Paiement';
+                document.getElementById('saas').textContent = 'SaaS';
+                document.getElementById('ttm').textContent = 'Gestion des modèles de texte';
+                document.getElementById('ui').textContent = 'Thèmes d\'interface utilisateur';
+                document.getElementById('reactUI').textContent = 'interface utilisateur de réaction';
+                document.getElementById('custom').textContent = 'personnalisation';
+                document.getElementById('compo').textContent = 'Composants';
+
+                
+                // Body Content
+                document.getElementById('gs').textContent = 'Départ';
+                document.getElementById('thisTut').innerHTML = 'Ce didacticiel suppose que vous avez déjà acheté une <a href="https://commercial.abp.io/pricing">licence commerciale ABP</a> et que vous disposez d\'un compte ABP commercial actif.';
+                document.getElementById('docAssume').textContent = 'Ce document suppose que vous faites référence à l\'utilisation des pages raaghu-react en tant que framework d\'interface utilisateur et Entity Framework Core en tant que fournisseur de base de données.';
+                document.getElementById('setup').textContent = 'Environnement de développement de configuration';
+                document.getElementById('letSet').textContent = 'Environnement de développement de configuration';
+                document.getElementById('pre').textContent = 'Conditions préalables';
+                document.getElementById('theFollowing').textContent = 'Les outils suivants doivent être installés sur votre machine de développement.';
+                document.getElementById('vss').innerHTML = '<a href="https://visualstudio.microsoft.com/vs/">Visual Studio 2022</a> (v17.3+) pour Windows / <a href="https://visualstudio.microsoft.com/ vs/mac/"> Visual Studio pour Mac. 1</a>';
+                document.getElementById('net').innerHTML = '<a href="https://dotnet.microsoft.com/en-us/download/dotnet">.NET 7.0+</a>';
+                document.getElementById('node').innerHTML = '<a href="https://nodejs.org/en">Node v18</a> ou supérieur';
+                document.getElementById('npm').innerHTML = 'npm v8 et supérieur ou <a href="https://classic.yarnpkg.com/en/docs/install#windows-stable">Fio v1.20+ (pas v2) 2</a>.';
+                document.getElementById('install').textContent = 'Installer l\'interface de ligne de commande ABP';
+                document.getElementById('abpCli').innerHTML = '<a href="https://docs.abp.io/en/abp/latest/CLI">ABP CLI</a> est une interface de ligne de commande utilisée pour automatiser certaines tâches courantes pour les solutions basées sur ABP.';
+                document.getElementById('abp').innerHTML = '<a href="https://docs.abp.io/en/abp/latest/CLI">ABP CLI</a> est un outil gratuit et open source pour le framework ABP. Il est également utilisé pour le développement d\'applications commerciales ABP.';
+                document.getElementById('first').textContent = 'Tout d\'abord, vous devez installer l\'ABP CLI à l\'aide de la commande suivante :';
+                document.getElementById('ifYou').textContent = 'Si vous l\'avez déjà installé, vous pouvez le mettre à jour à l\'aide de la commande suivante :';
+                document.getElementById('log').textContent = 'Connectez-vous à votre compte';
+                document.getElementById('inOrder').textContent = 'Pour utiliser les fonctionnalités commerciales de l\'ABP, vous devez vous connecter à votre compte à l\'aide de l\'ABP CLI :';
+                document.getElementById('itWill').textContent = 'Il vous demandera un mot de passe, vous devez donc entrer le mot de passe de votre compte.';
+                document.getElementById('youCan').textContent = 'Vous pouvez librement créer un nouveau compte sur le site Web du compte ABP. Cependant, votre compte doit être enregistré auprès d\'une organisation en tant que développeur afin d\'utiliser ABP Commercial. Si votre entreprise possède une licence commerciale ABP, demandez à votre responsable d\'ajouter votre compte à la liste des développeurs de l\'organisation.';
+                document.getElementById('insta').textContent = 'Installer le package ABP';
+                document.getElementById('aSuite').innerHTML = '<a href="https://docs.abp.io/en/commercial/7.2/abp-suite/index">ABP Suite</a> est une application qui a pour but de vous accompagner dans votre développement.';
+
+
+
+                document.getElementById('first').textContent = 'Tout d\'abord, vous devez installer la suite ABP :';
+                document.getElementById('ifYouHave').textContent = 'Si vous l\'avez déjà installé, vous pouvez le mettre à jour :';
+                document.getElementById('next').textContent = 'L\'étape suivante';
+                document.getElementById('creaTing').innerHTML = '<a href="Creating-A-New-Solution.html">Créer une nouvelle solution</a>';
+            // For In this doc section
+                document.getElementById('inthisdoc').innerHTML = 'dans ce document';
+                document.getElementById('secstp').innerHTML = '<a href="#docAssume" class="text-black">Configuration de l\'environnement de développement</a>';
+                document.getElementById('secpre').innerHTML = '<a href="#docAssume" class="text-black">Prérequis</a>';
+                document.getElementById('secabp').innerHTML = '<a href="#docAssume" class="text-black">Installer la CLI ABP</a>';
+                document.getElementById('seclog').innerHTML = '<a href="#ifYou" class="text-black">Connectez-vous à votre compte</a>';
+                document.getElementById('secsuite').innerHTML = '<a href="#ifYou" class="text-black">Installer la suite ABP</a>';
+                document.getElementById('secnext').innerHTML = '<a href="#next" class="text-black">Étape suivante</a>';
+            }
+            else if (selectedLanguage === 'Finnish') {
+                document.getElementById('gs').textContent = 'Aloitus';
+                document.getElementById('thisTut').innerHTML = 'Tämä opas olettaa, että olet jo hankkinut <a href="https://commercial.abp.io/pricing">ABP:n kaupallisen lisenssin</a> ja sinulla on aktiivinen ABP:n kaupallinen käyttäjätunnus.';
+                document.getElementById('docAssume').textContent = 'Tämä asiakirja olettaa, että viittaat raaghu-react-sivujen käyttöön käyttöliittymäkehyksenä ja Entity Framework Corea tietokantapalveluna.';
+                document.getElementById('setup').textContent = 'Kehitysympäristön määritys';
+                document.getElementById('letSet').textContent = 'Kehitysympäristön määritys';
+                document.getElementById('pre').textContent = 'Edellytykset';
+                document.getElementById('theFollowing').textContent = 'Seuraavat työkalut on asennettava kehityskoneellesi.';
+                document.getElementById('vss').innerHTML = '<a href="https://visualstudio.microsoft.com/vs/">Visual Studio 2022</a> (v17.3+) Windowsille / <a href="https://visualstudio.microsoft.com/ vs/mac/"> Visual Studio for Mac. 1</a>';
+                document.getElementById('net').innerHTML = '<a href="https://dotnet.microsoft.com/en-us/download/dotnet">.NET 7.0+</a>';
+                document.getElementById('node').innerHTML = '<a href="https://nodejs.org/en">Node v18</a> tai uudempi';
+                document.getElementById('npm').innerHTML = 'npm v8 ja uudempi tai <a href="https://classic.yarnpkg.com/en/docs/install#windows-stable">Yarn v1.20+ (ei v2) 2</a>.';
+                document.getElementById('install').textContent = 'Asenna ABP-komentoriviliitäntä';
+                document.getElementById('abpCli').innerHTML = '<a href="https://docs.abp.io/en/abp/latest/CLI">ABP-komentoriviliitäntä</a> on komentoriviliitäntä, jota käytetään yleisiin ABP-pohjaisiin ratkaisuihin liittyviin automatisoitaviin tehtäviin.';
+                document.getElementById('abp').innerHTML = '<a href="https://docs.abp.io/en/abp/latest/CLI">ABP-komentoriviliitäntä</a> on ilmainen ja avoimen lähdekoodin työkalu ABP-kehitystä varten. Sitä käytetään myös kaupallisen ABP-sovelluskehityksen yhteydessä.';
+                document.getElementById('first').textContent = 'Ensinnäkin sinun tulee asentaa ABP-komentoriviliitäntä seuraavalla komennolla:';
+                document.getElementById('ifYou').textContent = 'Jos olet jo asentanut sen, voit päivittää sen seuraavalla komennolla:';
+                document.getElementById('log').textContent = 'Kirjaudu sisään käyttäjätilillesi';
+                document.getElementById('inOrder').textContent = 'ABP:n kaupallisten ominaisuuksien käyttämiseksi sinun tulee kirjautua sisään käyttäjätilillesi ABP-komentoriviliitännän avulla:';
+                document.getElementById('itWill').textContent = 'Se kysyy sinulta salasanaa, joten anna käyttäjätilisi salasana.';
+                document.getElementById('youCan').textContent = 'Voit vapaasti luoda uuden käyttäjätilin ABP:n verkkosivustolla. Kuitenkin käyttäjätilisi tulee rekisteröidä organisaatioon kehittäjänä, jotta voit käyttää kaupallista ABP:ta. Jos yritykselläsi on kaupallinen ABP-lisenssi, pyydä organisaatiosi ylläpitäjää lisäämään käyttäjätilisi kehittäjälistalle.';
+                document.getElementById('insta').textContent = 'Asenna ABP-paketti';
+                document.getElementById('aSuite').innerHTML = '<a href="https://docs.abp.io/en/commercial/7.2/abp-suite/index">ABP Suite</a> on sovellus, joka auttaa sinua kehitystyössäsi.';
+                document.getElementById('first').textContent = 'Ensinnäkin sinun tulee asentaa ABP Suite seuraavalla komennolla:';
+                document.getElementById('ifYouHave').textContent = 'Jos olet jo asentanut sen, voit päivittää sen seuraavalla komennolla:';
+                document.getElementById('next').textContent = 'Seuraava vaihe';
+                document.getElementById('creaTing').innerHTML = '<a href="Creating-A-New-Solution.html">Uuden ratkaisun luominen</a>';
+            // Tässä asiakirjaosassa
+                document.getElementById('inthisdoc').innerHTML = 'tässä asiakirjassa';
+                document.getElementById('secstp').innerHTML = '<a href="#docAssume" class="text-black">Kehitysympäristön määritys</a>';
+                document.getElementById('secpre').innerHTML = '<a href="#docAssume" class="text-black">Edellytykset</a>';
+                document.getElementById('secabp').innerHTML = '<a href="#docAssume" class="text-black">Asenna ABP-komentoriviliitäntä</a>';
+                document.getElementById('seclog').innerHTML = '<a href="#ifYou" class="text-black">Kirjaudu sisään käyttäjätilillesi</a>';
+                document.getElementById('secsuite').innerHTML = '<a href="#ifYou" class="text-black">Asenna ABP Suite</a>';
+                document.getElementById('secnext').innerHTML = '<a href="#next" class="text-black">Seuraava vaihe</a>';
+
+            } 
+
+            else if (selectedLanguage === 'Slovak') {
+                document.getElementById('gs').textContent = 'Úvod';
+document.getElementById('thisTut').innerHTML = 'Tento sprievodca predpokladá, že ste už získali <a href="https://commercial.abp.io/pricing">komerčnú licenciu ABP</a> a máte aktívne používateľské konto ABP.';
+document.getElementById('docAssume').textContent = 'Tento dokument predpokladá, že používate rámec užívateľského rozhrania Raaghu React a Entity Framework Core ako službu pre databázu.';
+document.getElementById('setup').textContent = 'Nastavenie vývojového prostredia';
+document.getElementById('letSet').textContent = 'Nastavenie vývojového prostredia';
+document.getElementById('pre').textContent = 'Predpoklady';
+document.getElementById('theFollowing').textContent = 'Nasledujúce nástroje musia byť nainštalované na váš vývojový počítač.';
+document.getElementById('vss').innerHTML = '<a href="https://visualstudio.microsoft.com/vs/">Visual Studio 2022</a> (v17.3+) pre Windows / <a href="https://visualstudio.microsoft.com/vs/mac/">Visual Studio for Mac. 1</a>';
+document.getElementById('net').innerHTML = '<a href="https://dotnet.microsoft.com/en-us/download/dotnet">.NET 7.0+</a>';
+document.getElementById('node').innerHTML = '<a href="https://nodejs.org/en">Node v18</a> alebo novší';
+document.getElementById('npm').innerHTML = 'npm v8 a novší alebo <a href="https://classic.yarnpkg.com/en/docs/install#windows-stable">Yarn v1.20+ (nie v2) 2</a>.';
+document.getElementById('install').textContent = 'Inštalácia príkazového riadku ABP';
+document.getElementById('abpCli').innerHTML = '<a href="https://docs.abp.io/en/abp/latest/CLI">Príkazový riadok ABP</a> je nástroj na príkazový riadok, ktorý sa používa na automatizované úlohy súvisiace s riešeniami postavenými na platforme ABP.';
+document.getElementById('abp').innerHTML = '<a href="https://docs.abp.io/en/abp/latest/CLI">Príkazový riadok ABP</a> je bezplatný a open-source nástroj pre vývoj s ABP. Používa sa aj pri komerčnom vývoji aplikácií s ABP.';
+document.getElementById('first').textContent = 'Najprv nainštalujte príkazový riadok ABP pomocou nasledujúceho príkazu:';
+document.getElementById('ifYou').textContent = 'Ak ste ho už nainštalovali, môžete ho aktualizovať pomocou nasledujúceho príkazu:';
+document.getElementById('log').textContent = 'Prihláste sa do vášho používateľského konta';
+document.getElementById('inOrder').textContent = 'Na používanie komerčných vlastností ABP sa musíte prihlásiť do vášho používateľského konta pomocou príkazového riadku ABP:';
+document.getElementById('itWill').textContent = 'Požiada vás o heslo vášho používateľského konta, takže zadajte heslo vášho účtu.';
+document.getElementById('youCan').textContent = 'Môžete si slobodne vytvoriť nové používateľské konto na webovej stránke ABP. Avšak vaše konto musí byť zaregistrované pod vašou organizáciou ako vývojár, aby ste mohli používať komerčný ABP. Ak vaša firma má komerčnú licenciu ABP, požiadajte administrátora vašej organizácie, aby vás pridal na zoznam vývojárov.';
+document.getElementById('insta').textContent = 'Inštalácia ABP balíčka';
+document.getElementById('aSuite').innerHTML = '<a href="https://docs.abp.io/en/commercial/7.2/abp-suite/index">ABP Suite</a> je aplikácia, ktorá vám pomôže pri vašom vývoji.';
+document.getElementById('first').textContent = 'Najprv nainštalujte ABP Suite pomocou nasledujúceho príkazu:';
+document.getElementById('ifYouHave').textContent = 'Ak ste ju už nainštalovali, môžete ju aktualizovať pomocou nasledujúceho príkazu:';
+document.getElementById('next').textContent = 'Ďalší krok';
+document.getElementById('creaTing').innerHTML = '<a href="Creating-A-New-Solution.html">Vytvorenie nového riešenia</a>';
+// Tässä asiakirjaosassa
+document.getElementById('inthisdoc').innerHTML = 'v tejto dokumentácii';
+document.getElementById('secstp').innerHTML = '<a href="#docAssume" class="text-black">Nastavenie vývojového prostredia</a>';
+document.getElementById('secpre').innerHTML = '<a href="#docAssume" class="text-black">Predpoklady</a>';
+document.getElementById('secabp').innerHTML = '<a href="#docAssume" class="text-black">Inštalácia príkazového riadku ABP</a>';
+document.getElementById('seclog').innerHTML = '<a href="#ifYou" class="text-black">Prihláste sa do vášho používateľského konta</a>';
+document.getElementById('secsuite').innerHTML = '<a href="#ifYou" class="text-black">Inštalácia ABP Suite</a>';
+document.getElementById('secnext').innerHTML = '<a href="#next" class="text-black">Ďalší krok</a>';
+
+            }
+     
+            else if (selectedLanguage === 'spanish') {
+                
+            } else {
+                
+            }
+        });
+    });
+
+
+
+
+
+
+
+</script>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

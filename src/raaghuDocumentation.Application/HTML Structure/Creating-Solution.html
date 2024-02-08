@@ -1,0 +1,1166 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- bootstrap dependencies -->
+    <link rel="stylesheet" href="Assets/css/bootstrap.min.css">
+    <link href="Assets/prism.css" rel="stylesheet" />
+    <script src="Assets/prism.js"></script>
+    <link rel="stylesheet" href="/index.css">
+    <link rel="icon" type="image/x-icon" href="Assets/images/raaghu-icon.png">
+    <title>Raaghu - Creating Solution</title>
+    <script src="/index.js"></script>
+</head>
+
+
+<body>
+
+    <main>
+
+        <nav class="navbar navbar-expand-lg navbar-light  ">
+            <div class="container-fluid ">
+                <div class="navbar-toggler-container">
+                    <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#sidebar,#navbarSupportedContent"
+                        aria-controls="sidebar" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <!-- <div class="dropdown show dropdown-specific">
+                        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Platform
+                        </a>
+
+                        <div class="dropdown-menu menu" aria-labelledby="dropdownMenuLink">
+                            <a class="dropdown-item" href="https://www.raaghu.io/features.html">Features</a>
+                            <a class="dropdown-item " href="https://portal.raaghu.io/">Documentation</a>
+                            <button type="button" class="btn btn-primary btn-contact mt-2">contact</button>
+                            <a href="https://github.com/Wai-Technologies/raaghu-angular" target="_blank">
+                                <li class="ps-lg-5 mt-2">
+                                    <img src="Assets/images/github-logo.svg" alt="abplogo logo" width="100%"
+                                        class="github-logo">
+                                </li>
+                            </a>
+                        </div>
+                    </div> -->
+                </div>
+                <a class="text-black navbar-brand" href="/">
+                    <img src="Assets/images/raaghu_logs.png" alt="raaghu logo" class="w-75  pe-lg-0">
+                </a>
+
+                <div class="collapse navbar-collapse align  justify-content-lg-end " id="navbarSupportedContent">
+                    <ul class="navbar-nav  mb-2 mb-lg-0 ">
+                        <li class="nav-item me-5">
+                            <a class="nav-link active " aria-current="page"
+                                href="https://raaghu-website-staging.netlify.app/raaghu-mfe-portal/_accordion.html">Components</a>
+                        </li>
+                        <li class="nav-item me-5">
+                            <a class="nav-link active " aria-current="page"
+                                href="#"><span class="doc-color">Documentation</span></a>
+                        </li>
+                        <li class="nav-item me-5">
+                            <a class="nav-link active " aria-current="page"
+                                href="https://raaghu-website-staging.netlify.app/raaghu-mfe-portal/_accordion.html#">Support</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link active " aria-current="page"
+                                href="https://raaghu-website-staging.netlify.app/faq">FAQ</a>
+                        </li>
+                        <!-- <li class=" nav-item dropdown active">
+                            <a class="nav-link  text-dark me-5" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Platform
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-center " aria-labelledby="navbarDropdown">
+                                <ul class="list-unstyled dropdown-arrow">
+                                    <li class=" ps-4">
+                                        <p class="title pt-2">Raaghu Platform</p>
+                                        <div class="row">
+                                            <div class="col-lg-6 col-md-6">
+                                                <a href="https://portal.raaghu.io/" target="_blank"
+                                                    class="p-0 text-decoration-none text-reset">
+                                                    <div class="d-flex align-items-center gap-3">
+
+                                                        <img src="Assets/images/raaghu-portal-mg.svg"
+                                                            alt="raaghu-portal" class="mb-3">
+                                                        <p class="link-name">Raaghu Portal</p>
+
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="col-lg-6 col-md-6">
+                                                <a href="https://portal.raaghu.io/#Components-section" target="_blank"
+                                                    class="p-0 text-decoration-none text-reset">
+                                                    <div class="d-flex align-items-center gap-3">
+                                                        <img src="Assets/images/raaghu-components-mg.svg"
+                                                            alt="raaghu-components" class="mb-3">
+                                                        <p class="link-name">Raaghu Components</p>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-6 col-md-6">
+                                                <a href="https://portal.raaghu.io/#Elements-section" target="_blank"
+                                                    class="p-0 text-decoration-none text-reset">
+                                                    <div class="d-flex align-items-center gap-3">
+                                                        <img src="Assets/images/raaghu-elements-mg.svg"
+                                                            alt="raaghu-portal" class="mb-2">
+                                                        <p class="pt-2 link-name">Raaghu Elements</p>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="col-lg-6 col-md-6">
+                                                <div class="d-flex align-items-center gap-3">
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="bgcolor-dropdown">
+                                        <div class="ps-4">
+                                            <p class="pt-3 pb-1 title">WORKS ON</p>
+                                            <div class="row">
+                                                <div class="col-md-2 mb-2">
+                                                    <img src="Assets/images/asplogo-mg.svg" alt="asplogo logo"
+                                                        width="80%">
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <img src="Assets/images/abplogo-mg.svg" alt="abplogo logo"
+                                                        width="50%">
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item me-5">
+                            <a class="nav-link active " aria-current="page"
+                                href="https://www.raaghu.io/features.html">Features</a>
+                        </li>
+                        <li class="nav-item me-5">
+                            <a class="nav-link active " aria-current="page"
+                                href="https://portal.raaghu.io/">Documentation</a>
+                        </li>
+                        <button type="button" class="btn btn-primary btn-contact">contact</button>
+                        <a href="https://github.com/Wai-Technologies/raaghu-angular" target="_blank">
+                            <li class="ps-lg-5 pt-2">
+                                <img src="Assets/images/github-logo.svg" alt="abplogo logo" width="100%"
+                                    class="github-logo">
+                            </li>
+                        </a> -->
+                    </ul>
+                </div>
+</div>
+        </nav>
+
+        <div class="wrapper container-fluid">
+
+            <div class="row">
+
+                <div id="sidebar" class="col-12 col-lg-2 col-md-4 col-xl-2 col-xxl-2 collapse d-m-block mx-0 mx-lg-3 mx-md-3 mx-xl-3 mx-xxl-3 show">
+
+                    <nav>
+                        <div class="sidebar-header ">
+                            <a href="/" class="text-bg-dark">
+                                <h3 class="fs-5 fw-normal" id="tableOfContent">Table Of Content</h3>
+                            </a>
+                        </div>
+
+                        <div class="accordion accordion-flush mx-3 doc-acc accordion-button-top"
+                            id="accordionExample">
+                            <div class="row pb-4">
+                                <div class="col-6 col-lg-6 col-md-6">
+                                    <select id="language-dropdown" class="sidebar-button">
+                                        <option value="en" selected>English</option>
+                                        <option value="pt">Português</option>
+                                        <option value="fr">French</option>
+                                        <option value="fi">Finnish</option>
+                                        <option value="hi">Hindi</option>
+                                        <option value="it">Italian</option>                                        
+                                        <option value="sk">Slovak</option>
+                                        <option value="de">German</option>
+                                        <option value="ru">Russian</option>
+                                        <option value="zh">Chinese</option>
+                                        <option value="af">Afrikaan</option>
+                                        <option value="ar">Arabic</option>
+                                        <!-- Add more language options if needed -->
+                                    </select>
+                                </div>
+                                <div class="col-6 col-lg-6 col-md-6">
+                                    <select class="sidebar-button w-100" >
+                                        <option value="option1" id="version">Version</option>
+                                        <option value="option2" id="version">Version 2</option>
+                                        <option value="option3">Version 3</option>
+                                        <option value="option4">Version 4</option>
+                                    </select>
+
+                                </div>
+                            </div>
+                            <div class="accordion-item bg-dark">
+                                <h2 class="accordion-header" id="headingOne">
+                                    <a href="Getting-Started.html">
+                                        <button
+                                            class="accordion-button d-flex flex-row-reverse justify-content-end p-0 bg-dark mt-1"
+                                            type="button" data-bs-toggle="collapse" data-bs-target="#coll"
+                                            aria-expanded="false" aria-controls="collapseOne" id="Getting">
+                                            Getting Started
+                                        </button></a>
+                                </h2>
+
+                                <div id="coll" class="accordion-collapse collapse  border-0 rounded-0 p-0"
+                                    aria-labelledby="headOne" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Setup-Your-Development-Environment.html" id="setupDev">Setup your development
+                                            environment</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Creating-A-New-Solution.html" id="creatingNewSol">Creating A New Solution</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Running-The-Solution.html" id="runningTheSol">Running the Solution</a>
+                                    </div>
+                                </div>
+                                <h2 class="accordion-header" id="headingTwo">
+                                    <button
+                                        class="accordion-button d-flex flex-row-reverse justify-content-end p-0 bg-dark mt-2"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                        aria-expanded="false" aria-controls="collapseOne" id="tut">
+                                        Tutorials
+                                    </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse  border-0 rounded-0 p-0"
+                                    aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <h2 class="accordion-header" id="headingTwo">
+                                            <button
+                                                class="accordion-button d-flex flex-row-reverse justify-content-end p-0 bg-dark mt-2"
+                                                type="button" data-bs-toggle="collapse"
+                                                data-bs-target="#collapseThree" aria-expanded="false"
+                                                aria-controls="collapseOne" id="webAppDev">
+                                                Web Application Development
+                                            </button>
+                                        </h2>
+                                        <div id="collapseThree"
+                                            class="accordion-collapse collapse  border-0 rounded-0 p-0 pt-2"
+                                            aria-labelledby="headingTwo" data-bs-parent="#accordionExamplee">
+                                            <div class="accordion-body bg-dark px-4 p-1">
+                                                <a href="Creating-The-Server-Side.html" id="creatingServer">Creating the Server
+                                                    Side</a>
+                                            </div>
+                                        </div>
+                                        <div id="collapseThree"
+                                            class="accordion-collapse collapse  border-0 rounded-0 p-0"
+                                            aria-labelledby="headingTwo" data-bs-parent="#accordionExamplee">
+                                            <div class="accordion-body bg-dark px-4 p-1">
+                                                <a href="The-Book-List-Page.html" id="bookList">The Book List Page</a>
+                                            </div>
+                                        </div>
+                                        <div id="collapseThree"
+                                            class="accordion-collapse collapse  border-0 rounded-0 p-0"
+                                            aria-labelledby="headingTwo" data-bs-parent="#accordionExamplee">
+                                            <div class="accordion-body bg-dark px-4 p-1">
+                                                <a href="Creating-Updating-And-Deleting-Book.html" id="creatingUpdating">Creating,Updating
+                                                    And
+                                                    Deleting Book</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <h2 class="accordion-header" id="headingFour">
+                                    <button
+                                        class="accordion-button d-flex flex-row-reverse justify-content-end p-0 bg-dark mt-2"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour"
+                                        aria-expanded="false" aria-controls="collapseOne" id="guides">
+                                        Guides
+                                    </button>
+                                </h2>
+                                <div id="collapseFour" class="accordion-collapse collapse  border-0 rounded-0 p-0"
+                                    aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Customizing-The-Modules.html" id="customizingTheModules">Customizing the Modules</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Identity-Server-Deployment.html" id="identityServerDeploy">Identity Server Deployment</a>
+                                    </div>
+                                </div>
+
+
+                                <h2 class="accordion-header" id="headingFive">
+                                    <button
+                                        class="accordion-button d-flex flex-row-reverse justify-content-end p-0 bg-dark mt-2"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive"
+                                        aria-expanded="false" aria-controls="collapseOne" id="samples">
+                                        Samples
+                                    </button>
+                                </h2>
+                                <div id="collapseFive" class="accordion-collapse collapse  border-0 rounded-0 p-0"
+                                    aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="All-Samples.html" id="allSamples">All Samples</a>
+                                    </div>
+                                </div>
+                                <h2 class="accordion-header" id="headingSix">
+                                    <a href="Startup-Template.html">
+                                        <button
+                                            class="accordion-button d-flex flex-row-reverse justify-content-end p-0 bg-dark mt-2"
+                                            type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix"
+                                            aria-expanded="true" aria-controls="collapseOne" id="startupTemplate">
+                                            Startup Template
+                                        </button></a>
+                                </h2>
+                                <div id="collapseSix"
+                                    class="accordion-collapse collapse show border-0 rounded-0 p-0"
+                                    aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <h2 class="accordion-header" id="headingSix">
+                                            <a href="Application-Templates.html">
+                                                <button
+                                                    class="accordion-button d-flex flex-row-reverse justify-content-end p-0 bg-dark mt-2"
+                                                    type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#headingS" aria-expanded="true"
+                                                    aria-controls="collapseOne" id="applicationTemplate">
+                                                    Application Templates
+                                                </button>
+                                            </a>
+                                        </h2>
+                                        <div id="headingS"
+                                            class="accordion-collapse collapse  show  border-0 rounded-0 p-0 pt-2"
+                                            aria-labelledby="headingSix" data-bs-parent="#accordionExamplee">
+                                            <div class="accordion-body bg-dark px-4 p-1">
+                                                <a href="Creating-Solution.html" id="creatingSolution"><span
+                                                        class="accordian-active">Creating Solution</span></a>
+                                            </div>
+                                        </div>
+                                        <div id="headingS"
+                                            class="accordion-collapse collapse show  border-0 rounded-0 p-0"
+                                            aria-labelledby="headingSix" data-bs-parent="#accordionExamplee">
+                                            <div class="accordion-body bg-dark px-4 p-1">
+                                                <a href="Solution-Structure.html" id="solutionStruct">Solution Structure</a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                                <h2 class="accordion-header" id="headingSeven">
+                                    <button
+                                        class="accordion-button d-flex flex-row-reverse justify-content-end p-0 bg-dark mt-2"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven"
+                                        aria-expanded="false" aria-controls="collapseOne" id="appModules">
+                                        Application Modules
+                                    </button>
+                                </h2>
+                                <div id="collapseSeven" class="accordion-collapse collapse  border-0 rounded-0 p-0"
+                                    aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Overall.html" id="overall">Overall</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Account-Module.html" id="ac">Account</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Audit-Logging.html" id="auditLogging">Audit Logging</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Chat.html" id="chat">Chat</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="CMS-Kit-Pro.html" id="CMS">CMS Kit Pro</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="File-Management.html" id="fileMgt">File Management</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Forms.html" id="forms">Forms</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Identity.html" id="identity">Identity</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="OpenIddict.html" id="OpenIddict">OpenIddict</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Language-Management.html" id="languageMgt">Language Management</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Payment.html" id="payment">Payment</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="SaaS.html" id="saas">SaaS</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Text-Template-Management.html" id="ttm">Text Template Management</a>
+                                    </div>
+                                </div>
+                                <h2 class="accordion-header" id="headingNine">
+                                    <a href="UI-Themes.html">
+                                        <button
+                                            class="accordion-button d-flex flex-row-reverse justify-content-end p-0 bg-dark mt-2"
+                                            type="button" data-bs-toggle="collapse" data-bs-target="#headingNine"
+                                            aria-expanded="false" aria-controls="collapseOne" id="ui">
+                                            UI Themes
+                                        </button>
+                                    </a>
+                                </h2>
+                                <h2 class="accordion-header" id="headingReactUITheme">
+                                    <button
+                                        class="accordion-button d-flex flex-row-reverse justify-content-end p-0 bg-dark mt-2"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#headingReactUI"
+                                        aria-expanded="false" aria-controls="collapseOne" id="reactUI">
+                                        React UI
+                                    </button>
+                                </h2>
+                                <div id="headingReactUI" class="accordion-collapse collapse  border-0 rounded-0 p-0"
+                                    aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Customization.html" id="custom">customization</a>
+                                    </div>
+
+                                </div>
+                                <div id="headingReactUI" class="accordion-collapse collapse  border-0 rounded-0 p-0"
+                                    aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Components.html" id="compo">Components</a>
+                                    </div>
+
+                                </div>
+                                <!-- For Release Information -->
+                                <h2 class="accordion-header" id="headingFive">
+                                    <button
+                                        class="accordion-button d-flex flex-row-reverse justify-content-end p-0 bg-dark mt-2"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseLast"
+                                        aria-expanded="false" aria-controls="collapseOne" id="samples">
+                                       <span id="relinfo">Release Information</span> 
+                                    </button>
+                                </h2>
+                                <div id="collapseLast" class="accordion-collapse collapse  border-0 rounded-0 p-0"
+                                    aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Release-Notes.html" id="allSamples"><span id="relnote">Release Notes</span></a>
+                                    </div>
+                                </div>
+                                <!-- ====================================== -->
+                            </div>
+                        </div>
+                        <ul class="list-unstyled CTAs  w-100">
+                            <li>
+                                <a href="https://bootstrapious.com/tutorial/files/sidebar.zip"
+                                    class="download" id="downloadSource">Download
+                                    source</a>
+                            </li>
+                        </ul>  
+                    </nav>
+                </div>
+
+                <div class="col-12 col-lg-8 col-md-7 col-xl-6 col-xxl-6 offset-lg-4 offset-md-5 offset-xl-3 offset-xxl-3 ps-xl-5 ps-xxl-0 px-lg-3 px-md-4 px-xl-0">
+
+                    <!-- Page Content  -->
+                    <div id="content">
+                        <div class="modal fade" id="contactusModal" tabindex="-1" aria-labelledby="contactusModalLabel" aria-hidden="true">
+
+                            <div class="modal-dialog modal-lg modal-dialog-centered">
+                  
+                              <div class="modal-content">
+                  
+                                <!-- <div class="modal-header">
+                  
+                                  <h5 class="modal-title" id="contactusModalLabel">Modal title</h5>
+                  
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  
+                                </div> -->
+                  
+                                <div class="modal-body p-0">
+                  
+                  
+                  
+                  
+                                      <div class="row">
+                  
+                                          <div class="col-md-6 col-sm-12 bg-dark">
+                  
+                                              <div class="mt-5">
+                  
+                                                  <img src="Assets/images/raaghu-logo-white.png" class="img-fluid w-25 pl-2">
+                  
+                                             
+                  
+                                                  <img src="Assets/images/raaghu-banner-modal.png" class="img-fluid">
+                  
+                                              </div>
+                  
+                                          </div>
+                  
+                                         
+                  
+                                          <div class="col-md-6 col-sm-12">
+                  
+                                              <div class="row">
+                  
+                                                  <div class="col-md-12 text-end pull-right">
+                  
+                                                      <button type="button" class="btn-close float-right pull-right m-3 text-muted" data-bs-dismiss="modal" aria-label="Close"></button>
+                  
+                                                  </div>
+                  
+                                              </div>
+                  
+                                              <div class="p-4">
+                  
+                                                  <h6>
+                  
+                                                      Kindly fill the details below
+                  
+                                                  </h6>
+                  
+                                                  <p>
+                  
+                                                     <small> We will get back to you within 48 hours </small>
+                  
+                                                  </p>
+                  
+                                                  <div class="mt-5">
+                  
+                                                      <form method="post" id="want-to-hear-form">
+                  
+                                                          <div class="mb-3 form-group">
+                  
+                                                              <label for="emailId" class="form-label">Email ID
+                  
+                                                                  <span class="text-danger">*</span>
+                  
+                                                              </label>
+                  
+                                                                  <input type="email" name="emailId" class="form-control p-2" id="emailId"
+                  
+                                                                      placeholder="Enter your email id">
+                  
+                                                          </div>
+                  
+                                                          <div class="mb-3 form-group">
+                  
+                                                              <label for="companyName" class="form-label">Company Name
+                  
+                                                                  <span class="text-danger">*</span>
+                  
+                                                              </label>
+                  
+                                                                  <input type="text" class="form-control p-2"
+                  
+                                                                      placeholder="Enter your Company Name" name="companyName"
+                  
+                                                                      id="companyName">
+                  
+                                                          </div>
+                  
+                                                          <div class="mb-3 form-group">
+                  
+                                                              <label for="message" class="form-label">Message
+                  
+                                                                <span class="contactUs-Optional">(Optional)</span>
+
+                  
+                                                              </label>
+                  
+                                                                  <textarea class="form-control p-2" name="message" id="message" rows="3"
+                  
+                                                                      placeholder="Write your message.."></textarea>
+                  
+                                                          </div>
+                  
+                                                          <div class="mb-3 form-check">
+                  
+                                                              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  
+                                                              <label class="form-check-label" for="exampleCheck1">I agree to the <a href="#"> terms & privacy policy </a></label>
+                  
+                                                          </div>
+                  
+                                                          <button type="submit" class="btn btn-primary btn-sm btn-block float-end mb-4">Submit</button>
+                  
+                                                      </form>
+                  
+                                                  </div>
+                  
+                                              </div>
+                  
+                                          </div>
+                  
+                                      </div>
+                  
+                                </div>
+                  
+                              </div>
+                  
+                            </div>
+                  
+                          </div>
+                        <div> <input class="form-control  mb-5" type="search" placeholder="Search"
+                            aria-label="Search"></div>
+                        <div>
+                            <h1 class="fw-semibold mb-3" id="csva">Creating a new ABP Commercial solution</h1>
+                            <p id="tar">There are 2 ways of creating a new ABP Commercial solution. You can use the <a
+                                    href="https://docs.abp.io/en/abp/latest/CLI">ABP CLI </a> or <a
+                                    href="https://docs.abp.io/en/commercial/7.2/abp-suite/add-solution">ABP Suite.</a>
+                            </p>
+                        </div>
+                        <div>
+                            <h2 class="fw-semibold pb-3" id="csv">Creating solution via ABP CLI</h2>
+                            <p id="iyhn">If you have not yet installed ABP CLI, you need to install it with the following command.
+                                To check if you already have it, write <span class="txt-color">abp</span> to the command
+                                line.</p>
+                            <pre
+                                class="my-4"><code class="language-javascript">dotnet tool install -g Volo.Abp.Cli</code></pre>
+                            <p id="tcys">To create your solution, go to the directory where you want to create in and type the
+                                following command:</p>
+                            <pre
+                                class="my-4"><code class="language-javascript">abp new Acme.BookStore -t app-pro</code></pre>
+                        </div>
+                        <div>
+                            <ul class="ps-3">
+                                <li class="mt-2" id="acme"><span class="txt-color">Acme.BookStore</span> is the project name. Your
+                                    Visual
+                                    Studio Solution, <span class="txt-color">.sln </span> file will be named as <span
+                                        class="txt-color">Acme.BookStore.sln.</span> The projects inside the root folder
+                                    and all the namespaces will have the prefix Acme.BookStore.*. You can give different
+                                    project names like only<span class="txt-color">BookStore </span>or <span
+                                        class="txt-color">Acme.Retail.BookStore.</span> You can use single level,
+                                    two-level or three-level naming.</li>
+                                <li class="mt-2" id="tot"><span class="txt-color">-t</span> or <span
+                                        class="txt-color">--template</span> is
+                                    the template name. For commercial apps, use <span class="txt-color">app-pro.</span>
+                                </li>
+                                <li class="mt-2" id="specify">To discover other CLI new project options type:</li>
+
+
+
+                            </ul>
+                            <pre
+                                class="my-4"><code class="language-javascript">dotnet tool update -g Volo.Abp.Cli</code></pre>
+                        </div>
+                        <div>
+                            <h3 class="fw-semibold pt-3 pb-3" id="stuf">Specify the UI framework</h3>
+                            <p id="ttp">The template provides multiple UI frameworks:</p>
+                            <ul class="ps-3" >
+                                <li class="mt-2" id="mvc"><span class="txt-color">mvc</span>: ASP.NET Core MVC UI with Razor
+                                    Pages (default)</li>
+                                <li class="mt-2" id="bui"><span class="txt-color">blazor</span>: Blazor UI</li>
+                                <li class="mt-2" id="bserver"><span class="txt-color">blazor-server</span>: Blazor Server UI</li>
+                                <li class="mt-2" id="angularui"><span class="txt-color">angular</span>: Angular UI</li>
+                                <li class="mt-2"><span class="txt-color">react</span>:React UI</li>
+                                <li class="mt-2" id="maui"><span class="txt-color">maui-blazor</span>: MAUI Blazor UI</li>
+                            </ul>
+                            <p id="isui">Use <span class="txt-color">-u </span> or <span class="txt-color">--ui</span> option to
+                                specify the UI framework:</p>
+                            <pre
+                                class="my-4"><code class="language-javascript">abp new Acme.BookStore -t app-pro -u react</code></pre>
+                            <p id="stdp">Specify the database provider</p>
+                            <p id="ttst">The template supports the following database providers:</p>
+                            <ul class="ps-3">
+                                <li class="mt-2" id="efce"><span class="txt-color">ef</span>: Entity Framework Core (default)</li>
+                                <li class="mt-2" 
+                                id="mongodb"><span class="txt-color">mongodb</span>: MongoDB</li>
+                            </ul>
+                            <p id="databasepro">Use <span class="txt-color">-d</span> or <span
+                                    class="txt-color">--database-provider</span> option to specify the database
+                                provider:</p>
+                            <pre
+                                class="my-4"><code class="language-javascript">abp new Acme.BookStore -t app-pro -d mongodb</code></pre>
+                        </div>
+                        <div>
+                            <h3 class="fw-semibold pt-3 pb-3" id="creating-Solution">Creating solution via ABP Suite</h3>
+                            <p id="asay">ABP Suite allows you to create a new ABP solution.</p>
+                            <p 
+                            id="iyh">If you have not installed ABP Suite, see <a href="">how to install ABP Suite.</a></p>
+                            <p id="tosolcreate">To create a new solution, see <a
+                                    href="https://docs.abp.io/en/commercial/7.2/abp-suite/create-solution">how to create
+                                    a new solution.</a></p>
+                        </div>
+                        <div>
+                            <h3 class="fw-semibold pt-4 pb-3" id="wn">What's next?</h3>
+                            <ul class="ps-3" id="sols">
+                                <li><a href="Solution-Structure.html">Solution structure</a></li>
+                            </ul>
+                        </div>
+
+                        
+                     
+
+                    </div>
+                </div>
+                <div class="col-12 col-lg-8 col-md-7 col-xl-2 col-xxl-2 docs-page-index offset-lg-4 offset-xl-0 offset-md-5 offset-xxl-0 px-md-4">
+                    <div class="position-fixed  my-3 w-auto mx-lg-0 mx-xl-3 mx-xxl-3 pe-lg-3 pe-xl-0 pe-xxl-0 position-lg-relative">
+                    <div class="card border-0 box rounded-3 mb-3">
+                        <div class="card-body">
+                            <h4 class="card-title py-1" id="inthisdoc">In this document</h4>
+                            <div class="opacity-50">
+                                <ul class="card-text small  list-unstyled ul-ad">
+                                <li id="cccc"><a href="#csva" class="text-black">Creating solution via ABP CLI</a></li>   
+<li id="asas"><a href="#specify" class="text-black">Specify the UI framework</a></li>  
+<li id="solute"><a href="#creating-Solution" class="text-black">Creating solution via ABP Suite</a></li>  
+
+                                </ul>
+                      </div>
+                      </div>
+                    </div>
+                    <div class="card  border-0 box  bg-advertise "  >
+                        <div class="card-body abp-community-card  rounded-3 bg-sec " >
+                            <div class="row  ">
+                                <div class="col-lg-5 col-md-5 col-5"> <img src="Assets/images/React_logo.png" alt="raaghu logo" class="w-100"></div>
+                                <div class="col-lg-7 mt-1  col-md-7 mt-1 col-7"> <img src="Assets/images/abp-sec.png" alt="raaghu logo" class="w-100"></div>
+                                <!-- <div class="col-lg-6"><img src="Assets/images/abp-com.svg" alt="raaghu logo" class="w-100"></div> -->
+                                
+                            </div>
+                            <div class="border-under-sec my-3"></div>
+                            <div class="colored-sec-design py-1">
+                                <ul class="ps-4">
+                                    <li>CLI for CRUD generation</li>
+                                    <li>Component driven development</li>
+                                    <li>Purpose build UI kit for ABP commercial</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <button type="button" class="btn btn-primary mt-1 w-100" data-bs-toggle="modal" data-bs-target="#contactusModal">Contact Us</button> 
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-0 col-12 docs-page-index">
+                    <div class="card mt-4 top-25 me-lg-4 border-0 shadow py-4">
+                        <div class="card-body">
+                            <h5 class="card-title">In This Document</h5>
+                            <p class="card-text small">Some quick example text to build on the card title and make up
+                                the bulk of the card's content.</p>
+
+                        </div>
+                    </div>
+                </div> -->
+
+            </div>
+
+
+
+        </div>
+
+    </main>
+
+    <!-- bootstrap dependencies -->
+    <script src="Assets/js/bootstrap.min.js"></script>
+    <script src="scripts/translation.js"></script>
+</body>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+         var languageDropdown = document.getElementById('language-dropdown');
+         languageDropdown.addEventListener('change', function () {
+             var selectedLanguage = languageDropdown.value;
+             if (selectedLanguage === 'pt') {
+                 // Sidebar Code in js File
+               
+ 
+                 // Body Content
+                
+                 document.getElementById('csva').innerHTML = 'Criando uma nova solução ABP Comercial';
+                 document.getElementById('tar').innerHTML = 'Existem 2 formas de criar uma nova solução ABP Comercial. Você pode usar o <a href="https://docs.abp.io/en/abp/latest/CLI">ABP CLI </a> ou <a href="https://docs.abp.io/en/commercial/7.2/abp-suite/add-solution">ABP Suite.';
+                 document.getElementById('csv').innerHTML = 'Criando solução via ABP CLI';
+                 document.getElementById('iyhn').innerHTML = 'Se você ainda não instalou o ABP CLI, precisará instalá-lo com o seguinte comando. Para verificar se você já o possui, escreva <span class="txt-color">abp</span> no comando linha.';
+                 document.getElementById('tcys').innerHTML = 'Para criar sua solução, vá para o diretório onde deseja criar e digite o seguinte comando:';
+                 document.getElementById('acme').innerHTML = '<span class="txt-color">Acme.BookStore</span> é o nome do projeto. Seu Visual Studio Solution, o arquivo <span class="txt-color">.sln </span> será nomeado como <span class="txt-color">Acme.BookStore.sln.</span> Os projetos dentro da pasta raiz e todos os namespaces terão o prefixo Acme.BookStore.*. Você pode dar diferentes nomes de projetos como apenas<span class="txt-color">Livraria </span>ou <span class="txt-color">Acme.Retail.BookStore.</span> Você pode usar nível único, nomeação de dois ou três níveis.';
+                 document.getElementById('tot').innerHTML = '<span class="txt-color">-t</span> ou <span class="txt-color">--template</span> é o nome do modelo. Para aplicativos comerciais, use <span class="txt-color">app-pro.</span>';
+                 document.getElementById('specify').innerHTML = 'Para descobrir outras novas opções de projeto da CLI, digite:';
+                 document.getElementById('stuf').innerHTML = 'Especifique a estrutura da interface do usuário';
+                 document.getElementById('ttp').innerHTML = 'O modelo fornece várias estruturas de interface do usuário:';
+                 document.getElementById('mvc').innerHTML = '<span class="txt-color">mvc</span>: ASP.NET Core MVC UI com Razor Páginas (padrão)';
+                 document.getElementById('bui').innerHTML = '<span class="txt-color">blazor</span>: Blazor UI';
+                 document.getElementById('bserver').innerHTML = '<span class="txt-color">blazor-server</span>: Blazor Server UI';
+                 document.getElementById('angularui').innerHTML = '<span class="txt-color">angular</span>: UI angular';
+                 document.getElementById('maui').innerHTML = '<span class="txt-color">maui-blazor</span>: MAUI Blazor UI';
+                 document.getElementById('isui').innerHTML = 'Use a opção <span class="txt-color">-u </span> ou <span class="txt-color">--ui</span> para  especifique a estrutura da interface do usuário:';
+                 document.getElementById('stdp').innerHTML = 'Especifique o provedor de banco de dados';
+                 document.getElementById('ttst').innerHTML = 'O modelo suporta os seguintes provedores de banco de dados:';
+                 document.getElementById('efce').innerHTML = '<span class="txt-color">ef</span>: Entity Framework Core (padrão)';
+                 document.getElementById('mongodb').innerHTML = '<span class="txt-color">mongodb</span>: MongoDB';
+                 document.getElementById('databasepro').innerHTML = 'Use <span class="txt-color">-d</span> ou <span opção class="txt-color">--database-provider</span> para especificar o banco de dados fornecedor:';
+                 document.getElementById('creating-Solution').innerHTML = 'Criando solução via ABP Suite';
+                 document.getElementById('asay').innerHTML = 'ABP Suite permite que você crie uma nova solução ABP.';
+                 document.getElementById('iyh').innerHTML = 'Se você não instalou o ABP Suite, consulte <a href="">como instalar o ABP Suite.</a>';
+                 document.getElementById('tosolcreate').innerHTML = 'Para criar uma nova solução, consulte <a href="https://docs.abp.io/en/commercial/7.2/abp-suite/create-solution">como criar uma nova solução.</a>';
+                 document.getElementById('wn').innerHTML = 'Qual é o próximo?';
+                 document.getElementById('sols').innerHTML = '<li><a href="Solution-Structure.html">Estrutura da solução</a></li>';
+                 document.getElementById('sols').innerHTML = '<li><a href="Solution-Structure.html">Estrutura da solução</a></li>';
+                 document.getElementById('creatingSolution').innerHTML = '<span class="accordian-active">Criando solução</span>';
+                
+
+// For In this doc section
+document.getElementById('inthisdoc').innerHTML = 'neste documento';
+                document.getElementById('cccc').innerHTML = '<a href="#csva" class="text-black">Criando solução via ABP CLI</a>';
+                document.getElementById('asas').innerHTML = '<a href="#specify" class="text-black">Especificar a estrutura da IU</a>';
+                document.getElementById('solute').innerHTML = '<a href="#creating-Solution" class="text-black">Criando solução via ABP Suite</a>';
+
+                 
+                }
+                else if (selectedLanguage === 'French') {
+                     // Body Content
+                
+                 document.getElementById('csva').innerHTML = 'Création d\'une nouvelle solution commerciale ABP';
+                 document.getElementById('tar').innerHTML = 'Il existe 2 façons de créer une nouvelle solution ABP commerciale. Vous pouvez utiliser <a href="https://docs.abp.io/en/abp/latest/CLI">ABP CLI </a> ou <a href="https://docs.abp.io/ fr/commercial/7.2/abp-suite/add-solution">Suite ABP.';
+                 document.getElementById('csv').innerHTML = 'Création de solution via ABP CLI';
+                 document.getElementById('iyhn').innerHTML = 'Si vous n\'avez pas encore installé l\'interface de ligne de commande ABP, vous devez l\'installer avec la commande suivante. Pour vérifier si vous l\'avez déjà, tapez <span class="txt-color">abp</span> sur la ligne de commande.';
+                 document.getElementById('tcys').innerHTML = 'Pour compiler votre solution, accédez au répertoire dans lequel vous souhaitez compiler et saisissez la commande suivante :';
+                 document.getElementById('acme').innerHTML = '<span class="txt-color">Acme.BookStore</span> est le nom du projet. Votre solution Visual Studio, le fichier <span class="txt-color">.sln </span> sera nommé <span class="txt-color">Acme.BookStore.sln.</span> Les projets dans le dossier racine et tous les espaces de noms seront préfixés par Acme.BookStore.*. Vous pouvez donner différents noms de projet comme simplement <span class="txt-color">Bookstore</span>ou <span class="txt-color">Acme.Retail.BookStore.</span> Vous pouvez utiliser un seul niveau , nomination de deux ou trois niveaux.';
+                 document.getElementById('tot').innerHTML = '<span class="txt-color">-t</span> ou <span class="txt-color">--template</span> est le nom du modèle. Pour les applications commerciales, utilisez <span class="txt-color">app-pro.</span>';
+                 document.getElementById('specify').innerHTML = 'Pour découvrir d\'autres nouvelles options de conception CLI, tapez :';
+                 document.getElementById('stuf').innerHTML = 'Spécifier la structure de l\'interface utilisateur';
+                 document.getElementById('ttp').innerHTML = 'Le modèle fournit plusieurs cadres d\'interface utilisateur :';
+                 document.getElementById('mvc').innerHTML = '<span class="txt-color">mvc</span> : ASP.NET Core MVC UI avec Razor Pages (par défaut)';
+                 document.getElementById('bui').innerHTML = '<span class="txt-color">blazor</span> : interface utilisateur Blazor';
+                 document.getElementById('bserver').innerHTML = '<span class="txt-color">blazor-server</span> : Interface utilisateur Blazor Server';
+                 document.getElementById('angularui').innerHTML = '<span class="txt-color">angulaire</span> : interface utilisateur angulaire';
+                 document.getElementById('maui').innerHTML = '<span class="txt-color">maui-blazor</span> : interface utilisateur MAUI Blazor';
+                 document.getElementById('isui').innerHTML = 'Utilisez l\'option <span class="txt-color">-u </span> ou <span class="txt-color">-ui</span> pour spécifier la structure de l\'interface utilisateur :';
+
+
+                 document.getElementById('stdp').innerHTML = 'Spécifier le fournisseur de la base de données';
+                 document.getElementById('ttst').innerHTML = 'Le modèle prend en charge les fournisseurs de bases de données suivants :';
+                 document.getElementById('efce').innerHTML = '<span class="txt-color">ef</span> : Entity Framework Core (par défaut)';
+                 document.getElementById('mongodb').innerHTML = '<span class="txt-color">mongodb</span> : MongoDB';
+                 document.getElementById('databasepro').innerHTML = 'Utilisez l\'option <span class="txt-color">-d</span> ou <span class="txt-color">--database-provider</span> pour spécifier la base de données du fournisseur :';
+                 document.getElementById('creating-Solution').innerHTML = 'Création de solution via ABP Suite';
+                 document.getElementById('asay').innerHTML = 'ABP Suite vous permet de créer une nouvelle solution ABP.';
+                 document.getElementById('iyh').innerHTML = 'Si vous n\'avez pas installé la suite ABP, consultez <a href="">comment installer la suite ABP.</a>';
+                 document.getElementById('tosolcreate').innerHTML = 'Pour créer une nouvelle solution, voir <a href="https://docs.abp.io/en/commercial/7.2/abp-suite/create-solution">comment créer une nouvelle solution.</a>';
+                 document.getElementById('wn').innerHTML = 'Quelle est la prochaine?';
+                 document.getElementById('sols').innerHTML = '<li><a href="Solution-Structure.html">Structure de la solution</a></li>';
+                 document.getElementById('sols').innerHTML = '<li><a href="Solution-Structure.html">Structure de la solution</a></li>';
+                 document.getElementById('creatingSolution').innerHTML = '<span class="accordian-active">Créer une solution</span>';
+                
+
+// For In this doc section
+                document.getElementById('inthisdoc').innerHTML = 'dans ce document';
+                document.getElementById('cccc').innerHTML = '<a href="#csva" class="text-black">Création d\'une solution via ABP CLI</a>';
+                document.getElementById('asas').innerHTML = '<a href="#specify" class="text-black">Spécifier le cadre de l\'interface utilisateur</a>';
+                document.getElementById('solute').innerHTML = '<a href="#creating-Solution" class="text-black">Créer une solution via ABP Suite</a>';
+            } 
+
+            else if (selectedLanguage === 'Finnish') {
+                  // Body Content
+                
+                  document.getElementById('csva').innerHTML = 'Uuden kaupallisen ratkaisun luominen ABP';
+                 document.getElementById('tar').innerHTML = 'On olemassa kaksi tapaa luoda uusi kaupallinen ABP-ratkaisu. Voit käyttää <a href="https://docs.abp.io/en/abp/latest/CLI">ABP CLI:tä </a> tai <a href="https://docs.abp.io/fr /commercial/7.2/abp-suite/add-solution">ABP Suite.';
+                 document.getElementById('csv').innerHTML = 'Ratkaisun luominen ABP CLI:n kautta';
+                 document.getElementById('iyhn').innerHTML = 'Jos et ole vielä asentanut ABP-komentorivikäyttöliittymää, sinun on asennettava se seuraavalla komennolla. Tarkista, onko sinulla jo se kirjoittamalla komentoriville <span class="txt-color">abp</span>.';
+                 document.getElementById('tcys').innerHTML = 'Kääntääksesi ratkaisusi, siirry hakemistoon, johon haluat kääntää, ja kirjoita seuraava komento:';
+                 document.getElementById('acme').innerHTML = '<span class="txt-color">Acme.BookStore</span> on projektin nimi. Visual Studio -ratkaisusi, <span class="txt-color">.sln</span>-tiedoston nimi on <span class="txt-color">Acme.BookStore.sln.</span> Kansiossa olevat projektit root ja kaikkien nimiavaruuksien etuliitteenä on Acme.BookStore.*. Voit antaa projekteille erilaisia ​​nimiä, kuten vain <span class="txt-color">Kirjakauppa</span> tai <span class="txt-color">Acme.Retail.BookStore.</span> Voit käyttää vain yhtä tasoa. , kahden tai kolmen tason nimittäminen.';
+                 document.getElementById('tot').innerHTML = '<span class="txt-color">-t</span> tai <span class="txt-color">--template</span> on mallin nimi. Käytä kaupallisissa sovelluksissa <span class="txt-color">app-proa.</span>';
+                 document.getElementById('specify').innerHTML = 'Voit tarkastella muita uusia CLI-suunnitteluvaihtoehtoja kirjoittamalla:';
+                 document.getElementById('stuf').innerHTML = 'Määritä käyttöliittymän rakenne';
+                 document.getElementById('ttp').innerHTML = 'Malli tarjoaa useita käyttöliittymäkehyksiä:';
+                 document.getElementById('mvc').innerHTML = '<span class="txt-color">mvc</span>: ASP.NET Core MVC -käyttöliittymä Razor-sivuilla (oletus)';
+                 document.getElementById('bui').innerHTML = '<span class="txt-color">blazor</span>: Blazor-käyttöliittymä';
+                 document.getElementById('bserver').innerHTML = '<span class="txt-color">blazor-palvelin</span>: Blazor-palvelimen käyttöliittymä';
+                 document.getElementById('angularui').innerHTML = '<span class="txt-color">Kulma</span>: Kulmikas käyttöliittymä';
+                 document.getElementById('maui').innerHTML = '<span class="txt-color">maui-blazor</span>: MAUI Blazor -käyttöliittymä';
+                 document.getElementById('isui').innerHTML = 'Määritä käyttöliittymän rakenne valitsemalla <span class="txt-color">-u </span> tai <span class="txt-color">-ui</span>:';
+
+
+
+                 document.getElementById('stdp').innerHTML = 'Määritä tietokannan tarjoaja';
+                 document.getElementById('ttst').innerHTML = 'Malli tukee seuraavia tietokannan tarjoajia:';
+                 document.getElementById('efce').innerHTML = '<span class="txt-color">ef</span>: Entity Framework Core (oletus)';
+                 document.getElementById('mongodb').innerHTML = '<span class="txt-color">mongodb</span>: MongoDB';
+                 document.getElementById('databasepro').innerHTML = 'Määritä tietokannan tarjoaja valitsemalla <span class="txt-color">-d</span> tai <span class="txt-color">--database-provider</span>:';
+
+                 document.getElementById('creating-Solution').innerHTML = 'Ratkaisun luominen ABP Suiten kautta';
+                 document.getElementById('asay').innerHTML = 'ABP Suiten avulla voit luoda uuden ABP-ratkaisun.';
+               
+                 document.getElementById('iyh').innerHTML = 'Jos sinulla ei ole ABP Suitea asennettuna, katso <a href="">ABP Suiten asentaminen</a>.';
+                 document.getElementById('tosolcreate').innerHTML = 'Jos haluat luoda uuden ratkaisun, katso <a href="https://docs.abp.io/en/commercial/7.2/abp-suite/create-solution">uusi ratkaisu.</a>';
+                 document.getElementById('wn').innerHTML = 'Mikä on seuraava?';
+                 document.getElementById('sols').innerHTML = '<li><a href="Solution-Structure.html">Ratkaisun rakenne</a></li>';
+                 document.getElementById('sols').innerHTML = '<li><a href="Solution-Structure.html">Ratkaisun rakenne</a></li>';
+                 document.getElementById('creatingSolution').innerHTML = '<span class="accordian-active">Luo ratkaisu</span>';
+                
+
+// For In this doc section
+                document.getElementById('inthisdoc').innerHTML = 'dans ce document';
+                document.getElementById('cccc').innerHTML = '<a href="#csva" class="text-black">Création d\'une solution via ABP CLI</a>';
+                document.getElementById('asas').innerHTML = '<a href="#specify" class="text-black">Spécifier le cadre de l\'interface utilisateur</a>';
+                document.getElementById('solute').innerHTML = '<a href="#creating-Solution" class="text-black">Créer une solution via ABP Suite</a>';
+            } 
+     
+            else if (selectedLanguage === 'Slovak') {
+                // Obsah tela
+document.getElementById('csva').innerHTML = 'Vytvorenie novej komerčnej riešenia pomocou ABP';
+document.getElementById('tar').innerHTML = 'Existujú dva spôsoby, ako vytvoriť nové komerčné ABP riešenie. Môžete použiť <a href="https://docs.abp.io/en/abp/latest/CLI">ABP CLI</a> alebo <a href="https://docs.abp.io/fr/commercial/7.2/abp-suite/add-solution">ABP Suite</a>.';
+document.getElementById('csv').innerHTML = 'Vytvorenie riešenia pomocou ABP CLI';
+document.getElementById('iyhn').innerHTML = 'Ak ešte nemáte nainštalované ABP príkazového riadku, nainštalujte ho pomocou nasledujúceho príkazu. Skontrolujte, či už ho máte nainštalovaný napísaním príkazu <span class="txt-color">abp</span>.';
+document.getElementById('tcys').innerHTML = 'Na preloženie vášho riešenia prejdite do priečinka, kde chcete preložiť, a napíšte nasledujúci príkaz:';
+document.getElementById('acme').innerHTML = '<span class="txt-color">Acme.BookStore</span> je názov projektu. Názov súboru <span class="txt-color">.sln</span> vášho projektu vo Visual Studio je <span class="txt-color">Acme.BookStore.sln</span>. Projekty v priečinku root a všetky s názvovým priestorom s predponou Acme.BookStore.*. Môžete projektom pridať rôzne názvy, ako napríklad len <span class="txt-color">Kníhkupectvo</span> alebo <span class="txt-color">Acme.Retail.BookStore</span>. Môžete použiť len jednu úroveň, dve úrovne alebo tri úrovne názvov.';
+document.getElementById('tot').innerHTML = '<span class="txt-color">-t</span> alebo <span class="txt-color">--template</span> je názov šablóny. Pre komerčné aplikácie použite šablónu <span class="txt-color">app-pro</span>.';
+document.getElementById('specify').innerHTML = 'Ďalšie voľby pre ABP CLI môžete zobraziť napísaním:';
+document.getElementById('stuf').innerHTML = 'Určenie štruktúry rozhrania';
+document.getElementById('ttp').innerHTML = 'Šablóna podporuje niekoľko rámčekov rozhrania:';
+document.getElementById('mvc').innerHTML = '<span class="txt-color">mvc</span>: Rozhranie ASP.NET Core MVC s Razor stránkami (predvolené)';
+document.getElementById('bui').innerHTML = '<span class="txt-color">blazor</span>: Rozhranie Blazor';
+document.getElementById('bserver').innerHTML = '<span class="txt-color">blazor-palvelin</span>: Rozhranie Blazor na strane servera';
+document.getElementById('angularui').innerHTML = '<span class="txt-color">angular</span>: Rozhranie Angular';
+document.getElementById('maui').innerHTML = '<span class="txt-color">maui-blazor</span>: Rozhranie MAUI Blazor';
+document.getElementById('isui').innerHTML = 'Určenie štruktúry rozhrania pomocou <span class="txt-color">-u</span> alebo <span class="txt-color">-ui</span>:';
+
+document.getElementById('stdp').innerHTML = 'Určenie poskytovateľa databázy';
+document.getElementById('ttst').innerHTML = 'Šablóna podporuje nasledujúcich poskytovateľov databázy:';
+document.getElementById('efce').innerHTML = '<span class="txt-color">ef</span>: Entity Framework Core (predvolené)';
+document.getElementById('mongodb').innerHTML = '<span class="txt-color">mongodb</span>: MongoDB';
+document.getElementById('databasepro').innerHTML = 'Určenie poskytovateľa databázy pomocou <span class="txt-color">-d</span> alebo <span class="txt-color">--database-provider</span>:';
+
+document.getElementById('creating-Solution').innerHTML = 'Vytvorenie riešenia pomocou ABP Suite';
+document.getElementById('asay').innerHTML = 'Pomocou ABP Suite môžete vytvoriť nové riešenie ABP.';
+document.getElementById('iyh').innerHTML = 'Ak nemáte nainštalovaný ABP Suite, pozrite si <a href="">Inštaláciu ABP Suite</a>.';
+document.getElementById('tosolcreate').innerHTML = 'Ak chcete vytvoriť nové riešenie, pozrite si <a href="https://docs.abp.io/en/commerce/7.2/abp-suite/create-solution">nové riešenie</a>';
+document.getElementById('wn').innerHTML = 'Čo ďalej?';
+document.getElementById('sols').innerHTML = '<li><a href="Solution-Structure.html">Štruktúra riešenia</a></li>';
+document.getElementById('creatingSolution').innerHTML = '<span class="accordian-active">Vytvorenie riešenia</span>';
+
+// Pre sekciu V tomto dokumente
+document.getElementById('inthisdoc').innerHTML = 'v tomto dokumente';
+document.getElementById('cccc').innerHTML = '<a href="#csva" class="text-black">Vytvorenie riešenia pomocou ABP CLI</a>';
+document.getElementById('asas').innerHTML = '<a href="#specify" class="text-black">Určenie rámca používateľského rozhrania</a>';
+document.getElementById('solute').innerHTML = '<a href="#creating-Solution" class="text-black">Vytvorenie riešenia pomocou ABP Suite</a>';
+
+            } 
+            else if (selectedLanguage === 'German') {
+                // Inhalt des Hauptbereichs
+document.getElementById('csva').innerHTML = 'Erstellen einer neuen kommerziellen ABP-Lösung mit ABP';
+document.getElementById('tar').innerHTML = 'Es gibt zwei Möglichkeiten, eine neue kommerzielle ABP-Lösung zu erstellen. Sie können ABP CLI oder ABP Suite verwenden.';
+document.getElementById('csv').innerHTML = 'Erstellen einer Lösung mit ABP CLI';
+document.getElementById('iyhn').innerHTML = 'Wenn Sie ABP CLI noch nicht installiert haben, installieren Sie es mit folgendem Befehl. Überprüfen Sie, ob Sie es bereits installiert haben, indem Sie den Befehl <span class="txt-color">abp</span> eingeben.';
+document.getElementById('tcys').innerHTML = 'Wechseln Sie zum Ordner, in dem Sie Ihre Lösung erstellen möchten, und geben Sie den folgenden Befehl ein, um Ihre Lösung zu erstellen:';
+document.getElementById('acme').innerHTML = '<span class="txt-color">Acme.BookStore</span> ist der Projektname. Der Dateiname <span class="txt-color">.sln</span> Ihrer Projektdatei in Visual Studio lautet <span class="txt-color">Acme.BookStore.sln</span>. Die Projekte im Stammverzeichnis haben alle den Namensraum mit dem Präfix Acme.BookStore.*. Sie können verschiedene Namen für Ihre Projekte verwenden, z. B. einfach <span class="txt-color">Buchhandlung</span> oder <span class="txt-color">Acme.Retail.BookStore</span>. Sie können einstöckige, zweistöckige oder dreistöckige Namensräume verwenden.';
+document.getElementById('tot').innerHTML = '<span class="txt-color">-t</span> oder <span class="txt-color">--template</span> ist der Name der Vorlage. Verwenden Sie für kommerzielle Anwendungen die Vorlage <span class="txt-color">app-pro</span>.';
+document.getElementById('specify').innerHTML = 'Weitere Optionen für ABP CLI können Sie anzeigen, indem Sie Folgendes eingeben:';
+document.getElementById('stuf').innerHTML = 'Festlegen der Benutzeroberflächenstruktur';
+document.getElementById('ttp').innerHTML = 'Die Vorlage unterstützt mehrere Benutzeroberflächen-Frameworks:';
+document.getElementById('mvc').innerHTML = '<span class="txt-color">mvc</span>: ASP.NET Core MVC mit Razor-Seiten (Standard)';
+document.getElementById('bui').innerHTML = '<span class="txt-color">blazor</span>: Blazor-Benutzeroberfläche';
+document.getElementById('bserver').innerHTML = '<span class="txt-color">blazor-server</span>: Blazor-Benutzeroberfläche auf dem Server';
+document.getElementById('angularui').innerHTML = '<span class="txt-color">angular</span>: Angular-Benutzeroberfläche';
+document.getElementById('maui').innerHTML = '<span class="txt-color">maui-blazor</span>: MAUI Blazor-Benutzeroberfläche';
+document.getElementById('isui').innerHTML = 'Festlegen der Benutzeroberflächenstruktur mit <span class="txt-color">-u</span> oder <span class="txt-color">-ui</span>:';
+
+document.getElementById('stdp').innerHTML = 'Festlegen des Datenbankanbieters';
+document.getElementById('ttst').innerHTML = 'Die Vorlage unterstützt die folgenden Datenbankanbieter:';
+document.getElementById('efce').innerHTML = '<span class="txt-color">ef</span>: Entity Framework Core (Standard)';
+document.getElementById('mongodb').innerHTML = '<span class="txt-color">mongodb</span>: MongoDB';
+document.getElementById('databasepro').innerHTML = 'Festlegen des Datenbankanbieters mit <span class="txt-color">-d</span> oder <span class="txt-color">--database-provider</span>:';
+
+document.getElementById('creating-Solution').innerHTML = 'Erstellen einer Lösung mit ABP Suite';
+document.getElementById('asay').innerHTML = 'Mit ABP Suite können Sie eine neue ABP-Lösung erstellen.';
+document.getElementById('iyh').innerHTML = 'Wenn Sie ABP Suite noch nicht installiert haben, finden Sie hier <a href="">die ABP Suite-Installation</a>.';
+document.getElementById('tosolcreate').innerHTML = 'Informationen zum Erstellen einer neuen Lösung finden Sie unter <a href="https://docs.abp.io/en/commerce/7.2/abp-suite/create-solution">Neue Lösung</a>';
+
+document.getElementById('wn').innerHTML = 'Was kommt als Nächstes?';
+document.getElementById('sols').innerHTML = '<li><a href="Solution-Structure.html">Lösungsstruktur</a></li>';
+document.getElementById('creatingSolution').innerHTML = '<span class="accordian-active">Erstellen einer Lösung</span>';
+
+// Für den Abschnitt "In diesem Dokument"
+document.getElementById('inthisdoc').innerHTML = 'in diesem Dokument';
+document.getElementById('cccc').innerHTML = '<a href="#csva" class="text-black">Erstellen einer Lösung mit ABP CLI</a>';
+document.getElementById('asas').innerHTML = '<a href="#specify" class="text-black">Festlegen der Benutzeroberflächenstruktur</a>';
+document.getElementById('solute').innerHTML = '<a href="#creating-Solution" class="text-black">Erstellen einer Lösung mit ABP Suite</a>';
+
+            } 
+     else if (selectedLanguage === 'hi') {
+                 document.getElementById('csva').innerHTML = 'एक नया ABP वाणिज्यिक समाधान बना रहे हैं।';
+                 document.getElementById('tar').innerHTML = 'नए ABP वाणिज्यिक समाधान बनाने के 2 तरीके हैं। आप या तो ABP CLI (<a href="https://docs.abp.io/en/abp/latest/CLI">यहाँ क्लिक करें</a>) का उपयोग कर सकते हैं या ABP Suite (<a href="https://docs.abp.io/en/commercial/7.2/abp-suite/add-solution">यहाँ क्लिक करें</a>) का उपयोग कर सकते हैं।';
+                 document.getElementById('csv').innerHTML = 'ABP CLI के माध्यम से समाधान बनाएं';
+                 document.getElementById('iyhn').innerHTML = 'यदि आपने ABP CLI अभी तक इंस्टॉल नहीं किया है, तो आपको इस निम्नलिखित कमांड के साथ इंस्टॉल करने की आवश्यकता है। कमांड लाइन पर यह जांचने के लिए लिखें: <span class="txt-color">abp</span>';
+                 document.getElementById('tcys').innerHTML = 'समाधान बनाने के लिए, उस निर्देशिका में जाएं जहां आप इसे बनाना चाहते हैं और निम्नलिखित कमांड टाइप करें:';
+                 document.getElementById('acme').innerHTML = '<span class="txt-color">Acme.BookStore</span> परियोजना का नाम है। आपकी Visual Studio समाधान, <span class="txt-color">.sln</span> फ़ाइल का नाम <span class="txt-color">Acme.BookStore.sln</span> होगा। रूट फ़ोल्डर के अंदर के प्रोजेक्ट्स और सभी नेमस्पेस का उपसर्ग Acme.BookStore.* होगा। आप इसके लिए केवल <span class="txt-color">BookStore</span> या <span class="txt-color">Acme.Retail.BookStore</span> जैसे भिन्न प्रोजेक्ट नाम दे सकते हैं। आपको एकल स्तरीय, दो-स्तरीय या तीन-स्तरीय नामकरण का उपयोग कर सकते हैं।';
+                 document.getElementById('tot').innerHTML = '<span class="txt-color">-t</span> या <span class="txt-color">--template</span> टेम्पलेट नाम है। वाणिज्यिक ऐप्स के लिए <span class="txt-color">app-pro</span> का उपयोग करें।';
+                 document.getElementById('specify').innerHTML = 'अन्य CLI नई प्रोजेक्ट विकल्प खोजने के लिए निम्नलिखित टाइप करें:';
+                 document.getElementById('stuf').innerHTML = 'यूआई फ्रेमवर्क निर्धारित करें';
+                 document.getElementById('ttp').innerHTML = 'टेम्पलेट में कई यूआई फ्रेमवर्क हैं:';
+                 document.getElementById('mvc').innerHTML = '<span class="txt-color">mvc</span>: ASP.NET Core MVC UI with Razor Pages (डिफ़ॉल्ट)';
+                 document.getElementById('bui').innerHTML = '<span class="txt-color">blazor</span>: Blazor UI';
+                 document.getElementById('bserver').innerHTML = '<span class="txt-color">blazor-server</span>: Blazor Server UI';
+                 document.getElementById('angularui').innerHTML = '<span class="txt-color">angular</span>: Angular UI';
+                 document.getElementById('maui').innerHTML = '<span class="txt-color">maui-blazor</span>: MAUI Blazor UI';
+                 document.getElementById('isui').innerHTML = 'यूआई फ्रेमवर्क को निर्धारित करने के लिए <span class="txt-color">-u</span> या <span class="txt-color">--ui</span> विकल्प का उपयोग करें:';
+                 document.getElementById('stdp').innerHTML = 'डेटाबेस प्रोवाइडर निर्धारित करें';
+                 document.getElementById('ttst').innerHTML = 'टेम्पलेट निम्नलिखित डेटाबेस प्रोवाइडर का समर्थन करता है:';
+                 document.getElementById('efce').innerHTML = '<span class="txt-color">ef</span>: Entity Framework Core (डिफ़ॉल्ट)';
+                 document.getElementById('mongodb').innerHTML = '<span class="txt-color">mongodb</span>: MongoDB';
+                 document.getElementById('databasepro').innerHTML = 'डेटाबेस प्रोवाइडर को निर्धारित करने के लिए <span class="txt-color">-d</span> या <span class="txt-color">--database-provider</span> विकल्प का उपयोग करें:';
+                 document.getElementById('creating-Solution').innerHTML = 'ABP Suite के माध्यम से समाधान बनाएं';
+                 document.getElementById('asay').innerHTML = 'ABP Suite आपको एक नया ABP समाधान बनाने की अनुमति देता है।';
+                 document.getElementById('iyh').innerHTML = 'यदि आपने ABP Suite इंस्टॉल नहीं किया है, तो <a href="">यहाँ क्लिक करें</a> और ABP Suite को इंस्टॉल करने के लिए देखें।';
+                 document.getElementById('wn').innerHTML = 'अगला क्या?';
+                 document.getElementById('sols').innerHTML = '<li><a href="Solution-Structure.html">समाधान संरचना</a></li>';
+                 document.getElementById('creatingSolution').innerHTML = '<span class="accordian-active">समाधान बनाना</span>';
+
+                 // For In this doc section
+                 document.getElementById('inthisdoc').innerHTML = 'इस दस्तावेज़ में';
+                 document.getElementById('cccc').innerHTML = '<a href="#csva" class="text-black">ABP CLI के माध्यम से समाधान बनाएं</a>';
+                 document.getElementById('asas').innerHTML = '<a href="#specify" class="text-black">यूआई फ्रेमवर्क निर्धारित करें</a>';
+                 document.getElementById('solute').innerHTML = '<a href="#creating-Solution" class="text-black">ABP Suite के माध्यम से समाधान बनाएं</a>';
+
+             }
+             else if (selectedLanguage === 'it') {
+                 document.getElementById('csva').innerHTML = 'Creazione di una nuova soluzione ABP Commercial';
+                 document.getElementById('tar').innerHTML = 'Esistono 2 modi per creare una nuova soluzione ABP Commercial. Puoi utilizzare il <a href="https://docs.abp.io/en/abp/latest/CLI">ABP CLI</a> o <a href="https://docs.abp.io/en/commercial/7.2/abp-suite/add-solution">ABP Suite.</a>';
+                 document.getElementById('csv').innerHTML = 'Creazione della soluzione tramite ABP CLI';
+                 document.getElementById('iyhn').innerHTML = 'Se non hai ancora installato ABP CLI, devi installarlo con il seguente comando. Per verificare se lo hai già, scrivi <span class="txt-color">abp</span> sulla riga di comando.';
+                 document.getElementById('tcys').innerHTML = 'Per creare la tua soluzione, vai nella directory in cui desideri crearla e digita il seguente comando:';
+                 document.getElementById('acme').innerHTML = '<span class="txt-color">Acme.BookStore</span> è il nome del progetto. La tua soluzione Visual Studio, il file <span class="txt-color">.sln</span>, sarà chiamato <span class="txt-color">Acme.BookStore.sln.</span> I progetti all interno della cartella principale e tutti i namespace avranno il prefisso Acme.BookStore.*. Puoi dare diversi nomi ai progetti come ad esempio solo <span class="txt-color">BookStore</span> o <span class="txt-color">Acme.Retail.BookStore.</span> Puoi utilizzare nomi a uno, due o tre livelli.';
+                 document.getElementById('tot').innerHTML = '<span class="txt-color">-t</span> o <span class="txt-color">--template</span> è il nome del template. Per le app commerciali, utilizza <span class="txt-color">app-pro.</span>';
+                 document.getElementById('specify').innerHTML = 'Per scoprire altre opzioni per la creazione di nuovi progetti tramite CLI, scrivi:';
+                 document.getElementById('stuf').innerHTML = 'Specifica il framework UI';
+                 document.getElementById('ttp').innerHTML = 'Il template supporta diversi framework UI:';
+                 document.getElementById('mvc').innerHTML = '<span class="txt-color">mvc</span>: UI ASP.NET Core MVC con Razor Pages (predefinito)';
+                 document.getElementById('bui').innerHTML = '<span class="txt-color">blazor</span>: UI Blazor';
+                 document.getElementById('bserver').innerHTML = '<span class="txt-color">blazor-server</span>: UI Blazor Server';
+                 document.getElementById('angularui').innerHTML = '<span class="txt-color">angular</span>: UI Angular';
+                 document.getElementById('maui').innerHTML = '<span class="txt-color">maui-blazor</span>: UI MAUI Blazor';
+                 document.getElementById('isui').innerHTML = 'Utilizza l\'opzione <span class="txt-color">-u </span> o <span class="txt-color">--ui</span> per specificare il framework UI:';
+                 document.getElementById('stdp').innerHTML = 'Specifica il provider del database';
+                 document.getElementById('ttst').innerHTML = 'Il template supporta i seguenti provider di database:';
+                 document.getElementById('efce').innerHTML = '<span class="txt-color">ef</span>: Entity Framework Core (predefinito)';
+                 document.getElementById('mongodb').innerHTML = '<span class="txt-color">mongodb</span>: MongoDB';
+                 document.getElementById('databasepro').innerHTML = 'Utilizza l\'opzione <span class="txt-color">-d</span> o <span class="txt-color">--database-provider</span> per specificare il provider del database:';
+                 document.getElementById('creating-Solution').innerHTML = 'Creazione della soluzione tramite ABP Suite';
+                 document.getElementById('asay').innerHTML = 'ABP Suite ti consente di creare una nuova soluzione ABP.';
+                 document.getElementById('iyh').innerHTML = 'Se non hai ancora installato ABP Suite, vedi <a href="">come installare ABP Suite.</a>';
+                 document.getElementById('wn').innerHTML = 'Cosa fare dopo?';
+                 document.getElementById('sols').innerHTML = '<li><a href="Solution-Structure.html">Struttura della soluzione</a></li>';
+                 document.getElementById('creatingSolution').innerHTML = '<span class="accordian-active">Creazione della Soluzione</span>';
+
+                 // For In this doc section
+                 document.getElementById('inthisdoc').innerHTML = 'In questo documento';
+                 document.getElementById('cccc').innerHTML = '<a href="#csva" class="text-black">Creazione della soluzione tramite ABP CLI</a>';
+                 document.getElementById('asas').innerHTML = '<a href="#specify" class="text-black">Specifica il framework UI</a>';
+                 document.getElementById('solute').innerHTML = '<a href="#creating-Solution" class="text-black">Creazione della soluzione tramite ABP Suite</a>';
+
+             }
+             else if (selectedLanguage === 'ru') {
+                 // Body Content
+                 document.getElementById('csva').innerHTML = 'Создание нового коммерческого решения ABP';
+                 document.getElementById('tar').innerHTML = 'Существует 2 способа создания нового коммерческого решения ABP. Вы можете использовать <a href="https://docs.abp.io/en/abp/latest/CLI">ABP CLI</a> или <a href="https://docs.abp.io/en/commercial/7.2/abp-suite/add-solution">ABP Suite.</a>';
+                 document.getElementById('csv').innerHTML = 'Создание решения через ABP CLI';
+                 document.getElementById('iyhn').innerHTML = 'Если вы еще не установили ABP CLI, вам необходимо установить его с помощью следующей команды. Чтобы проверить, установлен ли он, напишите <span class="txt-color">abp</span> в командной строке.';
+                 document.getElementById('tcys').innerHTML = 'Чтобы создать свое решение, перейдите в директорию, где вы хотите создать его, и введите следующую команду:';
+                 document.getElementById('acme').innerHTML = '<span class="txt-color">Acme.BookStore</span> - это название проекта. Ваша решение Visual Studio, файл <span class="txt-color">.sln</span>, будет назван <span class="txt-color">Acme.BookStore.sln.</span> Проекты внутри корневой папки и все пространства имен будут иметь префикс Acme.BookStore.*. Вы можете дать различные имена проектам, например, просто <span class="txt-color">BookStore</span> или <span class="txt-color">Acme.Retail.BookStore.</span> Вы можете использовать одноуровневое, двухуровневое или трехуровневое именование.';
+                 document.getElementById('tot').innerHTML = '<span class="txt-color">-t</span> или <span class="txt-color">--template</span> - это имя шаблона. Для коммерческих приложений используйте <span class="txt-color">app-pro.</span>';
+                 document.getElementById('specify').innerHTML = 'Чтобы узнать другие параметры нового проекта CLI, введите:';
+                 document.getElementById('stuf').innerHTML = 'Укажите пользовательский интерфейс (UI)';
+                 document.getElementById('ttp').innerHTML = 'Шаблон поддерживает несколько пользовательских интерфейсов (UI):';
+                 document.getElementById('mvc').innerHTML = '<span class="txt-color">mvc</span>: ASP.NET Core MVC UI с Razor Pages (по умолчанию)';
+                 document.getElementById('bui').innerHTML = '<span class="txt-color">blazor</span>: Blazor UI';
+                 document.getElementById('bserver').innerHTML = '<span class="txt-color">blazor-server</span>: Blazor Server UI';
+                 document.getElementById('angularui').innerHTML = '<span class="txt-color">angular</span>: Angular UI';
+                 document.getElementById('maui').innerHTML = '<span class="txt-color">maui-blazor</span>: MAUI Blazor UI';
+                 document.getElementById('isui').innerHTML = 'Используйте опцию <span class="txt-color">-u</span> или <span class="txt-color">--ui</span> для указания пользовательского интерфейса (UI):';
+                 document.getElementById('stdp').innerHTML = 'Укажите базу данных';
+                 document.getElementById('ttst').innerHTML = 'Шаблон поддерживает следующие базы данных:';
+                 document.getElementById('efce').innerHTML = '<span class="txt-color">ef</span>: Entity Framework Core (по умолчанию)';
+                 document.getElementById('mongodb').innerHTML = '<span class="txt-color">mongodb</span>: MongoDB';
+                 document.getElementById('databasepro').innerHTML = 'Используйте опцию <span class="txt-color">-d</span> или <span class="txt-color">--database-provider</span> для указания базы данных:';
+                 document.getElementById('creating-Solution').innerHTML = 'Создание решения через ABP Suite';
+                 document.getElementById('asay').innerHTML = 'ABP Suite позволяет создать новое решение ABP.';
+                 document.getElementById('iyh').innerHTML = 'Если вы не установили ABP Suite, смотрите <a href="">как установить ABP Suite.</a>';
+                 document.getElementById('wn').innerHTML = 'Что дальше?';
+                 document.getElementById('sols').innerHTML = '<li><a href="Solution-Structure.html">Структура решения</a></li>';
+                 document.getElementById('creatingSolution').innerHTML = '<span class="accordian-active">Создание решения</span>';
+
+                 // For In this doc section
+                 document.getElementById('inthisdoc').innerHTML = 'В этом документе';
+                 document.getElementById('cccc').innerHTML = '<a href="#csva" class="text-black">Создание решения через ABP CLI</a>';
+                 document.getElementById('asas').innerHTML = '<a href="#specify" class="text-black">Указать пользовательский интерфейс (UI)</a>';
+                 document.getElementById('solute').innerHTML = '<a href="#creating-Solution" class="text-black">Создание решения через ABP Suite</a>';
+             }
+             else if (selectedLanguage === 'zh') {
+                 // Body Content
+                 document.getElementById('csva').innerHTML = '创建一个新的 ABP 商业解决方案';
+                 document.getElementById('tar').innerHTML = '有两种方法可以创建一个新的 ABP 商业解决方案。您可以使用 <a href="https://docs.abp.io/en/abp/latest/CLI">ABP CLI</a> 或者 <a href="https://docs.abp.io/en/commercial/7.2/abp-suite/add-solution">ABP Suite</a>。';
+                 document.getElementById('csv').innerHTML = '通过 ABP CLI 创建解决方案';
+                 document.getElementById('iyhn').innerHTML = '如果您还没有安装 ABP CLI，请使用以下命令进行安装。要检查是否已安装，请在命令行中输入 <span class="txt-color">abp</span>。';
+                 document.getElementById('tcys').innerHTML = '要创建解决方案，请进入您想要创建的目录，并输入以下命令：';
+                 document.getElementById('acme').innerHTML = '<span class="txt-color">Acme.BookStore</span> 是项目名称。您的 Visual Studio 解决方案文件将被命名为 <span class="txt-color">Acme.BookStore.sln。</span> 根目录下的项目以及所有命名空间都将带有前缀 Acme.BookStore.*。您可以使用不同的项目名称，例如只有 <span class="txt-color">BookStore</span> 或者 <span class="txt-color">Acme.Retail.BookStore。</span> 您可以使用单级、两级或三级命名。';
+                 document.getElementById('tot').innerHTML = '<span class="txt-color">-t</span> 或 <span class="txt-color">--template</span> 是模板名称。对于商业应用程序，请使用 <span class="txt-color">app-pro。</span>';
+                 document.getElementById('specify').innerHTML = '要查看其他 CLI 新项目选项，请输入：';
+                 document.getElementById('stuf').innerHTML = '指定 UI 框架';
+                 document.getElementById('ttp').innerHTML = '该模板支持多个 UI 框架：';
+                 document.getElementById('mvc').innerHTML = '<span class="txt-color">mvc</span>: 带有 Razor Pages 的 ASP.NET Core MVC UI（默认）';
+                 document.getElementById('bui').innerHTML = '<span class="txt-color">blazor</span>: Blazor UI';
+                 document.getElementById('bserver').innerHTML = '<span class="txt-color">blazor-server</span>: Blazor Server UI';
+                 document.getElementById('angularui').innerHTML = '<span class="txt-color">angular</span>: Angular UI';
+                 document.getElementById('maui').innerHTML = '<span class="txt-color">maui-blazor</span>: MAUI Blazor UI';
+                 document.getElementById('isui').innerHTML = '使用 <span class="txt-color">-u </span> 或 <span class="txt-color">--ui</span> 选项指定 UI 框架：';
+                 document.getElementById('stdp').innerHTML = '指定数据库提供程序';
+                 document.getElementById('ttst').innerHTML = '该模板支持以下数据库提供程序：';
+                 document.getElementById('efce').innerHTML = '<span class="txt-color">ef</span>: Entity Framework Core（默认）';
+                 document.getElementById('mongodb').innerHTML = '<span class="txt-color">mongodb</span>: MongoDB';
+                 document.getElementById('databasepro').innerHTML = '使用 <span class="txt-color">-d</span> 或 <span class="txt-color">--database-provider</span> 选项指定数据库提供程序：';
+                 document.getElementById('creating-Solution').innerHTML = '通过 ABP Suite 创建解决方案';
+                 document.getElementById('asay').innerHTML = 'ABP Suite 允许您创建一个新的 ABP 解决方案。';
+                 document.getElementById('iyh').innerHTML = '如果您还没有安装 ABP Suite，请参阅<a href="">如何安装 ABP Suite。</a>';
+                 document.getElementById('wn').innerHTML = '下一步是什么？';
+                 document.getElementById('sols').innerHTML = '<li><a href="Solution-Structure.html">解决方案结构</a></li>';
+                 document.getElementById('creatingSolution').innerHTML = '<span class="accordian-active">创建解决方案</span>';
+
+                 // For In this doc section
+                 document.getElementById('inthisdoc').innerHTML = '本文内容';
+                 document.getElementById('cccc').innerHTML = '<a href="#csva" class="text-black">通过 ABP CLI 创建解决方案</a>';
+                 document.getElementById('asas').innerHTML = '<a href="#specify" class="text-black">指定 UI 框架</a>';
+                 document.getElementById('solute').innerHTML = '<a href="#creating-Solution" class="text-black">通过 ABP Suite 创建解决方案</a>';
+             }
+             else if (selectedLanguage === 'ar') {
+                 document.getElementById('csva').innerHTML = 'إنشاء حلاً تجاريًا جديدًا لـ ABP';
+                 document.getElementById('tar').innerHTML = 'هناك طريقتان لإنشاء حلاً تجاريًا جديدًا لـ ABP. يمكنك استخدام <a href="https://docs.abp.io/en/abp/latest/CLI">ABP CLI</a> أو <a href="https://docs.abp.io/en/commercial/7.2/abp-suite/add-solution">ABP Suite.</a>';
+                 document.getElementById('csv').innerHTML = 'إنشاء الحلا عبر ABP CLI';
+                 document.getElementById('iyhn').innerHTML = 'إذا لم تقم بتثبيت ABP CLI بعد ، فيجب عليك تثبيته باستخدام الأمر التالي. للتحقق مما إذا كان مثبتًا بالفعل ، اكتب <span class="txt-color">abp</span> في سطر الأوامر.';
+                 document.getElementById('tcys').innerHTML = 'لإنشاء الحلا الخاص بك ، انتقل إلى الدليل الذي ترغب في إنشائه فيه ثم اكتب الأمر التالي:';
+                 document.getElementById('acme').innerHTML = 'اسم المشروع هو <span class="txt-color">Acme.BookStore</span>. سيتم تسمية ملف حل الـ Visual Studio الخاص بك بـ <span class="txt-color">Acme.BookStore.sln.</span> ستحتوي المشاريع داخل المجلد الرئيسي وجميع الفضاءات الاسمية على البادئة Acme.BookStore.*. يمكنك إعطاء أسماء مشاريع مختلفة مثل <span class="txt-color">BookStore </span> أو <span class="txt-color">Acme.Retail.BookStore.</span> يمكنك استخدام أسماء ذات مستوى واحد أو مستويين أو ثلاثة مستويات.';
+                 document.getElementById('tot').innerHTML = 'القالب المستخدم هو <span class="txt-color">app-pro.</span> للتطبيقات التجارية.';
+                 document.getElementById('specify').innerHTML = 'لاكتشاف خيارات أخرى لمشروع CLI الجديد ، اكتب:';
+                 document.getElementById('stuf').innerHTML = 'حدد إطار العرض (UI) المستخدم';
+                 document.getElementById('ttp').innerHTML = 'يوفر القالب العديد من إطارات العرض (UI):';
+                 document.getElementById('mvc').innerHTML = '<span class="txt-color">mvc</span>: واجهة مستخدم ASP.NET Core MVC مع Razor Pages (الافتراضي)';
+                 document.getElementById('bui').innerHTML = '<span class="txt-color">blazor</span>: واجهة مستخدم Blazor';
+                 document.getElementById('bserver').innerHTML = '<span class="txt-color">blazor-server</span>: واجهة مستخدم Blazor Server';
+                 document.getElementById('angularui').innerHTML = '<span class="txt-color">angular</span>: واجهة مستخدم Angular';
+                 document.getElementById('maui').innerHTML = '<span class="txt-color">maui-blazor</span>: واجهة مستخدم MAUI Blazor';
+                 document.getElementById('isui').innerHTML = 'استخدم الخيار <span class="txt-color">-u </span> أو <span class="txt-color">--ui</span> لتحديد إطار العرض (UI):';
+                 document.getElementById('stdp').innerHTML = 'حدد مزود قاعدة البيانات';
+                 document.getElementById('ttst').innerHTML = 'يدعم القالب مزودات قاعدة البيانات التالية:';
+                 document.getElementById('efce').innerHTML = '<span class="txt-color">ef</span>: Entity Framework Core (الافتراضي)';
+                 document.getElementById('mongodb').innerHTML = '<span class="txt-color">mongodb</span>: MongoDB';
+                 document.getElementById('databasepro').innerHTML = 'استخدم الخيار <span class="txt-color">-d</span> أو <span class="txt-color">--database-provider</span> لتحديد مزود قاعدة البيانات:';
+                 document.getElementById('creating-Solution').innerHTML = 'إنشاء الحلا عبر ABP Suite';
+                 document.getElementById('asay').innerHTML = 'تسمح لك ABP Suite بإنشاء حلاً جديدًا لـ ABP.';
+                 document.getElementById('iyh').innerHTML = 'إذا لم تقم بتثبيت ABP Suite ، انظر <a href="">كيفية تثبيت ABP Suite.</a>';
+                 document.getElementById('wn').innerHTML = 'ماذا بعد؟';
+                 document.getElementById('sols').innerHTML = '<li><a href="Solution-Structure.html">هيكل الحلا</a></li>';
+                 document.getElementById('creatingSolution').innerHTML = '<span class="accordian-active">إنشاء الحلا</span>';
+
+                 // For In this doc section
+                 document.getElementById('inthisdoc').innerHTML = 'في هذا المستند';
+                 document.getElementById('cccc').innerHTML = '<a href="#csva" class="text-black">إنشاء الحلا عبر ABP CLI</a>';
+                 document.getElementById('asas').innerHTML = '<a href="#specify" class="text-black">حدد إطار العرض (UI)</a>';
+                 document.getElementById('solute').innerHTML = '<a href="#creating-Solution" class="text-black">إنشاء الحلا عبر ABP Suite</a>';
+             }
+
+             else if (selectedLanguage === 'spanish') {
+             } else {
+ 
+             }
+         });
+     });
+ </script>
+</html>

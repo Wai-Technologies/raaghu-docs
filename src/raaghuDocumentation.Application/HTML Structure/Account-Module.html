@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+
+
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- bootstrap dependencies -->
+    <link rel="stylesheet" href="Assets/css/bootstrap.min.css">
+    <link href="Assets/prism.css" rel="stylesheet" />
+    <script src="Assets/prism.js"></script>
+    <link rel="stylesheet" href="/index.css">
+    <link rel="icon" type="image/x-icon" href="Assets/images/raaghu-icon.png">
+    <title>Raaghu - Account Module</title>
+    <script src="/index.js"></script>
+</head>
+
+
+<body>
+
+    <main>
+
+        <nav class="navbar navbar-expand-lg navbar-light ">
+            <div class="container-fluid ">
+                <div class="navbar-toggler-container">
+                    <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#sidebar,#navbarSupportedContent"
+                        aria-controls="sidebar" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+                <a class="text-black navbar-brand" href="/">
+                    <img src="Assets/images/raaghu_logs.png" alt="raaghu logo" class="w-75  pe-lg-0">
+                </a>
+
+                <div class="collapse navbar-collapse align  justify-content-lg-end humbergermobile" id="navbarSupportedContent">
+                    <ul class="navbar-nav mb-2 mb-lg-0 ">
+                        <li class="nav-item me-5">
+                            <a class="nav-link active " aria-current="page"
+                                href="https://raaghu-website-staging.netlify.app/raaghu-mfe-portal/_accordion.html">Components</a>
+                        </li>
+                        <li class="nav-item me-5">
+                            <a class="nav-link active " aria-current="page" href="#"><span
+                                    class="doc-color">Documentation</span></a>
+                        </li>
+                        <li class="nav-item me-5">
+                            <a class="nav-link active " aria-current="page"
+                                href="https://raaghu-website-staging.netlify.app/raaghu-mfe-portal/_accordion.html#">Support</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link active " aria-current="page"
+                                href="https://raaghu-website-staging.netlify.app/faq">FAQ</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+
+        <div class="wrapper container-fluid">
+
+            <div class="row">
+
+                <div id="sidebar" class="col-12 col-lg-2 col-md-4 col-xl-2 col-xxl-2 collapse d-m-block mx-0 mx-lg-3 mx-md-3 mx-xl-3 mx-xxl-3 show">
+
+                    <nav>
+                        <div class="sidebar-header ">
+                            <a href="/" class="text-bg-dark">
+                                <h3 class="fs-5 fw-normal" id="tableOfContent">Table Of Content</h3>
+
+                            </a>
+                        </div>
+
+                        <div class="accordion accordion-flush mx-3 doc-acc accordion-button-top" id="accordionExample">
+                            <div class="row pb-4">
+                                <div class="col-lg-6 col-md-6 col-6">
+                                    <select id="language-dropdown" class="sidebar-button">
+                                        <option value="en" selected>English</option>
+                                        <option value="pt">Português</option>
+                                        <option value="fr">French</option>
+                                        <option value="fi">Finnish</option>
+                                        <option value="hi">Hindi</option>
+                                        <option value="it">Italian</option>
+                                        <option value="sk">Slovak</option>
+                                        <option value="de">German</option>
+                                        <option value="ru">Russian</option>
+                                        <option value="zh">Chinese</option>
+                                        <option value="af">Afrikaan</option>
+                                        <option value="ar">Arabic</option>
+
+                                    </select>
+                                </div>
+                                <div class="col-6 col-lg-6 col-md-6"> 
+                                    <select class="sidebar-button w-100">
+                                        <option value="option1" id="version">Version</option>
+                                        <option value="option2" id="version">Version 2</option>
+                                        <option value="option3">Version 3</option>
+                                        <option value="option4">Version 4</option>
+                                    </select>
+
+                                </div>
+                            </div>
+                            <div class="accordion-item bg-dark">
+                                <h2 class="accordion-header" id="headingOne">
+                                    <a href="Getting-Started.html">
+                                        <button
+                                            class="accordion-button d-flex flex-row-reverse justify-content-end p-0 bg-dark mt-1"
+                                            type="button" data-bs-toggle="collapse" data-bs-target="#coll"
+                                            aria-expanded="false" aria-controls="collapseOne" id="Getting">
+                                            Getting Started
+                                        </button></a>
+                                </h2>
+
+                                <div id="coll" class="accordion-collapse collapse  border-0 rounded-0 p-0"
+                                    aria-labelledby="headOne" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Setup-Your-Development-Environment.html" id="setupDev">Setup your
+                                            development
+                                            environment</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Creating-A-New-Solution.html" id="creatingNewSol">Creating A New
+                                            Solution</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Running-The-Solution.html" id="runningTheSol">Running the Solution</a>
+                                    </div>
+                                </div>
+                                <h2 class="accordion-header" id="headingTwo">
+                                    <button
+                                        class="accordion-button d-flex flex-row-reverse justify-content-end p-0 bg-dark mt-2"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                        aria-expanded="false" aria-controls="collapseOne" id="tut">
+                                        Tutorials
+                                    </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse  border-0 rounded-0 p-0"
+                                    aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <h2 class="accordion-header" id="headingTwo">
+                                            <button
+                                                class="accordion-button d-flex flex-row-reverse justify-content-end p-0 bg-dark mt-2"
+                                                type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                                                aria-expanded="false" aria-controls="collapseOne" id="webAppDev">
+                                                Web Application Development
+                                            </button>
+                                        </h2>
+                                        <div id="collapseThree"
+                                            class="accordion-collapse collapse  border-0 rounded-0 p-0 pt-2"
+                                            aria-labelledby="headingTwo" data-bs-parent="#accordionExamplee">
+                                            <div class="accordion-body bg-dark px-4 p-1">
+                                                <a href="Creating-The-Server-Side.html" id="creatingServer">Creating the
+                                                    Server
+                                                    Side</a>
+                                            </div>
+                                        </div>
+                                        <div id="collapseThree"
+                                            class="accordion-collapse collapse  border-0 rounded-0 p-0"
+                                            aria-labelledby="headingTwo" data-bs-parent="#accordionExamplee">
+                                            <div class="accordion-body bg-dark px-4 p-1">
+                                                <a href="The-Book-List-Page.html" id="bookList">The Book List Page</a>
+                                            </div>
+                                        </div>
+                                        <div id="collapseThree"
+                                            class="accordion-collapse collapse  border-0 rounded-0 p-0"
+                                            aria-labelledby="headingTwo" data-bs-parent="#accordionExamplee">
+                                            <div class="accordion-body bg-dark px-4 p-1">
+                                                <a href="Creating-Updating-And-Deleting-Book.html"
+                                                    id="creatingUpdating">Creating,Updating
+                                                    And
+                                                    Deleting Book</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <h2 class="accordion-header" id="headingFour">
+                                    <button
+                                        class="accordion-button d-flex flex-row-reverse justify-content-end p-0 bg-dark mt-2"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour"
+                                        aria-expanded="false" aria-controls="collapseOne" id="guides">
+                                        Guides
+                                    </button>
+                                </h2>
+                                <div id="collapseFour" class="accordion-collapse collapse  border-0 rounded-0 p-0"
+                                    aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Customizing-The-Modules.html" id="customizingTheModules">Customizing
+                                            the Modules</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Identity-Server-Deployment.html" id="identityServerDeploy">Identity
+                                            Server Deployment</a>
+                                    </div>
+                                </div>
+
+
+                                <h2 class="accordion-header" id="headingFive">
+                                    <button
+                                        class="accordion-button d-flex flex-row-reverse justify-content-end p-0 bg-dark mt-2"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive"
+                                        aria-expanded="false" aria-controls="collapseOne" id="samples">
+                                        Samples
+                                    </button>
+                                </h2>
+                                <div id="collapseFive" class="accordion-collapse collapse  border-0 rounded-0 p-0"
+                                    aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="All-Samples.html" id="allSamples">All Samples</a>
+                                    </div>
+                                </div>
+                                <h2 class="accordion-header" id="headingSix">
+                                    <a href="Startup-Template.html">
+                                        <button
+                                            class="accordion-button d-flex flex-row-reverse justify-content-end p-0 bg-dark mt-2"
+                                            type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix"
+                                            aria-expanded="false" aria-controls="collapseOne" id="startupTemplate">
+                                            Startup Template
+                                        </button>
+                                    </a>
+                                </h2>
+                                <div id="collapseSix" class="accordion-collapse collapse  border-0 rounded-0 p-0"
+                                    aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <h2 class="accordion-header" id="headingSix">
+                                            <button
+                                                class="accordion-button d-flex flex-row-reverse justify-content-end p-0 bg-dark mt-2"
+                                                type="button" data-bs-toggle="collapse" data-bs-target="#headingS"
+                                                aria-expanded="false" aria-controls="collapseOne">
+                                                Application Templates
+                                            </button>
+                                        </h2>
+                                        <div id="headingS"
+                                            class="accordion-collapse collapse  border-0 rounded-0 p-0 pt-2"
+                                            aria-labelledby="headingSix" data-bs-parent="#accordionExamplee">
+                                            <div class="accordion-body bg-dark px-4 p-1">
+                                                <a href="Creating-Solution.html">Creating Solution</a>
+                                            </div>
+                                        </div>
+                                        <div id="headingS" class="accordion-collapse collapse  border-0 rounded-0 p-0"
+                                            aria-labelledby="headingSix" data-bs-parent="#accordionExamplee">
+                                            <div class="accordion-body bg-dark px-4 p-1">
+                                                <a href="Solution-Structure.html">Solution Structure</a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                                <h2 class="accordion-header" id="headingSeven">
+                                    <button
+                                        class="accordion-button d-flex flex-row-reverse justify-content-end p-0 bg-dark mt-2"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven"
+                                        aria-expanded="true" aria-controls="collapseOne" id="appModules">
+                                        Application Modules
+                                    </button>
+                                </h2>
+                                <div id="collapseSeven" class="accordion-collapse collapse show border-0 rounded-0 p-0"
+                                    aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Overall.html" id="overall">Overall</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Account-Module.html" id="ac"><span
+                                                class="accordian-active">Account</span></a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Audit-Logging.html" id="auditLogging">Audit Logging</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Chat.html" id="chat">Chat</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="CMS-Kit-Pro.html" id="CMS">CMS Kit Pro</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="File-Management.html" id="fileMgt">File Management</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Forms.html" id="forms">Forms</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Identity.html" id="identity">Identity</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="OpenIddict.html" id="OpenIddict">OpenIddict</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Language-Management.html" id="languageMgt">Language Management</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Payment.html" id="payment">Payment</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="SaaS.html" id="saas">SaaS</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Text-Template-Management.html" id="ttm">Text Template Management</a>
+                                    </div>
+                                </div>
+                                <h2 class="accordion-header" id="headingNine">
+                                    <a href="UI-Themes.html">
+                                        <button
+                                            class="accordion-button d-flex flex-row-reverse justify-content-end p-0 bg-dark mt-2"
+                                            type="button" data-bs-toggle="collapse" data-bs-target="#headingNine"
+                                            aria-expanded="false" aria-controls="collapseOne" id="ui">
+                                            UI Themes
+                                        </button>
+                                    </a>
+                                </h2>
+                                <h2 class="accordion-header" id="headingReactUITheme">
+                                    <button
+                                        class="accordion-button d-flex flex-row-reverse justify-content-end p-0 bg-dark mt-2"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#headingReactUI"
+                                        aria-expanded="false" aria-controls="collapseOne" id="reactUI">
+                                        React UI
+                                    </button>
+                                </h2>
+                                <div id="headingReactUI" class="accordion-collapse collapse  border-0 rounded-0 p-0"
+                                    aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Customization.html" id="custom">customization</a>
+                                    </div>
+
+                                </div>
+                                <div id="headingReactUI" class="accordion-collapse collapse  border-0 rounded-0 p-0"
+                                    aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Components.html" id="compo">Components</a>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <ul class="list-unstyled CTAs  w-100">
+                            <li>
+                                <a href="https://bootstrapious.com/tutorial/files/sidebar.zip" class="download"
+                                    id="downloadSource">Download
+                                    source</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="col-12 col-lg-8 col-md-7 col-xl-6 col-xxl-6 offset-lg-4 offset-md-5 offset-xl-3 offset-xxl-3 ps-xl-5 ps-xxl-0 px-lg-3 px-md-4 px-xl-0">
+
+                    <!-- Page Content  -->
+                    <div id="content">
+                        <div class="modal fade" id="contactusModal" tabindex="-1" aria-labelledby="contactusModalLabel"
+                            aria-hidden="true">
+
+                            <div class="modal-dialog modal-lg modal-dialog-centered">
+
+                                <div class="modal-content">
+
+                                    <!-- <div class="modal-header">
+                  
+                                  <h5 class="modal-title" id="contactusModalLabel">Modal title</h5>
+                  
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  
+                                </div> -->
+
+                                    <div class="modal-body p-0">
+
+
+
+
+                                        <div class="row">
+
+                                            <div class="col-md-6 col-sm-12 bg-dark">
+
+                                                <div class="mt-5">
+
+                                                    <img src="Assets/images/raaghu-logo-white.png"
+                                                        class="img-fluid w-25 pl-2">
+
+
+
+                                                    <img src="Assets/images/raaghu-banner-modal.png" class="img-fluid">
+
+                                                </div>
+
+                                            </div>
+
+
+
+                                            <div class="col-md-6 col-sm-12">
+
+                                                <div class="row">
+
+                                                    <div class="col-md-12 text-end pull-right">
+
+                                                        <button type="button"
+                                                            class="btn-close float-right pull-right m-3 text-muted"
+                                                            data-bs-dismiss="modal" aria-label="Close"></button>
+
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="p-4">
+
+                                                    <h6>
+
+                                                        Kindly fill the details below
+
+                                                    </h6>
+
+                                                    <p>
+
+                                                        <small> We will get back to you within 48 hours </small>
+
+                                                    </p>
+
+                                                    <div class="mt-5">
+
+                                                        <form method="post" id="want-to-hear-form">
+
+                                                            <div class="mb-3 form-group">
+
+                                                                <label for="emailId" class="form-label">Email ID
+
+                                                                    <span class="text-danger">*</span>
+
+                                                                </label>
+
+                                                                <input type="email" name="emailId"
+                                                                    class="form-control p-2" id="emailId"
+                                                                    placeholder="Enter your email id">
+
+                                                            </div>
+
+                                                            <div class="mb-3 form-group">
+
+                                                                <label for="companyName" class="form-label">Company Name
+
+                                                                    <span class="text-danger">*</span>
+
+                                                                </label>
+
+                                                                <input type="text" class="form-control p-2"
+                                                                    placeholder="Enter your Company Name"
+                                                                    name="companyName" id="companyName">
+
+                                                            </div>
+
+                                                            <div class="mb-3 form-group">
+
+                                                                <label for="message" class="form-label">Message
+
+                                                                    <span class="contactUs-Optional">(Optional)</span>
+
+                                                                </label>
+
+                                                                <textarea class="form-control p-2" name="message"
+                                                                    id="message" rows="3"
+                                                                    placeholder="Write your message.."></textarea>
+
+                                                            </div>
+
+                                                            <div class="mb-3 form-check">
+
+                                                                <input type="checkbox" class="form-check-input"
+                                                                    id="exampleCheck1">
+
+                                                                <label class="form-check-label" for="exampleCheck1">I
+                                                                    agree to the <a href="#"> terms & privacy policy
+                                                                    </a></label>
+
+                                                            </div>
+
+                                                            <button type="submit"
+                                                                class="btn btn-primary btn-sm btn-block float-end mb-4">Submit</button>
+
+                                                        </form>
+
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div> <input class="form-control  mb-5" type="search" placeholder="Search" id="search" aria-label="Search">
+                        </div>
+                        <div>
+                            <h1 class="fw-semibold mb-3" id="account">Account</h1>
+                            <p id="thismod">This module implements the Login, Register, Forgot Password, Email
+                                Confirmation, Password
+                                Reset, sending and confirming Two-Factor Authentication, user lockout, switch between
+                                tenants functionalities of an application;</p>
+                            <p id="seemod">See <a
+                                    href="https://commercial.abp.io/modules/Volo.Account.Pro?_ga=2.203721431.638389710.1682325508-1619359562.1681202968">the
+                                    module description page</a> for an overview of the module features.</p>
+
+                        </div>
+                        <div>
+                            <h2 class="fw-semibold pt-3 pb-3" id="hotto">How to Install</h2>
+                            <p id="accispre">Account is pre-installed in <a
+                                    href="https://docs.abp.io/en/commercial/7.2/startup-templates/application/index">the
+                                    startup templates.</a> So, no need to manually install it.</p>
+                        </div>
+                        <div>
+                            <h3 class="fw-semibold pt-3 pb-3" id="pak">Packages</h3>
+                            <p id="userInterface">This module follows the <a
+                                    href="https://docs.abp.io/en/abp/latest/Best-Practices/Index">module development
+                                    best practices guide</a> and consists of several NuGet and NPM packages. See the
+                                guide if you want to understand the packages and relations between them.</p>
+                            <p id="youcanvisitmod">You can visit <a
+                                    href="https://abp.io/packages?moduleName=Volo.Account.Pro">Account
+                                    module package list page</a> to see list of packages related with this module.</p>
+                        </div>
+                        <div>
+                            <h3 class="fw-semibold pt-3 pb-3" id="userInter">User Interface</h3>
+                            <h3 class="fw-semibold pt-3 pb-3" id="menuit">Menu Items</h3>
+                            <p id="thismodemenu">This module doesn't define any menu items.</p>
+                            <h3 class="fw-semibold pt-3 pb-3" id="pag">Pages</h3>
+                            <p id="logpag">Login Page</p>
+                            <p id="logpage">Login page is used to log in to the system.</p>
+                            <img src="Assets/images/raaghu-login.jpg" alt="Login page is used to log in to the system"
+                                class="img-fluid my-4">
+                        </div>
+                        <div>
+                            <h3 class="fw-semibold pt-3 pb-3" id="registerPage">Register Page</h3>
+                            <p id="registerpageallows">Register page allows new users to register to your system.</p>
+                        </div>
+                        <div>
+                            <h3 class="fw-semibold pt-3 pb-3" id="inte">Internals</h3>
+                            <h3 class="fw-semibold pt-2 pb-4" id="sett">Settings</h3>
+                            <p id="seeIAccount">See the <span class="txt-color">IAccountSettingNames</span> class
+                                members for all
+                                settings defined for this module.</p>
+                        </div>
+                        <div>
+                            <h3 class="fw-semibold pt-3 pb-3" id="applayer">Application Layer</h3>
+                            <h3 class="fw-semibold pt-2 pb-4" id="permiss">Permissions</h3>
+                            <p id="seethe">See the <span class="txt-color">AccountPermissions</span> class members for
+                                all
+                                permissions defined for this module.</p>
+                        </div>
+
+
+
+
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-8 col-md-7 col-xl-2 col-xxl-2 docs-page-index offset-lg-4 offset-xl-0 offset-md-5 offset-xxl-0 px-md-4">
+                    <div class="position-fixed  my-3 w-auto mx-lg-0 mx-xl-3 mx-xxl-3 pe-lg-3 pe-xl-0 pe-xxl-0 position-lg-relative">
+                        <div class="card border-0 box rounded-3 mb-3 ">
+                            <div class="card-body">
+                                <h4 class="card-title py-1" id="inthisdoc">In this document</h4>
+                                <div class="opacity-50">
+                                    <ul class="card-text small  list-unstyled ul-ad">
+
+                                        <li id="howto"><a href="#account" class="text-black">How to Install</a></li>
+                                        <li id="uinterd"><a href="#userInterface" class="text-black">User Interface</a></li>
+                                        <li id="regpag"><a href="#registerPage" class="text-black">Register Page</a></li>
+                                        <li id="applayss"><a href="#registerPage" class="text-black">Application Layer</a>
+                                        </li>
+                                    </ul>
+
+                                </div>
+
+
+                            </div>
+                        </div>
+                        <div class="card  border-0 box  bg-advertise ">
+                            <div class="card-body abp-community-card  rounded-3 bg-sec ">
+                                <div class="row  ">
+                                    <div class="col-lg-5 col-md-5 col-5"> <img src="Assets/images/React_logo.png"
+                                            alt="raaghu logo" class="w-100"></div>
+                                    <div class="col-lg-7 col-md-7 mt-1 col-7"> <img src="Assets/images/abp-sec.png"
+                                            alt="raaghu logo" class="w-100"></div>
+
+                                </div>
+                                <div class="border-under-sec my-3"></div>
+                                <div class="colored-sec-design py-1">
+                                    <ul class="ps-4">
+                                        <li ><span id="clicrud">CLI for CRUD generation</span></li>
+                                        <li id="compdriven">Component driven development</li>
+                                        <li id="buildabp">Purpose build UI kit for ABP commercial</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <button type="button" class="btn btn-primary mt-1 w-100" data-bs-toggle="modal"
+                                        data-bs-target="#contactusModal" id="seccontacts">Contact Us</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+
+        </div>
+
+    </main>
+
+    <!-- bootstrap dependencies -->
+    <script src="Assets/js/bootstrap.min.js"></script>
+    <script src="scripts/translation.js"></script>   
+</body>
+
+
+</html>

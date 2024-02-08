@@ -1,0 +1,913 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- bootstrap dependencies -->
+    <link rel="stylesheet" href="Assets/css/bootstrap.min.css">
+    <link href="Assets/prism.css" rel="stylesheet" />
+    <script src="Assets/prism.js"></script>
+    <link rel="stylesheet" href="/index.css">
+    <link rel="icon" type="image/x-icon" href="Assets/images/raaghu-icon.png">
+    <title>Raaghu - Payment</title>
+</head>
+
+
+<body>
+
+    <main>
+
+        <nav class="navbar navbar-expand-lg navbar-light ">
+            <div class="container-fluid ">
+                <div class="navbar-toggler-container">
+                    <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#sidebar,#navbarSupportedContent"
+                        aria-controls="sidebar" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <!-- <div class="dropdown show dropdown-specific">
+                        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Platform
+                        </a>
+
+                        <div class="dropdown-menu menu" aria-labelledby="dropdownMenuLink">
+                            <a class="dropdown-item" href="https://www.raaghu.io/features.html">Features</a>
+                            <a class="dropdown-item " href="https://portal.raaghu.io/">Documentation</a>
+                            <button type="button" class="btn btn-primary btn-contact mt-2">contact</button>
+                            <a href="https://github.com/Wai-Technologies/raaghu-angular" target="_blank">
+                                <li class="ps-lg-5 mt-2">
+                                    <img src="Assets/images/github-logo.svg" alt="abplogo logo" width="100%"
+                                        class="github-logo">
+                                </li>
+                            </a>
+                        </div>
+                    </div> -->
+                </div>
+                <a class="text-black navbar-brand" href="/">
+                    <img src="Assets/images/raaghu_logs.png" alt="raaghu logo" class="w-75  pe-lg-0">
+                </a>
+
+                <div class="collapse navbar-collapse align  justify-content-lg-end " id="navbarSupportedContent">
+                    <ul class="navbar-nav  mb-2 mb-lg-0">
+                        <li class="nav-item me-5">
+                            <a class="nav-link active " aria-current="page"
+                                href="https://raaghu-website-staging.netlify.app/raaghu-mfe-portal/_accordion.html">Components</a>
+                        </li>
+                        <li class="nav-item me-5">
+                            <a class="nav-link active " aria-current="page"
+                                href="#"><span class="doc-color">Documentation</span></a>
+                        </li>
+                        <li class="nav-item me-5">
+                            <a class="nav-link active " aria-current="page"
+                                href="https://raaghu-website-staging.netlify.app/raaghu-mfe-portal/_accordion.html#">Support</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link active " aria-current="page"
+                                href="https://raaghu-website-staging.netlify.app/faq">FAQ</a>
+                        </li>
+                        <!-- <li class=" nav-item dropdown active">
+                            <a class="nav-link  text-dark me-5" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Platform
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-center " aria-labelledby="navbarDropdown">
+                                <ul class="list-unstyled dropdown-arrow">
+                                    <li class=" ps-4">
+                                        <p class="title pt-2">Raaghu Platform</p>
+                                        <div class="row">
+                                            <div class="col-lg-6 col-md-6">
+                                                <a href="https://portal.raaghu.io/" target="_blank"
+                                                    class="p-0 text-decoration-none text-reset">
+                                                    <div class="d-flex align-items-center gap-3">
+
+                                                        <img src="Assets/images/raaghu-portal-mg.svg"
+                                                            alt="raaghu-portal" class="mb-3">
+                                                        <p class="link-name">Raaghu Portal</p>
+
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="col-lg-6 col-md-6">
+                                                <a href="https://portal.raaghu.io/#Components-section" target="_blank"
+                                                    class="p-0 text-decoration-none text-reset">
+                                                    <div class="d-flex align-items-center gap-3">
+                                                        <img src="Assets/images/raaghu-components-mg.svg"
+                                                            alt="raaghu-components" class="mb-3">
+                                                        <p class="link-name">Raaghu Components</p>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-6 col-md-6">
+                                                <a href="https://portal.raaghu.io/#Elements-section" target="_blank"
+                                                    class="p-0 text-decoration-none text-reset">
+                                                    <div class="d-flex align-items-center gap-3">
+                                                        <img src="Assets/images/raaghu-elements-mg.svg"
+                                                            alt="raaghu-portal" class="mb-2">
+                                                        <p class="pt-2 link-name">Raaghu Elements</p>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="col-lg-6 col-md-6">
+                                                <div class="d-flex align-items-center gap-3">
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="bgcolor-dropdown">
+                                        <div class="ps-4">
+                                            <p class="pt-3 pb-1 title">WORKS ON</p>
+                                            <div class="row">
+                                                <div class="col-md-2 mb-2">
+                                                    <img src="Assets/images/asplogo-mg.svg" alt="asplogo logo"
+                                                        width="80%">
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <img src="Assets/images/abplogo-mg.svg" alt="abplogo logo"
+                                                        width="50%">
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item me-5">
+                            <a class="nav-link active " aria-current="page"
+                                href="https://www.raaghu.io/features.html">Features</a>
+                        </li>
+                        <li class="nav-item me-5">
+                            <a class="nav-link active " aria-current="page"
+                                href="https://portal.raaghu.io/">Documentation</a>
+                        </li>
+                        <button type="button" class="btn btn-primary btn-contact">contact</button>
+                        <a href="https://github.com/Wai-Technologies/raaghu-angular" target="_blank">
+                            <li class="ps-lg-5 pt-2">
+                                <img src="Assets/images/github-logo.svg" alt="abplogo logo" width="100%"
+                                    class="github-logo">
+                            </li>
+                        </a> -->
+                    </ul>
+                </div>
+</div>
+        </nav>
+
+        <div class="wrapper container-fluid">
+
+            <div class="row">
+
+                <div id="sidebar" class="col-12 col-lg-2 col-md-4 col-xl-2 col-xxl-2 collapse d-m-block mx-0 mx-lg-3 mx-md-3 mx-xl-3 mx-xxl-3 show">
+
+                    <nav>
+                        <div class="sidebar-header ">
+                            <a href="/" class="text-bg-dark">
+                                
+<h3 class="fs-5 fw-normal">Table Of Content</h3>
+                            </a>
+                        </div>
+
+                        <div class="accordion accordion-flush mx-3 doc-acc accordion-button-top"
+                            id="accordionExample">
+                            <div class="row pb-4">
+                                <div class="col-6 col-lg-6 col-md-6">
+                                    <select id="language-dropdown" class="sidebar-button">
+                                        <option value="en" selected>English</option>
+                                        <option value="pt">Português</option>
+                                        <option value="fr">French</option>
+                                        <option value="fi">Finnish</option>
+                                        <option value="hi">Hindi</option>
+                                        <option value="it">Italian</option>                                        
+                                        <option value="sk">Slovak</option>
+                                        <option value="de">German</option>
+                                        <option value="ru">Russian</option>
+                                        <option value="zh">Chinese</option>
+                                        <option value="af">Afrikaan</option>
+                                        <option value="ar">Arabic</option>
+                                        <!-- Add more language options if needed -->
+                                    </select>
+                                </div>
+                                <div class="col-6 col-lg-6 col-md-6">
+                                    <select class="sidebar-button w-100" >
+                                        <option value="option1" id="version">Version</option>
+                                        <option value="option2" id="version">Version 2</option>
+                                        <option value="option3">Version 3</option>
+                                        <option value="option4">Version 4</option>
+                                    </select>
+
+                                </div>
+                            </div>
+                            <div class="accordion-item bg-dark">
+                                <h2 class="accordion-header" id="headingOne">
+                                    <a href="Getting-Started.html">
+                                    <button
+                                        class="accordion-button d-flex flex-row-reverse justify-content-end p-0 bg-dark mt-1"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#coll"
+                                        aria-expanded="false" aria-controls="collapseOne">
+                                        Getting Started
+                                    </button></a>
+                                </h2>
+
+                                <div id="coll" class="accordion-collapse collapse  border-0 rounded-0 p-0"
+                                    aria-labelledby="headOne" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Setup-Your-Development-Environment.html">Setup your development
+                                            environment</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Creating-A-New-Solution.html">Creating A New Solution</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Running-The-Solution.html">Running the Solution</a>
+                                    </div>
+                                </div>
+                                <h2 class="accordion-header" id="headingTwo">
+                                    <button
+                                        class="accordion-button d-flex flex-row-reverse justify-content-end p-0 bg-dark mt-2"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                        aria-expanded="false" aria-controls="collapseOne">
+                                        Tutorials
+                                    </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse  border-0 rounded-0 p-0"
+                                    aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <h2 class="accordion-header" id="headingTwo">
+                                            <button
+                                                class="accordion-button d-flex flex-row-reverse justify-content-end p-0 bg-dark mt-2"
+                                                type="button" data-bs-toggle="collapse"
+                                                data-bs-target="#collapseThree" aria-expanded="false"
+                                                aria-controls="collapseOne">
+                                                Web Application Development
+                                            </button>
+                                        </h2>
+                                        <div id="collapseThree"
+                                            class="accordion-collapse collapse  border-0 rounded-0 p-0 pt-2"
+                                            aria-labelledby="headingTwo" data-bs-parent="#accordionExamplee">
+                                            <div class="accordion-body bg-dark px-4 p-1">
+                                                <a href="Creating-The-Server-Side.html">Creating the Server
+                                                    Side</a>
+                                            </div>
+                                        </div>
+                                        <div id="collapseThree"
+                                            class="accordion-collapse collapse  border-0 rounded-0 p-0"
+                                            aria-labelledby="headingTwo" data-bs-parent="#accordionExamplee">
+                                            <div class="accordion-body bg-dark px-4 p-1">
+                                                <a href="The-Book-List-Page.html">The Book List Page</a>
+                                            </div>
+                                        </div>
+                                        <div id="collapseThree"
+                                            class="accordion-collapse collapse  border-0 rounded-0 p-0"
+                                            aria-labelledby="headingTwo" data-bs-parent="#accordionExamplee">
+                                            <div class="accordion-body bg-dark px-4 p-1">
+                                                <a href="Creating-Updating-And-Deleting-Book.html">Creating,Updating
+                                                    And
+                                                    Deleting Book</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <h2 class="accordion-header" id="headingFour">
+                                    <button
+                                        class="accordion-button d-flex flex-row-reverse justify-content-end p-0 bg-dark mt-2"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour"
+                                        aria-expanded="false" aria-controls="collapseOne">
+                                        Guides
+                                    </button>
+                                </h2>
+                                <div id="collapseFour" class="accordion-collapse collapse  border-0 rounded-0 p-0"
+                                    aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Customizing-The-Modules.html">Customizing the Modules</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Identity-Server-Deployment.html">Identity Server Deployment</a>
+                                    </div>
+                                </div>
+
+
+                                <h2 class="accordion-header" id="headingFive">
+                                    <button
+                                        class="accordion-button d-flex flex-row-reverse justify-content-end p-0 bg-dark mt-2"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive"
+                                        aria-expanded="false" aria-controls="collapseOne">
+                                        Samples
+                                    </button>
+                                </h2>
+                                <div id="collapseFive" class="accordion-collapse collapse  border-0 rounded-0 p-0"
+                                    aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="All-Samples.html">All Samples</a>
+                                    </div>
+                                </div>
+                                <h2 class="accordion-header" id="headingSix">
+                                    <a href="Startup-Template.html">
+                                    <button
+                                        class="accordion-button d-flex flex-row-reverse justify-content-end p-0 bg-dark mt-2"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix"
+                                        aria-expanded="false" aria-controls="collapseOne">
+                                        Startup Template
+                                    </button></a>
+                                </h2>
+                                <div id="collapseSix" class="accordion-collapse collapse  border-0 rounded-0 p-0"
+                                    aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <h2 class="accordion-header" id="headingSix">
+                                            <button
+                                                class="accordion-button d-flex flex-row-reverse justify-content-end p-0 bg-dark mt-2"
+                                                type="button" data-bs-toggle="collapse" data-bs-target="#headingS"
+                                                aria-expanded="false" aria-controls="collapseOne">
+                                                Application Templates
+                                            </button>
+                                        </h2>
+                                        <div id="headingS"
+                                            class="accordion-collapse collapse  border-0 rounded-0 p-0 pt-2"
+                                            aria-labelledby="headingSix" data-bs-parent="#accordionExamplee">
+                                            <div class="accordion-body bg-dark px-4 p-1">
+                                                <a href="Creating-Solution.html">Creating Solution</a>
+                                            </div>
+                                        </div>
+                                        <div id="headingS"
+                                            class="accordion-collapse collapse  border-0 rounded-0 p-0"
+                                            aria-labelledby="headingSix" data-bs-parent="#accordionExamplee">
+                                            <div class="accordion-body bg-dark px-4 p-1">
+                                                <a href="Solution-Structure.html">Solution Structure</a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                                <h2 class="accordion-header" id="headingSeven">
+                                    <button
+                                        class="accordion-button d-flex flex-row-reverse justify-content-end p-0 bg-dark mt-2"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven"
+                                        aria-expanded="true" aria-controls="collapseOne">
+                                        Application Modules
+                                    </button>
+                                </h2>
+                                <div id="collapseSeven" class="accordion-collapse collapse show border-0 rounded-0 p-0"
+                                    aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Overall.html">Overall</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Account-Module.html">Account</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Audit-Logging.html">Audit Logging</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Chat.html">Chat</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="CMS-Kit-Pro.html">CMS Kit Pro</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="File-Management.html">File Management</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Forms.html">Forms</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Identity.html">Identity</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="OpenIddict.html">OpenIddict</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Language-Management.html">Language Management</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Payment.html"><span class="accordian-active">Payment</span></a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="SaaS.html">SaaS</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Text-Template-Management.html">Text Template Management</a>
+                                    </div>
+                                </div>
+                                <h2 class="accordion-header" id="headingNine">
+                                    <a href="UI-Themes.html">
+                                        <button
+                                            class="accordion-button d-flex flex-row-reverse justify-content-end p-0 bg-dark mt-2"
+                                            type="button" data-bs-toggle="collapse" data-bs-target="#headingNine"
+                                            aria-expanded="false" aria-controls="collapseOne">
+                                            UI Themes
+                                        </button>
+                                    </a>
+                                </h2>
+                                <h2 class="accordion-header" id="headingReactUITheme">
+                                    <button
+                                        class="accordion-button d-flex flex-row-reverse justify-content-end p-0 bg-dark mt-2"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#headingReactUI"
+                                        aria-expanded="false" aria-controls="collapseOne">
+                                        React UI
+                                    </button>
+                                </h2>
+                                <div id="headingReactUI" class="accordion-collapse collapse  border-0 rounded-0 p-0"
+                                    aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Customization.html">customization</a>
+                                    </div>
+
+                                </div>
+                                <div id="headingReactUI" class="accordion-collapse collapse  border-0 rounded-0 p-0"
+                                    aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Components.html">Components</a>
+                                    </div>
+
+                                </div>
+                                <!-- For Release Information -->
+                                <h2 class="accordion-header" id="headingFive">
+                                    <button
+                                        class="accordion-button d-flex flex-row-reverse justify-content-end p-0 bg-dark mt-2"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseLast"
+                                        aria-expanded="false" aria-controls="collapseOne" id="samples">
+                                       <span id="relinfo">Release Information</span> 
+                                    </button>
+                                </h2>
+                                <div id="collapseLast" class="accordion-collapse collapse  border-0 rounded-0 p-0"
+                                    aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Release-Notes.html" id="allSamples"><span id="relnote">Release Notes</span></a>
+                                    </div>
+                                </div>
+                                <!-- ====================================== -->
+                            </div>
+                        </div>
+                        <ul class="list-unstyled CTAs  w-100">
+                            <li>
+                                <a href="https://bootstrapious.com/tutorial/files/sidebar.zip"
+                                    class="download">Download
+                                    source</a>
+                            </li>
+                        </ul> 
+                    </nav>
+                </div>
+
+                <div class="col-12 col-lg-8 col-md-7 col-xl-6 col-xxl-6 offset-lg-4 offset-md-5 offset-xl-3 offset-xxl-3 ps-xl-5 ps-xxl-0 px-lg-3 px-md-4 px-xl-0">
+
+                    <!-- Page Content  -->
+                    <div id="content">
+                        <div class="modal fade" id="contactusModal" tabindex="-1" aria-labelledby="contactusModalLabel" aria-hidden="true">
+
+                            <div class="modal-dialog modal-lg modal-dialog-centered">
+                  
+                              <div class="modal-content">
+                  
+                                <!-- <div class="modal-header">
+                  
+                                  <h5 class="modal-title" id="contactusModalLabel">Modal title</h5>
+                  
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  
+                                </div> -->
+                  
+                                <div class="modal-body p-0">
+                  
+                  
+                  
+                  
+                                      <div class="row">
+                  
+                                          <div class="col-md-6 col-sm-12 bg-dark">
+                  
+                                              <div class="mt-5">
+                  
+                                                  <img src="Assets/images/raaghu-logo-white.png" class="img-fluid w-25 pl-2">
+                  
+                                             
+                  
+                                                  <img src="Assets/images/raaghu-banner-modal.png" class="img-fluid">
+                  
+                                              </div>
+                  
+                                          </div>
+                  
+                                         
+                  
+                                          <div class="col-md-6 col-sm-12">
+                  
+                                              <div class="row">
+                  
+                                                  <div class="col-md-12 text-end pull-right">
+                  
+                                                      <button type="button" class="btn-close float-right pull-right m-3 text-muted" data-bs-dismiss="modal" aria-label="Close"></button>
+                  
+                                                  </div>
+                  
+                                              </div>
+                  
+                                              <div class="p-4">
+                  
+                                                  <h6>
+                  
+                                                      Kindly fill the details below
+                  
+                                                  </h6>
+                  
+                                                  <p>
+                  
+                                                     <small> We will get back to you within 48 hours </small>
+                  
+                                                  </p>
+                  
+                                                  <div class="mt-5">
+                  
+                                                      <form method="post" id="want-to-hear-form">
+                  
+                                                          <div class="mb-3 form-group">
+                  
+                                                              <label for="emailId" class="form-label">Email ID
+                  
+                                                                  <span class="text-danger">*</span>
+                  
+                                                              </label>
+                  
+                                                                  <input type="email" name="emailId" class="form-control p-2" id="emailId"
+                  
+                                                                      placeholder="Enter your email id">
+                  
+                                                          </div>
+                  
+                                                          <div class="mb-3 form-group">
+                  
+                                                              <label for="companyName" class="form-label">Company Name
+                  
+                                                                  <span class="text-danger">*</span>
+                  
+                                                              </label>
+                  
+                                                                  <input type="text" class="form-control p-2"
+                  
+                                                                      placeholder="Enter your Company Name" name="companyName"
+                  
+                                                                      id="companyName">
+                  
+                                                          </div>
+                  
+                                                          <div class="mb-3 form-group">
+                  
+                                                              <label for="message" class="form-label">Message
+                  
+                                                                <span class="contactUs-Optional">(Optional)</span>
+
+                  
+                                                              </label>
+                  
+                                                                  <textarea class="form-control p-2" name="message" id="message" rows="3"
+                  
+                                                                      placeholder="Write your message.."></textarea>
+                  
+                                                          </div>
+                  
+                                                          <div class="mb-3 form-check">
+                  
+                                                              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  
+                                                              <label class="form-check-label" for="exampleCheck1">I agree to the <a href="#"> terms & privacy policy </a></label>
+                  
+                                                          </div>
+                  
+                                                          <button type="submit" class="btn btn-primary btn-sm btn-block float-end mb-4">Submit</button>
+                  
+                                                      </form>
+                  
+                                                  </div>
+                  
+                                              </div>
+                  
+                                          </div>
+                  
+                                      </div>
+                  
+                                </div>
+                  
+                              </div>
+                  
+                            </div>
+                  
+                          </div>
+                        <div> <input class="form-control  mb-5" type="search" placeholder="Search"
+                            aria-label="Search"></div>
+
+                        <div>
+                            <h1 class="fw-semibold mb-3" id="paymod">Payment module</h1>
+                            <p id="paygateway">Payment module implements payment gateway integration of an application. It provides one
+                                time payment and recurring payment options.</p>
+                            <ul class="ps-3">
+                                <li class="mt-2" id="ssp">Supports
+                                    <a href="https://stripe.com/en-in">Stripe</a>,
+                                    <a href="https://www.paypal.com/in/home">PayPal</a>,
+                                    <a href="https://www.2checkout.com/">2Checkout</a>,
+                                    <a href="https://corporate.payu.com/">PayU</a>,
+                                    <a href="https://www.iyzico.com/en">Iyzico</a> and
+                                    <a href="https://global.alipay.com/platform/site/ihome" id="sgp">Alipay</a> payment gateways.
+                                </li>
+                            </ul>
+                            <p id="overviewof">See <a href="https://commercial.abp.io/modules/Volo.Payment">the module description
+                                    page</a> for an overview of the module features.</p>
+                        </div>
+                        <div>
+                            <h2 class="fw-semibold mb-4 mt-4" id="gatewaypack">Supported Gateway Packages</h2>
+                            <p id="useapay">In order to use a Payment Gateway, you need to add related NuGet packages to your related
+                                project as explained in Manual Installation section above and add <span
+                                    class="txt-color">DependsOn</span> to your related module. For example, if you don't
+                                want to use PayU, you don't have to use its NuGet packages.</p>
+                            <p id="tourapp">After adding packages of a payment gateway to your application, you also need to
+                                configure global payment module options and options for the payment modules you have
+                                added. See the Options section below.</p>
+                        </div>
+                        <div>
+                            <h3 class="fw-semibold pt-3 pb-3" id="createcustom">Creating a custom payment gateway</h3>
+                            <p id="ifyourequire">If you require a different payment gateway than existing ones, you can create a custom
+                                payment gateway by your own. 2 steps are required to create a custom payment gateway.
+                                First is creating a payment gateway object that implements <span
+                                    class="txt-color">IPaymentGateway</span>. This interface exposes core payment
+                                operations without any UI. Second step is creating UI for the payment gateway. This UI
+                                is used to redirect user to payment gateway and validate payment.</p>
+                            <p id="createcustomgate">Follow the <a
+                                    href="https://docs.abp.io/en/commercial/7.0/modules/payment-custom-gateway">instructions
+                                    here</a> to create a custom payment gateway.</p>
+                        </div>
+                        <div>
+                            <h3 class="fw-semibold pt-3 pb-3" id="idpack">Packages</h3>
+                            <p id="uitt">This module follows the <a
+                                    href="https://docs.abp.io/en/abp/latest/Best-Practices/Index">module development
+                                    best practices guide</a> and consists of several NuGet and NPM packages. See the
+                                guide if you want to understand the packages and relations between them.</p>
+                            <p id="canvisitpay" >You can visit <a href="https://abp.io/packages?moduleName=Volo.Payment">Payment module
+                                    package list page</a> to see list of packages related with this module</p>
+                        </div>
+                        <div>
+                            <h3 class="fw-semibold pt-3 pb-3" id="uinter">User interface</h3>
+                            <h4 class="fw-semibold  pb-3" id="publicpages">Public Pages</h4>
+                            <p id="gateselect">Payment gateway selection</p>
+                            <p id="thisallow">This page allows selecting a payment gateway. If there is one payment gateway configured for final application, this page will be skipped.</p>
+                        </div>
+                        <div>
+                            <h4 class="fw-semibold pt-3 pb-3" id="prepay">PayU prepayment pages</h4>
+                            <p id="sendname">This page is used to send Name, Surname and Email Address of user to PayU.</p>
+                        </div>
+                        <div>
+                            <h4 class="fw-semibold pt-3 pb-3" id="adminpage">Admin Pages</h4>
+                            <p id="planspage">Payment plans page</p>
+                            <p id="payplansforsub">Payment plans for subscriptions can be managed on this page. You can connect external subscriptions for each gateway to a plan.</p>
+                            <img src="Assets/images/admin.jpg" alt="Admin Pages"
+                            class="img-fluid my-4">
+                        </div>
+
+                        
+                     
+
+                    </div>
+                </div>
+                
+                <div class="col-12 col-lg-8 col-md-7 col-xl-2 col-xxl-2 docs-page-index offset-lg-4 offset-xl-0 offset-md-5 offset-xxl-0 px-md-4">
+                    <div class="position-fixed  my-3 w-auto mx-lg-0 mx-xl-3 mx-xxl-3 pe-lg-3 pe-xl-0 pe-xxl-0 position-lg-relative">
+                    <div class="card border-0 box rounded-3 mb-3">
+        <div class="card-body">
+            <h4 class="card-title py-1" id="inthisdoc">In this document</h4>
+            <div class="opacity-50">
+                <ul class="card-text small  list-unstyled ul-ad">
+                <li id="secpayment"><a href="#" class="text-black">Payment module</a></li>   
+<li id="secsupport"><a href="#sgp" class="text-black">Supported Gateway Packages</a></li>  
+<li id="seccreate"><a href="#sgp" class="text-black">Creating a custom payment gateway</a></li>  
+<li id="secpacka"><a href="#sgp" class="text-black">Packages</a></li>  
+<li id="secpackages"><a href="#ui" class="text-black">User interface</a></li>  
+<li id="secpayu"><a href="#ui" class="text-black">PayU prepayment pages</a></li>  
+<li id="secadmin"><a href="#ui" class="text-black">Admin Pages</a></li>  
+                </ul>
+      </div>
+      </div>
+    </div>
+    <div class="card  border-0 box  bg-advertise "  >
+        <div class="card-body abp-community-card  rounded-3 bg-sec " >
+            <div class="row  ">
+                <div class="col-lg-5 col-md-5 col-5"> <img src="Assets/images/React_logo.png" alt="raaghu logo" class="w-100"></div>
+                <div class="col-lg-7 mt-1  col-md-7 mt-1 col-7"> <img src="Assets/images/abp-sec.png" alt="raaghu logo" class="w-100"></div>
+                <!-- <div class="col-lg-6"><img src="Assets/images/abp-com.svg" alt="raaghu logo" class="w-100"></div> -->
+                
+            </div>
+            <div class="border-under-sec my-3"></div>
+            <div class="colored-sec-design py-1">
+                <ul class="ps-4">
+                    <li>CLI for CRUD generation</li>
+                    <li>Component driven development</li>
+                    <li>Purpose build UI kit for ABP commercial</li>
+                </ul>
+            </div>
+            <div>
+                <button type="button" class="btn btn-primary mt-1 w-100" data-bs-toggle="modal" data-bs-target="#contactusModal">Contact Us</button> 
+            </div>
+        </div>
+    </div>
+    </div>
+</div>
+                <!-- <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-0 col-12 docs-page-index">
+                    <div class="card mt-4 top-25 me-lg-4 border-0 shadow py-4">
+                        <div class="card-body">
+                            <h5 class="card-title">In This Document</h5>
+                            <p class="card-text small">Some quick example text to build on the card title and make up
+                                the bulk of the card's content.</p>
+
+                        </div>
+                    </div>
+                </div> -->
+
+            </div>
+
+
+
+        </div>
+
+    </main>
+
+    <!-- bootstrap dependencies -->
+    <script src="Assets/js/bootstrap.min.js"></script>
+    <script src="scripts/translation.js"></script>
+</body>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var languageDropdown = document.getElementById('language-dropdown');
+        languageDropdown.addEventListener('change', function () {
+            var selectedLanguage = languageDropdown.value;
+            if (selectedLanguage === 'pt') {
+                // Sidebar Code in js File
+
+
+                // Body Content
+
+                document.getElementById('paymod').innerHTML = 'módulo de pagamento';
+                document.getElementById('paygateway').innerHTML = 'O módulo de pagamento implementa a integração do gateway de pagamento de um aplicativo. Ele fornece um pagamento a prazo e opções de pagamento recorrentes.';
+                document.getElementById('ssp').innerHTML = 'Apoia <a href="https://stripe.com/en-in">Faixa</a>, <a href="https://www.paypal.com/in/home">PayPal</a>, <a href="https://www.2checkout.com/">2Checkout</a>, <a href="https://corporate.payu.com/">PayU</a>, <a href="https://www.iyzico.com/en">Iyzico</a> e Gateways de pagamento <a href="https://global.alipay.com/platform/site/ihome" id="sgp">Alipay</a>.';
+                document.getElementById('overviewof').innerHTML = 'Veja <a href="https://commercial.abp.io/modules/Volo.Payment">a descrição do módulo page</a> para uma visão geral dos recursos do módulo.';
+                document.getElementById('gatewaypack').innerHTML = 'Pacotes de gateway suportados';
+                document.getElementById('useapay').innerHTML = 'Para usar um gateway de pagamento, você precisa adicionar pacotes NuGet relacionados ao seu projeto conforme explicado na seção de instalação manual acima e adicione <span class="txt-color">DependsOn</span> ao seu módulo relacionado. Por exemplo, se você não quiser usar PayU, você não precisa usar seus pacotes NuGet.</p> <p>Depois de adicionar pacotes de um gateway de pagamento ao seu aplicativo, você também precisa configurar opções de módulos de pagamento globais e opções para os módulos de pagamento que você possui adicionado. Consulte a seção Opções abaixo.';
+                document.getElementById('tourapp').innerHTML = 'Depois de adicionar pacotes de um gateway de pagamento ao seu aplicativo, você também precisa configurar opções de módulos de pagamento globais e opções para os módulos de pagamento que você possui adicionado. Consulte a seção Opções abaixo.';
+                document.getElementById('createcustom').innerHTML = 'Criando um gateway de pagamento personalizado';
+                document.getElementById('ifyourequire').innerHTML = 'Se você precisar de um gateway de pagamento diferente dos existentes, poderá criar um personalizado gateway de pagamento por conta própria. 2 etapas são necessárias para criar um gateway de pagamento personalizado. A primeira é criar um objeto de gateway de pagamento que implementa <span class="txt-color">IPaymentGateway</span>. Esta interface expõe o pagamento principal operações sem qualquer interface do usuário. A segunda etapa é criar a interface do usuário para o gateway de pagamento. esta IU é usado para redirecionar o usuário para o gateway de pagamento e validar o pagamento.';
+                document.getElementById('createcustomgate').innerHTML = 'Siga o <a href="https://docs.abp.io/en/commercial/7.0/modules/payment-custom-gateway">instruções aqui</a> para criar um gateway de pagamento personalizado.';
+                document.getElementById('idpack').innerHTML = 'pacotes';
+                document.getElementById('ui').innerHTML = 'Este módulo segue o <a href="https://docs.abp.io/en/abp/latest/Best-Practices/Index">desenvolvimento do módulo guia de práticas recomendadas</a> e consiste em vários pacotes NuGet e NPM. Veja o guia se você quiser entender os pacotes e as relações entre eles.';
+             document.getElementById('canvisit').innerHTML = 'Você pode visitar <a href="https://abp.io/packages?moduleName=Volo.Payment">Módulo de pagamento página da lista de pacotes</a> para ver a lista de pacotes relacionados com este módulo';
+                document.getElementById('uinter').innerHTML = 'Interface de usuário';
+                document.getElementById('publicpages').innerHTML = 'Páginas públicas';
+                document.getElementById('gateselect').innerHTML = 'Seleção de gateway de pagamento';
+                document.getElementById('thisallow').innerHTML = 'Esta página permite selecionar um gateway de pagamento. Se houver um gateway de pagamento configurado para aplicação final, esta página será ignorada.';
+                document.getElementById('prepay').innerHTML = 'Páginas de pré-pagamento PayU';
+                document.getElementById('sendname').innerHTML = 'Esta página é usada para enviar o nome, sobrenome e endereço de e-mail do usuário para PayU.';
+                document.getElementById('adminpage').innerHTML = 'Páginas de administração';
+                document.getElementById('planspage').innerHTML = 'Página de planos de pagamento';
+                document.getElementById('payplansforsub').innerHTML = 'Planos de pagamento para assinaturas podem ser gerenciados nesta página. Você pode conectar assinaturas externas para cada gateway a um plano.';
+              // For In this doc section
+                document.getElementById('inthisdoc').innerHTML = 'neste documento';
+                document.getElementById('secpayment').innerHTML = '<a href="#" class="text-black">Módulo de pagamento</a>';
+                document.getElementById('secsupport').innerHTML = '<a href="#sgp" class="text-black">Pacotes de gateway suportados</a>';
+                document.getElementById('seccreate').innerHTML = '<a href="#sgp" class="text-black">Como criar um gateway de pagamento personalizado</a>';
+                document.getElementById('secpacka').innerHTML = '<a href="#sgp" class="text-black">Pacotes</a>';
+                document.getElementById('secpackages').innerHTML = '<a href="#ui" class="text-black">Interface do usuário</a>';
+                document.getElementById('secpayu').innerHTML = '<a href="#ui" class="text-black">Páginas de pré-pagamento PayU</a>';
+                document.getElementById('secadmin').innerHTML = '<a href="#ui" class="text-black">Páginas de administração</a>';
+            }
+            else if (selectedLanguage === 'French') {
+                 // Body Content
+
+                 document.getElementById('paymod').innerHTML = 'module de paiement';
+                document.getElementById('paygateway').innerHTML = 'Le module de paiement implémente l\'intégration de la passerelle de paiement d\'une application. Il offre des options de paiement à terme et de paiement récurrent.';
+                document.getElementById('ssp').innerHTML = 'Prend en charge <a href="https://stripe.com/en-in">Strip</a>, <a href="https://www.paypal.com/in/home">PayPal</a> , <a href="https://www.2checkout.com/">2Checkout</a>, <a href="https://corporate.payu.com/">PayU</a>, <a href ="https://www.iyzico.com/en">Iyzico</a> et passerelles de paiement <a href="https://global.alipay.com/platform/site/ihome" id="sgp" > Alipay</a>.';
+                document.getElementById('overviewof').innerHTML = 'Voir la <a href="https://commercial.abp.io/modules/Volo.Payment">page de description du module</a> pour un aperçu des fonctionnalités du module.';
+                document.getElementById('gatewaypack').innerHTML = 'Packages de passerelle pris en charge';
+                document.getElementById('useapay').innerHTML = 'Pour utiliser une passerelle de paiement, vous devez ajouter des packages NuGet associés à votre projet comme expliqué dans la section d\'installation manuelle ci-dessus et ajouter <span class="txt-color">DependsOn</span> à votre module associé. Par exemple, si vous ne souhaitez pas utiliser PayU, vous n\'avez pas besoin d\'utiliser leurs packages NuGet.</p> <p>Après avoir ajouté des packages de passerelle de paiement à votre application, vous devez également configurer les options globales du module de paiement. et des options pour les modules de paiement que vous avez ajoutés. Voir la section Options ci-dessous.';
+                document.getElementById('tourapp').innerHTML = 'Après avoir ajouté des packages de passerelle de paiement à votre application, vous devez également configurer les options du module de paiement global et les options pour les modules de paiement que vous avez ajoutés. Voir la section Options ci-dessous.';
+                document.getElementById('createcustom').innerHTML = 'Création d\'une passerelle de paiement personnalisée';
+                document.getElementById('ifyourequire').innerHTML = 'Si vous avez besoin d\'une passerelle de paiement différente de celles existantes, vous pouvez créer vous-même une passerelle de paiement personnalisée. 2 étapes sont nécessaires pour créer une passerelle de paiement personnalisée. La première consiste à créer un objet de passerelle de paiement qui implémente <span class="txt-color">IPaymentGateway</span>. Cette interface expose les principales opérations de paiement sans aucune interface utilisateur. La deuxième étape consiste à créer l\'interface utilisateur de la passerelle de paiement. cette UI permet de rediriger l\'utilisateur vers la passerelle de paiement et de valider le paiement.';
+                document.getElementById('createcustomgate').innerHTML = 'Suivez les <a href="https://docs.abp.io/en/commercial/7.0/modules/payment-custom-gateway">instructions ici</a> pour créer une passerelle de paiement personnalisée.';
+
+
+                document.getElementById('idpack').innerHTML = 'paquets';
+                document.getElementById('ui').innerHTML = 'Ce module suit le <a href="https://docs.abp.io/en/abp/latest/Best-Practices/Index">guide des meilleures pratiques de développement de modules</a> et se compose de plusieurs packages NuGet et NPM. Consultez le guide si vous souhaitez comprendre les packages et les relations entre eux.';
+             document.getElementById('canvisit').innerHTML = 'Vous pouvez visiter la <a href="https://abp.io/packages?moduleName=Volo.Payment">page de la liste des packages du module de paiement</a> pour voir la liste des packages liés à ce module';
+                document.getElementById('uinter').innerHTML = 'interface utilisateur';
+                document.getElementById('publicpages').innerHTML = 'pages publiques';
+                document.getElementById('gateselect').innerHTML = 'Sélection de la passerelle de paiement';
+                document.getElementById('thisallow').innerHTML = 'Cette page vous permet de sélectionner une passerelle de paiement. S\'il existe une passerelle de paiement configurée pour l\'application finale, cette page sera ignorée.';
+                document.getElementById('prepay').innerHTML = 'Pages de prépaiement PayU';
+                document.getElementById('sendname').innerHTML = 'Cette page est utilisée pour envoyer le prénom, le nom et l\'adresse e-mail de l\'utilisateur à PayU.';
+                document.getElementById('adminpage').innerHTML = 'pages d\'administration';
+                document.getElementById('planspage').innerHTML = 'Page des plans de paiement';
+                document.getElementById('payplansforsub').innerHTML = 'Les plans de paiement pour les abonnements peuvent être gérés sur cette page. Vous pouvez connecter des abonnements externes pour chaque passerelle à un plan.';
+              // For In this doc section
+                document.getElementById('inthisdoc').innerHTML = 'dans ce document';
+                document.getElementById('secpayment').innerHTML = '<a href="#" class="text-black">Module de paiement</a>';
+                document.getElementById('secsupport').innerHTML = '<a href="#sgp" class="text-black">Packages de passerelle pris en charge</a>';
+                document.getElementById('seccreate').innerHTML = '<a href="#sgp" class="text-black">Création d\'une passerelle de paiement personnalisée</a>';
+                document.getElementById('secpacka').innerHTML = '<a href="#sgp" class="text-black">Forfaits</a>';
+                document.getElementById('secpackages').innerHTML = '<a href="#ui" class="text-black">Interface utilisateur</a>';
+                document.getElementById('secpayu').innerHTML = '<a href="#ui" class="text-black">Pages de prépaiement PayU</a>';
+                document.getElementById('secadmin').innerHTML = '<a href="#ui" class="text-black">Pages d\'administration</a>';
+            } 
+            else if (selectedLanguage === 'Finnish') {
+
+                // Sisältö
+document.getElementById('paymod').innerHTML = 'maksu-moduuli';
+document.getElementById('paygateway').innerHTML = 'Maksu-moduuli toteuttaa sovelluksen maksuyhdyskäytävän integroinnin. Se tarjoaa erilaisia maksuvaihtoehtoja, kuten määräaikaiset maksut ja toistuvat maksut.';
+document.getElementById('ssp').innerHTML = 'Tukee <a href="https://stripe.com/en-in">Stripea</a>, <a href="https://www.paypal.com/in/home">PayPalia</a>, <a href="https://www.2checkout.com/">2Checkoutia</a>, <a href="https://corporate.payu.com/">PayUta</a>, <a href="https://www.iyzico.com/en">Iyzicoa</a> sekä <a href="https://global.alipay.com/platform/site/ihome" id="sgp" >Alipayta</a> ja muita maksuyhdyskäytäviä.';
+document.getElementById('overviewof').innerHTML = 'Katso <a href="https://commercial.abp.io/modules/Volo.Payment">moduulin kuvaussivu</a> saadaksesi yleiskatsauksen moduulin toiminnallisuuksista.';
+document.getElementById('gatewaypack').innerHTML = 'Tuettujen yhdyskäytäväpakettien valinta';
+document.getElementById('useapay').innerHTML = 'Maksuyhdyskäytävän käyttämiseksi sinun tulee lisätä liittyvät NuGet-paketit projektiisi kuten manuaalisessa asennusohjeessa yllä, sekä lisätä <span class="txt-color">DependsOn</span> vastaavaan moduuliin. Esimerkiksi jos et halua käyttää PayUta, et tarvitse käyttää heidän NuGet-pakettejaan.</p> <p>Lisättyäsi maksuyhdyskäytävän paketteja sovellukseesi, sinun tulee myös määrittää maksu-moduulin globaalit asetukset ja asetukset lisätyille maksu-moduuleille. Katso Asetukset-osio alta.';
+document.getElementById('tourapp').innerHTML = 'Lisättyäsi maksuyhdyskäytävän paketteja sovellukseesi, sinun tulee myös määrittää maksu-moduulin globaalit asetukset ja asetukset lisätyille maksu-moduuleille. Katso Asetukset-osio alta.';
+document.getElementById('createcustom').innerHTML = 'Mukautetun maksuyhdyskäytävän luominen';
+document.getElementById('ifyourequire').innerHTML = 'Jos tarvitset erilaisen maksuyhdyskäytävän kuin mitä valmiina on, voit luoda oman mukautetun maksuyhdyskäytävän. Mukautetun maksuyhdyskäytävän luomiseen tarvitaan kaksi vaihetta. Ensimmäinen vaihe on luoda maksuyhdyskäytävä-objekti, joka toteuttaa <span class="txt-color">IPaymentGateway</span> -rajapinnan. Tämä rajapinta tarjoaa tärkeimmät maksutoiminnot ilman käyttöliittymää. Toinen vaihe on luoda maksuyhdyskäytävän käyttöliittymä. Tämä käyttöliittymä ohjaa käyttäjän maksuyhdyskäytävään ja validoi maksun.';
+document.getElementById('createcustomgate').innerHTML = 'Seuraa <a href="https://docs.abp.io/en/commercial/7.0/modules/payment-custom-gateway">täällä olevia ohjeita</a> luodaksesi mukautetun maksuyhdyskäytävän.';
+
+document.getElementById('idpack').innerHTML = 'paketteja';
+document.getElementById('ui').innerHTML = 'Tämä moduuli noudattaa <a href="https://docs.abp.io/en/abp/latest/Best-Practices/Index">moduulien parhaita käytäntöjä</a> ja koostuu useista NuGet- ja NPM-paketeista. Katso opas, jos haluat ymmärtää paketit ja niiden väliset suhteet.';
+document.getElementById('canvisit').innerHTML = 'Voit vierailla <a href="https://abp.io/packages?moduleName=Volo.Payment">maksu-moduulin pakettiluettelosivulla</a> nähdäksesi listan tämän moduulin liittyvistä paketeista.';
+document.getElementById('uinter').innerHTML = 'käyttöliittymä';
+document.getElementById('publicpages').innerHTML = 'julkiset sivut';
+document.getElementById('gateselect').innerHTML = 'Maksuyhdyskäytävän valinta';
+document.getElementById('thisallow').innerHTML = 'Tämä sivu mahdollistaa maksuyhdyskäytävän valinnan. Jos sovellukselle on jo määritetty maksuyhdyskäytävä, tämä sivu ohitetaan.';
+document.getElementById('prepay').innerHTML = 'PayU:n ennakkomaksusivut';
+document.getElementById('sendname').innerHTML = 'Tätä sivua käytetään käyttäjän etunimen, sukunimen ja sähköpostiosoitteen lähettämiseen PayU:lle.';
+document.getElementById('adminpage').innerHTML = 'ylläpidon sivut';
+document.getElementById('planspage').innerHTML = 'Maksusuunnitelmien sivu';
+document.getElementById('payplansforsub').innerHTML = 'Maksusuunnitelmat tilauksille voidaan hallita tällä sivulla. Voit liittää ulkoisia tilauksia jokaiseen yhdyskäytävään.';
+// Tässä asiakirjaosassa
+document.getElementById('inthisdoc').innerHTML = 'tässä asiakirjassa';
+document.getElementById('secpayment').innerHTML = '<a href="#" class="text-black">Maksu-moduuli</a>';
+document.getElementById('secsupport').innerHTML = '<a href="#sgp" class="text-black">Tuettujen yhdyskäytäväpakettien valinta</a>';
+document.getElementById('seccreate').innerHTML = '<a href="#sgp" class="text-black">Mukautetun maksuyhdyskäytävän luominen</a>';
+document.getElementById('secpacka').innerHTML = '<a href="#sgp" class="text-black">Paketit</a>';
+document.getElementById('secpackages').innerHTML = '<a href="#ui" class="text-black">Käyttöliittymä</a>';
+document.getElementById('secpayu').innerHTML = '<a href="#ui" class="text-black">PayU:n ennakkomaksusivut</a>';
+document.getElementById('secadmin').innerHTML = '<a href="#ui" class="text-black">ylläpidon sivut</a>';
+
+            } 
+            else if (selectedLanguage === 'Slovak') {
+                // Sisältö
+document.getElementById('paymod').innerHTML = 'Modul platby';
+document.getElementById('paygateway').innerHTML = 'Modul platby implementuje integračné a riadiace funkcie pre platobnú bránu aplikácie. Poskytuje rôzne možnosti platby, ako sú opakované platby a platby s termínom splatnosti.';
+document.getElementById('ssp').innerHTML = 'Podporuje <a href="https://stripe.com/en-in">Stripe</a>, <a href="https://www.paypal.com/in/home">PayPal</a>, <a href="https://www.2checkout.com/">2Checkout</a>, <a href="https://corporate.payu.com/">PayU</a>, <a href="https://www.iyzico.com/en">Iyzico</a>, <a href="https://global.alipay.com/platform/site/ihome" id="sgp" >Alipay</a> a ďalšie platobné brány.';
+document.getElementById('overviewof').innerHTML = 'Pozrite si <a href="https://commercial.abp.io/modules/Volo.Payment">stránku s opisom modulu</a> pre prehľad funkcií modulu platby.';
+document.getElementById('gatewaypack').innerHTML = 'Výber podporovaných balíkov platobnej brány';
+document.getElementById('useapay').innerHTML = 'Na použitie platobnej brány musíte do vášho projektu pridať príslušné NuGet balíky podľa manuálnych inštrukcií vyššie a pridať <span class="txt-color">DependsOn</span> do príslušného modulu. Napríklad, ak nechcete použiť PayU, nemusíte pridávať ich NuGet balíky.</p> <p>Po pridaní balíkov platobnej brány do vášho projektu, musíte nastaviť globálne nastavenia a nastavenia pre pridané balíky platobnej brány. Pozrite si časť Nastavenia nižšie.';
+document.getElementById('tourapp').innerHTML = 'Po pridaní balíkov platobnej brány do vášho projektu, musíte nastaviť globálne nastavenia a nastavenia pre pridané balíky platobnej brány. Pozrite si časť Nastavenia nižšie.';
+document.getElementById('createcustom').innerHTML = 'Vytvorenie vlastnej platobnej brány';
+document.getElementById('ifyourequire').innerHTML = 'Ak potrebujete inú platobnú bránu než je vopred pripravená, môžete si vytvoriť vlastnú platobnú bránu. Na vytvorenie vlastnej platobnej brány potrebujete dva kroky. Prvý krok je vytvoriť objekt platobnej brány, ktorý implementuje rozhranie <span class="txt-color">IPaymentGateway</span>. Toto rozhranie poskytuje hlavné platobné funkcie bez používateľského rozhrania. Druhý krok je vytvoriť používateľské rozhranie pre platobnú bránu. Toto rozhranie prevedie používateľa na platobnú bránu a overí platbu.';
+document.getElementById('createcustomgate').innerHTML = 'Postupujte podľa <a href="https://docs.abp.io/en/commercial/7.0/modules/payment-custom-gateway">inštrukcií tu</a> pre vytvorenie vlastnej platobnej brány.';
+
+document.getElementById('idpack').innerHTML = 'balíky';
+document.getElementById('ui').innerHTML = 'Tento modul dodržiava <a href="https://docs.abp.io/en/abp/latest/Best-Practices/Index">najlepšie postupy modulov</a> a skladá sa z niekoľkých NuGet a NPM balíkov. Ak chcete pochopiť balíky a ich vzťahy, pozrite si sprievodcu.';
+document.getElementById('canvisit').innerHTML = 'Prezrite si <a href="https://abp.io/packages?moduleName=Volo.Payment">zoznam balíkov modulu platby</a>, ktoré sú k nemu pridružené.';
+document.getElementById('uinter').innerHTML = 'používateľské rozhranie';
+document.getElementById('publicpages').innerHTML = 'verejné stránky';
+document.getElementById('gateselect').innerHTML = 'Výber platobnej brány';
+document.getElementById('thisallow').innerHTML = 'Táto stránka umožňuje výber platobnej brány. Ak je platobná brána už nastavená pre vašu aplikáciu, táto stránka bude preskočená.';
+document.getElementById('prepay').innerHTML = 'Stránky predplatenia PayU';
+document.getElementById('sendname').innerHTML = 'Táto stránka slúži na odoslanie mena, priezviska a e-mailovej adresy používateľa do PayU.';
+document.getElementById('adminpage').innerHTML = 'administratívne stránky';
+document.getElementById('planspage').innerHTML = 'Stránka s plánmi platby';
+document.getElementById('payplansforsub').innerHTML = 'Plány platby pre predplatné môžete spravovať na tejto stránke. Môžete priradiť externé plány k jednotlivým bránam.';
+// Tässä asiakirjaosassa
+document.getElementById('inthisdoc').innerHTML = 'v tejto dokumentácii';
+document.getElementById('secpayment').innerHTML = '<a href="#" class="text-black">Modul platby</a>';
+document.getElementById('secsupport').innerHTML = '<a href="#sgp" class="text-black">Výber podporovaných balíkov platobnej brány</a>';
+document.getElementById('seccreate').innerHTML = '<a href="#sgp" class="text-black">Vytvorenie vlastnej platobnej brány</a>';
+document.getElementById('secpacka').innerHTML = '<a href="#sgp" class="text-black">Balíky</a>';
+document.getElementById('secpackages').innerHTML = '<a href="#ui" class="text-black">Používateľské rozhranie</a>';
+document.getElementById('secpayu').innerHTML = '<a href="#ui" class="text-black">Stránky predplatenia PayU</a>';
+document.getElementById('secadmin').innerHTML = '<a href="#ui" class="text-black">Administratívne stránky</a>';
+
+            } 
+
+            else if (selectedLanguage === 'spanish') {
+            } else {
+
+            }
+        });
+    });
+</script>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+

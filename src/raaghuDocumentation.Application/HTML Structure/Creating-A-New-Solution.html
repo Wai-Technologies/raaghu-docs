@@ -1,0 +1,1546 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="Assets/images/raaghu-icon.png">
+    <title>Raaghu - Creating A New Solution</title>
+
+    <!-- bootstrap dependencies -->
+    <link rel="stylesheet" href="Assets/css/bootstrap.min.css">
+    <link href="Assets/prism.css" rel="stylesheet" />
+    <script src="Assets/prism.js"></script>
+    <link rel="stylesheet" href="/index.css">
+
+</head>
+
+
+<body>
+
+    <main>
+
+        <nav class="navbar navbar-expand-lg navbar-light  ">
+            <div class="container-fluid ">
+                <div class="navbar-toggler-container">
+                    <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#sidebar,#navbarSupportedContent"
+                        aria-controls="sidebar" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <!-- <div class="dropdown show dropdown-specific">
+                        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Platform
+                        </a>
+
+                        <div class="dropdown-menu menu" aria-labelledby="dropdownMenuLink">
+                            <a class="dropdown-item" href="https://www.raaghu.io/features.html">Features</a>
+                            <a class="dropdown-item " href="https://portal.raaghu.io/">Documentation</a>
+                            <button type="button" class="btn btn-primary btn-contact mt-2">contact</button>
+                            <a href="https://github.com/Wai-Technologies/raaghu-angular" target="_blank">
+                                <li class="ps-lg-5 mt-2">
+                                    <img src="Assets/images/github-logo.svg" alt="abplogo logo" width="100%"
+                                        class="github-logo">
+                                </li>
+                            </a>
+                        </div>
+                    </div> -->
+                </div>
+                <a class="text-black navbar-brand" href="/">
+                    <img src="Assets/images/raaghu_logs.png" alt="raaghu logo" class="w-75  pe-lg-0">
+                </a>
+
+                <div class="collapse navbar-collapse align  justify-content-lg-end " id="navbarSupportedContent">
+                    <ul class="navbar-nav  mb-2 mb-lg-0">
+                        <li class="nav-item me-5">
+                            <a class="nav-link active " aria-current="page"
+                                href="https://raaghu-website-staging.netlify.app/raaghu-mfe-portal/_accordion.html">Components</a>
+                        </li>
+                        <li class="nav-item me-5">
+                            <a class="nav-link active " aria-current="page" href="#"><span
+                                    class="doc-color">Documentation</span></a>
+                        </li>
+                        <li class="nav-item me-5">
+                            <a class="nav-link active " aria-current="page"
+                                href="https://raaghu-website-staging.netlify.app/raaghu-mfe-portal/_accordion.html#">Support</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link active " aria-current="page"
+                                href="https://raaghu-website-staging.netlify.app/faq">FAQ</a>
+                        </li>
+                        <!-- <li class=" nav-item dropdown active">
+                            <a class="nav-link  text-dark me-5" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Platform
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-center " aria-labelledby="navbarDropdown">
+                                <ul class="list-unstyled dropdown-arrow">
+                                    <li class=" ps-4">
+                                        <p class="title pt-2">Raaghu Platform</p>
+                                        <div class="row">
+                                            <div class="col-lg-6 col-md-6">
+                                                <a href="https://portal.raaghu.io/" target="_blank"
+                                                    class="p-0 text-decoration-none text-reset">
+                                                    <div class="d-flex align-items-center gap-3">
+
+                                                        <img src="Assets/images/raaghu-portal-mg.svg"
+                                                            alt="raaghu-portal" class="mb-3">
+                                                        <p class="link-name">Raaghu Portal</p>
+
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="col-lg-6 col-md-6">
+                                                <a href="https://portal.raaghu.io/#Components-section" target="_blank"
+                                                    class="p-0 text-decoration-none text-reset">
+                                                    <div class="d-flex align-items-center gap-3">
+                                                        <img src="Assets/images/raaghu-components-mg.svg"
+                                                            alt="raaghu-components" class="mb-3">
+                                                        <p class="link-name">Raaghu Components</p>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-6 col-md-6">
+                                                <a href="https://portal.raaghu.io/#Elements-section" target="_blank"
+                                                    class="p-0 text-decoration-none text-reset">
+                                                    <div class="d-flex align-items-center gap-3">
+                                                        <img src="Assets/images/raaghu-elements-mg.svg"
+                                                            alt="raaghu-portal" class="mb-2">
+                                                        <p class="pt-2 link-name">Raaghu Elements</p>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="col-lg-6 col-md-6">
+                                                <div class="d-flex align-items-center gap-3">
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="bgcolor-dropdown">
+                                        <div class="ps-4">
+                                            <p class="pt-3 pb-1 title">WORKS ON</p>
+                                            <div class="row">
+                                                <div class="col-md-2 mb-2">
+                                                    <img src="Assets/images/asplogo-mg.svg" alt="asplogo logo"
+                                                        width="80%">
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <img src="Assets/images/abplogo-mg.svg" alt="abplogo logo"
+                                                        width="50%">
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item me-5">
+                            <a class="nav-link active " aria-current="page"
+                                href="https://www.raaghu.io/features.html">Features</a>
+                        </li>
+                        <li class="nav-item me-5">
+                            <a class="nav-link active " aria-current="page"
+                                href="https://portal.raaghu.io/">Documentation</a>
+                        </li>
+                        <button type="button" class="btn btn-primary btn-contact">contact</button>
+                        <a href="https://github.com/Wai-Technologies/raaghu-angular" target="_blank">
+                            <li class="ps-lg-5 pt-2">
+                                <img src="Assets/images/github-logo.svg" alt="abplogo logo" width="100%"
+                                    class="github-logo">
+                            </li>
+                        </a> -->
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="wrapper container-fluid">
+
+            <div class="row">
+
+                <div id="sidebar" class="col-12 col-lg-2 col-md-4 col-xl-2 col-xxl-2 collapse d-m-block mx-0 mx-lg-3 mx-md-3 mx-xl-3 mx-xxl-3 show">
+
+                    <nav>
+                        <div class="sidebar-header ">
+                            <a href="/" class="text-bg-dark">
+                                <h3 class="fs-5 fw-normal" id="tableOfContent">Table Of Content</h3>
+                            </a>
+                        </div>
+
+                        <div class="accordion accordion-flush mx-3 doc-acc accordion-button-top" id="accordionExample">
+                            <div class="row pb-4">
+                                <div class="col-6 col-lg-6 col-md-6">
+                                    <select id="language-dropdown" class="sidebar-button">
+                                        <option value="en" selected>English</option>
+                                        <option value="pt">Português</option>
+                                        <option value="fr">French</option>
+                                        <option value="fi">Finnish</option>
+                                        <option value="hi">Hindi</option>
+                                        <option value="it">Italian</option>                                        
+                                        <option value="sk">Slovak</option>
+                                        <option value="de">German</option>
+                                        <option value="ru">Russian</option>
+                                        <option value="zh">Chinese</option>
+                                        <option value="af">Afrikaan</option>
+                                        <option value="ar">Arabic</option>
+                                        <!-- Add more language options if needed -->
+                                    </select>
+                                </div>
+                                <div class="col-6 col-lg-6 col-md-6">
+                                    <select class="sidebar-button w-100">
+                                        <option value="option1" id="version">Version</option>
+                                        <option value="option2" id="version2">Version 2</option>
+                                        <option value="option3">Version 3</option>
+                                        <option value="option4">Version 4</option>
+                                    </select>
+
+                                </div>
+                            </div>
+                            <div class="accordion-item bg-dark">
+                                <h2 class="accordion-header" id="headingOne">
+                                    <a href="Getting-Started.html">
+                                        <button
+                                            class="accordion-button d-flex flex-row-reverse justify-content-end p-0 bg-dark mt-1"
+                                            type="button" data-bs-toggle="collapse" data-bs-target="#coll"
+                                            aria-expanded="true" aria-controls="collapseOne" id="Getting">
+                                            Getting Started
+                                        </button></a>
+                                </h2>
+
+                                <div id="coll" class="accordion-collapse collapse show border-0 rounded-0 p-0"
+                                    aria-labelledby="headOne" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Setup-Your-Development-Environment.html" id="setupDev">Setup your
+                                            development
+                                            environment</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Creating-A-New-Solution.html"><span class="accordian-active"
+                                                id="creatingNewSol">Creating A New Solution</span></a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Running-The-Solution.html" id="runningTheSol">Running the Solution</a>
+                                    </div>
+                                </div>
+                                <h2 class="accordion-header" id="headingTwo">
+                                    <button
+                                        class="accordion-button d-flex flex-row-reverse justify-content-end p-0 bg-dark mt-2"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                        aria-expanded="false" aria-controls="collapseOne" id="tut">
+                                        Tutorials
+                                    </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse  border-0 rounded-0 p-0"
+                                    aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <h2 class="accordion-header" id="headingTwo">
+                                            <button
+                                                class="accordion-button d-flex flex-row-reverse justify-content-end p-0 bg-dark mt-2"
+                                                type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                                                aria-expanded="false" aria-controls="collapseOne" id="webAppDev">
+                                                Web Application Development
+                                            </button>
+                                        </h2>
+                                        <div id="collapseThree"
+                                            class="accordion-collapse collapse  border-0 rounded-0 p-0 pt-2"
+                                            aria-labelledby="headingTwo" data-bs-parent="#accordionExamplee">
+                                            <div class="accordion-body bg-dark px-4 p-1">
+                                                <a href="Creating-The-Server-Side.html" id="creatingServer">Creating the
+                                                    Server
+                                                    Side</a>
+                                            </div>
+                                        </div>
+                                        <div id="collapseThree"
+                                            class="accordion-collapse collapse  border-0 rounded-0 p-0"
+                                            aria-labelledby="headingTwo" data-bs-parent="#accordionExamplee">
+                                            <div class="accordion-body bg-dark px-4 p-1">
+                                                <a href="The-Book-List-Page.html" id="bookList">The Book List Page</a>
+                                            </div>
+                                        </div>
+                                        <div id="collapseThree"
+                                            class="accordion-collapse collapse  border-0 rounded-0 p-0"
+                                            aria-labelledby="headingTwo" data-bs-parent="#accordionExamplee">
+                                            <div class="accordion-body bg-dark px-4 p-1">
+                                                <a href="Creating-Updating-And-Deleting-Book.html"
+                                                    id="creatingUpdating">Creating,Updating
+                                                    And
+                                                    Deleting Book</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <h2 class="accordion-header" id="headingFour">
+                                    <button
+                                        class="accordion-button d-flex flex-row-reverse justify-content-end p-0 bg-dark mt-2"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour"
+                                        aria-expanded="false" aria-controls="collapseOne" id="guides">
+                                        Guides
+                                    </button>
+                                </h2>
+                                <div id="collapseFour" class="accordion-collapse collapse  border-0 rounded-0 p-0"
+                                    aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Customizing-The-Modules.html" id="customizingTheModules">Customizing
+                                            the Modules</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Identity-Server-Deployment.html" id="identityServerDeploy">Identity
+                                            Server Deployment</a>
+                                    </div>
+                                </div>
+
+
+                                <h2 class="accordion-header" id="headingFive">
+                                    <button
+                                        class="accordion-button d-flex flex-row-reverse justify-content-end p-0 bg-dark mt-2"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive"
+                                        aria-expanded="false" aria-controls="collapseOne" id="samples">
+                                        Samples
+                                    </button>
+                                </h2>
+                                <div id="collapseFive" class="accordion-collapse collapse  border-0 rounded-0 p-0"
+                                    aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="All-Samples.html" id="allSamples">All Samples</a>
+                                    </div>
+                                </div>
+                                <h2 class="accordion-header" id="headingSix">
+                                    <a href="Startup-Template.html">
+                                        <button
+                                            class="accordion-button d-flex flex-row-reverse justify-content-end p-0 bg-dark mt-2"
+                                            type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix"
+                                            aria-expanded="false" aria-controls="collapseOne" id="startupTemplate">
+                                            Startup Template
+                                        </button></a>
+                                </h2>
+                                <div id="collapseSix" class="accordion-collapse collapse  border-0 rounded-0 p-0"
+                                    aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <h2 class="accordion-header" id="headingSix">
+                                            <button
+                                                class="accordion-button d-flex flex-row-reverse justify-content-end p-0 bg-dark mt-2"
+                                                type="button" data-bs-toggle="collapse" data-bs-target="#headingS"
+                                                aria-expanded="false" aria-controls="collapseOne">
+                                                Application Templates
+                                            </button>
+                                        </h2>
+                                        <div id="headingS"
+                                            class="accordion-collapse collapse  border-0 rounded-0 p-0 pt-2"
+                                            aria-labelledby="headingSix" data-bs-parent="#accordionExamplee">
+                                            <div class="accordion-body bg-dark px-4 p-1">
+                                                <a href="Creating-Solution.html">Creating Solution</a>
+                                            </div>
+                                        </div>
+                                        <div id="headingS" class="accordion-collapse collapse  border-0 rounded-0 p-0"
+                                            aria-labelledby="headingSix" data-bs-parent="#accordionExamplee">
+                                            <div class="accordion-body bg-dark px-4 p-1">
+                                                <a href="Solution-Structure.html">Solution Structure</a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                                <h2 class="accordion-header" id="headingSeven">
+                                    <button
+                                        class="accordion-button d-flex flex-row-reverse justify-content-end p-0 bg-dark mt-2"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven"
+                                        aria-expanded="false" aria-controls="collapseOne" id="appModules">
+                                        Application Modules
+                                    </button>
+                                </h2>
+                                <div id="collapseSeven" class="accordion-collapse collapse  border-0 rounded-0 p-0"
+                                    aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Overall.html" id="overall">Overall</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Account-Module.html" id="ac">Account</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Audit-Logging.html" id="auditLogging">Audit Logging</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Chat.html" id="chat">Chat</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="CMS-Kit-Pro.html" id="CMS">CMS Kit Pro</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="File-Management.html" id="fileMgt">File Management</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Forms.html" id="forms">Forms</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Identity.html" id="identity">Identity</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="OpenIddict.html" id="OpenIddict">OpenIddict</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Language-Management.html" id="languageMgt">Language Management</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Payment.html" id="payment">Payment</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="SaaS.html" id="saas">SaaS</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Text-Template-Management.html" id="ttm">Text Template Management</a>
+                                    </div>
+                                </div>
+                                <h2 class="accordion-header" id="headingNine">
+                                    <a href="UI-Themes.html">
+                                        <button
+                                            class="accordion-button d-flex flex-row-reverse justify-content-end p-0 bg-dark mt-2"
+                                            type="button" data-bs-toggle="collapse" data-bs-target="#headingNine"
+                                            aria-expanded="false" aria-controls="collapseOne" id="ui">
+                                            UI Themes
+                                        </button>
+                                    </a>
+                                </h2>
+                                <h2 class="accordion-header" id="headingReactUITheme">
+                                    <button
+                                        class="accordion-button d-flex flex-row-reverse justify-content-end p-0 bg-dark mt-2"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#headingReactUI"
+                                        aria-expanded="false" aria-controls="collapseOne" id="reactUI">
+                                        React UI
+                                    </button>
+                                </h2>
+                                <div id="headingReactUI" class="accordion-collapse collapse  border-0 rounded-0 p-0"
+                                    aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Customization.html" id="custom">customization</a>
+                                    </div>
+
+                                </div>
+                                <div id="headingReactUI" class="accordion-collapse collapse  border-0 rounded-0 p-0"
+                                    aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Components.html" id="compo">Components</a>
+                                    </div>
+
+                                </div>
+                                <!-- For Release Information -->
+                                <h2 class="accordion-header" id="headingFive">
+                                    <button
+                                        class="accordion-button d-flex flex-row-reverse justify-content-end p-0 bg-dark mt-2"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseLast"
+                                        aria-expanded="false" aria-controls="collapseOne" id="samples">
+                                       <span id="relinfo">Release Information</span> 
+                                    </button>
+                                </h2>
+                                <div id="collapseLast" class="accordion-collapse collapse  border-0 rounded-0 p-0"
+                                    aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Release-Notes.html" id="allSamples"><span id="relnote">Release Notes</span></a>
+                                    </div>
+                                </div>
+                                <!-- ====================================== -->
+                            </div>
+                        </div>
+                        <ul class="list-unstyled CTAs  w-100">
+                            <li>
+                                <a href="https://bootstrapious.com/tutorial/files/sidebar.zip" class="download"
+                                    id="downloadSource">Download
+                                    source</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="col-12 col-lg-8 col-md-7 col-xl-6 col-xxl-6 offset-lg-4 offset-md-5 offset-xl-3 offset-xxl-3 ps-xl-5 ps-xxl-0 px-lg-3 px-md-4 px-xl-0">
+
+                    <!-- Page Content  -->
+                    <div id="content">
+                        <div class="modal fade" id="contactusModal" tabindex="-1" aria-labelledby="contactusModalLabel"
+                            aria-hidden="true">
+
+                            <div class="modal-dialog modal-lg modal-dialog-centered">
+
+                                <div class="modal-content">
+
+                                    <!-- <div class="modal-header">
+                  
+                                  <h5 class="modal-title" id="contactusModalLabel">Modal title</h5>
+                  
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  
+                                </div> -->
+
+                                    <div class="modal-body p-0">
+
+
+
+
+                                        <div class="row">
+
+                                            <div class="col-md-6 col-sm-12 bg-dark">
+
+                                                <div class="mt-5">
+
+                                                    <img src="Assets/images/raaghu-logo-white.png"
+                                                        class="img-fluid w-25 pl-2">
+
+
+
+                                                    <img src="Assets/images/raaghu-banner-modal.png" class="img-fluid">
+
+                                                </div>
+
+                                            </div>
+
+
+
+                                            <div class="col-md-6 col-sm-12">
+
+                                                <div class="row">
+
+                                                    <div class="col-md-12 text-end pull-right">
+
+                                                        <button type="button"
+                                                            class="btn-close float-right pull-right m-3 text-muted"
+                                                            data-bs-dismiss="modal" aria-label="Close"></button>
+
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="p-4">
+
+                                                    <h6>
+
+                                                        Kindly fill the details below
+
+                                                    </h6>
+
+                                                    <p>
+
+                                                        <small> We will get back to you within 48 hours </small>
+
+                                                    </p>
+
+                                                    <div class="mt-5">
+
+                                                        <form method="post" id="want-to-hear-form">
+
+                                                            <div class="mb-3 form-group">
+
+                                                                <label for="emailId" class="form-label">Email ID
+
+                                                                    <span class="text-danger">*</span>
+
+                                                                </label>
+
+                                                                <input type="email" name="emailId"
+                                                                    class="form-control p-2" id="emailId"
+                                                                    placeholder="Enter your email id">
+
+                                                            </div>
+
+                                                            <div class="mb-3 form-group">
+
+                                                                <label for="companyName" class="form-label">Company Name
+
+                                                                    <span class="text-danger">*</span>
+
+                                                                </label>
+
+                                                                <input type="text" class="form-control p-2"
+                                                                    placeholder="Enter your Company Name"
+                                                                    name="companyName" id="companyName">
+
+                                                            </div>
+
+                                                            <div class="mb-3 form-group">
+
+                                                                <label for="message" class="form-label">Message
+
+                                                                    <span class="contactUs-Optional">(Optional)</span>
+
+
+                                                                </label>
+
+                                                                <textarea class="form-control p-2" name="message"
+                                                                    id="message" rows="3"
+                                                                    placeholder="Write your message.."></textarea>
+
+                                                            </div>
+
+                                                            <div class="mb-3 form-check">
+
+                                                                <input type="checkbox" class="form-check-input"
+                                                                    id="exampleCheck1">
+
+                                                                <label class="form-check-label" for="exampleCheck1">I
+                                                                    agree to the <a href="#"> terms & privacy policy
+                                                                    </a></label>
+
+                                                            </div>
+
+                                                            <button type="submit"
+                                                                class="btn btn-primary btn-sm btn-block float-end mb-4">Submit</button>
+
+                                                        </form>
+
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div> <input class="form-control  mb-5" type="search" placeholder="Search" aria-label="Search">
+                        </div>
+                        <div>
+                            <h1 class="fs-1 fw-semibold mb-3" id="createNew">Creating a new solution</h1>
+
+                            <h2 class="fw-semibold pt-2 pb-3" id="newProject">Create a new project</h2>
+
+                            <p id="thereAre">There are two ways of creating a new project: ABP Suite and ABP CLI</p>
+                            <div>
+                                <h3 class="fw-semibold pt-2 pb-3" id="usingABP">Using ABP Suite to create a new project.
+                                </h3>
+                                <p id="abpSuite">ABP Suite is recommended way to create new solutions for the ABP
+                                    Commercial</p>
+                                <p id="runABP">Run the ABP Suite with the following command:</p>
+                            </div>
+                            <pre><code class="language-javascript">abp suite</code></pre>
+
+                            <!-- abp suite  -->
+                            <div>
+                                <ul class="ps-3">
+                                    <li class="mt-4" id="thisCom">This command starts the ABP Suite and opens in your
+                                        default
+                                        browser:</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <img src="Assets/images/createANewSol.jpg" alt="Create A New Solution"
+                                    class="img-fluid my-3 w-100">
+                            </div>
+                            <div>
+                                <p class="pt-5" id="click">Click the <span class="fw-bolder">Create a new
+                                        solution</span> button
+                                    and fill the
+                                    modal form:</p>
+                                <img src="Assets/images/createSol.jpg" alt="Create A New Solution for modal form"
+                                    class="img-fluid  pb-3">
+                            </div>
+
+                        </div>
+                        <p class="mt-2" id="selectUI">Select the UI framework as raaghu-react, Database Provider, and
+                            other options
+                            based on your
+                            preferences, then click on the OK button</p>
+                        <div>
+                            <h3 class="fw-semibold pt-3 pb-3" id="usingThe">Using the ABP CLI to create a new project
+                            </h3>
+                        </div>
+                        <p id="useThe">Use the new command of the ABP CLI to create a new project:</p>
+                        <pre><code class="language-javascript">abp new Acme.Bookstore -t app-pro</code></pre>
+
+                        <ul class="ps-3 mt-4">
+                            <li id="tArgument">-t argument specifies the <a
+                                    href="https://docs.abp.io/en/commercial/7.2/startup-templates/application/index">startup
+                                    template</a> name. app-pro is the startup template that contains the essential <a
+                                    href="https://commercial.abp.io/modules">ABP Commercial Modules</a> pre-installed
+                                and configured for you.</li>
+                            <li class="mt-2" id="weCan">We can also use a different level of namespaces; e.g. Bookstore,
+                                Acme.Bookstore or Acme.Retail.BookStore.</li>
+                        </ul>
+                        <div>
+                            <h2 class="fw-semibold pt-2 pb-2" id="headTheme">Theme</h2>
+                            <h3 class="fw-semibold pt-3 pb-3" id="raaghuTheme">Raaghu-themes</h3>
+                            <p id="aNEw">A new, modern and stylish raaghu theme with different color options, it’s the
+                                newest
+                                theme. You can choose one out of 3 options Dark, Light and Semi Dark.</p>
+                        </div>
+                        <div>
+                            <h3 class="fw-semibold pt-3 pb-3" id="abpCLI">ABP CLI commands & options</h3>
+                            <p id="abpCliDoc"><a href="https://docs.abp.io/en/abp/latest/CLI">ABP CLI document</a>
+                                covers all of the available commands and options for the ABP CLI. The main difference
+                                for the ABP Commercial is the template names. See the<a
+                                    href="https://docs.abp.io/en/commercial/7.2/startup-templates/index">ABP Commercial
+                                    Startup Templates</a>
+                                document for other commercial templates.</p>
+                        </div>
+                        <div>
+                            <h3 class="fw-semibold pt-3 pb-3" id="theSol">The solution structure</h3>
+                            <p id="theSolHas">The solution has a layered structure (based on the <a
+                                    href="https://docs.abp.io/en/abp/Domain-Driven-Design">Domain Driven Design</a>) and
+                                contains unit & integration test projects. See the <a
+                                    href="https://docs.abp.io/en/commercial/7.2/startup-templates/application/solution-structure">solution
+                                    structure document</a> to understand the solution structure in details.</p>
+                        </div>
+                        <div>
+                            <h3 class="fw-semibold pt-4 pb-3" id="ns">Next Step</h3>
+                            <ul class="ps-3">
+                                <li><a href="Running-The-Solution.html" id="runSolthe">Running the solution</a></li>
+                            </ul>
+                        </div>
+
+
+
+
+
+                    </div>
+                </div>
+                <div class="col-12 col-lg-8 col-md-7 col-xl-2 col-xxl-2 docs-page-index offset-lg-4 offset-xl-0 offset-md-5 offset-xxl-0 px-md-4">
+                    <div class="position-fixed  my-3 w-auto mx-lg-0 mx-xl-3 mx-xxl-3 pe-lg-3 pe-xl-0 pe-xxl-0 position-lg-relative">
+                    <div class="card border-0 box rounded-3 mb-3">
+                        <div class="card-body">
+                            <h4 class="card-title py-1" id="inthisdoc">In this document</h4>
+                            <div class="opacity-50">
+                                <ul class="card-text small  list-unstyled ul-ad">
+                                    <li id="createss"><a href="#createNew" class="text-black">Creating a new
+                                            solution</a></li>
+                                    <li id="suiteto"><a href="#newProject" class="text-black">Use ABP Suite to create a
+                                            new project</a></li>
+                                    <li id="abpccl"><a href="#selectUI" class="text-black">Use ABP CLI to create a new
+                                            project</a></li>
+                                    <li id="thes"><a href="#weCan" class="text-black">Theme</a></li>
+                                    <li id="ragtheme"><a href="#the" class="text-black">Raaghu-themes</a></li>
+                                    <li id="solst"><a href="#theSol" class="text-black">The solution structure</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card  border-0 box  bg-advertise "  >
+                        <div class="card-body abp-community-card  rounded-3 bg-sec ">
+                            <div class="row  ">
+                                <div class="col-lg-5 col-md-5 col-5"> <img src="Assets/images/React_logo.png" alt="raaghu logo" class="w-100"></div>
+                                <div class="col-lg-7 mt-1  col-md-7 mt-1 col-7"> <img src="Assets/images/abp-sec.png" alt="raaghu logo" class="w-100"></div>
+                                <!-- <div class="col-lg-6"><img src="Assets/images/abp-com.svg" alt="raaghu logo" class="w-100"></div> -->
+
+                            </div>
+                            <div class="border-under-sec my-3"></div>
+                            <div class="colored-sec-design py-1">
+                                <ul class="ps-4">
+                                    <li>CLI for CRUD generation</li>
+                                    <li>Component driven development</li>
+                                    <li>Purpose build UI kit for ABP commercial</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <button type="button" class="btn btn-primary mt-1 w-100" data-bs-toggle="modal"
+                                    data-bs-target="#contactusModal">Contact Us</button>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <!-- <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-0 col-12 docs-page-index">
+                    <div class="card mt-4 top-25 me-lg-4 border-0 shadow py-4">
+                        <div class="card-body">
+                            <h5 class="card-title">In This Document</h5>
+                            <p class="card-text small">Some quick example text to build on the card title and make up
+                                the bulk of the card's content.</p>
+
+                        </div>
+                    </div>
+                </div> -->
+
+            </div>
+
+
+
+        </div>
+
+    </main>
+
+    <!-- bootstrap dependencies -->
+    <script src="Assets/js/bootstrap.min.js"></script>
+    <script src="scripts/translation.js"></script>
+</body>
+<script>
+    // Language Functionality Changes
+    debugger;
+    document.addEventListener('DOMContentLoaded', function () {
+        var languageDropdown = document.getElementById('language-dropdown');
+        languageDropdown.addEventListener('change', function () {
+            var selectedLanguage = languageDropdown.value;
+            if (selectedLanguage === 'pt') {
+                // Sidebar 
+                document.getElementById('tableOfContent').textContent = 'Índice';
+                document.getElementById('downloadSource').textContent = 'Fonte de download';
+                document.getElementById('version').textContent = 'Versão';
+                // =============================================================
+                document.getElementById('Getting').textContent = 'Recebendo';
+                document.getElementById('setupDev').textContent = 'Configure seu desenvolvimento ambiente';
+                document.getElementById('creatingNewSol').textContent = 'Criando uma nova solução';
+                document.getElementById('runningTheSol').textContent = 'Executando a Solução';
+                document.getElementById('tut').textContent = 'Tutoriais';
+                document.getElementById('webAppDev').textContent = 'Desenvolvimento de Aplicativos Web';
+                document.getElementById('creatingServer').textContent = 'Criando o servidor Lado';
+                document.getElementById('bookList').textContent = 'A página da lista de livros';
+                document.getElementById('creatingUpdating').textContent = 'Criando, Atualizando E Excluindo livro';
+                document.getElementById('guides').textContent = 'Guias';
+                document.getElementById('customizingTheModules').textContent = 'Personalizando os Módulos';
+                document.getElementById('identityServerDeploy').textContent = 'Implantação do servidor de identidade';
+                document.getElementById('samples').textContent = 'Amostras';
+                document.getElementById('allSamples').textContent = 'Todas as amostras';
+                document.getElementById('startupTemplate').textContent = 'Modelo de inicialização';
+                document.getElementById('appModules').textContent = 'Módulos de aplicativos';
+                document.getElementById('overall').textContent = 'Geral';
+                document.getElementById('ac').textContent = 'Conta';
+                document.getElementById('auditLogging').textContent = 'Log de auditoria';
+                document.getElementById('chat').textContent = 'Bater papo';
+                document.getElementById('CMS').textContent = 'CMS Kit Profissional';
+                document.getElementById('fileMgt').textContent = 'Gerenciamento de arquivos';
+                document.getElementById('forms').textContent = 'Formulários';
+                document.getElementById('identity').textContent = 'Identidade';
+                document.getElementById('OpenIddict').textContent = 'OpenIddict';
+                document.getElementById('languageMgt').textContent = 'Gerenciamento de idiomas';
+                document.getElementById('payment').textContent = 'Pagamento';
+                document.getElementById('saas').textContent = 'SaaS';
+                document.getElementById('ttm').textContent = 'Gerenciamento de modelo de texto';
+                document.getElementById('ui').textContent = 'Temas de IU';
+                document.getElementById('reactUI').textContent = 'IU de reação';
+                document.getElementById('custom').textContent = 'costumização';
+                document.getElementById('compo').textContent = 'Componentes';
+
+                // Body Content
+                document.getElementById('createNew').textContent = 'Criando uma nova solução';
+                document.getElementById('newProject').textContent = 'Criar um novo projeto';
+                document.getElementById('thereAre').textContent = 'Existem duas maneiras de criar um novo projeto: ABP Suite e ABP CLI';
+                document.getElementById('usingABP').textContent = 'Usando o ABP Suite para criar um novo projeto.';
+                document.getElementById('abpSuite').textContent = 'ABP Suite é a maneira recomendada de criar novas soluções para o ABP Commercial';
+                document.getElementById('runABP').textContent = 'Execute o ABP Suite com o seguinte comando:';
+                document.getElementById('thisCom').textContent = 'Este comando inicia o ABP Suite e abre em seu padrão navegador:';
+                document.getElementById('click').innerHTML = 'Clique no <span class="fw-bolder"> Criar uma nova solução</span> e preencha o formulário modal:';
+                document.getElementById('selectUI').textContent = 'Selecione a estrutura de interface do usuário como raaghu-react, provedor de banco de dados e outras opções com base no seu preferências e, em seguida, clique no botão OK';
+                document.getElementById('usingThe').textContent = 'Usando o ABP CLI para criar um novo projeto';
+                document.getElementById('useThe').textContent = 'Use o novo comando da CLI ABP para criar um novo projeto:';
+                document.getElementById('tArgument').innerHTML = '-t argumento especifica o <a href="https://docs.abp.io/en/commercial/7.2/startup-templates/application/index">modelo de inicialização</a> nome. app-pro é o modelo de inicialização que contém o essencial <a href="https://commercial.abp.io/modules"> Módulos Comerciais ABP</a> pré-instalado e configurado para você.';
+                document.getElementById('weCan').textContent = 'Também podemos usar um nível diferente de namespaces; por exemplo. Livraria, Acme.Bookstore ou Acme.Retail.BookStore.';
+                document.getElementById('headTheme').textContent = 'Tema';
+                document.getElementById('raaghuTheme').textContent = 'Temas Raaghu';
+                document.getElementById('aNEw').textContent = 'Um novo, moderno e elegante tema raaghu com diferentes opções de cores, é o mais novo tema. Você pode escolher uma das 3 opções Escuro, Claro e Semi Escuro.';
+                document.getElementById('abpCLI').textContent = 'Comandos e opções da ABP CLI';
+                document.getElementById('abpCliDoc').innerHTML = '<a href="https://docs.abp.io/en/abp/latest/CLI">Documento ABP CLI</a> abrange todos os comandos e opções disponíveis para o ABP CLI. A principal diferença para o ABP Commercial são os nomes dos modelos. Veja o <a href="https://docs.abp.io/en/commercial/7.2/startup-templates/index">Modelos de inicialização comercial ABP</a> documento para outros modelos comerciais.';
+                document.getElementById('theSol').textContent = 'A estrutura da solução';
+                document.getElementById('theSolHas').innerHTML = 'A solução tem uma estrutura em camadas (baseada na <a href="https://docs.abp.io/en/abp/Domain-Driven-Design">Design Orientado ao Domínio</a>) e contém projetos de teste de unidade e integração. Veja o <a href="https://docs.abp.io/en/commercial/7.2/startup-templates/application/solution-structure">documento de estrutura de solução</a> para entender a estrutura da solução em detalhes.';
+                document.getElementById('ns').textContent = 'Próxima Etapa';
+                document.getElementById('runSol').textContent = 'Executando a solução';
+                // For In this doc section
+                document.getElementById('inthisdoc').innerHTML = 'neste documento';
+                document.getElementById('createss').innerHTML = '<a href="#createNew" class="text-black">Criando um novo solução</a>';
+                document.getElementById('suiteto').innerHTML = '<a href="#newProject" class="text-black">Use o ABP Suite para criar um novo projeto</a>';
+                document.getElementById('abpccl').innerHTML = '<a href="#selectUI" class="text-black">Use ABP CLI para criar um novo projeto</a>';
+                document.getElementById('thes').innerHTML = '<a href="#weCan" class="text-black">Tema</a>';
+                document.getElementById('ragtheme').innerHTML = '<a href="#the" class="text-black">Temas Raaghu</a>';
+                document.getElementById('solst').innerHTML = '<a href="#theSol" class="text-black">A estrutura da solução</a>';
+
+            }
+            else if (selectedLanguage === 'French') {
+                  // Sidebar 
+             document.getElementById('tableOfContent').textContent = 'Indice';
+                document.getElementById('downloadSource').textContent = 'source de téléchargement';
+                document.getElementById('version').textContent = 'Version';
+                // =============================================================
+                document.getElementById('Getting').textContent = 'recevoir';
+                document.getElementById('setupDev').textContent = 'Configurer votre environnement de développement';
+                document.getElementById('creatingNewSol').textContent = 'Créer une nouvelle solution';
+                document.getElementById('runningTheSol').textContent = 'Exécution de la solution';
+                document.getElementById('tut').textContent = 'tutoriels';
+                document.getElementById('webAppDev').textContent = 'Développement d\'applications Web';
+                document.getElementById('creatingServer').textContent = 'Création du côté serveur';
+                document.getElementById('bookList').textContent = 'La page de la liste des livres';
+                document.getElementById('creatingUpdating').textContent = 'Créer, mettre à jour et supprimer un livre';
+                document.getElementById('guides').textContent = 'guider';
+                document.getElementById('customizingTheModules').textContent = 'Personnalisation des modules';
+                document.getElementById('identityServerDeploy').textContent = 'Déploiement du serveur d\'identité';
+                document.getElementById('samples').textContent = 'Échantillons';
+                document.getElementById('allSamples').textContent = 'tous les échantillons';
+                document.getElementById('startupTemplate').textContent = 'modèle de démarrage';
+                document.getElementById('appModules').textContent = 'modules d\'application';
+                document.getElementById('overall').textContent = 'Général';
+                document.getElementById('ac').textContent = 'Compte';
+                document.getElementById('auditLogging').textContent = 'journal d\'audit';
+                document.getElementById('chat').textContent = 'Discuter';
+                document.getElementById('CMS').textContent = 'Kit professionnel CMS';
+                document.getElementById('fileMgt').textContent = 'gestion de fichiers';
+                document.getElementById('forms').textContent = 'Formes';
+                document.getElementById('identity').textContent = 'Identité';
+                document.getElementById('OpenIddict').textContent = 'OpenIddict';
+                document.getElementById('languageMgt').textContent = 'gestion des langues';
+                document.getElementById('payment').textContent = 'Paiement';
+                document.getElementById('saas').textContent = 'SaaS';
+                document.getElementById('ttm').textContent = 'Gestion des modèles de texte';
+                document.getElementById('ui').textContent = 'Thèmes d\'interface utilisateur';
+                document.getElementById('reactUI').textContent = 'interface utilisateur de réaction';
+                document.getElementById('custom').textContent = 'personnalisation';
+                document.getElementById('compo').textContent = 'Composants';
+
+                // Body Content
+                document.getElementById('createNew').textContent = 'Créer une nouvelle solution';
+                document.getElementById('newProject').textContent = 'Créer un nouveau projet';
+                document.getElementById('thereAre').textContent = 'Il existe deux manières de créer un nouveau projet : ABP Suite et ABP CLI';
+                document.getElementById('usingABP').textContent = 'Utiliser ABP Suite pour créer un nouveau projet.';
+                document.getElementById('abpSuite').textContent = 'ABP Suite est la méthode recommandée pour créer de nouvelles solutions pour ABP Commercial';
+                document.getElementById('runABP').textContent = 'Exécutez la suite ABP avec la commande suivante :';
+                document.getElementById('thisCom').textContent = 'Cette commande démarre la suite ABP et l\'ouvre dans votre navigateur par défaut :';
+                document.getElementById('click').innerHTML = 'Cliquez sur <span class="fw-bolder">Créer une nouvelle solution</span> et remplissez le formulaire modal :';
+                document.getElementById('selectUI').textContent = 'Sélectionnez le cadre de l\'interface utilisateur comme raaghu-react, le fournisseur de base de données et d\'autres options en fonction de vos préférences, puis cliquez sur le bouton OK';
+                document.getElementById('usingThe').textContent = 'Utilisation de l\'ABP CLI pour créer un nouveau projet';
+                document.getElementById('useThe').textContent = 'Utilisez la nouvelle commande CLI ABP pour créer un nouveau projet :';
+                document.getElementById('tArgument').innerHTML = '-t argument spécifie le nom du <a href="https://docs.abp.io/en/commercial/7.2/startup-templates/application/index">modèle de démarrage</a>. app-pro est le modèle de démarrage qui contient les <a href="https://commercial.abp.io/modules">modules ABP commerciaux</a> essentiels préinstallés et configurés pour vous.';
+                document.getElementById('weCan').textContent = 'Nous pouvons également utiliser un niveau différent d\'espaces de noms ; Par exemple. Librairie, Acme.Bookstore ou Acme.Retail.BookStore.';
+                document.getElementById('headTheme').textContent = 'Thème';
+                document.getElementById('raaghuTheme').textContent = 'Thèmes Raaghu';
+                document.getElementById('aNEw').textContent = 'Un nouveau thème raaghu moderne et élégant avec différentes options de couleurs, c\'est le thème le plus récent. Vous pouvez choisir l\'une des 3 options Dark, Light et Semi Dark.';
+
+
+
+                document.getElementById('abpCLI').textContent = 'Commandes et options CLI ABP';
+                document.getElementById('abpCliDoc').innerHTML = 'Le <a href="https://docs.abp.io/en/abp/latest/CLI">document ABP CLI</a> couvre toutes les commandes et options disponibles pour l\'ABP CLI. La principale différence avec ABP Commercial réside dans les noms de modèles. Consultez le document <a href="https://docs.abp.io/en/commercial/7.2/startup-templates/index">Modèles de démarrage commercial ABP</a> pour d\'autres modèles commerciaux.';
+                document.getElementById('theSol').textContent = 'La structure de la solution';
+                document.getElementById('theSolHas').innerHTML = 'La solution a une structure en couches (basée sur <a href="https://docs.abp.io/en/abp/Domain-Driven-Design">Domain-Driven-Design">Domain Driven Design</a>) et contient des projets de test d\'unité et l\'intégration. Voir le <a href="https://docs.abp.io/en/commercial/7.2/startup-templates/application/solution-structure">document cadre de la solution</a> pour comprendre la structure de la solution en détail.';
+                document.getElementById('ns').textContent = 'L\'étape suivante';
+                document.getElementById('runSol').textContent = 'exécuter la solution';
+                // For In this doc section
+                document.getElementById('inthisdoc').innerHTML = 'dans ce document';
+                document.getElementById('createss').innerHTML = '<a href="#createNew" class="text-black">Créer une nouvelle solution</a>';
+                document.getElementById('suiteto').innerHTML = '<a href="#newProject" class="text-black">Utiliser la suite ABP pour créer un nouveau projet</a>';
+                document.getElementById('abpccl').innerHTML = '<a href="#selectUI" class="text-black">Utiliser ABP CLI pour créer un nouveau projet</a>';
+                document.getElementById('thes').innerHTML = '<a href="#weCan" class="text-black">Thème</a>';
+                document.getElementById('ragtheme').innerHTML = '<a href="#the" class="text-black">Thèmes Raaghu</a>';
+                document.getElementById('solst').innerHTML = '<a href="#theSol" class="text-black">Le cadre de la solution</a>';
+            }
+            
+ else if (selectedLanguage === 'Finnish') {
+        // Sidebar 
+        document.getElementById('tableOfContent').textContent = 'Vihje';
+                document.getElementById('downloadSource').textContent = 'latauslähde';
+                document.getElementById('version').textContent = 'Versio';
+                // =============================================================
+                document.getElementById('Getting').textContent = 'vastaanottaa';
+                document.getElementById('setupDev').textContent = 'Luo kehitysympäristösi';
+                document.getElementById('creatingNewSol').textContent = 'Luo uusi ratkaisu';
+                document.getElementById('runningTheSol').textContent = 'Ratkaisun toteutus';
+                document.getElementById('tut').textContent = 'opetusohjelmia';
+                document.getElementById('webAppDev').textContent = 'Verkkosovellusten kehittäminen';
+                document.getElementById('creatingServer').textContent = 'Palvelinpuolen luominen';
+                document.getElementById('bookList').textContent = 'Kirjaluettelosivu';
+                document.getElementById('creatingUpdating').textContent = 'Luo, päivitä ja poista kirja';
+                document.getElementById('guides').textContent = 'opastaa';
+                document.getElementById('customizingTheModules').textContent = 'Moduulien mukauttaminen';
+                document.getElementById('identityServerDeploy').textContent = 'Identity Serverin käyttöönotto';
+                document.getElementById('samples').textContent = 'Näytteet';
+                document.getElementById('allSamples').textContent = 'kaikki näytteet';
+                document.getElementById('startupTemplate').textContent = 'aloitusmalli';
+                document.getElementById('appModules').textContent = 'sovellusmoduulit';
+                document.getElementById('overall').textContent = 'Kenraali';
+                document.getElementById('ac').textContent = 'Tili';
+                document.getElementById('auditLogging').textContent = 'tarkastusloki';
+                document.getElementById('chat').textContent = 'Keskustella';
+                document.getElementById('CMS').textContent = 'SMT Professional Kit';
+                document.getElementById('fileMgt').textContent = 'Tiedostonhallinta';
+                document.getElementById('forms').textContent = 'Muodot';
+                document.getElementById('identity').textContent = 'Tunnistaa';
+                document.getElementById('OpenIddict').textContent = 'OpenIddict';
+                document.getElementById('languageMgt').textContent = 'kielenhallinta';
+                document.getElementById('payment').textContent = 'Maksu';
+                document.getElementById('saas').textContent = 'SaaS';
+                document.getElementById('ttm').textContent = 'Tekstimallien hallinta';
+                document.getElementById('ui').textContent = 'Käyttöliittymäteemat';
+                document.getElementById('reactUI').textContent = 'reagoida ui';
+                document.getElementById('custom').textContent = 'personointi';
+                document.getElementById('compo').textContent = 'Komponentit';
+
+                // Body Content
+                document.getElementById('createNew').textContent = 'Luo uusi ratkaisu';
+                document.getElementById('newProject').textContent = 'Luo uusi projekti';
+                document.getElementById('thereAre').textContent = 'On kaksi tapaa luoda uusi projekti: ABP Suite ja ABP CLI';
+                document.getElementById('usingABP').textContent = 'Luo uusi projekti ABP Suiten avulla.';
+                document.getElementById('abpSuite').textContent = 'ABP Suite on suositeltava tapa luoda uusia ratkaisuja ABP Commercialille';
+                document.getElementById('runABP').textContent = 'Suorita ABP-paketti seuraavalla komennolla:';
+                document.getElementById('thisCom').textContent = 'Tämä komento käynnistää ABP-paketin ja avaa sen oletusselaimessasi:';
+                document.getElementById('click').innerHTML = 'Klikkaa <span class="fw-bolder">Luo uusi ratkaisu</span> ja täytä modaalinen lomake:';
+                document.getElementById('selectUI').textContent = 'Valitse käyttöliittymäkehys, kuten raaghu-react, tietokannan tarjoaja ja muut vaihtoehdot mieltymystesi mukaan, ja napsauta sitten OK-painiketta';
+                document.getElementById('usingThe').textContent = 'ABP CLI:n käyttäminen uuden projektin luomiseen';
+                document.getElementById('useThe').textContent = 'Luo uusi projekti käyttämällä uutta ABP CLI -komentoa:';
+                document.getElementById('tArgument').innerHTML = '-t-argumentti määrittää <a href="https://docs.abp.io/en/commercial/7.2/startup-templates/application/index">käynnistysmallin</a> nimen. app-pro on aloitusmalli, jossa on valmiiksi asennettuna ja konfiguroituna tarvittavat <a href="https://commercial.abp.io/modules">kaupalliset ABP-moduulit</a>.';
+                document.getElementById('weCan').textContent = 'Voimme myös käyttää eri tasoisia nimiavaruuksia; Esimerkiksi. Kirjakauppa, Acme.Bookstore tai Acme.Retail.BookStore.';
+                document.getElementById('headTheme').textContent = 'Teema';
+                document.getElementById('raaghuTheme').textContent = 'Raaghu Teemat';
+                document.getElementById('aNEw').textContent = 'Uusi moderni ja tyylikäs raaghu-teema eri värivaihtoehdoilla, tämä on uusin teema. Voit valita yhden kolmesta vaihtoehdosta Tumma, Vaalea ja Puolitumma.';
+                document.getElementById('abpCLI').textContent = 'ABP CLI komennot ja asetukset';
+                document.getElementById('abpCliDoc').innerHTML = '<a href="https://docs.abp.io/en/abp/latest/CLI">ABP CLI -asiakirja</a> kattaa kaikki ABP CLI:lle käytettävissä olevat komennot ja vaihtoehdot. Suurin ero ABP Commercialiin on mallien nimissä. Katso asiakirjasta <a href="https://docs.abp.io/en/commercial/7.2/startup-templates/index">ABP Commercial Startup Templates</a> muita kaupallisia malleja.';
+                document.getElementById('theSol').textContent = 'Ratkaisun rakenne';
+                document.getElementById('theSolHas').innerHTML = 'Ratkaisulla on kerrosrakenne (perustuu <a href="https://docs.abp.io/en/abp/Domain-Driven-Design">Domain-Driven-Design">verkkoaluelähtöiseen suunnitteluun</a>) ja sisältää yksikkötestiprojekteja ja integroinnin. Katso <a href="https://docs.abp.io/en/commercial/7.2/startup-templates/application/solution-structure" >ratkaisukehysasiakirja</a> ymmärtää ratkaisun rakenteen yksityiskohtaisesti.';
+                document.getElementById('ns').textContent = 'Seuraava askel';
+                document.getElementById('runSol').textContent = 'Seuraava askel';
+                // For In this doc section
+                document.getElementById('inthisdoc').innerHTML = 'tässä asiakirjassa';
+                document.getElementById('createss').innerHTML = '<a href="#createNew" class="text-black">Luo uusi ratkaisu</a>';
+                document.getElementById('suiteto').innerHTML = '<a href="#newProject" class="text-black">Luo uusi projekti ABP-paketin avulla</a>';
+
+            }
+            else if (selectedLanguage === 'zh') {
+                // Sidebar
+                document.getElementById('tableOfContent').textContent = '目录';
+                document.getElementById('downloadSource').textContent = '下载源码';
+                document.getElementById('version').textContent = '版本';
+                document.getElementById('version2').textContent = '版本 2';
+
+                document.getElementById('abpccl').innerHTML = '<a href="#selectUI" class="text-black">Luo uusi projekti ABP CLI:n avulla</a>';
+                document.getElementById('thes').innerHTML = '<a href="#weCan" class="text-black">Teema</a>';
+                document.getElementById('ragtheme').innerHTML = '<a href="#the" class="text-black">Raaghu-teemat</a>';
+                document.getElementById('solst').innerHTML = '<a href="#theSol" class="text-black">Ratkaisukehys</a>';
+            } 
+            else if (selectedLanguage === 'Slovak') {
+                // Postranný panel
+document.getElementById('tableOfContent').textContent = 'Obsah';
+document.getElementById('downloadSource').textContent = 'Zdroj na stiahnutie';
+document.getElementById('version').textContent = 'Verzia';
+// =============================================================
+document.getElementById('Getting').textContent = 'Začiatok';
+document.getElementById('setupDev').textContent = 'Nastavenie vývojového prostredia';
+document.getElementById('creatingNewSol').textContent = 'Vytvorenie novej riešenie';
+document.getElementById('runningTheSol').textContent = 'Spustenie riešenia';
+document.getElementById('tut').textContent = 'Návody';
+document.getElementById('webAppDev').textContent = 'Vývoj webových aplikácií';
+document.getElementById('creatingServer').textContent = 'Vytvorenie serverovej časti';
+document.getElementById('bookList').textContent = 'Stránka s knižným zoznamom';
+document.getElementById('creatingUpdating').textContent = 'Vytvorenie, aktualizácia a odstránenie knihy';
+document.getElementById('guides').textContent = 'Návody';
+document.getElementById('customizingTheModules').textContent = 'Prispôsobenie modulov';
+document.getElementById('identityServerDeploy').textContent = 'Nasadenie Identity Servera';
+document.getElementById('samples').textContent = 'Vzorky';
+document.getElementById('allSamples').textContent = 'Všetky vzorky';
+document.getElementById('startupTemplate').textContent = 'Štartovací šablóna';
+document.getElementById('appModules').textContent = 'Moduly aplikácie';
+document.getElementById('overall').textContent = 'Celkovo';
+document.getElementById('ac').textContent = 'Účet';
+document.getElementById('auditLogging').textContent = 'Auditovanie';
+document.getElementById('chat').textContent = 'Chat';
+document.getElementById('CMS').textContent = 'CMS Professional Kit';
+document.getElementById('fileMgt').textContent = 'Správa súborov';
+document.getElementById('forms').textContent = 'Formuláre';
+document.getElementById('identity').textContent = 'Identita';
+document.getElementById('OpenIddict').textContent = 'OpenIddict';
+document.getElementById('languageMgt').textContent = 'Správa jazyka';
+document.getElementById('payment').textContent = 'Platby';
+document.getElementById('saas').textContent = 'SaaS';
+document.getElementById('ttm').textContent = 'Správa textových šablón';
+document.getElementById('ui').textContent = 'Témy používateľského rozhrania';
+document.getElementById('reactUI').textContent = 'React UI';
+document.getElementById('custom').textContent = 'Prispôsobenie';
+document.getElementById('compo').textContent = 'Komponenty';
+
+// Obsah tela
+document.getElementById('createNew').textContent = 'Vytvoriť nové riešenie';
+document.getElementById('newProject').textContent = 'Vytvoriť nový projekt';
+document.getElementById('thereAre').textContent = 'Existujú dva spôsoby, ako vytvoriť nový projekt: ABP Suite a ABP CLI';
+document.getElementById('usingABP').textContent = 'Vytvorenie nového projektu pomocou ABP Suite.';
+document.getElementById('abpSuite').textContent = 'ABP Suite je odporúčaný spôsob vytvárania nových riešení pre ABP Commercial';
+document.getElementById('runABP').textContent = 'Spustite ABP Suite nasledujúcim príkazom:';
+document.getElementById('thisCom').textContent = 'Tento príkaz spustí balík ABP a otvorí ho vo vašom predvolenom prehliadači:';
+document.getElementById('click').innerHTML = 'Kliknite na <span class="fw-bolder">Vytvoriť nové riešenie</span> a vyplňte modálny formulár:';
+document.getElementById('selectUI').textContent = 'Vyberte framework pre používateľské rozhranie, ako je raaghu-react, poskytovateľ databázy a ďalšie voľby podľa vašich preferencií a potom kliknite na tlačidlo OK';
+document.getElementById('usingThe').textContent = 'Použitie ABP CLI na vytvorenie nového projektu';
+document.getElementById('useThe').textContent = 'Vytvorenie nového projektu pomocou novej príkazového riadku ABP CLI:';
+document.getElementById('tArgument').innerHTML = 'Argument -t určuje názov <a href="https://docs.abp.io/en/commercial/7.2/startup-templates/application/index">štartovacej šablóny</a>. app-pro je štartovacia šablóna, ktorá obsahuje predinštalované a nakonfigurované potrebné <a href="https://commercial.abp.io/modules">komerčné moduly ABP</a>.';
+document.getElementById('weCan').textContent = 'Môžeme tiež použiť rôzne úrovne názvových priestorov; Napríklad. Kníhkupectvo, Acme.Bookstore alebo Acme.Retail.BookStore.';
+document.getElementById('headTheme').textContent = 'Téma';
+document.getElementById('raaghuTheme').textContent = 'Témy raaghu';
+document.getElementById('aNEw').textContent = 'Nová moderná a štýlová téma raaghu s rôznymi farebnými možnosťami. Ide o najnovšiu tému. Môžete si vybrať medzi tromi možnosťami - Tmavá, Svietiaca a Polotmavá.';
+document.getElementById('abpCLI').textContent = 'Príkazy a nastavenia ABP CLI';
+document.getElementById('abpCliDoc').innerHTML = '<a href="https://docs.abp.io/en/abp/latest/CLI">Dokumentácia ABP CLI</a> obsahuje všetky dostupné príkazy a možnosti pre ABP CLI. Najväčšia odlišnosť oproti ABP Commercial je v názvoch šablón. Pozrite sa na dokumentáciu <a href="https://docs.abp.io/en/commercial/7.2/startup-templates/index">Štartovacie šablóny ABP Commercial</a> pre ďalšie komerčné šablóny.';
+document.getElementById('theSol').textContent = 'Štruktúra riešenia';
+document.getElementById('theSolHas').innerHTML = 'Riešenie má vrstvovú štruktúru (založenú na <a href="https://docs.abp.io/en/abp/Domain-Driven-Design">Domain-Driven-Design</a>) a obsahuje projekty na jednotkové testovanie a integrovanie. Podrobnejšie informácie o štruktúre riešenia nájdete v <a href="https://docs.abp.io/en/commercial/7.2/startup-templates/application/solution-structure">dokumentácii k štruktúre riešenia</a>.';
+document.getElementById('ns').textContent = 'Ďalší krok';
+document.getElementById('runSol').textContent = 'Spustiť riešenie';
+// Pre sekciu V tomto dokumente
+document.getElementById('inthisdoc').innerHTML = 'v tomto dokumente';
+document.getElementById('createss').innerHTML = '<a href="#createNew" class="text-black">Vytvoriť nové riešenie</a>';
+document.getElementById('suiteto').innerHTML = '<a href="#newProject" class="text-black">Vytvoriť nový projekt pomocou ABP Suite</a>';
+document.getElementById('abpccl').innerHTML = '<a href="#selectUI" class="text-black">Vytvoriť nový projekt pomocou ABP CLI</a>';
+document.getElementById('thes').innerHTML = '<a href="#weCan" class="text-black">Téma</a>';
+document.getElementById('ragtheme').innerHTML = '<a href="#the" class="text-black">Témy raaghu</a>';
+document.getElementById('solst').innerHTML = '<a href="#theSol" class="text-black">Štruktúra riešenia</a>';
+
+            } 
+            else if (selectedLanguage === 'German') {
+                // Seitliches Panel
+document.getElementById('tableOfContent').textContent = 'Inhalt';
+document.getElementById('downloadSource').textContent = 'Quelle herunterladen';
+document.getElementById('version').textContent = 'Version';
+// =============================================================
+document.getElementById('Getting').textContent = 'Einstieg';
+document.getElementById('setupDev').textContent = 'Entwicklungsumgebung einrichten';
+document.getElementById('creatingNewSol').textContent = 'Neue Lösung erstellen';
+document.getElementById('runningTheSol').textContent = 'Lösung ausführen';
+document.getElementById('tut').textContent = 'Anleitungen';
+document.getElementById('webAppDev').textContent = 'Webanwendungsentwicklung';
+document.getElementById('creatingServer').textContent = 'Erstellen des Servers';
+document.getElementById('bookList').textContent = 'Buchliste-Seite';
+document.getElementById('creatingUpdating').textContent = 'Buch erstellen, aktualisieren und löschen';
+document.getElementById('guides').textContent = 'Anleitungen';
+document.getElementById('customizingTheModules').textContent = 'Anpassen der Module';
+document.getElementById('identityServerDeploy').textContent = 'Identity Server bereitstellen';
+document.getElementById('samples').textContent = 'Beispiele';
+document.getElementById('allSamples').textContent = 'Alle Beispiele';
+document.getElementById('startupTemplate').textContent = 'Startvorlage';
+document.getElementById('appModules').textContent = 'Anwendungs-Module';
+document.getElementById('overall').textContent = 'Gesamt';
+document.getElementById('ac').textContent = 'Konto';
+document.getElementById('auditLogging').textContent = 'Audit-Protokollierung';
+document.getElementById('chat').textContent = 'Chat';
+document.getElementById('CMS').textContent = 'CMS Professional Kit';
+document.getElementById('fileMgt').textContent = 'Dateiverwaltung';
+document.getElementById('forms').textContent = 'Formulare';
+document.getElementById('identity').textContent = 'Identität';
+document.getElementById('OpenIddict').textContent = 'OpenIddict';
+document.getElementById('languageMgt').textContent = 'Sprachverwaltung';
+document.getElementById('payment').textContent = 'Zahlung';
+document.getElementById('saas').textContent = 'SaaS';
+document.getElementById('ttm').textContent = 'Textvorlagenverwaltung';
+document.getElementById('ui').textContent = 'Benutzeroberflächen-Themen';
+document.getElementById('reactUI').textContent = 'React UI';
+document.getElementById('custom').textContent = 'Anpassung';
+document.getElementById('compo').textContent = 'Komponenten';
+
+// Inhalt des Hauptbereichs
+document.getElementById('createNew').textContent = 'Neue Lösung erstellen';
+document.getElementById('newProject').textContent = 'Neues Projekt erstellen';
+document.getElementById('thereAre').textContent = 'Es gibt zwei Möglichkeiten, ein neues Projekt zu erstellen: ABP Suite und ABP CLI';
+document.getElementById('usingABP').textContent = 'Erstellen Sie ein neues Projekt mit ABP Suite.';
+document.getElementById('abpSuite').textContent = 'ABP Suite wird empfohlen, um neue Lösungen für ABP Commercial zu erstellen';
+document.getElementById('runABP').textContent = 'Führen Sie ABP Suite mit folgendem Befehl aus:';
+document.getElementById('thisCom').textContent = 'Dieser Befehl führt ABP Package aus und öffnet es in Ihrem Standardbrowser:';
+document.getElementById('click').innerHTML = 'Klicken Sie auf <span class="fw-bolder">Neue Lösung erstellen</span> und füllen Sie das Modalformular aus:';
+document.getElementById('selectUI').textContent = 'Wählen Sie das Framework für die Benutzeroberfläche, wie zum Beispiel raaghu-react, die Datenbankanbieter und weitere Optionen entsprechend Ihren Vorlieben aus und klicken Sie dann auf die Schaltfläche OK';
+document.getElementById('usingThe').textContent = 'Verwenden von ABP CLI zur Erstellung eines neuen Projekts';
+document.getElementById('useThe').textContent = 'Erstellen Sie ein neues Projekt mit dem neuen ABP CLI-Befehl:';
+document.getElementById('tArgument').innerHTML = 'Das Argument -t gibt den Namen der <a href="https://docs.abp.io/en/commercial/7.2/startup-templates/application/index">Startvorlage</a> an. app-pro ist eine Startvorlage, die die erforderlichen <a href="https://commercial.abp.io/modules">ABP Commercial-Module</a> vorinstalliert und konfiguriert hat.';
+document.getElementById('weCan').textContent = 'Wir können auch verschiedene Namensräume verwenden, z.B. Buchhandlung, Acme.Bookstore oder Acme.Retail.BookStore.';
+document.getElementById('headTheme').textContent = 'Thema';
+document.getElementById('raaghuTheme').textContent = 'Raaghu-Themen';
+document.getElementById('aNEw').textContent = 'Ein neues, modernes und stilvolles Raaghu-Thema mit verschiedenen Farboptionen. Es gibt drei Optionen - Dunkel, Hell und Halbdunkel.';
+document.getElementById('abpCLI').textContent = 'ABP CLI-Befehle und Einstellungen';
+document.getElementById('abpCliDoc').innerHTML = 'Die <a href="https://docs.abp.io/en/abp/latest/CLI">ABP CLI-Dokumentation</a> enthält alle verfügbaren Befehle und Optionen für ABP CLI. Der größte Unterschied zu ABP Commercial liegt in den Vorlagennamen. Weitere kommerzielle Vorlagen finden Sie in der <a href="https://docs.abp.io/en/commercial/7.2/startup-templates/index">ABP Commercial-Startvorlagen-Dokumentation</a>.';
+document.getElementById('theSol').textContent = 'Lösungsstruktur';
+document.getElementById('theSolHas').innerHTML = 'Die Lösung hat eine schichtbasierte Struktur (basiert auf <a href="https://docs.abp.io/en/abp/Domain-Driven-Design">Domain-Driven-Design</a>) und enthält Projekte für Einheitstests und Integrationstests. Weitere Informationen zur Lösungsstruktur finden Sie in der <a href="https://docs.abp.io/en/commercial/7.2/startup-templates/application/solution-structure">Dokumentation zur Lösungsstruktur</a>.';
+document.getElementById('ns').textContent = 'Nächster Schritt';
+document.getElementById('runSol').textContent = 'Lösung ausführen';
+// Für den Abschnitt "In diesem Dokument"
+document.getElementById('inthisdoc').innerHTML = 'in diesem Dokument';
+document.getElementById('createss').innerHTML = '<a href="#createNew" class="text-black">Neue Lösung erstellen</a>';
+document.getElementById('suiteto').innerHTML = '<a href="#newProject" class="text-black">Neues Projekt mit ABP Suite erstellen</a>';
+document.getElementById('abpccl').innerHTML = '<a href="#selectUI" class="text-black">Neues Projekt mit ABP CLI erstellen</a>';
+document.getElementById('thes').innerHTML = '<a href="#weCan" class="text-black">Thema</a>';
+document.getElementById('ragtheme').innerHTML = '<a href="#the" class="text-black">Raaghu-Themen</a>';
+document.getElementById('solst').innerHTML = '<a href="#theSol" class="text-black">Lösungsstruktur</a>';
+
+            } 
+
+    else if (selectedLanguage === 'hi') {
+                // Sidebar
+                document.getElementById('tableOfContent').textContent = 'सामग्री तालिका';
+                document.getElementById('downloadSource').textContent = 'स्रोत डाउनलोड करें';
+                document.getElementById('version').textContent = 'संस्करण';
+                document.getElementById('version2').textContent = 'संस्करण 2';
+                document.getElementById('Getting').textContent = 'शुरू होने का तरीका';
+                document.getElementById('setupDev').textContent = 'अपने विकास पर्यावरण को सेटअप करें';
+                document.getElementById('creatingNewSol').textContent = 'नया समाधान बनाना';
+                document.getElementById('runningTheSol').textContent = 'समाधान चलाना';
+                document.getElementById('tut').textContent = 'शिक्षण';
+                document.getElementById('webAppDev').textContent = 'वेब एप्लिकेशन विकास';
+                document.getElementById('creatingServer').textContent = 'सर्वर साइड बनाना';
+                document.getElementById('bookList').textContent = 'पुस्तक सूची पृष्ठ';
+                document.getElementById('creatingUpdating').textContent = 'पुस्तक बनाना, अपडेट करना और हटाना';
+                document.getElementById('guides').textContent = 'मार्गदर्शिकाएँ';
+                document.getElementById('customizingTheModules').textContent = 'मॉड्यूल को अनुकूलित करना';
+                document.getElementById('identityServerDeploy').textContent = 'पहचान सर्वर डिप्लॉयमेंट';
+                document.getElementById('samples').textContent = 'नमूने';
+                document.getElementById('allSamples').textContent = 'सभी नमूने';
+                document.getElementById('startupTemplate').textContent = 'स्टार्टअप टेम्पलेट';
+                document.getElementById('appModules').textContent = 'एप्लिकेशन मॉड्यूल';
+                document.getElementById('overall').textContent = 'सम्पूर्ण';
+                document.getElementById('ac').textContent = 'खाता';
+                document.getElementById('auditLogging').textContent = 'सुरक्षा लॉगिंग';
+                document.getElementById('chat').textContent = 'चैट';
+                document.getElementById('CMS').textContent = 'सीएमएस किट प्रो';
+                document.getElementById('fileMgt').textContent = 'फ़ाइल प्रबंधन';
+                document.getElementById('forms').textContent = 'फ़ॉर्म';
+                document.getElementById('identity').textContent = 'पहचान';
+                document.getElementById('OpenIddict').textContent = 'ओपनआईडिक्ट';
+                document.getElementById('languageMgt').textContent = 'भाषा प्रबंधन';
+                document.getElementById('payment').textContent = 'भुगतान';
+                document.getElementById('saas').textContent = 'सॉफ्टवेयर के रूप में सेवाएँ';
+                document.getElementById('ttm').textContent = 'टेक्स्ट टेम्पलेट प्रबंधन';
+                document.getElementById('ui').textContent = 'यूआई थीम्स';
+                document.getElementById('reactUI').textContent = 'रिएक्ट यूआई';
+                document.getElementById('custom').textContent = 'अनुकूलन';
+                document.getElementById('compo').textContent = 'घटक';
+
+                // Body Content
+                document.getElementById('createNew').textContent = 'नया समाधान बना रहे हैं';
+                document.getElementById('newProject').textContent = 'नया प्रोजेक्ट बनाएं';
+                document.getElementById('thereAre').textContent = 'नए प्रोजेक्ट बनाने के दो तरीके हैं: ABP सुइट और ABP CLI';
+                document.getElementById('usingABP').textContent = 'नए प्रोजेक्ट बनाने के लिए ABP सुइट का उपयोग करें।';
+                document.getElementById('abpSuite').textContent = 'नए समाधानों को बनाने के लिए ABP सुइट को सिफारिश किया जाता है, ABP कमर्शियल के लिए।';
+                document.getElementById('runABP').textContent = 'निम्नलिखित कमांड के साथ ABP सुइट को चलाएं:';
+                document.getElementById('thisCom').textContent = 'यह कमांड ABP सुइट को शुरू करता है और आपके डिफ़ॉल्ट ब्राउज़र में खोलता है:';
+                document.getElementById('click').innerHTML = '<span class="fw-bolder">नया समाधान बनाएं</span> बटन पर क्लिक करें और मॉडल फ़ॉर्म भरें:';
+                document.getElementById('selectUI').textContent = 'UI फ़्रेमवर्क को raaghu-react के रूप में चुनें, डेटाबेस प्रोवाइडर, और अपनी पसंद के आधार पर अन्य विकल्प, फिर OK बटन पर क्लिक करें';
+                document.getElementById('usingThe').textContent = 'नए प्रोजेक्ट बनाने के लिए ABP CLI का उपयोग करें';
+                document.getElementById('useThe').textContent = 'नए प्रोजेक्ट बनाने के लिए ABP CLI के नए कमांड का उपयोग करें:';
+                document.getElementById('tArgument').innerHTML = '-t आर्गुमेंट <a href="https://docs.abp.io/en/commercial/7.2/startup-templates/application/index">स्टार्टअप टेम्पलेट</a> नाम को निर्दिष्ट करता है। ऐप-प्रो स्टार्टअप टेम्पलेट ऐसा करने के लिए है जिसमें <a href="https://commercial.abp.io/modules">ABP कमर्शियल मॉड्यूल्स</a> पूर्व-स्थापित और विन्यासित होते हैं।';
+                document.getElementById('weCan').textContent = 'हम एक विभिन्न स्तर के नेमस्पेस भी उपयोग कर सकते हैं; उदाहरण स्वरूप, Bookstore, Acme.Bookstore या Acme.Retail.BookStore.';
+                document.getElementById('headTheme').textContent = 'थीम';
+                document.getElementById('raaghuTheme').textContent = 'राघू थीम्स';
+                document.getElementById('aNEw').textContent = 'एक नई, आधुनिक और शैलीष राघू थीम जिसमें विभिन्न रंग विकल्प हैं, यह सबसे नई थीम है। आप इनमें से एक चुन सकते हैं: Dark, Light और Semi Dark.';
+                document.getElementById('abpCLI').textContent = 'ABP CLI कमांड और विकल्प';
+                document.getElementById('abpCliDoc').innerHTML = '<a href="https://docs.abp.io/en/abp/latest/CLI">ABP CLI डॉक्यूमेंट</a> में ABP CLI के उपलब्ध सभी कमांड और विकल्प शामिल हैं। ABP कमर्शियल के लिए मुख्य अंतर हैं स्टार्टअप टेम्पलेट नामों में। अन्य कमर्शियल टेम्पलेटों के लिए <a href="https://docs.abp.io/en/commercial/7.2/startup-templates/index">ABP कमर्शियल स्टार्टअप टेम्पलेट्स</a> डॉक्यूमेंट देखें।';
+                document.getElementById('theSol').textContent = 'समाधान संरचना';
+                document.getElementById('theSolHas').innerHTML = 'समाधान में एक परत-वर्ग संरचना है (डोमेन ड्रिवन डिज़ाइन के आधार पर) और इकाई और एकीकरण परीक्षण प्रोजेक्ट्स शामिल हैं। विस्तार से समझने के लिए <a href="https://docs.abp.io/en/commercial/7.2/startup-templates/application/solution-structure">समाधान संरचना डॉक्यूमेंट</a> देखें।';
+                document.getElementById('ns').textContent = 'अगला कदम';
+                document.getElementById('runSol').textContent = 'समाधान चलाना';
+                // For In this doc section
+                document.getElementById('inthisdoc').innerHTML = 'इस दस्तावेज़ में';
+                document.getElementById('createss').innerHTML = '<a href="#createNew" class="text-black">नया समाधान बनाना</a>';
+                document.getElementById('suiteto').innerHTML = '<a href="#newProject" class="text-black">ABP सुइट का उपयोग नए प्रोजेक्ट बनाने के लिए</a>';
+                document.getElementById('abpccl').innerHTML = '<a href="#selectUI" class="text-black">ABP CLI का उपयोग नए प्रोजेक्ट बनाने के लिए</a>';
+                document.getElementById('thes').innerHTML = '<a href="#weCan" class="text-black">थीम</a>';
+                document.getElementById('ragtheme').innerHTML = '<a href="#the" class="text-black">राघू थीम्स</a>';
+                document.getElementById('solst').innerHTML = '<a href="#theSol" class="text-black">समाधान संरचना</a>';
+
+
+            }
+            else if (selectedLanguage === 'it') {
+                // Sidebar
+                document.getElementById('tableOfContent').textContent = 'Indice';
+                document.getElementById('downloadSource').textContent = 'Scarica il codice sorgente';
+                document.getElementById('version').textContent = 'Versione';
+                document.getElementById('version2').textContent = 'Versione 2';
+
+                document.getElementById('Getting').textContent = 'Per iniziare';
+                document.getElementById('setupDev').textContent = 'Configura il tuo ambiente di sviluppo';
+                document.getElementById('creatingNewSol').textContent = 'Creazione di una nuova soluzione';
+                document.getElementById('runningTheSol').textContent = 'Esecuzione della soluzione';
+                document.getElementById('tut').textContent = 'Tutorial';
+                document.getElementById('webAppDev').textContent = 'Sviluppo di applicazioni web';
+                document.getElementById('creatingServer').textContent = 'Creazione del lato server';
+                document.getElementById('bookList').textContent = 'Pagina dell\'elenco dei libri';
+                document.getElementById('creatingUpdating').textContent = 'Creazione, Aggiornamento ed Eliminazione di un Libro';
+                document.getElementById('guides').textContent = 'Guide';
+                document.getElementById('customizingTheModules').textContent = 'Personalizzazione dei Moduli';
+                document.getElementById('identityServerDeploy').textContent = 'Deploy di Identity Server';
+                document.getElementById('samples').textContent = 'Esempi';
+                document.getElementById('allSamples').textContent = 'Tutti gli Esempi';
+                document.getElementById('startupTemplate').textContent = 'Template di Avvio';
+                document.getElementById('appModules').textContent = 'Moduli dell\'Applicazione';
+                document.getElementById('overall').textContent = 'Generale';
+                document.getElementById('ac').textContent = 'Account';
+                document.getElementById('auditLogging').textContent = 'Audit Logging';
+                document.getElementById('chat').textContent = 'Chat';
+                document.getElementById('CMS').textContent = 'CMS Kit Pro';
+                document.getElementById('fileMgt').textContent = 'Gestione dei File';
+                document.getElementById('forms').textContent = 'Form';
+                document.getElementById('identity').textContent = 'Identità';
+                document.getElementById('OpenIddict').textContent = 'OpenIddict';
+                document.getElementById('languageMgt').textContent = 'Gestione delle Lingue';
+                document.getElementById('payment').textContent = 'Pagamento';
+                document.getElementById('saas').textContent = 'SaaS';
+                document.getElementById('ttm').textContent = 'Gestione dei Modelli di Testo';
+                document.getElementById('ui').textContent = 'Temi UI';
+                document.getElementById('reactUI').textContent = 'UI React';
+                document.getElementById('custom').textContent = 'Personalizzazione';
+                document.getElementById('compo').textContent = 'Componenti';
+
+                // Body Content
+                document.getElementById('createNew').textContent = 'Creazione di una nuova soluzione';
+                document.getElementById('newProject').textContent = 'Crea un nuovo progetto';
+                document.getElementById('thereAre').textContent = 'Ci sono due modi per creare un nuovo progetto: ABP Suite e ABP CLI';
+                document.getElementById('usingABP').textContent = 'Utilizzo di ABP Suite per creare un nuovo progetto.';
+                document.getElementById('abpSuite').textContent = 'ABP Suite è il modo consigliato per creare nuove soluzioni per ABP Commercial';
+                document.getElementById('runABP').textContent = 'Esegui ABP Suite con il seguente comando:';
+                document.getElementById('thisCom').textContent = 'Questo comando avvia ABP Suite e si apre nel tuo browser predefinito:';
+                document.getElementById('click').innerHTML = 'Clicca il pulsante <span class="fw-bolder">Crea una nuova soluzione</span> e compila il modulo modale:';
+                document.getElementById('selectUI').textContent = 'Seleziona il framework UI come raaghu-react, il Provider del Database e altre opzioni in base alle tue preferenze, quindi clicca sul pulsante OK';
+                document.getElementById('usingThe').textContent = 'Utilizzo di ABP CLI per creare un nuovo progetto';
+                document.getElementById('useThe').textContent = 'Usa il nuovo comando di ABP CLI per creare un nuovo progetto:';
+                document.getElementById('tArgument').innerHTML = 'L\'argomento -t specifica il <a href="https://docs.abp.io/en/commercial/7.2/startup-templates/application/index">nome del template di avvio</a>. app-pro è il template di avvio che contiene i <a href="https://commercial.abp.io/modules">Moduli ABP Commercial</a> pre-installati e configurati per te.';
+                document.getElementById('weCan').textContent = 'Possiamo anche utilizzare diversi livelli di namespace; ad esempio, Bookstore, Acme.Bookstore o Acme.Retail.BookStore.';
+                document.getElementById('headTheme').textContent = 'Tema';
+                document.getElementById('raaghuTheme').textContent = 'Temi Raaghu';
+                document.getElementById('aNEw').textContent = 'Un nuovo, moderno e stiloso tema raaghu con diverse opzioni di colore, è il tema più recente. Puoi scegliere tra 3 opzioni: Scuro, Chiaro e Semiscuro.';
+                document.getElementById('abpCLI').textContent = 'Comandi e opzioni di ABP CLI';
+                document.getElementById('abpCliDoc').innerHTML = 'Il <a href="https://docs.abp.io/en/abp/latest/CLI">documento ABP CLI</a> copre tutti i comandi e le opzioni disponibili per ABP CLI. La principale differenza per ABP Commercial sono i nomi dei template. Consulta il documento <a href="https://docs.abp.io/en/commercial/7.2/startup-templates/index">Startup Templates ABP Commercial</a> per altri template commerciali.';
+                document.getElementById('theSol').textContent = 'Struttura della soluzione';
+                document.getElementById('theSolHas').innerHTML = 'La soluzione ha una struttura stratificata (basata sul <a href="https://docs.abp.io/en/abp/Domain-Driven-Design">Domain Driven Design</a>) e contiene progetti di test unitari e di integrazione. Consulta il documento <a href="https://docs.abp.io/en/commercial/7.2/startup-templates/application/solution-structure">struttura della soluzione</a> per comprendere la struttura della soluzione in dettaglio.';
+                document.getElementById('ns').textContent = 'Prossimo passo';
+                document.getElementById('runSol').textContent = 'Esecuzione della soluzione';
+               // For In this doc section
+                document.getElementById('inthisdoc').innerHTML = 'In questo documento';
+                document.getElementById('createss').innerHTML = '<a href="#createNew" class="text-black">Creazione di una nuova soluzione</a>';
+                document.getElementById('suiteto').innerHTML = '<a href="#newProject" class="text-black">Utilizzo di ABP Suite per creare un nuovo progetto</a>';
+                document.getElementById('abpccl').innerHTML = '<a href="#selectUI" class="text-black">Utilizzo di ABP CLI per creare un nuovo progetto</a>';
+                document.getElementById('thes').innerHTML = '<a href="#weCan" class="text-black">Tema</a>';
+                document.getElementById('ragtheme').innerHTML = '<a href="#the" class="text-black">Temi Raaghu</a>';
+                document.getElementById('solst').innerHTML = '<a href="#theSol" class="text-black">Struttura della soluzione</a>';
+
+
+            }
+            else if (selectedLanguage === 'ru') {
+                // Sidebar 
+                document.getElementById('tableOfContent').textContent = 'Содержание';
+                document.getElementById('downloadSource').textContent = 'Скачать исходный код';
+                document.getElementById('version').textContent = 'Версия';
+                document.getElementById('version2').textContent = 'Версия 2';
+
+                // =============================================================
+                document.getElementById('Getting').textContent = 'Начало работы';
+                document.getElementById('setupDev').textContent = 'Настройка рабочей среды';
+                document.getElementById('creatingNewSol').textContent = 'Создание нового решения';
+                document.getElementById('runningTheSol').textContent = 'Запуск решения';
+                document.getElementById('tut').textContent = 'Уроки';
+                document.getElementById('webAppDev').textContent = 'Разработка веб-приложений';
+                document.getElementById('creatingServer').textContent = 'Создание серверной части';
+                document.getElementById('bookList').textContent = 'Страница списка книг';
+                document.getElementById('creatingUpdating').textContent = 'Создание, обновление и удаление книги';
+                document.getElementById('guides').textContent = 'Руководства';
+                document.getElementById('customizingTheModules').textContent = 'Настройка модулей';
+                document.getElementById('identityServerDeploy').textContent = 'Развертывание сервера идентификации';
+                document.getElementById('samples').textContent = 'Примеры';
+                document.getElementById('allSamples').textContent = 'Все примеры';
+                document.getElementById('startupTemplate').textContent = 'Шаблон запуска';
+                document.getElementById('appModules').textContent = 'Модули приложения';
+                document.getElementById('overall').textContent = 'Общее';
+                document.getElementById('ac').textContent = 'Аккаунт';
+                document.getElementById('auditLogging').textContent = 'Журналирование аудита';
+                document.getElementById('chat').textContent = 'Чат';
+                document.getElementById('CMS').textContent = 'CMS Kit Pro';
+                document.getElementById('fileMgt').textContent = 'Управление файлами';
+                document.getElementById('forms').textContent = 'Формы';
+                document.getElementById('identity').textContent = 'Идентификация';
+                document.getElementById('OpenIddict').textContent = 'OpenIddict';
+                document.getElementById('languageMgt').textContent = 'Управление языком';
+                document.getElementById('payment').textContent = 'Оплата';
+                document.getElementById('saas').textContent = 'SaaS';
+                document.getElementById('ttm').textContent = 'Управление текстовыми шаблонами';
+                document.getElementById('ui').textContent = 'Темы пользовательского интерфейса';
+                document.getElementById('reactUI').textContent = 'React UI';
+                document.getElementById('custom').textContent = 'Настройка';
+                document.getElementById('compo').textContent = 'Компоненты';
+
+                // Body Content
+                document.getElementById('createNew').textContent = 'Создание нового решения';
+                document.getElementById('newProject').textContent = 'Создать новый проект';
+                document.getElementById('thereAre').textContent = 'Существует два способа создания нового проекта: ABP Suite и ABP CLI';
+                document.getElementById('usingABP').textContent = 'Использование ABP Suite для создания нового проекта.';
+                document.getElementById('abpSuite').textContent = 'ABP Suite - рекомендуемый способ создания новых решений для ABP Commercial';
+                document.getElementById('runABP').textContent = 'Запустите ABP Suite с помощью следующей команды:';
+                document.getElementById('thisCom').textContent = 'Эта команда запускает ABP Suite и открывает его в вашем браузере по умолчанию:';
+                document.getElementById('click').innerHTML = 'Нажмите кнопку <span class="fw-bolder">Создать новое решение</span> и заполните модальную форму:';
+                document.getElementById('selectUI').textContent = 'Выберите UI-фреймворк как raaghu-react, поставщик базы данных и другие параметры на основе ваших предпочтений, затем нажмите кнопку "OK"';
+                document.getElementById('usingThe').textContent = 'Использование ABP CLI для создания нового проекта';
+                document.getElementById('useThe').textContent = 'Используйте новую команду ABP CLI для создания нового проекта:';
+                document.getElementById('tArgument').innerHTML = 'Аргумент -t указывает на имя <a href="https://docs.abp.io/en/commercial/7.2/startup-templates/application/index">шаблона запуска</a>. app-pro - это шаблон запуска, который содержит предварительно установленные и настроенные для вас <a href="https://commercial.abp.io/modules">ABP Commercial Modules</a>.';
+                document.getElementById('weCan').textContent = 'Мы также можем использовать разные уровни пространств имен, например, Bookstore, Acme.Bookstore или Acme.Retail.BookStore.';
+                document.getElementById('headTheme').textContent = 'Тема';
+                document.getElementById('raaghuTheme').textContent = 'Темы Raaghu';
+                document.getElementById('aNEw').textContent = 'Новая современная и стильная тема Raaghu с различными вариантами цветов, это самая новая тема. Вы можете выбрать один из 3 вариантов: Dark, Light и Semi Dark.';
+                document.getElementById('abpCLI').textContent = 'Команды и параметры ABP CLI';
+                document.getElementById('abpCliDoc').innerHTML = 'Документ <a href="https://docs.abp.io/en/abp/latest/CLI">ABP CLI</a> охватывает все доступные команды и параметры для ABP CLI. Основное отличие для ABP Commercial - это имена шаблонов. См. документ <a href="https://docs.abp.io/en/commercial/7.2/startup-templates/index">ABP Commercial Startup Templates</a> для других коммерческих шаблонов.';
+                document.getElementById('theSol').textContent = 'Структура решения';
+                document.getElementById('theSolHas').innerHTML = 'Решение имеет слоистую структуру (на основе <a href="https://docs.abp.io/en/abp/Domain-Driven-Design">Domain Driven Design</a>) и содержит проекты для модульных и интеграционных тестов. См. документ <a href="https://docs.abp.io/en/commercial/7.2/startup-templates/application/solution-structure">структура решения</a>, чтобы подробнее понять структуру решения.';
+                document.getElementById('ns').textContent = 'Следующий шаг';
+                document.getElementById('runSol').textContent = 'Запуск решения';
+                // For In this doc section
+                document.getElementById('inthisdoc').innerHTML = 'В этом документе';
+                document.getElementById('createss').innerHTML = '<a href="#createNew" class="text-black">Создание нового решения</a>';
+                document.getElementById('suiteto').innerHTML = '<a href="#newProject" class="text-black">Использование ABP Suite для создания нового проекта</a>';
+                document.getElementById('abpccl').innerHTML = '<a href="#selectUI" class="text-black">Использование ABP CLI для создания нового проекта</a>';
+                document.getElementById('thes').innerHTML = '<a href="#weCan" class="text-black">Тема</a>';
+                document.getElementById('ragtheme').innerHTML = '<a href="#the" class="text-black">Темы Raaghu</a>';
+                document.getElementById('solst').innerHTML = '<a href="#theSol" class="text-black">Структура решения</a>';
+
+
+            }
+            else if (selectedLanguage === 'zh') {
+                // Sidebar
+                document.getElementById('tableOfContent').textContent = '目录';
+                document.getElementById('downloadSource').textContent = '下载源码';
+                document.getElementById('version').textContent = '版本';
+                document.getElementById('version2').textContent = '版本 2';
+
+                document.getElementById('Getting').textContent = '入门';
+                document.getElementById('setupDev').textContent = '设置开发环境';
+                document.getElementById('creatingNewSol').textContent = '创建新解决方案';
+                document.getElementById('runningTheSol').textContent = '运行解决方案';
+                document.getElementById('tut').textContent = '教程';
+                document.getElementById('webAppDev').textContent = 'Web 应用程序开发';
+                document.getElementById('creatingServer').textContent = '创建服务器端';
+                document.getElementById('bookList').textContent = '书籍列表页面';
+                document.getElementById('creatingUpdating').textContent = '创建、更新和删除书籍';
+                document.getElementById('guides').textContent = '指南';
+                document.getElementById('customizingTheModules').textContent = '自定义模块';
+                document.getElementById('identityServerDeploy').textContent = '部署身份服务器';
+                document.getElementById('samples').textContent = '示例';
+                document.getElementById('allSamples').textContent = '所有示例';
+                document.getElementById('startupTemplate').textContent = '启动模板';
+                document.getElementById('appModules').textContent = '应用程序模块';
+                document.getElementById('overall').textContent = '总体';
+                document.getElementById('ac').textContent = '账户';
+                document.getElementById('auditLogging').textContent = '审计日志记录';
+                document.getElementById('chat').textContent = '聊天';
+                document.getElementById('CMS').textContent = 'CMS Kit Pro';
+                document.getElementById('fileMgt').textContent = '文件管理';
+                document.getElementById('forms').textContent = '表单';
+                document.getElementById('identity').textContent = '身份';
+                document.getElementById('OpenIddict').textContent = 'OpenIddict';
+                document.getElementById('languageMgt').textContent = '语言管理';
+                document.getElementById('payment').textContent = '支付';
+                document.getElementById('saas').textContent = 'SaaS';
+                document.getElementById('ttm').textContent = '文本模板管理';
+                document.getElementById('ui').textContent = 'UI 主题';
+                document.getElementById('reactUI').textContent = 'React UI';
+                document.getElementById('custom').textContent = '自定义';
+                document.getElementById('compo').textContent = '组件';
+
+                // Body Content
+                document.getElementById('createNew').textContent = '创建一个新解决方案';
+                document.getElementById('newProject').textContent = '创建一个新项目';
+                document.getElementById('thereAre').textContent = '有两种方法可以创建新项目：ABP Suite 和 ABP CLI';
+                document.getElementById('usingABP').textContent = '使用 ABP Suite 创建新项目。';
+                document.getElementById('abpSuite').textContent = 'ABP Suite 是创建 ABP 商业解决方案的推荐方式';
+                document.getElementById('runABP').textContent = '使用以下命令运行 ABP Suite：';
+                document.getElementById('thisCom').textContent = '此命令将启动 ABP Suite 并在您的默认浏览器中打开：';
+                document.getElementById('click').innerHTML = '点击 <span class="fw-bolder">创建新解决方案</span> 按钮并填写模态表单：';
+                document.getElementById('selectUI').textContent = '选择 UI 框架为 raaghu-react，选择数据库提供者和其他根据您的偏好选择的选项，然后点击 OK 按钮';
+                document.getElementById('usingThe').textContent = '使用 ABP CLI 创建新项目';
+                document.getElementById('useThe').textContent = '使用 ABP CLI 的新命令创建新项目：';
+                document.getElementById('tArgument').innerHTML = '-t 参数指定 <a href="https://docs.abp.io/en/commercial/7.2/startup-templates/application/index">启动模板</a> 名称。app-pro 是启动模板，其中预先安装并配置了基本的 <a href="https://commercial.abp.io/modules">ABP 商业模块</a>。';
+                document.getElementById('weCan').textContent = '我们还可以使用不同级别的命名空间，例如 Bookstore、Acme.Bookstore 或 Acme.Retail.BookStore。';
+                document.getElementById('headTheme').textContent = '主题';
+                document.getElementById('raaghuTheme').textContent = 'Raaghu 主题';
+                document.getElementById('aNEw').textContent = '一款新的、现代而时尚的 Raaghu 主题，带有不同的颜色选项，是最新的主题。您可以在 Dark、Light 和 Semi Dark 之间选择一种。';
+                document.getElementById('abpCLI').textContent = 'ABP CLI 命令和选项';
+                document.getElementById('abpCliDoc').innerHTML = '<a href="https://docs.abp.io/en/abp/latest/CLI">ABP CLI 文档</a> 包含了 ABP CLI 的所有可用命令和选项。ABP 商业的主要区别在于模板名称。请参阅<a href="https://docs.abp.io/en/commercial/7.2/startup-templates/index">ABP 商业启动模板</a>文档获取其他商业模板信息。';
+                document.getElementById('theSol').textContent = '解决方案结构';
+                document.getElementById('theSolHas').innerHTML = '解决方案采用分层结构（基于<a href="https://docs.abp.io/en/abp/Domain-Driven-Design">领域驱动设计</a>），并包含单元测试和集成测试项目。请参阅<a href="https://docs.abp.io/en/commercial/7.2/startup-templates/application/solution-structure">解决方案结构文档</a>了解解决方案结构的详细信息。';
+                document.getElementById('ns').textContent = '下一步';
+                document.getElementById('runSol').textContent = '运行解决方案';
+                // For In this doc section
+                document.getElementById('inthisdoc').innerHTML = '在本文中';
+                document.getElementById('createss').innerHTML = '<a href="#createNew" class="text-black">创建一个新解决方案</a>';
+                document.getElementById('suiteto').innerHTML = '<a href="#newProject" class="text-black">使用 ABP Suite 创建新项目</a>';
+                document.getElementById('abpccl').innerHTML = '<a href="#selectUI" class="text-black">使用 ABP CLI 创建新项目</a>';
+                document.getElementById('thes').innerHTML = '<a href="#weCan" class="text-black">主题</a>';
+                document.getElementById('ragtheme').innerHTML = '<a href="#the" class="text-black">Raaghu 主题</a>';
+                document.getElementById('solst').innerHTML = '<a href="#theSol" class="text-black">解决方案结构</a>';
+
+
+            }
+            else if (selectedLanguage === 'ar') {
+                // Sidebar
+                document.getElementById('tableOfContent').textContent = 'فهرس المحتويات';
+                document.getElementById('downloadSource').textContent = 'تحميل المصدر';
+                document.getElementById('version').textContent = 'الإصدار';
+                document.getElementById('version2').textContent = 'الإصدار 2';
+
+                document.getElementById('Getting').textContent = 'البدء';
+                document.getElementById('setupDev').textContent = 'إعداد بيئة التطوير';
+                document.getElementById('creatingNewSol').textContent = 'إنشاء حلاً جديدًا';
+                document.getElementById('runningTheSol').textContent = 'تشغيل الحلا';
+                document.getElementById('tut').textContent = 'البرامج التعليمية';
+                document.getElementById('webAppDev').textContent = 'تطوير تطبيقات الويب';
+                document.getElementById('creatingServer').textContent = 'إنشاء الخادم الجانبي';
+                document.getElementById('bookList').textContent = 'صفحة قائمة الكتب';
+                document.getElementById('creatingUpdating').textContent = 'إنشاء، تحديث وحذف الكتب';
+                document.getElementById('guides').textContent = 'الأدلة';
+                document.getElementById('customizingTheModules').textContent = 'تخصيص الوحدات';
+                document.getElementById('identityServerDeploy').textContent = 'نشر خادم Identity';
+                document.getElementById('samples').textContent = 'عينات';
+                document.getElementById('allSamples').textContent = 'جميع العينات';
+                document.getElementById('startupTemplate').textContent = 'قالب البدء';
+                document.getElementById('appModules').textContent = 'وحدات التطبيق';
+                document.getElementById('overall').textContent = 'العامة';
+                document.getElementById('ac').textContent = 'الحساب';
+                document.getElementById('auditLogging').textContent = 'تسجيل المراقبة';
+                document.getElementById('chat').textContent = 'الدردشة';
+                document.getElementById('CMS').textContent = 'مجموعة أدوات إدارة المحتوى';
+                document.getElementById('fileMgt').textContent = 'إدارة الملفات';
+                document.getElementById('forms').textContent = 'النماذج';
+                document.getElementById('identity').textContent = 'الهوية';
+                document.getElementById('OpenIddict').textContent = 'OpenIddict';
+                document.getElementById('languageMgt').textContent = 'إدارة اللغات';
+                document.getElementById('payment').textContent = 'الدفع';
+                document.getElementById('saas').textContent = 'نموذج SaaS';
+                document.getElementById('ttm').textContent = 'إدارة قوالب النصوص';
+                document.getElementById('ui').textContent = 'ثيمات واجهة المستخدم';
+                document.getElementById('reactUI').textContent = 'واجهة مستخدم React';
+                document.getElementById('custom').textContent = 'التخصيص';
+                document.getElementById('compo').textContent = 'المكونات';
+
+                // Body Content
+                document.getElementById('createNew').textContent = 'إنشاء حلا جديدًا';
+                document.getElementById('newProject').textContent = 'إنشاء مشروع جديد';
+                document.getElementById('thereAre').textContent = 'هناك طريقتين لإنشاء مشروع جديد: ABP Suite و ABP CLI';
+                document.getElementById('usingABP').textContent = 'استخدام ABP Suite لإنشاء مشروع جديد.';
+                document.getElementById('abpSuite').textContent = 'يعد ABP Suite الطريقة الموصى بها لإنشاء حلول جديدة لـ ABP Commercial';
+                document.getElementById('runABP').textContent = 'قم بتشغيل ABP Suite باستخدام الأمر التالي:';
+                document.getElementById('thisCom').textContent = 'يبدأ هذا الأمر ABP Suite ويفتحه في المستعرض الافتراضي:';
+                document.getElementById('click').innerHTML = 'انقر على زر <span class="fw-bolder">إنشاء حلا جديداً</span> واملأ نموذج النافذة المنبثقة:';
+                document.getElementById('selectUI').textContent = 'حدد إطار الواجهة الرسومية كـ raaghu-react ، وموفر قاعدة البيانات، وخيارات أخرى استنادًا إلى تفضيلاتك، ثم انقر فوق زر موافق';
+                document.getElementById('usingThe').textContent = 'استخدام ABP CLI لإنشاء مشروع جديد';
+                document.getElementById('useThe').textContent = 'استخدم الأمر الجديد لـ ABP CLI لإنشاء مشروع جديد:';
+                document.getElementById('tArgument').innerHTML = 'يحدد الوسيط -t <a href="https://docs.abp.io/en/commercial/7.2/startup-templates/application/index">اسم القالب البدء</a>. app-pro هو القالب البدء الذي يحتوي على <a href="https://commercial.abp.io/modules">وحدات ABP Commercial</a> الأساسية المثبتة مسبقًا ومكونة لك.';
+                document.getElementById('weCan').textContent = 'يمكننا أيضًا استخدام مستوى مختلف من مساحات الأسماء؛ على سبيل المثال Bookstore ، Acme.Bookstore أو Acme.Retail.BookStore.';
+                document.getElementById('headTheme').textContent = 'سمة';
+                document.getElementById('raaghuTheme').textContent = 'سمات Raaghu';
+                document.getElementById('aNEw').textContent = 'سمة Raaghu جديدة وحديثة وأنيقة مع خيارات ألوان مختلفة، إنها أحدث سمة. يمكنك اختيار واحدة من بين 3 خيارات: داكنة، فاتحة ونصف داكنة.';
+                document.getElementById('abpCLI').textContent = 'أوامر وخيارات ABP CLI';
+                document.getElementById('abpCliDoc').innerHTML = 'يغطي <a href="https://docs.abp.io/en/abp/latest/CLI">مستند ABP CLI</a> جميع الأوامر والخيارات المتاحة لـ ABP CLI. الفرق الرئيسي لـ ABP Commercial هو أسماء القوالب. انظر <a href="https://docs.abp.io/en/commercial/7.2/startup-templates/index">مستند قوالب بدء ABP Commercial</a> للقوالب التجارية الأخرى.';
+                document.getElementById('theSol').textContent = 'هيكل الحلا';
+                document.getElementById('theSolHas').innerHTML = 'يحتوي الحلا على هيكل متعدد الطبقات (استنادًا إلى <a href="https://docs.abp.io/en/abp/Domain-Driven-Design">تصميم النطاق المحدد</a>) ويحتوي على مشاريع اختبار وحدة ودمج. انظر <a href="https://docs.abp.io/en/commercial/7.2/startup-templates/application/solution-structure">مستند هيكل الحلا</a> لفهم هيكل الحلا بالتفصيل.';
+                document.getElementById('ns').textContent = 'الخطوة التالية';
+                document.getElementById('runSol').textContent = 'تشغيل الحلا';
+                // For In this doc section
+                document.getElementById('inthisdoc').innerHTML = 'في هذا المستند';
+                document.getElementById('createss').innerHTML = '<a href="#createNew" class="text-black">إنشاء حلا جديد</a>';
+                document.getElementById('suiteto').innerHTML = '<a href="#newProject" class="text-black">استخدم ABP Suite لإنشاء مشروع جديد</a>';
+                document.getElementById('abpccl').innerHTML = '<a href="#selectUI" class="text-black">استخدم ABP CLI لإنشاء مشروع جديد</a>';
+                document.getElementById('thes').innerHTML = '<a href="#weCan" class="text-black">سمة</a>';
+                document.getElementById('ragtheme').innerHTML = '<a href="#the" class="text-black">سمات Raaghu</a>';
+                document.getElementById('solst').innerHTML = '<a href="#theSol" class="text-black">هيكل الحلا</a>';
+
+            }        
+    else if (selectedLanguage === 'spanish') {
+
+            } else {
+
+            }
+        });
+    });
+
+
+
+
+
+
+
+</script>
+
+</html>

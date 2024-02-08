@@ -1,0 +1,1139 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- bootstrap dependencies -->
+    <link rel="stylesheet" href="Assets/css/bootstrap.min.css">
+    <link href="Assets/prism.css" rel="stylesheet" />
+    <script src="Assets/prism.js"></script>
+    <link rel="stylesheet" href="/index.css">
+    <link rel="icon" type="image/x-icon" href="Assets/images/raaghu-icon.png">
+    <title>Raaghu - Audit Logging</title>
+    <script src="/index.js"></script>
+</head>
+
+
+<body>
+
+    <main>
+
+        <nav class="navbar navbar-expand-lg navbar-light  ">
+            <div class="container-fluid ">
+                <div class="navbar-toggler-container">
+                    <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#sidebar,#navbarSupportedContent"
+                        aria-controls="sidebar" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <!-- <div class="dropdown show dropdown-specific">
+                        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Platform
+                        </a>
+
+                        <div class="dropdown-menu menu" aria-labelledby="dropdownMenuLink">
+                            <a class="dropdown-item" href="https://www.raaghu.io/features.html">Features</a>
+                            <a class="dropdown-item " href="https://portal.raaghu.io/">Documentation</a>
+                            <button type="button" class="btn btn-primary btn-contact mt-2">contact</button>
+                            <a href="https://github.com/Wai-Technologies/raaghu-angular" target="_blank">
+                                <li class="ps-lg-5 mt-2">
+                                    <img src="Assets/images/github-logo.svg" alt="abplogo logo" width="100%"
+                                        class="github-logo">
+                                </li>
+                            </a>
+                        </div>
+                    </div> -->
+                </div>
+                <a class="text-black navbar-brand" href="/">
+                    <img src="Assets/images/raaghu_logs.png" alt="raaghu logo" class="w-75  pe-lg-0">
+                </a>
+
+                <div class="collapse navbar-collapse align  justify-content-lg-end " id="navbarSupportedContent">
+                    <ul class="navbar-nav  mb-2 mb-lg-0 ">
+                        <li class="nav-item me-5">
+                            <a class="nav-link active " aria-current="page"
+                                href="https://raaghu-website-staging.netlify.app/raaghu-mfe-portal/_accordion.html">Components</a>
+                        </li>
+                        <li class="nav-item me-5">
+                            <a class="nav-link active " aria-current="page" href="#"><span
+                                    class="doc-color">Documentation</span></a>
+                        </li>
+                        <li class="nav-item me-5">
+                            <a class="nav-link active " aria-current="page"
+                                href="https://raaghu-website-staging.netlify.app/raaghu-mfe-portal/_accordion.html#">Support</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link active " aria-current="page"
+                                href="https://raaghu-website-staging.netlify.app/faq">FAQ</a>
+                        </li>
+                        <!-- <li class=" nav-item dropdown active">
+                            <a class="nav-link  text-dark me-5" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Platform
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-center " aria-labelledby="navbarDropdown">
+                                <ul class="list-unstyled dropdown-arrow">
+                                    <li class=" ps-4">
+                                        <p class="title pt-2">Raaghu Platform</p>
+                                        <div class="row">
+                                            <div class="col-lg-6 col-md-6">
+                                                <a href="https://portal.raaghu.io/" target="_blank"
+                                                    class="p-0 text-decoration-none text-reset">
+                                                    <div class="d-flex align-items-center gap-3">
+
+                                                        <img src="Assets/images/raaghu-portal-mg.svg"
+                                                            alt="raaghu-portal" class="mb-3">
+                                                        <p class="link-name">Raaghu Portal</p>
+
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="col-lg-6 col-md-6">
+                                                <a href="https://portal.raaghu.io/#Components-section" target="_blank"
+                                                    class="p-0 text-decoration-none text-reset">
+                                                    <div class="d-flex align-items-center gap-3">
+                                                        <img src="Assets/images/raaghu-components-mg.svg"
+                                                            alt="raaghu-components" class="mb-3">
+                                                        <p class="link-name">Raaghu Components</p>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-6 col-md-6">
+                                                <a href="https://portal.raaghu.io/#Elements-section" target="_blank"
+                                                    class="p-0 text-decoration-none text-reset">
+                                                    <div class="d-flex align-items-center gap-3">
+                                                        <img src="Assets/images/raaghu-elements-mg.svg"
+                                                            alt="raaghu-portal" class="mb-2">
+                                                        <p class="pt-2 link-name">Raaghu Elements</p>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="col-lg-6 col-md-6">
+                                                <div class="d-flex align-items-center gap-3">
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="bgcolor-dropdown">
+                                        <div class="ps-4">
+                                            <p class="pt-3 pb-1 title">WORKS ON</p>
+                                            <div class="row">
+                                                <div class="col-md-2 mb-2">
+                                                    <img src="Assets/images/asplogo-mg.svg" alt="asplogo logo"
+                                                        width="80%">
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <img src="Assets/images/abplogo-mg.svg" alt="abplogo logo"
+                                                        width="50%">
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item me-5">
+                            <a class="nav-link active " aria-current="page"
+                                href="https://www.raaghu.io/features.html">Features</a>
+                        </li>
+                        <li class="nav-item me-5">
+                            <a class="nav-link active " aria-current="page"
+                                href="https://portal.raaghu.io/">Documentation</a>
+                        </li>
+                        <button type="button" class="btn btn-primary btn-contact">contact</button>
+                        <a href="https://github.com/Wai-Technologies/raaghu-angular" target="_blank">
+                            <li class="ps-lg-5 pt-2">
+                                <img src="Assets/images/github-logo.svg" alt="abplogo logo" width="100%"
+                                    class="github-logo">
+                            </li>
+                        </a> -->
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="wrapper container-fluid">
+
+            <div class="row">
+
+                <div id="sidebar" class="col-12 col-lg-2 col-md-4 col-xl-2 col-xxl-2 collapse d-m-block mx-0 mx-lg-3 mx-md-3 mx-xl-3 mx-xxl-3 show2">
+
+                    <nav>
+                        <div class="sidebar-header ">
+                            <a href="/" class="text-bg-dark">
+                                <h3 class="fs-5 fw-normal" id="tableOfContent">Table Of Content</h3>
+                            </a>
+                        </div>
+
+                        <div class="accordion accordion-flush mx-3 doc-acc accordion-button-top" id="accordionExample">
+                            <div class="row pb-4">
+                                <div class="col-6 col-lg-6 col-md-6">
+                                    <select id="language-dropdown" class="sidebar-button">
+                                        <option value="en" selected>English</option>
+                                        <option value="pt">Português</option>
+                                        <option value="fr">French</option>
+                                        <option value="fi">Finnish</option>
+                                        <option value="hi">Hindi</option>
+                                        <option value="it">Italian</option>                                        
+                                        <option value="sk">Slovak</option>
+                                        <option value="de">German</option>
+                                        <option value="ru">Russian</option>
+                                        <option value="zh">Chinese</option>
+                                        <option value="af">Afrikaan</option>
+                                        <option value="ar">Arabic</option>
+                                        <!-- Add more language options if needed -->
+                                    </select>
+                                </div>
+                                <div class="col-6 col-lg-6 col-md-6">
+                                    <select class="sidebar-button w-100">
+                                        <option value="option1" id="version">Version</option>
+                                        <option value="option2">Version 2</option>
+                                        <option value="option3">Version 3</option>
+                                        <option value="option4">Version 4</option>
+                                    </select>
+
+                                </div>
+                            </div>
+                            <div class="accordion-item bg-dark">
+                                <h2 class="accordion-header" id="headingOne">
+                                    <a href="Getting-Started.html">
+                                        <button
+                                            class="accordion-button d-flex flex-row-reverse justify-content-end p-0 bg-dark mt-1"
+                                            type="button" data-bs-toggle="collapse" data-bs-target="#coll"
+                                            aria-expanded="false" aria-controls="collapseOne" id="Getting">
+                                            Getting Started
+                                        </button></a>
+                                </h2>
+
+                                <div id="coll" class="accordion-collapse collapse  border-0 rounded-0 p-0"
+                                    aria-labelledby="headOne" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Setup-Your-Development-Environment.html" id="setupDev">Setup your
+                                            development
+                                            environment</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Creating-A-New-Solution.html" id="creatingNewSol">Creating A New
+                                            Solution</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Running-The-Solution.html" id="runningTheSol">Running the Solution</a>
+                                    </div>
+                                </div>
+                                <h2 class="accordion-header" id="headingTwo">
+                                    <button
+                                        class="accordion-button d-flex flex-row-reverse justify-content-end p-0 bg-dark mt-2"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                        aria-expanded="false" aria-controls="collapseOne" id="tut">
+                                        Tutorials
+                                    </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse  border-0 rounded-0 p-0"
+                                    aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <h2 class="accordion-header" id="headingTwo">
+                                            <button
+                                                class="accordion-button d-flex flex-row-reverse justify-content-end p-0 bg-dark mt-2"
+                                                type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                                                aria-expanded="false" aria-controls="collapseOne" id="webAppDev">
+                                                Web Application Development
+                                            </button>
+                                        </h2>
+                                        <div id="collapseThree"
+                                            class="accordion-collapse collapse  border-0 rounded-0 p-0 pt-2"
+                                            aria-labelledby="headingTwo" data-bs-parent="#accordionExamplee">
+                                            <div class="accordion-body bg-dark px-4 p-1">
+                                                <a href="Creating-The-Server-Side.html" id="creatingServer">Creating the
+                                                    Server
+                                                    Side</a>
+                                            </div>
+                                        </div>
+                                        <div id="collapseThree"
+                                            class="accordion-collapse collapse  border-0 rounded-0 p-0"
+                                            aria-labelledby="headingTwo" data-bs-parent="#accordionExamplee">
+                                            <div class="accordion-body bg-dark px-4 p-1">
+                                                <a href="The-Book-List-Page.html" id="bookList">The Book List Page</a>
+                                            </div>
+                                        </div>
+                                        <div id="collapseThree"
+                                            class="accordion-collapse collapse  border-0 rounded-0 p-0"
+                                            aria-labelledby="headingTwo" data-bs-parent="#accordionExamplee">
+                                            <div class="accordion-body bg-dark px-4 p-1">
+                                                <a href="Creating-Updating-And-Deleting-Book.html"
+                                                    id="creatingUpdating">Creating,Updating
+                                                    And
+                                                    Deleting Book</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <h2 class="accordion-header" id="headingFour">
+                                    <button
+                                        class="accordion-button d-flex flex-row-reverse justify-content-end p-0 bg-dark mt-2"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour"
+                                        aria-expanded="false" aria-controls="collapseOne" id="guides">
+                                        Guides
+                                    </button>
+                                </h2>
+                                <div id="collapseFour" class="accordion-collapse collapse  border-0 rounded-0 p-0"
+                                    aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Customizing-The-Modules.html" id="customizingTheModules">Customizing
+                                            the Modules</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Identity-Server-Deployment.html" id="identityServerDeploy">Identity
+                                            Server Deployment</a>
+                                    </div>
+                                </div>
+
+
+                                <h2 class="accordion-header" id="headingFive">
+                                    <button
+                                        class="accordion-button d-flex flex-row-reverse justify-content-end p-0 bg-dark mt-2"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive"
+                                        aria-expanded="false" aria-controls="collapseOne" id="samples">
+                                        Samples
+                                    </button>
+                                </h2>
+                                <div id="collapseFive" class="accordion-collapse collapse  border-0 rounded-0 p-0"
+                                    aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="All-Samples.html" id="allSamples">All Samples</a>
+                                    </div>
+                                </div>
+                                <h2 class="accordion-header" id="headingSix">
+                                    <a href="Startup-Template.html">
+                                        <button
+                                            class="accordion-button d-flex flex-row-reverse justify-content-end p-0 bg-dark mt-2"
+                                            type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix"
+                                            aria-expanded="false" aria-controls="collapseOne" id="startupTemplate">
+                                            Startup Template
+                                        </button></a>
+                                </h2>
+                                <div id="collapseSix" class="accordion-collapse collapse  border-0 rounded-0 p-0"
+                                    aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <h2 class="accordion-header" id="headingSix">
+                                            <button
+                                                class="accordion-button d-flex flex-row-reverse justify-content-end p-0 bg-dark mt-2"
+                                                type="button" data-bs-toggle="collapse" data-bs-target="#headingS"
+                                                aria-expanded="false" aria-controls="collapseOne">
+                                                Application Templates
+                                            </button>
+                                        </h2>
+                                        <div id="headingS"
+                                            class="accordion-collapse collapse  border-0 rounded-0 p-0 pt-2"
+                                            aria-labelledby="headingSix" data-bs-parent="#accordionExamplee">
+                                            <div class="accordion-body bg-dark px-4 p-1">
+                                                <a href="Creating-Solution.html">Creating Solution</a>
+                                            </div>
+                                        </div>
+                                        <div id="headingS" class="accordion-collapse collapse  border-0 rounded-0 p-0"
+                                            aria-labelledby="headingSix" data-bs-parent="#accordionExamplee">
+                                            <div class="accordion-body bg-dark px-4 p-1">
+                                                <a href="Solution-Structure.html">Solution Structure</a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                                <h2 class="accordion-header" id="headingSeven">
+                                    <button
+                                        class="accordion-button d-flex flex-row-reverse justify-content-end p-0 bg-dark mt-2"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven"
+                                        aria-expanded="true" aria-controls="collapseOne" id="appModules">
+                                        Application Modules
+                                    </button>
+                                </h2>
+                                <div id="collapseSeven" class="accordion-collapse show collapse  border-0 rounded-0 p-0"
+                                    aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Overall.html" id="overall">Overall</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Account-Module.html" id="ac">Account</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Audit-Logging.html" id="auditLogging"><span
+                                                class="accordian-active">Audit Logging</span></a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Chat.html" id="chat">Chat</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="CMS-Kit-Pro.html" id="CMS">CMS Kit Pro</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="File-Management.html" id="fileMgt">File Management</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Forms.html" id="forms">Forms</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Identity.html" id="identity">Identity</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="OpenIddict.html" id="OpenIddict">OpenIddict</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Language-Management.html" id="languageMgt">Language Management</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Payment.html" id="payment">Payment</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="SaaS.html" id="saas">SaaS</a>
+                                    </div>
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Text-Template-Management.html" id="ttm">Text Template Management</a>
+                                    </div>
+                                </div>
+                                <h2 class="accordion-header" id="headingNine">
+                                    <a href="UI-Themes.html">
+                                        <button
+                                            class="accordion-button d-flex flex-row-reverse justify-content-end p-0 bg-dark mt-2"
+                                            type="button" data-bs-toggle="collapse" data-bs-target="#headingNine"
+                                            aria-expanded="false" aria-controls="collapseOne" id="ui">
+                                            UI Themes
+                                        </button>
+                                    </a>
+                                </h2>
+                                <h2 class="accordion-header" id="headingReactUITheme">
+                                    <button
+                                        class="accordion-button d-flex flex-row-reverse justify-content-end p-0 bg-dark mt-2"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#headingReactUI"
+                                        aria-expanded="false" aria-controls="collapseOne" id="reactUI">
+                                        React UI
+                                    </button>
+                                </h2>
+                                <div id="headingReactUI" class="accordion-collapse collapse  border-0 rounded-0 p-0"
+                                    aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Customization.html" id="custom">customization</a>
+                                    </div>
+
+                                </div>
+                                <div id="headingReactUI" class="accordion-collapse collapse  border-0 rounded-0 p-0"
+                                    aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Components.html" id="compo">Components</a>
+                                    </div>
+
+                                </div>
+                                 <!-- For Release Information -->
+                                 <h2 class="accordion-header" id="headingFive">
+                                    <button
+                                        class="accordion-button d-flex flex-row-reverse justify-content-end p-0 bg-dark mt-2"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseLast"
+                                        aria-expanded="false" aria-controls="collapseOne" id="samples">
+                                       <span id="relinfo">Release Information</span> 
+                                    </button>
+                                </h2>
+                                <div id="collapseLast" class="accordion-collapse collapse  border-0 rounded-0 p-0"
+                                    aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body bg-dark px-4 p-1">
+                                        <a href="Release-Notes.html" id="allSamples"><span id="relnote">Release Notes</span></a>
+                                    </div>
+                                </div>
+                                <!-- ====================================== -->
+                            </div>
+                        </div>
+                        <ul class="list-unstyled CTAs  w-100">
+                            <li>
+                                <a href="https://bootstrapious.com/tutorial/files/sidebar.zip" class="download"
+                                    id="downloadSource">Download
+                                    source</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="col-12 col-lg-8 col-md-7 col-xl-6 col-xxl-6 offset-lg-4 offset-md-5 offset-xl-3 offset-xxl-3 ps-xl-5 ps-xxl-0 px-lg-3 px-md-4 px-xl-0 ">
+
+                    <!-- Page Content  -->
+                    <div id="content">
+                        <div class="modal fade" id="contactusModal" tabindex="-1" aria-labelledby="contactusModalLabel"
+                            aria-hidden="true">
+
+                            <div class="modal-dialog modal-lg modal-dialog-centered">
+
+                                <div class="modal-content">
+
+                                    <!-- <div class="modal-header">
+                  
+                                  <h5 class="modal-title" id="contactusModalLabel">Modal title</h5>
+                  
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  
+                                </div> -->
+
+                                    <div class="modal-body p-0">
+
+
+
+
+                                        <div class="row">
+
+                                            <div class="col-md-6 col-sm-12 bg-dark">
+
+                                                <div class="mt-5">
+
+                                                    <img src="Assets/images/raaghu-logo-white.png"
+                                                        class="img-fluid w-25 pl-2">
+
+
+
+                                                    <img src="Assets/images/raaghu-banner-modal.png" class="img-fluid">
+
+                                                </div>
+
+                                            </div>
+
+
+
+                                            <div class="col-md-6 col-sm-12">
+
+                                                <div class="row">
+
+                                                    <div class="col-md-12 text-end pull-right">
+
+                                                        <button type="button"
+                                                            class="btn-close float-right pull-right m-3 text-muted"
+                                                            data-bs-dismiss="modal" aria-label="Close"></button>
+
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="p-4">
+
+                                                    <h6>
+
+                                                        Kindly fill the details below
+
+                                                    </h6>
+
+                                                    <p>
+
+                                                        <small> We will get back to you within 48 hours </small>
+
+                                                    </p>
+
+                                                    <div class="mt-5">
+
+                                                        <form method="post" id="want-to-hear-form">
+
+                                                            <div class="mb-3 form-group">
+
+                                                                <label for="emailId" class="form-label">Email ID
+
+                                                                    <span class="text-danger">*</span>
+
+                                                                </label>
+
+                                                                <input type="email" name="emailId"
+                                                                    class="form-control p-2" id="emailId"
+                                                                    placeholder="Enter your email id">
+
+                                                            </div>
+
+                                                            <div class="mb-3 form-group">
+
+                                                                <label for="companyName" class="form-label">Company Name
+
+                                                                    <span class="text-danger">*</span>
+
+                                                                </label>
+
+                                                                <input type="text" class="form-control p-2"
+                                                                    placeholder="Enter your Company Name"
+                                                                    name="companyName" id="companyName">
+
+                                                            </div>
+
+                                                            <div class="mb-3 form-group">
+
+                                                                <label for="message" class="form-label">Message
+
+                                                                    <span class="contactUs-Optional">(Optional)</span>
+
+
+                                                                </label>
+
+                                                                <textarea class="form-control p-2" name="message"
+                                                                    id="message" rows="3"
+                                                                    placeholder="Write your message.."></textarea>
+
+                                                            </div>
+
+                                                            <div class="mb-3 form-check">
+
+                                                                <input type="checkbox" class="form-check-input"
+                                                                    id="exampleCheck1">
+
+                                                                <label class="form-check-label" for="exampleCheck1">I
+                                                                    agree to the <a href="#"> terms & privacy policy
+                                                                    </a></label>
+
+                                                            </div>
+
+                                                            <button type="submit"
+                                                                class="btn btn-primary btn-sm btn-block float-end mb-4">Submit</button>
+
+                                                        </form>
+
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div> <input class="form-control  mb-5" type="search" placeholder="Search" aria-label="Search">
+                        </div>
+                        <div>
+                            <h1 class="fw-semibold mb-3" id="howToInstall">Audit Logging module</h1>
+                            <p id="thismodimp">This module implements the Audit Logging system of an application;</p>
+                            <ul class="ps-3">
+                                <li class="mb-1" id="seeaudit">See all audit logs of the system and filter audit logs
+                                    easily.</li>
+                                <li class="mb-1" id="viewaudit">View audit log details, executed actions and changed
+                                    entities.</li>
+                                <li class="mb-1" id="seeallthe">See all changes of entities and filter entity change
+                                    logs.</li>
+                                <li class="mb-1" id="viewdetails">View details of an entity change.</li>
+                                <li class="mb-1" id="viewallthe">View all changes of an entity.</li>
+                                <li class="mb-1" id="thismodule">This module also defines reusable "Average Execution Duration Per Day"
+                                    and "Error Rate" widgets.</li>
+                            </ul>
+                            <p id="seethemod">See <a href="https://docs.abp.io/en/commercial/7.0/Startup-Templates/Index">the module
+                                    description page</a> for an overview of the module features.</p>
+                        </div>
+                        <div>
+                            <h2 class="fw-semibold pt-2 pb-2" id="instalhow">How to install</h2>
+                            <p id="identitypre">Identity is pre-installed in <a
+                                    href="https://docs.abp.io/en/commercial/7.0/Startup-Templates/Index">the startup
+                                    templates.</a> So, no need to manually install it.</p>
+                        </div>
+                        <div>
+                            <h3 class="fw-semibold pt-3 pb-3" id="pes">Packages</h3>
+                            <p id="thismodfollrel">This module follows the <a
+                                    href="https://docs.abp.io/en/abp/latest/Best-Practices/Index">module development
+                                    best practices guide</a> and consists of several NuGet and NPM packages. See the
+                                guide if you want to understand the packages and relations between them.</p>
+                            <p id="menuItems">You can visit <a
+                                    href="https://abp.io/packages?moduleName=Volo.AuditLogging.Ui">Audit
+                                    Logging module package list page</a> to see list of packages related with this
+                                module.</p>
+                        </div>
+
+                        <div>
+                            <h3 class="fw-semibold pt-3 pb-3" id="menuit">Menu items</h3>
+                            <p id="auditlogmod">Audit logs module adds the following items to the "Main" menu, under the "Administration"
+                                menu item:</p>
+                            <ul class="ps-3">
+                                <li id="auditlist">Audit Logs: List, view and filter audit logs and entity changes.</li>
+                            </ul>
+                            <p id="pages"><span class="txt-color">IAbpAuditLoggingMainMenuNames</span> class has the
+                                constants for
+                                the menu item names.</p>
+                        </div>
+                        <div>
+                            <h3 class="fw-semibold pt-3 pb-3" id="paging">Pages</h3>
+                            <p id="audlog">Audit Logs</p>
+                            <p id="tabis">Audit logs tab is used to list, view and filter audit logs and entity changes in the
+                                system.</p>
+                            <img src="Assets/images/auditLogsTab.jpg" alt="Audit logs tab is used to list, view and filter audit logs and entity changes in the
+                                system" class="img-fluid my-4">
+                        </div>
+                        <div>
+                            <h3 class="fw-semibold pt-3 pb-3" id="ald">Audit Log Details</h3>
+                            <p id="youcanview">You can view details of an audit log by clicking the magnifier icon on each audit log
+                                line:</p>
+                            <ul class="ps-3">
+                                <li class="mt-2" id="thistab"><strong>Overall</strong>: This tab contains detailed information about
+                                    audit log.</li>
+                                <li class="mt-2" id="actionandapp"><strong>Actions</strong>: This tab shows list of actions (controller
+                                    actions and application service method calls with their parameters) executed during
+                                    a web request.</li>
+                                <li class="mt-2" id="thistabshows"><strong>Changes</strong>: This tab shows changed entities during the
+                                    web request.</li>
+                            </ul>
+                            <p id="tobecontinue"><strong>(To be continued as the UI is not rendering properly)(500 error)</strong></p>
+                        </div>
+
+
+
+
+
+                    </div>
+                </div>
+                <div class="col-12 col-lg-8 col-md-7 col-xl-2 col-xxl-2 docs-page-index offset-lg-4 offset-xl-0 offset-md-5 offset-xxl-0 px-md-4">
+                    <div class="position-fixed  my-3 w-auto mx-lg-0 mx-xl-3 mx-xxl-3 pe-lg-3 pe-xl-0 pe-xxl-0 position-lg-relative">
+                    <div class="card border-0 box rounded-3 mb-3">
+                        <div class="card-body">
+                            <h4 class="card-title py-1" id="inthisdoc">In this document</h4>
+                            <div class="opacity-50">
+                                <ul class="card-text small  list-unstyled ul-ad">
+                                    <li id="howint"><a href="#howToInstall" class="text-black">How to Install</a></li>
+                                    <li id="menuitss"><a href="#menuItems" class="text-black">Menu items</a></li>
+                                    <li id="psgs"><a href="#pages" class="text-black">Pages</a></li>
+                                    <li id="logdet"><a href="#ald" class="text-black">Audit Log Details</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card  border-0 box  bg-advertise ">
+                        <div class="card-body abp-community-card  rounded-3 bg-sec ">
+                            <div class="row  ">
+                                <div class="col-lg-5 col-md-5 col-5"> <img src="Assets/images/React_logo.png" alt="raaghu logo"
+                                        class="w-100"></div>
+                                <div class="col-lg-7 mt-1 col-md-7 mt-1 col-7"> <img src="Assets/images/abp-sec.png" alt="raaghu logo"
+                                        class="w-100"></div>
+                                <!-- <div class="col-lg-6"><img src="Assets/images/abp-com.svg" alt="raaghu logo" class="w-100"></div> -->
+
+                            </div>
+                            <div class="border-under-sec my-3"></div>
+                            <div class="colored-sec-design py-1">
+                                <ul class="ps-4">
+                                    <li>CLI for CRUD generation</li>
+                                    <li>Component driven development</li>
+                                    <li>Purpose build UI kit for ABP commercial</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <button type="button" class="btn btn-primary mt-1 w-100" data-bs-toggle="modal"
+                                    data-bs-target="#contactusModal">Contact Us</button>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <!-- <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-0 col-12 docs-page-index">
+                    <div class="card mt-4 top-25 me-lg-4 border-0 shadow py-4">
+                        <div class="card-body">
+                            <h5 class="card-title">In This Document</h5>
+                            <p class="card-text small">Some quick example text to build on the card title and make up
+                                the bulk of the card's content.</p>
+
+                        </div>
+                    </div>
+                </div> -->
+
+            </div>
+
+
+
+        </div>
+
+    </main>
+
+    <!-- bootstrap dependencies -->
+    <script src="Assets/js/bootstrap.min.js"></script>
+    <script src="scripts/translation.js"></script>
+</body>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var languageDropdown = document.getElementById('language-dropdown');
+        languageDropdown.addEventListener('change', function () {
+            var selectedLanguage = languageDropdown.value;
+            if (selectedLanguage === 'pt') {
+                // Sidebar Code in js File
+
+
+                // Body Content
+                document.getElementById('howToInstall').innerHTML = 'Módulo de registro de auditoria';
+                document.getElementById('thismodimp').innerHTML = 'Este módulo implementa o sistema de Audit Logging de uma aplicação;';
+                document.getElementById('seeaudit').innerHTML = 'Veja todos os logs de auditoria do sistema e filtre facilmente os logs de auditoria.';
+                document.getElementById('viewaudit').innerHTML = 'Visualize detalhes do log de auditoria, ações executadas e entidades alteradas.';
+                document.getElementById('seeallthe').innerHTML = 'Veja todas as alterações de entidades e filtre os logs de alteração da entidade.';
+                document.getElementById('viewdetails').innerHTML = 'Exibir detalhes de uma alteração de entidade.';
+                document.getElementById('viewallthe').innerHTML = 'Visualize todas as alterações de uma entidade.';
+                document.getElementById('thismodule').innerHTML = 'Este módulo também define "Duração média de execução por dia" reutilizável e widgets "Taxa de erro".';
+                document.getElementById('seethemod').innerHTML = 'Consulte <a href="https://docs.abp.io/en/commercial/7.0/Startup-Templates/Index">o módulo página de descrição</a> para uma visão geral dos recursos do módulo.';
+                document.getElementById('instalhow').innerHTML = 'Como instalar';
+                document.getElementById('identitypre').innerHTML = 'A identidade é pré-instalada em <a href="https://docs.abp.io/en/commercial/7.0/Startup-Templates/Index">a inicialização modelos.</a> Portanto, não há necessidade de instalá-lo manualmente.';
+                document.getElementById('pes').innerHTML = 'Pacotes';
+                document.getElementById('thismodfoll').innerHTML = 'Este módulo segue o <a href="https://docs.abp.io/en/abp/latest/Best-Practices/Index">desenvolvimento do módulo guia de práticas recomendadas</a> e consiste em vários pacotes NuGet e NPM. Veja o guia se você quiser entender os pacotes e as relações entre eles.';
+                document.getElementById('menuItems').innerHTML = 'Você pode visitar <a href="https://abp.io/packages?moduleName=Volo.AuditLogging.Ui">Auditoria Página de lista de pacotes do módulo de registro</a> para ver a lista de pacotes relacionados a isso  módulo.';
+                document.getElementById('menuit').innerHTML = 'Itens do menu';
+                document.getElementById('auditlogmod').innerHTML = 'O módulo de logs de auditoria adiciona os seguintes itens ao menu "Principal", em "Administração" item do menu:';
+                document.getElementById('auditlist').innerHTML = 'Logs de auditoria: liste, visualize e filtre logs de auditoria e alterações de entidade.';
+                document.getElementById('pages').innerHTML = 'A classe <span class="txt-color">IAbpAuditLoggingMainMenuNames</span> tem o constantes para os nomes dos itens do menu.';
+                document.getElementById('paging').innerHTML = 'Páginas';
+                document.getElementById('audlog').innerHTML = 'Registros de auditoria';
+                document.getElementById('tabis').innerHTML = 'A guia logs de auditoria é usada para listar, visualizar e filtrar logs de auditoria e alterações de entidade no sistema.';
+                document.getElementById('ald').innerHTML = 'Detalhes do registro de auditoria';
+                document.getElementById('youcanview').innerHTML = 'Você pode ver os detalhes de um log de auditoria clicando no ícone de lupa em cada log de auditoria linha:';
+                document.getElementById('thistab').innerHTML = '<strong>Geral</strong>: esta guia contém informações detalhadas sobre registro de auditoria.';
+                document.getElementById('actionandapp').innerHTML = '<strong>Ações</strong>: Esta guia mostra a lista de ações (controlador ações e chamadas de método de serviço de aplicativo com seus parâmetros) executadas durante uma solicitação web.';
+                document.getElementById('thistabshows').innerHTML = 'strong>Mudanças</strong>: Esta guia mostra as entidades alteradas durante o solicitação web.';
+                document.getElementById('tobecontinue').innerHTML = '<strong>(Continua, pois a interface do usuário não está sendo renderizada corretamente)(erro 500)</strong>';
+                // For In this doc section
+                document.getElementById('inthisdoc').innerHTML = 'neste documento';
+                document.getElementById('howint').innerHTML = '<a href="#howToInstall" class="text-black">Como instalar</a>';
+                document.getElementById('menuitss').innerHTML = '<a href="#menuItems" class="text-black">Itens de menu</a>';
+                document.getElementById('psgs').innerHTML = '<a href="#pages" class="text-black">Páginas</a>';
+                document.getElementById('logdet').innerHTML = '<a href="#ald" class="text-black">Detalhes do registro de auditoria</a>';
+            }
+            else if (selectedLanguage === 'French') {
+                // Body Content
+                document.getElementById('howToInstall').innerHTML = 'Module de journal d\'audit';
+                document.getElementById('thismodimp').innerHTML = 'Ce module implémente le système de journalisation d\'audit d\'une application ;';
+                document.getElementById('seeaudit').innerHTML = 'Affichez tous les journaux d\'audit du système et filtrez facilement les journaux d\'audit.';
+                document.getElementById('viewaudit').innerHTML = 'Affichez les détails du journal d\'audit, les actions entreprises et les entités modifiées.';
+                document.getElementById('seeallthe').innerHTML = 'Affichez toutes les modifications d\'entité et filtrez les journaux de modification d\'entité.';
+                document.getElementById('viewdetails').innerHTML = 'Afficher les détails d\'une modification d\'entité.';
+                document.getElementById('viewallthe').innerHTML = 'Afficher toutes les modifications apportées à une entité.';
+                document.getElementById('thismodule').innerHTML = 'Ce module définit également des widgets réutilisables "Temps d\'exécution moyen par jour" et "Taux d\'erreur".';
+                document.getElementById('seethemod').innerHTML = 'Consultez la <a href="https://docs.abp.io/en/commercial/7.0/Startup-Templates/Index">page de description du module</a> pour un aperçu des fonctionnalités du module.';
+                document.getElementById('instalhow').innerHTML = 'Comment installer';
+                document.getElementById('identitypre').innerHTML = 'L\'identité est préinstallée dans <a href="https://docs.abp.io/en/commercial/7.0/Startup-Templates/Index">les modèles de démarrage.</a> Il n\'est donc pas nécessaire d\'installer le faire manuellement.';
+                document.getElementById('pes').innerHTML = 'paquets';
+                document.getElementById('thismodfoll').innerHTML = 'Ce module suit le <a href="https://docs.abp.io/en/abp/latest/Best-Practices/Index">guide des meilleures pratiques de développement de modules</a> et se compose de plusieurs packages NuGet et NPM. Consultez le guide si vous souhaitez comprendre les packages et les relations entre eux.';
+                document.getElementById('menuItems').innerHTML = 'Vous pouvez visiter la <a href="https://abp.io/packages?moduleName=Volo.AuditLogging.Ui">page de la liste des packages du module de journalisation d\'audit</a> pour voir la liste des packages liés à ce module.';
+                document.getElementById('menuit').innerHTML = 'éléments de menu';
+                document.getElementById('auditlogmod').innerHTML = 'Le module Audit Logs ajoute les éléments suivants au menu "Principal" sous l\'élément de menu "Administration" :';
+                document.getElementById('auditlist').innerHTML = 'Journaux d\'audit : répertoriez, affichez et filtrez les journaux d\'audit et les modifications d\'entité.';
+                document.getElementById('pages').innerHTML = 'La classe <span class="txt-color">IAbpAuditLoggingMainMenuNames</span> a des constantes pour les noms des éléments de menu.';
+                document.getElementById('paging').innerHTML = 'pages';
+                document.getElementById('audlog').innerHTML = 'enregistrements d\'audit';
+                document.getElementById('tabis').innerHTML = 'L\'onglet Journaux d\'audit est utilisé pour répertorier, afficher et filtrer les journaux d\'audit et les modifications d\'entité apportées au système.';
+                document.getElementById('ald').innerHTML = 'Détails du journal d\'audit';
+                document.getElementById('youcanview').innerHTML = 'Vous pouvez afficher les détails d\'un journal d\'audit en cliquant sur l\'icône de loupe dans chaque ligne du journal d\'audit :';
+                document.getElementById('thistab').innerHTML = '<strong>Général</strong> : cet onglet contient des informations détaillées sur le journal d\'audit.';
+                document.getElementById('actionandapp').innerHTML = '<strong>Actions</strong> : cet onglet affiche la liste des actions (actions du contrôleur et appels de méthode de service d\'application avec leurs paramètres) effectuées lors d\'une requête Web.';
+                document.getElementById('thistabshows').innerHTML = 'strong>Modifications</strong> : cet onglet affiche les entités modifiées lors de la demande Web.';
+                document.getElementById('tobecontinue').innerHTML = '<strong>(Suite car l\'interface utilisateur ne s\'affiche pas correctement)(erreur 500)</strong>';
+                // For In this doc section
+                document.getElementById('inthisdoc').innerHTML = 'dans ce document';
+                document.getElementById('howint').innerHTML = '<a href="#howToInstall" class="text-black">Comment installer</a>';
+                document.getElementById('menuitss').innerHTML = '<a href="#menuItems" class="text-black">Éléments de menu</a>';
+                document.getElementById('psgs').innerHTML = '<a href="#pages" class="text-black">Pages</a>';
+                document.getElementById('logdet').innerHTML = '<a href="#ald" class="text-black">Détails du journal d\'audit</a>';
+            } 
+            else if (selectedLanguage === 'Finnish') {
+                  // Body Content
+                  document.getElementById('howToInstall').innerHTML = 'Tarkastuslokimoduuli';
+                document.getElementById('thismodimp').innerHTML = 'Tämä moduuli toteuttaa sovelluksen tarkastuslokijärjestelmän;';
+                document.getElementById('seeaudit').innerHTML = 'Tarkastele kaikkia järjestelmän tarkastuslokeja ja suodata tarkastuslokeja helposti.';
+                document.getElementById('viewaudit').innerHTML = 'Tarkastele tarkastuslokin tietoja, suoritettuja toimia ja muutettuja kokonaisuuksia.';
+                document.getElementById('seeallthe').innerHTML = 'Tarkastele kaikkia entiteettien muutoksia ja suodata entiteetin muutoslokeja.';
+                document.getElementById('viewdetails').innerHTML = 'Näytä entiteetin muokkauksen tiedot.';
+                document.getElementById('viewallthe').innerHTML = 'Näytä kaikki kokonaisuuteen tehdyt muutokset.';
+                document.getElementById('thismodule').innerHTML = 'Tämä moduuli määrittää myös uudelleen käytettävät "Keskimääräinen suoritusaika päivässä" ja "Virhesuhde"-widgetit.';
+                document.getElementById('seethemod').innerHTML = 'Katso <a href="https://docs.abp.io/en/commercial/7.0/Startup-Templates/Index">moduulin kuvaussivulta</a> yleiskatsauksen moduulin toiminnoista.';
+                document.getElementById('instalhow').innerHTML = 'Miten asentaa';
+                document.getElementById('identitypre').innerHTML = 'Identity on esiasennettu <a href="https://docs.abp.io/en/commercial/7.0/Startup-Templates/Index">käynnistysmalleihin</a>. Joten sitä ei tarvitse asentaa. se manuaalisesti.';
+                document.getElementById('pes').innerHTML = 'paketteja';
+                document.getElementById('thismodfoll').innerHTML = 'Tämä moduuli noudattaa <a href="https://docs.abp.io/en/abp/latest/Best-Practices/Index">Moduulikehityksen parhaiden käytäntöjen opasta</a> ja koostuu useista NuGet- ja NPM-paketeista. Tutustu oppaaseen, jos haluat ymmärtää paketteja ja niiden välisiä suhteita.';
+                document.getElementById('menuItems').innerHTML = 'Voit käydä <a href="https://abp.io/packages?moduleName=Volo.AuditLogging.Ui">tarkastuslokimoduulin pakettiluettelosivulla</a> nähdäksesi tähän moduuliin liittyvät luettelopaketit.';
+                document.getElementById('menuit').innerHTML = 'valikon kohteita';
+                document.getElementById('auditlogmod').innerHTML = 'Tarkastuslokit-moduuli lisää seuraavat kohteet "Päävalikkoon" "Hallinta"-valikkokohdan alla:';
+                document.getElementById('auditlist').innerHTML = 'Tarkastuslokit: luettele, tarkastele ja suodata valvontalokeja ja entiteettien muutoksia.';
+                document.getElementById('pages').innerHTML = 'Luokassa <span class="txt-color">IAbpAuditLoggingMainMenuNames</span> on vakiot valikkokohtien nimille.';
+                document.getElementById('paging').innerHTML = 'sivuja';
+                document.getElementById('audlog').innerHTML = 'tarkastuspöytäkirjat';
+                document.getElementById('tabis').innerHTML = 'Tarkastuslokit-välilehteä käytetään järjestelmään tehtyjen tarkastuslokien ja entiteettien muutosten luetteloimiseen, tarkastelemiseen ja suodattamiseen.';
+                document.getElementById('ald').innerHTML = 'Tarkastuslokin tiedot';
+                document.getElementById('youcanview').innerHTML = 'Voit tarkastella tarkastuslokin tietoja napsauttamalla suurennuslasikuvaketta jokaisella tarkastuslokin rivillä:';
+                document.getElementById('thistab').innerHTML = '<strong>Yleistä</strong>: Tämä välilehti sisältää yksityiskohtaisia ​​tietoja tarkastuslokista.';
+                document.getElementById('actionandapp').innerHTML = '<strong>Toiminnot</strong>: Tämä välilehti näyttää luettelon toiminnoista (ohjaintoiminnot ja sovelluspalvelumenetelmäkutsut parametreineen), jotka suoritetaan verkkopyynnön aikana.';
+                document.getElementById('thistabshows').innerHTML = 'strong>Muutokset</strong>: Tämä välilehti näyttää verkkopyynnön aikana muutetut entiteetit.';
+                document.getElementById('tobecontinue').innerHTML = '<strong>(Jatkuu, koska käyttöliittymä ei näy oikein) (virhe 500)</strong>';
+                // For In this doc section
+                document.getElementById('inthisdoc').innerHTML = 'tässä asiakirjassa';
+                document.getElementById('howint').innerHTML = '<a href="#howToInstall" class="text-black">Asentaminen</a>';
+                document.getElementById('menuitss').innerHTML = '<a href="#menuItems" class="text-black">Valikkokohteet</a>';
+                document.getElementById('psgs').innerHTML = '<a href="#pages" class="text-black">Sivut</a>';
+                document.getElementById('logdet').innerHTML = '<a href="#ald" class="text-black">Tarkastuslokin tiedot</a>';
+            } 
+     
+
+            else if (selectedLanguage === 'Slovak') {
+                // Obsah tela
+document.getElementById('howToInstall').innerHTML = 'Modul pre auditovanie';
+document.getElementById('thismodimp').innerHTML = 'Tento modul implementuje systém auditovania aplikácie;';
+document.getElementById('seeaudit').innerHTML = 'Zobrazte všetky auditovacie záznamy systému a jednoducho ich filtrovate.';
+document.getElementById('viewaudit').innerHTML = 'Zobrazte detaily auditovacieho záznamu, vykonané akcie a zmenené entity.';
+document.getElementById('seeallthe').innerHTML = 'Zobrazte všetky zmeny entít a filtrovate záznamy o zmene entít.';
+document.getElementById('viewdetails').innerHTML = 'Zobraziť detaily úpravy entity.';
+document.getElementById('viewallthe').innerHTML = 'Zobraziť všetky zmeny pre danú entitu.';
+document.getElementById('thismodule').innerHTML = 'Tento modul tiež definuje widgety "Priemerný čas behu za deň" a "Pomer chýb" na opätovné použitie.';
+document.getElementById('seethemod').innerHTML = 'Pozrite si <a href="https://docs.abp.io/en/commercial/7.0/Startup-Templates/Index">prehľad funkcií modulu</a>.';
+document.getElementById('instalhow').innerHTML = 'Ako inštalovať';
+document.getElementById('identitypre').innerHTML = 'Identity je predinštalovaný v <a href="https://docs.abp.io/en/commercial/7.0/Startup-Templates/Index">štartovacích šablónach</a>. Preto ho nemusíte inštalovať manuálne.';
+document.getElementById('pes').innerHTML = 'balíčky';
+document.getElementById('thismodfoll').innerHTML = 'Tento modul dodržiava <a href="https://docs.abp.io/en/abp/latest/Best-Practices/Index">príručku pre najlepšie postupy pri vývoji modulov</a> a skladá sa z niekoľkých balíkov NuGet a NPM. Ak chcete porozumieť balíkom a ich vzťahom, prečítajte si príručku.';
+document.getElementById('menuItems').innerHTML = 'Môžete navštíviť <a href="https://abp.io/packages?moduleName=Volo.AuditLogging.Ui">zoznam balíkov modulu pre auditovanie</a>, aby ste videli súvisiace balíčky.';
+document.getElementById('menuit').innerHTML = 'položky menu';
+document.getElementById('auditlogmod').innerHTML = 'Modul pre auditovanie pridáva nasledujúce položky do menu "Hlavné menu" pod položkou "Správa":';
+document.getElementById('auditlist').innerHTML = 'Auditovanie: zoznam, zobrazenie a filtrovanie auditovacích záznamov a zmien entít.';
+document.getElementById('pages').innerHTML = 'V konštantách triedy <span class="txt-color">IAbpAuditLoggingMainMenuNames</span> sú uvedené názvy hlavných menu.';
+document.getElementById('paging').innerHTML = 'stránkovanie';
+document.getElementById('audlog').innerHTML = 'auditovacie záznamy';
+document.getElementById('tabis').innerHTML = 'Karta Auditovanie sa používa na výpis, zobrazenie a filtrovanie auditovacích záznamov a zmien entít v systéme.';
+document.getElementById('ald').innerHTML = 'Detaily auditovacieho záznamu';
+document.getElementById('youcanview').innerHTML = 'Detaily auditovacieho záznamu môžete zobraziť kliknutím na ikonu lupiča pre každý riadok:';
+document.getElementById('thistab').innerHTML = '<strong>Všeobecné</strong>: Táto karta obsahuje podrobné informácie o auditovacom zázname.';
+document.getElementById('actionandapp').innerHTML = '<strong>Akcie</strong>: Táto karta zobrazuje zoznam akcií (akcie ovládača a volania metód aplikčného servisu s parametrami), ktoré sa vykonali počas webového požiadavku.';
+document.getElementById('thistabshows').innerHTML = '<strong>Zmeny</strong>: Táto karta zobrazuje entity, ktoré boli zmenené počas webového požiadavku.';
+document.getElementById('tobecontinue').innerHTML = '<strong>(Pokračovanie, pretože užívateľské rozhranie sa nezobrazuje správne) (chyba 500)</strong>';
+// Pre sekciu V tomto dokumente
+document.getElementById('inthisdoc').innerHTML = 'v tomto dokumente';
+document.getElementById('howint').innerHTML = '<a href="#howToInstall" class="text-black">Inštalácia</a>';
+document.getElementById('menuitss').innerHTML = '<a href="#menuItems" class="text-black">Položky menu</a>';
+document.getElementById('psgs').innerHTML = '<a href="#pages" class="text-black">Stránky</a>';
+document.getElementById('logdet').innerHTML = '<a href="#ald" class="text-black">Detaily auditovacieho záznamu</a>';
+
+            } 
+            else if (selectedLanguage === 'German') {
+                // Inhaltsverzeichnis
+document.getElementById('howToInstall').innerHTML = 'Auditierungsmodul';
+document.getElementById('thismodimp').innerHTML = 'Dieses Modul implementiert das Anwendungs-Auditierungssystem.';
+document.getElementById('seeaudit').innerHTML = 'Zeigen Sie alle Systemauditprotokolle an und filtern Sie sie einfach.';
+document.getElementById('viewaudit').innerHTML = 'Zeigen Sie die Details des Auditprotokolls, die durchgeführten Aktionen und die geänderten Entitäten an.';
+document.getElementById('seeallthe').innerHTML = 'Zeigen Sie alle Entitätsänderungen und filtern Sie die Entitätsänderungsprotokolle.';
+document.getElementById('viewdetails').innerHTML = 'Zeigen Sie die Details der Entitätsänderung an.';
+document.getElementById('viewallthe').innerHTML = 'Zeigen Sie alle Änderungen für eine bestimmte Entität an.';
+document.getElementById('thismodule').innerHTML = 'Dieses Modul definiert auch die wiederverwendbaren Widgets "Durchschnittliche Laufzeit pro Tag" und "Fehlerverhältnis".';
+document.getElementById('seethemod').innerHTML = 'Sehen Sie sich <a href="https://docs.abp.io/en/commercial/7.0/Startup-Templates/Index">eine Übersicht über die Funktionen des Moduls an</a>.';
+document.getElementById('instalhow').innerHTML = 'Installation';
+document.getElementById('identitypre').innerHTML = 'Identity ist in den <a href="https://docs.abp.io/en/commercial/7.0/Startup-Templates/Index">Startvorlagen</a> vorinstalliert. Sie müssen es daher nicht manuell installieren.';
+document.getElementById('pes').innerHTML = 'Pakete';
+document.getElementById('thismodfoll').innerHTML = 'Dieses Modul entspricht den <a href="https://docs.abp.io/en/abp/latest/Best-Practices/Index">Best Practices für die Modulentwicklung</a> und besteht aus mehreren NuGet- und NPM-Paketen. Informationen zu den Paketen und deren Beziehung finden Sie in der Dokumentation.';
+document.getElementById('menuItems').innerHTML = 'Sie können die <a href="https://abp.io/packages?moduleName=Volo.AuditLogging.Ui">Liste der Auditierungsmodulpakete</a> besuchen, um verwandte Pakete zu sehen.';
+document.getElementById('menuit').innerHTML = 'Menüpunkte';
+document.getElementById('auditlogmod').innerHTML = 'Das Auditierungsmodul fügt die folgenden Menüpunkte unter "Verwaltung" zum "Hauptmenü" hinzu:';
+document.getElementById('auditlist').innerHTML = 'Auditierung: Zeigt eine Liste der Auditprotokolle und Entitätsänderungen an und ermöglicht das Filtern.';
+document.getElementById('pages').innerHTML = 'In den Konstanten der Klasse <span class="txt-color">IAbpAuditLoggingMainMenuNames</span> sind die Namen der Hauptmenüpunkte aufgeführt.';
+document.getElementById('paging').innerHTML = 'Seitennummerierung';
+document.getElementById('audlog').innerHTML = 'Auditprotokolle';
+document.getElementById('tabis').innerHTML = 'Die Auditierungs-Registerkarte wird verwendet, um Auditprotokolle und Entitätsänderungen im System aufzulisten, anzuzeigen und zu filtern.';
+document.getElementById('ald').innerHTML = 'Auditprotokolldetails';
+document.getElementById('youcanview').innerHTML = 'Die Details des Auditprotokolls können Sie anzeigen, indem Sie auf das Lupensymbol in jeder Zeile klicken:';
+document.getElementById('thistab').innerHTML = '<strong>Allgemein:</strong> Diese Registerkarte enthält detaillierte Informationen zum Auditprotokoll.';
+document.getElementById('actionandapp').innerHTML = '<strong>Aktionen:</strong> Diese Registerkarte zeigt eine Liste der Aktionen (Controlleraktionen und Methodenaufrufe des Anwendungsdiensts mit Parametern) an, die während der Webanforderung ausgeführt wurden.';
+document.getElementById('thistabshows').innerHTML = '<strong>Änderungen:</strong> Diese Registerkarte zeigt die Entitäten an, die während der Webanforderung geändert wurden.';
+document.getElementById('tobecontinue').innerHTML = '<strong>(Fortsetzung, da die Benutzeroberfläche nicht korrekt angezeigt wird) (Fehler 500)</strong>';
+// Für den Abschnitt In diesem Dokument
+document.getElementById('inthisdoc').innerHTML = 'in diesem Dokument';
+document.getElementById('howint').innerHTML = '<a href="#howToInstall" class="text-black">Installation</a>';
+document.getElementById('menuitss').innerHTML = '<a href="#menuItems" class="text-black">Menüpunkte</a>';
+document.getElementById('psgs').innerHTML = '<a href="#pages" class="text-black">Seiten</a>';
+document.getElementById('logdet').innerHTML = '<a href="#ald" class="text-black">Auditprotokolldetails</a>';
+
+            } 
+
+      else if (selectedLanguage === 'hi') {
+                // Body Content
+                document.getElementById('howToInstall').innerHTML = 'ऑडिट लॉगिंग मॉड्यूल';
+                document.getElementById('thismodimp').innerHTML = 'यह मॉड्यूल एक एप्लिकेशन के ऑडिट लॉगिंग सिस्टम को लागू करता है;';
+                document.getElementById('seeaudit').innerHTML = 'सिस्टम के सभी ऑडिट लॉग देखें और ऑडिट लॉग को आसानी से फ़िल्टर करें।';
+                document.getElementById('viewaudit').innerHTML = 'ऑडिट लॉग विवरण, क्रियाएँ और परिवर्तित एंटिटियों को देखें।';
+                document.getElementById('seeallthe').innerHTML = 'एंटिटियों के सभी बदलाव देखें और एंटिटी चेंज लॉग को फ़िल्टर करें।';
+                document.getElementById('viewdetails').innerHTML = 'एक एंटिटी चेंज का विवरण देखें।';
+                document.getElementById('viewallthe').innerHTML = 'एक एंटिटी के सभी बदलाव देखें।';
+                document.getElementById('thismodule').innerHTML = 'यह मॉड्यूल भी पुन:उपयोगी "प्रतिदिन औसत व्य execution की अवधि" और "त्रुटि दर" विजेट को परिभाषित करता है।';
+                document.getElementById('seethemod').innerHTML = 'मॉड्यूल विशेषताओं के एक अवलोकन के लिए <a href="https://docs.abp.io/en/commercial/7.0/Startup-Templates/Index">मॉड्यूल विवरण पृष्ठ</a> देखें।';
+                document.getElementById('instalhow').innerHTML = 'स्थापना कैसे करें';
+                document.getElementById('identitypre').innerHTML = 'आईडेंटिटी <a templates.></a> में पूर्व-स्थापित है। इसलिए, इसे मैन्युअल रूप से स्थापित करने की आवश्यकता नहीं है।';
+                document.getElementById('pes').innerHTML = 'पैकेज';
+                document.getElementById('thismodfoll').innerHTML = 'यह मॉड्यूल <a href="https://docs.abp.io/en/abp/latest/Best-Practices/Index">मॉड्यूल विकास के सर्वोत्तम प्रथाओं गाइड</a> का पालन करता है और कई न्यूगेट और एनपीएम पैकेज से मिलकर बनता है। अगर आप पैकेजों और उनके रिश्तों को समझना चाहते हैं, तो गाइड देखें।';
+                document.getElementById('menuItems').innerHTML = 'आप <a href="https://abp.io/packages?moduleName=Volo.AuditLogging.Ui">ऑडिट लॉगिंग मॉड्यूल पैकेज सूची पृष्ठ</a> पर जाकर इस मॉड्यूल से संबंधित पैकेजों की सूची देख सकते हैं।';
+                document.getElementById('menuit').innerHTML = 'मेन्यू आइटम्स';
+                document.getElementById('auditlogmod').innerHTML = 'ऑडिट लॉग मॉड्यूल "मुख्य" मेन्यू में, "प्रशासन" मेन्यू आइटम के तहत निम्नलिखित आइटम्स जोड़ता है:';
+                document.getElementById('auditlist').innerHTML = 'ऑडिट लॉग्स: ऑडिट लॉग को सूचीबद्ध करें, देखें और फ़िल्टर करें और एंटिटी बदलाव।';
+                document.getElementById('pages').innerHTML = '<span class="txt-color">IAbpAuditLoggingMainMenuNames</span> वर्ग में मेन्यू आइटम नामों के लिए स्थिरांक हैं।';
+                document.getElementById('paging').innerHTML = 'पृष्ठें';
+                document.getElementById('audlog').innerHTML = 'ऑडिट लॉग्स';
+                document.getElementById('tabis').innerHTML = 'ऑडिट लॉग्स टैब का उपयोग सिस्टम में ऑडिट लॉग्स और एंटिटी बदलावों की सूची बनाने, देखने और फ़िल्टर करने के लिए किया जाता है।';
+                document.getElementById('ald').innerHTML = 'ऑडिट लॉग विवरण';
+                document.getElementById('youcanview').innerHTML = 'आप प्रत्येक ऑडिट लॉग पंक्ति पर करते हुए चश्मा आइकन पर क्लिक करके ऑडिट लॉग का विवरण देख सकते हैं:';
+                document.getElementById('thistab').innerHTML = '<strong>संपूर्ण</strong>: यह टैब ऑडिट लॉग के विस्तृत जानकारी को संबोधित करता है।';
+                document.getElementById('actionandapp').innerHTML = '<strong>क्रियाएँ</strong>: यह टैब एक वेब अनुरोध के दौरान निष्पादित किए गए क्रियाएँ (कंट्रोलर क्रियाएँ और एप्लिकेशन सेवा विधि कॉल) की सूची दिखाता है जिनमें उनके पैरामीटर्स शामिल होते हैं।';
+                document.getElementById('thistabshows').innerHTML = '<strong>परिवर्तन</strong>: यह टैब वेब अनुरोध के दौरान परिवर्तित एंटिटियों को दिखाता है।';
+                document.getElementById('tobecontinue').innerHTML = '<strong>(जारी रहेगा क्योंकि UI सही ढंग से रेंडर नहीं हो रहा है) (500 त्रुटि)</strong>';
+                // For In this doc section
+                document.getElementById('inthisdoc').innerHTML = 'इस दस्तावेज़ में';
+                document.getElementById('howint').innerHTML = '<a href="#howToInstall" class="text-black">स्थापना कैसे करें</a>';
+                document.getElementById('menuitss').innerHTML = '<a href="#menuItems" class="text-black">मेन्यू आइटम्स</a>';
+                document.getElementById('psgs').innerHTML = '<a href="#pages" class="text-black">पृष्ठें</a>';
+                document.getElementById('logdet').innerHTML = '<a href="#ald" class="text-black">ऑडिट लॉग विवरण</a>';
+
+            }
+            else if (selectedLanguage === 'it') {
+                document.getElementById('howToInstall').innerHTML = 'Modulo di registrazione delle verifiche';
+                document.getElementById('thismodimp').innerHTML = 'Questo modulo implementa il sistema di registrazione delle verifiche di un\'applicazione;';
+                document.getElementById('seeaudit').innerHTML = 'Visualizza tutti i log di verifica del sistema e filtra facilmente i log di verifica.';
+                document.getElementById('viewaudit').innerHTML = 'Visualizza i dettagli del log di verifica, azioni eseguite e entità modificate.';
+                document.getElementById('seeallthe').innerHTML = 'Visualizza tutte le modifiche delle entità e filtra i log delle modifiche delle entità.';
+                document.getElementById('viewdetails').innerHTML = 'Visualizza i dettagli di una modifica dell\'entità.';
+                document.getElementById('viewallthe').innerHTML = 'Visualizza tutte le modifiche di un\'entità.';
+                document.getElementById('thismodule').innerHTML = 'Questo modulo definisce anche i widget riutilizzabili "Durata media dell\'esecuzione al giorno" e "Tasso di errore".';
+                document.getElementById('seethemod').innerHTML = 'Vedi <a href="https://docs.abp.io/en/commercial/7.0/Startup-Templates/Index">la pagina di descrizione del modulo</a> per una panoramica delle funzionalità del modulo.';
+                document.getElementById('instalhow').innerHTML = 'Come installare';
+                document.getElementById('identitypre').innerHTML = 'Identity è preinstallato in <a templates.</a> Quindi, non è necessario installarlo manualmente.';
+                document.getElementById('pes').innerHTML = 'Pacchetti';
+                document.getElementById('thismodfoll').innerHTML = 'Questo modulo segue la <a href="https://docs.abp.io/en/abp/latest/Best-Practices/Index">guida alle migliori pratiche per lo sviluppo di moduli</a> e consiste in diversi pacchetti NuGet e NPM. Consulta la guida se vuoi capire i pacchetti e le relazioni tra di essi.';
+                document.getElementById('menuItems').innerHTML = 'Puoi visitare la <a href="https://abp.io/packages?moduleName=Volo.AuditLogging.Ui">pagina dell\'elenco dei pacchetti del modulo di registrazione delle verifiche</a> per vedere l\'elenco dei pacchetti correlati a questo modulo.';
+                document.getElementById('menuit').innerHTML = 'Voci di menu';
+                document.getElementById('auditlogmod').innerHTML = 'Il modulo dei log di verifica aggiunge le seguenti voci al menu "Principale", sotto la voce di menu "Amministrazione":';
+                document.getElementById('auditlist').innerHTML = 'Log di verifica: elenco, visualizzazione e filtro dei log di verifica e delle modifiche delle entità.';
+                document.getElementById('pages').innerHTML = 'La classe <span class="txt-color">IAbpAuditLoggingMainMenuNames</span> contiene le costanti per i nomi delle voci di menu.';
+                document.getElementById('paging').innerHTML = 'Pagine';
+                document.getElementById('audlog').innerHTML = 'Log di verifica';
+                document.getElementById('tabis').innerHTML = 'La scheda dei log di verifica viene utilizzata per elencare, visualizzare e filtrare i log di verifica e le modifiche delle entità nel sistema.';
+                document.getElementById('ald').innerHTML = 'Dettagli del log di verifica';
+                document.getElementById('youcanview').innerHTML = 'Puoi visualizzare i dettagli di un log di verifica facendo clic sull\'icona di ingrandimento su ciascuna riga del log di verifica:';
+                document.getElementById('thistab').innerHTML = '<strong>Complessivamente</strong>: Questa scheda contiene informazioni dettagliate sul log di verifica.';
+                document.getElementById('actionandapp').innerHTML = '<strong>Azioni</strong>: Questa scheda mostra l\'elenco delle azioni (azioni del controller e chiamate di metodi del servizio dell\'applicazione con i relativi parametri) eseguite durante una richiesta web.';
+                document.getElementById('thistabshows').innerHTML = '<strong>Modifiche</strong>: Questa scheda mostra le entità modificate durante la richiesta web.';
+                document.getElementById('tobecontinue').innerHTML = '<strong>(Continua poiché l\'interfaccia utente non viene visualizzata correttamente) (errore 500)</strong>';
+                // For In this doc section
+                document.getElementById('inthisdoc').innerHTML = 'In questo documento';
+                document.getElementById('howint').innerHTML = '<a href="#howToInstall" class="text-black">Come installare</a>';
+                document.getElementById('menuitss').innerHTML = '<a href="#menuItems" class="text-black">Voci di menu</a>';
+                document.getElementById('psgs').innerHTML = '<a href="#pages" class="text-black">Pagine</a>';
+                document.getElementById('logdet').innerHTML = '<a href="#ald" class="text-black">Dettagli del log di verifica</a>';
+
+            }
+            else if (selectedLanguage === 'ru') {
+                // Body Content
+                document.getElementById('howToInstall').innerHTML = 'Модуль аудита журналирования';
+                document.getElementById('thismodimp').innerHTML = 'Этот модуль реализует систему аудита журналирования приложения;';
+                document.getElementById('seeaudit').innerHTML = 'Просматривайте все журналы аудита системы и легко фильтруйте журналы аудита.';
+                document.getElementById('viewaudit').innerHTML = 'Просматривайте детали журнала аудита, выполненные действия и измененные сущности.';
+                document.getElementById('seeallthe').innerHTML = 'Просматривайте все изменения сущностей и фильтруйте журналы изменений сущностей.';
+                document.getElementById('viewdetails').innerHTML = 'Просматривайте детали изменения сущности.';
+                document.getElementById('viewallthe').innerHTML = 'Просматривайте все изменения сущности.';
+                document.getElementById('thismodule').innerHTML = 'Этот модуль также определяет переиспользуемые виджеты "Среднее время выполнения за день" и "Ошибка в процентах".';
+                document.getElementById('seethemod').innerHTML = 'См. <a href="https://docs.abp.io/en/commercial/7.0/Startup-Templates/Index">страницу описания модуля</a> для обзора функций модуля.';
+                document.getElementById('instalhow').innerHTML = 'Как установить';
+                document.getElementById('identitypre').innerHTML = 'Identity предустановлен в <a templates.</a> Поэтому его не нужно устанавливать вручную.';
+                document.getElementById('pes').innerHTML = 'Пакеты';
+                document.getElementById('thismodfoll').innerHTML = 'Этот модуль следует <a href="https://docs.abp.io/en/abp/latest/Best-Practices/Index">руководству по лучшим практикам разработки модулей</a> и состоит из нескольких пакетов NuGet и NPM. См. руководство, если вы хотите понять пакеты и связи между ними.';
+                document.getElementById('menuItems').innerHTML = 'Вы можете посетить <a href="https://abp.io/packages?moduleName=Volo.AuditLogging.Ui">страницу списка пакетов модуля аудита журналирования</a>, чтобы увидеть список связанных с этим модулем пакетов.';
+                document.getElementById('menuit').innerHTML = 'Пункты меню';
+                document.getElementById('auditlogmod').innerHTML = 'Модуль журналов аудита добавляет следующие пункты в меню "Main", в раздел "Administration":';
+                document.getElementById('auditlist').innerHTML = 'Журналы аудита: Просматривайте, просматривайте и фильтруйте журналы аудита и изменения сущностей.';
+                document.getElementById('pages').innerHTML = 'Класс <span class="txt-color">IAbpAuditLoggingMainMenuNames</span> содержит константы для имен пунктов меню.';
+                document.getElementById('paging').innerHTML = 'Страницы';
+                document.getElementById('audlog').innerHTML = 'Журналы аудита';
+                document.getElementById('tabis').innerHTML = 'Вкладка "Журналы аудита" используется для перечисления, просмотра и фильтрации журналов аудита и изменений сущностей в системе.';
+                document.getElementById('ald').innerHTML = 'Детали журнала аудита';
+                document.getElementById('youcanview').innerHTML = 'Вы можете просматривать детали журнала аудита, нажав на значок увеличительного стекла на каждой строке журнала аудита:';
+                document.getElementById('thistab').innerHTML = '<strong>Общее</strong>: Эта вкладка содержит подробную информацию о журнале аудита.';
+                document.getElementById('actionandapp').innerHTML = '<strong>Действия</strong>: Эта вкладка показывает список действий (действия контроллера и вызовы методов службы приложения с их параметрами), выполненных во время веб-запроса.';
+                document.getElementById('thistabshows').innerHTML = '<strong>Изменения</strong>: Эта вкладка показывает измененные сущности во время веб-запроса.';
+                document.getElementById('tobecontinue').innerHTML = '<strong>(Продолжение, так как пользовательский интерфейс неправильно отображается)(Ошибка 500)</strong>';
+
+                // For In this doc section
+                document.getElementById('inthisdoc').innerHTML = 'В этом документе';
+                document.getElementById('howint').innerHTML = '<a href="#howToInstall" class="text-black">Как установить</a>';
+                document.getElementById('menuitss').innerHTML = '<a href="#menuItems" class="text-black">Пункты меню</a>';
+                document.getElementById('psgs').innerHTML = '<a href="#pages" class="text-black">Страницы</a>';
+                document.getElementById('logdet').innerHTML = '<a href="#ald" class="text-black">Детали журнала аудита</a>';
+            }
+            else if (selectedLanguage === 'zh') {
+                // Body Content
+                document.getElementById('howToInstall').innerHTML = '审计日志模块';
+                document.getElementById('thismodimp').innerHTML = '此模块实现应用程序的审计日志系统；';
+                document.getElementById('seeaudit').innerHTML = '查看系统的所有审计日志并轻松筛选审计日志。';
+                document.getElementById('viewaudit').innerHTML = '查看审计日志详细信息、执行操作和更改的实体。';
+                document.getElementById('seeallthe').innerHTML = '查看所有实体的更改并筛选实体更改日志。';
+                document.getElementById('viewdetails').innerHTML = '查看实体更改的详细信息。';
+                document.getElementById('viewallthe').innerHTML = '查看实体的所有更改。';
+                document.getElementById('thismodule').innerHTML = '此模块还定义了可重用的“每日平均执行时间”和“错误率”小部件。';
+                document.getElementById('seethemod').innerHTML = '请查看<a href="https://docs.abp.io/en/commercial/7.0/Startup-Templates/Index">模块描述页面</a>以了解模块功能的概述。';
+                document.getElementById('instalhow').innerHTML = '安装方法';
+                document.getElementById('identitypre').innerHTML = '身份验证预先安装在<a templates.</a>中，因此无需手动安装。';
+                document.getElementById('pes').innerHTML = '软件包';
+                document.getElementById('thismodfoll').innerHTML = '此模块遵循<a href="https://docs.abp.io/en/abp/latest/Best-Practices/Index">模块开发最佳实践指南</a>，由多个NuGet和NPM软件包组成。如果想了解软件包及其之间的关系，请查看该指南。';
+                document.getElementById('menuItems').innerHTML = '您可以访问<a href="https://abp.io/packages?moduleName=Volo.AuditLogging.Ui">审计日志模块软件包列表页面</a>，以查看与此模块相关的软件包列表。';
+                document.getElementById('menuit').innerHTML = '菜单项';
+                document.getElementById('auditlogmod').innerHTML = '审计日志模块将以下内容添加到“主菜单”中，位于“管理”菜单项下：';
+                document.getElementById('auditlist').innerHTML = '审计日志：列出、查看和筛选审计日志和实体更改。';
+                document.getElementById('pages').innerHTML = '<span class="txt-color">IAbpAuditLoggingMainMenuNames</span>类包含菜单项名称的常量。';
+                document.getElementById('paging').innerHTML = '页面';
+                document.getElementById('audlog').innerHTML = '审计日志';
+                document.getElementById('tabis').innerHTML = '审计日志选项卡用于列出、查看和筛选系统中的审计日志和实体更改。';
+                document.getElementById('ald').innerHTML = '审计日志详细信息';
+                document.getElementById('youcanview').innerHTML = '您可以通过单击每个审计日志行上的放大镜图标查看审计日志的详细信息：';
+                document.getElementById('thistab').innerHTML = '<strong>总体</strong>：此选项卡包含有关审计日志的详细信息。';
+                document.getElementById('actionandapp').innerHTML = '<strong>操作</strong>：此选项卡显示在Web请求期间执行的操作（控制器操作和应用程序服务方法调用及其参数）的列表。';
+                document.getElementById('thistabshows').innerHTML = '<strong>更改</strong>：此选项卡显示Web请求期间更改的实体。';
+                document.getElementById('tobecontinue').innerHTML = '<strong>（继续，因为UI未正确渲染）（500错误）</strong>';
+
+                // For In this doc section
+                document.getElementById('inthisdoc').innerHTML = '本文内容';
+                document.getElementById('howint').innerHTML = '<a href="#howToInstall" class="text-black">安装方法</a>';
+                document.getElementById('menuitss').innerHTML = '<a href="#menuItems" class="text-black">菜单项</a>';
+                document.getElementById('psgs').innerHTML = '<a href="#pages" class="text-black">页面</a>';
+                document.getElementById('logdet').innerHTML = '<a href="#ald" class="text-black">审计日志详细信息</a>';
+            }
+            else if (selectedLanguage === 'ar') {
+                // Body Content
+                document.getElementById('howToInstall').innerHTML = 'وحدة تسجيل المراجعة';
+                document.getElementById('thismodimp').innerHTML = 'تقوم هذه الوحدة بتنفيذ نظام تسجيل المراجعة للتطبيق؛';
+                document.getElementById('seeaudit').innerHTML = 'شاهد جميع سجلات المراجعة في النظام وقم بتصفية سجلات المراجعة بسهولة.';
+                document.getElementById('viewaudit').innerHTML = 'عرض تفاصيل سجل المراجعة، الإجراءات التي تم تنفيذها، والكيانات التي تم تغييرها.';
+                document.getElementById('seeallthe').innerHTML = 'شاهد جميع التغييرات على الكيانات وقم بتصفية سجلات تغييرات الكيان.';
+                document.getElementById('viewdetails').innerHTML = 'عرض تفاصيل تغيير الكيان.';
+                document.getElementById('viewallthe').innerHTML = 'عرض جميع التغييرات على كيان.';
+                document.getElementById('thismodule').innerHTML = 'تحدد هذه الوحدة أيضًا عناصر واجهة المستخدم القابلة لإعادة الاستخدام "مدة التنفيذ المتوسطة يوميًا" و "معدل الأخطاء".';
+                document.getElementById('seethemod').innerHTML = 'شاهد <a href="https://docs.abp.io/en/commercial/7.0/Startup-Templates/Index">صفحة وصف الوحدة</a> للحصول على نظرة عامة على ميزات الوحدة.';
+                document.getElementById('instalhow').innerHTML = 'كيفية التثبيت';
+                document.getElementById('identitypre').innerHTML = 'الهوية مثبتة مسبقًا في <a templates.</a> لذلك، لا حاجة لتثبيتها يدويًا.';
+                document.getElementById('pes').innerHTML = 'حزم';
+                document.getElementById('thismodfoll').innerHTML = 'تتبع هذه الوحدة <a href="https://docs.abp.io/en/abp/latest/Best-Practices/Index">دليل ممارسات تطوير الوحدات</a> وتتكون من عدة حزم NuGet و NPM. اطلع على الدليل إذا كنت ترغب في فهم الحزم والعلاقات بينها.';
+                document.getElementById('menuItems').innerHTML = 'يمكنك زيارة <a href="https://abp.io/packages?moduleName=Volo.AuditLogging.Ui">صفحة قائمة حزم وحدة تسجيل المراجعة</a> لرؤية قائمة الحزم المرتبطة بهذه الوحدة.';
+                document.getElementById('menuit').innerHTML = 'عناصر القائمة';
+                document.getElementById('auditlogmod').innerHTML = 'تضيف وحدة سجلات المراجعة العناصر التالية إلى القائمة الرئيسية تحت عنصر القائمة "الإدارة":';
+                document.getElementById('auditlist').innerHTML = 'سجلات المراجعة: قائمة وعرض وتصفية سجلات المراجعة وتغييرات الكيان.';
+                document.getElementById('pages').innerHTML = 'تحتوي فئة <span class="txt-color">IAbpAuditLoggingMainMenuNames</span> على ثوابت أسماء عناصر القائمة.';
+                document.getElementById('paging').innerHTML = 'صفحات';
+                document.getElementById('audlog').innerHTML = 'سجلات المراجعة';
+                document.getElementById('tabis').innerHTML = 'يُستخدم علامة التبويب سجلات المراجعة لعرض قائمة وعرض وتصفية سجلات المراجعة وتغييرات الكيانات في النظام.';
+                document.getElementById('ald').innerHTML = 'تفاصيل سجل المراجعة';
+                document.getElementById('youcanview').innerHTML = 'يمكنك عرض تفاصيل سجل المراجعة عن طريق النقر على أيقونة المكبر على كل سطر في سجل المراجعة:';
+                document.getElementById('thistab').innerHTML = '<strong>الإجمالي</strong>: تحتوي هذه العلامة التبويب على معلومات مفصلة حول سجل المراجعة.';
+                document.getElementById('actionandapp').innerHTML = '<strong>الإجراءات</strong>: تظهر هذه العلامة التبويب قائمة الإجراءات (إجراءات المتحكم ومكالمات خدمة التطبيق مع معلماتها) المنفذة خلال طلب ويب.';
+                document.getElementById('thistabshows').innerHTML = '<strong>التغييرات</strong>: تظهر هذه العلامة التبويب الكيانات المتغيرة خلال طلب الويب.';
+                document.getElementById('tobecontinue').innerHTML = '<strong>(سيتم الاستمرار بعد حل مشكلة عدم تقديم واجهة المستخدم بشكل صحيح) (خطأ 500)</strong>';
+                // For In this doc section
+                document.getElementById('inthisdoc').innerHTML = 'في هذا المستند';
+                document.getElementById('howint').innerHTML = '<a href="#howToInstall" class="text-black">كيفية التثبيت</a>';
+                document.getElementById('menuitss').innerHTML = '<a href="#menuItems" class="text-black">عناصر القائمة</a>';
+                document.getElementById('psgs').innerHTML = '<a href="#pages" class="text-black">الصفحات</a>';
+                document.getElementById('logdet').innerHTML = '<a href="#ald" class="text-black">تفاصيل سجل المراجعة</a>';
+
+            }
+
+            else if (selectedLanguage === 'spanish') {
+            } else {
+
+            }
+        });
+    });
+</script>
+
+</html>
