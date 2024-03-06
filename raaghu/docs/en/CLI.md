@@ -7,24 +7,24 @@ Raaghu CLI (Command Line Interface) is a command line tool to perform some commo
 Raaghu CLI is a [dotnet global tool](https://www.nuget.org/packages/Waiin.Raaghu.Cli). Install it using a command line window:
 
 ````bash
-dotnet tool install Waiin.raaghu.Cli
+dotnet tool install Waiin.Raaghu.Cli
 ````
 ````bash
-dotnet tool install -g Waiin.raaghu.Cli
+dotnet tool install -g Waiin.Raaghu.Cli
 ````
 ````bash
-dotnet tool install --global Waiin.raaghu.Cli
+dotnet tool install --global Waiin.Raaghu.Cli
 ````
 
 To update an existing installation:
 ````bash
-dotnet tool update Waiin.raaghu.Cli
+dotnet tool update Waiin.Raaghu.Cli
 ````
 ````bash
-dotnet tool update -g Waiin.raaghu.Cli
+dotnet tool update -g Waiin.Raaghu.Cli
 ````
 ````bash
-dotnet tool update --global Waiin.raaghu.Cli
+dotnet tool update --global Waiin.Raaghu.Cli
 ````
 ## Commands
 

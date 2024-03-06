@@ -120,4 +120,4 @@ logged out successfully
   ```  
 ## See Also
 
-* [raaghu CLI documentation](CLI.md)
+* [Raaghu CLI Documentation](CLI.md)
