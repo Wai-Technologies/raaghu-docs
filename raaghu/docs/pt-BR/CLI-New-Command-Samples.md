@@ -1,43 +1,46 @@
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+</style>
 ## Raaghu CLI - Comandos de Exemplo
-O comando raaghu cria uma solução raaghu ou outros artefatos baseados em um modelo raaghu. O raaghu CLI possui vários parâmetros para criar uma nova solução raaghu. Neste documento, mostraremos alguns comandos de exemplo para criar uma nova solução. Os provedores de banco de dados disponíveis são Entity Framework Core e MongoDB. Todos os comandos começam com raaghu.
+O comando raaghu cria uma soluï¿½ï¿½o raaghu ou outros artefatos baseados em um modelo raaghu. O raaghu CLI possui vï¿½rios parï¿½metros para criar uma nova soluï¿½ï¿½o raaghu. Neste documento, mostraremos alguns comandos de exemplo para criar uma nova soluï¿½ï¿½o. Os provedores de banco de dados disponï¿½veis sï¿½o Entity Framework Core e MongoDB. Todos os comandos comeï¿½am com raaghu.
 
 * Este projeto consiste nos seguintes comandos: help, new, login, login -info, logout.
 
 
 ## help
-Exibe todos os comandos disponíveis.
+Exibe todos os comandos disponï¿½veis.
 
 Comando de ajuda:
-````bash
+````json
 raaghu help
 ````
-Visualização:
+Visualizaï¿½ï¿½o:
 
-````bash
+````json
 raaghu help
 Raaghu Cli
 
-Comandos disponíveis:
-   > raaghu help                    Mostra ajuda da linha de comando. Escreva `raaghu help <comando>` para um comando específico
-   > raaghu new [nome-da-solução]  Executa o Comando New para Criar uma Nova Solução Raaghu
+Comandos disponï¿½veis:
+   > raaghu help                    Mostra ajuda da linha de comando. Escreva `raaghu help <comando>` para um comando especï¿½fico
+   > raaghu new [nome-da-soluï¿½ï¿½o]  Executa o Comando New para Criar uma Nova Soluï¿½ï¿½o Raaghu
    > raaghu login                   Executa o Comando de Login
-   > raaghu login -info             Executa o Comando de Informações de Login
+   > raaghu login -info             Executa o Comando de Informaï¿½ï¿½es de Login
    > raaghu logout                  Executa o Comando de Logout
 ````
 
 
 
 ## new
-* Cria uma nova solução.
+* Cria uma nova soluï¿½ï¿½o.
 Comando new:
 
-````bash
+````json
 raaghu help new 
 ````
 
-Visualização:
+Visualizaï¿½ï¿½o:
 
-````bash
+````json
 raaghu help new
 Raaghu Cli
 
@@ -51,31 +54,31 @@ Example(s):
    raaghu new my-project
    raaghu new my-project --version 1.0.0
 ````
-## Criar uma solução de uma versão específica
-Quando você cria uma solução, ela sempre é criada com a versão mais recente. Para criar um projeto de uma versão mais antiga, você pode passar o parâmetro --version ou -v.
+## Criar uma soluï¿½ï¿½o de uma versï¿½o especï¿½fica
+Quando vocï¿½ cria uma soluï¿½ï¿½o, ela sempre ï¿½ criada com a versï¿½o mais recente. Para criar um projeto de uma versï¿½o mais antiga, vocï¿½ pode passar o parï¿½metro --version ou -v.
 
-* Criar uma solução a partir da v7.4.4, com interface de usuário Angular e Entity Framework Core.
+* Criar uma soluï¿½ï¿½o a partir da v7.4.4, com interface de usuï¿½rio Angular e Entity Framework Core.
 
-````bash
+````json
 raaghu new RaaghuStoryBook --version 7.4.4
 ````
-````bash
+````json
 raaghu new RaaghuStoryBook -v 7.4.4
 ````
 
-Para obter a lista de versões do raaghu, confira o seguinte link: https://www.nuget.org/packages/Volo.raaghu.Core/
+Para obter a lista de versï¿½es do raaghu, confira o seguinte link: https://www.nuget.org/packages/Volo.raaghu.Core/
 
 
 ## login
 * Usado para fazer login na conta.
 Comando :
 
-````bash
+````json
 raaghu login 
 ````
 
-Visualização:
-````bash
+Visualizaï¿½ï¿½o:
+````json
 raaghu login
 Raaghu Cli
 Enter Email: emailId
@@ -87,12 +90,12 @@ License verification successful. Tool functionality can proceed.
 * Usado para visualizar a conta de login.
 Comando login -info:
 
-````bash
+````json
 raaghu login -info
 ````
-Visualização:
+Visualizaï¿½ï¿½o:
 
-````bash
+````json
 raaghu login -info
 Raaghu Cli
 Executing Login Info command...
@@ -102,12 +105,12 @@ emailId is active.
 * Usado para fazer logout da conta.
 Comando logout:
 
-````bash
+````json
 raaghu logout
 ````
-Visualização:
+Visualizaï¿½ï¿½o:
 
-````bash
+````json
 raaghu logout
 Raaghu Cli
 Executing Logout command...
@@ -116,5 +119,5 @@ logged out successfully
 
 ````
 
-## Veja também
-[Documentação do raaghu CLI](CLI.md)
+## Veja tambï¿½m
+[Documentaï¿½ï¿½o do raaghu CLI](CLI.md)

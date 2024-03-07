@@ -1,3 +1,6 @@
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+</style>
 # Raaghu CLI - 示例命令
 
 `raaghu` 命令基于 raaghu 模板创建一个 raaghu 解决方案或其他工件。[raaghu CLI](CLI.md) 具有多个参数用于创建新的 raaghu 解决方案。在这个文档中，我们将展示一些创建新解决方案的示例命令。可用的数据库提供程序包括 `Entity Framework Core` 和 `MongoDB`。所有命令都以 `raaghu` 开头。
@@ -11,13 +14,13 @@
 
 帮助命令：
 
-```bash
+```json
 raaghu help
 ```
 
 视图：
 
-```bash
+```json
 raaghu help
 Raaghu Cli
 
@@ -36,13 +39,13 @@ Raaghu Cli
 
 新建命令：
 
-```bash
+```json
 raaghu help new 
 ```
 
 视图：
 
-```bash
+```json
 raaghu help new
 Raaghu Cli
 
@@ -65,10 +68,10 @@ Example(s):
 
 * 从 v7.4.4 创建一个解决方案，使用 Angular UI 和 Entity Framework Core。
 
-  ```bash
+  ```json
   raaghu new RaaghuStoryBook --version 7.4.4
   ```
-   ```bash
+   ```json
   raaghu new RaaghuStoryBook -v 7.4.4
   ```
 
@@ -81,13 +84,13 @@ Example(s):
 
 登录命令：
 
-```bash
+```json
 raaghu login 
 ```
 
 视图：
 
-```bash
+```json
 raaghu login
 Raaghu Cli
 Enter Email: emailId
@@ -101,13 +104,13 @@ License verification successful. Tool functionality can proceed.
 
 登录信息命令：
 
-```bash
+```json
 raaghu login -info
 ```
 
 视图：
 
-```bash
+```json
 raaghu login -info
 Raaghu Cli
 Executing Login Info command...
@@ -120,13 +123,13 @@ emailId is active.
 
 注销命令：
 
-```bash
+```json
 raaghu logout
 ```
 
 视图：
 
-```bash
+```json
 raaghu logout
 Raaghu Cli
 Executing Logout command...

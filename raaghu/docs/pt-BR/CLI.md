@@ -1,27 +1,30 @@
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+</style>
 ## Raaghu CLI
 Raaghu CLI (Interface de Linha de Comando) é uma ferramenta de linha de comando para realizar algumas operações comuns para soluções baseadas em Raaghu.
 
 ## Instalação
 Raaghu CLI é uma ferramenta global dotnet. Instale-a usando uma janela de linha de comando:
 
-````bash
+````json
 dotnet tool install Waiin.Raaghu.Cli
 ````
-````bash
+````json
 dotnet tool install -g Waiin.Raaghu.Cli
 ````
-````bash
+````json
 dotnet tool install --global Waiin.Raaghu.Cli
 ````
 
 To update an existing installation:
-````bash
+````json
 dotnet tool update Waiin.Raaghu.Cli
 ````
-````bash
+````json
 dotnet tool update -g Waiin.Raaghu.Cli
 ````
-````bash
+````json
 dotnet tool update --global Waiin.Raaghu.Cli
 ````
 
@@ -41,13 +44,13 @@ Mostra os usos básicos do Raaghu CLI.
 
 Uso:
 
-````bash
+````json
 raaghu help
 ````
 
 Exemplos:
 
-````bash
+````json
 raaghu help        # Mostra uma ajuda geral.
 raaghu help new    # Mostra ajuda sobre o comando "new".
 ````
@@ -56,11 +59,11 @@ raaghu help new    # Mostra ajuda sobre o comando "new".
 Gera uma nova solução com base nos modelos de inicialização do Raaghu.
 
 Uso:
-````bash
+````json
 raaghu new <nome-da-solução> [opções]
 ````
 Exemplo:
-````bash
+````json
 raaghu new RaaghuStoryBook 
 ````
 * raaghu_StoryBook é o nome da solução aqui.
@@ -71,25 +74,25 @@ Para mais exemplos, vá para [Amostras de Criação de Solução Raaghu CLI](CLI
 ### Opções
 * --version ou -v: Especifica a versão do Raaghu. Se a versão não for especificada, será automaticamente utilizada a versão mais recente para criar a solução.
 
-````bash
+````json
 raaghu new <nome-da-solução> --version <versão>
 ````
-````bash
+````json
 raaghu new <nome-da-solução> -v <versão>
 ````
 
 Exemplo:
 
-````bash
+````json
 raaghu new RaaghuStoryBook  --version 7.4.4
 ````
-````bash
+````json
 raaghu new RaaghuStoryBook  -v 7.4.4
 ````
 
 ## login
 Algumas funcionalidades do CLI requerem estar logado na plataforma raaghu.io. Para fazer login com seu nome de usuário, escreva:
-````bash
+````json
 raaghu login <nome-de-usuário>                           # Permite que você digite sua senha de forma oculta
 ````
 Um novo login com uma sessão já ativa substitui a sessão anterior.
@@ -97,13 +100,13 @@ Um novo login com uma sessão já ativa substitui a sessão anterior.
 ## login-info
 Mostra suas informações de login, como Nome de usuário.
 
-````bash
+````json
 raaghu login-info
 ````
 ## logout
 Desconecta você, removendo o token de sessão do seu computador.
 
-````bash
+````json
 raaghu logout
 ````
 
