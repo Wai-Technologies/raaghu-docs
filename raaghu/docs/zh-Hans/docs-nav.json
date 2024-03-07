@@ -56,6 +56,17 @@
         }
       ]
     },
+
+    {
+      "text": "命令列介面",
+      "path": "CLI.md",
+      "items": [
+        {
+          "text": "新命令示例",
+          "path": "CLI-New-Command-Samples.md"
+        }
+      ]
+    },
     {
       "text": "样品",
       "path": "All-Samples.md",

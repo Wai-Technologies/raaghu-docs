@@ -72,7 +72,7 @@ To get the raaghu version list, checkout following link: https://www.nuget.org/p
 
 * Used for login to account.
 
-new Command :
+login Command :
 
   ```bash
   raaghu login 
