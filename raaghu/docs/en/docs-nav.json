@@ -61,6 +61,16 @@
       ]
     },
     {
+      "text": "CLI",
+      "path": "CLI.md",
+      "items": [
+        {
+          "text": "Examples for new commands",
+          "path": "CLI-New-Command-Samples.md"
+        }
+      ]
+    },
+    {
       "text": "Samples",
       "path": "All-Samples.md",
       "items": [

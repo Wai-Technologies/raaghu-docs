@@ -57,6 +57,16 @@
       ]
     },
     {
+      "text": "CLI",
+      "path": "CLI.md",
+      "items": [
+        {
+          "text": "Exemplos para novos comandos",
+          "path": "CLI-New-Command-Samples.md"
+        }
+      ]
+    },
+    {
       "text": "Amostras",
       "path": "All-Samples.md",
       "items": [
@@ -150,7 +160,7 @@
     },
     {
       "text": "Tema da IU",
-       "path": "UI-Theme.md"
+      "path": "UI-Theme.md"
     },
     {
       "text": "Livro de histórias",
@@ -158,7 +168,7 @@
     },
     {
       "text": "IU de reação",
-      "path" : "Cutomization.md",
+      "path": "Cutomization.md",
       "items": [
         {
           "text": "Costumização",
@@ -166,7 +176,7 @@
         }
       ]
     },
-     {
+    {
       "text": "Liberar informações",
       "path": "Realse Notes.md",
       "items": [
@@ -176,6 +186,6 @@
         }
       ]
     }
-    
+
   ]
 }
