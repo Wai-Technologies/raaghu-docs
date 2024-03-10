@@ -1,3 +1,6 @@
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+</style>
 # Raaghu CLI - Sample Commands 
 
 The `raaghu` command creates an raaghu solution or other artifacts based on an raaghu template. [raaghu CLI](CLI.md) has several parameters to create a new raaghu solution. In this document we will show you some sample commands to create a new solution. Available database providers are `Entity Framework Core` and `MongoDB`. All the commands starts with `raaghu`.
@@ -10,11 +13,11 @@ The `raaghu` command creates an raaghu solution or other artifacts based on an r
 
 help Command :
 
-  ```bash
+  ```json
   raaghu help
   ```
   View:
-```bash
+```json
 raaghu help
 Raaghu Cli
 
@@ -32,11 +35,11 @@ Available commands:
 
 new Command :
 
-  ```bash
+  ```json
   raaghu help new 
   ```
   View:
-```bash
+```json
 raaghu help new
 Raaghu Cli
 
@@ -58,10 +61,10 @@ When you create a solution, it always creates with the latest version. To create
 
 * Create a solution from v7.4.4, with Angular UI and Entity Framework Core.
 
-  ```bash
+  ```json
   raaghu new RaaghuStoryBook --version 7.4.4
   ```
-   ```bash
+   ```json
   raaghu new RaaghuStoryBook -v 7.4.4
   ```
 
@@ -74,11 +77,11 @@ To get the raaghu version list, checkout following link: https://www.nuget.org/p
 
 login Command :
 
-  ```bash
+  ```json
   raaghu login 
   ```
   View:
-```bash
+```json
 raaghu login
 Raaghu Cli
 Enter Email: emailId
@@ -91,11 +94,11 @@ License verification successful. Tool functionality can proceed.
 
 login -info Command :
 
-  ```bash
+  ```json
   raaghu login -info
   ```
   View:
-```bash
+```json
 raaghu login -info
 Raaghu Cli
 Executing Login Info command...
@@ -107,11 +110,11 @@ emailId is active.
 
 logout Command :
 
-  ```bash
+  ```json
   raaghu logout
   ```
   View:
-```bash
+```json
 raaghu logout
 Raaghu Cli
 Executing Logout command...

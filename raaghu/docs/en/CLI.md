@@ -1,3 +1,6 @@
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+</style>
 # Raaghu CLI
 
 Raaghu CLI (Command Line Interface) is a command line tool to perform some common operations for Raaghu based solutions.
@@ -6,24 +9,24 @@ Raaghu CLI (Command Line Interface) is a command line tool to perform some commo
 
 Raaghu CLI is a [dotnet global tool](https://www.nuget.org/packages/Waiin.Raaghu.Cli). Install it using a command line window:
 
-````bash
+````json
 dotnet tool install Waiin.Raaghu.Cli
 ````
-````bash
+````json
 dotnet tool install -g Waiin.Raaghu.Cli
 ````
-````bash
+````json
 dotnet tool install --global Waiin.Raaghu.Cli
 ````
 
 To update an existing installation:
-````bash
+````json
 dotnet tool update Waiin.Raaghu.Cli
 ````
-````bash
+````json
 dotnet tool update -g Waiin.Raaghu.Cli
 ````
-````bash
+````json
 dotnet tool update --global Waiin.Raaghu.Cli
 ````
 ## Commands
@@ -42,13 +45,13 @@ Shows basic usages of the Raaghu CLI.
 
 Usage:
 
-````bash
+````json
 raaghu help 
 ````
 
 Examples:
 
-````bash
+````json
 raaghu help        # Shows a general help.
 raaghu help new    # Shows help about the "new" command.
 ````
@@ -59,13 +62,13 @@ Generates a new solution based on the Raaghu [startup templates](Startup-Templat
 
 Usage:
 
-````bash
+````json
 raaghu new <solution-name> [options]
 ````
 
 Example:
 
-````bash
+````json
 raaghu new RaaghuStoryBook 
 ````
 
@@ -77,20 +80,20 @@ For more samples, go to [Raaghu CLI Create Solution Samples](CLI-New-Command-Sam
 #### Options
 * `--version` or `-v`: Specifie the Raaghu version. If the version is not specified then it will automatically use the latest version accordingly to create the solution.
 
-````bash
+````json
 raaghu new <solution-name> --version <version>
 ````
-````bash
+````json
 raaghu new <solution-name> -v <version>
 ````
 
 Example:
 
-````bash
+````json
 raaghu new RaaghuStoryBook  --version 7.4.4
 ````
 
-````bash
+````json
 raaghu new RaaghuStoryBook  -v 7.4.4
 ````
 
@@ -98,7 +101,7 @@ raaghu new RaaghuStoryBook  -v 7.4.4
 
 Some features of the CLI requires to be logged in to raaghu.io platform. To login with your username write:
 
-```bash
+```json
 raaghu login <username>                                  # Allows you to enter your password hidden
 ```
 
@@ -107,7 +110,7 @@ A new login with an already active session overwrites the previous session.
 ### login-info
 
 Shows your login information such as **Username** .
-```bash
+```json
 raaghu login-info
 ```
 
@@ -115,7 +118,7 @@ raaghu login-info
 
 Logs you out by removing the session token from your computer.
 
-```bash
+```json
 raaghu logout
 ```
 
