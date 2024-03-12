@@ -1,6 +1,7 @@
 {
   "name": "raaghu-docs",
   "version": "1.0.0",
+  "description": "Raaghu UI Kit - Documentation, is documentation for Raaghu Design Systems built using React 18 and Docusaurus, provides robust, modular architecture, fully compatible with ABP Commercial.  It provides production ready end user application pages.",
   "repository": {
     "type": "git",
     "url": "https://github.com/Wai-Technologies/raaghu-docs"
