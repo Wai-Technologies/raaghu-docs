@@ -62,13 +62,13 @@ When you create a solution, it always creates with the latest version. To create
 * Create a solution from v7.4.4, with Angular UI and Entity Framework Core.
 
   ```json
-  raaghu new RaaghuStoryBook --version 7.4.4
+  raaghu new Raaghu.BookStore --version 7.4.4
   ```
    ```json
-  raaghu new RaaghuStoryBook -v 7.4.4
+  raaghu new Raaghu.BookStore -v 7.4.4
   ```
 
-To get the raaghu version list, checkout following link: https://www.nuget.org/packages/Volo.raaghu.Core/
+To get the raaghu version list, checkout following link: https://www.nuget.org/packages/Waiin.Raaghu.Cli
 
 
   ## login

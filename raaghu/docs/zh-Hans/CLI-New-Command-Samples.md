@@ -69,13 +69,13 @@ Example(s):
 * 从 v7.4.4 创建一个解决方案，使用 Angular UI 和 Entity Framework Core。
 
   ```json
-  raaghu new RaaghuStoryBook --version 7.4.4
+  raaghu new Raaghu.BookStore --version 7.4.4
   ```
    ```json
-  raaghu new RaaghuStoryBook -v 7.4.4
+  raaghu new Raaghu.BookStore -v 7.4.4
   ```
 
-获取 raaghu 版本列表，请查看以下链接：https://www.nuget.org/packages/Volo.raaghu.Core/
+获取 raaghu 版本列表，请查看以下链接：https://www.nuget.org/packages/Waiin.Raaghu.Cli
 
 
 ## 登录

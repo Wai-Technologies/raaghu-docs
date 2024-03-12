@@ -60,13 +60,13 @@ Quando voc� cria uma solu��o, ela sempre � criada com a vers�o mais re
 * Criar uma solu��o a partir da v7.4.4, com interface de usu�rio Angular e Entity Framework Core.
 
 ````json
-raaghu new RaaghuStoryBook --version 7.4.4
+raaghu new Raaghu.BookStore --version 7.4.4
 ````
 ````json
-raaghu new RaaghuStoryBook -v 7.4.4
+raaghu new Raaghu.BookStore -v 7.4.4
 ````
 
-Para obter a lista de vers�es do raaghu, confira o seguinte link: https://www.nuget.org/packages/Volo.raaghu.Core/
+Para obter a lista de vers�es do raaghu, confira o seguinte link: https://www.nuget.org/packages/Waiin.Raaghu.Cli
 
 
 ## login
