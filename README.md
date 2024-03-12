@@ -1,6 +1,6 @@
 # Website
 
-This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
+[Raaghu Docs](https://docs.raaghu.io/) is built using React 18 and [Docusaurus](https://docusaurus.io/), a modern static website generator.
 
 ### Installation
 
