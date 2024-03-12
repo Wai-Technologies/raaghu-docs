@@ -1,7 +1,15 @@
 {
   "name": "raaghu-docs",
-  "version": "0.0.0",
-  "private": true,
+  "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Wai-Technologies/raaghu-docs"
+  },
+  "author": {
+    "name": "WAi Technologies",
+    "email": "support@waiin.com",
+    "url": "https://waiin.com"
+  },
   "scripts": {
     "docusaurus": "docusaurus",
     "start": "docusaurus start",
