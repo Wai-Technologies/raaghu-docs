@@ -64,9 +64,9 @@ raaghu new <nome-da-solução> [opções]
 ````
 Exemplo:
 ````json
-raaghu new RaaghuStoryBook 
+raaghu new Raaghu.BookStore 
 ````
-* raaghu_StoryBook é o nome da solução aqui.
+* Raaghu.BookStore é o nome da solução aqui.
 * A convenção comum é nomear uma solução como *SuaEmpresa.SeuProjeto*. No entanto, você pode usar diferentes formas de nomeação, como *SeuProjeto* (sem espaços de nomeação) ou *SuaEmpresa.SeuProduto.SeuMódulo* (três níveis de espaços de nomeação).
 
 Para mais exemplos, vá para [Amostras de Criação de Solução Raaghu CLI](CLI-New-Command-Samples.md)
@@ -84,10 +84,10 @@ raaghu new <nome-da-solução> -v <versão>
 Exemplo:
 
 ````json
-raaghu new RaaghuStoryBook  --version 7.4.4
+raaghu new Raaghu.BookStore  --version 7.4.4
 ````
 ````json
-raaghu new RaaghuStoryBook  -v 7.4.4
+raaghu new Raaghu.BookStore  -v 7.4.4
 ````
 
 ## login

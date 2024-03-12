@@ -72,9 +72,9 @@ raaghu new <solution-name> [options]
 示例:
 
 ````json
-raaghu new RaaghuStoryBook 
+raaghu new Raaghu.BookStore 
 ````
-* 这里的 raaghu_StoryBook 是解决方案名称。
+* Raaghu.BookStore 这里是解决方案的名称。"
 * 通常的约定是将解决方案命名为 YourCompany.YourProject。但是，您也可以使用不同的命名方式，例如 YourProject（单级命名空间）或 YourCompany.YourProduct.YourModule（三级命名空间）。
 有关更多示例，请访问 [Raaghu CLI 创建解决方案示例](CLI-New-Command-Samples.md)
 
@@ -90,10 +90,10 @@ raaghu new <solution-name> -v <version>
 示例:
 
 ````json
-raaghu new RaaghuStoryBook  --version 7.4.4
+raaghu new Raaghu.BookStore  --version 7.4.4
 ````
 ````json
-raaghu new RaaghuStoryBook  -v 7.4.4
+raaghu new Raaghu.BookStore  -v 7.4.4
 ````
 
 ## 登录
