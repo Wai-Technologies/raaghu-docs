@@ -8,8 +8,6 @@ sidebar_position: 2
 Creating a new solution
 =======================
 
-Create a new project
---------------------
 
 There are two ways of creating a new project: ABP Suite and ABP CLI
 

@@ -52,10 +52,12 @@ For the next time, you can just run it in your IDE as you normally do.
 
 Right click to the `.DbMigrator` project and select **Set as StartUp Project**
 
+![set-as-startup-project](https://raw.githubusercontent.com/Wai-Technologies/raaghu-docs/development/raaghu/docs/en/images/set-as-startup-project.png)
 
  Hit F5 (or Ctrl+F5) to run the application. It will have an output like shown below:
 
- 
+ ![db-migrator-output](https://raw.githubusercontent.com/Wai-Technologies/raaghu-docs/development/raaghu/docs/en/images/db-migrator-output.png)
+
 Initial [seed data](Data-Seeding.md) creates the `admin` user in the database (with the password is `1q2w3E*`) which is then used to login to the application. So, you need to use `.DbMigrator` at least once for a new database.
 
 The solution is configured to use **MongoDB** in your local computer, so you need to have a MongoDB server instance up and running or change the connection string to another MongoDB server.
@@ -67,7 +69,7 @@ Warning: When you create an ABP solution, the client-side packages are being res
 
 Use Ctrl+F5 in Visual Studio (instead of F5) to run the application without debugging. If you don't have a debug purpose, this will be faster.
 
-
+![swagger-ui](https://raw.githubusercontent.com/Wai-Technologies/raaghu-docs/development/raaghu/docs/en/images/swagger-ui.png)
 
 The application is up and running. You can start developing your application based on this startup template.
 

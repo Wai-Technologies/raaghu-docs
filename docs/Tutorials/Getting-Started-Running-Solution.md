@@ -4,9 +4,11 @@ sidebar_position: 1
 
 # Web Application Development
 
-<style>
-  @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
-</style>
+---
+sidebar_position: 3
+---
+
+# Running the Solution
 
 # Create the Database
 
@@ -56,10 +58,11 @@ For the next time, you can just run it in your IDE as you normally do.
 
 Right click to the `.DbMigrator` project and select **Set as StartUp Project**
 
+![set-as-startup-project](https://raw.githubusercontent.com/Wai-Technologies/raaghu-docs/development/raaghu/docs/en/images/set-as-startup-project.png)
 
  Hit F5 (or Ctrl+F5) to run the application. It will have an output like shown below:
 
-
+ ![db-migrator-output](https://raw.githubusercontent.com/Wai-Technologies/raaghu-docs/development/raaghu/docs/en/images/db-migrator-output.png)
 
 Initial [seed data](Data-Seeding.md) creates the `admin` user in the database (with the password is `1q2w3E*`) which is then used to login to the application. So, you need to use `.DbMigrator` at least once for a new database.
 
@@ -72,7 +75,7 @@ Warning: When you create an ABP solution, the client-side packages are being res
 
 Use Ctrl+F5 in Visual Studio (instead of F5) to run the application without debugging. If you don't have a debug purpose, this will be faster.
 
-
+![swagger-ui](https://raw.githubusercontent.com/Wai-Technologies/raaghu-docs/development/raaghu/docs/en/images/swagger-ui.png)
 
 The application is up and running. You can start developing your application based on this startup template.
 

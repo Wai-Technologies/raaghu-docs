@@ -4,41 +4,59 @@ sidebar_position: 1
 
 # Setup Your Development Environment
 
-Add **Markdown or React** files to `src/pages` to create a **standalone page**:
 
-- `src/pages/index.js` → `localhost:3000/`
-- `src/pages/foo.md` → `localhost:3000/foo`
-- `src/pages/foo/bar.js` → `localhost:3000/foo/bar`
+Creating a new solution
+=======================
 
-## Create your first React Page
 
-Create a file at `src/pages/my-react-page.js`:
+There are two ways of creating a new project: ABP Suite and ABP CLI
 
-```jsx title="src/pages/my-react-page.js"
-import React from 'react';
-import Layout from '@theme/Layout';
+### Using ABP Suite to create a new project.
 
-export default function MyReactPage() {
-  return (
-    <Layout>
-      <h1>My React page</h1>
-      <p>This is a React page</p>
-    </Layout>
-  );
-}
+ABP Suite is recommended way to create new solutions for the ABP Commercial
+
+Run the ABP Suite with the following command:
+
+```shell
+   abp suite
+````
+
+* This command starts the ABP Suite and opens in your default browser:
+
+![Create A New Solution](https://raw.githubusercontent.com/Wai-Technologies/raaghu-docs/development/raaghu/docs/en/images/createANewSol.png)
+
+Click the **Create a new solution** button and fill the modal form:
+
+![Create A New Solution for modal form](https://raw.githubusercontent.com/Wai-Technologies/raaghu-docs/development/raaghu/docs/en/images/createSol.png "createSol")
+
+Select the UI framework as raaghu-react, Database Provider, and other options based on your preferences, then click on the OK button
+
+### Using the ABP CLI to create a new project
+
+Use the new command of the ABP CLI to create a new project:
+
+```shell
+   abp new Acme.Bookstore -t app-pro
 ```
 
-A new page is now available at [http://localhost:3000/my-react-page](http://localhost:3000/my-react-page).
+* \-t argument specifies the [startup template](https://docs.abp.io/en/commercial/7.2/startup-templates/application/index) name. app-pro is the startup template that contains the essential [ABP Commercial Modules](https://commercial.abp.io/modules) pre-installed and configured for you.
+* We can also use a different level of namespaces; e.g. Bookstore, Acme.Bookstore or Acme.Retail.BookStore.
 
-## Create your first Markdown Page
+Theme
+-----
 
-Create a file at `src/pages/my-markdown-page.md`:
+### Raaghu-themes
 
-```mdx title="src/pages/my-markdown-page.md"
-# My Markdown page
+A new, modern and stylish raaghu theme with different color options, it’s the newest theme. You can choose one out of 3 options Dark, Light and Semi Dark.
 
-This is a Markdown page
-```
+### ABP CLI commands & options
 
-A new page is now available at [http://localhost:3000/my-markdown-page](http://localhost:3000/my-markdown-page).
+[ABP CLI document](https://docs.abp.io/en/abp/latest/CLI) covers all of the available commands and options for the ABP CLI. The main difference for the ABP Commercial is the template names. See the[ABP Commercial Startup Templates](https://docs.abp.io/en/commercial/7.2/startup-templates/index) document for other commercial templates.
 
+### The solution structure
+
+The solution has a layered structure (based on the [Domain Driven Design](https://docs.abp.io/en/abp/Domain-Driven-Design)) and contains unit & integration test projects. See the [solution structure document](https://docs.abp.io/en/commercial/7.2/startup-templates/application/solution-structure) to understand the solution structure in details.
+
+### Next Step
+
+* [Running the solution](Getting-Started-Running-Solution.md)
