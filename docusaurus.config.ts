@@ -5,7 +5,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 const config: Config = {
   title: 'Raaghu Documentation',
   tagline: 'Raaghu Design Systems built using React 18, provides robust, modular architecture, fully compatible with ABP Commercial.',
-  favicon: 'img/favicon.ico',
+  favicon: 'https://docs.raaghu.io/images/logo/raaghu_icon.png',
 
   // Set the production url of your site here
   url: 'https://your-docusaurus-site.example.com',
@@ -27,6 +27,53 @@ const config: Config = {
   i18n: {
     defaultLocale: 'en',
     locales: ['en'],
+   /*localeConfigs: {
+      en: {
+        label: 'English',
+      },
+      'pt-BR': {
+        label: 'Português (Brasil)',
+      },
+      cs: {
+        label: 'Čeština',
+      },
+      de: {
+        label: 'Deutsch',
+      },
+      es: {
+        label: 'Español',
+      },
+      fr: {
+        label: 'Français',
+      },
+      it: {
+        label: 'Italiano',
+      },
+      ja: {
+        label: '日本語',
+      },
+      ko: {
+        label: '한국어',
+      },
+      nl: {
+        label: 'Nederlands',
+      },
+      pl: {
+        label: 'Polski',
+      },
+      pt: {
+        label: 'Português',
+      },
+      ru: {
+        label: 'Русский',
+      },
+      'zh-CN': {
+        label: '简体中文',
+      },
+      'zh-TW': {
+        label: '繁體中文',
+      },
+    }*/
   },
 
   presets: [
@@ -58,23 +105,29 @@ const config: Config = {
     // Replace with your project's social card
     image: 'img/docusaurus-social-card.jpg',
     navbar: {
-      title: 'My Site',
+      title: 'Raaghu Documentation',
       logo: {
-        alt: 'My Site Logo',
-        src: 'img/logo.svg',
+        alt: 'Raaghu Logo',
+        src: 'https://docs.raaghu.io/images/logo/raaghu_icon.png',
       },
       items: [
         {
           type: 'docSidebar',
           sidebarId: 'tutorialSidebar',
           position: 'left',
-          label: 'Tutorial',
+          label: 'Docs',
         },
-        {to: '/blog', label: 'Blog', position: 'left'},
         {
-          href: 'https://github.com/facebook/docusaurus',
-          label: 'GitHub',
+          type: 'localeDropdown',
           position: 'right',
+        },
+       // {to: '/blog', label: 'Blog', position: 'left'},
+        {
+          href: 'https://github.com/Wai-Technologies/raaghu-docs',
+          position: 'right',
+          className: 'header-github-link',
+
+         
         },
       ],
     },
@@ -116,12 +169,12 @@ const config: Config = {
             },
             {
               label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
+              href: 'https://github.com/Wai-Technologies/raaghu-docs',
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} WAi Technologies. Built with Raaghu Design System.`,
     },
     prism: {
       theme: prismThemes.github,
