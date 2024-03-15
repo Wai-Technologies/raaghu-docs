@@ -1,0 +1,10 @@
+{
+  "logo.alt": {
+    "message": "Logo da Raaghu Documentation",
+    "description": "O texto alternativo do logotipo na barra de navegação"
+  },
+  "item.label.Docs": {
+    "message": "Documentos",
+    "description": "Item na barra de navegação com o rótulo 'Documentos'"
+  }
+}

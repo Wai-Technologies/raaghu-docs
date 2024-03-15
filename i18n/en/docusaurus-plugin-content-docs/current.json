@@ -1,0 +1,50 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.tutorialSidebar.category.Getting Started": {
+    "message": "Getting Started",
+    "description": "The label for category Getting Started in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Tutorials": {
+    "message": "Tutorials",
+    "description": "The label for category Tutorials in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Guides": {
+    "message": "Guides",
+    "description": "The label for category Guides in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.CLI": {
+    "message": "CLI",
+    "description": "The label for category CLI in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Samples": {
+    "message": "Samples",
+    "description": "The label for category Samples in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Startup Templates": {
+    "message": "Startup Templates",
+    "description": "The label for category Startup Templates in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Application Modules": {
+    "message": "Application Modules",
+    "description": "The label for category Application Modules in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.UI Theme": {
+    "message": "UI Theme",
+    "description": "The label for category UI Theme in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Storybook": {
+    "message": "Storybook",
+    "description": "The label for category Storybook in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.React UI": {
+    "message": "React UI",
+    "description": "The label for category React UI in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Release Information": {
+    "message": "Release Information",
+    "description": "The label for category Release Information in sidebar tutorialSidebar"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "logo.alt": {
+    "message": "Raaghu 文档徽标",
+    "description": "导航栏中标志的替代文本"
+  },
+  "item.label.Docs": {
+    "message": "文档",
+    "description": "导航栏中标签为文档的项目"
+  }
+}

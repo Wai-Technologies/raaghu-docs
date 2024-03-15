@@ -4,8 +4,8 @@ sidebar_position: 1
 
 # Raaghu CLI
 
-
 Raaghu CLI (Command Line Interface) is a command line tool to perform some common operations for Raaghu based solutions.
+
 
 ## Installation
 
@@ -36,7 +36,7 @@ dotnet tool update --global Waiin.Raaghu.Cli
 Here, is the list of all available commands before explaining their details:
 
 * **`help`**: Shows help on the usage of the Raaghu CLI.
-* **`new`**: Generates a new solution based on the Raaghu [startup templates](Startup-Templates/Index.md).
+* **`new`**: Generates a new solution based on the Raaghu.
 * **`login`**: Authenticates on your computer with your [raaghu.io](https://raaghu.io/) username and password.
 * **`login-info`**: Shows the current user's login information.
 * **`logout`**: Logouts from your computer if you've authenticated before.
@@ -60,7 +60,7 @@ raaghu help new    # Shows help about the "new" command.
 
 ### new
 
-Generates a new solution based on the Raaghu [startup templates](Startup-Templates/Index.md).
+Generates a new solution based on the Raaghu.
 
 Usage:
 
