@@ -1,0 +1,46 @@
+{
+  "link.title.Docs": {
+    "message": "文档",
+    "description": "页脚中 title=Docs 的链接列标题"
+  },
+  "link.title.Community": {
+    "message": "社区",
+    "description": "页脚中 title=Community 的链接列标题"
+  },
+  "link.title.More": {
+    "message": "更多",
+    "description": "页脚中 title=More 的链接列标题"
+  },
+  "link.item.label.Tutorial": {
+    "message": "教程",
+    "description": "链接到 /docs/intro 的页脚链接标签 label=Tutorial"
+  },
+  "link.item.label.Stack Overflow": {
+    "message": "Stack Overflow",
+    "description": "链接到 https://stackoverflow.com/questions/tagged/docusaurus 的页脚链接标签 label=Stack Overflow"
+  },
+  "link.item.label.Discord": {
+    "message": "Discord",
+    "description": "链接到 https://discordapp.com/invite/docusaurus 的页脚链接标签 label=Discord"
+  },
+  "link.item.label.Twitter": {
+    "message": "Twitter",
+    "description": "链接到 https://twitter.com/docusaurus 的页脚链接标签 label=Twitter"
+  },
+  "link.item.label.GitHub": {
+    "message": "GitHub",
+    "description": "链接到 https://github.com/Wai-Technologies/raaghu-docs 的页脚链接标签 label=GitHub"
+  },
+  "link.item.label.Vimeo": {
+    "message": "Vimeo",
+    "description": "链接到 https://vimeo.com/user9603091 的页脚链接标签 label=Vimeo"
+  },
+  "link.item.label.LinkedIn": {
+    "message": "LinkedIn",
+    "description": "链接到 https://www.linkedin.com/company/waitechnologies 的页脚链接标签 label=LinkedIn"
+  },
+  "copyright": {
+    "message": "版权所有 © 2024 WAi Technologies。使用 Raaghu 设计系统开发。",
+    "description": "页脚的版权信息"
+  }
+}

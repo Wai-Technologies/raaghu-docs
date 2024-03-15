@@ -1,0 +1,46 @@
+{
+  "link.title.Docs": {
+    "message": "Documentação",
+    "description": "O título da coluna de links do rodapé com title=Docs no rodapé"
+  },
+  "link.title.Community": {
+    "message": "Comunidade",
+    "description": "O título da coluna de links do rodapé com title=Community no rodapé"
+  },
+  "link.title.More": {
+    "message": "Mais",
+    "description": "O título da coluna de links do rodapé com title=More no rodapé"
+  },
+  "link.item.label.Tutorial": {
+    "message": "Tutorial",
+    "description": "O rótulo do link do rodapé com label=Tutorial linkando para /docs/intro"
+  },
+  "link.item.label.Stack Overflow": {
+    "message": "Stack Overflow",
+    "description": "O rótulo do link do rodapé com label=Stack Overflow linkando para https://stackoverflow.com/questions/tagged/docusaurus"
+  },
+  "link.item.label.Discord": {
+    "message": "Discord",
+    "description": "O rótulo do link do rodapé com label=Discord linkando para https://discordapp.com/invite/docusaurus"
+  },
+  "link.item.label.Twitter": {
+    "message": "Twitter",
+    "description": "O rótulo do link do rodapé com label=Twitter linkando para https://twitter.com/docusaurus"
+  },
+  "link.item.label.GitHub": {
+    "message": "GitHub",
+    "description": "O rótulo do link do rodapé com label=GitHub linkando para https://github.com/Wai-Technologies/raaghu-docs"
+  },
+  "link.item.label.Vimeo": {
+    "message": "Vimeo",
+    "description": "O rótulo do link do rodapé com label=Vimeo linkando para https://vimeo.com/user9603091"
+  },
+  "link.item.label.LinkedIn": {
+    "message": "LinkedIn",
+    "description": "O rótulo do link do rodapé com label=LinkedIn linkando para https://www.linkedin.com/company/waitechnologies"
+  },
+  "copyright": {
+    "message": "Copyright © 2024 WAi Technologies. Desenvolvido com o Sistema de Design Raaghu.",
+    "description": "O copyright do rodapé"
+  }
+}

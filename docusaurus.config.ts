@@ -2,11 +2,15 @@ import {themes as prismThemes} from 'prism-react-renderer';
 import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
+
+
+
 const config: Config = {
   title: 'Raaghu Documentation',
   tagline: 'Raaghu Design Systems built using React 18, provides robust, modular architecture, fully compatible with ABP Commercial.',
-  favicon: 'https://docs.raaghu.io/images/logo/raaghu_icon.png',
+  favicon: 'https://raaghustorageaccount.blob.core.windows.net/raaghu-blob/Raaghu%20Logo%20SD.svg',
 
+  
   // Set the production url of your site here
   url: 'https://your-docusaurus-site.example.com',
   // Set the /<baseUrl>/ pathname under which your site is served
@@ -18,62 +22,33 @@ const config: Config = {
   organizationName: 'Raaghu UI Kit by WAi Technologies', // Usually your GitHub org/user name.
   projectName: 'raaghu-docs', // Usually your repo name.
 
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'ignore',
   onBrokenMarkdownLinks: 'warn',
 
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
   // may want to replace "en" with "zh-Hans".
-  i18n: {
-    defaultLocale: 'en',
-    locales: ['en'],
-   /*localeConfigs: {
-      en: {
-        label: 'English',
-      },
-      'pt-BR': {
-        label: 'Português (Brasil)',
-      },
-      cs: {
-        label: 'Čeština',
-      },
-      de: {
-        label: 'Deutsch',
-      },
-      es: {
-        label: 'Español',
-      },
-      fr: {
-        label: 'Français',
-      },
-      it: {
-        label: 'Italiano',
-      },
-      ja: {
-        label: '日本語',
-      },
-      ko: {
-        label: '한국어',
-      },
-      nl: {
-        label: 'Nederlands',
-      },
-      pl: {
-        label: 'Polski',
-      },
-      pt: {
-        label: 'Português',
-      },
-      ru: {
-        label: 'Русский',
-      },
-      'zh-CN': {
-        label: '简体中文',
-      },
-      'zh-TW': {
-        label: '繁體中文',
-      },
-    }*/
+  
+    i18n: {
+      defaultLocale: 'en',
+      locales: ['en', 'pt-BR','zh-Hans'],
+      localeConfigs: {
+        en: {
+          label: 'English',
+          direction: 'ltr',
+          path:'en'
+        },
+        'zh-Hans': {
+          label: '简体中文',
+          direction: 'ltr',
+          path: 'zh-Hans', // Make sure the path is specified
+        },
+        'pt-BR': {
+          label: 'Português (Brasil)',
+          direction: 'ltr',
+          path: 'pt-BR', // Make sure the path is specified
+        },
+    }
   },
 
   presets: [
@@ -82,17 +57,15 @@ const config: Config = {
       {
         docs: {
           sidebarPath: './sidebars.ts',
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/Wai-Technologies/raaghu-docs',
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/Wai-Technologies/raaghu-docs',
         },
         theme: {
           customCss: './src/css/custom.css',
@@ -102,13 +75,13 @@ const config: Config = {
   ],
 
   themeConfig: {
-    // Replace with your project's social card
+
     image: 'img/docusaurus-social-card.jpg',
     navbar: {
       title: 'Raaghu Documentation',
       logo: {
         alt: 'Raaghu Logo',
-        src: 'https://docs.raaghu.io/images/logo/raaghu_icon.png',
+        src: 'https://raaghustorageaccount.blob.core.windows.net/raaghu-blob/Raaghu%20Logo%20SD.svg',
       },
       items: [
         {
@@ -126,9 +99,18 @@ const config: Config = {
           href: 'https://github.com/Wai-Technologies/raaghu-docs',
           position: 'right',
           className: 'header-github-link',
-
-         
         },
+        {
+          href: 'https://www.linkedin.com/company/waitechnologies',
+          position:'right',
+          className:'header-linkedIn-link',
+        },
+        {
+          href: 'https://vimeo.com/user9603091',
+          position:'right',
+          className:'header-vimeo-link',
+        },
+
       ],
     },
     footer: {
@@ -163,13 +145,20 @@ const config: Config = {
         {
           title: 'More',
           items: [
-            {
-              label: 'Blog',
-              to: '/blog',
-            },
+            
             {
               label: 'GitHub',
               href: 'https://github.com/Wai-Technologies/raaghu-docs',
+            },
+            {
+              label: 'Vimeo',
+              href: 'https://vimeo.com/user9603091',
+
+            },
+            {
+              label: 'LinkedIn',
+              href: 'https://www.linkedin.com/company/waitechnologies',
+
             },
           ],
         },
@@ -182,5 +171,6 @@ const config: Config = {
     },
   } satisfies Preset.ThemeConfig,
 };
+
 
 export default config;
