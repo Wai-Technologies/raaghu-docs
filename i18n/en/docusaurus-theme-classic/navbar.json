@@ -1,10 +1,6 @@
 {
-  "title": {
-    "message": "Raaghu Documentation",
-    "description": "The title in the navbar"
-  },
   "logo.alt": {
-    "message": "Raaghu Logo",
+    "message": "Raaghu Documentation Logo",
     "description": "The alt text of navbar logo"
   },
   "item.label.Docs": {

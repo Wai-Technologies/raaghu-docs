@@ -1,10 +1,6 @@
 {
-  "title": {
-    "message": "Raaghu文档",
-    "description": "导航栏中的标题"
-  },
   "logo.alt": {
-    "message": "Raaghu标志",
+    "message": "Raaghu 文档徽标",
     "description": "导航栏中标志的替代文本"
   },
   "item.label.Docs": {

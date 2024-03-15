@@ -78,10 +78,9 @@ const config: Config = {
 
     image: 'img/docusaurus-social-card.jpg',
     navbar: {
-      title: 'Raaghu Documentation',
-      logo: {
-        alt: 'Raaghu Logo',
-        src: 'https://raaghustorageaccount.blob.core.windows.net/raaghu-blob/Raaghu%20Logo%20SD.svg',
+        logo: {
+        alt: 'Raaghu Documentation Logo',
+        src: 'https://raaghustorageaccount.blob.core.windows.net/raaghu-blob/raaghu-docs-logo.png',
       },
       items: [
         {
@@ -94,7 +93,7 @@ const config: Config = {
           type: 'localeDropdown',
           position: 'right',
         },
-       // {to: '/blog', label: 'Blog', position: 'left'},
+       //{to: '/blog', label: 'Blog', position: 'left'},
         {
           href: 'https://github.com/Wai-Technologies/raaghu-docs',
           position: 'right',
