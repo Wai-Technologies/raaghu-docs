@@ -4,7 +4,6 @@ sidebar_position: 1
 
 # Setup Your Development Environment
 
-
 Creating a new solution
 =======================
 

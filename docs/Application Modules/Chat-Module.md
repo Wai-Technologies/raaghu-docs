@@ -4,9 +4,6 @@ sidebar_position: 4
 
 # Chat
 
-Chat module
-===========
-
 This module implements real time messaging between users for an application.
 
 Installation

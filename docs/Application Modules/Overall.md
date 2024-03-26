@@ -4,9 +4,6 @@ sidebar_position: 1
 
 # Overall
 
-Application Modules
-===================
-
 ABP Commercial provides **production ready, enterprise level** application modules. See [the modules page](https://commercial.abp.io/modules) for a list and descriptions of the modules as an overview. This documentation is **for developers** and explains **technical details** of the modules.
 
 Commercial Modules

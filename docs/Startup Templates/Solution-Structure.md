@@ -4,9 +4,6 @@ sidebar_position: 3
 
 # Solution Structure
 
-Solution structure
-==================
-
 You will get a slightly different solution structure, based on the options you have specified.
 
 Default structure

@@ -4,11 +4,6 @@ sidebar_position: 4
 
 # Creating And Updating and Deleting Book
 
-
-
-Part 3: Creating, Updating and Deleting Book
-============================================
-
 Creating a new Book -
 ---------------------
 

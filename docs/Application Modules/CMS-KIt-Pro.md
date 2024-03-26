@@ -4,9 +4,6 @@ sidebar_position: 5
 
 # CMS Kit Pro
 
-CMS Kit Pro Module
-==================
-
 This module extends the [open-source CMS Kit module](https://docs.abp.io/en/abp/latest/Modules/Cms-Kit/Index) and adds additional CMS (Content Management System) capabilities to your application.
 
 The following features are provided by the open source CMS Kit module:

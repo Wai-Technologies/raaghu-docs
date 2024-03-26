@@ -4,10 +4,8 @@ sidebar_position: 2
 
 # Creating Solution
 
-
-
-Creating a new ABP Commercial solution
-======================================
+Creating solution using ABP Commercial
+--------------------------------------
 
 There are 2 ways of creating a new ABP Commercial solution. You can use the [ABP CLI](https://docs.abp.io/en/abp/latest/CLI) or [ABP Suite.](https://docs.abp.io/en/commercial/7.2/abp-suite/add-solution)
 

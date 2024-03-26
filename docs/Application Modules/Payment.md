@@ -4,9 +4,6 @@ sidebar_position: 12
 
 # Payment
 
-Payment module
-==============
-
 Payment module implements payment gateway integration of an application. It provides one time payment and recurring payment options.
 
 * Supports [Stripe](https://stripe.com/en-in), [PayPal](https://www.paypal.com/in/home), [2Checkout](https://www.2checkout.com/), [PayU](https://corporate.payu.com/), [Iyzico](https://www.iyzico.com/en) and [Alipay](https://global.alipay.com/platform/site/ihome) payment gateways.

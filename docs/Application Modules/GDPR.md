@@ -4,9 +4,6 @@ sidebar_position: 8
 
 # GDPR
 
-
-# GDPR Module
-
 This module allows users to download and delete their personal data collected by the application.
 
 ## How to install

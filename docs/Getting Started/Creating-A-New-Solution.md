@@ -4,11 +4,6 @@ sidebar_position: 2
 
 # Creating a New Solution
 
-
-Creating a new solution
-=======================
-
-
 There are two ways of creating a new project: ABP Suite and ABP CLI
 
 ### Using ABP Suite to create a new project.

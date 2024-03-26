@@ -4,10 +4,6 @@ sidebar_position: 9
 
 # Identity
 
-
-Identity Management module
-==========================
-
 This module implements the User and Role system of an application;
 
 * Manage **roles** and **users** in the system. A user is allowed to have **multiple roles.**
