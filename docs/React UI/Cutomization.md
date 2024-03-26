@@ -4,9 +4,6 @@ sidebar_position: 1
 
 # Customization
 
-CUSTOMIZATION
--------------
-
 ### Manage Profile Page Tabs
 
 Under the My Account on clicking the dropdown of host admin profile, you get 4 tabs as Profile Picture, Change Password, Personal Info and Two factor

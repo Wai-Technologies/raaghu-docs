@@ -6,8 +6,8 @@ import type * as Preset from '@docusaurus/preset-classic';
 
 
 const config: Config = {
-  title: 'Raaghu Documentation',
-  tagline: 'Raaghu Design Systems built using React 18, provides robust, modular architecture, fully compatible with ABP Commercial.',
+  title: 'Raaghu Documentation Center',
+  tagline: 'Raaghu Frontend Studio built using React 18, Raaghu Design System and Docusaurus, provides robust, modular architecture, fully compatible with ABP Commercial.',
   favicon: 'https://raaghustorageaccount.blob.core.windows.net/raaghu-blob/Raaghu%20Logo%20SD.svg',
 
   
@@ -19,7 +19,7 @@ const config: Config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'Raaghu UI Kit by WAi Technologies', // Usually your GitHub org/user name.
+  organizationName: 'Raaghu Frontend Studio by WAi Technologies', // Usually your GitHub org/user name.
   projectName: 'raaghu-docs', // Usually your repo name.
 
   onBrokenLinks: 'ignore',
@@ -80,7 +80,8 @@ const config: Config = {
     navbar: {
         logo: {
         alt: 'Raaghu Documentation Logo',
-        src: 'https://raaghustorageaccount.blob.core.windows.net/raaghu-blob/raaghu-docs-logo.png',
+        src: 'https://raaghustorageaccount.blob.core.windows.net/raaghu-blob/raaghu-docs-lightmode.png',
+        srcDark: 'https://raaghustorageaccount.blob.core.windows.net/raaghu-blob/raaghu-docs-darkmode.png',
       },
       items: [
         {
@@ -119,25 +120,113 @@ const config: Config = {
           title: 'Docs',
           items: [
             {
-              label: 'Tutorial',
+              label: 'Introduction',
               to: '/docs/intro',
+            },
+            {
+              label: 'Getting Started',
+              to: '/docs/category/getting-started',
+            },
+            {
+              label: 'Tutorials',
+              to: '/docs/category/tutorials',
+            },
+            {
+              label: 'Guides',
+              to: '/docs/category/guides',
+            },
+            {
+              label: 'CLI',
+              to: '/docs/category/cli',
+            },
+            {
+              label: 'Samples',
+              to: '/docs/category/samples',
+            },
+            {
+              label: 'Startup Templates',
+              to: '/docs/category/startup-templates',
+            },
+            {
+              label: 'Application Modules',
+              to: '/docs/category/application-modules',
+            },
+            {
+              label: 'UI Theme',
+              to: '/docs/category/ui-theme',
+            },
+            {
+              label: 'Storybook',
+              to: '/docs/category/storybook',
+            },
+            {
+              label: 'React UI',
+              to: '/docs/category/react-ui',
+            },
+            {
+              label: 'Release Infromation',
+              to: '/docs/category/release-information',
             },
           ],
         },
         {
-          title: 'Community',
+          title: 'Application Modules',
           items: [
             {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+              label: 'Overall',
+              to: 'docs/Application%20Modules/Overall',
             },
             {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
+              label: 'Account',
+              to: 'docs/Application%20Modules/Account-Module',
             },
             {
-              label: 'Twitter',
-              href: 'https://twitter.com/docusaurus',
+              label: 'Audit Logging',
+              to: 'docs/Application%20Modules/Audit-Logging',
+            },
+            {
+              label: 'Chat',
+              to: 'docs/Application%20Modules/Chat-Module',
+            },
+            {
+              label: 'CMS Kit Pro',
+              to: 'docs/Application%20Modules/CMS-KIt-Pro',
+            },
+            {
+              label: 'File Management',
+              to: 'docs/Application%20Modules/File-Management',
+            },
+            {
+              label: 'Forms',
+              to: 'docs/Application%20Modules/Forms',
+            },
+            {
+              label: 'GDPR',
+              to: 'docs/Application%20Modules/GDPR',
+            },
+            {
+              label: 'Identity',
+              to: 'docs/Application%20Modules/Identity',
+            },
+            {
+              label: 'OpenIddict',
+              to: 'docs/Application%20Modules/OpenIddict',
+            },
+            {
+              label: 'Language Management',
+              to: 'docs/Application%20Modules/Language-Management',
+            },
+            {
+              label: 'Payment',
+              to: 'docs/Application%20Modules/Payment',
+            },
+            {
+              label: 'SaaS',
+              to: 'docs/Application%20Modules/SaaS',
+            },
+            {
+              label: 'Text Template Management',
+              to: 'docs/Application%20Modules/Text-Template-Management',
             },
           ],
         },

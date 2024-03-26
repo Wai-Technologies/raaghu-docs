@@ -4,9 +4,6 @@ sidebar_position: 11
 
 # Language Management
 
-Language Management Module
-==========================
-
 This module implements the Language management system of an application;
 
 * Manage **languages** in the system.

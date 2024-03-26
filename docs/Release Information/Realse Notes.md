@@ -4,9 +4,6 @@ sidebar_position: 1
 
 # Realse Notes
 
-Release Notes
-=============
-
 ### Release 7.3 (Compatible with ABP commercial 7.3)
 
 * Added a Command Line Based CRUD Page generation for different relationships such as one-to-one, one-to-many and many-to-many relationships.

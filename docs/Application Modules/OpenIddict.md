@@ -4,10 +4,6 @@ sidebar_position: 10
 
 # OpenIddict
 
-
-OpenIddict Module
-=================
-
 This module provides integration and management functionality for the OpenIddict library;
 
 * Built on the [OpenIddict-core](https://github.com/openiddict/openiddict-core) library.

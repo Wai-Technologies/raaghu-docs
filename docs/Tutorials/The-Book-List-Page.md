@@ -4,33 +4,82 @@ sidebar_position: 3
 
 # Book List Page
 
-Part 2: Book List Page
-======================
+### Raaghu CLI
 
-### GitHub User Name and Personal Access Token (PAT) 
+Raaghu CLI (Command Line Interface) is a command line tool to perform some common operations for Raaghu Frontend Studio created by WAi Technologies.
 
-**GitHub** User Name can be found in your profile section or on right hand side sidebar of GitHub, example: **"john.james"**.
+### Installation Process for Raaghu CLI
 
-If you don't have a PAT, you can generate one in your GitHub account settings:
+Raaghu CLI is a [dotnet global tool](https://www.nuget.org/packages/Waiin.Raaghu.Cli). Install it using a command line window:
 
-1. Go to your GitHub Settings.
-2. Click on "Developer settings" in the left sidebar.
-3. Click on "Personal access tokens (Classic)".
-4. Generate a new token with the required permissions (at least repo for private repositories).
+````shell
+dotnet tool install Waiin.Raaghu.Cli
+````
+````shell
+dotnet tool install -g Waiin.Raaghu.Cli
+````
+````shell
+dotnet tool install --global Waiin.Raaghu.Cli
+````
 
-### GitHub CLI
+To update an existing installation:
+````shell
+dotnet tool update Waiin.Raaghu.Cli
+````
+````shell
+dotnet tool update -g Waiin.Raaghu.Cli
+````
+````shell
+dotnet tool update --global Waiin.Raaghu.Cli
+````
+### Login to Raaghu CLI
 
-Select a local Directory and run following command inside command prompt to download and output code using a local directory name where project is converted into zip
+After installing Raaghu CLI, we need to login, to use CLI Feature. To Login use command as follows:
 
-```shell
- curl -L -u (GitHub User Name):(GitHub Personal Access Token) https://github.com/(Organization)/(Repository)/archive/(Branch).zip --output (Folder Name).zip
+```bash
+raaghu login                                  # Allows you to enter your password which is hidden
 ```
 
-now, unzip file using following command
+### Create New Solution
 
-```json
-    tar -xf (folder name).zip
-```
+Generates a new solution based on the Raaghu Commands.
+
+Usage:
+
+````bash
+raaghu new <solution-name> [options]
+````
+
+Example:
+
+````bash
+raaghu new Raaghu.BookStore
+````
+
+* `Raaghu.BookStore` is the solution name here.
+* Common convention is to name a solution is like *YourCompany.YourProject*. However, you can use different naming like *YourProject* (single level namespacing) or *YourCompany.YourProduct.YourModule* (three levels namespacing).
+
+
+#### Options
+* `--version` or `-v`: Specifie the Raaghu version. If the version is not specified then it will automatically use the latest version accordingly to create the solution.
+
+````bash
+raaghu new <solution-name> --version <version>
+````
+````bash
+raaghu new <solution-name> -v <version>
+````
+
+Example:
+
+````bash
+raaghu new Raaghu.BookStore  --version 7.4.4
+````
+
+````bash
+raaghu new Raaghu.BookStore  -v 7.4.4
+````
+
 
 ### Install NPM packages
 
@@ -45,13 +94,13 @@ This will help install dependency on different locations inside the project like
 
 ```shell
 NODE_ENV=production
-# REACT_APP_URL=https://abpstagereact12.raaghu.io
 REACT_APP_URL=http://localhost:8080
-REACT_APP_API_URL=https://abpstagereact12api.raaghu.io
+REACT_APP_API_URL= ##Backend Url Here
 REACT_APP_GRANT_TYPE=authorization_code
-REACT_APP_CLIENT_ID=abp_react_7_2_2_App
-REACT_APP_SCOPE=address openid email phone profile roles offline_access abp_react_7_2_2
+REACT_APP_CLIENT_ID= ##Backend Client Id Here
+REACT_APP_SCOPE=address openid email phone profile roles offline_access ##Backend Client Id without _App Here
 REACT_APP_REPLACE_URL=true
+REACT_APP_Version=8.0
 
 ```
 There sholude be changes made on .env file with respeact to backend client id and Scope.

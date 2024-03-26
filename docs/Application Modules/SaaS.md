@@ -4,7 +4,6 @@ sidebar_position: 13
 
 # Saas
 
-
 This module is used to manage your tenants and editions in multi-tenant applications;
 
 * Manage **tenants** and **editions** in the system. A tenant is allowed to have one edition.
