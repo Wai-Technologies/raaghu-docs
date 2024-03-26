@@ -4,8 +4,8 @@ sidebar_position: 2
 
 # Account 
 
-Account-raaghu
-==============
+Account
+=======
 
 This module implements the Login, Register, Forgot Password, Email Confirmation, Password Reset, sending and confirming Two-Factor Authentication, user lockout, switch between tenants functionalities of an application;
 
