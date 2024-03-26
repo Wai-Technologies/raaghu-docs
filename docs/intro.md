@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # Introduction
 
-Raaghu Frontend Studio built using React 18 and Raaghu Design System, provides robust, modular 
+Raaghu Frontend Studio is built using React 18 and Raaghu Design System, provides robust, modular 
 architecture, fully compatible with ABP Commercial.  
 
 It provides production ready end user application pages. Customizable 
@@ -19,7 +19,7 @@ This tutorial guides in creating & running a new web application using startup t
 
 ###  UI Frameworks
 
-Raaghu Design Systems - React is compatible with ABP Commercial license and its releases. 
+Raaghu Frontend Studio - React is compatible with ABP Commercial license and its releases. 
 
 ![home image](https://raw.githubusercontent.com/Wai-Technologies/raaghu-docs/development/raaghu/docs/en/images/home-1.png)
 
