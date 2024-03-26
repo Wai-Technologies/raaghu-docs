@@ -80,7 +80,8 @@ const config: Config = {
     navbar: {
         logo: {
         alt: 'Raaghu Documentation Logo',
-        src: 'https://raaghustorageaccount.blob.core.windows.net/raaghu-blob/raaghu-docs-logo.png',
+        src: 'https://raaghustorageaccount.blob.core.windows.net/raaghu-blob/raaghu-docs-lightmode.png',
+        srcDark: 'https://raaghustorageaccount.blob.core.windows.net/raaghu-blob/raaghu-docs-darkmode.png',
       },
       items: [
         {
