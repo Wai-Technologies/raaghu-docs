@@ -119,25 +119,113 @@ const config: Config = {
           title: 'Docs',
           items: [
             {
-              label: 'Tutorial',
+              label: 'Introduction',
               to: '/docs/intro',
+            },
+            {
+              label: 'Getting Started',
+              to: '/docs/category/getting-started',
+            },
+            {
+              label: 'Tutorials',
+              to: '/docs/category/tutorials',
+            },
+            {
+              label: 'Guides',
+              to: '/docs/category/guides',
+            },
+            {
+              label: 'CLI',
+              to: '/docs/category/cli',
+            },
+            {
+              label: 'Samples',
+              to: '/docs/category/samples',
+            },
+            {
+              label: 'Startup Templates',
+              to: '/docs/category/startup-templates',
+            },
+            {
+              label: 'Application Modules',
+              to: '/docs/category/application-modules',
+            },
+            {
+              label: 'UI Theme',
+              to: '/docs/category/ui-theme',
+            },
+            {
+              label: 'Storybook',
+              to: '/docs/category/storybook',
+            },
+            {
+              label: 'React UI',
+              to: '/docs/category/react-ui',
+            },
+            {
+              label: 'Release Infromation',
+              to: '/docs/category/release-information',
             },
           ],
         },
         {
-          title: 'Community',
+          title: 'Application Modules',
           items: [
             {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+              label: 'Overall',
+              to: 'docs/Application%20Modules/Overall',
             },
             {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
+              label: 'Account',
+              to: 'docs/Application%20Modules/Account-Module',
             },
             {
-              label: 'Twitter',
-              href: 'https://twitter.com/docusaurus',
+              label: 'Audit Logging',
+              to: 'docs/Application%20Modules/Audit-Logging',
+            },
+            {
+              label: 'Chat',
+              to: 'docs/Application%20Modules/Chat-Module',
+            },
+            {
+              label: 'CMS Kit Pro',
+              to: 'docs/Application%20Modules/CMS-KIt-Pro',
+            },
+            {
+              label: 'File Management',
+              to: 'docs/Application%20Modules/File-Management',
+            },
+            {
+              label: 'Forms',
+              to: 'docs/Application%20Modules/Forms',
+            },
+            {
+              label: 'GDPR',
+              to: 'docs/Application%20Modules/GDPR',
+            },
+            {
+              label: 'Identity',
+              to: 'docs/Application%20Modules/Identity',
+            },
+            {
+              label: 'OpenIddict',
+              to: 'docs/Application%20Modules/OpenIddict',
+            },
+            {
+              label: 'Language Management',
+              to: 'docs/Application%20Modules/Language-Management',
+            },
+            {
+              label: 'Payment',
+              to: 'docs/Application%20Modules/Payment',
+            },
+            {
+              label: 'SaaS',
+              to: 'docs/Application%20Modules/SaaS',
+            },
+            {
+              label: 'Text Template Management',
+              to: 'docs/Application%20Modules/Text-Template-Management',
             },
           ],
         },
