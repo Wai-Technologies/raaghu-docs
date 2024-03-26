@@ -6,8 +6,8 @@ import type * as Preset from '@docusaurus/preset-classic';
 
 
 const config: Config = {
-  title: 'Raaghu Documentation',
-  tagline: 'Raaghu Design Systems built using React 18, provides robust, modular architecture, fully compatible with ABP Commercial.',
+  title: 'Raaghu Documentation Center',
+  tagline: 'Raaghu Frontend Studio built using React 18 and Raaghu Design System, provides robust, modular architecture, fully compatible with ABP Commercial.',
   favicon: 'https://raaghustorageaccount.blob.core.windows.net/raaghu-blob/Raaghu%20Logo%20SD.svg',
 
   
