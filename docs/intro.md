@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # Introduction
 
-Raaghu Design Systems built using React 18, provides robust, modular 
+Raaghu Frontend Studio built using React 18 and Raaghu Design System, provides robust, modular 
 architecture, fully compatible with ABP Commercial.  
 
 It provides production ready end user application pages. Customizable 
