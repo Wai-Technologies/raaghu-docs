@@ -77,6 +77,15 @@ const config: Config = {
   themeConfig: {
 
     image: 'img/docusaurus-social-card.jpg',
+    algolia: {
+      appId: 'App Id Here',
+      apiKey  : 'API Key Here',
+      indexName: 'Indec Name Here',
+      contextualSearch: true,
+      searchParameters: {
+        facetFilters: ['language:LANGUAGE'],
+      },
+    },
     navbar: {
         logo: {
         alt: 'Raaghu Documentation Logo',

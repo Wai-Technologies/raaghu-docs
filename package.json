@@ -24,6 +24,7 @@
     "typecheck": "tsc"
   },
   "dependencies": {
+    "@docsearch/react": "^3.6.0",
     "@docusaurus/core": "3.1.1",
     "@docusaurus/preset-classic": "3.1.1",
     "@mdx-js/react": "^3.0.0",
