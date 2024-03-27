@@ -78,12 +78,12 @@ const config: Config = {
 
     image: 'img/docusaurus-social-card.jpg',
     algolia: {
-      appId: 'App Id Here',
-      apiKey  : 'API Key Here',
-      indexName: 'Indec Name Here',
+      appId: 'AppId', // Testing app id : R2IYF7ETH7
+      apiKey  : 'APIKey', // Testing API Key : 599cec31baffa4868cae4e79f180729b
+      indexName: 'IndexName', // Testing Index Name : docsearch
       contextualSearch: true,
       searchParameters: {
-        facetFilters: ['language:LANGUAGE'],
+        facetFilters: ['language:LANGUAGE'], // Testing Language : ['language:en', 'version:1.0.0']
       },
     },
     navbar: {
