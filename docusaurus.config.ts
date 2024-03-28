@@ -10,7 +10,7 @@ const config: Config = {
   tagline: 'Raaghu Frontend Studio built using React 18, Raaghu Design System and Docusaurus, provides robust, modular architecture, fully compatible with ABP Commercial.',
   favicon: 'https://raaghustorageaccount.blob.core.windows.net/raaghu-blob/Raaghu%20Logo%20SD.svg',
 
-  
+  staticDirectories: ['public', 'static'],
   // Set the production url of your site here
   url: 'https://your-docusaurus-site.example.com',
   // Set the /<baseUrl>/ pathname under which your site is served
