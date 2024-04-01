@@ -17,7 +17,7 @@ Você pode visitar a [página da lista de pacotes do módulo Chat](https://abp.i
 ### página de bate-papo
 Esta é a página que os usuários enviam mensagens uns aos outros.
 
-![Esta é a página que os usuários enviam mensagens entre si](https://raw.githubusercontent.com/Wai-Technologies/raaghu-docs/development/raaghu/docs/en/images/chat.png)
+![Esta é a página que os usuários enviam mensagens entre si](https://raaghustorageaccount.blob.core.windows.net/raaghu-docs/chat.png)
 ### interno
 ### Camada de Domínio
 Entidades e raízes agregadas

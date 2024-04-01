@@ -11,9 +11,9 @@ Ce tutoriel guide la création  ⁇  la mise en oeuvre d'une nouvelle applicatio
 ### cadres d'enseignement.
 Systèmes de conception de Raaghu - React est compatible avec la licence commerciale BP et ses rejets.
 
-![image de maison](https://raw.githubusercontent.com/Wai-Technologies/raaghu-docs/development/raaghu/docs/en/images/home-1.png)
+![image de maison](https://raaghustorageaccount.blob.core.windows.net/raaghu-docs/home-1.png)
 ### cheminée de la technologie des raaghu
-![maison](https://raw.githubusercontent.com/Wai-Technologies/raaghu-docs/development/raaghu/docs/en/images/home-2.png)
+![maison](https://raaghustorageaccount.blob.core.windows.net/raaghu-docs/home-2.png)
 
 
 

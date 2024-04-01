@@ -12,4 +12,4 @@ sidebar_position: 1
 
 通过 @volo/abp.ng.account/public/config 包公开的 ManageProfileTabsService 可以管理个人资料页面中的选项卡。您可以使用此服务添加、删除或编辑选项卡。
 
-![管理个人资料页面](https://raw.githubusercontent.com/Wai-Technologies/raaghu-docs/development/raaghu/docs/en/images/my-account.png)
+![管理个人资料页面](https://raaghustorageaccount.blob.core.windows.net/raaghu-docs/my-account.png)

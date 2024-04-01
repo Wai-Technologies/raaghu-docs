@@ -37,31 +37,31 @@ Gestão de Arquivos
 
 A página de Gestão de Arquivos é usada para ⁇  pastas, carregar arquivos e visualizar a lista de pastas e arquivos que ⁇ am na ⁇ .
 
-![A página de Gestão de Arquivos é usada para ⁇  pastas, carregar arquivos e visualizar a lista de pastas](.https://raw.githubusercontent.com/Wai-Technologies/raaghu-docs/development/raaghu/docs/en/images/file-management.png)
+![A página de Gestão de Arquivos é usada para ⁇  pastas, carregar arquivos e visualizar a lista de pastas](.https://raaghustorageaccount.blob.core.windows.net/raaghu-docs/file-management.png)
 ### pastas
 A página Gerenciamento de arquivos é usada para criar pastas, fazer upload de arquivos e visualizar a lista de pastas e arquivos armazenados no aplicativo.
 
-![Você pode ⁇  uma nova pasta clicando em Criar ⁇  de pasta que está ⁇  no topo da página. A pasta será ⁇  no ⁇  ⁇ .](https://raw.githubusercontent.com/Wai-Technologies/raaghu-docs/development/raaghu/docs/en/images/file-management-new.png)
+![Você pode ⁇  uma nova pasta clicando em Criar ⁇  de pasta que está ⁇  no topo da página. A pasta será ⁇  no ⁇  ⁇ .](https://raaghustorageaccount.blob.core.windows.net/raaghu-docs/file-management-new.png)
 
 Você pode mover uma pasta para outro diretório na visualização em árvore esquerda.
 
-![Você pode mover uma pasta para outro ⁇  na vista de ⁇  esquerda](https://raw.githubusercontent.com/Wai-Technologies/raaghu-docs/development/raaghu/docs/en/images/file-management-move.png)
+![Você pode mover uma pasta para outro ⁇  na vista de ⁇  esquerda](https://raaghustorageaccount.blob.core.windows.net/raaghu-docs/file-management-move.png)
 
 Você pode renomear uma pasta clicando em Ações -> Renomear na tabela.
 
-![Você pode renomear uma pasta](https://raw.githubusercontent.com/Wai-Technologies/raaghu-docs/development/raaghu/docs/en/images/file-management-rename.png)
+![Você pode renomear uma pasta](https://raaghustorageaccount.blob.core.windows.net/raaghu-docs/file-management-rename.png)
 ### arquivos
 Você pode fazer upload de arquivos clicando no botão Carregar arquivos localizado no canto superior direito da página. Isso abrirá um novo modal para selecionar seus arquivos locais para upload. Os arquivos serão carregados no diretório ativo.
 
-![Você pode carregar arquivos clicando em Adicionar arquivos ⁇  que ⁇  no topo da página](https://raw.githubusercontent.com/Wai-Technologies/raaghu-docs/development/raaghu/docs/en/images/file-management-upload.png)
+![Você pode carregar arquivos clicando em Adicionar arquivos ⁇  que ⁇  no topo da página](https://raaghustorageaccount.blob.core.windows.net/raaghu-docs/file-management-upload.png)
 
 Você pode mover arquivos clicando em Ações -> Mover na tabela de dados.
 
-![Você pode mover arquivos clicando Actions Move na ⁇  de dados.](https://raw.githubusercontent.com/Wai-Technologies/raaghu-docs/development/raaghu/docs/en/images/file-management-move.png)
+![Você pode mover arquivos clicando Actions Move na ⁇  de dados.](https://raaghustorageaccount.blob.core.windows.net/raaghu-docs/file-management-move.png)
 
 Você pode renomear um arquivo clicando em Ações -> Renomear na tabela de dados.
 
-![Você pode renomear um arquivo clicando Actions Rename na ⁇  de dados](https://raw.githubusercontent.com/Wai-Technologies/raaghu-docs/development/raaghu/docs/en/images/file-management-rename-edit.png)
+![Você pode renomear um arquivo clicando Actions Rename na ⁇  de dados](https://raaghustorageaccount.blob.core.windows.net/raaghu-docs/file-management-rename-edit.png)
 ### Semente de dadoss
 Este módulo não propaga nenhum dado.
 ### interno

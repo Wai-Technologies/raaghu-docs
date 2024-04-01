@@ -59,7 +59,7 @@ abp login username
 
 [ABP Suite](https://docs.abp.io/en/commercial/7.2/abp-suite/index)是一个旨在帮助您进行开发的应用程序。
 
-![Create A New Solution](https://raw.githubusercontent.com/Wai-Technologies/raaghu-docs/development/raaghu/docs/en/images/createANewSol.png)
+![Create A New Solution](https://raaghustorageaccount.blob.core.windows.net/raaghu-docs/createANewSol.png)
 
 
 首先，您需要安装ABP Suite：

@@ -34,11 +34,11 @@ Languages
 
 Languages page is used to manage languages in the system.
 
-![New Language](https://raw.githubusercontent.com/Wai-Technologies/raaghu-docs/development/raaghu/docs/en/images/language.png)
+![New Language](https://raaghustorageaccount.blob.core.windows.net/raaghu-docs/language.png)
 
 You can create a new language or edit an existing language in this page:
 
-![Create New Language](https://raw.githubusercontent.com/Wai-Technologies/raaghu-docs/development/raaghu/docs/en/images/language-new.png) ![Edit Language](https://raw.githubusercontent.com/Wai-Technologies/raaghu-docs/development/raaghu/docs/en/images/language-edit.png)
+![Create New Language](https://raaghustorageaccount.blob.core.windows.net/raaghu-docs/language-new.png) ![Edit Language](https://raaghustorageaccount.blob.core.windows.net/raaghu-docs/language-edit.png)
 
 * **Enabled** languages can be selected as the system language.
 
@@ -46,8 +46,8 @@ You can create a new language or edit an existing language in this page:
 
 Language texts page is used to manage texts in different languages.
 
-![Language Texts](https://raw.githubusercontent.com/Wai-Technologies/raaghu-docs/development/raaghu/docs/en/images/langauge-text.png)
+![Language Texts](https://raaghustorageaccount.blob.core.windows.net/raaghu-docs/langauge-text.png)
 
 You can translate a text for a language or edit the already existing translation in this page.
 
-![edit the already existing translation in this page](https://raw.githubusercontent.com/Wai-Technologies/raaghu-docs/development/raaghu/docs/en/images/language-text-edit.png)
+![edit the already existing translation in this page](https://raaghustorageaccount.blob.core.windows.net/raaghu-docs/language-text-edit.png)

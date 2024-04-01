@@ -23,11 +23,11 @@ Run the ABP Suite with the following command:
 
 * This command starts the ABP Suite and opens in your default browser:
 
-![Create A New Solution](https://raw.githubusercontent.com/Wai-Technologies/raaghu-docs/development/raaghu/docs/en/images/createANewSol.png)
+![Create A New Solution](https://raaghustorageaccount.blob.core.windows.net/raaghu-docs/createANewSol.png)
 
 Click the **Create a new solution** button and fill the modal form:
 
-![Create A New Solution for modal form](https://raw.githubusercontent.com/Wai-Technologies/raaghu-docs/development/raaghu/docs/en/images/createSol.png "createSol")
+![Create A New Solution for modal form](https://raaghustorageaccount.blob.core.windows.net/raaghu-docs/createSol.png "createSol")
 
 Select the UI framework as raaghu-react, Database Provider, and other options based on your preferences, then click on the OK button
 

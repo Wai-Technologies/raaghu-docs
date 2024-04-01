@@ -45,11 +45,11 @@ Role management
 
 Roles page is used to manage roles in the system. A role is a set of permissions assigned to the users.
 
-![New Role](https://raw.githubusercontent.com/Wai-Technologies/raaghu-docs/development/raaghu/docs/en/images/users-role.png)
+![New Role](https://raaghustorageaccount.blob.core.windows.net/raaghu-docs/users-role.png)
 
 You can create a new role or edit a role in this page:
 
-![You can create a new role or edit a role in this page](https://raw.githubusercontent.com/Wai-Technologies/raaghu-docs/development/raaghu/docs/en/images/role-new.png)
+![You can create a new role or edit a role in this page](https://raaghustorageaccount.blob.core.windows.net/raaghu-docs/role-new.png)
 
 * **Default** roles are assigned to new users by default.
 * **Public** roles are visible to other users.
@@ -69,7 +69,7 @@ You can manage permissions of a role:
 
 You can set custom claim values for a role:
 
-![Edit Role](https://raw.githubusercontent.com/Wai-Technologies/raaghu-docs/development/raaghu/docs/en/images/role-claims.png)
+![Edit Role](https://raaghustorageaccount.blob.core.windows.net/raaghu-docs/role-claims.png)
 
 Claim types are retrieved from the claim list defined in the Claim Types Management page (see below).
 
@@ -77,21 +77,21 @@ Claim types are retrieved from the claim list defined in the Claim Types Managem
 
 Users page is used to manage the users in your system.
 
-![User Management ](https://raw.githubusercontent.com/Wai-Technologies/raaghu-docs/development/raaghu/docs/en/images/users.png)
+![User Management ](https://raaghustorageaccount.blob.core.windows.net/raaghu-docs/users.png)
 
 You can create a new user or edit an existing user in this page:
 
-![You can create a new user or edit an existing user in this page ](https://raw.githubusercontent.com/Wai-Technologies/raaghu-docs/development/raaghu/docs/en/images/users-new.png)
+![You can create a new user or edit an existing user in this page ](https://raaghustorageaccount.blob.core.windows.net/raaghu-docs/users-new.png)
 
 * A user can have **zero or more roles** in the system.
 * You can set **two factor** verification and user **lockout** settings per user.
-  ![New User ](https://raw.githubusercontent.com/Wai-Technologies/raaghu-docs/development/raaghu/docs/en/images/users-role.png)
+  ![New User ](https://raaghustorageaccount.blob.core.windows.net/raaghu-docs/users-role.png)
 
 ### User permissions
 
 A user has union of the permissions of the assigned roles. Identity module also allows to grant extra permissions to a specific user.
 
-![Edit User ](https://raw.githubusercontent.com/Wai-Technologies/raaghu-docs/development/raaghu/docs/en/images/user-permision.png)
+![Edit User ](https://raaghustorageaccount.blob.core.windows.net/raaghu-docs/user-permision.png)
 
 * A permission is an **action of the application** granted to roles and users.
 * A user with a role will **inherit** all the permissions granted for the role.
@@ -102,7 +102,7 @@ A user has union of the permissions of the assigned roles. Identity module also 
 
 Identity module allows to define custom claim types.
 
-![New Claim Type ](https://raw.githubusercontent.com/Wai-Technologies/raaghu-docs/development/raaghu/docs/en/images/claim.png)
+![New Claim Type ](https://raaghustorageaccount.blob.core.windows.net/raaghu-docs/claim.png)
 
 * Custom claims can be used to store additional information to a user or role.
 * Custom claim values then can be accessed in the application code for an authenticated user.
@@ -112,15 +112,15 @@ Identity module allows to define custom claim types.
 
 Organization units page is used to manage organization units, members of organization units and roles of organization units.
 
-![Organization units page is used to manage organization units, members of organization units and roles of organization units](https://raw.githubusercontent.com/Wai-Technologies/raaghu-docs/development/raaghu/docs/en/images/organization-Unit.png)
+![Organization units page is used to manage organization units, members of organization units and roles of organization units](https://raaghustorageaccount.blob.core.windows.net/raaghu-docs/organization-Unit.png)
 
 You can add a new organization unit or edit an existing organization unit on this page. In order to add a new root organization unit, click "New root unit" button and fill the opening form.
 
-![New Organization Unit](https://raw.githubusercontent.com/Wai-Technologies/raaghu-docs/development/raaghu/docs/en/images/organization-Unit.png)
+![New Organization Unit](https://raaghustorageaccount.blob.core.windows.net/raaghu-docs/organization-Unit.png)
 
 In order to add a sub-unit to an existing organization unit, right click on an existing organization unit and click "Add sub-unit" context menu item. Similarly, in order to edit an organization unit, right click on an existing organization unit and click "Edit" context menu item.
 
-![Edit Organization Unit](https://raw.githubusercontent.com/Wai-Technologies/raaghu-docs/development/raaghu/docs/en/images/organization-Unit-edit.png)
+![Edit Organization Unit](https://raaghustorageaccount.blob.core.windows.net/raaghu-docs/organization-Unit-edit.png)
 
 You can manage members of an organization unit using the members tab by selection an organization unit
 
@@ -128,4 +128,4 @@ You can manage members of an organization unit using the members tab by selectio
 
 Security logs page is used to search and view authentication related operations (login, logout, change password...) in the system.
 
-![Security Logs](https://raw.githubusercontent.com/Wai-Technologies/raaghu-docs/development/raaghu/docs/en/images/security-logs.png)
+![Security Logs](https://raaghustorageaccount.blob.core.windows.net/raaghu-docs/security-logs.png)

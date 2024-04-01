@@ -27,9 +27,9 @@ Login Page
 
 A página de login é usada para fazer login no sistema.
 
-![Página inicial](https://raw.githubusercontent.com/Wai-Technologies/raaghu-docs/development/raaghu/docs/en/images/home-page.png)
+![Página inicial](https://raaghustorageaccount.blob.core.windows.net/raaghu-docs/home-page.png)
 
-![A página de login é usada para fazer login no sistema](https://raw.githubusercontent.com/Wai-Technologies/raaghu-docs/development/raaghu/docs/en/images/login_page.png)
+![A página de login é usada para fazer login no sistema](https://raaghustorageaccount.blob.core.windows.net/raaghu-docs/login_page.png)
 ### página de registo
 A página de registo permite que novos usuários se registrem no seu sistema.
 ### interno

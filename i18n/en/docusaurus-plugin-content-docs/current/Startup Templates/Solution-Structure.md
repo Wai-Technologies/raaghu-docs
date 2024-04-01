@@ -17,11 +17,11 @@ Default structure
 
 If you don't specify any additional option, you will have a solution in the **aspnet-core** folder like the below:
 
-![Default Structure](https://raw.githubusercontent.com/Wai-Technologies/raaghu-docs/development/raaghu/docs/en/images/defaultStructure.png)
+![Default Structure](https://raaghustorageaccount.blob.core.windows.net/raaghu-docs/defaultStructure.png)
 
 Projects are located in aspnet-core/src and aspnet-core/test folders. While the aspnet-core/src folder contains the actual application, aspnet-core/test folder contains unit tests and test base projects. The below diagram shows the layers & project dependencies of the application:
 
-![flow-chart Structure](https://raw.githubusercontent.com/Wai-Technologies/raaghu-docs/development/raaghu/docs/en/images/flow-chart.png)
+![flow-chart Structure](https://raaghustorageaccount.blob.core.windows.net/raaghu-docs/flow-chart.png)
 
 Each section below describes the related project and its dependencies.
 
@@ -135,19 +135,19 @@ However, if you don't choose the \--tiered option when you create a solution, th
 
 Following are the architecture on how raaghu-react is being used as a part of UI application
 
-![Following are the architecture on how raaghu-react is being used as a part of UI application](https://raw.githubusercontent.com/Wai-Technologies/raaghu-docs/development/raaghu/docs/en/images/raaghu-architecture.png)
+![Following are the architecture on how raaghu-react is being used as a part of UI application](https://raaghustorageaccount.blob.core.windows.net/raaghu-docs/raaghu-architecture.png)
 
 ### Raaghu - Authentication flow(login page)
 
-![raaghu-Authentication Flow](https://raw.githubusercontent.com/Wai-Technologies/raaghu-docs/development/raaghu/docs/en/images/raaghuAuthenticationFlow.png)
+![raaghu-Authentication Flow](https://raaghustorageaccount.blob.core.windows.net/raaghu-docs/raaghuAuthenticationFlow.png)
 
 ### Raaghu - Localization
 
-![raaghu Localization](https://raw.githubusercontent.com/Wai-Technologies/raaghu-docs/development/raaghu/docs/en/images/raaghuLocalization.png)
+![raaghu Localization](https://raaghustorageaccount.blob.core.windows.net/raaghu-docs/raaghuLocalization.png)
 
 ### Raaghu - Page flow
 
-![Raaghu - Page flow](https://raw.githubusercontent.com/Wai-Technologies/raaghu-docs/development/raaghu/docs/en/images/raaghuPageFlow.png)
+![Raaghu - Page flow](https://raaghustorageaccount.blob.core.windows.net/raaghu-docs/raaghuPageFlow.png)
 
 ### What's next?
 

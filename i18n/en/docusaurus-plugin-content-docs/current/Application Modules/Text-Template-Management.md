@@ -31,8 +31,8 @@ Text Templates
 
 Text Templates page is used to view the list of templates defined in the application.
 
-![Text Templates page is used to view the list of templates](https://raw.githubusercontent.com/Wai-Technologies/raaghu-docs/development/raaghu/docs/en/images/text-template.png)
+![Text Templates page is used to view the list of templates](https://raaghustorageaccount.blob.core.windows.net/raaghu-docs/text-template.png)
 
 Click to the Actions -> Edit Contents to edit content for a template. There are two types of UI to edit a template content:
 
-![Edit content for a template](https://raw.githubusercontent.com/Wai-Technologies/raaghu-docs/development/raaghu/docs/en/images/text-template-edit.png)
+![Edit content for a template](https://raaghustorageaccount.blob.core.windows.net/raaghu-docs/text-template-edit.png)

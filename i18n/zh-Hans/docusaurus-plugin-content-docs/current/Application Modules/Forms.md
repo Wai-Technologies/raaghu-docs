@@ -85,7 +85,7 @@ Entity Framework Core / MongoDB
 
 **实体关系**
 
-![实体关系](https://raw.githubusercontent.com/Wai-Technologies/raaghu-docs/development/raaghu/docs/en/images/entityRelationship.jpg)
+![实体关系](https://raaghustorageaccount.blob.core.windows.net/raaghu-docs/entityRelationship.jpg)
 
 ### 权限
 

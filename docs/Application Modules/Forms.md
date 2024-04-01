@@ -82,7 +82,7 @@ Tables / Collections
 
 **Entity Relationships**
 
-![Entity Relationships](https://raw.githubusercontent.com/Wai-Technologies/raaghu-docs/development/raaghu/docs/en/images/entityRelationship.jpg)
+![Entity Relationships](https://raaghustorageaccount.blob.core.windows.net/raaghu-docs/entityRelationship.jpg)
 
 ### Permissions
 

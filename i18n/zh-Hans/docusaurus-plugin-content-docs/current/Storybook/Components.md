@@ -31,7 +31,7 @@ Default.args = {
 
 所以以按钮元素为例，创建 **button.stories** 文件。
 
-![故事文件图像](https://raw.githubusercontent.com/Wai-Technologies/raaghu-docs/development/raaghu/docs/en/images/storybook-button.png)
+![故事文件图像](https://raaghustorageaccount.blob.core.windows.net/raaghu-docs/storybook-button.png)
 将 `MyComponent` 替换为您组件的实际名称。此示例假定您的组件命名为 `MyComponent`。
 
 运行Storybook，您应该在Storybook用户界面中看到您的组件故事。
@@ -108,13 +108,13 @@ Disable.args = {
 
 Storybook UI 中有 **控制面板**。它将显示多个控件。
 
-![控制面板](https://raw.githubusercontent.com/Wai-Technologies/raaghu-docs/development/raaghu/docs/en/images/storybook-control.png)
+![控制面板](https://raaghustorageaccount.blob.core.windows.net/raaghu-docs/storybook-control.png)
 
 ### 文档
 
 Storybook中的文档通常是使用像 @storybook/addon-docs 这样的插件生成的。它允许您在您的故事文件中直接使用Markdown和TSX的组合来为组件编写文档。这些文档可以从Storybook界面访问，使开发人员更容易理解如何使用您的组件。
 
-![文档](https://raw.githubusercontent.com/Wai-Technologies/raaghu-docs/development/raaghu/docs/en/images/storybook-docs.png)
+![文档](https://raaghustorageaccount.blob.core.windows.net/raaghu-docs/storybook-docs.png)
 
 
 这段代码是将英文Markdown文件翻译成了中文。如果有任何进一步的问题或需要进一步的翻译，请告诉我。

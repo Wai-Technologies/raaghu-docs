@@ -87,11 +87,11 @@ Gestão de inquilinos
 
 A página de inquilinos é usada para administrar inquilinos no sistema.
 
-![Novo inquilino](https://raw.githubusercontent.com/Wai-Technologies/raaghu-docs/development/raaghu/docs/en/images/tenant.png)
+![Novo inquilino](https://raaghustorageaccount.blob.core.windows.net/raaghu-docs/tenant.png)
 
 Você pode criar um novo locatário ou editar um locatário nesta página:
 
-![Você pode ⁇  um novo inquilino ou editar um inquilino nesta página](https://raw.githubusercontent.com/Wai-Technologies/raaghu-docs/development/raaghu/docs/en/images/tenant-new.png)
+![Você pode ⁇  um novo inquilino ou editar um inquilino nesta página](https://raaghustorageaccount.blob.core.windows.net/raaghu-docs/tenant-new.png)
 
 ### Cadeia de conexão
 Você pode gerenciar a cadeia de conexão de um locatário caso queira usar um banco de dados separado para um locatário específico. Se quiser usar o banco de dados Host para um locatário, selecione a opção "Usar o banco de dados compartilhado".
@@ -101,20 +101,20 @@ Você também pode usar o recurso de cadeia de conexão de banco de dados espec�
 ### características de inquilinos
 Você pode definir características de inquilinos.
 
-![Você pode definir características de inquilinos](https://raw.githubusercontent.com/Wai-Technologies/raaghu-docs/development/raaghu/docs/en/images/tenant-features.png)
+![Você pode definir características de inquilinos](https://raaghustorageaccount.blob.core.windows.net/raaghu-docs/tenant-features.png)
 
 Gerenciamento de edição
 
 A página de edições é usada para gerenciar as edições em seu sistema.
 
-![A página de edições é usada para gerenciar as edições em seu sistema](https://raw.githubusercontent.com/Wai-Technologies/raaghu-docs/development/raaghu/docs/en/images/editions.png)
+![A página de edições é usada para gerenciar as edições em seu sistema](https://raaghustorageaccount.blob.core.windows.net/raaghu-docs/editions.png)
 
 Você pode criar uma nova edição ou editar uma edição existente nesta página:
 
-![Criar uma nova edição ou editar uma edição existente](https://raw.githubusercontent.com/Wai-Technologies/raaghu-docs/development/raaghu/docs/en/images/edition-new.png)
+![Criar uma nova edição ou editar uma edição existente](https://raaghustorageaccount.blob.core.windows.net/raaghu-docs/edition-new.png)
 
 ### características da edição
 Você pode definir as características de uma edição nesta página:
 
-![Definir características de uma edição nesta página](https://raw.githubusercontent.com/Wai-Technologies/raaghu-docs/development/raaghu/docs/en/images/editions-edit.png)
+![Definir características de uma edição nesta página](https://raaghustorageaccount.blob.core.windows.net/raaghu-docs/editions-edit.png)
 

@@ -34,15 +34,15 @@ Login Page
 
 Login Page is used to log in to the system.
 
-![Home page](https://raw.githubusercontent.com/Wai-Technologies/raaghu-docs/development/raaghu/docs/en/images/home-page.png)
+![Home page](https://raaghustorageaccount.blob.core.windows.net/raaghu-docs/home-page.png)
 
-![Login page is used to log in to the system](https://raw.githubusercontent.com/Wai-Technologies/raaghu-docs/development/raaghu/docs/en/images/login_page.png)
+![Login page is used to log in to the system](https://raaghustorageaccount.blob.core.windows.net/raaghu-docs/login_page.png)
 
 ### Register Page
 
 Register Page allows new users to register to your system.
 
-![Register page allows new users to register to your system](https://raw.githubusercontent.com/Wai-Technologies/raaghu-docs/development/raaghu/docs/en/images/register_page.png)
+![Register page allows new users to register to your system](https://raaghustorageaccount.blob.core.windows.net/raaghu-docs/register_page.png)
 
 ### Internals
 

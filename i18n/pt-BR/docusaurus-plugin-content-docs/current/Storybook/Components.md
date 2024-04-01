@@ -29,7 +29,7 @@ crie o arquivo stoires para elementos específicos usando filename.stories. stot
 ```
 Então pegue o exemplo como elemento de botão. crie o arquivo button.stories.
 
-![⁇  imagem de arquivo](https://raw.githubusercontent.com/Wai-Technologies/raaghu-docs/development/raaghu/docs/en/images/storybook-button.png)
+![⁇  imagem de arquivo](https://raaghustorageaccount.blob.core.windows.net/raaghu-docs/storybook-button.png)
 
 Substitua MyComponent pelo nome real do seu componente. Este exemplo pressupõe que seu componente se chama MyComponent.
 
@@ -106,9 +106,9 @@ O controle permite ajustar e personalizar as propriedades ou acessórios de um c
 
 Há um painel de controle na interface do livro de histórias. Ele mostrará o controle múltiplo.
 
-![⁇  de controle](https://raw.githubusercontent.com/Wai-Technologies/raaghu-docs/development/raaghu/docs/en/images/storybook-control.png)
+![⁇  de controle](https://raaghustorageaccount.blob.core.windows.net/raaghu-docs/storybook-control.png)
 ### docs
 A documentação no Storybook geralmente é gerada usando complementos como @storybook/addon-docs. Ele permite que você escreva documentação para seus componentes diretamente nos arquivos de história usando uma combinação de Markdown e TSX. Esta documentação pode ser acessada na interface do Storybook, facilitando o entendimento dos desenvolvedores sobre como usar seus componentes.
 
-![docs](https://raw.githubusercontent.com/Wai-Technologies/raaghu-docs/development/raaghu/docs/en/images/storybook-docs.png)
+![docs](https://raaghustorageaccount.blob.core.windows.net/raaghu-docs/storybook-docs.png)
 

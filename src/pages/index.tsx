@@ -9,37 +9,37 @@ export default function Home(): React.JSX.Element {
 		{
 			"step": 1,
 			"title": "Pre Requirements",
-			"imageSrc": "Landing page/prerequirements.png",
+			"imageSrc": "https://raaghustorageaccount.blob.core.windows.net/raaghu-docs/prerequirements.png",
 			"altText": "Pre Requirement"
 		},
 		{
 			"step": 2,
 			"title": "Install ABP CLI & Login",
-			"imageSrc": "Landing page/clilogin.png",
+			"imageSrc": "https://raaghustorageaccount.blob.core.windows.net/raaghu-docs/clilogin.png",
 			"altText": "Install ABP CLI & Login"
 		},
 		{
 			"step": 3,
 			"title": "Install ABP suite",
-			"imageSrc": "Landing page/abpsuite.png",
+			"imageSrc": "https://raaghustorageaccount.blob.core.windows.net/raaghu-docs/abpsuite.png",
 			"altText": "Install ABP suite"
 		},
 		{
 			"step": 4,
 			"title": "Create new solution, project & database",
-			"imageSrc": "Landing page/newsolution.png",
+			"imageSrc": "https://raaghustorageaccount.blob.core.windows.net/raaghu-docs/newsolution.png",
 			"altText": "Create new solution, project & database"
 		},
 		{
 			"step": 5,
 			"title": "Create Server side",
-			"imageSrc": "Landing page/serverside.png",
+			"imageSrc": "https://raaghustorageaccount.blob.core.windows.net/raaghu-docs/serverside.png",
 			"altText": "Create Server side"
 		},
 		{
 			"step": 6,
 			"title": "Book list page & Create a new book",
-			"imageSrc": "Landing page/booklistpage.png",
+			"imageSrc": "https://raaghustorageaccount.blob.core.windows.net/raaghu-docs/booklistpage.png",
 			"altText": "Book list page & Create a new book"
 		}
 	];
@@ -47,94 +47,94 @@ export default function Home(): React.JSX.Element {
 	const carouselData = [
 		[
 			{
-				"image": "Landing page/Account.svg",
+				"image": "https://raaghustorageaccount.blob.core.windows.net/raaghu-docs/Account.svg",
 				"title": "Account",
 				"description": "Login, register, forgot password, email activation, social logins and other account related functionalities"
 			},
 			{
-				"image": "Landing page/Audit-Logging.svg",
+				"image": "https://raaghustorageaccount.blob.core.windows.net/raaghu-docs/Audit-Logging.svg",
 				"title": "Audit Logging",
 				"description": "Reporting the user audit logs and entity history in details"
 			},
 			{
-				"image": "Landing page/Chat.svg",
+				"image": "https://raaghustorageaccount.blob.core.windows.net/raaghu-docs/Chat.svg",
 				"title": "Chat",
 				"description": "Real time messaging between users"
 			},
 			
 		],
 		[{
-			"image": "Landing page/CMS-Kit.svg",
+			"image": "https://raaghustorageaccount.blob.core.windows.net/raaghu-docs/CMS-Kit.svg",
 			"title": "CMS Kit",
 			"description": "Building blocks to create your own Content Management System"
 		},
 			{
-				"image": "Landing page/File-Management.svg",
+				"image": "https://raaghustorageaccount.blob.core.windows.net/raaghu-docs/File-Management.svg",
 				"title": "File Management",
 				"description": "Organize, upload/download files as per hierarchy."
 			},
 			{
-				"image": "Landing page/Forms.svg",
+				"image": "https://raaghustorageaccount.blob.core.windows.net/raaghu-docs/Forms.svg",
 				"title": "Forms",
 				"description": "Create forms and surveys"
 			},
 		],
 		[
 			{
-				"image": "Landing page/GDPR.svg",
+				"image": "https://raaghustorageaccount.blob.core.windows.net/raaghu-docs/GDPR.svg",
 				"title": "GDPR",
 				"description": "This module allows users to download and delete their personal data collected by the application"
 			},
 			{
-				"image": "Landing page/Language-Management.svg",
+				"image": "https://raaghustorageaccount.blob.core.windows.net/raaghu-docs/Language-Management.svg",
 				"title": "Language Management",
 				"description": "Add or remove languages and localize the application UI on the fly"
 			},
 			{
-				"image": "Landing page/Raaghu-Theming.svg",
+				"image": "https://raaghustorageaccount.blob.core.windows.net/raaghu-docs/Raaghu-Theming.svg",
 				"title": "Raaghu Theming",
 				"description": "Switch to desired themes or customize as per brand guidelines"
 			},
 		],
 		[
 			{
-				"image": "Landing page/OpenIddict-UI.svg",
+				"image": "https://raaghustorageaccount.blob.core.windows.net/raaghu-docs/OpenIddict-UI.svg",
 				"title": "OpenIddict UI",
 				"description": "User, role, claims and permission management"
 			},
 			{
-				"image": "Landing page/Payment.svg",
+				"image": "https://raaghustorageaccount.blob.core.windows.net/raaghu-docs/Payment.svg",
 				"title": "Payment",
 				"description": "Provides integration for different payment gateways"
 			},
 			{
-				"image": "Landing page/SaaS.svg",
+				"image": "https://raaghustorageaccount.blob.core.windows.net/raaghu-docs/SaaS.svg",
 				"title": "SaaS",
 				"description": "Manage tenants, editions and features to create your multi-tenant / SaaS application"
 			},
 		],
 		[
 			{
-				"image": "Landing page/Text-Template-Management.svg",
+				"image": "https://raaghustorageaccount.blob.core.windows.net/raaghu-docs/Text-Template-Management.svg",
 				"title": "Text Template Management",
 				"description": "Edit text/email templates on the user interface"
 			},
 			{
-				"image": "Landing page/Blogging.svg",
+				"image": "https://raaghustorageaccount.blob.core.windows.net/raaghu-docs/Blogging.svg",
 				"title": "Blogging",
 				"description": "Create and manage your own blogs"
 			}
 		]
 	];
 	const imageInfo = [
-		{ src: 'Landing page/abp-logo.svg', alt: 'Abp commercial' },
-		{ src: 'Landing page/bootstrap-logo.svg', alt: 'bootstrap' },
-		{ src: 'Landing page/figma-logo.svg', alt: 'figma' },
-		{ src: 'Landing page/typescript-logo.svg', alt: 'typescript' },
-		{ src: 'Landing page/visual-studio-logo.svg', alt: 'visual studio' },
-		{ src: 'Landing page/lottiefiles-logo.svg', alt: 'lottie files' },
-		{ src: 'Landing page/storybook-logo.svg', alt: 'storybook' },
-		{ src: 'Landing page/xd-logo.svg', alt: 'xd' }
+		{ src: 'https://raaghustorageaccount.blob.core.windows.net/raaghu-docs/abp-logo.svg', alt: 'Abp commercial' },
+		{ src: 'https://raaghustorageaccount.blob.core.windows.net/raaghu-docs/bootstrap-logo.svg', alt: 'bootstrap' },
+		{ src: 'https://raaghustorageaccount.blob.core.windows.net/raaghu-docs/figma-logo.svg', alt: 'figma' },
+		{ src: 'https://raaghustorageaccount.blob.core.windows.net/raaghu-docs/typescript-logo.svg', alt: 'typescript' },
+		{ src: 'https://raaghustorageaccount.blob.core.windows.net/raaghu-docs/visual-studio-logo.svg', alt: 'visual studio' },
+		{ src: 'https://raaghustorageaccount.blob.core.windows.net/raaghu-docs/lottiefiles-logo.svg', alt: 'lottie files' },
+		{ src: 'https://raaghustorageaccount.blob.core.windows.net/raaghu-docs/storybook-logo.svg', alt: 'storybook' },
+		{ src: 'https://raaghustorageaccount.blob.core.windows.net/raaghu-docs/xd-logo.svg', alt: 'xd' }
 	];
 
 	return (
@@ -149,14 +149,14 @@ export default function Home(): React.JSX.Element {
 								<div className="">
 									<div className="d-flex align-items-center gap-3">
 										<div className="d-flex align-items-center gap-2">
-											<img src="Landing page/React-icon.png" height="22px" alt="abp commercial logo" />
+											<img src="https://raaghustorageaccount.blob.core.windows.net/raaghu-docs/React-icon.png" height="22px" alt="abp commercial logo" />
 											<p className="mb-0 landing__para">React</p>
 										</div>
 										<div>
 											<p className="mb-0 fs-5 fw-semibold landing__para">+</p>
 										</div>
 										<div className="d-flex align-items-center">
-											<img src="Landing page/abp-commercial-logo.png" height="22px" className="abp-logo" alt="abp commercial logo" />
+											<img src="https://raaghustorageaccount.blob.core.windows.net/raaghu-docs/abp-commercial-logo.png" height="22px" className="abp-logo" alt="abp commercial logo" />
 											<p className="mb-0 commercial">Commercial</p>
 										</div>
 									</div>
@@ -168,7 +168,7 @@ export default function Home(): React.JSX.Element {
 								</div>
 							</div>
 							<div className="col-xxl-7 col-xl-6 col-lg-5 col-md-12">
-								<img src="Landing page/landing-banner.png" className="banner-text" />
+								<img src="https://raaghustorageaccount.blob.core.windows.net/raaghu-docs/landing-banner.png" className="banner-text" />
 							</div>
 						</div>
 					</div>
@@ -198,7 +198,7 @@ export default function Home(): React.JSX.Element {
 
 				{/* technology stack */}
 				<div className="container-fluid gradient-border"></div>
-				<div className="container-fluid py-xxl-5 py-xl-5 py-lg-5 py-md-5 py-0 technology-stack" style={{ backgroundImage: "url('Landing page/technology-stack-bg.png')" }}>
+				<div className="container-fluid py-xxl-5 py-xl-5 py-lg-5 py-md-5 py-0 technology-stack" style={{ backgroundImage: "url('https://raaghustorageaccount.blob.core.windows.net/raaghu-docs/technology-stack-bg.png')" }}>
 					<div className="container">
 						<div className="pb-3 pt-4 text-center">
 							<label htmlFor="Technology Stack" className='text-white fs-2 form-label mb-0 fw-semibold'>Technology Stack</label>
