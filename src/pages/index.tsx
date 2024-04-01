@@ -1,11 +1,10 @@
 import React from 'react';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
-import 'bootstrap/dist/js/bootstrap.bundle.min';
+
 
 export default function Home(): React.JSX.Element {
 	const { siteConfig } = useDocusaurusContext();
-	// JSON data
 	const stepsData = [
 		{
 			"step": 1,
@@ -62,13 +61,13 @@ export default function Home(): React.JSX.Element {
 				"title": "Chat",
 				"description": "Real time messaging between users"
 			},
-			{
-				"image": "Landing page/CMS-Kit.svg",
-				"title": "CMS Kit",
-				"description": "Building blocks to create your own Content Management System"
-			}
+			
 		],
-		[
+		[{
+			"image": "Landing page/CMS-Kit.svg",
+			"title": "CMS Kit",
+			"description": "Building blocks to create your own Content Management System"
+		},
 			{
 				"image": "Landing page/File-Management.svg",
 				"title": "File Management",
@@ -79,6 +78,8 @@ export default function Home(): React.JSX.Element {
 				"title": "Forms",
 				"description": "Create forms and surveys"
 			},
+		],
+		[
 			{
 				"image": "Landing page/GDPR.svg",
 				"title": "GDPR",
@@ -88,14 +89,14 @@ export default function Home(): React.JSX.Element {
 				"image": "Landing page/Language-Management.svg",
 				"title": "Language Management",
 				"description": "Add or remove languages and localize the application UI on the fly"
-			}
-		],
-		[
+			},
 			{
 				"image": "Landing page/Raaghu-Theming.svg",
 				"title": "Raaghu Theming",
 				"description": "Switch to desired themes or customize as per brand guidelines"
 			},
+		],
+		[
 			{
 				"image": "Landing page/OpenIddict-UI.svg",
 				"title": "OpenIddict UI",
@@ -110,7 +111,7 @@ export default function Home(): React.JSX.Element {
 				"image": "Landing page/SaaS.svg",
 				"title": "SaaS",
 				"description": "Manage tenants, editions and features to create your multi-tenant / SaaS application"
-			}
+			},
 		],
 		[
 			{
@@ -122,17 +123,7 @@ export default function Home(): React.JSX.Element {
 				"image": "Landing page/Blogging.svg",
 				"title": "Blogging",
 				"description": "Create and manage your own blogs"
-			},
-			{
-				"image": "Landing page/Chat.svg",
-				"title": "Chat",
-				"description": "Real time messaging between users"
-			},
-			{
-				"image": "Landing page/Account.svg",
-				"title": "Account",
-				"description": "Login, register, forgot password, email activation, social logins and other account related functionalities"
-			},
+			}
 		]
 	];
 	const imageInfo = [
@@ -219,53 +210,34 @@ export default function Home(): React.JSX.Element {
 						</div>
 					</div>
 				</div>
-				{/* <div className="container-fluid gradient-border"></div> */}
 				{/* Pre-Built Application Modules */}
 				<div className="container-fluid py-5 bg-black mt-7">
 					<div className="container pb-5">
 						<div className="py-5 mb-4 text-center">
 							<label className="fs-2 fw-semibold text-white">Pre-Built Application Modules</label>
 						</div>
-
-						<div id="carouselExampleIndicators" className="carousel slide modules-slider" data-bs-ride="true">
-							<div className="carousel-indicators">
-								<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" className="active active border-0 rounded" aria-current="true" aria-label="Slide 1"></button>
-								<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-								<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-								<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
-							</div>
-							<div className="carousel-inner">
-								{carouselData.map((slide, index) => (
-									<div key={index} className={`carousel-item module-items ${index === 0 ? 'active' : ''}`}>
-										<div className="row w-75 mx-auto">
-											{slide.map((item, itemIndex) => (
-												<div key={itemIndex} className="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-12 mb-5 pe-xxl-4 pe-xl-4 pe-lg-4">
-													<div className="card border-gradient-primary bg-transparent border-0 px-xxl-5 px-xl-3 px-lg-0 px-md-0 px-0 py-3 h-100">
-														<div className="card-body text-center">
-															<div className="pb-1">
-																<img src={item.image} alt={item.title} height="48px" width="40px" />
-															</div>
-															<label className="fw-semibold text-white">{item.title}</label>
-															<p className="text-small fw-light px-xxl-4 px-xl-0 px-lg-4 px-0 text-blue-50 px-md-0">{item.description}</p>
-														</div>
+						{carouselData.map((slide, index) => (
+							<div key={index}>
+								<div className="row mx-auto">
+									{slide.map((item, itemIndex) => (
+										<div key={itemIndex} className="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-12 mb-5 pe-xxl-4 pe-xl-4 pe-lg-4">
+											<div className="card border-gradient-primary bg-transparent border-0 px-xxl-5 px-xl-3 px-lg-0 px-md-0 px-0 py-3 h-100">
+												<div className="card-body text-center">
+													<div className="pb-1">
+														<img src={item.image} alt={item.title} height="48px" width="40px" />
 													</div>
+													<label className="fw-semibold text-white">{item.title}</label>
+													<p className="text-small fw-light px-xxl-4 px-xl-0 px-lg-4 px-0 text-blue-50 px-md-0">{item.description}</p>
 												</div>
-											))}
+											</div>
 										</div>
-									</div>
-								))}
+									))}
+								</div>
 							</div>
-							<button className="carousel-control-prev arrows" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-								<span className="carousel-control-prev-icon" aria-hidden="true"></span>
-								<span className="visually-hidden">Previous</span>
-							</button>
-							<button className="carousel-control-next arrows" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-								<span className="carousel-control-next-icon" aria-hidden="true"></span>
-								<span className="visually-hidden">Next</span>
-							</button>
-						</div>
+						))}
 					</div>
 				</div>
+
 			</main>
 		</Layout>
 	);

@@ -1,10 +1,3 @@
-/**
- * Any CSS included here will be global. The classic template
- * bundles Infima by default. Infima is a CSS framework designed to
- * work well for content-centric websites.
- */
-
-/* You can override the default Infima variables here. */
 
 @import '~bootstrap/dist/css/bootstrap.min.css';
 
@@ -162,20 +155,20 @@ a  {
 
 .border-gradient-primary {
   position: relative;
+}
 
-  &:before {
-      content: "";
-      position: absolute;
-      inset: 0;
-      border-radius: 10px;
-      padding: 2px;
-      background: linear-gradient(117deg, #AC31E1 0%, #F336A9 48%, #FEA234 100%);
-      -webkit-mask:
-          linear-gradient(#fff 0 0) content-box,
-          linear-gradient(#fff 0 0);
-      -webkit-mask-composite: xor;
-      mask-composite: exclude;
-  }
+.border-gradient-primary::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 10px;
+  padding: 2px;
+  background: linear-gradient(117deg, #AC31E1 0%, #F336A9 48%, #FEA234 100%);
+  -webkit-mask:
+      linear-gradient(#fff 0 0) content-box,
+      linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
 }
 
 
@@ -317,19 +310,19 @@ a  {
 
 .full-withradius {
   position: relative;
-  &:before {
-      content: "";
-      position: absolute;
-      inset: 0;
-      border-radius: 10px;
-      padding: 2px;
-      background: linear-gradient(122deg, #4D29CF 0%, #B32A90 100%);
-      -webkit-mask:
-          linear-gradient(#fff 0 0) content-box,
-          linear-gradient(#fff 0 0);
-      -webkit-mask-composite: xor;
-      mask-composite: exclude;
-  }
+}
+.full-withradius::before{
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 10px;
+  padding: 2px;
+  background: linear-gradient(122deg, #4D29CF 0%, #B32A90 100%);
+  -webkit-mask:
+      linear-gradient(#fff 0 0) content-box,
+      linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
 }
 
 .clean-btn svg:last-child path{
@@ -377,12 +370,12 @@ html[data-theme="dark"] .navbar__toggle svg{
   bottom: -30px;
 }
 
-.slick-dots li button:before {
+.slick-dots li button::before {
   font-size: 14px;
   color: #888;
 }
 
-.slick-dots li.slick-active button:before {
+.slick-dots li.slick-active button::before {
   color: #333;
 }
 
@@ -402,17 +395,17 @@ html[data-theme="dark"] .navbar__toggle svg{
   width: 50px;
 }
 
-.slick-dots li button:before {
+.slick-dots li button::before {
   font-size: 10px !important;
   top: 30px !important;
 }
 
-.slick-dots li.slick-active button:before {
+.slick-dots li.slick-active button::before {
   opacity: 1 !important;
   color: #00BB77 !important;
 }
 
-.slick-dots li button:before {
+.slick-dots li button::before {
   color: #737373 !important;
   opacity: 0.50 !important;
 }
