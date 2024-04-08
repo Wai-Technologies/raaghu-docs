@@ -2,9 +2,6 @@ import {themes as prismThemes} from 'prism-react-renderer';
 import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
-
-
-
 const config: Config = {
   title: 'Raaghu Documentation Center',
   tagline: 'Raaghu Frontend Studio built using React 18, Raaghu Design System and Docusaurus, provides robust, modular architecture, fully compatible with ABP Commercial.',
@@ -53,10 +50,12 @@ const config: Config = {
 
   presets: [
     [
-      'classic',
+     '@docusaurus/preset-classic',
       {
         docs: {
-          sidebarPath: './sidebars.ts',
+          routeBasePath: '/', // Set this to '/' to directly load the docs at the root path
+          sidebarPath: require.resolve('./sidebars.js'),
+         // sidebarPath: './sidebars.ts',
           editUrl:
             'https://github.com/Wai-Technologies/raaghu-docs',
         },
@@ -84,12 +83,12 @@ const config: Config = {
         srcDark: 'https://raaghustorageaccount.blob.core.windows.net/raaghu-blob/raaghu-docs-darkmode.png',
       },
       items: [
-        {
+     /*   {
           type: 'docSidebar',
           sidebarId: 'tutorialSidebar',
           position: 'left',
           label: 'Docs',
-        },
+        },*/
         {
           type: 'localeDropdown',
           position: 'right',

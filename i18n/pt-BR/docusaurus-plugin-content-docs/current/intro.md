@@ -1,6 +1,8 @@
 ---
+slug: /
 sidebar_position: 1
 ---
+
 # Introdução
 
 Les systèmes de conception de Raaghu construits à l'aide du React 18 fournissent une architecture modulaire solide, entièrement compatible avec le marché BP.
