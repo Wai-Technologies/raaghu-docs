@@ -4,7 +4,7 @@ sidebar_position: 2
 
 # Criando Solução
 
-# Criando uma nova solução comercial ABP
+# Criar uma solução usando o ABP Commercial envolve vários passos
 Existem 2 maneiras de criar novas soluções comerciais da ABP. Você pode usar o WP [CLI](https://docs.abp.io/en/abp/latest/CLI "") ou [o ABP Suite](https://docs.abp.io/en/commercial/7.2/abp-suite/add-solution "").
 
 ## Criando solução via ABP CLI

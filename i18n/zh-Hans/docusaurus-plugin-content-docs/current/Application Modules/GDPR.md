@@ -3,7 +3,7 @@ sidebar_position: 8
 ---
 
 # 通用数据保护条例
-# GDPR 模块
+
 
 此模块允许用户下载并删除应用程序收集的其个人数据。
 
@@ -25,7 +25,7 @@ GDPR 模块在 "用户" 个人资料菜单中添加以下项目。
 
 个人数据：个人数据管理页面。您可以请求您的个人数据，列出所有个人数据请求，下载和/或删除个人数据，并永久删除账户。
 
-![alt text](https://raw.githubusercontent.com/Wai-Technologies/raaghu-docs/development/raaghu/docs/en/images/main-menu.png)
+![alt text](https://raaghustorageaccount.blob.core.windows.net/raaghu-docs/main-menu.png)
 
 
 ### 页面
@@ -34,5 +34,5 @@ GDPR 模块在 "用户" 个人资料菜单中添加以下项目。
 
 "个人数据" 页面用于管理个人数据请求。您可以查看过去的请求、最新请求的当前状态，创建新请求，下载数据或从应用程序中删除所有个人数据和账户。
 
-![alt text](https://raw.githubusercontent.com/Wai-Technologies/raaghu-docs/development/raaghu/docs/en/images/personal-data.png)
+![alt text](https://raaghustorageaccount.blob.core.windows.net/raaghu-docs/personal-data.png)
 希望这有助于将英语文件转化为中文。如果您需要进一步的翻译或有其他问题，请告诉我。

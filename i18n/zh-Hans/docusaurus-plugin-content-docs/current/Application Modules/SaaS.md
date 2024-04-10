@@ -100,12 +100,12 @@ SaasHostMenuNames 和 SaasTenantMenuNames 类包含菜单项名称的常量。
 
 租户页面用于管理系统中的租户。
 
-![新租户](https://raw.githubusercontent.com/Wai-Technologies/raaghu-docs/development/raaghu/docs/en/images/tenant.png)
+![新租户](https://raaghustorageaccount.blob.core.windows.net/raaghu-docs/tenant.png)
 
 
 您可以在此页面上创建新租户或编辑租户：
 
-![您可以在此页面上创建新租户或编辑租户](https://raw.githubusercontent.com/Wai-Technologies/raaghu-docs/development/raaghu/docs/en/images/tenant-new.png)
+![您可以在此页面上创建新租户或编辑租户](https://raaghustorageaccount.blob.core.windows.net/raaghu-docs/tenant-new.png)
 
 ### 连接字符串
 
@@ -117,5 +117,5 @@ SaasHostMenuNames 和 SaasTenantMenuNames 类包含菜单项名称的常量。
 
 您可以设置租户的功能。
 
-![您可以设置租户的功能](https://raw.githubusercontent.com/Wai-Technologies/raaghu-docs/development/raaghu/docs/en/images/tenant-features.png)
+![您可以设置租户的功能](https://raaghustorageaccount.blob.core.windows.net/raaghu-docs/tenant-features.png)
 

@@ -6,7 +6,7 @@ sidebar_position: 3
 
 ### Raaghu CLI
 
-Raaghu CLI (Command Line Interface) is a command line tool to perform some common operations for Raaghu Frontend Studio created by WAi Technologies.
+Raaghu CLI (Command Line Interface) is a command line tool to perform some common operations for Raaghu Frontend Suite created by Wai Technologies.
 
 ### Installation Process for Raaghu CLI
 

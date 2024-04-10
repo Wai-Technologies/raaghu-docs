@@ -4,8 +4,6 @@ sidebar_position: 2
 
 # 身份认证服务器部署
 
-# 身份服务器部署
-
 根据部署配置，IdentityServer 的配置可能会有所不同。基本上，您需要根据部署环境的要求更新 IdentityServer 客户端相关的数据，并更新您的主机首选项。
 
 ### 更新 Cors 起源

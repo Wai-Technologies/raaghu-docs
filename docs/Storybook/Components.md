@@ -30,7 +30,7 @@ Default.args = {
  
 So take the example as button element. create the **button.stories** file.
 
- ![stories file image](https://raw.githubusercontent.com/Wai-Technologies/raaghu-docs/development/raaghu/docs/en/images/storybook-button.png)
+ ![stories file image](https://raaghustorageaccount.blob.core.windows.net/raaghu-docs/storybook-button.png)
 
 Replace MyComponent with the actual name of your component. This example assumes your component is named MyComponent.
 
@@ -110,7 +110,7 @@ This is particularly helpful for testing different configurations and states of 
 
 There is **control** pannel in storybook UI. It will show the multiple control.
 
-![control pannel](https://raw.githubusercontent.com/Wai-Technologies/raaghu-docs/development/raaghu/docs/en/images/storybook-control.png)
+![control pannel](https://raaghustorageaccount.blob.core.windows.net/raaghu-docs/storybook-control.png)
 
 ### DOCS
 Documentation in Storybook is often generated using addons like @storybook/addon-docs. 
@@ -118,5 +118,5 @@ It allows you to write documentation for your components directly within your st
 files using a combination of Markdown and TSX. This documentation can be accessed from the Storybook interface,
 making it easier for developers to understand how to use your components.
 
-![docs](https://raw.githubusercontent.com/Wai-Technologies/raaghu-docs/development/raaghu/docs/en/images/storybook-docs.png)
+![docs](https://raaghustorageaccount.blob.core.windows.net/raaghu-docs/storybook-docs.png)
 

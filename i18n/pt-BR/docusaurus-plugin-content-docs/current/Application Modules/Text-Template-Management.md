@@ -3,8 +3,6 @@ sidebar_position: 14
 ---
 
 # Gerenciamento de modelos de texto
-e
-# Módulo de gerenciamento de modelos de texto
 
 Este módulo é usado para armazenar e editar o conteúdo do modelo para [o sistema de modelos de texto](https://docs.abp.io/en/abp/latest/Text-Templating "") da estrutura ABP. Portanto, talvez você precise entendê-lo para entender melhor o propósito deste módulo.
 
@@ -23,8 +21,8 @@ Text Templates
 
 A página Modelos de Texto é usada para visualizar a lista de modelos definidos na aplicação.
 
-![Text Templates página é usada para visualizar a lista de modelos](https://raw.githubusercontent.com/Wai-Technologies/raaghu-docs/development/raaghu/docs/en/images/text-template.png)
+![Text Templates página é usada para visualizar a lista de modelos](https://raaghustorageaccount.blob.core.windows.net/raaghu-docs/text-template.png)
 
 Clique em Ações -> Editar Conteúdo para editar o conteúdo de um modelo. Existem dois tipos de UI para editar o conteúdo de um modelo:
 
-![Editar conteúdo para um modelo](https://raw.githubusercontent.com/Wai-Technologies/raaghu-docs/development/raaghu/docs/en/images/text-template-edit.png)
+![Editar conteúdo para um modelo](https://raaghustorageaccount.blob.core.windows.net/raaghu-docs/text-template-edit.png)

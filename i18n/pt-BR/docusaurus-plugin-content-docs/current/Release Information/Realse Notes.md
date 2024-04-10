@@ -4,7 +4,6 @@ sidebar_position: 1
 
 # Notas de versão
 
-
 ### Versão 7.3 (compatível com o comercial ABP 7.3)
 
 - Adicionada uma geração de página CRUD baseada em linha de comando para diferentes relacionamentos, como relacionamentos um para um, um para muitos e muitos para muitos.

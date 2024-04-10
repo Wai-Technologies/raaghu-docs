@@ -4,7 +4,6 @@ sidebar_position: 13
 
 # Saas
 
-
 This module is used to manage your tenants and editions in multi-tenant applications;
 
 * Manage **tenants** and **editions** in the system. A tenant is allowed to have one edition.
@@ -97,11 +96,11 @@ Tenant management
 
 Tenant page is used to manage tenants in the system.
 
-![New Tenant](https://raw.githubusercontent.com/Wai-Technologies/raaghu-docs/development/raaghu/docs/en/images/tenant.png)
+![New Tenant](https://raaghustorageaccount.blob.core.windows.net/raaghu-docs/tenant.png)
 
 You can create a new tenant or edit a tenant in this page:
 
-![You can create a new tenant or edit a tenant in this page](https://raw.githubusercontent.com/Wai-Technologies/raaghu-docs/development/raaghu/docs/en/images/tenant-new.png)
+![You can create a new tenant or edit a tenant in this page](https://raaghustorageaccount.blob.core.windows.net/raaghu-docs/tenant-new.png)
 
 ### Connection String
 
@@ -113,20 +112,20 @@ You can also use the module-specific database connection string feature. In this
 
 You can set features of tenants.
 
-![You can set features of tenants](https://raw.githubusercontent.com/Wai-Technologies/raaghu-docs/development/raaghu/docs/en/images/tenant-features.png)
+![You can set features of tenants](https://raaghustorageaccount.blob.core.windows.net/raaghu-docs/tenant-features.png)
 
 Edition management
 
 Editions page is used to manage the editions in your system.
 
-![Editions page is used to manage the editions in your system](https://raw.githubusercontent.com/Wai-Technologies/raaghu-docs/development/raaghu/docs/en/images/editions.png)
+![Editions page is used to manage the editions in your system](https://raaghustorageaccount.blob.core.windows.net/raaghu-docs/editions.png)
 
 You can create a new edition or edit an existing edition in this page:
 
-![Create a new edition or edit an existing edition](https://raw.githubusercontent.com/Wai-Technologies/raaghu-docs/development/raaghu/docs/en/images/edition-new.png)
+![Create a new edition or edit an existing edition](https://raaghustorageaccount.blob.core.windows.net/raaghu-docs/edition-new.png)
 
 ### Edition Features
 
 You can set features of an edition in this page:
 
-![Set features of an edition in this page](https://raw.githubusercontent.com/Wai-Technologies/raaghu-docs/development/raaghu/docs/en/images/editions-edit.png)
+![Set features of an edition in this page](https://raaghustorageaccount.blob.core.windows.net/raaghu-docs/editions-edit.png)

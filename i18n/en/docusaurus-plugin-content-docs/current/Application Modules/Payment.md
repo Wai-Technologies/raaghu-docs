@@ -4,9 +4,6 @@ sidebar_position: 12
 
 # Payment
 
-Payment module
-==============
-
 Payment module implements payment gateway integration of an application. It provides one time payment and recurring payment options.
 
 * Supports [Stripe](https://stripe.com/en-in), [PayPal](https://www.paypal.com/in/home), [2Checkout](https://www.2checkout.com/), [PayU](https://corporate.payu.com/), [Iyzico](https://www.iyzico.com/en) and [Alipay](https://global.alipay.com/platform/site/ihome) payment gateways.
@@ -50,10 +47,10 @@ Payment plans page
 
 Payment plans for subscriptions can be managed on this page. You can connect external subscriptions for each gateway to a plan.
 
-![Admin Pages](https://raw.githubusercontent.com/Wai-Technologies/raaghu-docs/development/raaghu/docs/en/images/payment-plan.png)
+![Admin Pages](https://raaghustorageaccount.blob.core.windows.net/raaghu-docs/payment-plan.png)
 
 Payment Request Page
 
 This page lists all the payment request operations in application.
 
-![Admin Pages](https://raw.githubusercontent.com/Wai-Technologies/raaghu-docs/development/raaghu/docs/en/images/payment-request.png)
+![Admin Pages](https://raaghustorageaccount.blob.core.windows.net/raaghu-docs/payment-request.png)

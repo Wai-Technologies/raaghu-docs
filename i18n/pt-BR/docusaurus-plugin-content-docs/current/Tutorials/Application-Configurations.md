@@ -4,9 +4,6 @@ sidebar_position: 5
 
 # Configurações de Aplicativos"
 
-
-## Application Configurations
-
 After page creation we need to add below path into main.tsx file.
 
 For example : -

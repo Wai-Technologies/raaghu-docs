@@ -26,7 +26,7 @@ sidebar_position: 4
 
 这是用户之间发送消息的页面。
 
-![这是用户之间发送消息的页面]https://raw.githubusercontent.com/Wai-Technologies/raaghu-docs/development/raaghu/docs/en/images/chat.png
+![这是用户之间发送消息的页面]https://raaghustorageaccount.blob.core.windows.net/raaghu-docs/chat.png
 
 ### 内部结构
 

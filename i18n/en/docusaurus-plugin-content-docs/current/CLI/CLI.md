@@ -6,6 +6,7 @@ sidebar_position: 1
 
 Raaghu CLI (Command Line Interface) is a command line tool to perform some common operations for Raaghu based solutions.
 
+
 ## Installation
 
 Raaghu CLI is a [dotnet global tool](https://www.nuget.org/packages/Waiin.Raaghu.Cli). Install it using a command line window:
@@ -59,7 +60,7 @@ raaghu help new    # Shows help about the "new" command.
 
 ### new
 
-Generates a new solution based on the Raaghu [startup templates](Startup-Templates/Index.md).
+Generates a new solution based on the Raaghu.
 
 Usage:
 

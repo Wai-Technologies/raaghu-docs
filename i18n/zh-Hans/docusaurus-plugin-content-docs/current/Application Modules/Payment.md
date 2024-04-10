@@ -3,7 +3,6 @@ sidebar_position: 12
 ---
 
 # 支付
-# 支付模块
 
 支付模块实现了应用程序的支付网关集成。它提供一次性付款和定期付款选项。
 
@@ -48,12 +47,12 @@ sidebar_position: 12
 
 此页面用于管理订阅的支付计划。您可以为每个网关将外部订阅连接到计划中。
 
-![管理员页面](https://raw.githubusercontent.com/Wai-Technologies/raaghu-docs/development/raaghu/docs/en/images/payment-plan.png)
+![管理员页面](https://raaghustorageaccount.blob.core.windows.net/raaghu-docs/payment-plan.png)
 支付请求页面
 
 此页面列出了应用程序中的所有支付请求操作。
 
-![管理员页面](https://raw.githubusercontent.com/Wai-Technologies/raaghu-docs/development/raaghu/docs/en/images/payment-request.png)
+![管理员页面](https://raaghustorageaccount.blob.core.windows.net/raaghu-docs/payment-request.png)
 
 
 希望这有助于将英语文件转化为中文。如果您需要进一步的翻译或有其他问题，请告诉我。

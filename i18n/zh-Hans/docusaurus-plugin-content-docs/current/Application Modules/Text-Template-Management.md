@@ -3,7 +3,6 @@ sidebar_position: 14
 ---
 
 # 文本模板管理
-# 文本模板管理模块
 
 此模块用于存储和编辑 ABP 框架的[文本模板系统](https://docs.abp.io/en/abp/latest/Text-Templating)的模板内容。因此，您可能需要了解它，以更好地理解此模块的目的。
 
@@ -28,8 +27,8 @@ TextTemplateManagementMainMenuNames 类包含菜单项名称的常量。
 
 文本模板页面用于查看应用程序中定义的模板列表。
 
-![文本模板页面用于查看模板列表](https://raw.githubusercontent.com/Wai-Technologies/raaghu-docs/development/raaghu/docs/en/images/text-template.png)
+![文本模板页面用于查看模板列表](https://raaghustorageaccount.blob.core.windows.net/raaghu-docs/text-template.png)
 
 单击“操作” -> “编辑内容”以编辑模板的内容。有两种类型的 UI 用于编辑模板内容：
 
-![编辑模板内容](https://raw.githubusercontent.com/Wai-Technologies/raaghu-docs/development/raaghu/docs/en/images/text-template-edit.png)
+![编辑模板内容](https://raaghustorageaccount.blob.core.windows.net/raaghu-docs/text-template-edit.png)

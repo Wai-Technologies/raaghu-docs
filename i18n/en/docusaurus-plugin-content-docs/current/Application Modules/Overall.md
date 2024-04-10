@@ -4,9 +4,6 @@ sidebar_position: 1
 
 # Overall
 
-Application Modules
-===================
-
 ABP Commercial provides **production ready, enterprise level** application modules. See [the modules page](https://commercial.abp.io/modules) for a list and descriptions of the modules as an overview. This documentation is **for developers** and explains **technical details** of the modules.
 
 Commercial Modules
@@ -26,5 +23,6 @@ Commercial Modules
 * [Payment](Payment.md)Payment gateway integrations.
 * [Text template management](Text-Template-Management.md): Manage text templates in the system.
 
- 
- 
+### See Also
+
+*  [Guide: Customizing the Modules](Customizing-The-Modules.md)

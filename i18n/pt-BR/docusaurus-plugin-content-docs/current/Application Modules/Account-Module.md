@@ -3,8 +3,6 @@ sidebar_position: 2
 ---
 
 # Conta
-
-# Conta
 Este módulo implementa as funcionalidades de Login, Cadastro, Esqueci a Senha, Confirmação de Email, Redefinição de Senha, envio e confirmação de Autenticação de Dois Fatores, bloqueio de usuário, alternância entre locatários de uma aplicação;
 
 Consulte [a página de](https://commercial.abp.io/modules/Volo.Account.Pro?_ga=2.203721431.638389710.1682325508-1619359562.1681202968 "") descrição do módulo para obter uma visão geral dos recursos do módulo.
@@ -27,9 +25,9 @@ Login Page
 
 A página de login é usada para fazer login no sistema.
 
-![Página inicial](https://raw.githubusercontent.com/Wai-Technologies/raaghu-docs/development/raaghu/docs/en/images/home-page.png)
+![Página inicial](https://raaghustorageaccount.blob.core.windows.net/raaghu-docs/home-page.png)
 
-![A página de login é usada para fazer login no sistema](https://raw.githubusercontent.com/Wai-Technologies/raaghu-docs/development/raaghu/docs/en/images/login_page.png)
+![A página de login é usada para fazer login no sistema](https://raaghustorageaccount.blob.core.windows.net/raaghu-docs/login_page.png)
 ### página de registo
 A página de registo permite que novos usuários se registrem no seu sistema.
 ### interno

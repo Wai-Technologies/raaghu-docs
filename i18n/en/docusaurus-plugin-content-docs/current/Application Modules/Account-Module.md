@@ -4,9 +4,6 @@ sidebar_position: 2
 
 # Account 
 
-Account-raaghu
-==============
-
 This module implements the Login, Register, Forgot Password, Email Confirmation, Password Reset, sending and confirming Two-Factor Authentication, user lockout, switch between tenants functionalities of an application;
 
 See [the module description page](https://commercial.abp.io/modules/Volo.Account.Pro?_ga=2.203721431.638389710.1682325508-1619359562.1681202968) for an overview of the module features.
@@ -34,15 +31,15 @@ Login Page
 
 Login Page is used to log in to the system.
 
-![Home page](https://raw.githubusercontent.com/Wai-Technologies/raaghu-docs/development/raaghu/docs/en/images/home-page.png)
+![Home page](https://raaghustorageaccount.blob.core.windows.net/raaghu-docs/home-page.png)
 
-![Login page is used to log in to the system](https://raw.githubusercontent.com/Wai-Technologies/raaghu-docs/development/raaghu/docs/en/images/login_page.png)
+![Login page is used to log in to the system](https://raaghustorageaccount.blob.core.windows.net/raaghu-docs/login_page.png)
 
 ### Register Page
 
 Register Page allows new users to register to your system.
 
-![Register page allows new users to register to your system](https://raw.githubusercontent.com/Wai-Technologies/raaghu-docs/development/raaghu/docs/en/images/register_page.png)
+![Register page allows new users to register to your system](https://raaghustorageaccount.blob.core.windows.net/raaghu-docs/register_page.png)
 
 ### Internals
 

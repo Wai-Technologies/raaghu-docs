@@ -4,7 +4,6 @@ sidebar_position: 7
 
 # Formulários
 
-# Módulo Formulários
 Este módulo permite criar questionários para coletar informações. O módulo de formulários pode armazenar respostas à medida que chegam e você pode exportar os dados para um arquivo CSV. Você pode compartilhar seu formulário com outras pessoas com o link exclusivo do formulário. Você pode solicitar autenticação ou permitir resposta anônima. É semelhante ao aplicativo Formulário Google. A área de utilização é bastante ampla, você pode criar pesquisas, gerenciar inscrições em eventos, coletar endereços de e-mail para newsletter, criar um quiz e até receber uma solicitação de pedido.
 
 Consulte [a página de descrição do módulo](https://commercial.abp.io/modules/Volo.Forms "") para obter uma visão geral dos recursos do módulo.
@@ -83,6 +82,6 @@ Tabelas / Coleções
 
 **Relacionamentos de Entidade**
 
-![Relacionamentos de Entidade](https://raw.githubusercontent.com/Wai-Technologies/raaghu-docs/development/raaghu/docs/en/images/entityRelationship.jpg)
+![Relacionamentos de Entidade](https://raaghustorageaccount.blob.core.windows.net/raaghu-docs/entityRelationship.jpg)
 ### permissões
 Consulte os membros da classe FormsPermissions para obter todas as permissões definidas para este módulo.

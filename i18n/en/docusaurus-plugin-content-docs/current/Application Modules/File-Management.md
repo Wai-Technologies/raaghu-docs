@@ -4,11 +4,6 @@ sidebar_position: 6
 
 # File Management
 
-
-
-File Management Module
-======================
-
 This module is used to upload, download and organize files in a hierarchical folder structure. It is also compatible to multi-tenancy and you can determine total size limit for your tenants.
 
 This module is based on the [BLOB Storing](https://docs.abp.io/en/abp/latest/Blob-Storing) system, so it can use different storage providers to store the file contents.
@@ -62,35 +57,35 @@ File Management
 
 File Management page is used to create folders, upload files and view the list of folders and files that stored in the application.
 
-![File Management page is used to create folders, upload files and view the list of folders](https://raw.githubusercontent.com/Wai-Technologies/raaghu-docs/development/raaghu/docs/en/images/file-management.png)
+![File Management page is used to create folders, upload files and view the list of folders](https://raaghustorageaccount.blob.core.windows.net/raaghu-docs/file-management.png)
 
 ### Folders
 
 You can create a new folder by clicking Create Folder button that located at top right on the page. The folder will be created at active directory.
 
-![You can create a new folder by clicking Create Folder button that located at top right on the page. The folder will be created at active directory.](https://raw.githubusercontent.com/Wai-Technologies/raaghu-docs/development/raaghu/docs/en/images/file-management-new.png)
+![You can create a new folder by clicking Create Folder button that located at top right on the page. The folder will be created at active directory.](https://raaghustorageaccount.blob.core.windows.net/raaghu-docs/file-management-new.png)
 
 You can move a folder to another directory on the left tree view.
 
-![You can move a folder to another directory on the left tree view](https://raw.githubusercontent.com/Wai-Technologies/raaghu-docs/development/raaghu/docs/en/images/file-management-move.png)
+![You can move a folder to another directory on the left tree view](https://raaghustorageaccount.blob.core.windows.net/raaghu-docs/file-management-move.png)
 
 You can rename a folder by clicking Actions -> Rename on the table.
 
-![You can rename a folder](https://raw.githubusercontent.com/Wai-Technologies/raaghu-docs/development/raaghu/docs/en/images/file-management-rename.png)
+![You can rename a folder](https://raaghustorageaccount.blob.core.windows.net/raaghu-docs/file-management-rename.png)
 
 ### Files
 
 You can upload files by clicking Upload Files button that located at top right on the page. This will open a new modal for selecting your local files to upload. The files will be uploaded at active directory.
 
-![You can upload files by clicking Upload Files button that located at top right on the page](https://raw.githubusercontent.com/Wai-Technologies/raaghu-docs/development/raaghu/docs/en/images/file-management-upload.png)
+![You can upload files by clicking Upload Files button that located at top right on the page](https://raaghustorageaccount.blob.core.windows.net/raaghu-docs/file-management-upload.png)
 
 You can move files by clicking Actions -> Move on the data table.
 
-![You can move files by clicking Actions Move on the data table.](https://raw.githubusercontent.com/Wai-Technologies/raaghu-docs/development/raaghu/docs/en/images/file-management-move.png)
+![You can move files by clicking Actions Move on the data table.](https://raaghustorageaccount.blob.core.windows.net/raaghu-docs/file-management-move.png)
 
 You can rename a file by clicking Actions -> Rename on the data table.
 
-![You can rename a file by clicking Actions Rename on the data table](https://raw.githubusercontent.com/Wai-Technologies/raaghu-docs/development/raaghu/docs/en/images/file-management-rename-edit.png)
+![You can rename a file by clicking Actions Rename on the data table](https://raaghustorageaccount.blob.core.windows.net/raaghu-docs/file-management-rename-edit.png)
 
 ### Data Seed
 

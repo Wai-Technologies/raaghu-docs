@@ -2,8 +2,6 @@
 sidebar_position: 1
 ---
 
-# Criar solução
-
 # modelos de inicialização
 ## modelos de inicialização de aplicativos
 ### introdução

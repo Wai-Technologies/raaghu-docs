@@ -51,11 +51,11 @@ dotnet run
 
 右键单击.DbMigrator项目，选择**设置为启动项目**。
 
-![设置为启动项目](https://raw.githubusercontent.com/Wai-Technologies/raaghu-docs/development/raaghu/docs/en/images/set-as-startup-project.png)
+![设置为启动项目](https://raaghustorageaccount.blob.core.windows.net/raaghu-docs/set-as-startup-project.png)
 
 按下F5（或Ctrl+F5）运行应用程序。它将显示如下的输出：
 
-![db-migrator输出](https://raw.githubusercontent.com/Wai-Technologies/raaghu-docs/development/raaghu/docs/en/images/db-migrator-output.png)
+![db-migrator输出](https://raaghustorageaccount.blob.core.windows.net/raaghu-docs/db-migrator-output.png)
 
 初始[种子数据](Data-Seeding.md)在数据库中创建了`admin`用户（密码是`1q2w3E*`），该用户用于登录应用程序。因此，您需要至少运行一次`.DbMigrator`以创建新数据库。
 
@@ -67,7 +67,7 @@ dotnet run
 
 在Visual Studio中使用Ctrl+F5（而不是F5）运行应用程序，以在没有调试目的的情况下运行应用程序，这将更快。
 
-![swagger-ui](https://raw.githubusercontent.com/Wai-Technologies/raaghu-docs/development/raaghu/docs/en/images/swagger-ui.png)
+![swagger-ui](https://raaghustorageaccount.blob.core.windows.net/raaghu-docs/swagger-ui.png)
 
 应用程序已启动并运行。您可以基于此启动模板开始开发您的应用程序。
 

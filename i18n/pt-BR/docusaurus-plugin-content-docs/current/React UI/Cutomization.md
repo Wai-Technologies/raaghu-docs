@@ -10,4 +10,4 @@ Em Minha conta, ao clicar no menu suspenso do perfil de administrador do host, v
 
 As guias na página de gerenciamento de perfil podem ser gerenciadas por meio do ManageProfileTabsService, que é exposto pelo pacote @volo/abp.ng.account/public/config. Você pode adicionar, remover ou editar uma guia usando este serviço.
 
-![Página de perfil de ⁇](https://raw.githubusercontent.com/Wai-Technologies/raaghu-docs/development/raaghu/docs/en/images/my-account.png)
+![Página de perfil de ⁇](https://raaghustorageaccount.blob.core.windows.net/raaghu-docs/my-account.png)

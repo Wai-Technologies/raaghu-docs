@@ -4,7 +4,6 @@ sidebar_position: 8
 
 # GDPR
 
-# GDPR module
 Este módulo permite aos usuários baixar e excluir seus dados pessoais coletados pelo aplicativo.
 ## como instalar
 O módulo GDPR está pré-instalado nos modelos Aplicativo e Aplicativo (Camada Única). Portanto, não há necessidade de instalá-lo manualmente.
@@ -19,9 +18,9 @@ O módulo GDPR adiciona o seguinte item ao menu de perfil "Usuário".
 
 Dados Pessoais: página de gerenciamento de dados pessoais. Você pode solicitar seus dados pessoais, listar todas as solicitações de dados pessoais, baixar e/ou excluir dados pessoais e excluir a conta permanentemente.
 
-![texto alt](https://raw.githubusercontent.com/Wai-Technologies/raaghu-docs/development/raaghu/docs/en/images/main-menu.png)
+![texto alt](https://raaghustorageaccount.blob.core.windows.net/raaghu-docs/main-menu.png)
 ### páginas
 ### dados ⁇
 A página “Dados Pessoais” é utilizada para gerir os pedidos de dados pessoais. Você pode visualizar as solicitações anteriores, o status atual da última solicitação, criar uma nova solicitação, baixar dados ou excluir todos os seus dados pessoais e da conta do aplicativo.
 
-![texto alt](https://raw.githubusercontent.com/Wai-Technologies/raaghu-docs/development/raaghu/docs/en/images/personal-data.png)
+![texto alt](https://raaghustorageaccount.blob.core.windows.net/raaghu-docs/personal-data.png)

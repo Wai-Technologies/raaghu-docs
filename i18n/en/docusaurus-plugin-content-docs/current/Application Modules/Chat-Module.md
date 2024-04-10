@@ -4,9 +4,6 @@ sidebar_position: 4
 
 # Chat
 
-Chat module
-===========
-
 This module implements real time messaging between users for an application.
 
 Installation
@@ -26,7 +23,7 @@ You can visit [Chat module package list page](https://abp.io/packages?moduleName
 
 This is the page that users send messages to each other.
 
-![This is the page that users send messages to each other](https://raw.githubusercontent.com/Wai-Technologies/raaghu-docs/development/raaghu/docs/en/images/chat.png)
+![This is the page that users send messages to each other](https://raaghustorageaccount.blob.core.windows.net/raaghu-docs/chat.png)
 
 ### Internals
 

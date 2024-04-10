@@ -5,9 +5,6 @@ sidebar_position: 6
 # 文件管理
 
 
-文件管理模块
-======================
-
 该模块用于上传、下载和组织文件，以层次化文件夹结构进行管理。它还支持多租户，并允许您为租户设定总大小限制。
 
 该模块基于[BLOB存储](https://docs.abp.io/en/abp/latest/Blob-Storing)系统，因此可以使用不同的存储提供程序来存储文件内容。
@@ -60,33 +57,33 @@ FileManagementMenuNames类包含了菜单项名称的常量。
 
 文件管理页面用于创建文件夹、上传文件并查看存储在应用程序中的文件和文件夹列表。
 
-![文件管理页面用于创建文件夹、上传文件并查看文件夹和文件的列表](https://raw.githubusercontent.com/Wai-Technologies/raaghu-docs/development/raaghu/docs/en/images/file-management.png)
+![文件管理页面用于创建文件夹、上传文件并查看文件夹和文件的列表](https://raaghustorageaccount.blob.core.windows.net/raaghu-docs/file-management.png)
 
 ### 文件夹
 
 您可以通过单击页面右上角的“创建文件夹”按钮来创建新文件夹。文件夹将在活动目录中创建。
 
-![您可以通过单击页面右上角的“创建文件夹”按钮来创建新文件夹。文件夹将在活动目录中创建。](https://raw.githubusercontent.com/Wai-Technologies/raaghu-docs/development/raaghu/docs/en/images/file-management-new.png)
+![您可以通过单击页面右上角的“创建文件夹”按钮来创建新文件夹。文件夹将在活动目录中创建。](https://raaghustorageaccount.blob.core.windows.net/raaghu-docs/file-management-new.png)
 
 您可以在左侧树视图上将文件夹移动到另一个目录中。
 
-![您可以在左侧树视图上将文件夹移动到另一个目录中](https://raw.githubusercontent.com/Wai-Technologies/raaghu-docs/development/raaghu/docs/en/images/file-management-move.png)
+![您可以在左侧树视图上将文件夹移动到另一个目录中](https://raaghustorageaccount.blob.core.windows.net/raaghu-docs/file-management-move.png)
 
 您可以通过单击“操作” -> “重命名”来重命名文件夹。
 
-![您可以通过单击“操作” -> “重命名”来重命名文件夹](https://raw.githubusercontent.com/Wai-Technologies/raaghu-docs/development/raaghu/docs/en/images/file-management-rename.png)
+![您可以通过单击“操作” -> “重命名”来重命名文件夹](https://raaghustorageaccount.blob.core.windows.net/raaghu-docs/file-management-rename.png)
 ### 文件
 
 您可以通过单击页面右上角的“上传文件”按钮来上传文件。这将打开一个新的模态框，以选择要上传的本地文件。文件将上传到活动目录中。
 
-![您可以通过单击页面右上角的“上传文件”按钮来上传文件。](https://raw.githubusercontent.com/Wai-Technologies/raaghu-docs/development/raaghu/docs/en/images/file-management-upload.png)
+![您可以通过单击页面右上角的“上传文件”按钮来上传文件。](https://raaghustorageaccount.blob.core.windows.net/raaghu-docs/file-management-upload.png)
 
 您可以通过在数据表上单击“操作” -> “移动”来移动文件。
 
-![您可以通过在数据表上单击“操作” -> “移动”来移动文件。](https://raw.githubusercontent.com/Wai-Technologies/raaghu-docs/development/raaghu/docs/en/images/file-management-move.png)
+![您可以通过在数据表上单击“操作” -> “移动”来移动文件。](https://raaghustorageaccount.blob.core.windows.net/raaghu-docs/file-management-move.png)
 您可以通过在数据表上单击“操作” -> “重命名”来重命名文件。
 
-![您可以通过在数据表上单击“操作” -> “重命名”来重命名文件](https://raw.githubusercontent.com/Wai-Technologies/raaghu-docs/development/raaghu/docs/en/images/file-management-rename-edit.png)
+![您可以通过在数据表上单击“操作” -> “重命名”来重命名文件](https://raaghustorageaccount.blob.core.windows.net/raaghu-docs/file-management-rename-edit.png)
 ### 数据种子
 
 该模块不会种子任何数据。

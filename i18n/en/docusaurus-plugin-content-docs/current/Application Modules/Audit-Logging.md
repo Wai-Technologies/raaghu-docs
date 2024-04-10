@@ -4,9 +4,6 @@ sidebar_position: 3
 
 # Audit Logging
 
-Audit Logging module
-====================
-
 This module implements the Audit Logging system of an application;
 
 * See all audit logs of the system and filter audit logs easily.
@@ -43,7 +40,7 @@ Audit Logs
 
 Audit logs tab is used to list, view and filter audit logs and entity changes in the system.
 
-![Audit logs tab is used to list, view and filter audit logs and entity changes in thesystem](https://raw.githubusercontent.com/Wai-Technologies/raaghu-docs/development/raaghu/docs/en/images/audit-logs.png)
+![Audit logs tab is used to list, view and filter audit logs and entity changes in thesystem](https://raaghustorageaccount.blob.core.windows.net/raaghu-docs/audit-logs.png)
 
 ### Audit Log Details
 
