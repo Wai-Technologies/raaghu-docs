@@ -35,21 +35,21 @@ OpenIddictProMenus类包含了菜单项名称的常量。
 
 应用程序页面用于管理 OpenIddict 应用程序。一个应用程序表示可以从您的身份验证服务器请求令牌的托管应用程序。
 
-![新应用程序](https://raw.githubusercontent.com/Wai-Technologies/raaghu-docs/development/raaghu/docs/en/images/appliaction.png)
+![新应用程序](https://raaghustorageaccount.blob.core.windows.net/raaghu-docs/appliaction.png)
 
 
 您可以在此页面创建新应用程序或编辑现有应用程序：
 
-![创建新应用程序或编辑现有应用程序](https://raw.githubusercontent.com/Wai-Technologies/raaghu-docs/development/raaghu/docs/en/images/appliaction-new.png) ![编辑应用程序](https://raw.githubusercontent.com/Wai-Technologies/raaghu-docs/development/raaghu/docs/en/images/appliaction-edit.png)
+![创建新应用程序或编辑现有应用程序](https://raaghustorageaccount.blob.core.windows.net/raaghu-docs/appliaction-new.png) ![编辑应用程序](https://raaghustorageaccount.blob.core.windows.net/raaghu-docs/appliaction-edit.png)
 
 API 范围管理
 
 OpenIddict 模块允许管理 API 范围。要允许应用程序请求用于 API 的访问令牌，您需要定义 API 范围。
 
-![新范围](https://raw.githubusercontent.com/Wai-Technologies/raaghu-docs/development/raaghu/docs/en/images/scope.png)
+![新范围](https://raaghustorageaccount.blob.core.windows.net/raaghu-docs/scope.png)
 
 您可以在此页面创建新的 API 资源或编辑现有的 API 资源：
 
-![新范围](https://raw.githubusercontent.com/Wai-Technologies/raaghu-docs/development/raaghu/docs/en/images/scope-edit.png)
+![新范围](https://raaghustorageaccount.blob.core.windows.net/raaghu-docs/scope-edit.png)
 
 希望这有助于将英语文件转化为中文。如果您需要进一步的翻译或有其他问题，请告诉我。

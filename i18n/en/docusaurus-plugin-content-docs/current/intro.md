@@ -22,9 +22,9 @@ This tutorial guides in creating & running a new web application using startup t
 
 Raaghu Frontend Suite - React is compatible with ABP Commercial license and its releases. 
 
-![home image](https://raw.githubusercontent.com/Wai-Technologies/raaghu-docs/development/raaghu/docs/en/images/home-1.png)
+![home image](https://raaghustorageaccount.blob.core.windows.net/raaghu-docs/home-1.png)
 
 
 ### Raaghu Technology Stack 
 
-![home](https://raw.githubusercontent.com/Wai-Technologies/raaghu-docs/development/raaghu/docs/en/images/home-2.png)
+![home](https://raaghustorageaccount.blob.core.windows.net/raaghu-docs/home-2.png)

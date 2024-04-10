@@ -82,6 +82,6 @@ Tabelas / Coleções
 
 **Relacionamentos de Entidade**
 
-![Relacionamentos de Entidade](https://raw.githubusercontent.com/Wai-Technologies/raaghu-docs/development/raaghu/docs/en/images/entityRelationship.jpg)
+![Relacionamentos de Entidade](https://raaghustorageaccount.blob.core.windows.net/raaghu-docs/entityRelationship.jpg)
 ### permissões
 Consulte os membros da classe FormsPermissions para obter todas as permissões definidas para este módulo.

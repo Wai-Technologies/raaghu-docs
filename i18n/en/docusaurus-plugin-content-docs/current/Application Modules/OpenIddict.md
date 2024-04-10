@@ -31,18 +31,18 @@ Application Management
 
 Applications page is used to manage OpenIddict applications. An application represent hosted applications that can request tokens from your authentication server.
 
-![New Application](https://raw.githubusercontent.com/Wai-Technologies/raaghu-docs/development/raaghu/docs/en/images/appliaction.png)
+![New Application](https://raaghustorageaccount.blob.core.windows.net/raaghu-docs/appliaction.png)
 
 You can create new application or edit existing applications in this page:
 
-![create new application or edit existing applications](https://raw.githubusercontent.com/Wai-Technologies/raaghu-docs/development/raaghu/docs/en/images/appliaction-new.png) ![Edit Application](https://raw.githubusercontent.com/Wai-Technologies/raaghu-docs/development/raaghu/docs/en/images/appliaction-edit.png)
+![create new application or edit existing applications](https://raaghustorageaccount.blob.core.windows.net/raaghu-docs/appliaction-new.png) ![Edit Application](https://raaghustorageaccount.blob.core.windows.net/raaghu-docs/appliaction-edit.png)
 
 API Scope Management
 
 OpenIddict module allows to manage API scope. To allow applications to request access tokens for APIs, you need to define API scopes.
 
-![New Scope](https://raw.githubusercontent.com/Wai-Technologies/raaghu-docs/development/raaghu/docs/en/images/scope.png)
+![New Scope](https://raaghustorageaccount.blob.core.windows.net/raaghu-docs/scope.png)
 
 You can create a new API resource or edit an existing API resource in this page:
 
-![New Scope](https://raw.githubusercontent.com/Wai-Technologies/raaghu-docs/development/raaghu/docs/en/images/scope-edit.png)
+![New Scope](https://raaghustorageaccount.blob.core.windows.net/raaghu-docs/scope-edit.png)

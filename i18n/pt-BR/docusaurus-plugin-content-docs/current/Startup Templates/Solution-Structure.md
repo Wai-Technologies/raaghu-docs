@@ -9,11 +9,11 @@ Você obterá uma estrutura de solução ligeiramente diferente, com base nas op
 ## estrutura padrão
 Se você não especificar nenhuma opção adicional, você terá uma solução na pasta aspnet-core como a abaixo:
 
-![Estrutura padrão](https://raw.githubusercontent.com/Wai-Technologies/raaghu-docs/development/raaghu/docs/en/images/defaultStructure.png)
+![Estrutura padrão](https://raaghustorageaccount.blob.core.windows.net/raaghu-docs/defaultStructure.png)
 
 Os projetos estão localizados nas pastas aspnet-core/src e aspnet-core/test. Embora a pasta aspnet-core/src contenha o aplicativo real, a pasta aspnet-core/test contém testes de unidade e projetos básicos de teste. O diagrama abaixo mostra as camadas e dependências do projeto do aplicativo:
 
-![estrutura de fluxograma](https://raw.githubusercontent.com/Wai-Technologies/raaghu-docs/development/raaghu/docs/en/images/flow-chart.png)
+![estrutura de fluxograma](https://raaghustorageaccount.blob.core.windows.net/raaghu-docs/flow-chart.png)
 
 Cada seção abaixo descreve o projeto relacionado e suas dependências.
 ### *.domain.shared projeto
@@ -114,13 +114,13 @@ No entanto, se você não escolher a opção --tiered ao criar uma solução, es
 ### reagem arquitetura
 Seguem-se a arquitetura sobre como raaghu-react está sendo usado como parte de UI aplicações
 
-![Seguem-se a arquitetura sobre como raaghu-react está sendo usado como parte de UI aplicações](https://raw.githubusercontent.com/Wai-Technologies/raaghu-docs/development/raaghu/docs/en/images/raaghu-architecture.png)
+![Seguem-se a arquitetura sobre como raaghu-react está sendo usado como parte de UI aplicações](https://raaghustorageaccount.blob.core.windows.net/raaghu-docs/raaghu-architecture.png)
 ### raaghu - ⁇  de autenticação (página de login)
-![raaghu-Authentication Flow](https://raw.githubusercontent.com/Wai-Technologies/raaghu-docs/development/raaghu/docs/en/images/raaghuAuthenticationFlow.png)
+![raaghu-Authentication Flow](https://raaghustorageaccount.blob.core.windows.net/raaghu-docs/raaghuAuthenticationFlow.png)
 ### raaghu - localização
-![localização de raaghu](https://raw.githubusercontent.com/Wai-Technologies/raaghu-docs/development/raaghu/docs/en/images/raaghuLocalization.png)
+![localização de raaghu](https://raaghustorageaccount.blob.core.windows.net/raaghu-docs/raaghuLocalization.png)
 ### raaghu - ⁇  da página
-![Raghu - Fluxo de página](https://raw.githubusercontent.com/Wai-Technologies/raaghu-docs/development/raaghu/docs/en/images/raaghuPageFlow.png)
+![Raghu - Fluxo de página](https://raaghustorageaccount.blob.core.windows.net/raaghu-docs/raaghuPageFlow.png)
 ### o que se segue?
 
 - [Consulte](Getting-Started.html "") o documento de introdução para criar uma nova solução e executá-la para este modelo.

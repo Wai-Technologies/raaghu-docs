@@ -45,10 +45,10 @@ IdentityMenuNames类包含了菜单项名称的常量。
 
 角色页面用于管理系统中的角色。角色是分配给用户的权限集合。
 
-![新角色](https://raw.githubusercontent.com/Wai-Technologies/raaghu-docs/development/raaghu/docs/en/images/users-role.png)
+![新角色](https://raaghustorageaccount.blob.core.windows.net/raaghu-docs/users-role.png)
 您可以在此页面创建新角色或编辑角色：
 
-![您可以在此页面创建新角色或编辑角色](https://raw.githubusercontent.com/Wai-Technologies/raaghu-docs/development/raaghu/docs/en/images/role-new.png)
+![您可以在此页面创建新角色或编辑角色](https://raaghustorageaccount.blob.core.windows.net/raaghu-docs/role-new.png)
 * 默认角色默认分配给新用户。
 * 公共角色可见给其他用户。
 
@@ -67,7 +67,7 @@ IdentityMenuNames类包含了菜单项名称的常量。
 
 您可以为角色设置自定义声明值：
 
-![编辑角色](https://raw.githubusercontent.com/Wai-Technologies/raaghu-docs/development/raaghu/docs/en/images/role-claims.png)
+![编辑角色](https://raaghustorageaccount.blob.core.windows.net/raaghu-docs/role-claims.png)
 
 声明类型是从声明类型管理页面中定义的声明列表中检索的（见下文）。
 
@@ -75,21 +75,21 @@ IdentityMenuNames类包含了菜单项名称的常量。
 
 用户页面用于管理系统中的用户。
 
-![用户管理](https://raw.githubusercontent.com/Wai-Technologies/raaghu-docs/development/raaghu/docs/en/images/users.png)
+![用户管理](https://raaghustorageaccount.blob.core.windows.net/raaghu-docs/users.png)
 
 您可以在此页面创建新用户或编辑现有用户：
 
-![您可以在此页面创建新用户或编辑现有用户](https://raw.githubusercontent.com/Wai-Technologies/raaghu-docs/development/raaghu/docs/en/images/users-new.png)
+![您可以在此页面创建新用户或编辑现有用户](https://raaghustorageaccount.blob.core.windows.net/raaghu-docs/users-new.png)
 
 * 用户可以在系统中拥有**零个或多个角色**。
 * 您可以为每个用户设置**双因素**验证和用户**锁定**设置。
-  ![新用户](https://raw.githubusercontent.com/Wai-Technologies/raaghu-docs/development/raaghu/docs/en/images/users-role.png)
+  ![新用户](https://raaghustorageaccount.blob.core.windows.net/raaghu-docs/users-role.png)
 
 ### 用户权限
 
 用户具有被分配的角色的权限的并集。身份模块还允许向特定用户授予额外的权限。
 
-![编辑用户](https://raw.githubusercontent.com/Wai-Technologies/raaghu-docs/development/raaghu/docs/en/images/user-permision.png)
+![编辑用户](https://raaghustorageaccount.blob.core.windows.net/raaghu-docs/user-permision.png)
 
 * 权限是授予角色和用户的应用程序**操作**。
 * 拥有角色的用户将**继承**授予该角色的所有权限。
@@ -100,7 +100,7 @@ IdentityMenuNames类包含了菜单项名称的常量。
 
 身份模块允许定义自定义声明类型。
 
-![新声明类型](https://raw.githubusercontent.com/Wai-Technologies/raaghu-docs/development/raaghu/docs/en/images/claim.png)
+![新声明类型](https://raaghustorageaccount.blob.core.windows.net/raaghu-docs/claim.png)
 
 * 自定义声明可用于存储用户或角色的附加信息。
 * 然后可以在应用程序代码中为已验证的用户访问自定义声明值。
@@ -110,15 +110,15 @@ IdentityMenuNames类包含了菜单项名称的常量。
 
 组织单位页面用于管理组织单位、组织单位成员和组织单位角色。
 
-![组织单位页面用于管理组织单位、组织单位成员和组织单位角色](https://raw.githubusercontent.com/Wai-Technologies/raaghu-docs/development/raaghu/docs/en/images/organization-Unit.png)
+![组织单位页面用于管理组织单位、组织单位成员和组织单位角色](https://raaghustorageaccount.blob.core.windows.net/raaghu-docs/organization-Unit.png)
 
 您可以在此页面添加新的组织单位或编辑现有的组织单位。要添加新的根组织单位，请单击 "新根单位" 按钮并填写打开的表单。
 
-![新组织单位](https://raw.githubusercontent.com/Wai-Technologies/raaghu-docs/development/raaghu/docs/en/images/organization-Unit.png)
+![新组织单位](https://raaghustorageaccount.blob.core.windows.net/raaghu-docs/organization-Unit.png)
 
 要向现有组织单位添加子单位，请右键单击现有组织单位，然后单击 "添加子单位" 上下文菜单项。类似地，要编辑组织单位，请右键单击现有组织单位，然后单击 "编辑" 上下文菜单项。
 
-![编辑组织单位](https://raw.githubusercontent.com/Wai-Technologies/raaghu-docs/development/raaghu/docs/en/images/organization-Unit-edit.png)
+![编辑组织单位](https://raaghustorageaccount.blob.core.windows.net/raaghu-docs/organization-Unit-edit.png)
 
 您可以使用成员选项卡管理组织单位的成员，通过选择组织单位
 
@@ -128,7 +128,7 @@ IdentityMenuNames类包含了菜单项名称的常量。
 
 安全日志页面用于搜索和查看系统中与身份验证相关的操作（登录、注销、更改密码等）。
 
-![安全日志](https://raw.githubusercontent.com/Wai-Technologies/raaghu-docs/development/raaghu/docs/en/images/security-logs.png)
+![安全日志](https://raaghustorageaccount.blob.core.windows.net/raaghu-docs/security-logs.png)
 
 
 希望这有助于将英语文件转化为中文。如果您需要进一步的翻译或有其他问题，请告诉我。

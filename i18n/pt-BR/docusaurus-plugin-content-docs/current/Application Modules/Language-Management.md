@@ -26,19 +26,19 @@ Idiomas
 
 A página de idiomas é usada para gerenciar línguas no sistema.
 
-![Nova língua](https://raw.githubusercontent.com/Wai-Technologies/raaghu-docs/development/raaghu/docs/en/images/language.png)
+![Nova língua](https://raaghustorageaccount.blob.core.windows.net/raaghu-docs/language.png)
 
 Você pode criar um novo idioma ou editar um idioma existente nesta página:
 
-![Criar nova língua](https://raw.githubusercontent.com/Wai-Technologies/raaghu-docs/development/raaghu/docs/en/images/language-new.png) ![Edit Language](https://raw.githubusercontent.com/Wai-Technologies/raaghu-docs/development/raaghu/docs/en/images/language-edit.png)
+![Criar nova língua](https://raaghustorageaccount.blob.core.windows.net/raaghu-docs/language-new.png) ![Edit Language](https://raaghustorageaccount.blob.core.windows.net/raaghu-docs/language-edit.png)
 
 - As línguas **habilitadas** podem ser selecionados adas como a linguagem do sistema.**
 
 ### textos de línguas
 A página de textos linguísticos é usada para gerenciar textos em diferentes línguas.
 
-![Textos de língua](https://raw.githubusercontent.com/Wai-Technologies/raaghu-docs/development/raaghu/docs/en/images/langauge-text.png)
+![Textos de língua](https://raaghustorageaccount.blob.core.windows.net/raaghu-docs/langauge-text.png)
 
 Você pode traduzir um texto para um idioma ou editar a tradução já existente nesta página.
 
-![editar a tradução já existente nesta página](https://raw.githubusercontent.com/Wai-Technologies/raaghu-docs/development/raaghu/docs/en/images/language-text-edit.png)
+![editar a tradução já existente nesta página](https://raaghustorageaccount.blob.core.windows.net/raaghu-docs/language-text-edit.png)

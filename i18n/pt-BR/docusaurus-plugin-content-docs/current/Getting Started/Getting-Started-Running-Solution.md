@@ -43,11 +43,11 @@ Pela próxima vez, pode ⁇ -lo na sua DE, como normalmente faz.
 
 Clique com o botão direito no projeto .DbMigrator e selecione Definir como projeto de inicialização
 
-![projeto set-as-startup-](https://raw.githubusercontent.com/Wai-Technologies/raaghu-docs/development/raaghu/docs/en/images/set-as-startup-project.png)
+![projeto set-as-startup-](https://raaghustorageaccount.blob.core.windows.net/raaghu-docs/set-as-startup-project.png)
 
 Pressione F5 (ou Ctrl+F5) para executar o aplicativo. Ele terá uma saída como mostrada abaixo:
 
-![db-migrator-output](https://raw.githubusercontent.com/Wai-Technologies/raaghu-docs/development/raaghu/docs/en/images/db-migrator-output.png)
+![db-migrator-output](https://raaghustorageaccount.blob.core.windows.net/raaghu-docs/db-migrator-output.png)
 
 Inicial[dados de ⁇](Data-Seeding.md "")`admin`⁇  no banco de dados (com a senha é`1q2w3E*`) que é então usado para iniciar sessão na ⁇ . Por isso, tens de usar`.DbMigrator`Pelo menos uma vez para uma nova base de dados.
 
@@ -59,7 +59,7 @@ Aviso: Ao criar uma solução ABP, os pacotes do lado do cliente estão sendo re
 
 Pressione F5 (ou Ctrl+F5) para executar o aplicativo. Ele terá uma saída como mostrada abaixo:
 
-![adgger-ui](https://raw.githubusercontent.com/Wai-Technologies/raaghu-docs/development/raaghu/docs/en/images/swagger-ui.png)
+![adgger-ui](https://raaghustorageaccount.blob.core.windows.net/raaghu-docs/swagger-ui.png)
 
 Use Ctrl+F5 no Visual Studio (em vez de F5) para executar o aplicativo sem depuração. Se você não tiver um propósito de depuração, isso será mais rápido
 ## ver também

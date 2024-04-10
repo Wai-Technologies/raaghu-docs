@@ -22,7 +22,7 @@ The GDPR module adds the following item to the "User" profile menu.
 
 Personal Data: Personal data management page. You can request your personal data, list all personal data requests, download and/or delete personal data, and delete the account permanently.
 
-![alt text](https://raw.githubusercontent.com/Wai-Technologies/raaghu-docs/development/raaghu/docs/en/images/main-menu.png)
+![alt text](https://raaghustorageaccount.blob.core.windows.net/raaghu-docs/main-menu.png)
 
 ### Pages
 
@@ -30,4 +30,4 @@ Personal Data: Personal data management page. You can request your personal data
 
 The "Personal Data" page is used to manage personal data requests. You can view the past requests, current status of the latest request, create a new request, download data or delete all your personal data and account from the application.
 
-![alt text](https://raw.githubusercontent.com/Wai-Technologies/raaghu-docs/development/raaghu/docs/en/images/personal-data.png)
+![alt text](https://raaghustorageaccount.blob.core.windows.net/raaghu-docs/personal-data.png)

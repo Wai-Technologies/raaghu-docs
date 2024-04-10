@@ -36,10 +36,10 @@ Página de planos de pagamento
 
 Os planos de pagamento de assinaturas podem ser gerenciados nesta página. Você pode conectar assinaturas externas para cada gateway a um plano.
 
-![Páginas de administração](https://raw.githubusercontent.com/Wai-Technologies/raaghu-docs/development/raaghu/docs/en/images/payment-plan.png)
+![Páginas de administração](https://raaghustorageaccount.blob.core.windows.net/raaghu-docs/payment-plan.png)
 Página de Pedido de Pagamento
 
 Esta página lista todas as operações de solicitação de pagamento no aplicativo.
 
-![Páginas de administração](https://raw.githubusercontent.com/Wai-Technologies/raaghu-docs/development/raaghu/docs/en/images/payment-request.png)
+![Páginas de administração](https://raaghustorageaccount.blob.core.windows.net/raaghu-docs/payment-request.png)
 

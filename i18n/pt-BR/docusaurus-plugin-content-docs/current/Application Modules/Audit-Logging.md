@@ -36,7 +36,7 @@ Logs de auditoria
 
 A guia Logs de auditoria é usada para listar, visualizar e filtrar logs de auditoria e alterações de entidade no sistema.
 
-![A aba de logs de auditoria é usada para listar, visualizar e filtrar logs de auditoria e ⁇  de ⁇  no sistema](https://raw.githubusercontent.com/Wai-Technologies/raaghu-docs/development/raaghu/docs/en/images/audit-logs.png)
+![A aba de logs de auditoria é usada para listar, visualizar e filtrar logs de auditoria e ⁇  de ⁇  no sistema](https://raaghustorageaccount.blob.core.windows.net/raaghu-docs/audit-logs.png)
 ### Detalhes do registro de auditoria
 Você pode visualizar detalhes de um log de auditoria clicando no ícone da lupa em cada linha do log de auditoria:
 

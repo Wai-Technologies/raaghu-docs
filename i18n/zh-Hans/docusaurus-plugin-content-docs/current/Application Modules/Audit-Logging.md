@@ -43,7 +43,7 @@ IAbpAuditLoggingMainMenuNames类包含了菜单项名称的常量。
 
 审计日志选项卡用于列出、查看和筛选系统中的审计日志和实体更改。
 
-![审计日志选项卡用于列出、查看和筛选系统中的审计日志和实体更改](https://raw.githubusercontent.com/Wai-Technologies/raaghu-docs/development/raaghu/docs/en/images/audit-logs.png)
+![审计日志选项卡用于列出、查看和筛选系统中的审计日志和实体更改](https://raaghustorageaccount.blob.core.windows.net/raaghu-docs/audit-logs.png)
 
 ### 审计日志详细信息
 

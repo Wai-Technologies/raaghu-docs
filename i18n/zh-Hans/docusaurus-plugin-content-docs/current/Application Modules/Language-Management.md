@@ -32,13 +32,13 @@ LanguageManagementMenuNames类包含了菜单项名称的常量。
 
 语言页面用于管理系统中的语言。
 
-![新语言](https://raw.githubusercontent.com/Wai-Technologies/raaghu-docs/development/raaghu/docs/en/images/language.png)
+![新语言](https://raaghustorageaccount.blob.core.windows.net/raaghu-docs/language.png)
 
 
 您可以在此页面创建新语言或编辑现有语言：
 
-![创建新语言](https://raw.githubusercontent.com/Wai-Technologies/raaghu-docs/development/raaghu/docs/en/images/language-new.png) 
- ![编辑语言](https://raw.githubusercontent.com/Wai-Technologies/raaghu-docs/development/raaghu/docs/en/images/language-edit.png)
+![创建新语言](https://raaghustorageaccount.blob.core.windows.net/raaghu-docs/language-new.png) 
+ ![编辑语言](https://raaghustorageaccount.blob.core.windows.net/raaghu-docs/language-edit.png)
 
 * **已启用的**语言可以被选择为系统语言。
 
@@ -46,11 +46,11 @@ LanguageManagementMenuNames类包含了菜单项名称的常量。
 
 语言文本页面用于管理不同语言中的文本。
 
-![语言文本](https://raw.githubusercontent.com/Wai-Technologies/raaghu-docs/development/raaghu/docs/en/images/langauge-text.png)
+![语言文本](https://raaghustorageaccount.blob.core.windows.net/raaghu-docs/langauge-text.png)
 
 您可以在此页面翻译某种语言的文本或编辑已存在的翻译。
 
-![在此页面编辑已存在的翻译](https://raw.githubusercontent.com/Wai-Technologies/raaghu-docs/development/raaghu/docs/en/images/language-text-edit.png)
+![在此页面编辑已存在的翻译](https://raaghustorageaccount.blob.core.windows.net/raaghu-docs/language-text-edit.png)
 
 
 希望这有助于将英语文件转化为中文。如果您需要进一步的翻译或有其他问题，请告诉我。

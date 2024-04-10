@@ -35,9 +35,9 @@ Account模块已预安装在[启动模板中](https://docs.abp.io/en/commercial/
 
 登录页面用于登录系统。
 
-![Home page](https://raw.githubusercontent.com/Wai-Technologies/raaghu-docs/development/raaghu/docs/en/images/home-page.png)
+![Home page](https://raaghustorageaccount.blob.core.windows.net/raaghu-docs/home-page.png)
 
-![登录页面用于登录系统](https://raw.githubusercontent.com/Wai-Technologies/raaghu-docs/development/raaghu/docs/en/images/login_page.png)
+![登录页面用于登录系统](https://raaghustorageaccount.blob.core.windows.net/raaghu-docs/login_page.png)
 
 ### 注册页面
 

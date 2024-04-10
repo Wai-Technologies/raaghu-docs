@@ -18,8 +18,8 @@ Raaghu设计系统使用React 18构建，提供了强大的、模块化的架构
 
 Raaghu设计系统 - React与ABP商业许可证及其发布版本兼容。
 
-![主页图片](https://raw.githubusercontent.com/Wai-Technologies/raaghu-docs/development/raaghu/docs/en/images/home-1.png)
+![主页图片](https://raaghustorageaccount.blob.core.windows.net/raaghu-docs/home-1.png)
 
 ### Raaghu技术栈
 
-![主页](https://raw.githubusercontent.com/Wai-Technologies/raaghu-docs/development/raaghu/docs/en/images/home-2.png)
+![主页](https://raaghustorageaccount.blob.core.windows.net/raaghu-docs/home-2.png)

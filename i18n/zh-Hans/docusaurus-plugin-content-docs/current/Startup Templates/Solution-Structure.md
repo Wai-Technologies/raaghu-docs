@@ -12,11 +12,11 @@ sidebar_position: 3
 
 如果您没有指定任何附加选项，您将在**aspnet-core**文件夹中获得一个解决方案，如下所示：
 
-![默认结构](https://raw.githubusercontent.com/Wai-Technologies/raaghu-docs/development/raaghu/docs/en/images/defaultStructure.png)
+![默认结构](https://raaghustorageaccount.blob.core.windows.net/raaghu-docs/defaultStructure.png)
 
 项目位于aspnet-core/src和aspnet-core/test文件夹中。aspnet-core/src文件夹包含实际应用程序，aspnet-core/test文件夹包含单元测试和测试基础项目。下面的图表显示了应用程序的层次结构和项目依赖关系：
 
-![流程图结构](https://raw.githubusercontent.com/Wai-Technologies/raaghu-docs/development/raaghu/docs/en/images/flow-chart.png)
+![流程图结构](https://raaghustorageaccount.blob.core.windows.net/raaghu-docs/flow-chart.png)
 
 
 下面的每个部分描述了相关的项目及其依赖关系。
