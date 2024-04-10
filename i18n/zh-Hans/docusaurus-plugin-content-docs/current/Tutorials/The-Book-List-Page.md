@@ -2,176 +2,192 @@
 sidebar_position: 3
 ---
 
-# 图书列表页面
-# 第2部分：图书列表页面
+# 书籍列表页面
 
-Github CLI
-----------
+### Raaghu CLI
 
-选择一个本地目录，运行以下命令以下载并输出代码，使用一个本地目录名称，其中项目已经转换为zip
+Raaghu CLI（命令行界面）是一种由 WAi Technologies 创建的命令行工具，用于执行 Raaghu Frontend Studio 的一些常见操作。
 
-```json
- curl -L https://github.com/Wai-Technologies/raaghu-react/archive/development-abp.zip --output (文件夹名称).zip
+### Raaghu CLI 的安装过程
+
+Raaghu CLI 是一个 [dotnet 全局工具](https://www.nuget.org/packages/Waiin.Raaghu.Cli)。使用命令行窗口安装它：
+
+
+````shell
+dotnet tool install Waiin.Raaghu.Cli
+````
+````shell
+dotnet tool install -g Waiin.Raaghu.Cli
+````
+````shell
+dotnet tool install --global Waiin.Raaghu.Cli
+````
+
+要更新现有安装：
+
+````shell
+dotnet tool update Waiin.Raaghu.Cli
+````
+````shell
+dotnet tool update -g Waiin.Raaghu.Cli
+````
+````shell
+dotnet tool update --global Waiin.Raaghu.Cli
+````
+
+### 登录到 Raaghu CLI
+安装 Raaghu CLI 后，我们需要登录才能使用 CLI 功能。使用以下命令登录：
+
+
+```bash
+raaghu login                                  # Allows you to enter your password which is hidden
 ```
+### 创建新解决方案
+基于 Raaghu 命令生成新解决方案。
 
-现在，使用以下命令解压文件
+用法：
 
-```json
-    tar -xf (文件夹名称).zip
-```
+````bash
+raaghu new <solution-name> [options]
+````
 
-### 安装NPM包
+示例：
 
-在项目根目录下运行以下代码
+````bash
+raaghu new Raaghu.BookStore
+````
+
+这里的 Raaghu.BookStore 是解决方案名称。
+通常约定的解决方案命名为 YourCompany.YourProject。但是，您也可以使用不同的命名方式，比如 YourProject（单层命名空间）或 YourCompany.YourProduct.YourModule（三层命名空间）。
+选项
+--version 或 -v：指定 Raaghu 版本。如果未指定版本，则将自动使用最新版本创建解决方案。
+
+
+
+````bash
+raaghu new <solution-name> --version <version>
+````
+````bash
+raaghu new <solution-name> -v <version>
+````
+
+Example:
+
+````bash
+raaghu new Raaghu.BookStore  --version 7.4.4
+````
+
+````bash
+raaghu new Raaghu.BookStore  -v 7.4.4
+````
+
+### 安装 NPM 包
+在项目文件夹的根目录运行以下代码：
 
 ```shell
   raaghu install-all
 ```
 
-### 安装Abp-React-Core
+这将帮助在项目的不同位置安装依赖项，如元素、组件、mfe 和核心。
 
-在项目根目录下运行以下代码
+### 本地运行应用所需的环境文件（.env）更改
 
 ```shell
-  raaghu create:core
+NODE_ENV=production
+REACT_APP_URL=http://localhost:8080
+REACT_APP_API_URL= ##Backend Url Here
+REACT_APP_GRANT_TYPE=authorization_code
+REACT_APP_CLIENT_ID= ##Backend Client Id Here
+REACT_APP_SCOPE=address openid email phone profile roles offline_access ##Backend Client Id without _App Here
+REACT_APP_REPLACE_URL=true
+REACT_APP_Version=8.0
+
 ```
+应该根据后端客户端 ID 和 Scope 在 .env 文件中进行更改。
 
 ### 生成代理
-
-为了创建代理，我们在根目录下运行以下命令
+要创建代理，我们在根目录运行以下命令：
 
 ```shell
   raaghu create:proxy --url=https://raaghu-react.azurewebsites.net
 ```
 
-### 创建一个图书商店模块
+您可以指定从 abp 套件创建的本地后端的 URL。
 
-运行以下命令在根目录下创建一个新的模块，命名为BookStore，并在其中创建一个React应用的Book页面
+### 添加一个 Slice 文件
+运行以下命令创建一个 Slice 文件
+
 
 ```shell
-  raaghu create:page --moduleName=BookStore--pageName=book --projectName=Acme.BookStore
+ raaghu create:slice Book
+```
+### 创建一个 BookStore 模块
+运行以下命令在根文件夹上创建一个新模块，命名为 BookStore，并在其中创建一个 React 应用程序的 Book 页面
+
+```shell
+  raaghu create:page --moduleName=BookStore --pageName=book --projectName=Acme.BookStore
 ```
 
-**注意：创建页面区分大小写。页面名称应该使用小写字母**
+您可以将 projectName 指定为本地项目名称。
+#### 注意：创建页面区分大小写。页面名称应为小写字母
 
-### 代码片段
+## 代码片段
+#### 数据表
 
-**数据表格**
+在这里，我们使用一个具有表头和相应数据的组件 RdsCompDataDable 集成了一个数据表。
 
-在这里，我们使用一个包含表头和相应数据的RdsCompDataDable组件来集成数据表格。
-
-代码如下所示：
+代码看起来像下面这样
 
 ```javascript
-    <RdsCompDatatable
-        classes="table__userTable"
-        tableHeaders={tableHeaders}
-        pagination={true}
-        tableData={Data}
-        onActionSelection={onActionSelection}
-        recordsPerPage={5}
-        recordsPerPageSelectListOption={true}
-    >`
-    </RdsCompDatatable>`
+   <RdsCompDatatable
+     classes="table__userTable"
+     tableHeaders={tableHeaders}
+     pagination={true}
+     tableData={Data} // data
+     actions={actions} // add action={[ add array of actions you require]} here to have action dropdown
+     onActionSelection={onActionSelection}
+     // add onActionSelction here for what function you want to call
+     recordsPerPage={10}
+     recordsPerPageSelectListOption={true}
+    ></RdsCompDatatable>`
 ```
 
-在RdsCompDataTable中，我们可以添加要在tableData中显示的必要数据以及您所需的操作数组以及使用onActionSelection的必要函数
+在 RdsCompDataTable 中，我们可以添加要在 tableData 中显示的必要数据，以及您需要的操作的数组以及使用 onActionSelection 的必要函数。
 
 ### 列结构
+现在我们在数据表中集成了表头
 
-现在我们将表头集成到数据表中
-
-```shell
+```bash 
 const tableHeaders = [
-    {
-        "displayName": "名称",
-        "name": "Name",
-        "key": "name",
-        "datatype": "text",
-        "sortable": true,
-        "element": "RdsInput"
-    },
-    {
-        "displayName": "类型",
-        "name": "Type",
-        "key": "type",
-        "datatype": "text",
-        "sortable": true,
-        "element": "RdsSelectList"
-    },
-    {
-        "displayName": "发布日期",
-        "name": "PublishDate",
-        "key": "publishDate",
-        "datatype": "text",
-        "sortable": true,
-        "element": "RdsDatePicker"
-    },
-    {
-        "displayName": "价格",
-        "name": "Price",
-        "key": "price",
-        "datatype": "text",
-        "sortable": true,
-        "element": "RdsInput"
-    }
-    ]添加切片文件我们现在添加一个切片文件，它定义了一个状态片段及其相应的reducer函数    export const getBooksRequest = createAsyncThunk(
-    'book/getBooksRequest',
-    async ({
-        filterText,
-        name,
-        type,
-        publishDateMin,
-        publishDateMax,
-        priceMin,
-        priceMax,
-        sorting,
-        skipCount,
-        maxResultCount,
-    }:{
-        filterText?: string,
-        name?: string,
-        type?: DemoSuite2_Books_BookType,
-        publishDateMin?: string,
-        publishDateMax?: string,
-        priceMin?: number,
-        priceMax?: number,
-        sorting?: string,
-        skipCount?: number,
-        maxResultCount?: number,
-    }) => {
-        const response = await BookService.getBooks({
-        filterText,
-        name,
-        type,
-        publishDateMin,
-        publishDateMax,
-        priceMin,
-        priceMax,
-        sorting,
-        skipCount,
-        maxResultCount,
-    });        return response;    }
-    );
+  { 
+    "displayName": "Name",
+    "key": "name",
+    "datatype": "text", 
+    "sortable": true 
+  }, 
+  { 
+    "displayName": "Price", 
+    "key": "price", 
+    "datatype": "text", 
+    "sortable": true 
+  }, 
+  { 
+    "displayName": "Publish Date", 
+    "key": "publishDate", 
+    "datatype": "text", 
+    "sortable": true 
+  }, 
+  { 
+    "displayName": "Type", 
+    "key": "type", 
+    "datatype": "text", 
+    "sortable": true 
+  }
+]
 ```
 
-在BookSlice的额外reducer中添加这些构建器案例
+现在我们在 Books 页面中获取数据并在数据表中显示它
 
-```shell
-    builder.addCase(getBooksRequest.pending, (state) => {
-        state.loading = true;
-    });
-        builder.addCase(getBooksRequest.fulfilled, (state, action) => {
-        state.loading = false;
-        state.error = "";
-        state.getBooks = action.payload
-    });        builder.addCase(getBooksRequest.rejected,(state, action)=> {
-        state.loading = false;
-        state.error = action.error.message || "出现了一些问题";
-    });
-```
-
-现在我们在Books页面中执行获取数据并在数据表中显示它
 
 ```shell
     useEffect(() => {

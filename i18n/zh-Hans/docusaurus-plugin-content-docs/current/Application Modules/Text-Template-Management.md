@@ -3,7 +3,6 @@ sidebar_position: 14
 ---
 
 # 文本模板管理
-# 文本模板管理模块
 
 此模块用于存储和编辑 ABP 框架的[文本模板系统](https://docs.abp.io/en/abp/latest/Text-Templating)的模板内容。因此，您可能需要了解它，以更好地理解此模块的目的。
 

@@ -4,8 +4,6 @@ sidebar_position: 5
 
 # CMS 套件专业版
 
-# CMS Kit Pro 模块
-
 该模块扩展了[开源的CMS Kit模块](https://docs.abp.io/en/abp/latest/Modules/Cms-Kit/Index)，为您的应用程序添加了额外的CMS（内容管理系统）功能。
 
 开源CMS Kit模块提供以下功能：
