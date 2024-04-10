@@ -22,3 +22,4 @@ jobs:
           app_location: "/" 
           api_location: ""
           output_location: "build"
+          skip_api_build: "true"
