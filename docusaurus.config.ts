@@ -4,7 +4,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
   title: 'Raaghu Documentation Center',
-  tagline: 'Raaghu Frontend Studio built using React 18, Raaghu Design System and Docusaurus, provides robust, modular architecture, fully compatible with ABP Commercial.',
+  tagline: 'Raaghu Frontend Suite built using React 18, Raaghu Design System and Docusaurus, provides robust, modular architecture, fully compatible with ABP Commercial.',
   favicon: 'https://raaghustorageaccount.blob.core.windows.net/raaghu-blob/Raaghu%20Logo%20SD.svg',
 
   staticDirectories: ['public', 'static'],
@@ -16,7 +16,7 @@ const config: Config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'Raaghu Frontend Studio by WAi Technologies', // Usually your GitHub org/user name.
+  organizationName: 'Raaghu Frontend Suite by Wai Technologies', // Usually your GitHub org/user name.
   projectName: 'raaghu-docs', // Usually your repo name.
 
   onBrokenLinks: 'ignore',
@@ -250,7 +250,7 @@ const config: Config = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} WAi Technologies. Built with Raaghu Design System.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Wai Technologies. Built with Raaghu Design System.`,
     },
     prism: {
       theme: prismThemes.github,

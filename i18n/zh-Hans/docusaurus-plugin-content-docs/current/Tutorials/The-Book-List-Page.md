@@ -6,7 +6,7 @@ sidebar_position: 3
 
 ### Raaghu CLI
 
-Raaghu CLI（命令行界面）是一种由 WAi Technologies 创建的命令行工具，用于执行 Raaghu Frontend Studio 的一些常见操作。
+Raaghu CLI（命令行界面）是一种由 Wai Technologies 创建的命令行工具，用于执行 Raaghu Frontend Suite 的一些常见操作。
 
 ### Raaghu CLI 的安装过程
 

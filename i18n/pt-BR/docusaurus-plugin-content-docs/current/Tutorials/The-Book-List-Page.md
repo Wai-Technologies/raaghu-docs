@@ -4,7 +4,7 @@ sidebar_position: 3
 # Página de Lista de Livros
 ## Raaghu CLI
 
-Raaghu CLI (Command Line Interface) é uma ferramenta de linha de comando para realizar algumas operações comuns para o Raaghu Frontend Studio criado pela WAi Technologies.
+Raaghu CLI (Command Line Interface) é uma ferramenta de linha de comando para realizar algumas operações comuns para o Raaghu Frontend Suite criado pela Wai Technologies.
 
 ## Processo de Instalação para Raaghu CLI
 Raaghu CLI é uma ferramenta global do dotnet. Instale-a usando uma janela de linha de comando:
