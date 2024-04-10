@@ -4,9 +4,6 @@ sidebar_position: 2
 
 # Identity Server Deployment
 
-Identity Server Deployment
-==========================
-
 IdentityServer configuration may be different based on deployment configurations. Basically, you need update identityserver client related data and update your hosting preferences based on your deployment environment.
 
 ### Update Cors Origins

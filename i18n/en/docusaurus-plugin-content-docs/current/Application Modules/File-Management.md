@@ -4,11 +4,6 @@ sidebar_position: 6
 
 # File Management
 
-
-
-File Management Module
-======================
-
 This module is used to upload, download and organize files in a hierarchical folder structure. It is also compatible to multi-tenancy and you can determine total size limit for your tenants.
 
 This module is based on the [BLOB Storing](https://docs.abp.io/en/abp/latest/Blob-Storing) system, so it can use different storage providers to store the file contents.

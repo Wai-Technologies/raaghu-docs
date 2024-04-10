@@ -4,9 +4,6 @@ sidebar_position: 3
 
 # Audit Logging
 
-Audit Logging module
-====================
-
 This module implements the Audit Logging system of an application;
 
 * See all audit logs of the system and filter audit logs easily.

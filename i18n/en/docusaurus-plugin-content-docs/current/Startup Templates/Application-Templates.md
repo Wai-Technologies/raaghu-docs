@@ -2,10 +2,7 @@
 sidebar_position: 1
 ---
 
-# Application Template
-
-STARTUP TEMPLATES
-=================
+# Startup Template
 
 Application startup templates
 -----------------------------

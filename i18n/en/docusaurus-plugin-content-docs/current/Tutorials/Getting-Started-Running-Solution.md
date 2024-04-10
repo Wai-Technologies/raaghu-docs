@@ -64,7 +64,7 @@ Right click to the `.DbMigrator` project and select **Set as StartUp Project**
 
  ![db-migrator-output](https://raw.githubusercontent.com/Wai-Technologies/raaghu-docs/development/raaghu/docs/en/images/db-migrator-output.png)
 
-Initial seed data creates the `admin` user in the database (with the password is `1q2w3E*`) which is then used to login to the application. So, you need to use `.DbMigrator` at least once for a new database.
+Initial [seed data](Data-Seeding.md) creates the `admin` user in the database (with the password is `1q2w3E*`) which is then used to login to the application. So, you need to use `.DbMigrator` at least once for a new database.
 
 The solution is configured to use **MongoDB** in your local computer, so you need to have a MongoDB server instance up and running or change the connection string to another MongoDB server.
 

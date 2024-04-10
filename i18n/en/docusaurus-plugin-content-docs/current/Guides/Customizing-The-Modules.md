@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # Customizing the Modules
 
-GUIDES
+Guides
 ======
 
 Customizing the Modules

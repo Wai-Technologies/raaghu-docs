@@ -16,3 +16,7 @@ Developed with utilization of following technologies, this tutorial series will 
 
 * **Entity Framework Core** as database provider
 * **Raaghu** as a React UI Framework
+
+### The Next Part
+
+* See the [next part](The-Book-List-Page.md) of this tutorial.
