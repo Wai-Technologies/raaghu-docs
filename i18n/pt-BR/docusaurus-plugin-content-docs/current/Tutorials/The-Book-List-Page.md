@@ -1,147 +1,195 @@
 ---
 sidebar_position: 3
 ---
+# Página de Lista de Livros
+## Raaghu CLI
 
-# Página da lista de livros
-# parte 2: lista de livros página
-## github cli
-Selecione um diretório local e execute o seguinte comando para baixar e gerar o código usando um nome de diretório local onde o projeto é convertido em zip
-```json
- curl -L https://github.com/Wai-Technologies/raaghu-react/archive/development-abp.zip --output (folder name).zip
-```
-agora, até o arquivo usando o seguinte comando
-```json
- tar -xf (folder name).zip
-```
-### instalar pacotes num
-Execute o código abaixo no nível raiz da pasta do seu projeto
+Raaghu CLI (Command Line Interface) é uma ferramenta de linha de comando para realizar algumas operações comuns para o Raaghu Frontend Studio criado pela WAi Technologies.
+
+## Processo de Instalação para Raaghu CLI
+Raaghu CLI é uma ferramenta global do dotnet. Instale-a usando uma janela de linha de comando:
+
+
+````shell
+dotnet tool install Waiin.Raaghu.Cli
+````
+````shell
+dotnet tool install -g Waiin.Raaghu.Cli
+````
+````shell
+dotnet tool install --global Waiin.Raaghu.Cli
+````
+
+Para atualizar uma instalação existente:
+
+````shell
+dotnet tool update Waiin.Raaghu.Cli
+````
+````shell
+dotnet tool update -g Waiin.Raaghu.Cli
+````
+````shell
+dotnet tool update --global Waiin.Raaghu.Cli
+````
+### Login no Raaghu CLI
+
+Após instalar o Raaghu CLI, precisamos fazer o login para usar o recurso da CLI. Para fazer login, use o seguinte comando:
+
+
 ```bash
- raaghu install-all
+raaghu login                                  # Allows you to enter your password which is hidden
 ```
-### instalar amp-react-core
-Execute o código abaixo no nível raiz da pasta do seu projeto
-```bash
-  raaghu create:core
+### Criar Nova Solução
+Gera uma nova solução com base nos Comandos do Raaghu.
+
+Uso:
+
+````bash
+raaghu new <solution-name> [options]
+````
+
+Example:
+
+````bash
+raaghu new Raaghu.BookStore
+````
+* `Raaghu.BookStore` é o nome da solução aqui.
+* A convenção comum é nomear uma solução como SuaEmpresa.SeuProjeto. No entanto, você pode usar um nome diferente como SeuProjeto (com espaçamento de um nível) ou SuaEmpresa.SeuProduto.SeuMódulo (com espaçamento de três níveis).
+
+### Opções
+--version ou -v: Especifica a versão do Raaghu. Se a versão não for especificada, será usada automaticamente a versão mais recente para criar a solução.
+
+````bash
+raaghu new <solution-name> --version <version>
+````
+````bash
+raaghu new <solution-name> -v <version>
+````
+
+Example:
+
+````bash
+raaghu new Raaghu.BookStore  --version 7.4.4
+````
+
+````bash
+raaghu new Raaghu.BookStore  -v 7.4.4
+````
+### Instalar Pacotes NPM
+
+Execute o código abaixo no nível raiz da pasta do seu projeto:
+
+```shell
+  raaghu install-all
 ```
-### geram proxy
+Isso ajudará a instalar as dependências em diferentes locais dentro do projeto, como elementos, componentes, mfe e core.
+
+#### Alterações no Arquivo de Ambiente (.env) para executar o aplicativo localmente
+
+```shell
+NODE_ENV=production
+REACT_APP_URL=http://localhost:8080
+REACT_APP_API_URL= ##Backend Url Here
+REACT_APP_GRANT_TYPE=authorization_code
+REACT_APP_CLIENT_ID= ##Backend Client Id Here
+REACT_APP_SCOPE=address openid email phone profile roles offline_access ##Backend Client Id without _App Here
+REACT_APP_REPLACE_URL=true
+REACT_APP_Version=8.0
+
+```
+
+Devem ser feitas alterações no arquivo .env em relação ao ID do cliente do backend e ao Scope.
+
+### Gerar Proxy
 para criar proxies, executamos o seguinte comando no nível raiz
-```bash
-      raaghu create:proxy --url=https://raaghu-react.azurewebsites.net
-```
-### Crie um módulo de livraria
-Execute a seguinte linha de comando para criar um novo módulo, chamado BookStore na pasta raiz e uma página de livro dentro dele do aplicativo React
-```bash
-    raaghu create:page --moduleName=BookStore--pageName=book --projectName=Acme.BookStore
-```
-**Nota: A criação de uma página diferencia maiúsculas de minúsculas. o nome da página deve estar em letras minúsculas**
-### snippets de código
-**Tabela de dados**
 
-Aqui nós integramos uma Tabela de Dados usando um componente RdsCompDataComponenteDable tendo cabeçalhos de mesa e dados relacionados a ele.
-
-código parece como ⁇  abaixo
-```json
-        <rdscompdatatable classes="table__userTable" tableheaders="{tableHeaders}" pagination="{true}" tabledata="{Data}" onactionselection="{onActionSelection}" recordsperpage="{5}" recordsperpageselectlistoption="{true}">`
-        </rdscompdatatable>`
+```shell
+  raaghu create:proxy --url=https://raaghu-react.azurewebsites.net
 ```
-em RdsCompDataTable, podemos adicionar os dados necessários que queremos mostrar em tableData e seguir o conjunto de ações que você precisa, bem como a função necessária usando onActionSelection
+Você pode mencionar a URL do backend local criado a partir da suíte abp.
 
-### Estrutura da Coluna
+### Adicionando um arquivo Slice
+Execute o seguinte comando para criar um arquivo Slice
+
+
+```shell
+ raaghu create:slice Book
+```
+### Criar um Módulo BookStore
+
+Execute a seguinte linha de comando para criar um novo Módulo, chamado BookStore no diretório raiz e uma página Book dentro dele do aplicativo React
+
+```shell
+  raaghu create:page --moduleName=BookStore --pageName=book --projectName=Acme.BookStore
+```
+
+Você pode mencionar o nome do projeto como o nome do seu projeto local.
+Observação: A criação de uma página diferencia maiúsculas de minúsculas. O nome da página deve estar em letras minúsculas
+
+## Trechos de Código
+#### Tabela de Dados
+
+Aqui integramos uma Tabela de Dados usando um componente RdsCompDataDable com cabeçalhos de tabela e dados correspondentes a ele.
+
+O código se parece com o mostrado abaixo
+
+```javascript
+   <RdsCompDatatable
+     classes="table__userTable"
+     tableHeaders={tableHeaders}
+     pagination={true}
+     tableData={Data} // data
+     actions={actions} // add action={[ add array of actions you require]} here to have action dropdown
+     onActionSelection={onActionSelection}
+     // add onActionSelction here for what function you want to call
+     recordsPerPage={10}
+     recordsPerPageSelectListOption={true}
+    ></RdsCompDatatable>`
+```
+
+no RdsCompDataTable, podemos adicionar os dados necessários que queremos mostrar em tableData e o seguinte array de ações que você requer, bem como a função necessária usando onActionSelection
+
+### Estrutura de Coluna
 Agora integramos cabeçalhos de tabela na tabela de dados
-```json
-    const tableHeaders = [
-        {
-            "displayName": "NAME",
-            "name": "Name",
-            "key": "name",
-            "datatype": "text",
-            "sortable": true,
-            "element": "RdsInput"
-        },
-        {
-            "displayName": "TYPE",
-            "name": "Type",
-            "key": "type",
-            "datatype": "text",
-            "sortable": true,
-            "element": "RdsSelectList"
-        },
-        {
-            "displayName": "PUBLISHDATE",
-            "name": "PublishDate",
-            "key": "publishDate",
-            "datatype": "text",
-            "sortable": true,
-            "element": "RdsDatePicker"
-        },
-        {
-            "displayName": "PRICE",
-            "name": "Price",
-            "key": "price",
-            "datatype": "text",
-            "sortable": true,
-            "element": "RdsInput"
-        }
-        ]Adding a Slice FileWe now add a slice file that defines a piece of state and its corresponding reducer functions    export const getBooksRequest = createAsyncThunk(
-        'book/getBooksRequest',
-        async ({
-            filterText,
-            name,
-            type,
-            publishDateMin,
-            publishDateMax,
-            priceMin,
-            priceMax,
-            sorting,
-            skipCount,
-            maxResultCount,
-        }:{
-            filterText?: string,
-            name?: string,
-            type?: DemoSuite2_Books_BookType,
-            publishDateMin?: string,
-            publishDateMax?: string,
-            priceMin?: number,
-            priceMax?: number,
-            sorting?: string,
-            skipCount?: number,
-            maxResultCount?: number,
-        }) =&gt; {
-            const response = await BookService.getBooks({
-            filterText,
-            name,
-            type,
-            publishDateMin,
-            publishDateMax,
-            priceMin,
-            priceMax,
-            sorting,
-            skipCount,
-            maxResultCount,
-        });        return response;    }
-        );
 
-Adicionar estes casos construtor dentro de BookSlice extra ⁇
+```bash 
+const tableHeaders = [
+  { 
+    "displayName": "Name",
+    "key": "name",
+    "datatype": "text", 
+    "sortable": true 
+  }, 
+  { 
+    "displayName": "Price", 
+    "key": "price", 
+    "datatype": "text", 
+    "sortable": true 
+  }, 
+  { 
+    "displayName": "Publish Date", 
+    "key": "publishDate", 
+    "datatype": "text", 
+    "sortable": true 
+  }, 
+  { 
+    "displayName": "Type", 
+    "key": "type", 
+    "datatype": "text", 
+    "sortable": true 
+  }
+]
+```
+Agora realizamos a busca de dados na página de Livros e os exibimos dentro da tabela de dados
 
-        builder.addCase(getBooksRequest.pending, (state) =&gt; {
-            state.loading = true;
-        });
-            builder.addCase(getBooksRequest.fulfilled, (state, action) =&gt; {
-            state.loading = false;
-            state.error = "";
-            state.getBooks = action.payload
-        });        builder.addCase(getBooksRequest.rejected,(state, action)=&gt; {
-            state.loading = false;
-            state.error = action.error.message || "Something went wrong";
-        });
+
+```shell
+    useEffect(() => {
+        dispatch(getBooksRequest({}) as any);
+    }, []);
 ```
 
-Agora realizamos dados de gravura na página de livros e exibimo-lo dentro da ⁇  de dados
-```json
-        useEffect(() =&gt; {
-            dispatch(getBooksRequest({}) as any);
-        }, []);
-```
+
 ### a próxima parte
 
 - [próxima parte](Creating-Updating-And-Deleting-Book.md "")deste tutorial.

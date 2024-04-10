@@ -4,8 +4,6 @@ sidebar_position: 10
 
 # OpenIddict
 
-
-# Módulo OpenIddict
 Este módulo fornece funcionalidade de integração e gerenciamento para a biblioteca OpenIddict;
 
 - Construído sobre[OpenIddict-core](https://github.com/openiddict/openiddict-core "")biblioteca.

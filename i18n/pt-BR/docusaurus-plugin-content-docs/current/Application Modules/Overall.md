@@ -4,8 +4,6 @@ sidebar_position: 1
 
 # Overall
 
-# Módulos de Aplicação
-
 ABP Commercial fornece módulos de aplicativos de nível empresarial [prontos](https://commercial.abp.io/modules "") para produção. Consulte a página de módulos para obter uma lista e descrições dos módulos como uma visão geral. Esta documentação é para desenvolvedores e explica detalhes técnicos dos módulos.
 ## Módulos Comerciais
 

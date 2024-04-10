@@ -4,7 +4,6 @@ sidebar_position: 3
 
 # Registro de auditoria
 
-# Módulo de registro de auditoria
 Este módulo implementa o sistema Audit Logging de uma aplicação;
 
 - Veja todos os logs de auditoria do sistema e os logs de auditoria do filtro facilmente.

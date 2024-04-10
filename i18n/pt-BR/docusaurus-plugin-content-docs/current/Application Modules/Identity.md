@@ -4,8 +4,6 @@ sidebar_position: 9
 
 # Identidade
 
-
-# Módulo de gerenciamento de identidade
 Este módulo implementa o sistema de Usuário e Função de uma aplicação;
 
 - Gerenciar funções e usuários no sistema. Um usuário pode ter múltiplas funções.

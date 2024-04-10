@@ -4,8 +4,6 @@ sidebar_position: 4
 
 # Criando, atualizando e excluindo livro
 
-
-# Parte 3: Criando, Atualizando e Excluindo Livro
 ## criando um novo livro -
 Para criar um novo livro, criaremos um novo componente chamado RdsCompBookForm. Execute o código abaixo na pasta raiz
 ```bash

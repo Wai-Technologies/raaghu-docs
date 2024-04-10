@@ -4,7 +4,6 @@ sidebar_position: 12
 
 # Pagamento
 
-# Módulo de pagamento
 O módulo de pagamento implementa a integração do gateway de pagamento de um aplicativo. Ele oferece opções de pagamento único e pagamento recorrente.
 
 - Apoios[Stripe](https://stripe.com/en-in ""), [PayPal](https://www.paypal.com/in/home ""), [2Checkout](https://www.2checkout.com/ ""), [PayU](https://corporate.payu.com/ ""), [Iyzico](https://www.iyzico.com/en "")[Alias](https://global.alipay.com/platform/site/ihome "")gateways de pagamento.

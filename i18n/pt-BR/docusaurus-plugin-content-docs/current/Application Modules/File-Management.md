@@ -4,7 +4,6 @@ sidebar_position: 6
 
 # Gerenciamento de arquivos
 
-# Módulo de gerenciamento de arquivos
 Este módulo é usado para fazer upload, download e organizar arquivos em uma estrutura hierárquica de pastas. Também é compatível com multilocação e você pode determinar o limite de tamanho total para seus inquilinos.
 
 Este módulo é baseado no sistema [BLOB Storing](https://docs.abp.io/en/abp/latest/Blob-Storing ""), portanto pode utilizar diferentes provedores de armazenamento para armazenar o conteúdo do arquivo.

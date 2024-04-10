@@ -3,8 +3,6 @@ sidebar_position: 2
 ---
 
 # Conta
-
-# Conta
 Este módulo implementa as funcionalidades de Login, Cadastro, Esqueci a Senha, Confirmação de Email, Redefinição de Senha, envio e confirmação de Autenticação de Dois Fatores, bloqueio de usuário, alternância entre locatários de uma aplicação;
 
 Consulte [a página de](https://commercial.abp.io/modules/Volo.Account.Pro?_ga=2.203721431.638389710.1682325508-1619359562.1681202968 "") descrição do módulo para obter uma visão geral dos recursos do módulo.

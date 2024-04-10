@@ -4,7 +4,6 @@ sidebar_position: 8
 
 # GDPR
 
-# GDPR module
 Este módulo permite aos usuários baixar e excluir seus dados pessoais coletados pelo aplicativo.
 ## como instalar
 O módulo GDPR está pré-instalado nos modelos Aplicativo e Aplicativo (Camada Única). Portanto, não há necessidade de instalá-lo manualmente.

@@ -4,7 +4,6 @@ sidebar_position: 5
 
 # Kit CMS Pró
 
-# Módulo cms kit pro
 Este módulo estende [o módulo CMS Kit](https://docs.abp.io/en/abp/latest/Modules/Cms-Kit/Index "") de código aberto e adiciona recursos adicionais de CMS (Content Management System) ao seu aplicativo.
 
 Os seguintes recursos são fornecidos pelo módulo CMS Kit de código aberto:

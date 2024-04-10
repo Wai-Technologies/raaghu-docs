@@ -5,6 +5,7 @@ sidebar_position: 3
 # Estrutura da Solução
 
 Você obterá uma estrutura de solução ligeiramente diferente, com base nas opções especificadas.
+
 ## estrutura padrão
 Se você não especificar nenhuma opção adicional, você terá uma solução na pasta aspnet-core como a abaixo:
 

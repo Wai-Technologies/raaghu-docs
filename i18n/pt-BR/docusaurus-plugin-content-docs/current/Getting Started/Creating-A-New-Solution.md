@@ -4,8 +4,6 @@ sidebar_position: 2
 
 # Criando uma nova solução
 
-
-## crie um novo projeto
 Existem duas maneiras de criar um novo projeto: ABP Suite e ABP CLI
 ### Usando o ABP Suite para criar um novo projeto.
 ABP Suite é a forma recomendada para criar novas soluções para o ABP Comercial

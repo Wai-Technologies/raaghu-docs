@@ -4,7 +4,6 @@ sidebar_position: 4
 
 # Bater papo
 
-# Módulo de bate-papo
 Este módulo implementa mensagens em tempo real entre usuários para um aplicativo.
 ## instalação
 Nenhuma instalação adicional é necessária em termos de uso do ABP Suite e instalação manual, pois vem junto com o modelo de inicialização

@@ -4,7 +4,6 @@ sidebar_position: 11
 
 # Gestão de Idiomas
 
-# Módulo de gerenciamento de idiomas
 Este módulo implementa o sistema de gerenciamento de linguagem de uma aplicação;
 
 - Gerenciar línguas no sistema.

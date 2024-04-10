@@ -3,8 +3,6 @@ sidebar_position: 14
 ---
 
 # Gerenciamento de modelos de texto
-e
-# Módulo de gerenciamento de modelos de texto
 
 Este módulo é usado para armazenar e editar o conteúdo do modelo para [o sistema de modelos de texto](https://docs.abp.io/en/abp/latest/Text-Templating "") da estrutura ABP. Portanto, talvez você precise entendê-lo para entender melhor o propósito deste módulo.
 
