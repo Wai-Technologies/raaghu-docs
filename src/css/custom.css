@@ -71,6 +71,30 @@
   transition: background-color var(--ifm-transition-fast) var(--ifm-transition-timing-default);
 }
 
+.header-youtube-link::before {
+  content: '';
+  width: 28px; 
+  height: 28px; 
+  display: block;
+  background-image: url("https://raaghustorageaccount.blob.core.windows.net/raaghu-docs/youtube-logo.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center; 
+  transition: background-color var(--ifm-transition-fast) var(--ifm-transition-timing-default);
+}
+.header-twitter-link::before {
+  content: '';
+  width: 28px; 
+  height: 28px; 
+  display: block;
+  background-image: url("https://raaghustorageaccount.blob.core.windows.net/raaghu-docs/twitter-logo.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center; 
+  transition: background-color var(--ifm-transition-fast) var(--ifm-transition-timing-default);
+}
+
+
 .banner-gradient {
   background: transparent linear-gradient(96deg, #3CBDFF 0%, #964BFF 49%, #964BFF 100%) 0% 0% no-repeat padding-box;
   opacity: 1;
