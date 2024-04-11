@@ -1,46 +1,142 @@
 {
   "link.title.Docs": {
     "message": "文档",
-    "description": "页脚中 title=Docs 的链接列标题"
+    "description": "The title of the footer links column with title=Docs in the footer"
   },
-  "link.title.Community": {
-    "message": "社区",
-    "description": "页脚中 title=Community 的链接列标题"
+  "link.title.Application Modules": {
+    "message": "应用程序模块",
+    "description": "The title of the footer links column with title=Application Modules in the footer"
   },
   "link.title.More": {
     "message": "更多",
-    "description": "页脚中 title=More 的链接列标题"
+    "description": "The title of the footer links column with title=More in the footer"
   },
-  "link.item.label.Tutorial": {
+  "link.item.label.Introduction": {
+    "message": "介绍",
+    "description": "The label of footer link with label=Introduction linking to /docs/intro"
+  },
+  "link.item.label.Getting Started": {
+    "message": "入门",
+    "description": "The label of footer link with label=Getting Started linking to /docs/category/getting-started"
+  },
+  "link.item.label.Tutorials": {
     "message": "教程",
-    "description": "链接到 /docs/intro 的页脚链接标签 label=Tutorial"
+    "description": "The label of footer link with label=Tutorials linking to /docs/category/tutorials"
   },
-  "link.item.label.Stack Overflow": {
-    "message": "Stack Overflow",
-    "description": "链接到 https://stackoverflow.com/questions/tagged/docusaurus 的页脚链接标签 label=Stack Overflow"
+  "link.item.label.Guides": {
+    "message": "指南",
+    "description": "The label of footer link with label=Guides linking to /docs/category/guides"
   },
-  "link.item.label.Discord": {
-    "message": "Discord",
-    "description": "链接到 https://discordapp.com/invite/docusaurus 的页脚链接标签 label=Discord"
+  "link.item.label.CLI": {
+    "message": "CLI",
+    "description": "The label of footer link with label=CLI linking to /docs/category/cli"
   },
-  "link.item.label.Twitter": {
-    "message": "Twitter",
-    "description": "链接到 https://twitter.com/docusaurus 的页脚链接标签 label=Twitter"
+  "link.item.label.Samples": {
+    "message": "样例",
+    "description": "The label of footer link with label=Samples linking to /docs/category/samples"
+  },
+  "link.item.label.Startup Templates": {
+    "message": "创业模板",
+    "description": "The label of footer link with label=Startup Templates linking to /docs/category/startup-templates"
+  },
+  "link.item.label.Application Modules": {
+    "message": "应用模块",
+    "description": "The label of footer link with label=Application Modules linking to /docs/category/application-modules"
+  },
+  "link.item.label.UI Theme": {
+    "message": "UI 主题",
+    "description": "The label of footer link with label=UI Theme linking to /docs/category/ui-theme"
+  },
+  "link.item.label.Storybook": {
+    "message": "Storybook",
+    "description": "The label of footer link with label=Storybook linking to /docs/category/storybook"
+  },
+  "link.item.label.React UI": {
+    "message": "React 用户界面",
+    "description": "The label of footer link with label=React UI linking to /docs/category/react-ui"
+  },
+  "link.item.label.Release Infromation": {
+    "message": "发布信息",
+    "description": "The label of footer link with label=Release Infromation linking to /docs/category/release-information"
+  },
+  "link.item.label.Overall": {
+    "message": "总体上",
+    "description": "The label of footer link with label=Overall linking to docs/Application%20Modules/Overall"
+  },
+  "link.item.label.Account": {
+    "message": "账户",
+    "description": "The label of footer link with label=Account linking to docs/Application%20Modules/Account-Module"
+  },
+  "link.item.label.Audit Logging": {
+    "message": "审计日志",
+    "description": "The label of footer link with label=Audit Logging linking to docs/Application%20Modules/Audit-Logging"
+  },
+  "link.item.label.Chat": {
+    "message": "聊天" ,
+    "description": "The label of footer link with label=Chat linking to docs/Application%20Modules/Chat-Module"
+  },
+  "link.item.label.CMS Kit Pro": {
+    "message": "CMS 套件 Pro",
+    "description": "The label of footer link with label=CMS Kit Pro linking to docs/Application%20Modules/CMS-KIt-Pro"
+  },
+  "link.item.label.File Management": {
+    "message": "文件管理",
+    "description": "The label of footer link with label=File Management linking to docs/Application%20Modules/File-Management"
+  },
+  "link.item.label.Forms": {
+    "message": "表单",
+    "description": "The label of footer link with label=Forms linking to docs/Application%20Modules/Forms"
+  },
+  "link.item.label.GDPR": {
+    "message": "一般数据保护条例",
+    "description": "The label of footer link with label=GDPR linking to docs/Application%20Modules/GDPR"
+  },
+  "link.item.label.Identity": {
+    "message": "身份",
+    "description": "The label of footer link with label=Identity linking to docs/Application%20Modules/Identity"
+  },
+  "link.item.label.OpenIddict": {
+    "message": "同样的发音",
+    "description": "The label of footer link with label=OpenIddict linking to docs/Application%20Modules/OpenIddict"
+  },
+  "link.item.label.Language Management": {
+    "message": "语言管理",
+    "description": "The label of footer link with label=Language Management linking to docs/Application%20Modules/Language-Management"
+  },
+  "link.item.label.Payment": {
+    "message": "支付",
+    "description": "The label of footer link with label=Payment linking to docs/Application%20Modules/Payment"
+  },
+  "link.item.label.SaaS": {
+    "message": "软件即服务",
+    "description": "The label of footer link with label=SaaS linking to docs/Application%20Modules/SaaS"
+  },
+  "link.item.label.Text Template Management": {
+    "message": "文本模板管理" ,
+    "description": "The label of footer link with label=Text Template Management linking to docs/Application%20Modules/Text-Template-Management"
   },
   "link.item.label.GitHub": {
     "message": "GitHub",
-    "description": "链接到 https://github.com/Wai-Technologies/raaghu-docs 的页脚链接标签 label=GitHub"
+    "description": "The label of footer link with label=GitHub linking to https://github.com/Wai-Technologies/raaghu-docs"
   },
   "link.item.label.Vimeo": {
     "message": "Vimeo",
-    "description": "链接到 https://vimeo.com/user9603091 的页脚链接标签 label=Vimeo"
+    "description": "The label of footer link with label=Vimeo linking to https://vimeo.com/user9603091"
   },
   "link.item.label.LinkedIn": {
     "message": "LinkedIn",
-    "description": "链接到 https://www.linkedin.com/company/waitechnologies 的页脚链接标签 label=LinkedIn"
+    "description": "The label of footer link with label=LinkedIn linking to https://www.linkedin.com/company/waitechnologies"
+  },
+  "link.item.label.Youtube": {
+    "message": "Youtube",
+    "description": "The label of footer link with label=GitHub linking to https://www.youtube.com/@wai-technologies"
+  },
+  "link.item.label.Twitter": {
+    "message": "Twitter",
+    "description": "The label of footer link with label=Vimeo linking to https://twitter.com/waitechnologies"
   },
   "copyright": {
-    "message": "版权所有 © 2024 Wai Technologies。使用 Raaghu 设计系统开发。",
-    "description": "页脚的版权信息"
+    "message": "版权所有 © 2024 Wai Technologies. 使用 Raaghu 设计系统构建.",
+    "description": "The footer copyright"
   }
 }

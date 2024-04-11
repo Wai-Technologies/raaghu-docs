@@ -8,6 +8,13 @@ sidebar_position: 3
 
 Raaghu CLI（命令行界面）是一种由 Wai Technologies 创建的命令行工具，用于执行 Raaghu Frontend Suite 的一些常见操作。
 
+:::note Note
+每个项目名称对于项目生成次数是唯一的。   
+每个具有唯一名称的下载会减少生成计数。  
+使用相同的项目名称，您可以重新尝试下载，而不会影响您的限制。  
+下载后无法更改项目名称  
+:::
+
 ### Raaghu CLI 的安装过程
 
 Raaghu CLI 是一个 [dotnet 全局工具](https://www.nuget.org/packages/Waiin.Raaghu.Cli)。使用命令行窗口安装它：

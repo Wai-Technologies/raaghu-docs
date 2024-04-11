@@ -9,6 +9,12 @@ Raaghu CLI (Command Line Interface) é uma ferramenta de linha de comando para r
 ## Processo de Instalação para Raaghu CLI
 Raaghu CLI é uma ferramenta global do dotnet. Instale-a usando uma janela de linha de comando:
 
+:::note Note
+Cada nome de projeto é único para a permissão de geração de projetos.  
+Cada download com nome único diminui a contagem de geração.  
+Ao usar o mesmo nome de projeto, você pode tentar baixar novamente sem afetar seus limites.  
+Você não pode renomear o projeto após o download.  
+:::
 
 ````shell
 dotnet tool install Waiin.Raaghu.Cli

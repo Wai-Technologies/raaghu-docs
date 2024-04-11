@@ -262,6 +262,16 @@ const config: Config = {
               href: 'https://www.linkedin.com/company/waitechnologies',
 
             },
+            {
+              label: 'Youtube',
+              href: 'https://www.youtube.com/@wai-technologies',
+
+            },
+            {
+              label: 'Twitter',
+              href: 'https://twitter.com/waitechnologies',
+
+            },
           ],
         },
       ],
