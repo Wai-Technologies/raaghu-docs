@@ -8,6 +8,13 @@ sidebar_position: 3
 
 Raaghu CLI (Command Line Interface) is a command line tool to perform some common operations for Raaghu Frontend Suite created by Wai Technologies.
 
+:::note Note
+Each project name is unique for project generation allowance.  
+Each download with unique name decreases generation count.  
+Using the same project name you can reattempt download without affecting your limits.  
+You cannot rename project after download
+:::
+
 ### Installation Process for Raaghu CLI
 
 Raaghu CLI is a [dotnet global tool](https://www.nuget.org/packages/Waiin.Raaghu.Cli). Install it using a command line window:

@@ -71,6 +71,48 @@
   transition: background-color var(--ifm-transition-fast) var(--ifm-transition-timing-default);
 }
 
+.header-youtube-link::before {
+  content: '';
+  width: 28px; 
+  height: 28px; 
+  display: block;
+  background-image: url("https://raaghustorageaccount.blob.core.windows.net/raaghu-docs/youtube-logo.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center; 
+  transition: background-color var(--ifm-transition-fast) var(--ifm-transition-timing-default);
+}
+.header-twitter-link::before {
+  content: '';
+  width: 28px; 
+  height: 28px; 
+  display: block;
+  background-image: url("https://raaghustorageaccount.blob.core.windows.net/raaghu-docs/twitter-logo.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center; 
+  transition: background-color var(--ifm-transition-fast) var(--ifm-transition-timing-default);
+}
+
+.admonition {
+  border-left: 4px solid #FFA500; /* Update color here */
+  background-color: #FFF3CD; /* Update background color here */
+  padding: 1em;
+  margin: 1em 0;
+}
+
+.admonition-title {
+  margin-bottom: 0.5em;
+  font-weight: bold;
+  color: #FFA500; /* Update title color here */
+}
+
+.admonition-content {
+  margin-bottom: 0.5em;
+  color: #6C757D; /* Update content text color here */
+}
+
+
 .banner-gradient {
   background: transparent linear-gradient(96deg, #3CBDFF 0%, #964BFF 49%, #964BFF 100%) 0% 0% no-repeat padding-box;
   opacity: 1;
