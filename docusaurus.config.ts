@@ -55,9 +55,14 @@ const config: Config = {
         docs: {
           routeBasePath: '/', // Set this to '/' to directly load the docs at the root path
           sidebarPath: require.resolve('./sidebars.js'),
-         // sidebarPath: './sidebars.ts',
+
+      /*  If you want to enable the edit option then remove the comment
+
           editUrl:
-            'https://github.com/Wai-Technologies/raaghu-docs',
+          'https://github.com/Wai-Technologies/raaghu-docs',
+
+      */
+
         },
         blog: {
           showReadingTime: true,
@@ -89,26 +94,36 @@ const config: Config = {
           position: 'left',
           label: 'Docs',
         },*/
-        {
+      {
           type: 'localeDropdown',
           position: 'right',
-        },
+      },
        //{to: '/blog', label: 'Blog', position: 'left'},
-        {
-          href: 'https://github.com/Wai-Technologies/raaghu-docs',
-          position: 'right',
-          className: 'header-github-link',
-        },
-        {
-          href: 'https://www.linkedin.com/company/waitechnologies',
+      {
+        href: 'https://github.com/Wai-Technologies/raaghu-docs',
+        position: 'right',
+        className: 'header-github-link',
+      },
+      {
+        href: 'https://www.linkedin.com/company/waitechnologies',
+        position:'right',
+        className:'header-linkedIn-link',
+      },
+      {
+        href: 'https://vimeo.com/user9603091',
+        position:'right',
+        className:'header-vimeo-link',
+      },
+      {
+          href: 'https://www.youtube.com/@wai-technologies',
           position:'right',
-          className:'header-linkedIn-link',
-        },
-        {
-          href: 'https://vimeo.com/user9603091',
+          className:'header-youtube-link',
+      },
+      {
+          href: 'https://twitter.com/waitechnologies',
           position:'right',
-          className:'header-vimeo-link',
-        },
+          className:'header-twitter-link',
+      },
 
       ],
     },
@@ -245,6 +260,16 @@ const config: Config = {
             {
               label: 'LinkedIn',
               href: 'https://www.linkedin.com/company/waitechnologies',
+
+            },
+            {
+              label: 'Youtube',
+              href: 'https://www.youtube.com/@wai-technologies',
+
+            },
+            {
+              label: 'Twitter',
+              href: 'https://twitter.com/waitechnologies',
 
             },
           ],
