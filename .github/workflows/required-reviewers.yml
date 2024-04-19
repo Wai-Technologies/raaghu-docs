@@ -1,0 +1,39 @@
+name: Add Required Reviewer in PR
+
+on:
+  pull_request:
+    types:
+      - opened
+      - reopened
+      - edited
+      - review_request_removed
+
+permissions:
+  pull-requests: none
+
+jobs:
+  assign:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Set user as reviewer
+        uses: actions/github-script@v6
+        with:
+          github-token: ${{ secrets.PR_GITHUB_TOKEN }}
+          script: |
+            const author = context.payload.pull_request.user.login;
+            const conditionalReviewer = "suraj-khupse"; 
+            
+            let requiredReviewers = ["kaushikgokhale"]; 
+            
+            if (author === "kaushikgokhale") {
+              requiredReviewers.push(conditionalReviewer);
+            }
+            
+            requiredReviewers = requiredReviewers.filter(reviewer => reviewer !== author);
+            
+            await github.rest.pulls.requestReviewers({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              pull_number: context.payload.pull_request.number,
+              reviewers: requiredReviewers
+            });
