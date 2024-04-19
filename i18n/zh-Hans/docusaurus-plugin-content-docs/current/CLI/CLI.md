@@ -40,10 +40,13 @@ dotnet tool update --global Waiin.Raaghu.Cli
 
 * **`help`**: 显示关于 Raaghu CLI 使用的帮助信息。
 * **`new`**: 根据 Raaghu [启动模板](Startup-Templates/Index.md) 生成一个新的解决方案。
+* **`add-module`**: 将多包应用模块添加到解决方案中。
+* **`generate-proxy`**: 生成客户端代理，以使用 HTTP 应用程序接口 终端点。
+* **`create`**: 创建 用于生成不同类型的页面，用于管理数据关系。
+* **`sync`**: 帮助我们解决微服务问题。
 * **`login`**: 使用您的 [raaghu.io](https://raaghu.io/) 用户名和密码在您的计算机上进行身份验证。
 * **`login-info`**: 显示当前用户的登录信息。
 * **`logout`**: 如果您之前进行过身份验证，则从计算机注销。
-
 
 ## 帮助
 显示 Raaghu CLI 的基本用法。
@@ -98,6 +101,85 @@ raaghu new Raaghu.BookStore  --version 7.4.4
 raaghu new Raaghu.BookStore  -v 7.4.4
 ````
 
+## 添加模块
+
+通过查找模块的所有包、查找解决方案中的相关项目并将每个包添加到解决方案中的相应项目，将多包应用程序模块添加到解决方案中。
+
+> 业务模块通常由多个包组成（由于分层、不同的数据库提供程序选项或其他原因）。使用 add-module 命令极大地简化了将模块添加到解决方案中的过程。但是，每个模块可能需要一些额外的配置，这通常在相关模块的文档中有所说明。
+
+Usage:
+```json
+raaghu add-module <module-name> 
+```
+Examples:
+```json
+raaghu add-module Raaghu.Blogging
+```
+
+- 此示例将 Raaghu.Blogging 模块添加到解决方案中。
+
+## 生成代理
+为您的 HTTP API 生成服务代理，以便轻松从客户端使用您的服务。在运行此命令之前，您的主机（服务器）应用程序必须正在运行。
+
+用法:
+Usage:
+```json
+raaghu generate-proxy 
+```
+## 创建
+
+ 用于生成管理数据关系的不同类型页面。 
+
+* **`create --CRUDPage`**: 创建一个用于管理数据（例如添加、查看、更新和删除）的页面。检查关系并相应执行。
+用法:
+```json
+raaghu create --CRUDPage
+```
+* **`create --SimplePage`**: 创建一个基本页面，不依赖其他页面或关系。
+用法:
+
+```json
+raaghu create --SimplePage
+```
+* **`create --OneToMany`**: 创建用于处理一对多相关实体的页面。
+用法:
+```json
+raaghu create --OneToMany
+```
+* **`create --ManyToMany`**: 创建用于处理多对多相关实体的页面。
+用法:
+
+```json
+raaghu create --ManyToMany
+```
+* **`create --HybridMany`**: 创建用于处理不同关系混合的页面。
+用法:
+```json
+raaghu create --HybridMany
+```
+
+## 同步
+
+ 同步帮助我们解决微服务问题。
+
+ 用法:
+ ```json
+raaghu sync [options]
+```
+
+#### 选项
+- --abp：将前端连接到 ABP 商业解决方案。
+   - --microservices 或 -m：ABP 后端微服务源代码解决方案。
+示例：
+
+```json
+raaghu sync --abp --microservices
+``` 
+```json
+raaghu sync --abp -m
+```
+
+
 ## 登录
 CLI 的某些功能需要登录到 raaghu.io 平台。要使用用户名登录，请执行以下操作：
 
@@ -121,6 +203,5 @@ raaghu login-info
 ````json
 raaghu logout
 ````
-
 ## 参见
 [新命令的示例](CLI-New-Command-Samples.md)
