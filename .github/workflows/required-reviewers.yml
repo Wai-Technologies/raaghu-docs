@@ -21,16 +21,17 @@ jobs:
           github-token: ${{ secrets.PR_GITHUB_TOKEN }}
           script: |
             const author = context.payload.pull_request.user.login;
-            const conditionalReviewer = "suraj-khupse"; 
-            
-            let requiredReviewers = ["kaushikgokhale"]; 
-            
-            if (author === "kaushikgokhale") {
-              requiredReviewers.push(conditionalReviewer);
+            const userA = "kaushikgokhale";
+            const userB = "suraj-khupse";
+            let requiredReviewers = [];
+            if (author === userA) {
+              requiredReviewers.push(userB);
+            } else if (author === userB) {
+              requiredReviewers.push(userA);
+            } else {
+              requiredReviewers.push(userA, userB);
             }
-            
-            requiredReviewers = requiredReviewers.filter(reviewer => reviewer !== author);
-            
+            requiredReviewers = [...new Set(requiredReviewers)];
             await github.rest.pulls.requestReviewers({
               owner: context.repo.owner,
               repo: context.repo.repo,
