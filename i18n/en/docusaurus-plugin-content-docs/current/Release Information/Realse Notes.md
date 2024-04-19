@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# Realse Notes
+# Release Notes
 
 ### Release 7.3 (Compatible with ABP commercial 7.3)
 
