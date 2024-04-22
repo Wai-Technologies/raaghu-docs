@@ -5,7 +5,7 @@ sidebar_position: 2
 # Exemplos para novos comandos
 
 ## Raaghu CLI - Comandos de Exemplo
-O comando raaghu cria uma solu��o raaghu ou outros artefatos baseados em um modelo raaghu. O raaghu CLI possui v�rios par�metros para criar uma nova solu��o raaghu. Neste documento, mostraremos alguns comandos de exemplo para criar uma nova solu��o. Os provedores de banco de dados dispon�veis s�o Entity Framework Core e MongoDB. Todos os comandos come�am com raaghu.
+O comando raaghu cria uma solu��o raaghu ou outros artefatos baseados em um modelo raaghu. O raaghu CLI possui v�rios par�metros para criar uma nova solu��o raaghu. Neste documento, mostraremos alguns comandos de exemplo para criar uma nova solu��o. Todos os comandos come�am com raaghu.
 
 * Este projeto consiste nos seguintes comandos: help, new, login, login -info, logout.
 
@@ -89,17 +89,17 @@ Enter Password: *******
 License verification successful. Tool functionality can proceed.
 ````
 
-## login -info
+## login --info
 * Usado para visualizar a conta de login.
 Comando login -info:
 
 ````json
-raaghu login -info
+raaghu login --info
 ````
 Visualiza��o:
 
 ````json
-raaghu login -info
+raaghu login --info
 Raaghu Cli
 Executing Login Info command...
 emailId is active.
@@ -121,6 +121,3 @@ Credentials removed from Credential Manager.
 logged out successfully
 
 ````
-
-## Veja tamb�m
-[Documenta��o do raaghu CLI](CLI.md)

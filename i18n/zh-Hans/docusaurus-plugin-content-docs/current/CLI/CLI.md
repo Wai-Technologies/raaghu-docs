@@ -9,11 +9,6 @@ Raaghu CLI（命令行界面）是一个命令行工具，用于执行基于 Raa
 ## 安装
 Raaghu CLI 是一个 dotnet 全局工具。请使用命令行窗口进行安装：
 
-
-
-````json
-dotnet tool install Waiin.Raaghu.Cli
-````
 ````json
 dotnet tool install -g Waiin.Raaghu.Cli
 ````
@@ -23,9 +18,6 @@ dotnet tool install --global Waiin.Raaghu.Cli
 
 ## 要更新现有安装：
 
-````json
-dotnet tool update Waiin.Raaghu.Cli
-````
 ````json
 dotnet tool update -g Waiin.Raaghu.Cli
 ````
@@ -40,12 +32,11 @@ dotnet tool update --global Waiin.Raaghu.Cli
 
 * **`help`**: 显示关于 Raaghu CLI 使用的帮助信息。
 * **`new`**: 根据 Raaghu [启动模板](Startup-Templates/Index.md) 生成一个新的解决方案。
-* **`add-module`**: 将多包应用模块添加到解决方案中。
 * **`generate-proxy`**: 生成客户端代理，以使用 HTTP 应用程序接口 终端点。
 * **`create`**: 创建 用于生成不同类型的页面，用于管理数据关系。
 * **`sync`**: 帮助我们解决微服务问题。
 * **`login`**: 使用您的 [raaghu.io](https://raaghu.io/) 用户名和密码在您的计算机上进行身份验证。
-* **`login-info`**: 显示当前用户的登录信息。
+* **`login --info`**: 显示当前用户的登录信息。
 * **`logout`**: 如果您之前进行过身份验证，则从计算机注销。
 
 ## 帮助
@@ -100,23 +91,6 @@ raaghu new Raaghu.BookStore  --version 7.4.4
 ````json
 raaghu new Raaghu.BookStore  -v 7.4.4
 ````
-
-## 添加模块
-
-通过查找模块的所有包、查找解决方案中的相关项目并将每个包添加到解决方案中的相应项目，将多包应用程序模块添加到解决方案中。
-
-> 业务模块通常由多个包组成（由于分层、不同的数据库提供程序选项或其他原因）。使用 add-module 命令极大地简化了将模块添加到解决方案中的过程。但是，每个模块可能需要一些额外的配置，这通常在相关模块的文档中有所说明。
-
-Usage:
-```json
-raaghu add-module <module-name> 
-```
-Examples:
-```json
-raaghu add-module Raaghu.Blogging
-```
-
-- 此示例将 Raaghu.Blogging 模块添加到解决方案中。
 
 ## 生成代理
 为您的 HTTP API 生成服务代理，以便轻松从客户端使用您的服务。在运行此命令之前，您的主机（服务器）应用程序必须正在运行。
@@ -189,11 +163,11 @@ raaghu login <username>                                  # 允许您输入隐藏
 使用已经激活的会话进行新的登录会覆盖先前的会话。
 
 
-## 登录信息
+## 登录 -- 信息
 显示您的登录信息，例如 用户名 。
 
 ````json
-raaghu login-info
+raaghu login --info
 ````
 
 
@@ -203,5 +177,3 @@ raaghu login-info
 ````json
 raaghu logout
 ````
-## 参见
-[新命令的示例](CLI-New-Command-Samples.md)

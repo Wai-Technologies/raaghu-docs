@@ -6,7 +6,7 @@ sidebar_position: 2
 
 # Raaghu CLI - 示例命令
 
-`raaghu` 命令基于 raaghu 模板创建一个 raaghu 解决方案或其他工件。[raaghu CLI](CLI.md) 具有多个参数用于创建新的 raaghu 解决方案。在这个文档中，我们将展示一些创建新解决方案的示例命令。可用的数据库提供程序包括 `Entity Framework Core` 和 `MongoDB`。所有命令都以 `raaghu` 开头。
+`raaghu` 命令基于 raaghu 模板创建一个 raaghu 解决方案或其他工件。[raaghu CLI](CLI.md) 具有多个参数用于创建新的 raaghu 解决方案。在这个文档中，我们将展示一些创建新解决方案的示例命令。所有命令都以 `raaghu` 开头。
 
 * 该项目包括以下命令：`help`、`new`、`login`、`login -info`、`logout`。
 
@@ -101,14 +101,14 @@ Enter Password: *******
 License verification successful. Tool functionality can proceed.
 ```
 
-## 登录信息
+## 登录 -- 信息
 
 * 用于查看登录账户。
 
 登录信息命令：
 
 ```json
-raaghu login -info
+raaghu login --info
 ```
 
 视图：
