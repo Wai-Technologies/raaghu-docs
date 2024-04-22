@@ -9,7 +9,7 @@ const config: Config = {
 
   staticDirectories: ['public', 'static'],
   // Set the production url of your site here
-  url: 'https://raaghudocs.azurewebsites.net',
+  url: 'https://docs.raaghu.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
@@ -127,6 +127,7 @@ const config: Config = {
 
       ],
     },
+    
     footer: {
       style: 'dark',
       links: [
@@ -282,7 +283,12 @@ const config: Config = {
       darkTheme: prismThemes.dracula,
     },
   } satisfies Preset.ThemeConfig,
+  
+  scripts: [
+    {
+      src: './src/custom.js',
+      async: true,
+    },
+  ],
 };
-
-
 export default config;

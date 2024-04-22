@@ -6,15 +6,15 @@ sidebar_position: 2
 
 # Raaghu CLI - Sample Commands 
 
-The `raaghu` command creates an raaghu solution or other artifacts based on an raaghu template. [raaghu CLI](CLI.md) has several parameters to create a new raaghu solution. In this document we will show you some sample commands to create a new solution. Available database providers are `Entity Framework Core` and `MongoDB`. All the commands starts with `raaghu`.
+The `raaghu` command creates an raaghu solution or other artifacts based on an raaghu template. [Raaghu CLI](CLI.md) has several parameters to create a new raaghu solution. In this document we will show you some sample commands to create a new solution. All the commands starts with `raaghu`.
 
-* This project consists of the following Commands: `help`, `new`, `login`, `login -info`, `logout`.
+* This project consists of the following Commands: `help`, `new`, `login`, `login --info`, `logout`.
 
 ## help
 
 * Displays all the available commands.
 
-help Command :
+Command :
 
   ```json
   raaghu help
@@ -30,13 +30,15 @@ Available commands:
    > raaghu login                   Execute the Login Command
    > raaghu login -info             Execute the Login Info Command
    > raaghu logout                  Execute the Logout Command
+
+
   ```
 
   ## new
 
 * Create a new solution.
 
-new Command :
+Command :
 
   ```json
   raaghu help new 
@@ -78,7 +80,7 @@ To get the raaghu version list, checkout following link: https://www.nuget.org/p
 
 * Used for login to account.
 
-login Command :
+Command :
 
   ```json
   raaghu login 
@@ -91,18 +93,18 @@ Enter Email: emailId
 Enter Password: *******
 License verification successful. Tool functionality can proceed.
   ```
-  ## login -info
+  ## login --info
 
 * Used to view the login account.
 
-login -info Command :
+Command :
 
   ```json
-  raaghu login -info
+  raaghu login --info
   ```
   View:
 ```json
-raaghu login -info
+raaghu login --info
 Raaghu Cli
 Executing Login Info command...
 emailId is active.
@@ -111,7 +113,7 @@ emailId is active.
 
 * Used to logout from the account.
 
-logout Command :
+Command :
 
   ```json
   raaghu logout
@@ -124,6 +126,3 @@ Executing Logout command...
 Credentials removed from Credential Manager.
 logged out successfully
   ```  
-## See Also
-
-* [Raaghu CLI Documentation](CLI.md)
