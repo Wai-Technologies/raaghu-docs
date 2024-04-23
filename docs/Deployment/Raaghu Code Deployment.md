@@ -1,9 +1,5 @@
 # Raaghu Code Deployment
 
-## Introduction
-This documentation outlines the steps to deploy Raaghu React code to a web server. It includes building the code using npm commands and copying specific files to the designated location after the build process.
-
-
 #### Prerequisites
 - Node.js installed on your system
 - Access to the target web server for deployment
@@ -12,7 +8,6 @@ This documentation outlines the steps to deploy Raaghu React code to a web serve
 #### Enviorment File (.env) Changes
  
 Make sure to replace backend and frontend application URLs:
-
 
 ````json 
 NODE_ENV=production
@@ -32,7 +27,6 @@ Ensure that all necessary dependencies are installed by running the following co
 ````json
 npm run install-all
 ````
-
 #### 2. Build the Code
 Build the React code using the following command:
 ````json
@@ -40,7 +34,7 @@ npm run build
 ````
 This command compiles the React code and generates a production-ready build in the raaghu-mfe/rds_pages/host/dist directory.
 
-#### 3. Copy Specific Files
+#### 3. Copy Files
 Copy specific files to the designated location after the build process. Use the following commands:
 
 ````json
@@ -53,7 +47,6 @@ These commands copy the web.config and favicon.ico files to the raaghu-mfe/rds_p
 
 Finally, upload the contents of the **'raaghu-mfe/rds_pages/host/dist'** directory to your Web Apps server for deployment.
 
-
 #### Conclusion
-By following these steps, you can successfully deploy your React code to a web server. Ensure that all necessary files are included in the deployment package for smooth execution on the target server.
+By following these steps, you can successfully deploy your Raaghu code to a web server. Ensure that all necessary files are included in the deployment package for smooth execution on the target server.
  

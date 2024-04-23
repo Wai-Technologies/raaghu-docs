@@ -5,43 +5,43 @@ sidebar_position: 2
 # Exemplos para novos comandos
 
 ## Raaghu CLI - Comandos de Exemplo
-O comando raaghu cria uma solu��o raaghu ou outros artefatos baseados em um modelo raaghu. O raaghu CLI possui v�rios par�metros para criar uma nova solu��o raaghu. Neste documento, mostraremos alguns comandos de exemplo para criar uma nova solu��o. Todos os comandos come�am com raaghu.
+O comando raaghu cria uma solução raaghu ou outros artefatos com base em um modelo raaghu. O Raaghu CLI possui vários parâmetros para criar uma nova solução raaghu. Neste documento, vamos mostrar alguns exemplos de comandos para criar uma nova solução. Todos os comandos começam com raaghu.
 
 * Este projeto consiste nos seguintes comandos: help, new, login, login -info, logout.
 
 
 ## help
-Exibe todos os comandos dispon�veis.
+Exibe todos os comandos exibir.
 
 Comando de ajuda:
 ````json
 raaghu help
 ````
-Visualiza��o:
+visualizar:
 
 ````json
 raaghu help
 Raaghu Cli
 
-Comandos dispon�veis:
-   > raaghu help                    Mostra ajuda da linha de comando. Escreva `raaghu help <comando>` para um comando espec�fico
-   > raaghu new [nome-da-solu��o]  Executa o Comando New para Criar uma Nova Solu��o Raaghu
+comandos disponíveis:
+   > raaghu help                    Mostra ajuda da linha de comando. Escreva `raaghu help <comando>` para um comando particular
+   > raaghu new [nome-da-solu��o]  Executa o Comando New para Criar uma Nova solução Raaghu
    > raaghu login                   Executa o Comando de Login
-   > raaghu login -info             Executa o Comando de Informa��es de Login
+   > raaghu login -info             Executa o Comando de informação de Login
    > raaghu logout                  Executa o Comando de Logout
 ````
 
 
 
 ## new
-* Cria uma nova solu��o.
+* Cria uma nova solução.
 Comando new:
 
 ````json
 raaghu help new 
 ````
 
-Visualiza��o:
+visualizar:
 
 ````json
 raaghu help new
@@ -57,10 +57,8 @@ Example(s):
    raaghu new my-project
    raaghu new my-project --version 1.0.0
 ````
-## Criar uma solu��o de uma vers�o espec�fica
-Quando voc� cria uma solu��o, ela sempre � criada com a vers�o mais recente. Para criar um projeto de uma vers�o mais antiga, voc� pode passar o par�metro --version ou -v.
-
-* Criar uma solu��o a partir da v7.4.4, com interface de usu�rio Angular e Entity Framework Core.
+## Criar uma solução a partir de uma versão específica.
+Quando você cria uma solução, ela sempre é criada com a versão mais recente. Para criar um projeto a partir de uma versão mais antiga, você pode passar o parâmetro --version ou -v.
 
 ````json
 raaghu new Raaghu.BookStore --version 7.4.4
@@ -69,7 +67,7 @@ raaghu new Raaghu.BookStore --version 7.4.4
 raaghu new Raaghu.BookStore -v 7.4.4
 ````
 
-Para obter a lista de vers�es do raaghu, confira o seguinte link: https://www.nuget.org/packages/Waiin.Raaghu.Cli
+Para obter a lista de versão do raaghu, confira o seguinte link: https://www.nuget.org/packages/Waiin.Raaghu.Cli
 
 
 ## login
@@ -80,7 +78,7 @@ Comando :
 raaghu login 
 ````
 
-Visualiza��o:
+visualizar:
 ````json
 raaghu login
 Raaghu Cli
@@ -96,7 +94,7 @@ Comando login -info:
 ````json
 raaghu login --info
 ````
-Visualiza��o:
+visualizar:
 
 ````json
 raaghu login --info
@@ -111,7 +109,7 @@ Comando logout:
 ````json
 raaghu logout
 ````
-Visualiza��o:
+visualizar:
 
 ````json
 raaghu logout

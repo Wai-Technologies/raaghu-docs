@@ -27,13 +27,9 @@ Utils contém scripts node que são especificamente projetados para realizar tar
 Seguem-se a arquitetura sobre como raaghu-react está sendo usado como parte de UI aplicações
 
 ![Seguem-se a arquitetura sobre como raaghu-react está sendo usado como parte de UI aplicações](https://raaghustorageaccount.blob.core.windows.net/raaghu-docs/raaghu-architecture.png)
-### raaghu - ⁇  de autenticação (página de login)
+### Raaghu - Fluxo de autenticação (página de login)
 ![raaghu-Authentication Flow](https://raaghustorageaccount.blob.core.windows.net/raaghu-docs/raaghuAuthenticationFlow.png)
 ### raaghu - localização
 ![localização de raaghu](https://raaghustorageaccount.blob.core.windows.net/raaghu-docs/raaghuLocalization.png)
-### raaghu - ⁇  da página
+### Raaghu - Fluxo de páginas
 ![Raghu - Fluxo de página](https://raaghustorageaccount.blob.core.windows.net/raaghu-docs/raaghuPageFlow.png)
-### o que se segue?
-
-- [Consulte](Getting-Started.html "") o documento de introdução para criar uma nova solução e executá-la para este modelo.
-
