@@ -55,14 +55,14 @@ const config: Config = {
         docs: {
           routeBasePath: '/', // Set this to '/' to directly load the docs at the root path
           sidebarPath: require.resolve('./sidebars.js'),
-
+          sidebarCollapsed:true,
+            
       /*  If you want to enable the edit option then remove the comment
 
           editUrl:
           'https://github.com/Wai-Technologies/raaghu-docs',
 
       */
-
         },
         blog: {
           showReadingTime: true,
@@ -80,6 +80,13 @@ const config: Config = {
 
   themeConfig: {
 
+    docs: {
+      sidebar: {
+        autoCollapseCategories: true,
+        hideable: true,
+      },
+    },
+
     image: 'img/docusaurus-social-card.jpg',
     navbar: {
         logo: {
@@ -87,6 +94,7 @@ const config: Config = {
         src: 'https://raaghustorageaccount.blob.core.windows.net/raaghu-blob/raaghu-docs-lightmode.png',
         srcDark: 'https://raaghustorageaccount.blob.core.windows.net/raaghu-blob/raaghu-docs-darkmode.png',
       },
+      
       items: [
      /*   {
           type: 'docSidebar',
@@ -136,51 +144,51 @@ const config: Config = {
           items: [
             {
               label: 'Introduction',
-              to: '/docs/intro',
+              to: '/',
             },
             {
               label: 'Getting Started',
-              to: '/docs/category/getting-started',
+              to: '/Getting Started/Setup-Your-Development-Environment',
             },
             {
               label: 'Tutorials',
-              to: '/docs/category/tutorials',
-            },
-            {
-              label: 'Guides',
-              to: '/docs/category/guides',
+              to: '/tutorials/The-Book-List-Page',
             },
             {
               label: 'CLI',
-              to: '/docs/category/cli',
+              to: '/CLI/',
             },
             {
               label: 'Samples',
-              to: '/docs/category/samples',
+              to: '/Samples/create-a-page',
             },
             {
               label: 'Startup Templates',
-              to: '/docs/category/startup-templates',
+              to: '/Startup Templates/Solution-Structure',
             },
             {
               label: 'Application Modules',
-              to: '/docs/category/application-modules',
+              to: '/Application modules/Overall',
             },
             {
               label: 'UI Theme',
-              to: '/docs/category/ui-theme',
+              to: '/UI Theme/UI-Theme',
             },
             {
               label: 'Storybook',
-              to: '/docs/category/storybook',
+              to: '/Storybook/Components',
             },
             {
               label: 'React UI',
-              to: '/docs/category/react-ui',
+              to: '/React UI/Cutomization',
             },
             {
               label: 'Release Infromation',
-              to: '/docs/category/release-information',
+              to: '/Release Information/Realse Notes',
+            },
+            {
+              label: 'Deployment',
+              to :'/Deployment/Raaghu Code Deployment'
             },
           ],
         },
@@ -189,59 +197,59 @@ const config: Config = {
           items: [
             {
               label: 'Overall',
-              to: 'docs/Application%20Modules/Overall',
+              to: '/Application Modules/Overall',
             },
             {
               label: 'Account',
-              to: 'docs/Application%20Modules/Account-Module',
+              to: '/Application Modules/Account-Module',
             },
             {
               label: 'Audit Logging',
-              to: 'docs/Application%20Modules/Audit-Logging',
+              to: '/Application Modules/Audit-Logging',
             },
             {
               label: 'Chat',
-              to: 'docs/Application%20Modules/Chat-Module',
+              to: '/Application Modules/Chat-Module',
             },
             {
               label: 'CMS Kit Pro',
-              to: 'docs/Application%20Modules/CMS-KIt-Pro',
+              to: '/Application Modules/CMS-KIt-Pro',
             },
             {
               label: 'File Management',
-              to: 'docs/Application%20Modules/File-Management',
+              to: '/Application Modules/File-Management',
             },
             {
               label: 'Forms',
-              to: 'docs/Application%20Modules/Forms',
+              to: '/Application Modules/Forms',
             },
             {
               label: 'GDPR',
-              to: 'docs/Application%20Modules/GDPR',
+              to: '/Application Modules/GDPR',
             },
             {
               label: 'Identity',
-              to: 'docs/Application%20Modules/Identity',
+              to: '/Application Modules/Identity',
             },
             {
               label: 'OpenIddict',
-              to: 'docs/Application%20Modules/OpenIddict',
+              to: '/Application Modules/OpenIddict',
             },
             {
               label: 'Language Management',
-              to: 'docs/Application%20Modules/Language-Management',
+              to: '/Application Modules/Language-Management',
             },
             {
               label: 'Payment',
-              to: 'docs/Application%20Modules/Payment',
+              to: '/Application Modules/Payment',
             },
             {
               label: 'SaaS',
-              to: 'docs/Application%20Modules/SaaS',
+              to: '/Application Modules/SaaS',
             },
             {
               label: 'Text Template Management',
-              to: 'docs/Application%20Modules/Text-Template-Management',
+              to: '/Application Modules/Text-Template-Management',
             },
           ],
         },

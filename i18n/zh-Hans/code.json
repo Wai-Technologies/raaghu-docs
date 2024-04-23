@@ -91,6 +91,9 @@
     "message": "{nDocsTagged}「{tagName}」",
     "description": "The title of the page for a docs tag"
   },
+  "theme.docs.versionBadge.label": {
+    "message": "版本：{versionLabel}"
+  },
   "theme.docs.versions.unreleasedVersionLabel": {
     "message": "此为 {siteTitle} {versionLabel} 版尚未发行的文档。",
     "description": "The label used to tell the user that he's browsing an unreleased doc version"
@@ -107,16 +110,9 @@
     "message": "最新版本",
     "description": "The label used for the latest version suggestion link label"
   },
-  "theme.docs.versionBadge.label": {
-    "message": "版本：{versionLabel}"
-  },
   "theme.common.editThisPage": {
     "message": "编辑此页",
     "description": "The link label to edit the current page"
-  },
-  "theme.common.headingLinkTitle": {
-    "message": "{heading}的直接链接",
-    "description": "Title for link to heading"
   },
   "theme.lastUpdated.atDate": {
     "message": "于 {date} ",
@@ -129,6 +125,10 @@
   "theme.lastUpdated.lastUpdatedAtBy": {
     "message": "最后{byUser}{atDate}更新",
     "description": "The sentence used to display when a page has been last updated, and by who"
+  },
+  "theme.common.headingLinkTitle": {
+    "message": "{heading}的直接链接",
+    "description": "Title for link to heading"
   },
   "theme.navbar.mobileVersionsDropdown.label": {
     "message": "选择版本",
@@ -226,10 +226,6 @@
     "message": "阅读 {title} 的全文",
     "description": "The ARIA label for the link to full blog posts from excerpts"
   },
-  "theme.blog.post.readingTime.plurals": {
-    "message": "阅读需 {readingTime} 分钟",
-    "description": "Pluralized label for \"{readingTime} min read\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
-  },
   "theme.docs.breadcrumbs.home": {
     "message": "主页面",
     "description": "The ARIA label for the home page in the breadcrumbs"
@@ -245,6 +241,10 @@
   "theme.docs.sidebar.navAriaLabel": {
     "message": "文档侧边栏",
     "description": "The ARIA label for the sidebar navigation"
+  },
+  "theme.blog.post.readingTime.plurals": {
+    "message": "阅读需 {readingTime} 分钟",
+    "description": "Pluralized label for \"{readingTime} min read\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
   },
   "theme.docs.sidebar.closeSidebarButtonAriaLabel": {
     "message": "关闭导航栏",
