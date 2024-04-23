@@ -3,7 +3,7 @@ sidebar_position: 3
 ---
 # 书籍列表页面
 
-### 生成代理
+### 新方案
 要创建代理，我们在根级别运行以下命令。
 
 ````json
@@ -19,25 +19,28 @@ raaghu new <solution-name> --version <version>
 ````json
 raaghu new <solution-name> -v <version>
 ````
+## 生成代理
+
+为您的 HTTP API 生成服务代理，以便从客户端轻松地消耗您的服务。在运行此命令之前，您的主机（服务器）应用程序必须处于运行状态。
+
+````json
+raaghu generate-proxy 
+````
+
 
 ### 添加片段文件
 要创建片段文件，请运行以下命令。
 
 ```shell
- raaghu create:slice Book
+ raaghu create --Page
 ```
 
 ## 创建 BookStore 模块
 要在根文件夹中创建一个名为 BookStore 的新模块，并在其中创建一个名为 Book 的页面用于 React 应用程序，请运行以下命令行
 
 ```shell
-  raaghu create:page --moduleName=BookStore --pageName=book --projectName=Acme.BookStore
+  raaghu add-module BookStore
 ```
-
-将 Acme.BookStore 替换为您本地项目的实际名称。
-::::note 注意
-创建页面区分大小写，因此请确保页面名称（book）与指定的小写匹配。
-::::
 
 ## 代码片段
 **数据表**

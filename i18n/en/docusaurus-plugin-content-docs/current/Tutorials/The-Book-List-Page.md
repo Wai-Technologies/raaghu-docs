@@ -4,7 +4,7 @@ sidebar_position: 3
 
 # Book List Page
 
-### Generate Proxy
+### new solution
 
 To create proxies, we run the following command at the root level.
 
@@ -20,6 +20,13 @@ raaghu new <solution-name> --version <version>
 ````json
 raaghu new <solution-name> -v <version>
 ````
+### generate-proxy
+
+Generates service proxies for your HTTP APIs to make easy to consume your services from the client side. Your host (server) application must be up and running before running this command.
+
+````json
+raaghu generate-proxy 
+````
 
 ### Adding a Slice file
 
@@ -27,20 +34,17 @@ raaghu new <solution-name> -v <version>
 To create a slice file, run the following command.
 
 ```shell
- raaghu create:slice Book
+ raaghu create --Page
 ```
 
 ### Create a BookStore Module
 
-To create a new module named BookStore in the root folder and a Book page within it for a React application, run the following command line.
+To create a new module named BookStore in the root folder for a React application, run the following command line.
 
 ```shell
-  raaghu create:page --moduleName=BookStore --pageName=book --projectName=Acme.BookStore
+ raaghu add-module BookStore
 ```
-Replace Acme.BookStore with the actual name of your local project. 
-::::note Note
- Creating a page is case-sensitive, so ensure the page name (**book**) is in lowercase as specified.
-::::
+
 ### Code Snippets
 
 **Data Table**
