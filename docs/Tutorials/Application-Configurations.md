@@ -4,7 +4,7 @@ sidebar_position: 5
 
 # Applications Configurations
 
-After page creation we need to add below path into main.tsx file.
+After creating the page, add the following path to the main.tsx file:
 
 For example : -
 
@@ -12,7 +12,7 @@ For example : -
 <Route path="/employees" element={<EmployeesCompo />} />
 ```
 
-Then we need to add below condition into PrivateRoute_Auth.tsx file.
+Then, add the below condition to the PrivateRoute_Auth.tsx file:
 
 ```shell
 else if (location.pathname == "/employee") {
@@ -25,6 +25,7 @@ pagekey = "abp_react_7_2_2."; can be found in the below file location
 ```shell
 lib / main-menu / page-name.ts
 ```
+Find the pagekey value in the file located at lib/main-menu/page-name.ts:
 
 ```shell
 const PageNotFound = [{
@@ -39,10 +40,8 @@ const PageNotFound = [{
 
 
 
-Add the permission value as pagekey into the PrivateRoute_Auth.tsx
-
-Use the same permission value on the page created.
-
+Add the permission value as pagekey into PrivateRoute_Auth.tsx.
+Use the same permission value on the created page:
 ```shell
 useEffect(() => {
     setPagePermission({ ...pagePermission, create: isgrantedpolicies('abp_react_7_2_2.Employees.Create', configData), })
