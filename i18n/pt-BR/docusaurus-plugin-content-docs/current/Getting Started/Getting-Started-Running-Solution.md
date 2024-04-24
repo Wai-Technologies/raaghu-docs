@@ -4,7 +4,16 @@ sidebar_position: 3
 
 # Executando a Solução
 ## Solução Backend ABP
-#### 1. Modificações no arquivo appsettings.json
+
+#### 1. String de Conexão
+
+Verifique a string de conexão no arquivo appsettings.json sob o projeto .Web.
+````json
+"ConnectionStrings": {"Default": "Server=localhost;Database=BookStore;Trusted_Connection=True"}
+````
+
+
+#### 2. Modificações no arquivo appsettings.json
 Altere o CorsOrigins e RedirectAllowedUrls no arquivo appsettings.json dentro do projeto .HttpApi.Host.
 
 
@@ -17,9 +26,9 @@ A configuração CorsOrigins define as origens permitidas para Compartilhamento 
 Nessa configuração, 'http://localhost:8080' está incluído para permitir solicitações de um servidor de desenvolvimento local, geralmente usado para fins de desenvolvimento e teste.
 A configuração RedirectAllowedUrls é usada para definir uma lista branca de domínios seguros para os quais a redireção é permitida.
 
-#### 2. Execute o DbMigrator
-#### 3. Execute a Aplicação (navegue até swagger/index.html)
-#### 4. Adicione uma Aplicação OpenID
+#### 3. Execute o DbMigrator
+#### 4. Execute a Aplicação (navegue até swagger/index.html)
+#### 5. Adicione uma Aplicação OpenID
 - Siga estas etapas para adicionar uma aplicação OpenID por meio da API POST usando o Swagger:
   - Abra a interface Swagger da sua API.
   - Encontre o endpoint POST (/api/openiddict/applications) para adicionar dados.

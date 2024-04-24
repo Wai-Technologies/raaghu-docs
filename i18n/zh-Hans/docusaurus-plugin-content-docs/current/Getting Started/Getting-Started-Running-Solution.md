@@ -3,7 +3,16 @@ sidebar_position: 3
 ---
 # 运行解决方案
 ## ABP 后端解决方案
-#### 1. 在 appsettings.json 文件中进行修改
+
+#### 1. 连接字符串
+
+检查位于 .Web 项目下的 appsettings.json 文件中的连接字符串。
+
+````json
+"ConnectionStrings": {"Default": "Server=localhost;Database=BookStore;Trusted_Connection=True"}
+````
+
+#### 2. 在 appsettings.json 文件中进行修改
 
 在 .HttpApi.Host 项目 下的 appsettings.json 文件中修改 CorsOrigins 和 RedirectAllowedUrls。
 
@@ -14,10 +23,10 @@ sidebar_position: 3
 
 CorsOrigins 设置定义了跨域资源共享（CORS）的允许来源。该设置允许来自指定来源的请求。在此配置中，“http://localhost:8080” 被包括以允许来自本地开发服务器的请求，通常用于开发和测试目的。RedirectAllowedUrls 设置用于定义允许重定向的安全域名白名单。
 
-#### 2. 运行 DbMigrator
-#### 3. 运行应用程序（导航到 swagger/index.html）
+#### 3. 运行 DbMigrator
+#### 4. 运行应用程序（导航到 swagger/index.html）
 
-#### 4. 添加 OpenId 应用程序
+#### 5. 添加 OpenId 应用程序
 - 请按照以下步骤通过 Swagger 的 POST API 添加一个 OpenID 应用程序：
   - 打开您的 API 的 Swagger 界面。
   - 找到用于添加数据的 POST 端点（/api/openiddict/applications）。

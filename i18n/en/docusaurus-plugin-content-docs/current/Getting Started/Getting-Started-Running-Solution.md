@@ -6,7 +6,14 @@ sidebar_position: 3
 
 ## ABP Backend Solution
 
-#### 1. Modifications in appsettings.json file
+#### 1. Connection String
+
+Check the connection string in the appsettings.json file under the .Web project.
+````json
+"ConnectionStrings": {"Default": "Server=localhost;Database=BookStore;Trusted_Connection=True"}
+````
+
+#### 2. Modifications in appsettings.json file
 
 Change the CorsOrigins, RedirectAllowedUrls in the **appsettings.json** file under the **.HttpApi.Host project.
 
@@ -18,9 +25,9 @@ The CorsOrigins setting defines the allowed origins for Cross-Origin Resource Sh
 In this configuration, 'http://localhost:8080' is included to allow requests from a local development server, typically used for development and testing purposes.
 RedirectAllowedUrls setting is used to define a whitelist of safe domains to which redirection is permitted
 
-#### 2. Run the DbMigrator
-#### 3. Run the Application (navigate to swagger/index.html)
-#### 4. Add OpenId Application
+#### 3. Run the DbMigrator
+#### 4. Run the Application (navigate to swagger/index.html)
+#### 5. Add OpenId Application
 - Please follow these steps to add an OpenID application through the POST API using Swagger:
    - Open your API's Swagger interface.
    - Find the POST endpoint (/api/openiddict/applications) for adding data.
@@ -66,6 +73,7 @@ RedirectAllowedUrls setting is used to define a whitelist of safe domains to whi
 ````
    - Check the response for confirmation.
 ## Raaghu Frontend Solution
+
 
 #### 1. Run the command on the root directory of your solution to install the dependencies 
 
