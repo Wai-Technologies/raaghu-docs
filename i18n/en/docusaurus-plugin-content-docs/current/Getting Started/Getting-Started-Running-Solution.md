@@ -74,15 +74,14 @@ npm run install-all
 ````
 #### 2. Modifications in .env file
 
-
 ````json
 NODE_ENV=production
 REACT_APP_URL=http://localhost:8080
-REACT_APP_API_URL=<Swagger URL>
+REACT_APP_API_URL=<Swagger_URL>
 REACT_APP_GRANT_TYPE=authorization_code
 REACT_APP_CLIENT_ID=<Your_Client_ID>
-REACT_APP_SCOPE=address email phone profile roles openid offline_access <Backend application name>
-REACT_APP_REPLACE_URL=true 
+REACT_APP_SCOPE=address openid email phone profile roles offline_access <Backend_Application_Name>
+REACT_APP_REPLACE_URL=true
 REACT_APP_VERSION=8.0
 ````
 #### 3. Run the command on the root directory to run the solution

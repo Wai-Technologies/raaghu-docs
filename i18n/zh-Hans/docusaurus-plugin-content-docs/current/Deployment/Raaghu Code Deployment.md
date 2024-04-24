@@ -9,14 +9,15 @@
 
 ````json 
 NODE_ENV=production
-REACT_APP_URL=<Web App URL>
-REACT_APP_API_URL=<Backend URL>
+REACT_APP_URL=<Web_App_URL>
+REACT_APP_API_URL=<Swagger_URL>
 REACT_APP_GRANT_TYPE=authorization_code
 REACT_APP_CLIENT_ID=<Your_Client_ID>
-REACT_APP_SCOPE=address openid email phone profile roles offline_access <Backend application name>
+REACT_APP_SCOPE=address openid email phone profile roles offline_access <Backend_application_name>
 REACT_APP_REPLACE_URL=true
 REACT_APP_Version=8.0
 ````
+
 
 ## 部署步骤
 #### 1. 安装依赖项
