@@ -4,7 +4,7 @@ sidebar_position: 3
 
 # Página de Lista de Livros
 ### new solution
-Para criar proxies, executamos o seguinte comando no nível raiz.
+Para criar uma nova solução, executamos o seguinte comando.
 
 ````json
 raaghu new <solution-name> [options]
@@ -19,7 +19,7 @@ raaghu new <solution-name> --version <version>
 ````json
 raaghu new <solution-name> -v <version>
 ````
-### generate-proxy
+### Generate proxy
 
 Gera proxies de serviço para suas APIs HTTP para facilitar o consumo de seus serviços do lado do cliente. Sua aplicação host (servidor) deve estar em execução antes de executar este comando.
 ````json

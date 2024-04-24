@@ -4,7 +4,7 @@ sidebar_position: 3
 # 书籍列表页面
 
 ### 新方案
-要创建代理，我们在根级别运行以下命令。
+要创建新解决方案，我们运行以下命令。
 
 ````json
 raaghu new <solution-name> [options]
