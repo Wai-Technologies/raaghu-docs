@@ -2,20 +2,18 @@
 sidebar_position: 5
 ---
 
-# 应用配置
 
+# 以下是应用程序配置的指南：
 
-## Application Configurations
+在创建页面后，将以下路径添加到 main.tsx 文件中：
 
-After page creation we need to add below path into main.tsx file.
-
-For example : -
+例如：-
 
 ```shell
 <Route path="/employees" element={<EmployeesCompo />} />
 ```
 
-Then we need to add below condition into PrivateRoute_Auth.tsx file.
+然后，将以下条件添加到 PrivateRoute_Auth.tsx 文件中：
 
 ```shell
 else if (location.pathname == "/employee") {
@@ -23,11 +21,14 @@ else if (location.pathname == "/employee") {
     }
 ```
 
-pagekey = "abp_react_7_2_2."; can be found in the below file location 
+pagekey = "abp_react_7_2_2."; 可以在以下文件位置找到：
 
 ```shell
 lib / main-menu / page-name.ts
 ```
+
+在 lib/main-menu/page-name.ts 文件中查找 pagekey 的值：
+
 
 ```shell
 const PageNotFound = [{
@@ -40,11 +41,8 @@ const PageNotFound = [{
 }]; export default PageNotFound;
 ```
 
-
-
-Add the permission value as pagekey into the PrivateRoute_Auth.tsx
-
-Use the same permission value on the page created.
+将权限值作为 pagekey 添加到 PrivateRoute_Auth.tsx 中。
+在创建的页面上使用相同的权限值：
 
 ```shell
 useEffect(() => {

@@ -3,8 +3,7 @@ sidebar_position: 2
 ---
 
 # Account 
-
-This module implements the Login, Register, Forgot Password, Email Confirmation, Password Reset, sending and confirming Two-Factor Authentication, user lockout, switch between tenants functionalities of an application;
+This module implements functionalities such as Login, Register, Forgot Password, Email Confirmation, Password Reset, sending and confirming Two-Factor Authentication, user lockout, and switching between tenants in an application.
 
 See [the module description page](https://commercial.abp.io/modules/Volo.Account.Pro?_ga=2.203721431.638389710.1682325508-1619359562.1681202968) for an overview of the module features.
 

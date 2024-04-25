@@ -2,12 +2,12 @@
 sidebar_position: 4
 ---
 
-# Creating And Updating and Deleting Book
+# Creating, Updating and Deleting Book
 
-Creating a new Book -
+Creating a new Book 
 ---------------------
 
-In order to create a new book, we will create a new component called RdsCompBook. If you want to make some other components, run code below in root folder
+To create a new book, we will develop a new component called RdsCompBook. If you need to create additional components, please run the code below in the root folder.
 
 ```shell
     raaghu create:component --name=rds-comp-(name of the component)
@@ -91,7 +91,7 @@ Now add this function inside book component
   };
 ```
 
-### Updating a new Book -
+### Updating a new Book 
 
 Define the actions for Edit in the form of an array as shown below
 
@@ -101,17 +101,19 @@ Define the actions for Edit in the form of an array as shown below
 
 Update table using actions used in data table. Updated data table will look like
 
-`<RdsCompDatatable >
+````json 
+<RdsCompDatatable >
     classes="table__userTable"
     tableHeaders={tableHeaders}
     pagination={true}
     tableData={Data} 
     actions={actions} 
     onActionSelection={onActionSelection}
-   add onActionSelction here for what function you want to call
+    add onActionSelction here for what function you want to call
     recordsPerPage={10}
     recordsPerPageSelectListOption={true}
-</RdsCompDatatable>`
+</RdsCompDatatable>
+````
 
 
 Add the Edit function in Book Page
@@ -194,12 +196,12 @@ Add property of RdsOffcanvas element below RdsCompDatatable
                 offCanvasType={"update"}
                 typeEnumItems={typeEnum}
                 onSaveHandler={onEdithandler}
-              >`</RdsCompBook>`
+              ></RdsCompBook>
             </>
-          `</RdsOffcanvas>
+          </RdsOffcanvas>
 ```
 
-### Deleting a new Book –
+### Deleting a new Book 
 
 Add Edit function in Book Page
 

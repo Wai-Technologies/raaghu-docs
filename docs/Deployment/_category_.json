@@ -1,7 +1,8 @@
 {
-  "label": "Guias",
-  "position": 4,
+  "label": "Deployment",
+  "position": 12,
   "link": {
     "type": "generated-index"
+   
   }
 }

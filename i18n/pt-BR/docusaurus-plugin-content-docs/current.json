@@ -46,5 +46,10 @@
   "sidebar.tutorialSidebar.category.Release Information": {
     "message": "Liberar informações",
     "description": "The label for category Release Information in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Deployment": {
+    "message": "implantação",
+    "description": "The label for category Deployment in sidebar tutorialSidebar"
   }
 }
+

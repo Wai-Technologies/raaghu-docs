@@ -11,10 +11,6 @@
     "message": "Tutorials",
     "description": "The label for category Tutorials in sidebar tutorialSidebar"
   },
-  "sidebar.tutorialSidebar.category.Guides": {
-    "message": "Guides",
-    "description": "The label for category Guides in sidebar tutorialSidebar"
-  },
   "sidebar.tutorialSidebar.category.CLI": {
     "message": "CLI",
     "description": "The label for category CLI in sidebar tutorialSidebar"
@@ -46,5 +42,9 @@
   "sidebar.tutorialSidebar.category.Release Information": {
     "message": "Release Information",
     "description": "The label for category Release Information in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Deployment": {
+    "message": "Deployment",
+    "description": "The label for category Deployment in sidebar tutorialSidebar"
   }
 }

@@ -2,12 +2,12 @@
 
 Through the **storybook** you can visualize and navigate around the features of the raaghu. Snippets for the elements allow you to test and design your UI faster and efficiently.
 
-You can further customize and extend Storybook to suit your project's needs. The .storybook directory will contain configuration files, and you can customize Storybook's appearance, add addons, and more.
+You can further customize and extend Storybook to suite your project's needs. The .storybook directory will contain configuration files, and you can customize Storybook's appearance, add addons, and more.
 
 In Storybook, components are often organized into "stories" to showcase their different states, variations, and use cases. Storybook provides a way to visually document and test your components in isolation. Button elements are a common example for creating stories in Storybook.
 
- create the stoires file for perticular elements uisng filename.stories.
- stotybook provide by default code in file creation.
+ create the stories file for perticular elements uisng filename.stories.
+ storybook provide by default code in file creation.
 
 ```json
 import React from 'react';
