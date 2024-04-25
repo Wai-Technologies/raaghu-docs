@@ -1,30 +1,31 @@
 ---
 sidebar_position: 5
 ---
+# Configurações das Aplicações
+Após criar a página, adicione o seguinte caminho ao arquivo main.tsx:
 
-# Configurações de Aplicativos"
+Por exemplo:
 
-After page creation we need to add below path into main.tsx file.
-
-For example : -
 
 ```shell
 <Route path="/employees" element={<EmployeesCompo />} />
 ```
 
-Then we need to add below condition into PrivateRoute_Auth.tsx file.
+Em seguida, adicione a seguinte condição ao arquivo PrivateRoute_Auth.tsx:
 
 ```shell
 else if (location.pathname == "/employee") {
       pagekey = "abp_react_7_2_2.Employees";
     }
 ```
-
-pagekey = "abp_react_7_2_2."; can be found in the below file location 
+A variável pagekey = "abp_react_7_2_2."; pode ser encontrada no seguinte local de arquivo:
 
 ```shell
 lib / main-menu / page-name.ts
 ```
+
+Encontre o valor da variável pagekey no arquivo localizado em lib/main-menu/page-name.ts:
+
 
 ```shell
 const PageNotFound = [{
@@ -37,11 +38,8 @@ const PageNotFound = [{
 }]; export default PageNotFound;
 ```
 
-
-
-Add the permission value as pagekey into the PrivateRoute_Auth.tsx
-
-Use the same permission value on the page created.
+Adicione o valor da permissão como pagekey no arquivo PrivateRoute_Auth.tsx.
+Use o mesmo valor de permissão na página criada:
 
 ```shell
 useEffect(() => {

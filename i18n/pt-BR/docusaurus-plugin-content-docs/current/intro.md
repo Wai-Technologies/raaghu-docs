@@ -2,20 +2,17 @@
 slug: /
 sidebar_position: 1
 ---
-
 # Introdução
+O Raaghu Frontend Suite é construído utilizando React 18 e o Sistema de Design Raaghu. Ele oferece uma arquitetura robusta e modular totalmente compatível com as licenças do ABP Commercial, fornecendo páginas de aplicativos prontas para produção, modelos de painel personalizáveis com cerca de 30 páginas de aplicativos, temas pré-definidos, módulos e documentação completa.
 
-Les systèmes de conception de Raaghu construits à l'aide du React 18 fournissent une architecture modulaire solide, entièrement compatible avec le marché BP.
+## Começando
+Este tutorial guia na criação e execução de uma aplicação web usando modelos de inicialização.
 
-Il fournit des pages d'application pour utilisateurs finals prêts à la production. Sur mesure dashboard templates, avec 30 pages de demande impaires, des thèmes prédéfinis, des modules, des documents de fin de page.
-## commence.
-Ce tutoriel guide la création  ⁇  la mise en oeuvre d'une nouvelle application Web à l'aide de modèles de démarrage.
-### cadres d'enseignement.
-Systèmes de conception de Raaghu - React est compatible avec la licence commerciale BP et ses rejets.
+## Frameworks de UI
+O Raaghu Frontend Suite é compatível com as licenças do ABP Commercial e suas respectivas versões.
 
-![image de maison](https://raaghustorageaccount.blob.core.windows.net/raaghu-docs/home-1.png)
-### cheminée de la technologie des raaghu
-![maison](https://raaghustorageaccount.blob.core.windows.net/raaghu-docs/home-2.png)
+![home image](https://raaghustorageaccount.blob.core.windows.net/raaghu-docs/home-1.png)
 
+## Pilha Tecnológica Raaghu
 
-
+![home](https://raaghustorageaccount.blob.core.windows.net/raaghu-docs/home-2.png)

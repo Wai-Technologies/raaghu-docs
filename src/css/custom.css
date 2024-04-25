@@ -31,6 +31,13 @@
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
 
+/* src/css/custom.css */
+.navbar__brand img {
+  width: 125px;
+  height: auto;
+  max-height: 37.05px;
+}
+
 .header-github-link::before {
   content: '';
   width: 28px;

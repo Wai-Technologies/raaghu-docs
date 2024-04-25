@@ -46,5 +46,11 @@
   "sidebar.tutorialSidebar.category.Release Information": {
     "message": "反应用户界面",
     "description": "The label for category Release Information in sidebar tutorialSidebar"
-  }
+  },
+  "sidebar.tutorialSidebar.category.Deployment": {
+    "message": " 的中文简体",
+    "description": "The label for category Deployment in sidebar tutorialSidebar"
+  
+}
+
 }

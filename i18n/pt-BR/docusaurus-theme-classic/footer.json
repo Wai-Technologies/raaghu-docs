@@ -13,107 +13,107 @@
   },
   "link.item.label.Introduction": {
     "message": "Introdução",
-    "description": "The label of footer link with label=Introduction linking to /docs/intro"
+    "description": "The label of footer link with label=Introduction linking to /"
   },
   "link.item.label.Getting Started": {
     "message": "Primeiros Passos",
-    "description": "The label of footer link with label=Getting Started linking to /docs/category/getting-started"
+    "description": "The label of footer link with label=Getting Started linking to /Getting Started/Setup-Your-Development-Environment"
   },
   "link.item.label.Tutorials": {
     "message": "Tutoriais",
-    "description": "The label of footer link with label=Tutorials linking to /docs/category/tutorials"
-  },
-  "link.item.label.Guides": {
-    "message": "Guias",
-    "description": "The label of footer link with label=Guides linking to /docs/category/guides"
+    "description": "The label of footer link with label=Tutorials linking to /tutorials/The-Book-List-Page"
   },
   "link.item.label.CLI": {
     "message": "CLI",
-    "description": "The label of footer link with label=CLI linking to /docs/category/cli"
+    "description": "The label of footer link with label=CLI linking to /CLI/"
   },
   "link.item.label.Samples": {
     "message": "Exemplos",
-    "description": "The label of footer link with label=Samples linking to /docs/category/samples"
+    "description": "The label of footer link with label=Samples linking to /Samples/create-a-page"
   },
   "link.item.label.Startup Templates": {
     "message": "Modelos de Inicialização",
-    "description": "The label of footer link with label=Startup Templates linking to /docs/category/startup-templates"
+    "description": "The label of footer link with label=Startup Templates linking to /Startup Templates/Solution-Structure"
   },
   "link.item.label.Application Modules": {
     "message": "Módulos da Aplicação",
-    "description": "The label of footer link with label=Application Modules linking to /docs/category/application-modules"
+    "description": "The label of footer link with label=Application Modules linking to /Application modules/Overall"
   },
   "link.item.label.UI Theme": {
     "message": "Tema de UI",
-    "description": "The label of footer link with label=UI Theme linking to /docs/category/ui-theme"
+    "description": "The label of footer link with label=UI Theme linking to /UI Theme/UI-Theme"
   },
   "link.item.label.Storybook": {
     "message": "Storybook",
-    "description": "The label of footer link with label=Storybook linking to /docs/category/storybook"
+    "description": "The label of footer link with label=Storybook linking to /Storybook/Components"
   },
   "link.item.label.React UI": {
     "message": "Interface do React",
-    "description": "The label of footer link with label=React UI linking to /docs/category/react-ui"
+    "description": "The label of footer link with label=React UI linking to /React UI/Cutomization"
   },
   "link.item.label.Release Infromation": {
     "message": "Informações de Lançamento",
-    "description": "The label of footer link with label=Release Infromation linking to /docs/category/release-information"
+    "description": "The label of footer link with label=Release Infromation linking to /Release Information/Realse Notes"
+  },
+  "link.item.label.Release Deployment": {
+    "message": "Informações de Lançamento",
+    "description": "The label of footer link with label=Deployment linking to /Deployment/Raaghu Code Deployment"
   },
   "link.item.label.Overall": {
     "message": "No geral",
-    "description": "The label of footer link with label=Overall linking to docs/Application%20Modules/Overall"
+    "description": "The label of footer link with label=Overall linking to /Application Modules/Overall"
   },
   "link.item.label.Account": {
     "message": "Conta",
-    "description": "The label of footer link with label=Account linking to docs/Application%20Modules/Account-Module"
+    "description": "The label of footer link with label=Account linking to /Application Modules/Account-Module"
   },
   "link.item.label.Audit Logging": {
     "message": "Registro de Auditoria",
-    "description": "The label of footer link with label=Audit Logging linking to docs/Application%20Modules/Audit-Logging"
+    "description": "The label of footer link with label=Audit Logging linking to /Application Modules/Audit-Logging"
   },
   "link.item.label.Chat": {
     "message": "Bate-papo",
-    "description": "The label of footer link with label=Chat linking to docs/Application%20Modules/Chat-Module"
+    "description": "The label of footer link with label=Chat linking to /Application Modules/Chat-Module"
   },
   "link.item.label.CMS Kit Pro": {
     "message": "Kit CMS Pro",
-    "description": "The label of footer link with label=CMS Kit Pro linking to docs/Application%20Modules/CMS-KIt-Pro"
+    "description": "The label of footer link with label=CMS Kit Pro linking to /Application Modules/CMS-KIt-Pro"
   },
   "link.item.label.File Management": {
     "message": "Gerenciamento de Arquivos",
-    "description": "The label of footer link with label=File Management linking to docs/Application%20Modules/File-Management"
+    "description": "The label of footer link with label=File Management linking to /Application Modules/File-Management"
   },
   "link.item.label.Forms": {
     "message": "Formulários",
-    "description": "The label of footer link with label=Forms linking to docs/Application%20Modules/Forms"
+    "description": "The label of footer link with label=Forms linking to /Application Modules/Forms"
   },
   "link.item.label.GDPR": {
     "message": "GDPR",
-    "description": "The label of footer link with label=GDPR linking to docs/Application%20Modules/GDPR"
+    "description": "The label of footer link with label=GDPR linking to /Application Modules/GDPR"
   },
   "link.item.label.Identity": {
     "message": "Identidade",
-    "description": "The label of footer link with label=Identity linking to docs/Application%20Modules/Identity"
+    "description": "The label of footer link with label=Identity linking to /Application Modules/Identity"
   },
   "link.item.label.OpenIddict": {
     "message": "OpenIddict",
-    "description": "The label of footer link with label=OpenIddict linking to docs/Application%20Modules/OpenIddict"
+    "description": "The label of footer link with label=OpenIddict linking to /Application Modules/OpenIddict"
   },
   "link.item.label.Language Management": {
     "message": "Gerenciamento de Idioma",
-    "description": "The label of footer link with label=Language Management linking to docs/Application%20Modules/Language-Management"
+    "description": "The label of footer link with label=Language Management linking to /Application Modules/Language-Management"
   },
   "link.item.label.Payment": {
     "message": "Pagamento",
-    "description": "The label of footer link with label=Payment linking to docs/Application%20Modules/Payment"
+    "description": "The label of footer link with label=Payment linking to /Application Modules/Payment"
   },
   "link.item.label.SaaS": {
     "message": "SaaS",
-    "description": "The label of footer link with label=SaaS linking to docs/Application%20Modules/SaaS"
+    "description": "The label of footer link with label=SaaS linking to /Application Modules/SaaS"
   },
   "link.item.label.Text Template Management": {
     "message": "Gerenciamento de Modelos de Texto",
-    "description": "The label of footer link with label=Text Template Management linking to docs/Application%20Modules/Text-Template-Management"
+    "description": "The label of footer link with label=Text Template Management linking to /Application Modules/Text-Template-Management"
   },
   "link.item.label.GitHub": {
     "message": "GitHub",
