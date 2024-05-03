@@ -103,7 +103,7 @@ raaghu generate [选项]
 
 #### 选项
 --proxy：用于连接。
-  - t 或 template：用于创建应用程序模板代理。
+  - t 或 --template：用于创建应用程序模板代理。
   - m 或 --microservices：用于创建微服务代理。
 
 示例：
@@ -112,7 +112,7 @@ raaghu generate [选项]
 raaghu generate --proxy -t
 ``` 
 ```json
-raaghu generate --proxy template
+raaghu generate --proxy --template
 ``` 
 ```json
 raaghu generate --proxy -m

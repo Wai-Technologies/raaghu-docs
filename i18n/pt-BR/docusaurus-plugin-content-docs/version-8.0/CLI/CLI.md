@@ -100,7 +100,7 @@ raaghu generate [opções]
 ```
 #### Opções
 --proxy: Usado para conexão.
-  - t ou template: Usado para criar o proxy do modelo de aplicativo.
+  - t ou --template: Usado para criar o proxy do modelo de aplicativo.
   - m ou --microservices: Usado para criar o proxy de microsserviços.
 
 Exemplo:
@@ -109,7 +109,7 @@ Exemplo:
 raaghu generate --proxy -t
 ``` 
 ```json
-raaghu generate --proxy template
+raaghu generate --proxy --template
 ``` 
 ```json
 raaghu generate --proxy -m
