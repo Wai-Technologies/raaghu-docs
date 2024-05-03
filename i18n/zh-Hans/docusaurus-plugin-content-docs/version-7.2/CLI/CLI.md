@@ -32,7 +32,7 @@ dotnet tool update --global Waiin.Raaghu.Cli
 
 * **`help`**: 显示关于 Raaghu CLI 使用的帮助信息。
 * **`new`**: 根据 Raaghu [启动模板](Startup-Templates/Index.md) 生成一个新的解决方案。
-* **`generate-proxy`**: 生成客户端代理，以使用 HTTP 应用程序接口 终端点。
+* **`generate`**: 生成客户端代理，以使用 HTTP 应用程序接口 终端点。
 * **`create`**: 创建 用于生成不同类型的页面，用于管理数据关系。
 * **`sync`**: 帮助我们解决微服务问题。
 * **`login`**: 使用您的 [raaghu.io](https://raaghu.io/) 用户名和密码在您的计算机上进行身份验证。
@@ -92,14 +92,35 @@ raaghu new Raaghu.BookStore  --version 7.4.4
 raaghu new Raaghu.BookStore  -v 7.4.4
 ````
 
+
 ## 生成代理
 为您的 HTTP API 生成服务代理，以便轻松从客户端使用您的服务。在运行此命令之前，您的主机（服务器）应用程序必须正在运行。
 
 用法:
-Usage:
 ```json
-raaghu generate-proxy 
+raaghu generate [选项]
 ```
+
+#### 选项
+--proxy：用于连接。
+  - t 或 template：用于创建应用程序模板代理。
+  - m 或 --microservices：用于创建微服务代理。
+
+示例：
+
+```json
+raaghu generate --proxy -t
+``` 
+```json
+raaghu generate --proxy template
+``` 
+```json
+raaghu generate --proxy -m
+```
+```json
+raaghu generate --proxy --microservices
+```
+
 ## 创建
 
  用于生成管理数据关系的不同类型页面。 
