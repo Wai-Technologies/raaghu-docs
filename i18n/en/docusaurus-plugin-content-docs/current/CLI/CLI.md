@@ -33,7 +33,7 @@ Here, is the list of all available commands before explaining their details:
 
 * **`help`**: Shows help on the usage of the Raaghu CLI.
 * **`new`**: Generates a new solution based on the Raaghu.
-* **`generate-proxy`**: Generates client side proxies to use HTTP API endpoints.
+* **`generate`**: Generates client side proxies to use HTTP API endpoints.
 * **`create`**: Create is used to generate different types of pages for managing data relationships.
 * **`sync`**: Helps us to connect frontend to ABP backend microservices source code solution.
 * **`login`**: Authenticates on your computer with your [raaghu.io](https://raaghu.io/) email and password.
@@ -98,13 +98,32 @@ raaghu new Raaghu.BookStore  --version 7.4.4
 raaghu new Raaghu.BookStore  -v 7.4.4
 ````
 
-### generate-proxy
+### generate
 
 Generates service proxies for your HTTP APIs to make easy to consume your services from the client side. Your host (server) application must be up and running before running this command.
 
 Usage:
 ```json
-raaghu generate-proxy 
+raaghu generate [options]
+```
+#### options
+
+- --proxy : Used for connection.
+  - -t or --template : Used to create the application template proxy.
+  - -m or --microservices : Used to create the microservices proxy.
+
+Example:
+```json
+raaghu generate --proxy -t
+``` 
+```json
+raaghu generate --proxy --template
+``` 
+```json
+raaghu generate --proxy -m
+```
+```json
+raaghu generate --proxy --microservices
 ```
 
 ### create

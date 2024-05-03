@@ -56,8 +56,7 @@ const config: Config = {
           routeBasePath: '/', // Set this to '/' to directly load the docs at the root path
           sidebarPath: require.resolve('./sidebars.js'),
           sidebarCollapsed:true,
-            
-      /*  If you want to enable the edit option then remove the comment
+        /*  If you want to enable the edit option then remove the comment
 
           editUrl:
           'https://github.com/Wai-Technologies/raaghu-docs',
@@ -79,7 +78,7 @@ const config: Config = {
   ],
 
   themeConfig: {
-
+  
     docs: {
       sidebar: {
         autoCollapseCategories: true,
@@ -102,6 +101,12 @@ const config: Config = {
           position: 'left',
           label: 'Docs',
         },*/
+        {
+          type: 'docsVersionDropdown',
+          position: 'right',
+          dropdownItemsAfter: [{ to: '/versions',}],
+          dropdownActiveClassDisabled: true,
+        },
       {
           type: 'localeDropdown',
           position: 'right',
