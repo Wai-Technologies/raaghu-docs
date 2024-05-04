@@ -86,14 +86,13 @@ const config: Config = {
       },
     },
 
-    image: 'img/docusaurus-social-card.jpg',
+    image: 'img/raaghu-social-card.png',
     navbar: {
         logo: {
         alt: 'Raaghu Documentation Logo',
         src: 'https://raaghustorageaccount.blob.core.windows.net/raaghu-blob/raaghu-docs-lightmode.png',
         srcDark: 'https://raaghustorageaccount.blob.core.windows.net/raaghu-blob/raaghu-docs-darkmode.png',
       },
-      
       items: [
      /*   {
           type: 'docSidebar',
