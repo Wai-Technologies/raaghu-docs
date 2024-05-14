@@ -122,6 +122,13 @@ raaghu generate --proxy --microservices
 
 create é utilizado para gerar diferentes tipos de páginas para gerenciar relacionamentos de dados.
 
+- Primeiro, você precisa executar o comando **`Slice`** para criar os diferentes tipos de páginas CRUD:
+```json
+raaghu create --Slice
+```
+
+### Para criar diferentes tipos de páginas, use os seguintes comandos:
+
 * **`create --CRUDPage`**: Cria uma página para gerenciar dados (como adicionar, visualizar, atualizar e excluir) que verifica relacionamentos e executa conforme necessário.
 Uso:
 ```json

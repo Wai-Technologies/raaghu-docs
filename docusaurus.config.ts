@@ -78,7 +78,13 @@ const config: Config = {
   ],
   plugins: 
   [ 
-      require.resolve('docusaurus-lunr-search'),
+    [
+      require.resolve("@cmfcmf/docusaurus-search-local"),
+      {
+        // Options here
+        indexDocs: true,
+      },
+    ],
 ],
   themeConfig: {
   
