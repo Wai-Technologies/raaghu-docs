@@ -128,7 +128,15 @@ raaghu generate --proxy --microservices
 
 ### create
 
-       Create is used to generate different types of pages for managing data relationships. 
+       Create is used to generate different types of pages for managing data relationships.
+
+- First you need to run the **`Slice`** command to create the differnt types of crud pages :
+
+```json
+raaghu create --Slice
+```
+
+### To create different types of pages use the following commands: 
 
 * **`create --CRUDPage`**: Makes a page for managing data (like adding, viewing, updating, and deleting).which checks relationships and execute accordingly.
 

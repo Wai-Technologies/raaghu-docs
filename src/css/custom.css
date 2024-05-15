@@ -651,3 +651,9 @@ html[data-theme="dark"] .navbar__toggle svg{
   color: #fff;
 }
 
+.dsla-search-wrapper{
+  width: 150% !important;
+}
+.aa-DetachedSearchButton{
+  width: 150%;
+}

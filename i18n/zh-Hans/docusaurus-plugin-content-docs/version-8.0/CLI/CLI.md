@@ -125,6 +125,13 @@ raaghu generate --proxy --microservices
 
  用于生成管理数据关系的不同类型页面。 
 
+- 首先，您需要运行 **`Slice`** 命令来创建不同类型的 CRUD 页面：
+```json
+raaghu create --Slice
+```
+
+### 要创建不同类型的页面，请使用以下命令：
+
 * **`create --CRUDPage`**: 创建一个用于管理数据（例如添加、查看、更新和删除）的页面。检查关系并相应执行。
 用法:
 ```json
