@@ -657,11 +657,3 @@ html[data-theme="dark"] .navbar__toggle svg{
 .aa-DetachedSearchButton{
   width: 150%;
 }
-
-
-.note {
-  border-left: 4px solid #ffeb3b;
-  background-color: #fff8dc;
-  padding: 10px;
-  margin: 10px 0;
-}

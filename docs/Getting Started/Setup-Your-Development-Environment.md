@@ -18,7 +18,8 @@ The following tools should be installed on your development machine:
 
 - [ABP CLI](https://docs.abp.io/en/abp/latest/CLI) (command line interface that is used to automate some common tasks for ABP based solutions)
 
-- Please check if you have access to Raaghu Portal with your Admin before proceeding ahead.
+> **Note:**
+> Please check if you have access to Raaghu Portal with your Admin before proceeding ahead.
 
 ## Install the Raaghu CLI
 
