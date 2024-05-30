@@ -78,13 +78,26 @@ A configuração RedirectAllowedUrls é usada para definir uma lista branca de d
    - Verifique a resposta para confirmação.
 
 # Solução Frontend Raaghu
-#### 1. Execute o comando no diretório raiz da sua solução para instalar as dependências
+
+#### 1. Gerar Proxy
+
+```json
+raaghu generate --proxy -t
+``` 
+ou
+
+```json
+raaghu generate --proxy --template
+``` 
+Para mais informações, consulte [Gerar Proxy](../CLI/CLI-New-Command-Samples.md#generate)
+
+#### 2. Execute o comando no diretório raiz da sua solução para instalar as dependências
 
 ````json
 npm run install-all
 ````
 
-#### 2. Modificações no arquivo .env
+#### 3. Modificações no arquivo .env
 
 ````json
 NODE_ENV=production
@@ -97,7 +110,7 @@ REACT_APP_REPLACE_URL=true
 REACT_APP_VERSION=8.0
 ````
 
-#### 3. Execute o comando no diretório raiz para rodar a solução
+#### 4. Execute o comando no diretório raiz para rodar a solução
 
 ````json
 npm run start --projects=host,rds-page-home,rds-page-login,rds-page-dashboard,rds-page-tenant
