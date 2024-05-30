@@ -91,6 +91,7 @@ raaghu login
 Raaghu Cli
 Enter Email: emailId
 Enter Password: *******
+[##################################################] 100%
 License verification successful. Tool functionality can proceed.
   ```
   ## login --info
@@ -104,9 +105,10 @@ Command :
   ```
   View:
 ```json
-raaghu login --info
-Raaghu Cli
+Raaghu CLI
+If you need help navigating through commands, use 'raaghu help' for a list of commands.
 Executing Login Info command...
+[##################################################] 100%
 emailId is active.
   ```  
    ## logout
@@ -120,9 +122,88 @@ Command :
   ```
   View:
 ```json
-raaghu logout
-Raaghu Cli
+Raaghu CLI
+If you need help navigating through commands, use 'raaghu help' for a list of commands.
 Executing Logout command...
-Credentials removed from Credential Manager.
-logged out successfully
+[##################################################] 100%
+emailId Logged out successfully
   ```  
+
+  ## generate
+Generates service proxies for your HTTP APIs to make easy to consume your services from the client side. Your host (server) application must be up and running before running this command.
+
+Command for Proxy :
+
+```json
+raaghu generate --proxy -t
+``` 
+```json
+raaghu generate --proxy --template
+``` 
+View of Generate Proxy:
+```json
+Raaghu CLI
+If you need help navigating through commands, use 'raaghu help' for a list of commands.
+Checking login credentials
+emailId is logged in.
+Enter URL: https://localhost:44397
+Downloading swagger json...
+Generating proxy...
+
+Proxy Successfully Created.
+```
+
+## create
+Create is used to generate different types of pages for managing data relationships. 
+
+Command:
+
+```json
+raaghu create --Slice
+```
+
+View:
+
+```json
+Raaghu CLI
+If you need help navigating through commands, use 'raaghu help' for a list of commands.
+Checking login credentials
+emailId is logged in.
+Enter Service Name: Hospital
+Slice Added Successfully
+```
+
+### To create different types of pages use the following command:
+
+#### Example:
+
+Makes a page for managing data (like adding, viewing, updating, and deleting).which checks relationships and execute accordingly.
+
+Command:
+```json
+raaghu create --CRUDPage
+```
+
+View:
+```json
+Raaghu CLI
+If you need help navigating through commands, use 'raaghu help' for a list of commands.
+Checking login credentials
+emailId is logged in.
+Enter Backend Project Path: E:\Backened\source-code-backend\aspnet-core
+Enter Entity Name: Hospital
+
+Creating component...
+Need to install the following packages:
+generate-react-cli@8.4.6
+ok to proceed? (y)
+rds-comp-hospital.tsx was successfully created at src/rds-comp-hospital/rds-comp-hospital.tsx
+rds-comp-hospital.styled.ts was successfully created at src/rds-comp-hospital/rds-comp-hospital.styled.ts
+rds-comp-hospital.test.tsx was successfully created at src/rds-comp-hospital/rds-comp-hospital.test.tsx
+rds-comp-hospital.stories.tsx was successfully created at src/rds-comp-hospital/rds-comp-hospital.stories.tsx
+index.ts is successfully created at src/rds-comp-hospital/index.ts
+Component page is successfully created!!
+PrivateRoute_Auth.tsx
+Page "Hospitals" created successfully.
+Done!!
+```
