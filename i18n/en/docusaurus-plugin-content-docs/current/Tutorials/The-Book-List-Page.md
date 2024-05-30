@@ -20,29 +20,77 @@ raaghu new <solution-name> --version <version>
 ````json
 raaghu new <solution-name> -v <version>
 ````
-### Generate proxy
+
+### generate
 
 Generates service proxies for your HTTP APIs to make easy to consume your services from the client side. Your host (server) application must be up and running before running this command.
 
-````json
-raaghu generate-proxy 
-````
+Usage:
+```json
+raaghu generate [options]
+```
+#### options
 
-### Adding a Slice file
+- --proxy : Used for connection.
+  - -t or --template : Used to create the application template proxy.
+  - -m or --microservices : Used to create the microservices proxy.
 
-
-To create a slice file, run the following command.
-
-```shell
- raaghu create --Page
+Example:
+```json
+raaghu generate --proxy -t
+``` 
+```json
+raaghu generate --proxy --template
+``` 
+```json
+raaghu generate --proxy -m
+```
+```json
+raaghu generate --proxy --microservices
 ```
 
-### Create a BookStore Module
+### create
 
-To create a new module named BookStore in the root folder for a React application, run the following command line.
+       Create is used to generate different types of pages for managing data relationships. 
 
-```shell
- raaghu add-module BookStore
+- First you need to run the **`Slice`** command to create the differnt types of crud pages :
+
+```json
+raaghu create --Slice
+```
+
+### To create different types of pages use the following commands:
+
+* **`create --CRUDPage`**: Makes a page for managing data (like adding, viewing, updating, and deleting).which checks relationships and execute accordingly.
+
+Usage:
+```json
+raaghu create --CRUDPage
+```
+
+* **`create --SimplePage`**: Creates a basic page, which do have any relation or dependancy on other page.
+
+Usage:
+```json
+raaghu create --SimplePage
+```
+* **`create --OneToMany`**: Creates a page for handling one to many related entities.
+
+Usage:
+```json
+raaghu create --OneToMany
+```
+* **`create --ManyToMany`**: Creates a page for handling many to many related entities.
+
+Usage:
+```json
+raaghu create --ManyToMany
+```
+* **`create --HybridMany`**: Creates a page for handling a mix of different relationships.
+
+Usage:
+```json
+raaghu create --HybridMany
 ```
 
 ### Code Snippets

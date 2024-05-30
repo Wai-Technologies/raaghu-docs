@@ -169,6 +169,7 @@ Usage:
 ```json
 raaghu create --HybridMany
 ```
+
 ### sync 
 
  Helps us to connect frontend to ABP backend microservices source code solution.

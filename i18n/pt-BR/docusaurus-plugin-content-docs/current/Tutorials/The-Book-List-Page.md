@@ -19,26 +19,68 @@ raaghu new <solution-name> --version <version>
 ````json
 raaghu new <solution-name> -v <version>
 ````
-### Generate proxy
-
+## generate
 Gera proxies de serviço para suas APIs HTTP para facilitar o consumo de seus serviços do lado do cliente. Sua aplicação host (servidor) deve estar em execução antes de executar este comando.
-````json
-raaghu generate-proxy 
-````
 
-### Adicionar um Arquivo de Slice
-Para criar um arquivo de slice, execute o seguinte comando.
+Uso:
+```json
+raaghu generate [opções]
+```
+#### Opções
+--proxy: Usado para conexão.
+  - t ou --template: Usado para criar o proxy do modelo de aplicativo.
+  - m ou --microservices: Usado para criar o proxy de microsserviços.
 
+Exemplo:
 
-```shell
- raaghu create --Page
+```json
+raaghu generate --proxy -t
+``` 
+```json
+raaghu generate --proxy --template
+``` 
+```json
+raaghu generate --proxy -m
+```
+```json
+raaghu generate --proxy --microservices
 ```
 
-### Criar um Módulo BookStore
-Para criar um novo módulo chamado BookStore na pasta raiz de uma aplicação React, execute o seguinte comando de linha de comando:
+## create
 
-```shell
-  raaghu add-module BookStore
+create é utilizado para gerar diferentes tipos de páginas para gerenciar relacionamentos de dados.
+
+- Primeiro, você precisa executar o comando **`Slice`** para criar os diferentes tipos de páginas CRUD:
+```json
+raaghu create --Slice
+```
+
+### Para criar diferentes tipos de páginas, use os seguintes comandos:
+
+* **`create --CRUDPage`**: Cria uma página para gerenciar dados (como adicionar, visualizar, atualizar e excluir) que verifica relacionamentos e executa conforme necessário.
+Uso:
+```json
+raaghu create --CRUDPage
+```
+* **`create --SimplePage`**: Cria uma página básica, que não tem relação ou dependência com outras páginas.
+Uso:
+```json
+raaghu create --SimplePage
+```
+* **`create --OneToMany`**: Cria uma página para lidar com entidades relacionadas de um para muitos.
+Uso:
+```json
+raaghu create --OneToMany
+```
+* **`create --ManyToMany`**: Cria uma página para lidar com entidades relacionadas de muitos para muitos.
+Uso:
+```json
+raaghu create --ManyToMany
+```
+* **`create --HybridMany`**: Cria uma página para lidar com uma mistura de diferentes relacionamentos.
+Uso:
+```json
+raaghu create --HybridMany
 ```
 
 ## Trechos de Código
