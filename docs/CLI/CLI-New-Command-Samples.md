@@ -31,7 +31,6 @@ Available commands:
    > raaghu login -info             Execute the Login Info Command
    > raaghu logout                  Execute the Logout Command
 
-
   ```
 
   ## new
