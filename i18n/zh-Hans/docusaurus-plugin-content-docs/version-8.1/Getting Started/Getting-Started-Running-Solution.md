@@ -76,12 +76,26 @@ CorsOrigins 设置定义了跨域资源共享（CORS）的允许来源。该设�
 - 检查响应以确认操作成功。
 
 # Raaghu 前端解决方案
-#### 1. 在解决方案的根目录运行以下命令以安装依赖项
+
+#### 1.  生成代理
+
+
+```json
+raaghu generate --proxy -t
+``` 
+
+或者
+```json
+raaghu generate --proxy --template
+``` 
+有关更多信息，请查看 [生成代理](../CLI/CLI-New-Command-Samples.md#generate)
+
+#### 2. 在解决方案的根目录运行以下命令以安装依赖项
 ````json
 npm run install-all
 ````
 
-#### 2. 修改 .env 文件
+#### 3. 修改 .env 文件
 
 ````json
 NODE_ENV=production
@@ -94,7 +108,7 @@ REACT_APP_REPLACE_URL=true
 REACT_APP_VERSION=8.0
 ````
 
-#### 3. 在根目录运行以下命令以运行解决方案
+#### 4. 在根目录运行以下命令以运行解决方案
 
 ````json
 npm run start --projects=host,rds-page-home,rds-page-login,rds-page-dashboard,rds-page-tenant

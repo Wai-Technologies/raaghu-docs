@@ -65,14 +65,28 @@ RedirectAllowedUrls setting is used to define a whitelist of safe domains to whi
 }
 ````
    - Check the response for confirmation.
+
+   
 ## Raaghu Frontend Solution
 
-#### 1. Run the command on the root directory of your solution to install the dependencies 
+#### 1. Generate Proxy 
+
+```json
+raaghu generate --proxy -t
+``` 
+or
+```json
+raaghu generate --proxy --template
+``` 
+For more information look at [Generate Proxy](../CLI/CLI-New-Command-Samples.md#generate)
+
+
+#### 2. Run the command on the root directory of your solution to install the dependencies 
 
 ````json
 npm run install-all
 ````
-#### 2. Modifications in .env file
+#### 3. Modifications in .env file
 
 
 ````json
@@ -85,7 +99,7 @@ REACT_APP_SCOPE=address email phone profile roles openid offline_access <Backend
 REACT_APP_REPLACE_URL=true 
 REACT_APP_VERSION=8.0
 ````
-#### 3. Run the command on the root directory to run the solution
+#### 4. Run the command on the root directory to run the solution
 
 ````json
 npm run start --projects=host,rds-page-home,rds-page-login,rds-page-dashboard,rds-page-tenant
