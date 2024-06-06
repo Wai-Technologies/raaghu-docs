@@ -38,10 +38,9 @@ A configuração RedirectAllowedUrls é usada para definir uma lista branca de d
 
 ````json
 {
-  "applicationType": "web",              // Type of application (e.g., web, mobile)
   "clientId": "<Your_Client_ID>",        // Client ID for the application
   "displayName": "<Your_Display_Name>"   // Display name for the application
-  "clientType": "public",                // Type of client (e.g., public, confidential)
+  "type": "public",                      // Type of client (e.g., public, confidential)
   "clientSecret": null,                  // Client secret for the application
   "consentType": "implicit",             // Type of consent (e.g., implicit, explicit,external, systematic)
   "extensionGrantTypes": [               // Extension grant types allowed
@@ -72,6 +71,7 @@ A configuração RedirectAllowedUrls é usada para definir uma lista branca de d
   ],
   "clientUri": "http://localhost:8080", // URI for the client application
   "logoUri": "<Logo_URI>"               // URI for the application's logo
+  "extraProperties": {}
 }
 ````
 
@@ -79,7 +79,13 @@ A configuração RedirectAllowedUrls é usada para definir uma lista branca de d
 
 # Solução Frontend Raaghu
 
-#### 1. Gerar Proxy
+#### 1. Execute o comando no diretório raiz da sua solução para instalar as dependências
+
+````json
+npm run install-all
+````
+
+#### 2. Gerar Proxy
 
 ```json
 raaghu generate --proxy -t
@@ -90,12 +96,6 @@ ou
 raaghu generate --proxy --template
 ``` 
 Para mais informações, consulte [Gerar Proxy](../CLI/CLI-New-Command-Samples.md#generate)
-
-#### 2. Execute o comando no diretório raiz da sua solução para instalar as dependências
-
-````json
-npm run install-all
-````
 
 #### 3. Modificações no arquivo .env
 

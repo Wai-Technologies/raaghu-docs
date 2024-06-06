@@ -28,10 +28,9 @@ RedirectAllowedUrls setting is used to define a whitelist of safe domains to whi
    - Enter your JSON data in the request body.
 ````json
 {
-  "applicationType": "web",              // Type of application (e.g., web, mobile)
   "clientId": "<Your_Client_ID>",        // Client ID for the application
   "displayName": "<Your_Display_Name>"   // Display name for the application
-  "clientType": "public",                // Type of client (e.g., public, confidential)
+  "type": "public",                      // Type of client (e.g., public, confidential)
   "clientSecret": null,                  // Client secret for the application
   "consentType": "implicit",             // Type of consent (e.g., implicit, explicit,external, systematic)
   "extensionGrantTypes": [               // Extension grant types allowed
@@ -62,6 +61,7 @@ RedirectAllowedUrls setting is used to define a whitelist of safe domains to whi
   ],
   "clientUri": "http://localhost:8080", // URI for the client application
   "logoUri": "<Logo_URI>"               // URI for the application's logo
+  "extraProperties": {}
 }
 ````
    - Check the response for confirmation.
@@ -69,7 +69,12 @@ RedirectAllowedUrls setting is used to define a whitelist of safe domains to whi
 
 ## Raaghu Frontend Solution
 
-#### 1. Generate Proxy 
+#### 1. Run the command on the root directory of your solution to install the dependencies 
+
+````json
+npm run install-all
+````
+#### 2. Generate Proxy 
 
 ```json
 raaghu generate --proxy -t
@@ -81,11 +86,6 @@ raaghu generate --proxy --template
 ``` 
 For more information look at [Generate Proxy](../CLI/CLI-New-Command-Samples.md#generate)
 
-#### 2. Run the command on the root directory of your solution to install the dependencies 
-
-````json
-npm run install-all
-````
 #### 3. Modifications in .env file
 
 
