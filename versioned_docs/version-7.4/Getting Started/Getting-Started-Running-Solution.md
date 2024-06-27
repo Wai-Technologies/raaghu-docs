@@ -20,52 +20,6 @@ RedirectAllowedUrls setting is used to define a whitelist of safe domains to whi
 
 #### 2. Run the DbMigrator
 #### 3. Run the Application (navigate to swagger/index.html)
-#### 4. Add OpenId Application
-- Please follow these steps to add an OpenID application through the POST API using Swagger:
-   - Open your API's Swagger interface.
-   - Find the POST endpoint (/api/openiddict/applications) for adding data.
-   - Click "Try it out" to submit the request.
-   - Enter your JSON data in the request body.
-````json
-{
-  "clientId": "<Your_Client_ID>",        // Client ID for the application
-  "displayName": "<Your_Display_Name>"   // Display name for the application
-  "type": "public",                      // Type of client (e.g., public, confidential)
-  "clientSecret": null,                  // Client secret for the application
-  "consentType": "implicit",             // Type of consent (e.g., implicit, explicit,external, systematic)
-  "extensionGrantTypes": [               // Extension grant types allowed
-    "LinkLogin",
-    "Impersonation"
-  ],
-  "postLogoutRedirectUris": [            // URIs to redirect to after logout
-    "http://localhost:8080"
-  ],
-  "redirectUris": [                     // URIs to redirect to after authorization
-    "http://localhost:8080"
-  ],
-  "allowPasswordFlow": true,
-  "allowClientCredentialsFlow": true,
-  "allowAuthorizationCodeFlow": true,
-  "allowRefreshTokenFlow": true,
-  "allowHybridFlow": false,
-  "allowImplicitFlow": false,
-  "allowLogoutEndpoint": true,
-  "allowDeviceEndpoint": false,
-  "scopes": [                           // Scopes available for the application
-    "address",
-    "email",
-    "phone",
-    "profile",
-    "roles",
-    "Test"                              // Backend application name
-  ],
-  "clientUri": "http://localhost:8080", // URI for the client application
-  "logoUri": "<Logo_URI>"               // URI for the application's logo
-  "extraProperties": {}
-}
-````
-   - Check the response for confirmation.
-
 
 ## Raaghu Frontend Solution
 
