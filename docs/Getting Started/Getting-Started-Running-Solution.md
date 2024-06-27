@@ -40,20 +40,7 @@ raaghu generate --proxy --template
 ``` 
 For more information look at [Generate Proxy](../CLI/CLI-New-Command-Samples.md#generate)
 
-#### 3. Modifications in .env file
-
-
-````json
-NODE_ENV=production
-REACT_APP_URL=http://localhost:8080
-REACT_APP_API_URL=<Swagger URL>
-REACT_APP_GRANT_TYPE=authorization_code
-REACT_APP_CLIENT_ID=<Your_Client_ID>
-REACT_APP_SCOPE=address email phone profile roles openid offline_access <Backend application name>
-REACT_APP_REPLACE_URL=true 
-REACT_APP_VERSION=8.0
-````
-#### 4. Run the command on the root directory to run the solution
+#### 3. Run the command on the root directory to run the solution
 
 ````json
 npm run start --projects=host,rds-page-home,rds-page-login,rds-page-dashboard,rds-page-tenant
