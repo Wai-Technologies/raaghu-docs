@@ -15,6 +15,8 @@ sidebar_position: 1
 
 - [ABP CLI](https://docs.abp.io/en/abp/latest/CLI)（用于自动化一些 ABP 解决方案常见任务的命令行界面）
 
+> **Note:**
+> 请在继续之前，与您的管理员确认您是否有权限访问Raaghu门户。
 # 安装 Raaghu CLI
 Raaghu CLI 是一个命令行界面，用于自动化一些 Raaghu 解决方案的常见任务。
 

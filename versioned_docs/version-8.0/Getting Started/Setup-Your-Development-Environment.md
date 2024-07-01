@@ -18,6 +18,9 @@ An IDE (e.g. [Visual Studio](https://visualstudio.microsoft.com/vs/)) that suppo
 
 [ABP CLI](https://docs.abp.io/en/abp/latest/CLI) (command line interface that is used to automate some common tasks for ABP based solutions)
 
+> **Note:**
+> Please check if you have access to Raaghu Portal with your Admin before proceeding ahead.
+
 ## Install the Raaghu CLI
 
 Raaghu CLI is a command line interface that is used to automate some common tasks for Raaghu based solutions.

@@ -13,6 +13,9 @@ As seguintes ferramentas devem estar instaladas na sua máquina de desenvolvimen
 - [Yarn v1.20+ (não v2)^1 ou npm v6+] (https://nodejs.org/en)
 - [ABP CLI](https://docs.abp.io/en/abp/latest/CLI) (interface de linha de comando usada para automatizar algumas tarefas comuns - - para soluções baseadas em ABP)
 
+> **Note:**
+>  Por favor, verifique se você tem acesso ao Portal Raaghu com seu Administrador antes de continuar. Por favor, verifique se você tem acesso ao Portal Raaghu com seu Administrador antes de continuar.
+
 # Instalando o Raaghu CLI
 O Raaghu CLI é uma interface de linha de comando usada para automatizar algumas tarefas comuns para soluções baseadas em Raaghu.
 

@@ -155,6 +155,38 @@ Uso:
 raaghu create --HybridMany
 ```
 
+### add
+O comando add nos ajuda a criar novas páginas, componentes e elementos sem dados de entidade.
+
+
+* **`Criar novo Componente`**:
+Para criar um componente sem dados de entidade associados, use o seguinte comando:
+Uso:
+```json
+raaghu add --component
+```
+```json
+raaghu add -c
+```
+* **`Criar novo Elemento`**:
+Para criar um elemento sem dados de entidade associados, use o seguinte comando:
+Uso:
+```json
+raaghu add --element
+```
+```json
+raaghu add -e
+```
+* **`Criar nova Página`**:
+Para criar uma página sem dados de entidade associados, use o seguinte comando:
+Uso:
+```json
+raaghu add --page
+```
+```json
+raaghu add -p
+``` 
+
 ## sync 
 
 Nos ajuda a corrigir os problemas dos microsserviços.

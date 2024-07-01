@@ -1,0 +1,56 @@
+{
+  "version.label": {
+    "message": "7.3",
+    "description": "The label for version current"
+  },
+  "sidebar.tutorialSidebar.category.Getting Started": {
+    "message":"入门",
+    "description": "The label for category Getting Started in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Tutorials": {
+    "message": "教程",
+    "description": "The label for category Tutorials in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Guides": {
+    "message": "指南",
+    "description": "The label for category Guides in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.CLI": {
+    "message": "命令列介面",
+    "description": "The label for category CLI in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Samples": {
+    "message": "样品",
+    "description": "The label for category Samples in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Startup Templates": {
+    "message":  "启动模板",
+    "description": "The label for category Startup Templates in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Application Modules": {
+    "message": "应用模块",
+    "description": "The label for category Application Modules in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.UI Theme": {
+    "message": "用户界面主题",
+    "description": "The label for category UI Theme in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Storybook": {
+    "message": "反应用户界面",
+    "description": "The label for category Storybook in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.React UI": {
+    "message":"React 用户界面",
+    "description": "The label for category React UI in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Release Information": {
+    "message": "反应用户界面",
+    "description": "The label for category Release Information in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Deployment": {
+    "message": " 的中文简体",
+    "description": "The label for category Deployment in sidebar tutorialSidebar"
+  
+}
+
+}

@@ -10,13 +10,16 @@ First things first! Let's setup your development environment before creating the
 
 The following tools should be installed on your development machine:
 
-An IDE (e.g. [Visual Studio](https://visualstudio.microsoft.com/vs/)) that supports [.NET 8.0+](https://dotnet.microsoft.com/en-us/download/dotnet) development.
+- An IDE (e.g. [Visual Studio](https://visualstudio.microsoft.com/vs/)) that supports [.NET 8.0+](https://dotnet.microsoft.com/en-us/download/dotnet) development.
 
-[Node v16 or v18](https://nodejs.org/en) 
+- [Node v16 or v18](https://nodejs.org/en) 
 
- [Yarn v1.20+ (not v2)^1](https://classic.yarnpkg.com/en/docs/install#windows-stable) or **npm v6+** (already installed with Node)
+- [Yarn v1.20+ (not v2)^1](https://classic.yarnpkg.com/en/docs/install#windows-stable) or **npm v6+** (already installed with Node)
 
-[ABP CLI](https://docs.abp.io/en/abp/latest/CLI) (command line interface that is used to automate some common tasks for ABP based solutions)
+- [ABP CLI](https://docs.abp.io/en/abp/latest/CLI) (command line interface that is used to automate some common tasks for ABP based solutions)
+
+> **Note:**
+> Please check if you have access to Raaghu Portal with your Admin before proceeding ahead.
 
 ## Install the Raaghu CLI
 
