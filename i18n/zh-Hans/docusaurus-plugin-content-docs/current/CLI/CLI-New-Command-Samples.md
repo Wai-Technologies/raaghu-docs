@@ -221,3 +221,94 @@ PrivateRoute_Auth.tsx
 Page "Hospitals" created successfully.
 Done!!
 ```
+
+
+## add
+
+add 命令帮助我们创建不带实体数据的新页面、组件和元素。
+* **`创建新组件`**:
+
+命令：
+````json
+raaghu add --component
+````
+````json
+raaghu add -c
+````
+
+视图:
+
+````json
+Raaghu Cli
+Please provide a command. Use 'raaghu help' for a list of commands.
+raaghu add --component
+Checking login credentials
+emailId user is logged in.
+Enter component name:
+navbar
+Creating component...
+navbar.tsx was successfully created at src/navbar/navbar.tsx
+navbar.styled.ts was successfully created at src/navbar/navbar.styled.ts
+navbar.test.tsx was successfully created at src/navbar/navbar.test.tsx
+navbar.stories.tsx was successfully created at src/navbar/navbar.stories.tsx
+index.ts is successfully created at src/navbar/index.ts
+Successfully created the navbar component
+````
+- 我们也可以使用 raaghu add -c 来创建新组件。
+
+* **`创建新元素`**:
+
+命令:
+
+````json
+raaghu add --element
+````
+````json
+raaghu add -e
+````
+
+视图:
+
+````json
+Raaghu Cli
+Please provide a command. Use 'raaghu help' for a list of commands.
+raaghu add --element
+Checking login credentials
+emailId user is logged in.
+Enter element name:
+navbar
+Creating element...
+navbar.tsx was successfully created at src/navbar/navbar.tsx
+navbar.styled.ts was successfully created at src/navbar/navbar.styled.ts
+navbar.test.tsx was successfully created at src/navbar/navbar.test.tsx
+navbar.stories.tsx was successfully created at src/navbar/navbar.stories.tsx
+index.ts is successfully created at src/navbar/index.ts
+Successfully created the navbar element
+````
+- 我们也可以使用 raaghu add -e 来创建新元素。
+* **`创建新页面`**:
+
+命令：
+
+````json
+raaghu add --Page
+````
+````json
+raaghu add -p
+````
+
+视图：
+
+````json
+Raaghu Cli
+Please provide a command. Use 'raaghu help' for a list of commands.
+raaghu add --page
+Checking login credentials
+emailId user is logged in.
+Enter page name:
+navbar
+undefined page is successfully created!!
+PrivateRoute_Auth.tsx
+Successfully created the navbar page
+````
+- 我们也可以使用 raaghu add -p 来创建新页面。

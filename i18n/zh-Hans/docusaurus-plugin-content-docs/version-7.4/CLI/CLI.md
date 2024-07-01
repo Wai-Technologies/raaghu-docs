@@ -92,6 +92,7 @@ raaghu new Raaghu.BookStore  --version 7.4.4
 raaghu new Raaghu.BookStore  -v 7.4.4
 ````
 
+
 ## 生成代理
 为您的 HTTP API 生成服务代理，以便轻松从客户端使用您的服务。在运行此命令之前，您的主机（服务器）应用程序必须正在运行。
 
@@ -159,13 +160,44 @@ raaghu create --ManyToMany
 raaghu create --HybridMany
 ```
 
+### add
+add 命令帮助我们创建不带实体数据的新页面、组件和元素。
+* **`创建新组件`** :
+                               要创建不带关联实体数据的元素，请使用以下命令：
+使用方法：
+```json
+raaghu add --component
+```
+```json
+raaghu add -c
+```
+* **`创建新元素`** :
+                               To create a element without associated entity data, use the following command:
+Usage:
+```json
+raaghu add --element
+```
+```json
+raaghu add -e
+```
+* **`创建新页面`** :
+                               T要创建不带关联实体数据的页面，请使用以下命令：
+使用方法：
+```json
+raaghu add --page
+```
+```json
+raaghu add -p
+``` 
+
+
 ## 同步
 
  同步帮助我们解决微服务问题。
 
  用法:
  ```json
-raaghu sync [options]
+raaghu sync [选项]
 ```
 
 #### 选项
