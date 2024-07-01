@@ -124,8 +124,8 @@ raaghu generate --proxy --microservices
 ## 创建
 
  用于生成管理数据关系的不同类型页面。 
- 
- - 首先，您需要运行 **`Slice`** 命令来创建不同类型的 CRUD 页面：
+
+- 首先，您需要运行 **`Slice`** 命令来创建不同类型的 CRUD 页面：
 ```json
 raaghu create --Slice
 ```
@@ -160,13 +160,44 @@ raaghu create --ManyToMany
 raaghu create --HybridMany
 ```
 
+### add
+add 命令帮助我们创建不带实体数据的新页面、组件和元素。
+* **`创建新组件`** :
+                               要创建不带关联实体数据的元素，请使用以下命令：
+使用方法：
+```json
+raaghu add --component
+```
+```json
+raaghu add -c
+```
+* **`创建新元素`** :
+                               To create a element without associated entity data, use the following command:
+Usage:
+```json
+raaghu add --element
+```
+```json
+raaghu add -e
+```
+* **`创建新页面`** :
+                               T要创建不带关联实体数据的页面，请使用以下命令：
+使用方法：
+```json
+raaghu add --page
+```
+```json
+raaghu add -p
+``` 
+
+
 ## 同步
 
  同步帮助我们解决微服务问题。
 
  用法:
  ```json
-raaghu sync [options]
+raaghu sync [选项]
 ```
 
 #### 选项

@@ -90,6 +90,7 @@ raaghu new Raaghu.BookStore  --version 7.4.4
 ````json
 raaghu new Raaghu.BookStore  -v 7.4.4
 ````
+
 ## generate
 Gera proxies de serviço para suas APIs HTTP para facilitar o consumo de seus serviços do lado do cliente. Sua aplicação host (servidor) deve estar em execução antes de executar este comando.
 
@@ -116,7 +117,6 @@ raaghu generate --proxy -m
 ```json
 raaghu generate --proxy --microservices
 ```
-
 
 ## create
 
@@ -154,6 +154,38 @@ Uso:
 ```json
 raaghu create --HybridMany
 ```
+
+### add
+O comando add nos ajuda a criar novas páginas, componentes e elementos sem dados de entidade.
+
+
+* **`Criar novo Componente`**:
+Para criar um componente sem dados de entidade associados, use o seguinte comando:
+Uso:
+```json
+raaghu add --component
+```
+```json
+raaghu add -c
+```
+* **`Criar novo Elemento`**:
+Para criar um elemento sem dados de entidade associados, use o seguinte comando:
+Uso:
+```json
+raaghu add --element
+```
+```json
+raaghu add -e
+```
+* **`Criar nova Página`**:
+Para criar uma página sem dados de entidade associados, use o seguinte comando:
+Uso:
+```json
+raaghu add --page
+```
+```json
+raaghu add -p
+``` 
 
 ## sync 
 

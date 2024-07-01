@@ -199,3 +199,92 @@ PrivateRoute_Auth.tsx
 Page "Hospitals" created successfully.
 Done!!
 ```
+## add
+
+O comando add nos ajuda a criar novas páginas, componentes e elementos sem dados de entidade.
+* **`Criar novo Componente`**:
+Comando:
+````json
+raaghu add --component
+````
+````json
+raaghu add -c
+````
+
+Visualização:
+
+````json
+Raaghu Cli
+Please provide a command. Use 'raaghu help' for a list of commands.
+raaghu add --component
+Checking login credentials
+emailId user is logged in.
+Enter component name:
+navbar
+Creating component...
+navbar.tsx was successfully created at src/navbar/navbar.tsx
+navbar.styled.ts was successfully created at src/navbar/navbar.styled.ts
+navbar.test.tsx was successfully created at src/navbar/navbar.test.tsx
+navbar.stories.tsx was successfully created at src/navbar/navbar.stories.tsx
+index.ts is successfully created at src/navbar/index.ts
+Successfully created the navbar component
+````
+- Também podemos usar raaghu add -c para criar um novo componente.
+
+* **`Criar novo Elemento`**:
+
+Comando:
+
+````json
+raaghu add --element
+````
+````json
+raaghu add -e
+````
+
+Visualização:
+
+````json
+Raaghu Cli
+Please provide a command. Use 'raaghu help' for a list of commands.
+raaghu add --element
+Checking login credentials
+emailId user is logged in.
+Enter element name:
+navbar
+Creating element...
+navbar.tsx was successfully created at src/navbar/navbar.tsx
+navbar.styled.ts was successfully created at src/navbar/navbar.styled.ts
+navbar.test.tsx was successfully created at src/navbar/navbar.test.tsx
+navbar.stories.tsx was successfully created at src/navbar/navbar.stories.tsx
+index.ts is successfully created at src/navbar/index.ts
+Successfully created the navbar element
+````
+-Também podemos usar raaghu add -e para criar um novo elemento.
+
+* **`Criar nova Página`**:
+
+Comando:
+
+````json
+raaghu add --Page
+````
+````json
+raaghu add -p
+````
+
+Visualização:
+
+````json
+Raaghu Cli
+Please provide a command. Use 'raaghu help' for a list of commands.
+raaghu add --page
+Checking login credentials
+emailId user is logged in.
+Enter page name:
+navbar
+undefined page is successfully created!!
+PrivateRoute_Auth.tsx
+Successfully created the navbar page
+````
+- Também podemos usar raaghu add -p para criar uma nova página. 

@@ -1,56 +1,55 @@
 {
   "version.label": {
-    "message": "即将到来",
+    "message": "7.4",
     "description": "The label for version current"
   },
   "sidebar.tutorialSidebar.category.Getting Started": {
-    "message":"入门",
+    "message": "Começando",
     "description": "The label for category Getting Started in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Tutorials": {
-    "message": "教程",
+    "message": "Tutoriais",
     "description": "The label for category Tutorials in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Guides": {
-    "message": "指南",
+    "message": "Guias",
     "description": "The label for category Guides in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.CLI": {
-    "message": "命令列介面",
+    "message": "CLI",
     "description": "The label for category CLI in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Samples": {
-    "message": "样品",
+    "message": "Amostras",
     "description": "The label for category Samples in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Startup Templates": {
-    "message":  "启动模板",
+    "message": "Modelos de inicialização",
     "description": "The label for category Startup Templates in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Application Modules": {
-    "message": "应用模块",
+    "message": "Módulo de Aplicação",
     "description": "The label for category Application Modules in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.UI Theme": {
-    "message": "用户界面主题",
+    "message": "Tema da IU",
     "description": "The label for category UI Theme in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Storybook": {
-    "message": "反应用户界面",
+    "message": "Livro de histórias",
     "description": "The label for category Storybook in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.React UI": {
-    "message":"React 用户界面",
+    "message": "IU de reação",
     "description": "The label for category React UI in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Release Information": {
-    "message": "反应用户界面",
+    "message": "Liberar informações",
     "description": "The label for category Release Information in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Deployment": {
-    "message": " 的中文简体",
+    "message": "implantação",
     "description": "The label for category Deployment in sidebar tutorialSidebar"
-  
+  }
 }
 
-}

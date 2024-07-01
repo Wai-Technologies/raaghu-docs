@@ -6,7 +6,6 @@ sidebar_position: 1
 
 Raaghu CLI (Command Line Interface) is a command line tool to perform some common operations for Raaghu based solutions.
 
-
 ## Installation
 
 Raaghu CLI is a [dotnet global tool](https://www.nuget.org/packages/Waiin.Raaghu.Cli). Install it using a command line window:
@@ -35,6 +34,7 @@ Here, is the list of all available commands before explaining their details:
 * **`new`**: Generates a new solution based on the Raaghu.
 * **`generate`**: Generates client side proxies to use HTTP API endpoints.
 * **`create`**: Create is used to generate different types of pages for managing data relationships.
+* **`add`**: Add helps us for creation of new pages, components, and elements without entity data.
 * **`sync`**: Helps us to connect frontend to ABP backend microservices source code solution.
 * **`login`**: Authenticates on your computer with your [raaghu.io](https://raaghu.io/) email and password.
 * **`login --info`**: Shows the current user's login information.
@@ -138,6 +138,7 @@ raaghu create --Slice
 
 ### To create different types of pages use the following commands:
 
+
 * **`create --CRUDPage`**: Makes a page for managing data (like adding, viewing, updating, and deleting).which checks relationships and execute accordingly.
 
 Usage:
@@ -169,6 +170,37 @@ Usage:
 ```json
 raaghu create --HybridMany
 ```
+
+### add
+Add helps us for new creation of pages, components, and elements without entity data.
+
+* **`Create new Component`** :
+                               To create a component without associated entity data, use the following command:
+Usage:
+```json
+raaghu add --component
+```
+```json
+raaghu add -c
+```
+* **`Create new Element`** :
+                               To create a element without associated entity data, use the following command:
+Usage:
+```json
+raaghu add --element
+```
+```json
+raaghu add -e
+```
+* **`Create new Page`** :
+                               To create a page without associated entity data, use the following command:
+Usage:
+```json
+raaghu add --page
+```
+```json
+raaghu add -p
+``` 
 ### sync 
 
  Helps us to connect frontend to ABP backend microservices source code solution.

@@ -2,7 +2,7 @@
 sidebar_position: 2
 ---
 
-# CLI New Command Samples
+# CLI Command Samples
 
 # Raaghu CLI - Sample Commands 
 
@@ -30,7 +30,6 @@ Available commands:
    > raaghu login                   Execute the Login Command
    > raaghu login -info             Execute the Login Info Command
    > raaghu logout                  Execute the Logout Command
-
 
   ```
 
@@ -207,3 +206,95 @@ PrivateRoute_Auth.tsx
 Page "Hospitals" created successfully.
 Done!!
 ```
+
+## add
+
+Add helps us for creation of new pages, components, and elements without entity data.
+
+* **`Create new Component`**:
+
+Command:
+
+````json
+raaghu add --component
+````
+````json
+raaghu add -c
+````
+
+View:
+
+````json
+Raaghu Cli
+Please provide a command. Use 'raaghu help' for a list of commands.
+raaghu add --component
+Checking login credentials
+emailId user is logged in.
+Enter component name:
+navbar
+Creating component...
+navbar.tsx was successfully created at src/navbar/navbar.tsx
+navbar.styled.ts was successfully created at src/navbar/navbar.styled.ts
+navbar.test.tsx was successfully created at src/navbar/navbar.test.tsx
+navbar.stories.tsx was successfully created at src/navbar/navbar.stories.tsx
+index.ts is successfully created at src/navbar/index.ts
+Successfully created the navbar component
+````
+- we can also use **raaghu add -c** to create new component.
+
+* **`Create new Element`**:
+
+Command:
+
+````json
+raaghu add --element
+````
+````json
+raaghu add -e
+````
+
+View:
+
+````json
+Raaghu Cli
+Please provide a command. Use 'raaghu help' for a list of commands.
+raaghu add --element
+Checking login credentials
+emailId user is logged in.
+Enter element name:
+navbar
+Creating element...
+navbar.tsx was successfully created at src/navbar/navbar.tsx
+navbar.styled.ts was successfully created at src/navbar/navbar.styled.ts
+navbar.test.tsx was successfully created at src/navbar/navbar.test.tsx
+navbar.stories.tsx was successfully created at src/navbar/navbar.stories.tsx
+index.ts is successfully created at src/navbar/index.ts
+Successfully created the navbar element
+````
+- we can also use **raaghu add -e** to create new element.
+* **`Create new Page`**:
+
+Command:
+
+````json
+raaghu add --Page
+````
+````json
+raaghu add -p
+````
+
+View:
+
+````json
+Raaghu Cli
+Please provide a command. Use 'raaghu help' for a list of commands.
+raaghu add --page
+Checking login credentials
+emailId user is logged in.
+Enter page name:
+navbar
+undefined page is successfully created!!
+PrivateRoute_Auth.tsx
+Successfully created the navbar page
+````
+- we can also use **raaghu add -p** to create new page.
