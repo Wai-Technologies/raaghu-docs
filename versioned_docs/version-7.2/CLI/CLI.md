@@ -236,7 +236,7 @@ A new login with an already active session overwrites the previous session.
 
 Shows your login information such as **email** .
 ```json
-raaghu login-info
+raaghu login --info
 ```
 
 ### logout
